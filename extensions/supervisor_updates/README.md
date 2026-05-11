@@ -1,6 +1,6 @@
 # supervisor_updates extension
 
-Monitors a configurable list of advisor / lab pages for content changes. When a page changes since the last check, the diff is summarised with an LLM.
+Monitors a configurable list of advisor / lab pages for content changes. The first run stores a baseline only. Later runs return pages whose extracted text changed, and the latest page text is summarised with an LLM.
 
 ## Pipeline
 
@@ -39,24 +39,19 @@ supervisors:
 
 ## How change detection works
 
-Page hashes are stored in `docs/data/supervisor_hashes.json`. On each run, the extension fetches each URL, computes a hash of the visible text, and compares it to the stored value. Only pages with a changed hash are passed to `process()`.
+Page hashes are stored in `docs/data/supervisor_hashes.json`. On each run, the extension fetches each URL, computes a hash of the visible text, and compares it to the stored value. New URLs are saved as a baseline without producing a feed item; only later hash changes are passed to `process()`.
 
 ## Underlying collector
 
 - `extensions/supervisor_updates/collector.py`
-  - `fetch_supervisor_updates(supervisors)` — fetches and diffs pages
-  - `compute_hash(text)`, `detect_changes(supervisors, hash_store)`, `update_hashes()`
+  - `fetch_supervisor_updates(supervisors)` — fetches pages and detects hash changes
+  - `compute_hash(text)`, `detect_changes(url, current_text, hashes_path)`, `update_hashes()`
 
 ## Enabling this extension
 
 1. Set `supervisor_updates.enabled: true` in `config/sources.yaml`
 2. Add supervisors to `config/extensions/supervisor_updates.yaml`
 3. Add `supervisor_updates` to `display_order` in `config/sources.yaml`
-4. Add it to `REGISTRY` in `extensions/__init__.py`:
-   ```python
-   from extensions.supervisor_updates import SupervisorExtension
-   REGISTRY = [..., SupervisorExtension]
-   ```
 
 ## Tests
 

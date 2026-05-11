@@ -46,8 +46,8 @@ language: en
 
 llm:
   provider: openrouter
-  scoring_model: google/gemini-2.5-flash-lite-preview-09-2025
-  summarization_model: google/gemini-2.5-flash-lite-preview-09-2025
+  scoring_model: google/gemini-2.5-flash-lite
+  summarization_model: google/gemini-2.5-flash-lite
   base_url: "https://openrouter.ai/api/v1"
   api_key_env: OPENROUTER_API_KEY
 
@@ -100,7 +100,7 @@ sinks:
     max_hn: 3
     max_github: 3
   serverchan:
-    enabled: true
+    enabled: false
     # Add SERVERCHAN_SENDKEY as a GitHub Actions secret
     max_papers: 5
     max_hn: 3

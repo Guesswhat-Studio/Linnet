@@ -195,7 +195,7 @@ const AUTO_ENABLE_WORKFLOW_IDS = ['daily.yml', 'weekly.yml', 'monthly.yml', 'pag
 
 const DEFAULT_POSTDOC_TERMS = ['machine learning', 'computer vision', 'medical imaging'];
 const DEFAULT_POSTDOC_EXCLUDE = ['chemistry', 'economics', 'social science', 'humanities'];
-const OPENROUTER_DEFAULT_MODEL = 'google/gemini-2.5-flash-lite-preview-09-2025';
+const OPENROUTER_DEFAULT_MODEL = 'google/gemini-2.5-flash-lite';
 const LLM_PRESET_DEFAULTS = {
   openrouter: {
     provider: 'openrouter',

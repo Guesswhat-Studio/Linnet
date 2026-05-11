@@ -22,6 +22,12 @@ def _load_hashes(path: str) -> dict:
         return {}
 
 
+def _write_hashes(path: str, hashes: dict) -> None:
+    Path(path).parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(hashes, f, indent=2)
+
+
 def detect_changes(url: str, current_text: str, hashes_path: str = _DEFAULT_HASHES_PATH) -> bool:
     """Return True if the page content has changed since last check."""
     hashes = _load_hashes(hashes_path)
@@ -32,8 +38,7 @@ def detect_changes(url: str, current_text: str, hashes_path: str = _DEFAULT_HASH
 def update_hashes(url: str, current_text: str, hashes_path: str = _DEFAULT_HASHES_PATH) -> None:
     hashes = _load_hashes(hashes_path)
     hashes[url] = compute_hash(current_text)
-    with open(hashes_path, "w", encoding="utf-8") as f:
-        json.dump(hashes, f, indent=2)
+    _write_hashes(hashes_path, hashes)
 
 
 def fetch_supervisor_updates(
@@ -45,6 +50,7 @@ def fetch_supervisor_updates(
     compare hash, return list of changed entries.
     """
     updates = []
+    hashes = _load_hashes(hashes_path)
     for sup in supervisors:
         url = sup["url"]
         downloaded = trafilatura.fetch_url(url)
@@ -53,8 +59,15 @@ def fetch_supervisor_updates(
         text = trafilatura.extract(downloaded) or ""
         if not text:
             continue
-        if detect_changes(url, text, hashes_path):
-            update_hashes(url, text, hashes_path)
+        current_hash = compute_hash(text)
+        previous_hash = hashes.get(url)
+        if previous_hash is None:
+            hashes[url] = current_hash
+            _write_hashes(hashes_path, hashes)
+            continue
+        if previous_hash != current_hash:
+            hashes[url] = current_hash
+            _write_hashes(hashes_path, hashes)
             updates.append(
                 {
                     "name": sup.get("name", ""),

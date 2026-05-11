@@ -77,6 +77,8 @@ Linnet 会把生成的日、周、月归档保留在你的发布站点里，所�
 
 如果你只是想搭自己的 briefing 站点，优先使用 **Use this template**，不要用 **Fork**。Fork 当然也能跑，但更容易遇到 GitHub 对 Actions 和初始化流程的额外限制。
 
+干净起步说明：模板仓库不会再跟踪生成出来的 digest JSON。你的第一次 `Daily Digest` 会创建自己的归档。如果你 fork 的旧版本里已经带有 `docs/data/daily/*.json`、`docs/data/weekly/*.json` 或 `docs/data/monthly/*.json`，一次性删除这些 JSON，保留 `.gitkeep` 文件即可。
+
 ### 2. 把 Linnet Bridge GitHub App 安装到这个仓库
 
 打开你刚创建的仓库，把 **Linnet Bridge** GitHub App 安装到目标仓库上。
@@ -165,8 +167,8 @@ language: "zh"
 
 llm:
   provider: "openrouter"
-  scoring_model: "google/gemini-2.5-flash-lite-preview-09-2025"
-  summarization_model: "google/gemini-2.5-flash-lite-preview-09-2025"
+  scoring_model: "google/gemini-2.5-flash-lite"
+  summarization_model: "google/gemini-2.5-flash-lite"
   base_url: "https://openrouter.ai/api/v1"
   api_key_env: "OPENROUTER_API_KEY"
 ```

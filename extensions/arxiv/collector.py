@@ -1,5 +1,8 @@
 import os
 import re
+import time
+import xml.etree.ElementTree as ET
+from datetime import UTC, datetime, timedelta
 from html import unescape
 from typing import Any
 from urllib.parse import urljoin
@@ -9,12 +12,38 @@ import httpx
 
 _REPO = os.environ.get("GITHUB_REPOSITORY", "YuyangXueEd/Linnet")
 _ARXIV_USER_AGENT = f"Linnet/1.0 (https://github.com/{_REPO})"
+_OAIPMH_ENDPOINT = "https://oaipmh.arxiv.org/oai"
+_OAIPMH_LOOKBACK_DAYS = 7
+_XML_NS = {
+    "oai": "http://www.openarchives.org/OAI/2.0/",
+    "arxiv": "http://arxiv.org/OAI/arXiv/",
+}
+_SELF_GROUP_ARCHIVES = {"cs", "econ", "eess", "math", "q-bio", "q-fin", "stat"}
+_PHYSICS_ARCHIVES = {
+    "astro-ph",
+    "cond-mat",
+    "gr-qc",
+    "hep-ex",
+    "hep-lat",
+    "hep-ph",
+    "hep-th",
+    "math-ph",
+    "nlin",
+    "nucl-ex",
+    "nucl-th",
+    "physics",
+    "quant-ph",
+}
 
 
 def keyword_match(text: str, keywords: list[str]) -> bool:
     """Return True if text contains at least one keyword (case-insensitive)."""
     lower = text.lower()
     return any(kw.lower() in lower for kw in keywords)
+
+
+def _clean_metadata_text(text: str | None) -> str:
+    return re.sub(r"\s+", " ", text or "").strip()
 
 
 def _clean_html_text(fragment: str) -> str:
@@ -137,7 +166,110 @@ def enrich_papers_with_figures(
     return [enrich_paper_with_figure(paper, request_timeout=request_timeout) for paper in papers]
 
 
-def fetch_papers(
+def _arxiv_category_to_oai_set(category: str) -> str:
+    """Map an arXiv category like cs.AI to its OAI-PMH setSpec."""
+    category = category.strip()
+    archive, separator, subject = category.partition(".")
+    if not separator:
+        if archive in _PHYSICS_ARCHIVES and archive != "physics":
+            return f"physics:{archive}"
+        return archive
+
+    if archive in _SELF_GROUP_ARCHIVES:
+        group = archive
+    elif archive in _PHYSICS_ARCHIVES:
+        group = "physics"
+    else:
+        group = archive
+
+    return f"{group}:{archive}:{subject}"
+
+
+def _oaipmh_from_date() -> str:
+    return (datetime.now(UTC) - timedelta(days=_OAIPMH_LOOKBACK_DAYS)).date().isoformat()
+
+
+def _xml_text(parent: ET.Element, path: str) -> str:
+    node = parent.find(path, _XML_NS)
+    return _clean_metadata_text(node.text if node is not None else None)
+
+
+def _parse_oaipmh_author(author: ET.Element) -> str:
+    keyname = _xml_text(author, "arxiv:keyname")
+    forenames = _xml_text(author, "arxiv:forenames")
+    suffix = _xml_text(author, "arxiv:suffix")
+    name = " ".join(part for part in [forenames, keyname, suffix] if part)
+    return name or _clean_metadata_text(" ".join(author.itertext()))
+
+
+def _parse_oaipmh_records(
+    xml_text: str,
+    must_include: list[str],
+    max_authors: int,
+    created_since: str | None = None,
+) -> tuple[list[dict[str, Any]], str | None]:
+    root = ET.fromstring(xml_text)
+    error = root.find("oai:error", _XML_NS)
+    if error is not None:
+        code = error.attrib.get("code", "")
+        if code == "noRecordsMatch":
+            return [], None
+        message = _clean_metadata_text(error.text)
+        raise ValueError(f"OAI-PMH error {code}: {message}")
+
+    papers: list[dict[str, Any]] = []
+    for record in root.findall(".//oai:record", _XML_NS):
+        metadata = record.find("oai:metadata", _XML_NS)
+        if metadata is None:
+            continue
+
+        arxiv_meta = metadata.find("arxiv:arXiv", _XML_NS)
+        if arxiv_meta is None:
+            children = list(metadata)
+            arxiv_meta = children[0] if children else None
+        if arxiv_meta is None:
+            continue
+
+        paper_id = _xml_text(arxiv_meta, "arxiv:id")
+        created = _xml_text(arxiv_meta, "arxiv:created")
+        title = _xml_text(arxiv_meta, "arxiv:title")
+        abstract = _xml_text(arxiv_meta, "arxiv:abstract")
+        categories = _xml_text(arxiv_meta, "arxiv:categories").split()
+        if not paper_id or not title:
+            continue
+        if created_since and created and created < created_since:
+            continue
+
+        combined = f"{title} {abstract}"
+        if not keyword_match(combined, must_include):
+            continue
+
+        authors = [
+            name
+            for name in (
+                _parse_oaipmh_author(author)
+                for author in arxiv_meta.findall("arxiv:authors/arxiv:author", _XML_NS)
+            )
+            if name
+        ]
+        papers.append(
+            {
+                "id": paper_id,
+                "title": title,
+                "authors": authors[:max_authors],
+                "categories": categories,
+                "abstract": abstract,
+                "url": f"https://arxiv.org/abs/{paper_id}",
+                "pdf_url": f"https://arxiv.org/pdf/{paper_id}",
+            }
+        )
+
+    token_node = root.find(".//oai:resumptionToken", _XML_NS)
+    token = _clean_metadata_text(token_node.text if token_node is not None else None) or None
+    return papers, token
+
+
+def _fetch_papers_from_search_api(
     categories: list[str],
     must_include: list[str],
     max_results: int = 100,
@@ -145,14 +277,6 @@ def fetch_papers(
     api_retries: int = 5,
     api_delay: float = 10.0,
 ) -> list[dict[str, Any]]:
-    """
-    Fetch recent papers from arxiv for given categories,
-    pre-filter by must_include keywords on title+abstract.
-    Returns list of paper dicts ready for LLM scoring.
-    """
-    if max_results == 0:
-        return []
-
     query = " OR ".join(f"cat:{cat}" for cat in categories)
     client = arxiv.Client(num_retries=api_retries, delay_seconds=api_delay)
     client._session.headers.update({"User-Agent": _ARXIV_USER_AGENT})
@@ -180,3 +304,110 @@ def fetch_papers(
         )
 
     return papers
+
+
+def _fetch_papers_from_oaipmh(
+    categories: list[str],
+    must_include: list[str],
+    max_results: int = 100,
+    max_authors: int = 5,
+    api_delay: float = 10.0,
+    request_timeout: float = 30.0,
+) -> list[dict[str, Any]]:
+    if not categories or max_results == 0:
+        return []
+
+    papers: list[dict[str, Any]] = []
+    seen_ids: set[str] = set()
+    from_date = _oaipmh_from_date()
+    last_request_at = 0.0
+
+    def wait_for_slot() -> None:
+        nonlocal last_request_at
+        if last_request_at:
+            elapsed = time.monotonic() - last_request_at
+            if elapsed < api_delay:
+                time.sleep(api_delay - elapsed)
+        last_request_at = time.monotonic()
+
+    for category in categories:
+        token: str | None = None
+        while len(papers) < max_results:
+            wait_for_slot()
+            params = (
+                {"verb": "ListRecords", "resumptionToken": token}
+                if token
+                else {
+                    "verb": "ListRecords",
+                    "metadataPrefix": "arXiv",
+                    "set": _arxiv_category_to_oai_set(category),
+                    "from": from_date,
+                }
+            )
+            response = httpx.get(
+                _OAIPMH_ENDPOINT,
+                params=params,
+                timeout=request_timeout,
+                headers={"User-Agent": _ARXIV_USER_AGENT},
+            )
+            response.raise_for_status()
+
+            batch, token = _parse_oaipmh_records(
+                response.text,
+                must_include=must_include,
+                max_authors=max_authors,
+                created_since=from_date,
+            )
+            for paper in batch:
+                if paper["id"] in seen_ids:
+                    continue
+                seen_ids.add(paper["id"])
+                papers.append(paper)
+                if len(papers) >= max_results:
+                    break
+
+            if not token:
+                break
+
+    return papers[:max_results]
+
+
+def fetch_papers(
+    categories: list[str],
+    must_include: list[str],
+    max_results: int = 100,
+    max_authors: int = 5,
+    api_retries: int = 5,
+    api_delay: float = 10.0,
+) -> list[dict[str, Any]]:
+    """
+    Fetch recent papers from arxiv for given categories,
+    pre-filter by must_include keywords on title+abstract.
+    Returns list of paper dicts ready for LLM scoring.
+    """
+    if max_results == 0:
+        return []
+
+    try:
+        return _fetch_papers_from_search_api(
+            categories=categories,
+            must_include=must_include,
+            max_results=max_results,
+            max_authors=max_authors,
+            api_retries=api_retries,
+            api_delay=api_delay,
+        )
+    except arxiv.ArxivError as exc:
+        print(f"  arXiv search API failed ({exc}); trying OAI-PMH metadata fallback...")
+
+    try:
+        return _fetch_papers_from_oaipmh(
+            categories=categories,
+            must_include=must_include,
+            max_results=max_results,
+            max_authors=max_authors,
+            api_delay=api_delay,
+        )
+    except (httpx.HTTPError, ET.ParseError, ValueError) as exc:
+        print(f"  OAI-PMH fallback failed: {exc}")
+        return []

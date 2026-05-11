@@ -74,6 +74,8 @@ Use **Use this template → Create a new repository** on GitHub.
 
 If you are just setting up your own briefing site, prefer **Use this template** over **Fork**. Forks still work, but they are more likely to hit extra GitHub friction around Actions and setup.
 
+Clean-start note: generated digest JSON is intentionally not tracked in the template. Your first `Daily Digest` run creates your own archive. If you forked an older copy that already contains `docs/data/daily/*.json`, `docs/data/weekly/*.json`, or `docs/data/monthly/*.json`, delete those JSON files once and keep the `.gitkeep` files.
+
 ### 2. Install the Linnet Bridge GitHub App on that repo
 
 Open the repo you just created, then install the **Linnet Bridge** GitHub App to that target repository.
@@ -162,8 +164,8 @@ language: "en"
 
 llm:
   provider: "openrouter"
-  scoring_model: "google/gemini-2.5-flash-lite-preview-09-2025"
-  summarization_model: "google/gemini-2.5-flash-lite-preview-09-2025"
+  scoring_model: "google/gemini-2.5-flash-lite"
+  summarization_model: "google/gemini-2.5-flash-lite"
   base_url: "https://openrouter.ai/api/v1"
   api_key_env: "OPENROUTER_API_KEY"
 ```

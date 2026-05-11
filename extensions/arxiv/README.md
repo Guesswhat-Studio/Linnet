@@ -7,7 +7,8 @@ LaTeX in figure captions is rendered by the Astro `PaperCard` component.
 ## Pipeline
 
 ```
-fetch()    — pulls today's submissions for configured categories
+fetch()    — pulls recent submissions for configured categories
+           → falls back to OAI-PMH metadata if the arXiv search API is unavailable
            → keyword pre-filter (must_include list)
 process()  — LLM batch scoring → drops papers below threshold
            → LLM summarisation (one paragraph per paper)
@@ -34,8 +35,8 @@ render()   — sorts by category rank then score, wraps in FeedSection
 | `max_papers_per_run` | `100` | Papers fetched from arXiv before any filtering |
 | `max_papers_to_show` | `20` | Top papers included in the digest |
 | `max_authors` | `5` | Authors listed per paper |
-| `api_retries` | `5` | Retry attempts on arXiv API 429/errors |
-| `api_delay` | `10.0` | Seconds between arXiv API requests |
+| `api_retries` | `5` | Retry attempts on arXiv search API 429/errors before fallback |
+| `api_delay` | `10.0` | Seconds between arXiv/OAI-PMH API requests |
 | `request_timeout` | `20.0` | Seconds for figure/affiliation HTTP fetches |
 
 ## Setup Wizard mapping
@@ -76,7 +77,7 @@ This keeps the first-run experience shorter while preserving full manual control
 ## Underlying collectors
 
 - `collectors/arxiv_collector.py`
-  - `fetch_papers(categories, must_include, max_results)` — arXiv API
+  - `fetch_papers(categories, must_include, max_results)` — arXiv search API with OAI-PMH metadata fallback
   - `enrich_papers_with_figures(papers)` — scrapes arxiv HTML for figures
 
 - `pipeline/scorer.py` — `score_papers(papers, llm, model, threshold)`

@@ -21,7 +21,7 @@ The recommended one-click path no longer uses a PAT. Instead:
 1. install the **Linnet Bridge** GitHub App on your target repo
 2. open the upstream setup wizard at <https://yuyangxueed.github.io/Linnet/setup/>
 3. click **Install GitHub App** / **Authorize GitHub**
-4. deploy from Step 6
+4. deploy from Step 5
 
 This manual guide remains the fallback path when you want to keep every config change explicit, or when org / repo policy blocks the GitHub App flow.
 
@@ -91,7 +91,9 @@ change `language: "en"` to `"zh"`, `"fr"`, `"de"`, `"ja"`, `"ko"`, `"es"`, or an
 
 ## Step 5 — Run it for the first time
 
-If GitHub Actions / workflows are currently disabled in the repo, enable them manually first unless you already used the Setup Wizard’s Step 6 auto-enable option successfully. This is most common on forks.
+If GitHub Actions / workflows are currently disabled in the repo, enable them manually first unless you already used the Setup Wizard’s Step 5 auto-enable option successfully. This is most common on forks.
+
+Clean start for older forks: delete any inherited generated snapshots under `docs/data/daily/*.json`, `docs/data/weekly/*.json`, and `docs/data/monthly/*.json`, but keep the `.gitkeep` files. The next `Daily Digest` run will create fresh data for your repo.
 
 You need to manually trigger **two** workflows in order:
 
@@ -150,7 +152,7 @@ The commented-out defaults are already in that file — uncomment and edit any y
 
 ```yaml
 llm:
-  summarization_model: "google/gemini-2.5-flash-lite-preview-09-2025"
+  summarization_model: "google/gemini-2.5-flash-lite"
   # prompts:
   #   arxiv_summary: |
   #     Summarize the core method and contribution of the following paper

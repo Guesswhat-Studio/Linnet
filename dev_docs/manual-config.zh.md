@@ -21,7 +21,7 @@
 1. 把 **Linnet Bridge** GitHub App 安装到目标仓库
 2. 打开上游设置向导：<https://yuyangxueed.github.io/Linnet/setup/zh/>
 3. 点击 **安装 GitHub App** / **授权 GitHub**
-4. 在 Step 6 里直接部署
+4. 在 Step 5 里直接部署
 
 这份手动指南保留给两种情况：你想完全自己掌控每一步配置，或者组织 / 仓库策略阻止了 GitHub App 流程。
 
@@ -90,7 +90,9 @@ export OPENAI_API_KEY=sk-...
 
 ## Step 5 — 首次运行
 
-如果仓库里的 GitHub Actions / workflows 当前仍处于禁用状态，而你又没有成功使用设置向导 Step 6 的自动启用功能，请先在仓库里手动启用它们。这种情况最常见于 fork。
+如果仓库里的 GitHub Actions / workflows 当前仍处于禁用状态，而你又没有成功使用设置向导 Step 5 的自动启用功能，请先在仓库里手动启用它们。这种情况最常见于 fork。
+
+旧 fork 的干净起步方式：删除继承来的 `docs/data/daily/*.json`、`docs/data/weekly/*.json` 和 `docs/data/monthly/*.json`，但保留 `.gitkeep` 文件。下一次 `Daily Digest` 会为你的仓库生成全新的数据。
 
 需要**依次**手动触发两个 workflow：
 
@@ -148,7 +150,7 @@ hitokoto:
 
 ```yaml
 llm:
-  summarization_model: "google/gemini-2.5-flash-lite-preview-09-2025"
+  summarization_model: "google/gemini-2.5-flash-lite"
   # prompts:
   #   arxiv_summary: |
   #     Summarize the core method and contribution of the following paper

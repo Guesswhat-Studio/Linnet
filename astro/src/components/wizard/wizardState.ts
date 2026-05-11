@@ -87,8 +87,8 @@ export function createInitialState(): WizardState {
       provider: 'openrouter',
       baseUrl: 'https://openrouter.ai/api/v1',
       apiKeyEnv: 'OPENROUTER_API_KEY',
-      scoringModel: 'google/gemini-2.5-flash-lite-preview-09-2025',
-      summarizationModel: 'google/gemini-2.5-flash-lite-preview-09-2025',
+      scoringModel: 'google/gemini-2.5-flash-lite',
+      summarizationModel: 'google/gemini-2.5-flash-lite',
     },
     arxiv: {
       presets: ['ai_ml'],
