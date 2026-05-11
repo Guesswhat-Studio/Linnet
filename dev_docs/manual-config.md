@@ -228,8 +228,8 @@ If you skip this step, nothing breaks — the website still updates as normal.
 
 | When | What happens |
 |---|---|
-| Weekdays at 09:30 UTC | Full digest — papers, HN, GitHub trending, weather, US pre-market stocks, any extras you enabled |
-| Every Monday at 1 AM UTC | Weekly summary of the past week |
-| 1st of every month at 2 AM UTC | Monthly overview |
+| Weekdays at 09:30 UTC by default | Full digest — papers, HN, GitHub trending, weather, US pre-market stocks, any extras you enabled |
+| Every Monday at 00:00 UTC | Weekly summary of the past week |
+| 1st of every month at 00:00 UTC | Monthly overview |
 
-You can also trigger any of these by hand: **Actions → [workflow name] → Run workflow**.
+The setup wizard can generate a custom daily schedule in `.github/workflows/daily.yml` from your local time and UTC offset. You can also edit the cron lines manually, or trigger any workflow by hand: **Actions -> [workflow name] -> Run workflow**.

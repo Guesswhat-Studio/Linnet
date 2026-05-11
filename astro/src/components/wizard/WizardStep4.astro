@@ -1,5 +1,6 @@
 ---
 import type { ExtensionMeta } from '@/lib/registry';
+import { DAILY_SCHEDULE_DEFAULT, UTC_OFFSET_OPTIONS } from './schedule.js';
 
 interface Props {
   extensions: ExtensionMeta[];
@@ -121,6 +122,24 @@ const t = {
   globalLangHint: locale === 'zh'
     ? '应用于摘要、汇总和通知文本。'
     : 'Applied across summaries, rollups, and notification text.',
+  dailyScheduleHead: locale === 'zh' ? '日报运行时间' : 'Daily run time',
+  dailyScheduleDesc: locale === 'zh'
+    ? '选择希望 Daily Digest 在什么本地时间运行。GitHub Actions 只接受 UTC cron，所以这里使用固定 UTC offset；夏令时地区可按季节调整一次。'
+    : 'Choose when Daily Digest should run in your local time. GitHub Actions only accepts UTC cron, so this uses a fixed UTC offset; daylight-saving regions can adjust it seasonally.',
+  dailyTimeLabel: locale === 'zh' ? '本地时间' : 'Local time',
+  dailyOffsetLabel: locale === 'zh' ? 'UTC offset' : 'UTC offset',
+  dailyFrequencyLabel: locale === 'zh' ? '运行频率' : 'Run frequency',
+  dailyWeekdays: locale === 'zh' ? '工作日' : 'Weekdays',
+  dailyEveryDay: locale === 'zh' ? '每天' : 'Every day',
+  dailyTimeHint: locale === 'zh'
+    ? '会写入 `.github/workflows/daily.yml`，并在 Step 5 一起部署。'
+    : 'Written to `.github/workflows/daily.yml` and deployed with Step 5.',
+  dailyOffsetHint: locale === 'zh'
+    ? '如果你在夏令时地区，选择当前季节对应的 offset。'
+    : 'For daylight-saving regions, choose the offset for the current season.',
+  dailyPreviewDefault: locale === 'zh'
+    ? '09:30 UTC+00:00，工作日运行 -> GitHub cron: 30 9 * * 1-5'
+    : '09:30 UTC+00:00, weekdays -> GitHub cron: 30 9 * * 1-5',
   scheduleHead: locale === 'zh' ? 'Weekly / Monthly 汇总' : 'Weekly / monthly rollups',
   scheduleDesc: locale === 'zh'
     ? '决定哪些来源应进入 weekly / monthly，以及每种来源各取多少条。'
@@ -304,6 +323,51 @@ const DARK_BG_PRESETS = [
           </select>
           <div class="wz-field__hint">{t.globalLangHint}</div>
         </div>
+      </div>
+    </div>
+
+    <div class="wz-card wz-card--compact wz-card--span-2">
+      <h3>{t.dailyScheduleHead}</h3>
+      <p class="wz-card__desc">{t.dailyScheduleDesc}</p>
+
+      <div class="wz-field-row wz-field-row--compact">
+        <div class="wz-field">
+          <label for="daily-schedule-time">{t.dailyTimeLabel}</label>
+          <input
+            id="daily-schedule-time"
+            type="time"
+            value={DAILY_SCHEDULE_DEFAULT.time}
+            data-daily-schedule-time
+          />
+          <div class="wz-field__hint">{t.dailyTimeHint}</div>
+        </div>
+
+        <div class="wz-field">
+          <label for="daily-schedule-offset">{t.dailyOffsetLabel}</label>
+          <select id="daily-schedule-offset" data-daily-schedule-offset>
+            {UTC_OFFSET_OPTIONS.map((option) => (
+              <option
+                value={option.value}
+                selected={option.value === DAILY_SCHEDULE_DEFAULT.utcOffsetMinutes}
+              >
+                {locale === 'zh' ? option.labelZh : option.labelEn}
+              </option>
+            ))}
+          </select>
+          <div class="wz-field__hint">{t.dailyOffsetHint}</div>
+        </div>
+
+        <div class="wz-field">
+          <label for="daily-schedule-frequency">{t.dailyFrequencyLabel}</label>
+          <select id="daily-schedule-frequency" data-daily-schedule-frequency>
+            <option value="weekdays" selected>{t.dailyWeekdays}</option>
+            <option value="daily">{t.dailyEveryDay}</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="wz-notice wz-notice--info" style="margin-top:18px; margin-bottom:0" data-daily-schedule-preview>
+        {t.dailyPreviewDefault}
       </div>
     </div>
 

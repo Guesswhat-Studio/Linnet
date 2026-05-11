@@ -15,7 +15,7 @@
 
 当你用模板创建好自己的仓库后，第一步就该打开设置向导。它现在就是新的主入口：登录 GitHub、完成授权、填写配置、直接部署，都会在这里走完。当前自托管路径会在背后使用 GitHub Actions 和 Pages；你不用维护服务器，也不会被锁在某个 dashboard 里。
 
-**[英文示例](https://yuyangxueed.github.io/linnet_new/)** · **[中文示例](https://rasingue.github.io/linnet_new/)** · **[中文设置向导入口](https://yuyangxueed.github.io/Linnet/setup/zh/)** · **[English setup entry](https://yuyangxueed.github.io/Linnet/setup/)** · **[手动配置指南](dev_docs/manual-config.zh.md)**
+**[英文示例](https://yuyangxueed.github.io/Linnet)** · **[中文示例](https://rasingue.github.io/linnet_new/)** · **[中文设置向导入口](https://yuyangxueed.github.io/Linnet/setup/zh/)** · **[English setup entry](https://yuyangxueed.github.io/Linnet/setup/)** · **[手动配置指南](dev_docs/manual-config.zh.md)**
 
 > **克隆或从模板创建仓库后，先点这里**
 >
@@ -105,13 +105,13 @@ Linnet 会把生成的日、周、月归档保留在你的发布站点里，所�
 
 - Step 1-2 里的简报模式、来源选择与详细来源配置
 - Step 3 里的可选额外 secrets 和推送渠道
-- Step 4 里的 LLM provider、API key、模型选择，以及主题设置
+- Step 4 里的 LLM provider、API key、模型选择、日报运行时间，以及主题设置
 
 到了 Step 5，确认目标仓库后，点击 **部署到 GitHub**。
 
 现在默认的一键部署路径走的是 Linnet Bridge GitHub App，不再是 PAT。部署成功后，Linnet 会在背后完成这些事：
 
-- 以单次 commit 写入生成的配置文件
+- 以单次 commit 写入生成的配置文件和定制后的日报 workflow
 - 创建或更新所需的 GitHub Actions secrets
 - 启用 `daily.yml`、`weekly.yml`、`monthly.yml`、`pages.yml`
 - 配置 GitHub Pages 为 workflow 发布模式
@@ -209,7 +209,7 @@ sinks:
 - [`.github/workflows/weekly.yml`](.github/workflows/weekly.yml)
 - [`.github/workflows/monthly.yml`](.github/workflows/monthly.yml)
 
-GitHub Actions 的 cron 使用 UTC。默认日报会在工作日 `09:30 UTC` 运行，这样美股盘前信号会等纽约进入交易日后再生成。如果你想改运行时间，直接在你自己的仓库里改这些 cron。
+设置向导可以根据你的本地时间、固定 UTC offset，以及“工作日 / 每天”选择，自动生成日报 workflow 的时间。GitHub Actions 的 cron 本身仍然使用 UTC，所以生成的 `.github/workflows/daily.yml` 会包含换算后的 UTC cron。默认日报会在工作日 `09:30 UTC` 运行，这样美股盘前信号会等纽约进入交易日后再生成。如果你在夏令时地区，选择当前季节对应的 offset；之后也可以直接在自己的仓库里改 cron。
 
 ---
 
@@ -237,6 +237,15 @@ PYTHONPATH=. pytest tests/ -q
 ## 贡献代码，或让 AI agent 帮你做
 
 这个仓库对人类贡献者和 AI coding agents 都很友好。
+
+### 带上你自己的信息源
+
+Linnet 的扩展系统就是为了让大家把新的信息源教给它。如果一个来源有 URL、RSS、API，或者页面内容可以抓取，它大概率就能变成一个 briefing extension：基金申请、bioRxiv 论文、Product Hunt 新产品、会议 deadline、本地活动、实验室新闻，或者任何你总是忍不住反复查看的页面。
+
+- 从 [`extensions/_template/`](extensions/_template/) 和 [`extensions/README.md`](extensions/README.md) 里的扩展指南开始
+- 用 [`CONTRIBUTING.md`](CONTRIBUTING.md) 查看当前 package-based extension 流程
+- 在 [`docs/extension-ideas.md`](docs/extension-ideas.md) 里找适合新手 PR 的想法
+- 粗略想法可以先发到 [Discussions](https://github.com/YuyangXueEd/linnet/discussions)，范围明确后再变成 issue 或 PR
 
 如果你要改仓库代码或文档，先看：
 

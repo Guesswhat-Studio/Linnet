@@ -3,6 +3,11 @@ import { ARXIV_PROFILES } from '@/lib/arxivProfiles';
 import { createInitialState, DEFAULT_TOP_N, type WizardState } from './wizardState';
 import { buildGitHubCallPreview, parseRepoInput } from './githubDeploy.js';
 import {
+  buildDailySchedulePreview,
+  buildDailyWorkflowYaml,
+  normalizeDailySchedule,
+} from './schedule.js';
+import {
   buildCleanReturnTo,
   deployViaBridge,
   fetchBridgeSession,
@@ -715,6 +720,15 @@ function readState(state: WizardState): void {
     : [];
 
   // Schedule
+  const dailyTimeEl = qs<HTMLInputElement>('[data-daily-schedule-time]');
+  const dailyOffsetEl = qs<HTMLSelectElement>('[data-daily-schedule-offset]');
+  const dailyFrequencyEl = qs<HTMLSelectElement>('[data-daily-schedule-frequency]');
+  state.schedule.daily = normalizeDailySchedule({
+    time: dailyTimeEl?.value ?? state.schedule.daily.time,
+    utcOffsetMinutes: Number(dailyOffsetEl?.value ?? state.schedule.daily.utcOffsetMinutes),
+    frequency: dailyFrequencyEl?.value ?? state.schedule.daily.frequency,
+  }) as WizardState['schedule']['daily'];
+
   for (const key of state.selectedKeys) {
     const wEnabled = qs<HTMLInputElement>(`[data-schedule-weekly-enabled="${key}"]`);
     const wTopN    = qs<HTMLInputElement>(`[data-schedule-weekly-topn="${key}"]`);
@@ -897,6 +911,10 @@ export function initWizard(): void {
   const llmProviderNoteEl = qs<HTMLElement>('[data-llm-provider-note]', shell);
   const llmModelsLinkEl = qs<HTMLAnchorElement>('[data-llm-models-link]', shell);
   const llmBaseUrlRequiredMarkerEl = qs<HTMLElement>('[data-required-marker-for="llm-base-url"]', shell);
+  const dailyScheduleTimeInput = qs<HTMLInputElement>('[data-daily-schedule-time]', shell);
+  const dailyScheduleOffsetSelect = qs<HTMLSelectElement>('[data-daily-schedule-offset]', shell);
+  const dailyScheduleFrequencySelect = qs<HTMLSelectElement>('[data-daily-schedule-frequency]', shell);
+  const dailySchedulePreviewEl = qs<HTMLElement>('[data-daily-schedule-preview]', shell);
   const deployRepoInput = qs<HTMLInputElement>('[data-deploy-repo]', shell);
   const autoEnableActionsCheckbox = qs<HTMLInputElement>('[data-auto-enable-actions]', shell);
   const deploySubmitBtn = qs<HTMLButtonElement>('[data-deploy-submit]', shell);
@@ -1984,12 +2002,25 @@ export function initWizard(): void {
 
   // Ensure schedule state initialized for selected keys
   function ensureScheduleState(): void {
+    state.schedule.daily = normalizeDailySchedule(state.schedule.daily) as WizardState['schedule']['daily'];
     for (const key of state.selectedKeys) {
       if (!state.schedule.weekly[key]) {
         const ext = REGISTRY[key];
         state.schedule.weekly[key]  = { enabled: ext?.weeklyDefault ?? false, top_n: ext?.weeklyTopN ?? DEFAULT_TOP_N[key] ?? 5 };
         state.schedule.monthly[key] = { enabled: ext?.monthlyDefault ?? false, top_n: ext?.monthlyTopN ?? DEFAULT_TOP_N[key] ?? 5 };
       }
+    }
+  }
+
+  function syncDailySchedulePreview(): void {
+    state.schedule.daily = normalizeDailySchedule({
+      time: dailyScheduleTimeInput?.value ?? state.schedule.daily.time,
+      utcOffsetMinutes: Number(dailyScheduleOffsetSelect?.value ?? state.schedule.daily.utcOffsetMinutes),
+      frequency: dailyScheduleFrequencySelect?.value ?? state.schedule.daily.frequency,
+    }) as WizardState['schedule']['daily'];
+    if (dailyScheduleTimeInput) dailyScheduleTimeInput.value = state.schedule.daily.time;
+    if (dailySchedulePreviewEl) {
+      dailySchedulePreviewEl.textContent = buildDailySchedulePreview(state.schedule.daily, locale);
     }
   }
 
@@ -2121,6 +2152,11 @@ export function initWizard(): void {
         path: 'config/sources.yaml',
         desc: locale === 'zh' ? '主要开关、显示顺序、语言、汇总偏好和推送配置。' : 'Main switches, display order, language, rollup preferences, and sink config.',
         body: buildSourcesYaml(s),
+      },
+      {
+        path: '.github/workflows/daily.yml',
+        desc: locale === 'zh' ? '日报运行时间与 GitHub Actions pipeline。' : 'Daily run time and GitHub Actions pipeline.',
+        body: buildDailyWorkflowYaml(s.schedule.daily),
       },
     ];
 
@@ -2267,6 +2303,13 @@ export function initWizard(): void {
       renderDeployPreview();
     });
   });
+  const handleDailyScheduleChange = (): void => {
+    syncDailySchedulePreview();
+    renderDeployPreview();
+  };
+  dailyScheduleTimeInput?.addEventListener('input', handleDailyScheduleChange);
+  dailyScheduleOffsetSelect?.addEventListener('change', handleDailyScheduleChange);
+  dailyScheduleFrequencySelect?.addEventListener('change', handleDailyScheduleChange);
   llmScoringModelInput?.addEventListener('input', renderDeployPreview);
   llmSummarizationModelInput?.addEventListener('input', renderDeployPreview);
   autoEnableActionsCheckbox?.addEventListener('change', () => {
@@ -2528,6 +2571,7 @@ export function initWizard(): void {
   renderOrderList();
   renderBriefSelectionSummary();
   ensureScheduleState();
+  syncDailySchedulePreview();
   renderSetupMode();
   syncConfigPanels();
   syncScheduleRows();

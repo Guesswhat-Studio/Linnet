@@ -3,6 +3,12 @@ export interface SchedulePrefs {
   top_n: number;
 }
 
+export interface DailySchedulePrefs {
+  time: string;
+  utcOffsetMinutes: number;
+  frequency: 'weekdays' | 'daily';
+}
+
 export interface WizardState {
   currentStep: number;
   briefing: {
@@ -38,6 +44,7 @@ export interface WizardState {
     urls: string[];
   };
   schedule: {
+    daily: DailySchedulePrefs;
     weekly: Record<string, SchedulePrefs>;
     monthly: Record<string, SchedulePrefs>;
   };
@@ -101,7 +108,11 @@ export function createInitialState(): WizardState {
     hacker_news: { min_score: 100, max_items: 10 },
     postdoc_jobs: { search_terms: [], threshold: 6 },
     supervisor_updates: { urls: [] },
-    schedule: { weekly: {}, monthly: {} },
+    schedule: {
+      daily: { time: '09:30', utcOffsetMinutes: 0, frequency: 'weekdays' },
+      weekly: {},
+      monthly: {},
+    },
     global: { language: 'en' },
     sinks: {
       slack: { enabled: false, webhook: '', max_papers: 5, max_hn: 3, max_github: 3 },

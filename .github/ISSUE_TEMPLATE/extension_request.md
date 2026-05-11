@@ -6,6 +6,8 @@ labels: extension
 
 ## Data source
 
+<!-- For starter ideas, see docs/extension-ideas.md. -->
+
 **Name / URL:**
 
 **What it provides:**
@@ -30,6 +32,14 @@ labels: extension
 - [ ] Web scraping
 
 **Relevant docs / example URL:**
+
+**Example items that should appear in the briefing:**
+
+**Useful output fields:**
+
+<!-- For example: title, url, summary, deadline, score, source, tags. -->
+
+**Known rate limits / terms:**
 
 ## Config shape you expect
 

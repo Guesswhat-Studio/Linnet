@@ -1,109 +1,167 @@
 # Contributing to Linnet
 
-Contributions welcome — bug fixes, new extensions, new sinks, and documentation improvements.
+Contributions are welcome: bug fixes, new extensions, new sinks, setup polish,
+docs, examples, and workflow recipes all help.
+
+Linnet is built around one simple idea: if a useful source has a URL, RSS feed,
+API, or scrapeable page, the community should be able to teach Linnet how to
+turn it into a morning briefing section.
 
 ---
 
-## Adding a new extension (5 steps)
+## Good First Contributions
 
-An extension is a self-contained data source. It owns its full pipeline: **fetch → process → render**.
+Good starter contributions usually fit one of these shapes:
 
-### Step 1 — Create `extensions/my_source.py`
+- Add a fixture-backed parser test for an existing extension.
+- Add a small no-key extension backed by RSS, Atom, or a public JSON API.
+- Improve an extension's `meta.json` so it is clearer in the setup wizard.
+- Add a source preset to an existing extension.
+- Improve docs for a setup path you actually tried.
 
-```python
-from extensions.base import BaseExtension, FeedSection
+If you have an idea but are not ready to code it, open a Discussion or an
+extension request issue. See [`docs/extension-ideas.md`](docs/extension-ideas.md)
+for source ideas and the information that makes an idea easy to pick up.
 
+---
 
-class MySourceExtension(BaseExtension):
-    key = "my_source"    # must match the key in config/sources.yaml
-    title = "My Source"
+## Adding a New Extension
 
-    def fetch(self) -> list[dict]:
-        """Pull raw items from the data source. No LLM here."""
-        return [{"title": "Example", "url": "https://example.com"}]
+An extension is a self-contained data source. It owns its full pipeline:
 
-    def process(self, items: list[dict]) -> list[dict]:
-        """Optional: score, filter, or summarise items.
-
-        Available helpers:
-          self.llm     — OpenAI-compatible client (OpenRouter)
-          self.config  — your config slice from sources.yaml
-                         includes: language, llm_scoring_model, llm_summarization_model
-        """
-        lang = self.config.get("language", "en")
-        # call self.llm.chat.completions.create(...) if you need LLM summaries
-        return items
-
-    def render(self, items: list[dict]) -> FeedSection:
-        return FeedSection(key=self.key, title=self.title, items=items)
+```text
+fetch() -> process() -> render() -> FeedSection
 ```
 
-### Step 2 — Register in `extensions/__init__.py`
+### 1. Copy the package template
+
+```bash
+cp -r extensions/_template extensions/my_source
+```
+
+Use a lowercase `snake_case` directory name. The directory name, Python class
+`key`, `meta.json.key`, and `config/sources.yaml` key should all match.
+
+### 2. Implement the extension
+
+Open `extensions/my_source/__init__.py` and fill in:
+
+- `fetch()` - pull raw data. Do not call an LLM here.
+- `process()` - score, filter, or summarize. LLM calls are allowed here.
+- `render()` - package items into a `FeedSection`. Do not do network work here.
+
+Rules to preserve:
+
+- Keep the extension self-contained.
+- Read credentials from environment variables only.
+- Respect `self.config.get("dry_run")` before any LLM call.
+- Keep live-network behavior out of tests.
+
+### 3. Fill in metadata for the setup wizard
+
+Edit `extensions/my_source/meta.json`.
+
+This metadata powers the Astro setup wizard and public extension registry:
+
+- source picker title and description
+- setup fields
+- tags and category
+- default layout hints
+
+After editing metadata, refresh the generated registry:
+
+```bash
+cd astro
+npm run sync:extension-meta
+```
+
+### 4. Register and configure it
+
+Register the extension in `extensions/__init__.py`:
 
 ```python
 from extensions.my_source import MySourceExtension
 
 REGISTRY: list[type[BaseExtension]] = [
     ...,
-    MySourceExtension,   # add here
+    MySourceExtension,
 ]
 ```
 
-### Step 3 — Add a config block in `config/sources.yaml`
+Add a source block in `config/sources.yaml`:
 
 ```yaml
+display_order:
+  - my_source
+
 my_source:
-  enabled: true
-  # any extension-specific options go here
+  enabled: false
+  max_items: 10
 ```
 
-### Step 4 — Wire it into the orchestrator (`main.py`)
+If your extension needs filters, presets, or source-specific settings, add:
 
-In `_build_extension_configs()`, add a key matching `MySourceExtension.key`:
-
-```python
-"my_source": {**sources.get("my_source", {}), **llm},
+```yaml
+# config/extensions/my_source.yaml
+keywords:
+  - AI
+  - machine learning
 ```
 
-And in `run_daily()`, pass the items to `build_daily_payload()` (or just let the payload carry them via `sections`).
+`main.py` already merges `config/sources.yaml` with
+`config/extensions/{name}.yaml` for every registered extension, so new
+extensions do not need custom orchestrator wiring.
 
-### Step 5 — Add tests in `tests/`
+### 5. Add tests and docs
 
-At minimum, test your `fetch()` parsing logic with a fixture — no live network calls needed.
+At minimum:
+
+- Add `tests/test_my_source.py` with fixture-based parser/filter tests.
+- Update `extensions/my_source/README.md`.
+- Mention any required environment variables.
+- Run the relevant checks before opening a PR.
+
+Useful references:
+
+- [`extensions/README.md`](extensions/README.md)
+- [`extensions/_template/README.md`](extensions/_template/README.md)
+- [`extensions/arxiv/README.md`](extensions/arxiv/README.md)
 
 ---
 
-## Adding a new sink
+## Adding a New Sink
 
-A sink receives the fully built daily payload and delivers it to an external service.
+A sink receives the fully built payload and delivers it to another place, such
+as Slack, ServerChan, email, Discord, or Telegram.
+
+Create a package under `sinks/my_sink/`, subclass `BaseSink`, register it in
+`sinks/__init__.py`, and add non-secret config under `sinks:` in
+`config/sources.yaml`.
+
+Credentials must stay in environment variables or GitHub Actions secrets:
 
 ```python
-# sinks/my_sink.py
 import os
+
 from sinks.base import BaseSink
 
 
 class MySink(BaseSink):
-    key = "my_sink"   # matches sinks.my_sink in sources.yaml
+    key = "my_sink"
 
     def deliver(self, payload: dict) -> None:
-        """
-        payload keys: date, papers, hacker_news, jobs,
-                      github_trending, supervisor_updates, meta
-        Credentials: read from environment variables only — never from config files.
-        """
         api_key = os.environ.get("MY_SINK_API_KEY", "")
         if not api_key:
             raise EnvironmentError("MY_SINK_API_KEY is not set")
-        # ... send payload ...
+        # send payload
 ```
 
-Register in `sinks/__init__.py` and add a config block under `sinks:` in `sources.yaml`.
-Add the required credential as a GitHub secret and pass it in `.github/workflows/daily.yml`.
+Add the required secret to `.github/workflows/daily.yml` only as an environment
+variable reference. Do not commit secret values.
 
 ---
 
-## Development setup
+## Development Setup
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
@@ -111,20 +169,27 @@ pip install -r requirements.txt
 PYTHONPATH=. pytest tests/ -q
 ```
 
-Run the pipeline locally (requires `OPENROUTER_API_KEY`):
+Run the pipeline locally:
 
 ```bash
 export OPENROUTER_API_KEY=sk-or-...
 python main.py --mode daily
-python main.py --dry-run      # fetch only, no LLM calls
+python main.py --dry-run
 ```
+
+`--dry-run` fetches enabled sources but skips LLM calls, which is useful for
+checking collectors without spending API credits.
 
 ---
 
-## Guidelines
+## Pull Request Checklist
 
-- Keep extensions self-contained — no cross-extension imports.
-- Credentials only from environment variables, never hardcoded or in YAML.
-- Sink failures must not abort the pipeline (`deliver()` raises → caller logs and continues).
-- One extension per PR makes review easier.
-- Run `pytest` before opening a PR — all 53 tests must pass.
+- [ ] One extension or sink per PR when possible.
+- [ ] No credentials in YAML, docs, tests, or fixtures.
+- [ ] `fetch()` has no LLM calls.
+- [ ] `process()` respects `dry_run` before LLM calls.
+- [ ] `render()` has no network calls.
+- [ ] Tests use fixtures or monkeypatching instead of live APIs.
+- [ ] Extension metadata is synced if `meta.json` changed.
+- [ ] Relevant docs are updated.
+- [ ] `PYTHONPATH=. pytest tests/ -q` passes, or the PR explains the narrower check used.

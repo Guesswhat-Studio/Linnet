@@ -15,7 +15,7 @@
 
 After you create your own repo from this template, start with the setup wizard. It is now the main sign-in, GitHub authorization, and deployment entry point: choose the briefing shape you want, add your LLM key, and let Linnet prepare the repo handoff. The current self-hosted path uses GitHub Actions and Pages behind the scenes; you do not need to run a server or accept dashboard lock-in.
 
-**[English demo](https://yuyangxueed.github.io/linnet_new/)** · **[中文示例](https://rasingue.github.io/linnet_new/)** · **[Start setup in English](https://yuyangxueed.github.io/Linnet/setup/)** · **[用中文进入设置向导](https://yuyangxueed.github.io/Linnet/setup/zh/)** · **[Manual config guide](dev_docs/manual-config.md)**
+**[English demo](https://yuyangxueed.github.io/Linnet)** · **[中文示例](https://rasingue.github.io/linnet_new/)** · **[Start setup in English](https://yuyangxueed.github.io/Linnet/setup/)** · **[用中文进入设置向导](https://yuyangxueed.github.io/Linnet/setup/zh/)** · **[Manual config guide](dev_docs/manual-config.md)**
 
 > **Start here after creating your repo**
 > The setup page is now the main sign-in, GitHub authorization, and deployment flow for new users.
@@ -102,13 +102,13 @@ Then continue through the normal steps:
 
 - briefing mode, source selection, and source detail tuning in Steps 1-2
 - optional extra secrets and delivery channels in Step 3
-- LLM provider, API key, model choices, and theme controls in Step 4
+- LLM provider, API key, model choices, daily run time, and theme controls in Step 4
 
 In Step 5, choose your target repository and click **Deploy to GitHub**.
 
 The default one-click path uses the Linnet Bridge GitHub App flow, not a PAT. Behind the scenes, a successful deploy will:
 
-- write the generated config files in a single commit
+- write the generated config files and customized daily workflow in a single commit
 - create or update the needed GitHub Actions secrets
 - enable `daily.yml`, `weekly.yml`, `monthly.yml`, and `pages.yml`
 - configure GitHub Pages for workflow-based publishing
@@ -206,7 +206,7 @@ sinks:
 - [`.github/workflows/weekly.yml`](.github/workflows/weekly.yml)
 - [`.github/workflows/monthly.yml`](.github/workflows/monthly.yml)
 
-GitHub Actions cron uses UTC. The default daily run is `09:30 UTC` on weekdays so the US stock signal board runs after New York has rolled into the trading day. Edit those cron lines directly in your repo if you want different times.
+The setup wizard can generate the daily workflow schedule for you from a local time, fixed UTC offset, and weekday/every-day choice. GitHub Actions cron itself still runs in UTC, so the generated `.github/workflows/daily.yml` contains the converted UTC cron expression. The default daily run is `09:30 UTC` on weekdays so the US stock signal board runs after New York has rolled into the trading day. If you are in a daylight-saving region, choose the offset for the current season or edit the cron line later.
 
 ---
 
@@ -234,6 +234,15 @@ PYTHONPATH=. pytest tests/ -q
 ## Contributing or using AI agents
 
 This repo is friendly to both human contributors and AI coding agents.
+
+### Bring your own source
+
+Linnet is designed so people can teach it new sources. If a source has a URL, RSS feed, API, or scrapeable page, it can probably become a briefing extension: funding calls, bioRxiv papers, Product Hunt launches, conference deadlines, local events, lab news, or anything else you check too often.
+
+- Start from [`extensions/_template/`](extensions/_template/) and the extension guide in [`extensions/README.md`](extensions/README.md)
+- Use [`CONTRIBUTING.md`](CONTRIBUTING.md) for the current package-based extension flow
+- Browse starter ideas in [`docs/extension-ideas.md`](docs/extension-ideas.md)
+- Share rough ideas in [Discussions](https://github.com/YuyangXueEd/linnet/discussions), then turn scoped work into an issue or PR
 
 If you are modifying repo code or docs, start with:
 
