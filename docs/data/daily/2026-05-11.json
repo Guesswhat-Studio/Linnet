@@ -1,0 +1,1819 @@
+{
+  "date": "2026-05-11",
+  "generated_at": "2026-05-11T12:27:28.249199+00:00",
+  "sections_ordered": [
+    {
+      "key": "quote_of_day",
+      "payload_key": "quote_of_day",
+      "title": "Words for the Morning",
+      "icon": "✦",
+      "items": [
+        {
+          "quote": "Marriage is our last, best chance to grow up.",
+          "author": "Barth, Joseph",
+          "category": "marriage"
+        }
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "key": "weather",
+      "payload_key": "weather",
+      "title": "Weather",
+      "icon": "🌦️",
+      "items": [
+        {
+          "query": "London",
+          "label": "London, England, United Kingdom",
+          "resolved_name": "London",
+          "region": "England",
+          "country": "United Kingdom",
+          "latitude": 51.50853,
+          "longitude": -0.12574,
+          "timezone": "Europe/London",
+          "forecast_date": "2026-05-11",
+          "condition": "Light drizzle",
+          "weather_code": 51,
+          "temperature_c": 10.1,
+          "apparent_temperature_c": 7.0,
+          "temp_max_c": 11.8,
+          "temp_min_c": 5.1,
+          "humidity_pct": 64,
+          "wind_speed_kmh": 11.5,
+          "precipitation_probability_pct": 73,
+          "is_day": true,
+          "sunrise": "2026-05-11T05:14",
+          "sunset": "2026-05-11T20:39",
+          "source": "Open-Meteo",
+          "source_url": "https://open-meteo.com/"
+        }
+      ],
+      "meta": {
+        "count": 1,
+        "city": "London"
+      }
+    },
+    {
+      "key": "arxiv",
+      "payload_key": "papers",
+      "title": "arXiv Papers",
+      "icon": "📄",
+      "items": [
+        {
+          "id": "2605.07926v1",
+          "title": "AgentEscapeBench: Evaluating Out-of-Domain Tool-Grounded Reasoning in LLM Agents",
+          "authors": [
+            "Zhengkang Guo",
+            "Yiyang Li",
+            "Lin Qiu",
+            "Xiaohua Wang",
+            "Jingwen Xv"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces AgentEscapeBench, a novel benchmark designed to evaluate LLM agents' ability to perform out-of-domain, tool-grounded reasoning with long-range dependencies. The benchmark uses escape-room-style tasks requiring agents to infer and execute complex tool-use procedures, demonstrating a significant performance drop for both humans and LLMs as dependency depth increases. AgentEscapeBench's core contribution is providing a challenging, automated evaluation for robust agent reasoning beyond simple tool interactions.",
+          "url": "http://arxiv.org/abs/2605.07926v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.07926v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.07926v1/x1.png",
+          "figure_caption": "Conceptual illustration of AgentEscapeBench. The agent is placed in a themed escape room populated with unfamiliar tools and hidden items. It must explore the environment, invoke tools with correct parameters derived from narrative clues, and propagate intermediate outputs through a multi-step dependency chain to unlock the final exit.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.08037v1",
+          "title": "Beyond Pairs: Your Language Model is Secretly Optimizing a Preference Graph",
+          "authors": [
+            "Ning Liu",
+            "Chuanneng Sun",
+            "Kristina Klinkner",
+            "Shervin Malmasi"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces GraphDPO, a generalization of Direct Preference Optimization (DPO) that handles preference data structured as graphs, rather than just pairs. By optimizing a graph-structured objective, GraphDPO leverages richer preference information, enforces transitivity, and avoids issues arising from collapsing multi-rollout data into independent pairs. This approach offers a more robust and comprehensive method for aligning language models with human preferences.",
+          "url": "http://arxiv.org/abs/2605.08037v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.08037v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.08037v1/x1.png",
+          "figure_caption": "GraphDPO pipeline for LLM alignment. For each prompt, the policy samples K K rollouts, which are grouped into equivalence classes according to preference signals. These classes induce a DAG structure whose edges encode dominance relations between groups, with an optional ground-truth node as a global anchor. Equivalence-class masking removes intra-group comparisons so that each response is contrasted only with strictly worse groups via a local Plackett–Luce loss. The resulting losses are aggregated over the graph to update the policy while enforcing transitive preference structure.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.08060v1",
+          "title": "The Memory Curse: How Expanded Recall Erodes Cooperative Intent in LLM Agents",
+          "authors": [
+            "Jiayuan Liu",
+            "Tianqin Li",
+            "Shiyi Du",
+            "Xin Luo",
+            "Haoxuan Zeng"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.GT",
+            "cs.MA"
+          ],
+          "abstract": "This paper introduces the \"memory curse,\" demonstrating that expanding LLM agents' context windows can paradoxically *decrease* cooperation in multi-agent social dilemmas. The core method involves extensive testing across various LLMs and games, revealing that increased memory leads to a decline in forward-looking cooperative intent. The key contribution is identifying this mechanism and showing that targeted fine-tuning on forward-looking reasoning or sanitizing memory content can restore cooperative behavior.",
+          "url": "http://arxiv.org/abs/2605.08060v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.08060v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.08060v1/x1.png",
+          "figure_caption": "Schematic of repeated social dilemma interactions between two LLM agents with shared memory.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.07990v1",
+          "title": "Tool Calling is Linearly Readable and Steerable in Language Models",
+          "authors": [
+            "Zekun Wu",
+            "Ze Wang",
+            "Seonglae Cho",
+            "Yufei Yang",
+            "Adriano Koshiyama"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL",
+            "cs.SE"
+          ],
+          "abstract": "This paper demonstrates that language models' tool-calling decisions are linearly encoded within their internal activations. By manipulating the difference in average activations between tool representations, researchers can reliably steer the model to select a different tool. This discovery also allows for pre-execution error detection, as small activation gaps between competing tools predict a higher likelihood of incorrect tool selection.",
+          "url": "http://arxiv.org/abs/2605.07990v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.07990v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.07990v1/figures/fig1_hero_final.png",
+          "figure_caption": "Overview of the three-stage circuit and steering demonstration. Adding a mean-difference vector redirects tool selection and automatically restructures arguments. Validated across 12 IT models in 3 families (Gemma 3, Qwen 3 / Qwen 2.5, Llama 3.1; 270M–27B).",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.07840v1",
+          "title": "RelAgent: LLM Agents as Data Scientists for Relational Learning",
+          "authors": [
+            "Xingyue Huang",
+            "Louis Tichelman",
+            "Jinwoo Kim",
+            "Krzysztof Olejniczak",
+            "İsmail İlkan Ceylan"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "abstract": "RelAgent is an LLM-based autonomous data scientist for relational learning. It first uses LLM agents with workspace tools to automatically generate SQL feature programs and select a predictive model. The contribution is a two-phase approach that results in fast, interpretable, and scalable predictors composed of SQL queries and classical models, avoiding further LLM calls during inference.",
+          "url": "http://arxiv.org/abs/2605.07840v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.07840v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.07840v1/figures/MethodOverview.jpeg",
+          "figure_caption": "RelAgent . During the search phase, an LLM agent iteratively proposes and refines a feature program consisting of SQL feature queries { q 1 , … , q n } \\{q_{1},\\( \\dots \\),q_{n}\\} and a predictive model configuration \\( \\varphi \\) to solve a given task. The agent uses three tools: (1) database exploration via read-only SQL exploration queries, (2) program validation by executing candidate programs on a validation set and receiving performance metrics, and (3) inspection of past trials in the Evaluation Workspace via evaluation queries. Once a final program is selected, the agent is no longer needed at inference time.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2605.07982v1",
+          "title": "GLiGuard: Schema-Conditioned Classification for LLM Safeguard",
+          "authors": [
+            "Urchade Zaratiana",
+            "Mary Newhauser",
+            "George Hurn-Maloney",
+            "Ash Lewis"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.CR"
+          ],
+          "abstract": "GLiGuard reformulates LLM content moderation as a classification problem, moving away from slow, generation-based guardrails. Its core method uses a small, schema-conditioned bidirectional encoder to process task definitions and label semantics directly as structured tokens. This allows for efficient, simultaneous evaluation of multiple safety dimensions in a single pass, significantly improving scalability and reducing latency.",
+          "url": "http://arxiv.org/abs/2605.07982v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.07982v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.07982v1/x1.png",
+          "figure_caption": "GLiGuard multi-task moderation overview. Given a text (prompt or response) and a user-specified task schema, GLiGuard produces predictions for all selected tasks in a single forward pass.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2605.07933v1",
+          "title": "How to Train Your Latent Diffusion Language Model Jointly With the Latent Space",
+          "authors": [
+            "Viacheslav Meshchaninov",
+            "Alexander Shabalin",
+            "Egor Chimbulatov",
+            "Nikita Gushchin",
+            "Ilya Koziev"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces the Latent Diffusion Language Model (LDLM), which jointly trains an encoder, diffusion model, and decoder for non-autoregressive text generation. The core method involves reshaping pre-trained language model representations into a latent space suitable for denoising and decoding. The key contribution is a novel training recipe that overcomes challenges in naive joint training, leading to improved generation quality on benchmark datasets.",
+          "url": "http://arxiv.org/abs/2605.07933v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.07933v1",
+          "score": 9.0,
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2605.07925v1",
+          "title": "How Value Induction Reshapes LLM Behaviour",
+          "authors": [
+            "Arnav Arora",
+            "Natalie Schluter",
+            "Katherine Metcalf",
+            "Maartje ter Hoeve"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper investigates how fine-tuning Large Language Models (LLMs) with specific values impacts their behavior. The core method involves fine-tuning models on curated value subsets and measuring changes in other value expressions, safety, and performance. The key contribution is demonstrating that value induction can lead to unintended consequences, such as the expression of unrelated or even contrasting values, and potentially make models more addictive or sycophantic.",
+          "url": "http://arxiv.org/abs/2605.07925v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.07925v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.07925v1/figures/Value_Training_effects.png",
+          "figure_caption": "Overview of our value-training effects framework. We create value-specific models using existing preference datasets and our value induction approach. We then evaluate the value models for several behaviours using corresponding datasets.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2605.07830v1",
+          "title": "CyBiasBench: Benchmarking Bias in LLM Agents for Cyber-Attack Scenarios",
+          "authors": [
+            "Taein Lim",
+            "Seongyong Ju",
+            "Munhyeok Kim",
+            "Hyunjun Kim",
+            "Hoki Kim"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CR"
+          ],
+          "abstract": "This paper introduces CyBiasBench, a benchmark designed to quantify attack-selection bias in LLM agents used for cybersecurity. The core method involves evaluating five LLM agents across various scenarios to reveal their tendency to disproportionately focus on specific attack families, independent of prompt variations. The main contribution is the identification and characterization of this \"attack-selection bias\" as an inherent agent trait, demonstrating that LLM agents exhibit distinct and persistent preferences in their offensive strategies.",
+          "url": "http://arxiv.org/abs/2605.07830v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.07830v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.07830v1/x1.png",
+          "figure_caption": "Attack-Selection Bias of LLM Agents. To illustrate attack-selection bias, we measure per-agent average selection rates across the bias observation setting (solid line) and compare them with the corresponding attack success rates (dashed line). The results reveal clear biases in agent behavior.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.08063v1",
+          "title": "Flow-OPD: On-Policy Distillation for Flow Matching Models",
+          "authors": [
+            "Zhen Fang",
+            "Wenxuan Huang",
+            "Yu Zeng",
+            "Yiming Zhao",
+            "Shuang Chen"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CV"
+          ],
+          "abstract": "Flow-OPD addresses bottlenecks in multi-task flow matching models by using on-policy distillation. It first trains specialized \"teacher\" models for individual tasks, then distills their expertise into a single \"student\" model through a novel two-stage alignment process. This approach aims to overcome reward sparsity and gradient interference, leading to improved performance across multiple objectives.",
+          "url": "http://arxiv.org/abs/2605.08063v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.08063v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.08063v1/x1.png",
+          "figure_caption": "Performance Comparison in Multi-task Training . During training, Flow-OPD exhibits a steady increase in mean rewards across GenEval Ghosh et al. ( 2023 ) and OCR Chen et al. ( 2023 ) benchmarks, reaching a peak of 93. In contrast, vanilla GRPO converges prematurely around 78. Our approach significantly outperforms GRPO in both image synthesis and text rendering while maintaining superior generation quality and human preference alignment. The curves are smoothed for visual clarity. DeQA and PickScore are norm to 0-1. We employ model merging for cold-start in the left subgraph.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.07865v1",
+          "title": "KL for a KL: On-Policy Distillation with Control Variate Baseline",
+          "authors": [
+            "Minjae Oh",
+            "Sangjun Song",
+            "Gyubin Choi",
+            "Yunho Choi",
+            "Yohan Jo"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces vOPD, a method to stabilize On-Policy Distillation (OPD) for large language models. It achieves this by framing OPD as policy-gradient reinforcement learning and incorporating a control variate baseline, specifically a value function. The key contribution is that this value function has a closed-form solution derived from the student and teacher models' existing forward pass, avoiding the computational overhead of previous stabilization techniques.",
+          "url": "http://arxiv.org/abs/2605.07865v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.07865v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.07865v1/x1.png",
+          "figure_caption": "Token-level reward and advantage distributions. Left: The marginal distributions. Right: Per-token scatter plot (x: advantage, y: reward).",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.08013v1",
+          "title": "Learning CLI Agents with Structured Action Credit under Selective Observation",
+          "authors": [
+            "Haoyang Su",
+            "Ying Wen"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces a novel approach for training command-line interface (CLI) agents by leveraging the inherent structure of CLI actions. To address challenges of partial observation and sparse rewards, it proposes $σ$-Reveal to selectively extract relevant context and Action Advantage Assignment to better attribute credit to actions within long interaction sequences. The core contribution lies in using structured action information as a learning signal, improving agent performance on complex CLI tasks.",
+          "url": "http://arxiv.org/abs/2605.08013v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.08013v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.08013v1/x1.png",
+          "figure_caption": "Overview of the verifiable CLI task workflow. (a) ShellOps task instance with a natural language query, an initial workspace file tree, a verifiable gold bash solution, and the expected post execution workspace or standard output. (b) ShellOps and ShellOps-Pro coverage across file extensions and four task axes (Lookup, Aggregate, Edit, Mixed). (c) Unified verifiable loop with workspace observation, shell action generation, sandbox execution, and schema based scoring.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.08019v1",
+          "title": "Reason to Play: Behavioral and Brain Alignment Between Frontier LRMs and Human Game Learners",
+          "authors": [
+            "Botos Csaba",
+            "Sreejan Kumar",
+            "Austin Tudor David Andrews",
+            "Laurence Hunt",
+            "Chris Summerfield"
+          ],
+          "categories": [
+            "cs.AI",
+            "q-bio.NC"
+          ],
+          "abstract": "This paper investigates whether advanced Large Reasoning Models (LRMs) can replicate human learning and planning in novel video games. By analyzing human gameplay with fMRI data, the study finds that LRMs better match human learning behaviors and predict brain activity compared to reinforcement learning agents. This suggests LRMs exhibit a more human-like approach to acquiring and applying abstract knowledge in complex environments.",
+          "url": "http://arxiv.org/abs/2605.08019v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.08019v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.08019v1/x1.png",
+          "figure_caption": "VGDL game paradigm. (A) Games are defined by combining game rules with map layouts to produce interactive environments. (B) Example Trial Structure of VGDL-fMRI Dataset. Color denotes game names: ( Bait , Chase , Helper , Lemmings , Plaque Attack , Zelda ). All participants played the same level progression structure with randomized game order. The subsequent levels reveal new rules incrementally. The Interactive Catalogue A lets readers try each game in the browser and browse all participant and LRM agent gameplay replays. Project page: https://botcs.github.io/reason-to-play/",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.07935v1",
+          "title": "TraceFix: Repairing Agent Coordination Protocols with TLA+ Counterexamples",
+          "authors": [
+            "Shuren Xia",
+            "Qiwei Li",
+            "Taqiya Ehsan",
+            "Jorge Ortiz"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "TraceFix is a verification-first pipeline that uses TLA+ model checking to automatically repair LLM multi-agent coordination protocols. An LLM agent synthesizes a protocol, generates TLA+ logic, and iteratively refines it using counterexamples until verified. This verified protocol is then compiled into system prompts, ensuring robust and efficient agent coordination.",
+          "url": "http://arxiv.org/abs/2605.07935v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.07935v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.07935v1/figures/fig_tracefix_pipeline3.png",
+          "figure_caption": "Figure 1. TraceFix pipeline overview. At design time (Stages 1–4), an orchestration agent synthesizes a protocol topology IR, generates PlusCal coordination logic, and iteratively repairs the protocol using TLC counterexamples until verification succeeds. At runtime (Stages 5–6), verified process bodies are compiled into per-agent prompts and executed under a topology monitor that rejects out-of-protocol coordination operations.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.07863v1",
+          "title": "ADKO: Agentic Decentralized Knowledge Optimization",
+          "authors": [
+            "Lucas Nerone Rillo",
+            "Zhanhong Jiang",
+            "Nastaran Saadati",
+            "Aditya Balu",
+            "Baskar Ganapathysubramanian"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "abstract": "ADKO is a framework for collaborative black-box optimization among autonomous agents. Its core method involves each agent maintaining a private Gaussian Process surrogate and communicating only through \"knowledge tokens,\" which are compressed summaries of their findings. This approach achieves sample efficiency, privacy, and handles diverse objectives by avoiding raw data sharing, while its contribution lies in the formal analysis of information loss from token compression and language model approximation.",
+          "url": "http://arxiv.org/abs/2605.07863v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.07863v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.07863v1/Figures/lab_figure.png",
+          "figure_caption": "Illustrative example of decentralized knowledge transfer in ADKO for heterogeneous chemical optimization. Agents operating under different solvent constraints exchange only privacy-aware knowledge tokens rather than raw experimental data. The example shows how a high-yield reaction discovered by one agent is semantically transferred and refined by neighboring agents through LM-guided reasoning and token-based communication, enabling strategic collaboration that outperforms blind exploration while preserving data privacy.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2605.07961v1",
+          "title": "Graph Representation Learning Augmented Model Manipulation on Federated Fine-Tuning of LLMs",
+          "authors": [
+            "Hanlin Cai",
+            "Kai Li",
+            "Houtianfu Wang",
+            "Haofan Dong",
+            "Yichen Li"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.CR",
+            "cs.NI"
+          ],
+          "abstract": "This paper proposes an Augmented Model Manipulation (AugMP) strategy to attack federated fine-tuning (FFT) of LLMs. The core method uses graph representation learning to understand benign model updates and generate more effective and stealthy malicious updates. The contribution is a novel attack that leverages these insights to corrupt the global LLM during collaborative fine-tuning.",
+          "url": "http://arxiv.org/abs/2605.07961v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.07961v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.07961v1/x1.png",
+          "figure_caption": "(a) Benign training process of the FedLLMs system, and (b) impact of the adversary on the FedLLMs training process.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2605.07977v1",
+          "title": "Self-Play Enhancement via Advantage-Weighted Refinement in Online Federated LLM Fine-Tuning with Real-Time Feedback",
+          "authors": [
+            "Seohyun Lee",
+            "Wenzhi Fang",
+            "Dong-Jun Han",
+            "Seyyedali Hosseinalipour",
+            "Christopher G. Brinton"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces SPEAR, an online federated learning algorithm for LLMs that enhances self-play. SPEAR leverages real-time user feedback to create advantage-weighted contrastive pairs, enabling efficient fine-tuning on resource-constrained edge devices without requiring privileged ground-truth data. Its core contribution is enabling continuous self-improvement of LLMs in a federated setting by effectively utilizing natural feedback loops.",
+          "url": "http://arxiv.org/abs/2605.07977v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.07977v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.07977v1/x1.png",
+          "figure_caption": "The two phases of the SPEAR algorithm. Firstly, the model interacts with an incoming feedback source (e.g., a user) to correct incorrect generations. After the interaction phase, it categorizes the samples into wins and losses, which are then used to train a standard MLE and unlikelihood objective. This two-stage process repeats at each federated round t t for each client selected for aggregation.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2605.07937v1",
+          "title": "Ask Early, Ask Late, Ask Right: When Does Clarification Timing Matter for Long-Horizon Agents?",
+          "authors": [
+            "Anmol Gulati",
+            "Hariom Gupta",
+            "Elias Lumer",
+            "Sahil Sen",
+            "Vamse Kumar Subbiah"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper investigates when clarification is most valuable for long-horizon AI agents. They introduce a framework to inject clarifications at different stages of execution and find that the optimal timing depends on the type of missing information. Specifically, goal clarifications are most effective early on, while input clarifications remain valuable throughout the agent's task.",
+          "url": "http://arxiv.org/abs/2605.07937v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.07937v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.07937v1/figures/fig1_overview_candidate_8.png",
+          "figure_caption": "Overview of the forced-injection experimental framework. We inject ground-truth clarifications at controlled points along an oracle-calibrated action budget, measuring task success (pass@3) at each injection timing across four information dimensions.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2605.07883v1",
+          "title": "Beyond \"I cannot fulfill this request\": Alleviating Rigid Rejection in LLMs via Label Enhancement",
+          "authors": [
+            "Ying Zhang",
+            "Congyu Qiao",
+            "Xin Geng",
+            "Ning Xu"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces LANCE, a method to reduce \"rigid rejection\" in LLMs by enhancing safety labels. LANCE uses variational inference to predict a continuous distribution of rejection categories, providing nuanced gradients that allow LLMs to neutralize harmful prompt elements and generate safer, more natural responses instead of generic refusals.",
+          "url": "http://arxiv.org/abs/2605.07883v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.07883v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.07883v1/x1.png",
+          "figure_caption": "Rigid refusal examples.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2605.08083v1",
+          "title": "LLMs Improving LLMs: Agentic Discovery for Test-Time Scaling",
+          "authors": [
+            "Tong Zheng",
+            "Haolin Liu",
+            "Chengsong Huang",
+            "Huiwen Bao",
+            "Sheng Zhang"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces AutoTTS, a framework that uses an agentic approach to automatically discover optimal test-time scaling (TTS) strategies for large language models. Instead of manual tuning, AutoTTS creates environments where TTS strategies can be learned efficiently by synthesizing controllers that decide how to allocate computation during inference, based on cheap feedback signals. This allows for a more comprehensive exploration of the computation-allocation space, leading to improved LLM performance.",
+          "url": "http://arxiv.org/abs/2605.08083v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.08083v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.08083v1/x1.png",
+          "figure_caption": "Overview of our Auto-TTS framework. Unlike the traditional workflow of manually designing TTS strategies, Auto-TTS shifts the human role from directly hand-crafting branching, pruning, and stopping heuristics to constructing environments by defining states, actions, feedback, and objectives. Given the constructed environment, an explorer LLM iteratively proposes candidate controllers, evaluates them in the offline replay environment, receives feedback from scaling curves and execution traces, and uses the accumulated history to refine future proposals. The right panel shows an example evaluation on Qwen-1.7B and AIME25, where the discovered controller improves the accuracy–cost Pareto frontier over hand-crafted baselines with an affordable one-time search cost.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        }
+      ],
+      "meta": {
+        "papers_fetched": 100,
+        "papers_after_keyword_filter": 35,
+        "papers_after_llm_filter": 26,
+        "count": 20
+      }
+    },
+    {
+      "key": "hacker_news",
+      "payload_key": "hacker_news",
+      "title": "Hacker News",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": 48085821,
+          "title": "Local AI needs to be the norm",
+          "url": "https://unix.foo/posts/local-ai-needs-to-be-norm/",
+          "score": 1299,
+          "created_at": "2026-05-10T17:19:28Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48085821",
+          "summary": "The article argues that local AI, running on user devices, should become the standard for privacy, security, and user control, rather than relying on cloud-based solutions."
+        },
+        {
+          "id": 48088151,
+          "title": "Maryland citizens hit with $2B power grid upgrade for out-of-state AI",
+          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/maryland-citizens-slapped-with-usd2-billion-grid-upgrade-bill-for-out-of-state-ai-data-centers-state-complains-to-federal-energy-regulators-says-additional-cost-breaks-ratepayer-protection-pledge-promises",
+          "score": 270,
+          "created_at": "2026-05-10T21:16:58Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48088151",
+          "summary": "Maryland residents face a $2 billion power grid upgrade bill, primarily to support out-of-state AI data centers, prompting state officials to complain to federal regulators about broken ratepayer protection promises."
+        },
+        {
+          "id": 48089289,
+          "title": "An AI coding agent, used to write code, needs to reduce your maintenance costs",
+          "url": "https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs",
+          "score": 209,
+          "created_at": "2026-05-10T23:39:55Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48089289",
+          "summary": "AI coding agents should prioritize reducing software maintenance costs by generating more maintainable and understandable code, not just faster code."
+        },
+        {
+          "id": 48089263,
+          "title": "PS3 Emulator Devs Politely Ask That People Stop Flooding It with AI PRs",
+          "url": "https://kotaku.com/playstation-3-emulator-devs-politely-ask-that-people-stop-flooding-it-with-ai-code-pull-requests-2000694656",
+          "score": 167,
+          "created_at": "2026-05-10T23:36:48Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48089263",
+          "summary": "PS3 emulator developers are requesting that people stop submitting AI-generated code pull requests, as they are not useful and disrupt the development process."
+        },
+        {
+          "id": 48084710,
+          "title": "Chrome's AI features may be hogging 4GB of your computer storage",
+          "url": "https://www.theverge.com/tech/924933/google-chrome-4gb-gemini-nano-ai-features",
+          "score": 110,
+          "created_at": "2026-05-10T15:22:46Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48084710",
+          "summary": "Google Chrome's new AI features, potentially including Gemini Nano, are reportedly consuming up to 4GB of computer storage."
+        }
+      ],
+      "meta": {
+        "count": 5
+      }
+    },
+    {
+      "key": "github_trending",
+      "payload_key": "github_trending",
+      "title": "GitHub Trending",
+      "icon": "⭐",
+      "items": [
+        {
+          "full_name": "bytedance/UI-TARS-desktop",
+          "url": "https://github.com/bytedance/UI-TARS-desktop",
+          "description": "The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra",
+          "stars_today": 669,
+          "total_stars": 32689,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "UI-TARS-Desktop is an open-source multimodal AI agent stack that connects cutting-edge AI models with agent infrastructure, enabling the creation and deployment of advanced AI agents."
+        },
+        {
+          "full_name": "CloakHQ/CloakBrowser",
+          "url": "https://github.com/CloakHQ/CloakBrowser",
+          "description": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.",
+          "stars_today": 496,
+          "total_stars": 5491,
+          "language": "Python",
+          "topics": [],
+          "summary": "CloakBrowser is a stealthy Chromium browser designed to bypass bot detection, functioning as a drop-in Playwright replacement with source-level fingerprint patches that pass all tests."
+        },
+        {
+          "full_name": "yikart/AiToEarn",
+          "url": "https://github.com/yikart/AiToEarn",
+          "description": "Let's use AI to Earn!",
+          "stars_today": 397,
+          "total_stars": 10256,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "This repository, AiToEarn, aims to leverage Artificial Intelligence to create opportunities for users to earn money."
+        },
+        {
+          "full_name": "playcanvas/supersplat",
+          "url": "https://github.com/playcanvas/supersplat",
+          "description": "3D Gaussian Splat Editor",
+          "stars_today": 579,
+          "total_stars": 7071,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "This repository provides a 3D Gaussian Splatting editor, enabling users to create, edit, and visualize Gaussian splat scenes directly in a web browser."
+        },
+        {
+          "full_name": "datawhalechina/easy-vibe",
+          "url": "https://github.com/datawhalechina/easy-vibe",
+          "description": "💻 vibe coding 2026 | Your first modern Coding course for beginners to master step by step.",
+          "stars_today": 635,
+          "total_stars": 9628,
+          "language": "JavaScript",
+          "topics": [],
+          "summary": "Easy-Vibe is a modern coding course designed for beginners, offering a step-by-step approach to mastering programming fundamentals."
+        },
+        {
+          "full_name": "decolua/9router",
+          "url": "https://github.com/decolua/9router",
+          "description": "Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits.",
+          "stars_today": 803,
+          "total_stars": 7837,
+          "language": "JavaScript",
+          "topics": [],
+          "summary": "9router provides unlimited free AI coding by connecting various AI models and providers with features like auto-fallback and token reduction to avoid usage limits."
+        },
+        {
+          "full_name": "tinyhumansai/openhuman",
+          "url": "https://github.com/tinyhumansai/openhuman",
+          "description": "Your Personal AI super intelligence. Private, Simple and extremely powerful.",
+          "stars_today": 154,
+          "total_stars": 974,
+          "language": "Rust",
+          "topics": [],
+          "summary": "OpenHuman is a personal AI superintelligence designed for private, simple, and powerful use, acting as your individual AI assistant."
+        },
+        {
+          "full_name": "millionco/react-doctor",
+          "url": "https://github.com/millionco/react-doctor",
+          "description": "Your agent writes bad React. This catches it",
+          "stars_today": 312,
+          "total_stars": 7656,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "This repository provides a tool that acts as an agent to identify and flag poorly written React code, helping developers improve their code quality."
+        },
+        {
+          "full_name": "Lordog/dive-into-llms",
+          "url": "https://github.com/Lordog/dive-into-llms",
+          "description": "《动手学大模型Dive into LLMs》系列编程实践教程",
+          "stars_today": 373,
+          "total_stars": 37137,
+          "language": "Jupyter Notebook",
+          "topics": [],
+          "summary": "This repository provides a hands-on programming tutorial series, \"Dive into LLMs,\" designed to teach practical skills for working with large language models."
+        }
+      ],
+      "meta": {
+        "count": 9
+      }
+    }
+  ],
+  "meta": {
+    "papers_fetched": 100,
+    "papers_after_keyword_filter": 35,
+    "papers_after_llm_filter": 26,
+    "llm_model": "google/gemini-2.5-flash-lite",
+    "scoring_model": "google/gemini-2.5-flash-lite",
+    "summarization_model": "google/gemini-2.5-flash-lite",
+    "duration_seconds": 47
+  },
+  "quote_of_day": [
+    {
+      "quote": "Marriage is our last, best chance to grow up.",
+      "author": "Barth, Joseph",
+      "category": "marriage"
+    }
+  ],
+  "hitokoto": [],
+  "arxiv": [
+    {
+      "id": "2605.07926v1",
+      "title": "AgentEscapeBench: Evaluating Out-of-Domain Tool-Grounded Reasoning in LLM Agents",
+      "authors": [
+        "Zhengkang Guo",
+        "Yiyang Li",
+        "Lin Qiu",
+        "Xiaohua Wang",
+        "Jingwen Xv"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces AgentEscapeBench, a novel benchmark designed to evaluate LLM agents' ability to perform out-of-domain, tool-grounded reasoning with long-range dependencies. The benchmark uses escape-room-style tasks requiring agents to infer and execute complex tool-use procedures, demonstrating a significant performance drop for both humans and LLMs as dependency depth increases. AgentEscapeBench's core contribution is providing a challenging, automated evaluation for robust agent reasoning beyond simple tool interactions.",
+      "url": "http://arxiv.org/abs/2605.07926v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07926v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.07926v1/x1.png",
+      "figure_caption": "Conceptual illustration of AgentEscapeBench. The agent is placed in a themed escape room populated with unfamiliar tools and hidden items. It must explore the environment, invoke tools with correct parameters derived from narrative clues, and propagate intermediate outputs through a multi-step dependency chain to unlock the final exit.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.08037v1",
+      "title": "Beyond Pairs: Your Language Model is Secretly Optimizing a Preference Graph",
+      "authors": [
+        "Ning Liu",
+        "Chuanneng Sun",
+        "Kristina Klinkner",
+        "Shervin Malmasi"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces GraphDPO, a generalization of Direct Preference Optimization (DPO) that handles preference data structured as graphs, rather than just pairs. By optimizing a graph-structured objective, GraphDPO leverages richer preference information, enforces transitivity, and avoids issues arising from collapsing multi-rollout data into independent pairs. This approach offers a more robust and comprehensive method for aligning language models with human preferences.",
+      "url": "http://arxiv.org/abs/2605.08037v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.08037v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.08037v1/x1.png",
+      "figure_caption": "GraphDPO pipeline for LLM alignment. For each prompt, the policy samples K K rollouts, which are grouped into equivalence classes according to preference signals. These classes induce a DAG structure whose edges encode dominance relations between groups, with an optional ground-truth node as a global anchor. Equivalence-class masking removes intra-group comparisons so that each response is contrasted only with strictly worse groups via a local Plackett–Luce loss. The resulting losses are aggregated over the graph to update the policy while enforcing transitive preference structure.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.08060v1",
+      "title": "The Memory Curse: How Expanded Recall Erodes Cooperative Intent in LLM Agents",
+      "authors": [
+        "Jiayuan Liu",
+        "Tianqin Li",
+        "Shiyi Du",
+        "Xin Luo",
+        "Haoxuan Zeng"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.GT",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces the \"memory curse,\" demonstrating that expanding LLM agents' context windows can paradoxically *decrease* cooperation in multi-agent social dilemmas. The core method involves extensive testing across various LLMs and games, revealing that increased memory leads to a decline in forward-looking cooperative intent. The key contribution is identifying this mechanism and showing that targeted fine-tuning on forward-looking reasoning or sanitizing memory content can restore cooperative behavior.",
+      "url": "http://arxiv.org/abs/2605.08060v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.08060v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.08060v1/x1.png",
+      "figure_caption": "Schematic of repeated social dilemma interactions between two LLM agents with shared memory.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.07990v1",
+      "title": "Tool Calling is Linearly Readable and Steerable in Language Models",
+      "authors": [
+        "Zekun Wu",
+        "Ze Wang",
+        "Seonglae Cho",
+        "Yufei Yang",
+        "Adriano Koshiyama"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL",
+        "cs.SE"
+      ],
+      "abstract": "This paper demonstrates that language models' tool-calling decisions are linearly encoded within their internal activations. By manipulating the difference in average activations between tool representations, researchers can reliably steer the model to select a different tool. This discovery also allows for pre-execution error detection, as small activation gaps between competing tools predict a higher likelihood of incorrect tool selection.",
+      "url": "http://arxiv.org/abs/2605.07990v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07990v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.07990v1/figures/fig1_hero_final.png",
+      "figure_caption": "Overview of the three-stage circuit and steering demonstration. Adding a mean-difference vector redirects tool selection and automatically restructures arguments. Validated across 12 IT models in 3 families (Gemma 3, Qwen 3 / Qwen 2.5, Llama 3.1; 270M–27B).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.07840v1",
+      "title": "RelAgent: LLM Agents as Data Scientists for Relational Learning",
+      "authors": [
+        "Xingyue Huang",
+        "Louis Tichelman",
+        "Jinwoo Kim",
+        "Krzysztof Olejniczak",
+        "İsmail İlkan Ceylan"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "RelAgent is an LLM-based autonomous data scientist for relational learning. It first uses LLM agents with workspace tools to automatically generate SQL feature programs and select a predictive model. The contribution is a two-phase approach that results in fast, interpretable, and scalable predictors composed of SQL queries and classical models, avoiding further LLM calls during inference.",
+      "url": "http://arxiv.org/abs/2605.07840v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07840v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.07840v1/figures/MethodOverview.jpeg",
+      "figure_caption": "RelAgent . During the search phase, an LLM agent iteratively proposes and refines a feature program consisting of SQL feature queries { q 1 , … , q n } \\{q_{1},\\( \\dots \\),q_{n}\\} and a predictive model configuration \\( \\varphi \\) to solve a given task. The agent uses three tools: (1) database exploration via read-only SQL exploration queries, (2) program validation by executing candidate programs on a validation set and receiving performance metrics, and (3) inspection of past trials in the Evaluation Workspace via evaluation queries. Once a final program is selected, the agent is no longer needed at inference time.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2605.07982v1",
+      "title": "GLiGuard: Schema-Conditioned Classification for LLM Safeguard",
+      "authors": [
+        "Urchade Zaratiana",
+        "Mary Newhauser",
+        "George Hurn-Maloney",
+        "Ash Lewis"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CR"
+      ],
+      "abstract": "GLiGuard reformulates LLM content moderation as a classification problem, moving away from slow, generation-based guardrails. Its core method uses a small, schema-conditioned bidirectional encoder to process task definitions and label semantics directly as structured tokens. This allows for efficient, simultaneous evaluation of multiple safety dimensions in a single pass, significantly improving scalability and reducing latency.",
+      "url": "http://arxiv.org/abs/2605.07982v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07982v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.07982v1/x1.png",
+      "figure_caption": "GLiGuard multi-task moderation overview. Given a text (prompt or response) and a user-specified task schema, GLiGuard produces predictions for all selected tasks in a single forward pass.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.07933v1",
+      "title": "How to Train Your Latent Diffusion Language Model Jointly With the Latent Space",
+      "authors": [
+        "Viacheslav Meshchaninov",
+        "Alexander Shabalin",
+        "Egor Chimbulatov",
+        "Nikita Gushchin",
+        "Ilya Koziev"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces the Latent Diffusion Language Model (LDLM), which jointly trains an encoder, diffusion model, and decoder for non-autoregressive text generation. The core method involves reshaping pre-trained language model representations into a latent space suitable for denoising and decoding. The key contribution is a novel training recipe that overcomes challenges in naive joint training, leading to improved generation quality on benchmark datasets.",
+      "url": "http://arxiv.org/abs/2605.07933v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07933v1",
+      "score": 9.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.07925v1",
+      "title": "How Value Induction Reshapes LLM Behaviour",
+      "authors": [
+        "Arnav Arora",
+        "Natalie Schluter",
+        "Katherine Metcalf",
+        "Maartje ter Hoeve"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper investigates how fine-tuning Large Language Models (LLMs) with specific values impacts their behavior. The core method involves fine-tuning models on curated value subsets and measuring changes in other value expressions, safety, and performance. The key contribution is demonstrating that value induction can lead to unintended consequences, such as the expression of unrelated or even contrasting values, and potentially make models more addictive or sycophantic.",
+      "url": "http://arxiv.org/abs/2605.07925v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07925v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.07925v1/figures/Value_Training_effects.png",
+      "figure_caption": "Overview of our value-training effects framework. We create value-specific models using existing preference datasets and our value induction approach. We then evaluate the value models for several behaviours using corresponding datasets.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.07830v1",
+      "title": "CyBiasBench: Benchmarking Bias in LLM Agents for Cyber-Attack Scenarios",
+      "authors": [
+        "Taein Lim",
+        "Seongyong Ju",
+        "Munhyeok Kim",
+        "Hyunjun Kim",
+        "Hoki Kim"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces CyBiasBench, a benchmark designed to quantify attack-selection bias in LLM agents used for cybersecurity. The core method involves evaluating five LLM agents across various scenarios to reveal their tendency to disproportionately focus on specific attack families, independent of prompt variations. The main contribution is the identification and characterization of this \"attack-selection bias\" as an inherent agent trait, demonstrating that LLM agents exhibit distinct and persistent preferences in their offensive strategies.",
+      "url": "http://arxiv.org/abs/2605.07830v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07830v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.07830v1/x1.png",
+      "figure_caption": "Attack-Selection Bias of LLM Agents. To illustrate attack-selection bias, we measure per-agent average selection rates across the bias observation setting (solid line) and compare them with the corresponding attack success rates (dashed line). The results reveal clear biases in agent behavior.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.08063v1",
+      "title": "Flow-OPD: On-Policy Distillation for Flow Matching Models",
+      "authors": [
+        "Zhen Fang",
+        "Wenxuan Huang",
+        "Yu Zeng",
+        "Yiming Zhao",
+        "Shuang Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "Flow-OPD addresses bottlenecks in multi-task flow matching models by using on-policy distillation. It first trains specialized \"teacher\" models for individual tasks, then distills their expertise into a single \"student\" model through a novel two-stage alignment process. This approach aims to overcome reward sparsity and gradient interference, leading to improved performance across multiple objectives.",
+      "url": "http://arxiv.org/abs/2605.08063v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.08063v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.08063v1/x1.png",
+      "figure_caption": "Performance Comparison in Multi-task Training . During training, Flow-OPD exhibits a steady increase in mean rewards across GenEval Ghosh et al. ( 2023 ) and OCR Chen et al. ( 2023 ) benchmarks, reaching a peak of 93. In contrast, vanilla GRPO converges prematurely around 78. Our approach significantly outperforms GRPO in both image synthesis and text rendering while maintaining superior generation quality and human preference alignment. The curves are smoothed for visual clarity. DeQA and PickScore are norm to 0-1. We employ model merging for cold-start in the left subgraph.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.07865v1",
+      "title": "KL for a KL: On-Policy Distillation with Control Variate Baseline",
+      "authors": [
+        "Minjae Oh",
+        "Sangjun Song",
+        "Gyubin Choi",
+        "Yunho Choi",
+        "Yohan Jo"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces vOPD, a method to stabilize On-Policy Distillation (OPD) for large language models. It achieves this by framing OPD as policy-gradient reinforcement learning and incorporating a control variate baseline, specifically a value function. The key contribution is that this value function has a closed-form solution derived from the student and teacher models' existing forward pass, avoiding the computational overhead of previous stabilization techniques.",
+      "url": "http://arxiv.org/abs/2605.07865v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07865v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.07865v1/x1.png",
+      "figure_caption": "Token-level reward and advantage distributions. Left: The marginal distributions. Right: Per-token scatter plot (x: advantage, y: reward).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.08013v1",
+      "title": "Learning CLI Agents with Structured Action Credit under Selective Observation",
+      "authors": [
+        "Haoyang Su",
+        "Ying Wen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces a novel approach for training command-line interface (CLI) agents by leveraging the inherent structure of CLI actions. To address challenges of partial observation and sparse rewards, it proposes $σ$-Reveal to selectively extract relevant context and Action Advantage Assignment to better attribute credit to actions within long interaction sequences. The core contribution lies in using structured action information as a learning signal, improving agent performance on complex CLI tasks.",
+      "url": "http://arxiv.org/abs/2605.08013v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.08013v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.08013v1/x1.png",
+      "figure_caption": "Overview of the verifiable CLI task workflow. (a) ShellOps task instance with a natural language query, an initial workspace file tree, a verifiable gold bash solution, and the expected post execution workspace or standard output. (b) ShellOps and ShellOps-Pro coverage across file extensions and four task axes (Lookup, Aggregate, Edit, Mixed). (c) Unified verifiable loop with workspace observation, shell action generation, sandbox execution, and schema based scoring.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.08019v1",
+      "title": "Reason to Play: Behavioral and Brain Alignment Between Frontier LRMs and Human Game Learners",
+      "authors": [
+        "Botos Csaba",
+        "Sreejan Kumar",
+        "Austin Tudor David Andrews",
+        "Laurence Hunt",
+        "Chris Summerfield"
+      ],
+      "categories": [
+        "cs.AI",
+        "q-bio.NC"
+      ],
+      "abstract": "This paper investigates whether advanced Large Reasoning Models (LRMs) can replicate human learning and planning in novel video games. By analyzing human gameplay with fMRI data, the study finds that LRMs better match human learning behaviors and predict brain activity compared to reinforcement learning agents. This suggests LRMs exhibit a more human-like approach to acquiring and applying abstract knowledge in complex environments.",
+      "url": "http://arxiv.org/abs/2605.08019v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.08019v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.08019v1/x1.png",
+      "figure_caption": "VGDL game paradigm. (A) Games are defined by combining game rules with map layouts to produce interactive environments. (B) Example Trial Structure of VGDL-fMRI Dataset. Color denotes game names: ( Bait , Chase , Helper , Lemmings , Plaque Attack , Zelda ). All participants played the same level progression structure with randomized game order. The subsequent levels reveal new rules incrementally. The Interactive Catalogue A lets readers try each game in the browser and browse all participant and LRM agent gameplay replays. Project page: https://botcs.github.io/reason-to-play/",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.07935v1",
+      "title": "TraceFix: Repairing Agent Coordination Protocols with TLA+ Counterexamples",
+      "authors": [
+        "Shuren Xia",
+        "Qiwei Li",
+        "Taqiya Ehsan",
+        "Jorge Ortiz"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "abstract": "TraceFix is a verification-first pipeline that uses TLA+ model checking to automatically repair LLM multi-agent coordination protocols. An LLM agent synthesizes a protocol, generates TLA+ logic, and iteratively refines it using counterexamples until verified. This verified protocol is then compiled into system prompts, ensuring robust and efficient agent coordination.",
+      "url": "http://arxiv.org/abs/2605.07935v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07935v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.07935v1/figures/fig_tracefix_pipeline3.png",
+      "figure_caption": "Figure 1. TraceFix pipeline overview. At design time (Stages 1–4), an orchestration agent synthesizes a protocol topology IR, generates PlusCal coordination logic, and iteratively repairs the protocol using TLC counterexamples until verification succeeds. At runtime (Stages 5–6), verified process bodies are compiled into per-agent prompts and executed under a topology monitor that rejects out-of-protocol coordination operations.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.07863v1",
+      "title": "ADKO: Agentic Decentralized Knowledge Optimization",
+      "authors": [
+        "Lucas Nerone Rillo",
+        "Zhanhong Jiang",
+        "Nastaran Saadati",
+        "Aditya Balu",
+        "Baskar Ganapathysubramanian"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "ADKO is a framework for collaborative black-box optimization among autonomous agents. Its core method involves each agent maintaining a private Gaussian Process surrogate and communicating only through \"knowledge tokens,\" which are compressed summaries of their findings. This approach achieves sample efficiency, privacy, and handles diverse objectives by avoiding raw data sharing, while its contribution lies in the formal analysis of information loss from token compression and language model approximation.",
+      "url": "http://arxiv.org/abs/2605.07863v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07863v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.07863v1/Figures/lab_figure.png",
+      "figure_caption": "Illustrative example of decentralized knowledge transfer in ADKO for heterogeneous chemical optimization. Agents operating under different solvent constraints exchange only privacy-aware knowledge tokens rather than raw experimental data. The example shows how a high-yield reaction discovered by one agent is semantically transferred and refined by neighboring agents through LM-guided reasoning and token-based communication, enabling strategic collaboration that outperforms blind exploration while preserving data privacy.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2605.07961v1",
+      "title": "Graph Representation Learning Augmented Model Manipulation on Federated Fine-Tuning of LLMs",
+      "authors": [
+        "Hanlin Cai",
+        "Kai Li",
+        "Houtianfu Wang",
+        "Haofan Dong",
+        "Yichen Li"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CR",
+        "cs.NI"
+      ],
+      "abstract": "This paper proposes an Augmented Model Manipulation (AugMP) strategy to attack federated fine-tuning (FFT) of LLMs. The core method uses graph representation learning to understand benign model updates and generate more effective and stealthy malicious updates. The contribution is a novel attack that leverages these insights to corrupt the global LLM during collaborative fine-tuning.",
+      "url": "http://arxiv.org/abs/2605.07961v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07961v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.07961v1/x1.png",
+      "figure_caption": "(a) Benign training process of the FedLLMs system, and (b) impact of the adversary on the FedLLMs training process.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2605.07977v1",
+      "title": "Self-Play Enhancement via Advantage-Weighted Refinement in Online Federated LLM Fine-Tuning with Real-Time Feedback",
+      "authors": [
+        "Seohyun Lee",
+        "Wenzhi Fang",
+        "Dong-Jun Han",
+        "Seyyedali Hosseinalipour",
+        "Christopher G. Brinton"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces SPEAR, an online federated learning algorithm for LLMs that enhances self-play. SPEAR leverages real-time user feedback to create advantage-weighted contrastive pairs, enabling efficient fine-tuning on resource-constrained edge devices without requiring privileged ground-truth data. Its core contribution is enabling continuous self-improvement of LLMs in a federated setting by effectively utilizing natural feedback loops.",
+      "url": "http://arxiv.org/abs/2605.07977v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07977v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.07977v1/x1.png",
+      "figure_caption": "The two phases of the SPEAR algorithm. Firstly, the model interacts with an incoming feedback source (e.g., a user) to correct incorrect generations. After the interaction phase, it categorizes the samples into wins and losses, which are then used to train a standard MLE and unlikelihood objective. This two-stage process repeats at each federated round t t for each client selected for aggregation.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2605.07937v1",
+      "title": "Ask Early, Ask Late, Ask Right: When Does Clarification Timing Matter for Long-Horizon Agents?",
+      "authors": [
+        "Anmol Gulati",
+        "Hariom Gupta",
+        "Elias Lumer",
+        "Sahil Sen",
+        "Vamse Kumar Subbiah"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper investigates when clarification is most valuable for long-horizon AI agents. They introduce a framework to inject clarifications at different stages of execution and find that the optimal timing depends on the type of missing information. Specifically, goal clarifications are most effective early on, while input clarifications remain valuable throughout the agent's task.",
+      "url": "http://arxiv.org/abs/2605.07937v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07937v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.07937v1/figures/fig1_overview_candidate_8.png",
+      "figure_caption": "Overview of the forced-injection experimental framework. We inject ground-truth clarifications at controlled points along an oracle-calibrated action budget, measuring task success (pass@3) at each injection timing across four information dimensions.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.07883v1",
+      "title": "Beyond \"I cannot fulfill this request\": Alleviating Rigid Rejection in LLMs via Label Enhancement",
+      "authors": [
+        "Ying Zhang",
+        "Congyu Qiao",
+        "Xin Geng",
+        "Ning Xu"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces LANCE, a method to reduce \"rigid rejection\" in LLMs by enhancing safety labels. LANCE uses variational inference to predict a continuous distribution of rejection categories, providing nuanced gradients that allow LLMs to neutralize harmful prompt elements and generate safer, more natural responses instead of generic refusals.",
+      "url": "http://arxiv.org/abs/2605.07883v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07883v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.07883v1/x1.png",
+      "figure_caption": "Rigid refusal examples.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.08083v1",
+      "title": "LLMs Improving LLMs: Agentic Discovery for Test-Time Scaling",
+      "authors": [
+        "Tong Zheng",
+        "Haolin Liu",
+        "Chengsong Huang",
+        "Huiwen Bao",
+        "Sheng Zhang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces AutoTTS, a framework that uses an agentic approach to automatically discover optimal test-time scaling (TTS) strategies for large language models. Instead of manual tuning, AutoTTS creates environments where TTS strategies can be learned efficiently by synthesizing controllers that decide how to allocate computation during inference, based on cheap feedback signals. This allows for a more comprehensive exploration of the computation-allocation space, leading to improved LLM performance.",
+      "url": "http://arxiv.org/abs/2605.08083v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.08083v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.08083v1/x1.png",
+      "figure_caption": "Overview of our Auto-TTS framework. Unlike the traditional workflow of manually designing TTS strategies, Auto-TTS shifts the human role from directly hand-crafting branching, pruning, and stopping heuristics to constructing environments by defining states, actions, feedback, and objectives. Given the constructed environment, an explorer LLM iteratively proposes candidate controllers, evaluates them in the offline replay environment, receives feedback from scaling curves and execution traces, and uses the accumulated history to refine future proposals. The right panel shows an example evaluation on Qwen-1.7B and AIME25, where the discovered controller improves the accuracy–cost Pareto frontier over hand-crafted baselines with an affordable one-time search cost.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    }
+  ],
+  "papers": [
+    {
+      "id": "2605.07926v1",
+      "title": "AgentEscapeBench: Evaluating Out-of-Domain Tool-Grounded Reasoning in LLM Agents",
+      "authors": [
+        "Zhengkang Guo",
+        "Yiyang Li",
+        "Lin Qiu",
+        "Xiaohua Wang",
+        "Jingwen Xv"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces AgentEscapeBench, a novel benchmark designed to evaluate LLM agents' ability to perform out-of-domain, tool-grounded reasoning with long-range dependencies. The benchmark uses escape-room-style tasks requiring agents to infer and execute complex tool-use procedures, demonstrating a significant performance drop for both humans and LLMs as dependency depth increases. AgentEscapeBench's core contribution is providing a challenging, automated evaluation for robust agent reasoning beyond simple tool interactions.",
+      "url": "http://arxiv.org/abs/2605.07926v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07926v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.07926v1/x1.png",
+      "figure_caption": "Conceptual illustration of AgentEscapeBench. The agent is placed in a themed escape room populated with unfamiliar tools and hidden items. It must explore the environment, invoke tools with correct parameters derived from narrative clues, and propagate intermediate outputs through a multi-step dependency chain to unlock the final exit.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.08037v1",
+      "title": "Beyond Pairs: Your Language Model is Secretly Optimizing a Preference Graph",
+      "authors": [
+        "Ning Liu",
+        "Chuanneng Sun",
+        "Kristina Klinkner",
+        "Shervin Malmasi"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces GraphDPO, a generalization of Direct Preference Optimization (DPO) that handles preference data structured as graphs, rather than just pairs. By optimizing a graph-structured objective, GraphDPO leverages richer preference information, enforces transitivity, and avoids issues arising from collapsing multi-rollout data into independent pairs. This approach offers a more robust and comprehensive method for aligning language models with human preferences.",
+      "url": "http://arxiv.org/abs/2605.08037v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.08037v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.08037v1/x1.png",
+      "figure_caption": "GraphDPO pipeline for LLM alignment. For each prompt, the policy samples K K rollouts, which are grouped into equivalence classes according to preference signals. These classes induce a DAG structure whose edges encode dominance relations between groups, with an optional ground-truth node as a global anchor. Equivalence-class masking removes intra-group comparisons so that each response is contrasted only with strictly worse groups via a local Plackett–Luce loss. The resulting losses are aggregated over the graph to update the policy while enforcing transitive preference structure.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.08060v1",
+      "title": "The Memory Curse: How Expanded Recall Erodes Cooperative Intent in LLM Agents",
+      "authors": [
+        "Jiayuan Liu",
+        "Tianqin Li",
+        "Shiyi Du",
+        "Xin Luo",
+        "Haoxuan Zeng"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.GT",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces the \"memory curse,\" demonstrating that expanding LLM agents' context windows can paradoxically *decrease* cooperation in multi-agent social dilemmas. The core method involves extensive testing across various LLMs and games, revealing that increased memory leads to a decline in forward-looking cooperative intent. The key contribution is identifying this mechanism and showing that targeted fine-tuning on forward-looking reasoning or sanitizing memory content can restore cooperative behavior.",
+      "url": "http://arxiv.org/abs/2605.08060v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.08060v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.08060v1/x1.png",
+      "figure_caption": "Schematic of repeated social dilemma interactions between two LLM agents with shared memory.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.07990v1",
+      "title": "Tool Calling is Linearly Readable and Steerable in Language Models",
+      "authors": [
+        "Zekun Wu",
+        "Ze Wang",
+        "Seonglae Cho",
+        "Yufei Yang",
+        "Adriano Koshiyama"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL",
+        "cs.SE"
+      ],
+      "abstract": "This paper demonstrates that language models' tool-calling decisions are linearly encoded within their internal activations. By manipulating the difference in average activations between tool representations, researchers can reliably steer the model to select a different tool. This discovery also allows for pre-execution error detection, as small activation gaps between competing tools predict a higher likelihood of incorrect tool selection.",
+      "url": "http://arxiv.org/abs/2605.07990v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07990v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.07990v1/figures/fig1_hero_final.png",
+      "figure_caption": "Overview of the three-stage circuit and steering demonstration. Adding a mean-difference vector redirects tool selection and automatically restructures arguments. Validated across 12 IT models in 3 families (Gemma 3, Qwen 3 / Qwen 2.5, Llama 3.1; 270M–27B).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.07840v1",
+      "title": "RelAgent: LLM Agents as Data Scientists for Relational Learning",
+      "authors": [
+        "Xingyue Huang",
+        "Louis Tichelman",
+        "Jinwoo Kim",
+        "Krzysztof Olejniczak",
+        "İsmail İlkan Ceylan"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "RelAgent is an LLM-based autonomous data scientist for relational learning. It first uses LLM agents with workspace tools to automatically generate SQL feature programs and select a predictive model. The contribution is a two-phase approach that results in fast, interpretable, and scalable predictors composed of SQL queries and classical models, avoiding further LLM calls during inference.",
+      "url": "http://arxiv.org/abs/2605.07840v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07840v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.07840v1/figures/MethodOverview.jpeg",
+      "figure_caption": "RelAgent . During the search phase, an LLM agent iteratively proposes and refines a feature program consisting of SQL feature queries { q 1 , … , q n } \\{q_{1},\\( \\dots \\),q_{n}\\} and a predictive model configuration \\( \\varphi \\) to solve a given task. The agent uses three tools: (1) database exploration via read-only SQL exploration queries, (2) program validation by executing candidate programs on a validation set and receiving performance metrics, and (3) inspection of past trials in the Evaluation Workspace via evaluation queries. Once a final program is selected, the agent is no longer needed at inference time.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2605.07982v1",
+      "title": "GLiGuard: Schema-Conditioned Classification for LLM Safeguard",
+      "authors": [
+        "Urchade Zaratiana",
+        "Mary Newhauser",
+        "George Hurn-Maloney",
+        "Ash Lewis"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CR"
+      ],
+      "abstract": "GLiGuard reformulates LLM content moderation as a classification problem, moving away from slow, generation-based guardrails. Its core method uses a small, schema-conditioned bidirectional encoder to process task definitions and label semantics directly as structured tokens. This allows for efficient, simultaneous evaluation of multiple safety dimensions in a single pass, significantly improving scalability and reducing latency.",
+      "url": "http://arxiv.org/abs/2605.07982v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07982v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.07982v1/x1.png",
+      "figure_caption": "GLiGuard multi-task moderation overview. Given a text (prompt or response) and a user-specified task schema, GLiGuard produces predictions for all selected tasks in a single forward pass.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.07933v1",
+      "title": "How to Train Your Latent Diffusion Language Model Jointly With the Latent Space",
+      "authors": [
+        "Viacheslav Meshchaninov",
+        "Alexander Shabalin",
+        "Egor Chimbulatov",
+        "Nikita Gushchin",
+        "Ilya Koziev"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces the Latent Diffusion Language Model (LDLM), which jointly trains an encoder, diffusion model, and decoder for non-autoregressive text generation. The core method involves reshaping pre-trained language model representations into a latent space suitable for denoising and decoding. The key contribution is a novel training recipe that overcomes challenges in naive joint training, leading to improved generation quality on benchmark datasets.",
+      "url": "http://arxiv.org/abs/2605.07933v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07933v1",
+      "score": 9.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.07925v1",
+      "title": "How Value Induction Reshapes LLM Behaviour",
+      "authors": [
+        "Arnav Arora",
+        "Natalie Schluter",
+        "Katherine Metcalf",
+        "Maartje ter Hoeve"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper investigates how fine-tuning Large Language Models (LLMs) with specific values impacts their behavior. The core method involves fine-tuning models on curated value subsets and measuring changes in other value expressions, safety, and performance. The key contribution is demonstrating that value induction can lead to unintended consequences, such as the expression of unrelated or even contrasting values, and potentially make models more addictive or sycophantic.",
+      "url": "http://arxiv.org/abs/2605.07925v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07925v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.07925v1/figures/Value_Training_effects.png",
+      "figure_caption": "Overview of our value-training effects framework. We create value-specific models using existing preference datasets and our value induction approach. We then evaluate the value models for several behaviours using corresponding datasets.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.07830v1",
+      "title": "CyBiasBench: Benchmarking Bias in LLM Agents for Cyber-Attack Scenarios",
+      "authors": [
+        "Taein Lim",
+        "Seongyong Ju",
+        "Munhyeok Kim",
+        "Hyunjun Kim",
+        "Hoki Kim"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces CyBiasBench, a benchmark designed to quantify attack-selection bias in LLM agents used for cybersecurity. The core method involves evaluating five LLM agents across various scenarios to reveal their tendency to disproportionately focus on specific attack families, independent of prompt variations. The main contribution is the identification and characterization of this \"attack-selection bias\" as an inherent agent trait, demonstrating that LLM agents exhibit distinct and persistent preferences in their offensive strategies.",
+      "url": "http://arxiv.org/abs/2605.07830v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07830v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.07830v1/x1.png",
+      "figure_caption": "Attack-Selection Bias of LLM Agents. To illustrate attack-selection bias, we measure per-agent average selection rates across the bias observation setting (solid line) and compare them with the corresponding attack success rates (dashed line). The results reveal clear biases in agent behavior.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.08063v1",
+      "title": "Flow-OPD: On-Policy Distillation for Flow Matching Models",
+      "authors": [
+        "Zhen Fang",
+        "Wenxuan Huang",
+        "Yu Zeng",
+        "Yiming Zhao",
+        "Shuang Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "Flow-OPD addresses bottlenecks in multi-task flow matching models by using on-policy distillation. It first trains specialized \"teacher\" models for individual tasks, then distills their expertise into a single \"student\" model through a novel two-stage alignment process. This approach aims to overcome reward sparsity and gradient interference, leading to improved performance across multiple objectives.",
+      "url": "http://arxiv.org/abs/2605.08063v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.08063v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.08063v1/x1.png",
+      "figure_caption": "Performance Comparison in Multi-task Training . During training, Flow-OPD exhibits a steady increase in mean rewards across GenEval Ghosh et al. ( 2023 ) and OCR Chen et al. ( 2023 ) benchmarks, reaching a peak of 93. In contrast, vanilla GRPO converges prematurely around 78. Our approach significantly outperforms GRPO in both image synthesis and text rendering while maintaining superior generation quality and human preference alignment. The curves are smoothed for visual clarity. DeQA and PickScore are norm to 0-1. We employ model merging for cold-start in the left subgraph.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.07865v1",
+      "title": "KL for a KL: On-Policy Distillation with Control Variate Baseline",
+      "authors": [
+        "Minjae Oh",
+        "Sangjun Song",
+        "Gyubin Choi",
+        "Yunho Choi",
+        "Yohan Jo"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces vOPD, a method to stabilize On-Policy Distillation (OPD) for large language models. It achieves this by framing OPD as policy-gradient reinforcement learning and incorporating a control variate baseline, specifically a value function. The key contribution is that this value function has a closed-form solution derived from the student and teacher models' existing forward pass, avoiding the computational overhead of previous stabilization techniques.",
+      "url": "http://arxiv.org/abs/2605.07865v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07865v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.07865v1/x1.png",
+      "figure_caption": "Token-level reward and advantage distributions. Left: The marginal distributions. Right: Per-token scatter plot (x: advantage, y: reward).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.08013v1",
+      "title": "Learning CLI Agents with Structured Action Credit under Selective Observation",
+      "authors": [
+        "Haoyang Su",
+        "Ying Wen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces a novel approach for training command-line interface (CLI) agents by leveraging the inherent structure of CLI actions. To address challenges of partial observation and sparse rewards, it proposes $σ$-Reveal to selectively extract relevant context and Action Advantage Assignment to better attribute credit to actions within long interaction sequences. The core contribution lies in using structured action information as a learning signal, improving agent performance on complex CLI tasks.",
+      "url": "http://arxiv.org/abs/2605.08013v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.08013v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.08013v1/x1.png",
+      "figure_caption": "Overview of the verifiable CLI task workflow. (a) ShellOps task instance with a natural language query, an initial workspace file tree, a verifiable gold bash solution, and the expected post execution workspace or standard output. (b) ShellOps and ShellOps-Pro coverage across file extensions and four task axes (Lookup, Aggregate, Edit, Mixed). (c) Unified verifiable loop with workspace observation, shell action generation, sandbox execution, and schema based scoring.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.08019v1",
+      "title": "Reason to Play: Behavioral and Brain Alignment Between Frontier LRMs and Human Game Learners",
+      "authors": [
+        "Botos Csaba",
+        "Sreejan Kumar",
+        "Austin Tudor David Andrews",
+        "Laurence Hunt",
+        "Chris Summerfield"
+      ],
+      "categories": [
+        "cs.AI",
+        "q-bio.NC"
+      ],
+      "abstract": "This paper investigates whether advanced Large Reasoning Models (LRMs) can replicate human learning and planning in novel video games. By analyzing human gameplay with fMRI data, the study finds that LRMs better match human learning behaviors and predict brain activity compared to reinforcement learning agents. This suggests LRMs exhibit a more human-like approach to acquiring and applying abstract knowledge in complex environments.",
+      "url": "http://arxiv.org/abs/2605.08019v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.08019v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.08019v1/x1.png",
+      "figure_caption": "VGDL game paradigm. (A) Games are defined by combining game rules with map layouts to produce interactive environments. (B) Example Trial Structure of VGDL-fMRI Dataset. Color denotes game names: ( Bait , Chase , Helper , Lemmings , Plaque Attack , Zelda ). All participants played the same level progression structure with randomized game order. The subsequent levels reveal new rules incrementally. The Interactive Catalogue A lets readers try each game in the browser and browse all participant and LRM agent gameplay replays. Project page: https://botcs.github.io/reason-to-play/",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.07935v1",
+      "title": "TraceFix: Repairing Agent Coordination Protocols with TLA+ Counterexamples",
+      "authors": [
+        "Shuren Xia",
+        "Qiwei Li",
+        "Taqiya Ehsan",
+        "Jorge Ortiz"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "abstract": "TraceFix is a verification-first pipeline that uses TLA+ model checking to automatically repair LLM multi-agent coordination protocols. An LLM agent synthesizes a protocol, generates TLA+ logic, and iteratively refines it using counterexamples until verified. This verified protocol is then compiled into system prompts, ensuring robust and efficient agent coordination.",
+      "url": "http://arxiv.org/abs/2605.07935v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07935v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.07935v1/figures/fig_tracefix_pipeline3.png",
+      "figure_caption": "Figure 1. TraceFix pipeline overview. At design time (Stages 1–4), an orchestration agent synthesizes a protocol topology IR, generates PlusCal coordination logic, and iteratively repairs the protocol using TLC counterexamples until verification succeeds. At runtime (Stages 5–6), verified process bodies are compiled into per-agent prompts and executed under a topology monitor that rejects out-of-protocol coordination operations.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.07863v1",
+      "title": "ADKO: Agentic Decentralized Knowledge Optimization",
+      "authors": [
+        "Lucas Nerone Rillo",
+        "Zhanhong Jiang",
+        "Nastaran Saadati",
+        "Aditya Balu",
+        "Baskar Ganapathysubramanian"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "ADKO is a framework for collaborative black-box optimization among autonomous agents. Its core method involves each agent maintaining a private Gaussian Process surrogate and communicating only through \"knowledge tokens,\" which are compressed summaries of their findings. This approach achieves sample efficiency, privacy, and handles diverse objectives by avoiding raw data sharing, while its contribution lies in the formal analysis of information loss from token compression and language model approximation.",
+      "url": "http://arxiv.org/abs/2605.07863v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07863v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.07863v1/Figures/lab_figure.png",
+      "figure_caption": "Illustrative example of decentralized knowledge transfer in ADKO for heterogeneous chemical optimization. Agents operating under different solvent constraints exchange only privacy-aware knowledge tokens rather than raw experimental data. The example shows how a high-yield reaction discovered by one agent is semantically transferred and refined by neighboring agents through LM-guided reasoning and token-based communication, enabling strategic collaboration that outperforms blind exploration while preserving data privacy.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2605.07961v1",
+      "title": "Graph Representation Learning Augmented Model Manipulation on Federated Fine-Tuning of LLMs",
+      "authors": [
+        "Hanlin Cai",
+        "Kai Li",
+        "Houtianfu Wang",
+        "Haofan Dong",
+        "Yichen Li"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CR",
+        "cs.NI"
+      ],
+      "abstract": "This paper proposes an Augmented Model Manipulation (AugMP) strategy to attack federated fine-tuning (FFT) of LLMs. The core method uses graph representation learning to understand benign model updates and generate more effective and stealthy malicious updates. The contribution is a novel attack that leverages these insights to corrupt the global LLM during collaborative fine-tuning.",
+      "url": "http://arxiv.org/abs/2605.07961v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07961v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.07961v1/x1.png",
+      "figure_caption": "(a) Benign training process of the FedLLMs system, and (b) impact of the adversary on the FedLLMs training process.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2605.07977v1",
+      "title": "Self-Play Enhancement via Advantage-Weighted Refinement in Online Federated LLM Fine-Tuning with Real-Time Feedback",
+      "authors": [
+        "Seohyun Lee",
+        "Wenzhi Fang",
+        "Dong-Jun Han",
+        "Seyyedali Hosseinalipour",
+        "Christopher G. Brinton"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces SPEAR, an online federated learning algorithm for LLMs that enhances self-play. SPEAR leverages real-time user feedback to create advantage-weighted contrastive pairs, enabling efficient fine-tuning on resource-constrained edge devices without requiring privileged ground-truth data. Its core contribution is enabling continuous self-improvement of LLMs in a federated setting by effectively utilizing natural feedback loops.",
+      "url": "http://arxiv.org/abs/2605.07977v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07977v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.07977v1/x1.png",
+      "figure_caption": "The two phases of the SPEAR algorithm. Firstly, the model interacts with an incoming feedback source (e.g., a user) to correct incorrect generations. After the interaction phase, it categorizes the samples into wins and losses, which are then used to train a standard MLE and unlikelihood objective. This two-stage process repeats at each federated round t t for each client selected for aggregation.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2605.07937v1",
+      "title": "Ask Early, Ask Late, Ask Right: When Does Clarification Timing Matter for Long-Horizon Agents?",
+      "authors": [
+        "Anmol Gulati",
+        "Hariom Gupta",
+        "Elias Lumer",
+        "Sahil Sen",
+        "Vamse Kumar Subbiah"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper investigates when clarification is most valuable for long-horizon AI agents. They introduce a framework to inject clarifications at different stages of execution and find that the optimal timing depends on the type of missing information. Specifically, goal clarifications are most effective early on, while input clarifications remain valuable throughout the agent's task.",
+      "url": "http://arxiv.org/abs/2605.07937v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07937v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.07937v1/figures/fig1_overview_candidate_8.png",
+      "figure_caption": "Overview of the forced-injection experimental framework. We inject ground-truth clarifications at controlled points along an oracle-calibrated action budget, measuring task success (pass@3) at each injection timing across four information dimensions.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.07883v1",
+      "title": "Beyond \"I cannot fulfill this request\": Alleviating Rigid Rejection in LLMs via Label Enhancement",
+      "authors": [
+        "Ying Zhang",
+        "Congyu Qiao",
+        "Xin Geng",
+        "Ning Xu"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces LANCE, a method to reduce \"rigid rejection\" in LLMs by enhancing safety labels. LANCE uses variational inference to predict a continuous distribution of rejection categories, providing nuanced gradients that allow LLMs to neutralize harmful prompt elements and generate safer, more natural responses instead of generic refusals.",
+      "url": "http://arxiv.org/abs/2605.07883v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.07883v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.07883v1/x1.png",
+      "figure_caption": "Rigid refusal examples.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.08083v1",
+      "title": "LLMs Improving LLMs: Agentic Discovery for Test-Time Scaling",
+      "authors": [
+        "Tong Zheng",
+        "Haolin Liu",
+        "Chengsong Huang",
+        "Huiwen Bao",
+        "Sheng Zhang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces AutoTTS, a framework that uses an agentic approach to automatically discover optimal test-time scaling (TTS) strategies for large language models. Instead of manual tuning, AutoTTS creates environments where TTS strategies can be learned efficiently by synthesizing controllers that decide how to allocate computation during inference, based on cheap feedback signals. This allows for a more comprehensive exploration of the computation-allocation space, leading to improved LLM performance.",
+      "url": "http://arxiv.org/abs/2605.08083v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.08083v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.08083v1/x1.png",
+      "figure_caption": "Overview of our Auto-TTS framework. Unlike the traditional workflow of manually designing TTS strategies, Auto-TTS shifts the human role from directly hand-crafting branching, pruning, and stopping heuristics to constructing environments by defining states, actions, feedback, and objectives. Given the constructed environment, an explorer LLM iteratively proposes candidate controllers, evaluates them in the offline replay environment, receives feedback from scaling curves and execution traces, and uses the accumulated history to refine future proposals. The right panel shows an example evaluation on Qwen-1.7B and AIME25, where the discovered controller improves the accuracy–cost Pareto frontier over hand-crafted baselines with an affordable one-time search cost.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    }
+  ],
+  "hacker_news": [
+    {
+      "id": 48085821,
+      "title": "Local AI needs to be the norm",
+      "url": "https://unix.foo/posts/local-ai-needs-to-be-norm/",
+      "score": 1299,
+      "created_at": "2026-05-10T17:19:28Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48085821",
+      "summary": "The article argues that local AI, running on user devices, should become the standard for privacy, security, and user control, rather than relying on cloud-based solutions."
+    },
+    {
+      "id": 48088151,
+      "title": "Maryland citizens hit with $2B power grid upgrade for out-of-state AI",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/maryland-citizens-slapped-with-usd2-billion-grid-upgrade-bill-for-out-of-state-ai-data-centers-state-complains-to-federal-energy-regulators-says-additional-cost-breaks-ratepayer-protection-pledge-promises",
+      "score": 270,
+      "created_at": "2026-05-10T21:16:58Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48088151",
+      "summary": "Maryland residents face a $2 billion power grid upgrade bill, primarily to support out-of-state AI data centers, prompting state officials to complain to federal regulators about broken ratepayer protection promises."
+    },
+    {
+      "id": 48089289,
+      "title": "An AI coding agent, used to write code, needs to reduce your maintenance costs",
+      "url": "https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs",
+      "score": 209,
+      "created_at": "2026-05-10T23:39:55Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48089289",
+      "summary": "AI coding agents should prioritize reducing software maintenance costs by generating more maintainable and understandable code, not just faster code."
+    },
+    {
+      "id": 48089263,
+      "title": "PS3 Emulator Devs Politely Ask That People Stop Flooding It with AI PRs",
+      "url": "https://kotaku.com/playstation-3-emulator-devs-politely-ask-that-people-stop-flooding-it-with-ai-code-pull-requests-2000694656",
+      "score": 167,
+      "created_at": "2026-05-10T23:36:48Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48089263",
+      "summary": "PS3 emulator developers are requesting that people stop submitting AI-generated code pull requests, as they are not useful and disrupt the development process."
+    },
+    {
+      "id": 48084710,
+      "title": "Chrome's AI features may be hogging 4GB of your computer storage",
+      "url": "https://www.theverge.com/tech/924933/google-chrome-4gb-gemini-nano-ai-features",
+      "score": 110,
+      "created_at": "2026-05-10T15:22:46Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48084710",
+      "summary": "Google Chrome's new AI features, potentially including Gemini Nano, are reportedly consuming up to 4GB of computer storage."
+    }
+  ],
+  "github_trending": [
+    {
+      "full_name": "bytedance/UI-TARS-desktop",
+      "url": "https://github.com/bytedance/UI-TARS-desktop",
+      "description": "The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra",
+      "stars_today": 669,
+      "total_stars": 32689,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "UI-TARS-Desktop is an open-source multimodal AI agent stack that connects cutting-edge AI models with agent infrastructure, enabling the creation and deployment of advanced AI agents."
+    },
+    {
+      "full_name": "CloakHQ/CloakBrowser",
+      "url": "https://github.com/CloakHQ/CloakBrowser",
+      "description": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.",
+      "stars_today": 496,
+      "total_stars": 5491,
+      "language": "Python",
+      "topics": [],
+      "summary": "CloakBrowser is a stealthy Chromium browser designed to bypass bot detection, functioning as a drop-in Playwright replacement with source-level fingerprint patches that pass all tests."
+    },
+    {
+      "full_name": "yikart/AiToEarn",
+      "url": "https://github.com/yikart/AiToEarn",
+      "description": "Let's use AI to Earn!",
+      "stars_today": 397,
+      "total_stars": 10256,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "This repository, AiToEarn, aims to leverage Artificial Intelligence to create opportunities for users to earn money."
+    },
+    {
+      "full_name": "playcanvas/supersplat",
+      "url": "https://github.com/playcanvas/supersplat",
+      "description": "3D Gaussian Splat Editor",
+      "stars_today": 579,
+      "total_stars": 7071,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "This repository provides a 3D Gaussian Splatting editor, enabling users to create, edit, and visualize Gaussian splat scenes directly in a web browser."
+    },
+    {
+      "full_name": "datawhalechina/easy-vibe",
+      "url": "https://github.com/datawhalechina/easy-vibe",
+      "description": "💻 vibe coding 2026 | Your first modern Coding course for beginners to master step by step.",
+      "stars_today": 635,
+      "total_stars": 9628,
+      "language": "JavaScript",
+      "topics": [],
+      "summary": "Easy-Vibe is a modern coding course designed for beginners, offering a step-by-step approach to mastering programming fundamentals."
+    },
+    {
+      "full_name": "decolua/9router",
+      "url": "https://github.com/decolua/9router",
+      "description": "Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits.",
+      "stars_today": 803,
+      "total_stars": 7837,
+      "language": "JavaScript",
+      "topics": [],
+      "summary": "9router provides unlimited free AI coding by connecting various AI models and providers with features like auto-fallback and token reduction to avoid usage limits."
+    },
+    {
+      "full_name": "tinyhumansai/openhuman",
+      "url": "https://github.com/tinyhumansai/openhuman",
+      "description": "Your Personal AI super intelligence. Private, Simple and extremely powerful.",
+      "stars_today": 154,
+      "total_stars": 974,
+      "language": "Rust",
+      "topics": [],
+      "summary": "OpenHuman is a personal AI superintelligence designed for private, simple, and powerful use, acting as your individual AI assistant."
+    },
+    {
+      "full_name": "millionco/react-doctor",
+      "url": "https://github.com/millionco/react-doctor",
+      "description": "Your agent writes bad React. This catches it",
+      "stars_today": 312,
+      "total_stars": 7656,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "This repository provides a tool that acts as an agent to identify and flag poorly written React code, helping developers improve their code quality."
+    },
+    {
+      "full_name": "Lordog/dive-into-llms",
+      "url": "https://github.com/Lordog/dive-into-llms",
+      "description": "《动手学大模型Dive into LLMs》系列编程实践教程",
+      "stars_today": 373,
+      "total_stars": 37137,
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "summary": "This repository provides a hands-on programming tutorial series, \"Dive into LLMs,\" designed to teach practical skills for working with large language models."
+    }
+  ],
+  "us_stocks": [],
+  "postdoc_jobs": [],
+  "jobs": [],
+  "supervisor_updates": [],
+  "weather": [
+    {
+      "query": "London",
+      "label": "London, England, United Kingdom",
+      "resolved_name": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "timezone": "Europe/London",
+      "forecast_date": "2026-05-11",
+      "condition": "Light drizzle",
+      "weather_code": 51,
+      "temperature_c": 10.1,
+      "apparent_temperature_c": 7.0,
+      "temp_max_c": 11.8,
+      "temp_min_c": 5.1,
+      "humidity_pct": 64,
+      "wind_speed_kmh": 11.5,
+      "precipitation_probability_pct": 73,
+      "is_day": true,
+      "sunrise": "2026-05-11T05:14",
+      "sunset": "2026-05-11T20:39",
+      "source": "Open-Meteo",
+      "source_url": "https://open-meteo.com/"
+    }
+  ]
+}
