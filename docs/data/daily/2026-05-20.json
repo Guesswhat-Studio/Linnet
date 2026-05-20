@@ -1,0 +1,1852 @@
+{
+  "date": "2026-05-20",
+  "generated_at": "2026-05-20T10:32:05.395595+00:00",
+  "sections_ordered": [
+    {
+      "key": "quote_of_day",
+      "payload_key": "quote_of_day",
+      "title": "Words for the Morning",
+      "icon": "✦",
+      "items": [
+        {
+          "quote": "International business may conduct its operations with scraps of paper, but the ink it uses is human blood.",
+          "author": "Ambler, Eric",
+          "category": "business"
+        }
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "key": "weather",
+      "payload_key": "weather",
+      "title": "Weather",
+      "icon": "🌦️",
+      "items": [
+        {
+          "query": "London",
+          "label": "London, England, United Kingdom",
+          "resolved_name": "London",
+          "region": "England",
+          "country": "United Kingdom",
+          "latitude": 51.50853,
+          "longitude": -0.12574,
+          "timezone": "Europe/London",
+          "forecast_date": "2026-05-20",
+          "condition": "Overcast",
+          "weather_code": 3,
+          "temperature_c": 16.7,
+          "apparent_temperature_c": 13.8,
+          "temp_max_c": 18.5,
+          "temp_min_c": 12.7,
+          "humidity_pct": 58,
+          "wind_speed_kmh": 17.6,
+          "precipitation_probability_pct": 27,
+          "is_day": true,
+          "sunrise": "2026-05-20T05:01",
+          "sunset": "2026-05-20T20:52",
+          "source": "Open-Meteo",
+          "source_url": "https://open-meteo.com/"
+        }
+      ],
+      "meta": {
+        "count": 1,
+        "city": "London"
+      }
+    },
+    {
+      "key": "arxiv",
+      "payload_key": "papers",
+      "title": "arXiv Papers",
+      "icon": "📄",
+      "items": [
+        {
+          "id": "2605.20025v1",
+          "title": "AutoResearchClaw: Self-Reinforcing Autonomous Research with Human-AI Collaboration",
+          "authors": [
+            "Jiaqi Liu",
+            "Shi Qiu",
+            "Mairui Li",
+            "Bingzhou Li",
+            "Haonian Ji"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "AutoResearchClaw is a multi-agent autonomous research system that addresses the iterative nature of scientific discovery. Its core method involves structured multi-agent debate for hypothesis generation and analysis, coupled with a self-healing executor that learns from failures. The key contribution is a robust, collaborative framework that integrates human oversight and cross-run learning to enable more effective and resilient autonomous research.",
+          "url": "http://arxiv.org/abs/2605.20025v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.20025v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.20025v1/figures/main_figure.png",
+          "figure_caption": "Overview of the AutoResearchClaw pipeline. Given a research idea, the system progresses through three stages: Discovery (scoping, literature search, multi-agent debate for hypothesis generation), Experimentation (self-healing code execution, result analysis with a second debate panel, and Pivot / Refine decisions), and Writing (drafting, review, revision, four-layer citation verification). Optional human-in-the-loop gates (orange) allow oversight at key checkpoints. The cross-run evolution system (bottom) injects time-decayed lessons from prior runs into all phases.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.19932v1",
+          "title": "PEEK: Context Map as an Orientation Cache for Long-Context LLM Agents",
+          "authors": [
+            "Zhuohan Gu",
+            "Qizheng Zhang",
+            "Omar Khattab",
+            "Samuel Madden"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "PEEK addresses the challenge of LLM agents repeatedly interacting with large contexts by introducing a \"context map\" as an orientation cache. This map, a small prompt artifact, stores reusable knowledge about the context's content, organization, and useful entities. PEEK's contribution is enabling agents to efficiently re-orient themselves within recurring contexts, improving performance and reducing computational overhead.",
+          "url": "http://arxiv.org/abs/2605.19932v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.19932v1",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.20087v1",
+          "title": "ThoughtTrace: Understanding User Thoughts in Real-World LLM Interactions",
+          "authors": [
+            "Chuanyang Jin",
+            "Binze Li",
+            "Haopeng Xie",
+            "Cathy Mengying Fang",
+            "Tianjian Li"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces ThoughtTrace, the first large-scale dataset pairing real-world human-AI conversations with users' explicit thoughts. The core contribution is capturing users' underlying reasoning and reactions, which are semantically distinct from their messages and difficult for current LLMs to infer. This dataset enables improved user behavior prediction and fine-grained alignment for personalized AI assistants.",
+          "url": "http://arxiv.org/abs/2605.20087v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.20087v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.20087v1/x1.png",
+          "figure_caption": "A representative example from ThoughtTrace . A user interacts with a chatbot to complete daily tasks through multi-turn conversations (top), while annotating their latent thoughts during the conversations (bottom). Thoughts take two forms: reasons for sending user prompts and reactions to assistant responses, which can be categorized into several types (e.g., task motivation , style expectation ). Latent thoughts reveal users’ thought traces that drive the human-AI interactions in multi-turn conversations, providing valuable signals for user modeling and improving AI assistance.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.19952v1",
+          "title": "Rethinking How to Remember: Beyond Atomic Facts in Lifelong LLM Agent Memory",
+          "authors": [
+            "Jingwei Sun",
+            "Jianing Zhu",
+            "Jiangchao Yao",
+            "Tongliang Liu",
+            "Bo Han"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper proposes TriMem, a novel memory system for LLM agents that moves beyond atomic facts. Instead of relying solely on extracted facts, TriMem maintains three coexisting representation granularities: raw dialogue segments, extracted facts, and synthesized profiles. This approach allows for faithful storage of dialogue details, efficient retrieval of key information, and deep reasoning over aggregated semantic understanding, overcoming limitations of previous fact-centric methods.",
+          "url": "http://arxiv.org/abs/2605.19952v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.19952v1",
+          "score": 9.0,
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2605.20061v1",
+          "title": "Rewarding Beliefs, Not Actions: Consistency-Guided Credit Assignment for Long-Horizon Agents",
+          "authors": [
+            "Wenjie Tang",
+            "Minne Li",
+            "Sijie Huang",
+            "Liquan Xiao",
+            "Yuan Zhou"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper proposes ReBel, a reinforcement learning method for long-horizon tasks where agents learn from verifiable rewards. ReBel addresses challenges in partially observable environments by explicitly modeling and updating agent beliefs, using belief consistency as a self-supervised signal to improve credit assignment. This approach aims to provide more robust learning by comparing trajectories with similar belief states, leading to lower-variance advantage estimates.",
+          "url": "http://arxiv.org/abs/2605.20061v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.20061v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.20061v1/figures/main1.png",
+          "figure_caption": "Overview of ReBel. ReBel learns belief-aware policies for partially observable long-horizon tasks by making latent belief explicit and decomposing policy generation into belief, think, and action. It turns sparse terminal rewards into step-wise belief consistency feedback and performs belief-anchor grouping to support stable step-level advantage estimation.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2605.20179v1",
+          "title": "TIDE: Efficient and Lossless MoE Diffusion LLM Inference with I/O-aware Expert Offload",
+          "authors": [
+            "Zhiben Chen",
+            "Youpeng Zhao",
+            "Yang Sui",
+            "Jun Wang",
+            "Yuzhang Shang"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "TIDE addresses the challenge of efficiently inferring large Mixture-of-Experts (MoE) diffusion LLMs on resource-constrained devices. Its core method is an I/O-aware expert offload strategy that exploits the temporal stability of expert activations during the diffusion process. By intelligently refreshing expert placements at intervals, TIDE minimizes I/O overhead and compute bottlenecks, enabling lossless and efficient inference.",
+          "url": "http://arxiv.org/abs/2605.20179v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.20179v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.20179v1/figures/figure1.png",
+          "figure_caption": "(a) Similarity heatmap of expert routing across denoising steps within a block. Expert routing remains highly similar for nearby steps, and the diagonal bands show that this stability extends beyond immediate neighbors: step pairs separated by five denoising steps retain cosine similarity near 0.95 0.95 . (b) Overview of TIDE . At refresh steps , the system intelligently swaps the GPU and CPU experts based on token hit counts (number of tokens each expert has processed). At skipped steps , the system continues decoding with the current expert placement and does not migrate experts. By exploiting routing stability across adjacent steps, TIDE avoids unnecessary GPU-CPU I/O overhead and maintains high GPU utilization. (c) Throughput comparison of TIDE against state-of-the-art MoE inference solutions [Kamahori et al. , 2024 , Eliseev and Mazur, 2023 ] for LLaDA2.0 in a single GPU-CPU setting.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2605.20173v1",
+          "title": "A Methodology for Selecting and Composing Runtime Architecture Patterns for Production LLM Agents",
+          "authors": [
+            "Vasundra Srinivasan"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.SE"
+          ],
+          "abstract": "This paper introduces the \"stochastic-deterministic boundary\" (SDB) as a core architectural concept for production LLM agents, defining a four-part contract for integrating LLM outputs into system actions. It then proposes a methodology for selecting and composing six runtime patterns (categorized by Coordination, State, and Control) to manage this SDB across different agent types, drawing parallels to distributed systems while accounting for the stochastic nature of LLMs.",
+          "url": "http://arxiv.org/abs/2605.20173v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.20173v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.20084v1",
+          "title": "BalanceRAG: Joint Risk Calibration for Cascaded Retrieval-Augmented Generation",
+          "authors": [
+            "Zijun Jia",
+            "Yuanchang Ye",
+            "Sen Jia",
+            "Yiyao Qian",
+            "Haoning Wang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "BalanceRAG addresses the challenge of calibrating cascaded Retrieval-Augmented Generation (RAG) systems. Its core method involves jointly calibrating uncertainty thresholds for both LLM-only and RAG branches to achieve a target system-level risk. The contribution is a novel approach using sequential graphical testing to identify \"safe\" operating points on a 2D lattice of thresholds, enabling risk-adaptive calibration that retains more examples compared to stage-by-stage methods.",
+          "url": "http://arxiv.org/abs/2605.20084v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.20084v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.20084v1/x1.png",
+          "figure_caption": "Distribution of the per-example score differences between RAG and LLM-only. S LLM ​ - ​ RAG S_{\\( \\mathrm \\){LLM\\( \\text{-} \\)RAG}} and S LLM ​ - ​ only S_{\\( \\mathrm \\){LLM\\( \\text{-} \\)only}} are the similarity scores between each path’s prediction and the ground-truth answer. The x-axis reports S LLM ​ - ​ RAG − S LLM ​ - ​ only S_{\\( \\mathrm \\){LLM\\( \\text{-} \\)RAG}}-S_{\\( \\mathrm \\){LLM\\( \\text{-} \\)only}} , with positive values favoring RAG and negative values favoring LLM-only, while the y-axis reports the number of examples. Colors distinguish whether both branches are correct, both are wrong, or only one branch is correct.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.20075v1",
+          "title": "CopT: Contrastive On-Policy Thinking with Continuous Spaces for General and Agentic Reasoning",
+          "authors": [
+            "Dachuan Shi",
+            "Hanlin Zhu",
+            "Xiangchi Yuan",
+            "Wanjia Zhao",
+            "Kejing Xia"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "CopT reverses the traditional Chain-of-Thought by first generating a draft answer and then using \"on-policy thinking\" to reflect and correct it. This approach leverages continuous embeddings as contrastive verifiers to assess the trustworthiness of the draft answer, aiming for more efficient and agentic reasoning.",
+          "url": "http://arxiv.org/abs/2605.20075v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.20075v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.20075v1/x1.png",
+          "figure_caption": "(a) Conceptual comparison between CoT thinking and CopT on-policy thinking. (b) CopT contrasts the output distributions under discrete and continuous inputs. (c) CopT improves peak accuracy, marked by ∗ , across mathematics, coding, and agentic reasoning tasks and nearly halves token usage at matched accuracy.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.19966v1",
+          "title": "Detecting Fluent Optimization-Based Adversarial Prompts via Sequential Entropy Changes",
+          "authors": [
+            "Mohammed Alshaalan",
+            "Miguel R. D. Rodrigues"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper proposes a novel method for detecting adversarial prompts by treating them as an online change-point detection problem. It analyzes the stream of next-token entropy, using the LLM's system prompt to establish a baseline. The core contribution is a training-free, model-agnostic detector that effectively identifies and localizes adversarial suffixes by monitoring deviations from expected token probabilities, outperforming existing methods.",
+          "url": "http://arxiv.org/abs/2605.19966v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.19966v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.19966v1/x1.png",
+          "figure_caption": "Top: benign prompt where the CUSUM statistic W t + W_{t}^{+} (purple) stays below threshold h h (orange) at slack k = 0 k=0 (the canonical Page-CUSUM setting used for Table 1 ; Appendix A ). Bottom: adversarial prompt (AdvPrompter); a sustained upward shift in token entropy after the suffix onset (green) causes W t + W_{t}^{+} to cross h h , triggering an alarm at time \\( \\tau \\) (red). The shaded region denotes the ground-truth adversarial suffix. For comparison the WPP 15 baseline (brown dash-dot, plotted as the non-overlapping window-mean NLL the detector actually scores) and its F1-optimal threshold (brown dotted) are overlaid: on this fluent attack WPP 15 never crosses its threshold while CPD’s W t + W_{t}^{+} does.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.19943v1",
+          "title": "Probabilistic Tiny Recursive Model",
+          "authors": [
+            "Amin Sghaier",
+            "Ali Parviz",
+            "Alexia Jolicoeur-Martineau"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces Probabilistic Tiny Recursive Models (PTRM) to improve upon deterministic Tiny Recursive Models (TRM). PTRM addresses TRM's tendency to get stuck in suboptimal solutions by injecting Gaussian noise during recursion, allowing for parallel exploration of diverse solution paths. This stochastic approach, without retraining, significantly boosts accuracy on complex reasoning tasks by enabling better selection of the final answer.",
+          "url": "http://arxiv.org/abs/2605.19943v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.19943v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.20072v1",
+          "title": "Probing Embodied LLMs: When Higher Observation Fidelity Hurts Problem Solving",
+          "authors": [
+            "Oussama Zenkri",
+            "Oliver Brock"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.RO"
+          ],
+          "abstract": "This paper investigates how observation fidelity impacts embodied Large Language Model (LLM) agents in robotic tasks. The core method involves testing LLMs on a mechanical puzzle with varying levels of visual and symbolic information. The key contribution is the counterintuitive finding that LLMs perform best with raw RGB input and worst with perfect ground-truth observations, suggesting that some level of noise or ambiguity can actually improve their problem-solving abilities.",
+          "url": "http://arxiv.org/abs/2605.20072v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.20072v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.20072v1/x1.png",
+          "figure_caption": "Our robotic system manipulating the Lockbox. Our Lockbox comprises two prismatic joints (sliding bars in the middle) and two revolute joints. The Lockbox is unlocked when the leftmost revolute joint, which we refer to as the target joint, is pulled. The robot employs a soft-hand end effector for manipulating the joints, an RGB-D camera for acquiring visual data, and a force-torque sensor for assessing the joint movability and guiding their manipulation.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.19940v1",
+          "title": "Robotics-Inspired Guardrails for Foundation Models in Socially Sensitive Domains",
+          "authors": [
+            "Rebecca Ramnauth",
+            "Drazen Brscic",
+            "Brian Scassellati"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.RO"
+          ],
+          "abstract": "This paper reframes safety for foundation models in sensitive domains from output-level checks to runtime behavioral control of interaction trajectories, inspired by robotics. Their core method, the Grounded Observer framework, uses formal constructs to enforce constraints during interactions, enabling real-time interventions to prevent undesirable behavior. This approach offers enforceable behavioral guarantees, a significant contribution beyond existing empirical risk reduction methods.",
+          "url": "http://arxiv.org/abs/2605.19940v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.19940v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.19940v1/figures/fig1-guardrail.png",
+          "figure_caption": "Figure 1. Guardrails as Constraint Enforcement Over Interaction Trajectories. A deployed foundation model induces a trajectory τ = ( s 0 , a 0 , s 1 , a 1 , … ) \\( \\tau \\)=(s_{0},a_{0},s_{1},a_{1},...) through state space 𝒮 \\( \\mathcal{S} \\) . A safe set 𝒮 safe ⊆ 𝒮 \\( \\mathcal{S} \\)_{\\( \\text{safe} \\)}\\( \\subseteq \\)\\( \\mathcal{S} \\) defines acceptable behavioral states. At each timestep, the model proposes actions according to policy π θ ​ ( a t ∣ s t ) \\( \\pi_{\\theta} \\)(a_{t}\\( \\mid \\) s_{t}) , but a “guardrail” restricts execution to the admissible action set 𝒜 safe ​ ( s t ) \\( \\mathcal{A} \\)_{\\( \\text{safe} \\)}(s_{t}) , ensuring that transitions s t + 1 s_{t+1} remain within 𝒮 safe \\( \\mathcal{S} \\)_{\\( \\text{safe} \\)} . This enforces forward invariance, preventing trajectories from entering unsafe regions rather than merely detecting violations after they occur.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.20086v1",
+          "title": "What Do Evolutionary Coding Agents Evolve?",
+          "authors": [
+            "Nico Pelleriti",
+            "Sree Harsha Nelaturu",
+            "Zhanke Zhou",
+            "Zongze Li",
+            "Max Zimmer"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.NE"
+          ],
+          "abstract": "This paper investigates what evolutionary coding agents, powered by LLMs, actually learn. They introduce EvoTrace, a dataset of evolutionary coding processes, and EvoReplay, a method to analyze these traces. This allows them to distinguish between genuine algorithmic innovation and other mechanisms like re-tuning or overfitting, providing a deeper understanding of how these agents evolve.",
+          "url": "http://arxiv.org/abs/2605.20086v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.20086v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.20086v1/x1.png",
+          "figure_caption": "A taxonomy of edits performed by evolutionary coding agents. Each panel shows a representative parent–child diff (added lines in green, deleted lines in red) drawn from EvoTrace runs and labeled with one of nine recurring categories: Bug fix , External dependency , Architectural change , Composition , Local refinement , Pruning , Refactor , Efficiency , and Hyperparameter tuning . The categories range from minimal numeric edits (a single literal change) to structural rewrites (replacing a 14-gon with two concentric heptagons), and they form the basis of the LLM-as-judge edit annotation used throughout the paper. Edits are typically multi-label; we examine prevalence and per-edit utility in § 5.1 .",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.19852v1",
+          "title": "Are Tools Always Beneficial? Learning to Invoke Tools Adaptively for Dual-Mode Multimodal LLM Reasoning",
+          "authors": [
+            "Qinghe Ma",
+            "Zhen Zhao",
+            "Yiming Wu",
+            "Jian Zhang",
+            "Lei Bai"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces AutoTool, a method that enables multimodal large language models (MLLMs) to adaptively decide whether to use external tools for reasoning. By employing a reinforcement learning framework with a dual-mode strategy, AutoTool balances tool-assisted and text-centric reasoning to avoid redundant or misleading tool invocations, ultimately improving accuracy and efficiency.",
+          "url": "http://arxiv.org/abs/2605.19852v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.19852v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.19852v1/x2.png",
+          "figure_caption": "(a, b) Representative queries that do or do not trigger the zoom-in tool, illustrating that tool usage is not always necessary, while AutoTool adaptively invokes tools when beneficial. (c, d) Comparison of the proportion of tool-augmented reasoning trajectories during training, as well as the training and inference time costs between our AutoTool and SOTA DeepEyes (Zheng et al. , 2025 ) .",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2605.20176v1",
+          "title": "ClinSeekAgent: Automating Multimodal Evidence Seeking for Agentic Clinical Reasoning",
+          "authors": [
+            "Juncheng Wu",
+            "Letian Zhang",
+            "Yuhan Wang",
+            "Haoqin Tu",
+            "Hardy Chen"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "ClinSeekAgent automates the process of actively seeking and synthesizing multimodal evidence from diverse clinical data sources for LLM-based reasoning. Unlike previous approaches that assume pre-curated evidence, it dynamically queries knowledge bases, navigates EHRs, and uses imaging tools to gather information, refining hypotheses as it learns. This framework enables LLMs to make more grounded clinical decisions by actively acquiring and integrating evidence.",
+          "url": "http://arxiv.org/abs/2605.20176v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.20176v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.20176v1/figure/teaser.png",
+          "figure_caption": "ClinSeekAgent Overview. ClinSeekAgent is an automated agentic evidence-seeking pipeline. It interacts with heterogeneous data sources to enable multimodal evidence seeking for clinical decision support. Compared with prior user-curated context settings, ClinSeekAgent is more flexible by acquiring richer information and knowledge from diverse tools.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2605.20170v1",
+          "title": "KoRe: Compact Knowledge Representations for Large Language Models",
+          "authors": [
+            "Davide Cavicchini",
+            "Fausto Giunchiglia",
+            "Jacopo Staiano"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "KoRe addresses the limitations of LLMs encoding knowledge within opaque parameters by introducing a method to represent 1-hop knowledge graph sub-graphs as compact, discrete tokens. These tokens are then injected into a pre-trained LLM backbone without requiring extensive retraining. This approach offers a more transparent and updatable way to integrate external knowledge, leading to competitive performance on knowledge-intensive tasks.",
+          "url": "http://arxiv.org/abs/2605.20170v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.20170v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.20170v1/x1.png",
+          "figure_caption": "Taxonomy of Knowledge Augmentation Approaches for LLMs",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2605.20128v1",
+          "title": "MixRea: Benchmarking Explicit-Implicit Reasoning in Large Language Models",
+          "authors": [
+            "Yuanqing Cai",
+            "Ziyi Huang",
+            "Minhao Liu",
+            "Lixin Duan",
+            "Wen Li"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces the \"explicit-implicit reasoning\" task and the MixRea benchmark to assess if LLMs exhibit \"inattentional blindness\" to subtle cues, similar to humans. Their core method involves creating diverse reasoning questions with varying explicit and implicit information. The contribution lies in demonstrating widespread inattentional blindness in LLMs and proposing Potential Relation Completion Prompting (PRCP) as a method to improve their reasoning by recovering overlooked causal relations.",
+          "url": "http://arxiv.org/abs/2605.20128v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.20128v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.20128v1/x1.png",
+          "figure_caption": "An explicit-implicit reasoning example from our MixRea benchmark. When reasoning about explicitly stated information in the question, LLMs must leverage distinctions among events presented in the options to identify and infer relevant implicit information from the story context. They then integrate these reasoning results to derive the optimal event set.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2605.19988v1",
+          "title": "A Case for Agentic Tuning: From Documentation to Action in PostgreSQL",
+          "authors": [
+            "Hongyu Lin",
+            "Mingyu Li",
+            "Weichen Zhang",
+            "Yihang Lou",
+            "Mingjie Xing"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.DB",
+            "cs.PF",
+            "cs.SE"
+          ],
+          "abstract": "This paper argues that traditional documentation-based system tuning is insufficient due to its static nature and lack of reasoning. It introduces PerfEvolve, a method that empowers LLM agents with executable skills to dynamically tune systems like PostgreSQL by verifying versions, profiling workloads, and optimizing parameters jointly. PerfEvolve significantly outperforms existing documentation-driven tuning methods.",
+          "url": "http://arxiv.org/abs/2605.19988v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.19988v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2605.19988v1/x1.png",
+          "figure_caption": "Latency increase on TPC-H when applying PG-Official and PGTune rules (7 of 22 queries degraded by > > 10%). Both rule sets lead to worse latency on the same kinds of sort- and aggregation-intensive queries.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.20049v1",
+          "title": "Does Code Cleanliness Affect Coding Agents? A Controlled Minimal-Pair Study",
+          "authors": [
+            "Priyansh Trivedi",
+            "Olivier Schmitt"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.SE"
+          ],
+          "abstract": "This paper investigates if code cleanliness impacts autonomous coding agents. Their core method uses \"minimal pairs\" of code repositories that are identical except for their structural and stylistic quality. The study found that while code cleanliness did not affect the agent's task completion rate, it significantly altered its operational footprint.",
+          "url": "http://arxiv.org/abs/2605.20049v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.20049v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2605.20049v1/x1.png",
+          "figure_caption": "An example task in the benchmark, drawn from the genie pair. The agent reads an externally observable description (shown) and produces a code change that a hidden test suite, kept internal, exercises against the application’s public surface. This task asks the agent to add a structured failure-stage tag to Genie’s synchronous job-launch timer so that dashboards can attribute job-launch failures to a specific pipeline stage.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        }
+      ],
+      "meta": {
+        "papers_fetched": 100,
+        "papers_after_keyword_filter": 38,
+        "papers_after_llm_filter": 28,
+        "count": 20
+      }
+    },
+    {
+      "key": "hacker_news",
+      "payload_key": "hacker_news",
+      "title": "Hacker News",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": 48196570,
+          "title": "Gemini 3.5 Flash",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+          "score": 801,
+          "created_at": "2026-05-19T17:43:45Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48196570",
+          "summary": "Google's Gemini 3.5 Flash is a new, faster, and more cost-effective AI model designed for large-scale applications, building on the capabilities of Gemini 3.5 Pro."
+        },
+        {
+          "id": 48197370,
+          "title": "Google changes its search box",
+          "url": "https://blog.google/products-and-platforms/products/search/search-io-2026/",
+          "score": 555,
+          "created_at": "2026-05-19T18:34:27Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48197370",
+          "summary": "Google is integrating AI-powered \"Search Generative Experience\" (SGE) into its search box, offering AI-generated overviews and conversational follow-ups to user queries."
+        },
+        {
+          "id": 48192383,
+          "title": "Show HN: Forge – Guardrails take an 8B model from 53% to 99% on agentic tasks",
+          "url": "https://github.com/antoinezambelli/forge",
+          "score": 493,
+          "created_at": "2026-05-19T12:23:07Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48192383",
+          "summary": "Forge, a new tool, significantly boosts an 8B model's performance on agentic tasks from 53% to 99% by implementing guardrails."
+        },
+        {
+          "id": 48200569,
+          "title": "Remove-AI-Watermarks – CLI and library for removing AI watermarks from images",
+          "url": "https://github.com/wiltodelta/remove-ai-watermarks",
+          "score": 287,
+          "created_at": "2026-05-19T22:30:31Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48200569",
+          "summary": "This tech news story introduces \"Remove-AI-Watermarks,\" a command-line interface and library designed to remove AI-generated watermarks from images."
+        },
+        {
+          "id": 48198291,
+          "title": "OpenAI Adopts Google's SynthID Watermark for AI Images with Verification Tool",
+          "url": "https://openai.com/index/advancing-content-provenance/",
+          "score": 283,
+          "created_at": "2026-05-19T19:34:30Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48198291",
+          "summary": "OpenAI is integrating Google's SynthID watermarking technology to invisibly mark AI-generated images, allowing for verification of their origin."
+        },
+        {
+          "id": 48197995,
+          "title": "Mistral AI acquires Emmi AI",
+          "url": "https://www.emmi.ai/news/mistral-ai-acquires-emmi-ai",
+          "score": 264,
+          "created_at": "2026-05-19T19:14:12Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48197995",
+          "summary": "Mistral AI has acquired Emmi AI, a company specializing in large language model development, to bolster its AI capabilities and expand its team."
+        },
+        {
+          "id": 48196656,
+          "title": "Gemini 3.5 Flash: frontier intelligence with action",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+          "score": 180,
+          "created_at": "2026-05-19T17:49:50Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48196656",
+          "summary": "Google's Gemini 3.5 Flash is a new frontier AI model optimized for speed and efficiency, enabling rapid processing of information and actions."
+        },
+        {
+          "id": 48195100,
+          "title": "AI is too expensive",
+          "url": "https://www.wheresyoured.at/ai-is-too-expensive/",
+          "score": 139,
+          "created_at": "2026-05-19T15:59:03Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48195100",
+          "summary": "The article argues that the high costs of developing and deploying AI are a significant barrier, potentially limiting its widespread adoption and accessibility."
+        },
+        {
+          "id": 48194098,
+          "title": "Why is almost everyone right-handed? A new study connects it to bipedalism",
+          "url": "https://www.ox.ac.uk/news/2026-05-15-why-is-almost-everyone-right-handed-the-answer-may-lie-in-how-we-learned-to-walk",
+          "score": 132,
+          "created_at": "2026-05-19T14:50:42Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48194098",
+          "summary": "A new study suggests that the prevalence of right-handedness in humans may be linked to the evolution of bipedalism, as upright walking potentially influenced brain development and motor control."
+        },
+        {
+          "id": 48196546,
+          "title": "Graduates are booing pep talks on AI at college commencements",
+          "url": "https://apnews.com/article/ai-college-commencement-anxiety-boo-35aec9bac660eaeb05c5b8d392db2cac",
+          "score": 116,
+          "created_at": "2026-05-19T17:42:11Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48196546",
+          "summary": "College graduates are booing commencement speeches about AI, expressing anxiety and a desire for more relevant messages beyond the technology's potential impact."
+        }
+      ],
+      "meta": {
+        "count": 10
+      }
+    },
+    {
+      "key": "github_trending",
+      "payload_key": "github_trending",
+      "title": "GitHub Trending",
+      "icon": "⭐",
+      "items": [
+        {
+          "full_name": "tinyhumansai/openhuman",
+          "url": "https://github.com/tinyhumansai/openhuman",
+          "description": "Your Personal AI super intelligence. Private, Simple and extremely powerful.",
+          "stars_today": 3973,
+          "total_stars": 22884,
+          "language": "Rust",
+          "topics": [],
+          "summary": "OpenHuman is a personal AI superintelligence designed to be private, simple, and extremely powerful, acting as your dedicated AI assistant."
+        },
+        {
+          "full_name": "HKUDS/CLI-Anything",
+          "url": "https://github.com/HKUDS/CLI-Anything",
+          "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+          "stars_today": 1038,
+          "total_stars": 38170,
+          "language": "Python",
+          "topics": [],
+          "summary": "CLI-Anything enables any software to be controlled by AI agents by translating natural language commands into executable CLI commands, acting as a universal interface for agent-native software interaction."
+        },
+        {
+          "full_name": "Imbad0202/academic-research-skills",
+          "url": "https://github.com/Imbad0202/academic-research-skills",
+          "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
+          "stars_today": 3164,
+          "total_stars": 14911,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository provides a structured framework for academic research, guiding users through the iterative process of research, writing, review, revision, and finalization."
+        },
+        {
+          "full_name": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "description": "An agentic skills framework & software development methodology that works.",
+          "stars_today": 1623,
+          "total_stars": 199331,
+          "language": "Shell",
+          "topics": [],
+          "summary": "Superpowers is an agentic skills framework and software development methodology designed to enhance productivity and effectiveness in software projects."
+        },
+        {
+          "full_name": "anthropics/claude-plugins-official",
+          "url": "https://github.com/anthropics/claude-plugins-official",
+          "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+          "stars_today": 171,
+          "total_stars": 20477,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository serves as an official, Anthropic-managed directory of high-quality Claude Code Plugins, enabling developers to extend Claude's capabilities."
+        },
+        {
+          "full_name": "rohitg00/agentmemory",
+          "url": "https://github.com/rohitg00/agentmemory",
+          "description": "#1 Persistent memory for AI coding agents based on real-world benchmarks",
+          "stars_today": 1609,
+          "total_stars": 14636,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "This repository provides persistent memory for AI coding agents, enabling them to retain and recall information effectively for improved performance on real-world coding tasks."
+        },
+        {
+          "full_name": "CloakHQ/CloakBrowser",
+          "url": "https://github.com/CloakHQ/CloakBrowser",
+          "description": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.",
+          "stars_today": 1463,
+          "total_stars": 17171,
+          "language": "Python",
+          "topics": [],
+          "summary": "CloakBrowser is a stealthy Chromium browser designed to bypass bot detection, functioning as a drop-in Playwright replacement with source-level fingerprint patches that pass all tests."
+        },
+        {
+          "full_name": "rtk-ai/rtk",
+          "url": "https://github.com/rtk-ai/rtk",
+          "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
+          "stars_today": 704,
+          "total_stars": 51507,
+          "language": "Rust",
+          "topics": [],
+          "summary": "RTK is a CLI proxy that significantly reduces LLM token consumption (60-90%) for common developer commands, delivered as a single, zero-dependency Rust binary."
+        },
+        {
+          "full_name": "msitarzewski/agency-agents",
+          "url": "https://github.com/msitarzewski/agency-agents",
+          "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+          "stars_today": 1120,
+          "total_stars": 102256,
+          "language": "Shell",
+          "topics": [],
+          "summary": "This repository provides a comprehensive AI agency with specialized agents, each possessing a unique personality and expertise, to handle diverse tasks from frontend development to community management and critical analysis."
+        }
+      ],
+      "meta": {
+        "count": 9
+      }
+    }
+  ],
+  "meta": {
+    "papers_fetched": 100,
+    "papers_after_keyword_filter": 38,
+    "papers_after_llm_filter": 28,
+    "llm_model": "google/gemini-2.5-flash-lite",
+    "scoring_model": "google/gemini-2.5-flash-lite",
+    "summarization_model": "google/gemini-2.5-flash-lite",
+    "duration_seconds": 51
+  },
+  "quote_of_day": [
+    {
+      "quote": "International business may conduct its operations with scraps of paper, but the ink it uses is human blood.",
+      "author": "Ambler, Eric",
+      "category": "business"
+    }
+  ],
+  "hitokoto": [],
+  "arxiv": [
+    {
+      "id": "2605.20025v1",
+      "title": "AutoResearchClaw: Self-Reinforcing Autonomous Research with Human-AI Collaboration",
+      "authors": [
+        "Jiaqi Liu",
+        "Shi Qiu",
+        "Mairui Li",
+        "Bingzhou Li",
+        "Haonian Ji"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "AutoResearchClaw is a multi-agent autonomous research system that addresses the iterative nature of scientific discovery. Its core method involves structured multi-agent debate for hypothesis generation and analysis, coupled with a self-healing executor that learns from failures. The key contribution is a robust, collaborative framework that integrates human oversight and cross-run learning to enable more effective and resilient autonomous research.",
+      "url": "http://arxiv.org/abs/2605.20025v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20025v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.20025v1/figures/main_figure.png",
+      "figure_caption": "Overview of the AutoResearchClaw pipeline. Given a research idea, the system progresses through three stages: Discovery (scoping, literature search, multi-agent debate for hypothesis generation), Experimentation (self-healing code execution, result analysis with a second debate panel, and Pivot / Refine decisions), and Writing (drafting, review, revision, four-layer citation verification). Optional human-in-the-loop gates (orange) allow oversight at key checkpoints. The cross-run evolution system (bottom) injects time-decayed lessons from prior runs into all phases.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.19932v1",
+      "title": "PEEK: Context Map as an Orientation Cache for Long-Context LLM Agents",
+      "authors": [
+        "Zhuohan Gu",
+        "Qizheng Zhang",
+        "Omar Khattab",
+        "Samuel Madden"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "PEEK addresses the challenge of LLM agents repeatedly interacting with large contexts by introducing a \"context map\" as an orientation cache. This map, a small prompt artifact, stores reusable knowledge about the context's content, organization, and useful entities. PEEK's contribution is enabling agents to efficiently re-orient themselves within recurring contexts, improving performance and reducing computational overhead.",
+      "url": "http://arxiv.org/abs/2605.19932v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.19932v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.20087v1",
+      "title": "ThoughtTrace: Understanding User Thoughts in Real-World LLM Interactions",
+      "authors": [
+        "Chuanyang Jin",
+        "Binze Li",
+        "Haopeng Xie",
+        "Cathy Mengying Fang",
+        "Tianjian Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces ThoughtTrace, the first large-scale dataset pairing real-world human-AI conversations with users' explicit thoughts. The core contribution is capturing users' underlying reasoning and reactions, which are semantically distinct from their messages and difficult for current LLMs to infer. This dataset enables improved user behavior prediction and fine-grained alignment for personalized AI assistants.",
+      "url": "http://arxiv.org/abs/2605.20087v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20087v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.20087v1/x1.png",
+      "figure_caption": "A representative example from ThoughtTrace . A user interacts with a chatbot to complete daily tasks through multi-turn conversations (top), while annotating their latent thoughts during the conversations (bottom). Thoughts take two forms: reasons for sending user prompts and reactions to assistant responses, which can be categorized into several types (e.g., task motivation , style expectation ). Latent thoughts reveal users’ thought traces that drive the human-AI interactions in multi-turn conversations, providing valuable signals for user modeling and improving AI assistance.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.19952v1",
+      "title": "Rethinking How to Remember: Beyond Atomic Facts in Lifelong LLM Agent Memory",
+      "authors": [
+        "Jingwei Sun",
+        "Jianing Zhu",
+        "Jiangchao Yao",
+        "Tongliang Liu",
+        "Bo Han"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper proposes TriMem, a novel memory system for LLM agents that moves beyond atomic facts. Instead of relying solely on extracted facts, TriMem maintains three coexisting representation granularities: raw dialogue segments, extracted facts, and synthesized profiles. This approach allows for faithful storage of dialogue details, efficient retrieval of key information, and deep reasoning over aggregated semantic understanding, overcoming limitations of previous fact-centric methods.",
+      "url": "http://arxiv.org/abs/2605.19952v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.19952v1",
+      "score": 9.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.20061v1",
+      "title": "Rewarding Beliefs, Not Actions: Consistency-Guided Credit Assignment for Long-Horizon Agents",
+      "authors": [
+        "Wenjie Tang",
+        "Minne Li",
+        "Sijie Huang",
+        "Liquan Xiao",
+        "Yuan Zhou"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper proposes ReBel, a reinforcement learning method for long-horizon tasks where agents learn from verifiable rewards. ReBel addresses challenges in partially observable environments by explicitly modeling and updating agent beliefs, using belief consistency as a self-supervised signal to improve credit assignment. This approach aims to provide more robust learning by comparing trajectories with similar belief states, leading to lower-variance advantage estimates.",
+      "url": "http://arxiv.org/abs/2605.20061v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20061v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.20061v1/figures/main1.png",
+      "figure_caption": "Overview of ReBel. ReBel learns belief-aware policies for partially observable long-horizon tasks by making latent belief explicit and decomposing policy generation into belief, think, and action. It turns sparse terminal rewards into step-wise belief consistency feedback and performs belief-anchor grouping to support stable step-level advantage estimation.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.20179v1",
+      "title": "TIDE: Efficient and Lossless MoE Diffusion LLM Inference with I/O-aware Expert Offload",
+      "authors": [
+        "Zhiben Chen",
+        "Youpeng Zhao",
+        "Yang Sui",
+        "Jun Wang",
+        "Yuzhang Shang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "TIDE addresses the challenge of efficiently inferring large Mixture-of-Experts (MoE) diffusion LLMs on resource-constrained devices. Its core method is an I/O-aware expert offload strategy that exploits the temporal stability of expert activations during the diffusion process. By intelligently refreshing expert placements at intervals, TIDE minimizes I/O overhead and compute bottlenecks, enabling lossless and efficient inference.",
+      "url": "http://arxiv.org/abs/2605.20179v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20179v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.20179v1/figures/figure1.png",
+      "figure_caption": "(a) Similarity heatmap of expert routing across denoising steps within a block. Expert routing remains highly similar for nearby steps, and the diagonal bands show that this stability extends beyond immediate neighbors: step pairs separated by five denoising steps retain cosine similarity near 0.95 0.95 . (b) Overview of TIDE . At refresh steps , the system intelligently swaps the GPU and CPU experts based on token hit counts (number of tokens each expert has processed). At skipped steps , the system continues decoding with the current expert placement and does not migrate experts. By exploiting routing stability across adjacent steps, TIDE avoids unnecessary GPU-CPU I/O overhead and maintains high GPU utilization. (c) Throughput comparison of TIDE against state-of-the-art MoE inference solutions [Kamahori et al. , 2024 , Eliseev and Mazur, 2023 ] for LLaDA2.0 in a single GPU-CPU setting.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.20173v1",
+      "title": "A Methodology for Selecting and Composing Runtime Architecture Patterns for Production LLM Agents",
+      "authors": [
+        "Vasundra Srinivasan"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces the \"stochastic-deterministic boundary\" (SDB) as a core architectural concept for production LLM agents, defining a four-part contract for integrating LLM outputs into system actions. It then proposes a methodology for selecting and composing six runtime patterns (categorized by Coordination, State, and Control) to manage this SDB across different agent types, drawing parallels to distributed systems while accounting for the stochastic nature of LLMs.",
+      "url": "http://arxiv.org/abs/2605.20173v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20173v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.20084v1",
+      "title": "BalanceRAG: Joint Risk Calibration for Cascaded Retrieval-Augmented Generation",
+      "authors": [
+        "Zijun Jia",
+        "Yuanchang Ye",
+        "Sen Jia",
+        "Yiyao Qian",
+        "Haoning Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "BalanceRAG addresses the challenge of calibrating cascaded Retrieval-Augmented Generation (RAG) systems. Its core method involves jointly calibrating uncertainty thresholds for both LLM-only and RAG branches to achieve a target system-level risk. The contribution is a novel approach using sequential graphical testing to identify \"safe\" operating points on a 2D lattice of thresholds, enabling risk-adaptive calibration that retains more examples compared to stage-by-stage methods.",
+      "url": "http://arxiv.org/abs/2605.20084v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20084v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.20084v1/x1.png",
+      "figure_caption": "Distribution of the per-example score differences between RAG and LLM-only. S LLM ​ - ​ RAG S_{\\( \\mathrm \\){LLM\\( \\text{-} \\)RAG}} and S LLM ​ - ​ only S_{\\( \\mathrm \\){LLM\\( \\text{-} \\)only}} are the similarity scores between each path’s prediction and the ground-truth answer. The x-axis reports S LLM ​ - ​ RAG − S LLM ​ - ​ only S_{\\( \\mathrm \\){LLM\\( \\text{-} \\)RAG}}-S_{\\( \\mathrm \\){LLM\\( \\text{-} \\)only}} , with positive values favoring RAG and negative values favoring LLM-only, while the y-axis reports the number of examples. Colors distinguish whether both branches are correct, both are wrong, or only one branch is correct.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.20075v1",
+      "title": "CopT: Contrastive On-Policy Thinking with Continuous Spaces for General and Agentic Reasoning",
+      "authors": [
+        "Dachuan Shi",
+        "Hanlin Zhu",
+        "Xiangchi Yuan",
+        "Wanjia Zhao",
+        "Kejing Xia"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "CopT reverses the traditional Chain-of-Thought by first generating a draft answer and then using \"on-policy thinking\" to reflect and correct it. This approach leverages continuous embeddings as contrastive verifiers to assess the trustworthiness of the draft answer, aiming for more efficient and agentic reasoning.",
+      "url": "http://arxiv.org/abs/2605.20075v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20075v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.20075v1/x1.png",
+      "figure_caption": "(a) Conceptual comparison between CoT thinking and CopT on-policy thinking. (b) CopT contrasts the output distributions under discrete and continuous inputs. (c) CopT improves peak accuracy, marked by ∗ , across mathematics, coding, and agentic reasoning tasks and nearly halves token usage at matched accuracy.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.19966v1",
+      "title": "Detecting Fluent Optimization-Based Adversarial Prompts via Sequential Entropy Changes",
+      "authors": [
+        "Mohammed Alshaalan",
+        "Miguel R. D. Rodrigues"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper proposes a novel method for detecting adversarial prompts by treating them as an online change-point detection problem. It analyzes the stream of next-token entropy, using the LLM's system prompt to establish a baseline. The core contribution is a training-free, model-agnostic detector that effectively identifies and localizes adversarial suffixes by monitoring deviations from expected token probabilities, outperforming existing methods.",
+      "url": "http://arxiv.org/abs/2605.19966v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.19966v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.19966v1/x1.png",
+      "figure_caption": "Top: benign prompt where the CUSUM statistic W t + W_{t}^{+} (purple) stays below threshold h h (orange) at slack k = 0 k=0 (the canonical Page-CUSUM setting used for Table 1 ; Appendix A ). Bottom: adversarial prompt (AdvPrompter); a sustained upward shift in token entropy after the suffix onset (green) causes W t + W_{t}^{+} to cross h h , triggering an alarm at time \\( \\tau \\) (red). The shaded region denotes the ground-truth adversarial suffix. For comparison the WPP 15 baseline (brown dash-dot, plotted as the non-overlapping window-mean NLL the detector actually scores) and its F1-optimal threshold (brown dotted) are overlaid: on this fluent attack WPP 15 never crosses its threshold while CPD’s W t + W_{t}^{+} does.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.19943v1",
+      "title": "Probabilistic Tiny Recursive Model",
+      "authors": [
+        "Amin Sghaier",
+        "Ali Parviz",
+        "Alexia Jolicoeur-Martineau"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces Probabilistic Tiny Recursive Models (PTRM) to improve upon deterministic Tiny Recursive Models (TRM). PTRM addresses TRM's tendency to get stuck in suboptimal solutions by injecting Gaussian noise during recursion, allowing for parallel exploration of diverse solution paths. This stochastic approach, without retraining, significantly boosts accuracy on complex reasoning tasks by enabling better selection of the final answer.",
+      "url": "http://arxiv.org/abs/2605.19943v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.19943v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.20072v1",
+      "title": "Probing Embodied LLMs: When Higher Observation Fidelity Hurts Problem Solving",
+      "authors": [
+        "Oussama Zenkri",
+        "Oliver Brock"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "abstract": "This paper investigates how observation fidelity impacts embodied Large Language Model (LLM) agents in robotic tasks. The core method involves testing LLMs on a mechanical puzzle with varying levels of visual and symbolic information. The key contribution is the counterintuitive finding that LLMs perform best with raw RGB input and worst with perfect ground-truth observations, suggesting that some level of noise or ambiguity can actually improve their problem-solving abilities.",
+      "url": "http://arxiv.org/abs/2605.20072v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20072v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.20072v1/x1.png",
+      "figure_caption": "Our robotic system manipulating the Lockbox. Our Lockbox comprises two prismatic joints (sliding bars in the middle) and two revolute joints. The Lockbox is unlocked when the leftmost revolute joint, which we refer to as the target joint, is pulled. The robot employs a soft-hand end effector for manipulating the joints, an RGB-D camera for acquiring visual data, and a force-torque sensor for assessing the joint movability and guiding their manipulation.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.19940v1",
+      "title": "Robotics-Inspired Guardrails for Foundation Models in Socially Sensitive Domains",
+      "authors": [
+        "Rebecca Ramnauth",
+        "Drazen Brscic",
+        "Brian Scassellati"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "abstract": "This paper reframes safety for foundation models in sensitive domains from output-level checks to runtime behavioral control of interaction trajectories, inspired by robotics. Their core method, the Grounded Observer framework, uses formal constructs to enforce constraints during interactions, enabling real-time interventions to prevent undesirable behavior. This approach offers enforceable behavioral guarantees, a significant contribution beyond existing empirical risk reduction methods.",
+      "url": "http://arxiv.org/abs/2605.19940v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.19940v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.19940v1/figures/fig1-guardrail.png",
+      "figure_caption": "Figure 1. Guardrails as Constraint Enforcement Over Interaction Trajectories. A deployed foundation model induces a trajectory τ = ( s 0 , a 0 , s 1 , a 1 , … ) \\( \\tau \\)=(s_{0},a_{0},s_{1},a_{1},...) through state space 𝒮 \\( \\mathcal{S} \\) . A safe set 𝒮 safe ⊆ 𝒮 \\( \\mathcal{S} \\)_{\\( \\text{safe} \\)}\\( \\subseteq \\)\\( \\mathcal{S} \\) defines acceptable behavioral states. At each timestep, the model proposes actions according to policy π θ ​ ( a t ∣ s t ) \\( \\pi_{\\theta} \\)(a_{t}\\( \\mid \\) s_{t}) , but a “guardrail” restricts execution to the admissible action set 𝒜 safe ​ ( s t ) \\( \\mathcal{A} \\)_{\\( \\text{safe} \\)}(s_{t}) , ensuring that transitions s t + 1 s_{t+1} remain within 𝒮 safe \\( \\mathcal{S} \\)_{\\( \\text{safe} \\)} . This enforces forward invariance, preventing trajectories from entering unsafe regions rather than merely detecting violations after they occur.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.20086v1",
+      "title": "What Do Evolutionary Coding Agents Evolve?",
+      "authors": [
+        "Nico Pelleriti",
+        "Sree Harsha Nelaturu",
+        "Zhanke Zhou",
+        "Zongze Li",
+        "Max Zimmer"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.NE"
+      ],
+      "abstract": "This paper investigates what evolutionary coding agents, powered by LLMs, actually learn. They introduce EvoTrace, a dataset of evolutionary coding processes, and EvoReplay, a method to analyze these traces. This allows them to distinguish between genuine algorithmic innovation and other mechanisms like re-tuning or overfitting, providing a deeper understanding of how these agents evolve.",
+      "url": "http://arxiv.org/abs/2605.20086v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20086v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.20086v1/x1.png",
+      "figure_caption": "A taxonomy of edits performed by evolutionary coding agents. Each panel shows a representative parent–child diff (added lines in green, deleted lines in red) drawn from EvoTrace runs and labeled with one of nine recurring categories: Bug fix , External dependency , Architectural change , Composition , Local refinement , Pruning , Refactor , Efficiency , and Hyperparameter tuning . The categories range from minimal numeric edits (a single literal change) to structural rewrites (replacing a 14-gon with two concentric heptagons), and they form the basis of the LLM-as-judge edit annotation used throughout the paper. Edits are typically multi-label; we examine prevalence and per-edit utility in § 5.1 .",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.19852v1",
+      "title": "Are Tools Always Beneficial? Learning to Invoke Tools Adaptively for Dual-Mode Multimodal LLM Reasoning",
+      "authors": [
+        "Qinghe Ma",
+        "Zhen Zhao",
+        "Yiming Wu",
+        "Jian Zhang",
+        "Lei Bai"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces AutoTool, a method that enables multimodal large language models (MLLMs) to adaptively decide whether to use external tools for reasoning. By employing a reinforcement learning framework with a dual-mode strategy, AutoTool balances tool-assisted and text-centric reasoning to avoid redundant or misleading tool invocations, ultimately improving accuracy and efficiency.",
+      "url": "http://arxiv.org/abs/2605.19852v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.19852v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.19852v1/x2.png",
+      "figure_caption": "(a, b) Representative queries that do or do not trigger the zoom-in tool, illustrating that tool usage is not always necessary, while AutoTool adaptively invokes tools when beneficial. (c, d) Comparison of the proportion of tool-augmented reasoning trajectories during training, as well as the training and inference time costs between our AutoTool and SOTA DeepEyes (Zheng et al. , 2025 ) .",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.20176v1",
+      "title": "ClinSeekAgent: Automating Multimodal Evidence Seeking for Agentic Clinical Reasoning",
+      "authors": [
+        "Juncheng Wu",
+        "Letian Zhang",
+        "Yuhan Wang",
+        "Haoqin Tu",
+        "Hardy Chen"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "ClinSeekAgent automates the process of actively seeking and synthesizing multimodal evidence from diverse clinical data sources for LLM-based reasoning. Unlike previous approaches that assume pre-curated evidence, it dynamically queries knowledge bases, navigates EHRs, and uses imaging tools to gather information, refining hypotheses as it learns. This framework enables LLMs to make more grounded clinical decisions by actively acquiring and integrating evidence.",
+      "url": "http://arxiv.org/abs/2605.20176v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20176v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.20176v1/figure/teaser.png",
+      "figure_caption": "ClinSeekAgent Overview. ClinSeekAgent is an automated agentic evidence-seeking pipeline. It interacts with heterogeneous data sources to enable multimodal evidence seeking for clinical decision support. Compared with prior user-curated context settings, ClinSeekAgent is more flexible by acquiring richer information and knowledge from diverse tools.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.20170v1",
+      "title": "KoRe: Compact Knowledge Representations for Large Language Models",
+      "authors": [
+        "Davide Cavicchini",
+        "Fausto Giunchiglia",
+        "Jacopo Staiano"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "KoRe addresses the limitations of LLMs encoding knowledge within opaque parameters by introducing a method to represent 1-hop knowledge graph sub-graphs as compact, discrete tokens. These tokens are then injected into a pre-trained LLM backbone without requiring extensive retraining. This approach offers a more transparent and updatable way to integrate external knowledge, leading to competitive performance on knowledge-intensive tasks.",
+      "url": "http://arxiv.org/abs/2605.20170v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20170v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.20170v1/x1.png",
+      "figure_caption": "Taxonomy of Knowledge Augmentation Approaches for LLMs",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.20128v1",
+      "title": "MixRea: Benchmarking Explicit-Implicit Reasoning in Large Language Models",
+      "authors": [
+        "Yuanqing Cai",
+        "Ziyi Huang",
+        "Minhao Liu",
+        "Lixin Duan",
+        "Wen Li"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces the \"explicit-implicit reasoning\" task and the MixRea benchmark to assess if LLMs exhibit \"inattentional blindness\" to subtle cues, similar to humans. Their core method involves creating diverse reasoning questions with varying explicit and implicit information. The contribution lies in demonstrating widespread inattentional blindness in LLMs and proposing Potential Relation Completion Prompting (PRCP) as a method to improve their reasoning by recovering overlooked causal relations.",
+      "url": "http://arxiv.org/abs/2605.20128v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20128v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.20128v1/x1.png",
+      "figure_caption": "An explicit-implicit reasoning example from our MixRea benchmark. When reasoning about explicitly stated information in the question, LLMs must leverage distinctions among events presented in the options to identify and infer relevant implicit information from the story context. They then integrate these reasoning results to derive the optimal event set.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.19988v1",
+      "title": "A Case for Agentic Tuning: From Documentation to Action in PostgreSQL",
+      "authors": [
+        "Hongyu Lin",
+        "Mingyu Li",
+        "Weichen Zhang",
+        "Yihang Lou",
+        "Mingjie Xing"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.DB",
+        "cs.PF",
+        "cs.SE"
+      ],
+      "abstract": "This paper argues that traditional documentation-based system tuning is insufficient due to its static nature and lack of reasoning. It introduces PerfEvolve, a method that empowers LLM agents with executable skills to dynamically tune systems like PostgreSQL by verifying versions, profiling workloads, and optimizing parameters jointly. PerfEvolve significantly outperforms existing documentation-driven tuning methods.",
+      "url": "http://arxiv.org/abs/2605.19988v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.19988v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2605.19988v1/x1.png",
+      "figure_caption": "Latency increase on TPC-H when applying PG-Official and PGTune rules (7 of 22 queries degraded by > > 10%). Both rule sets lead to worse latency on the same kinds of sort- and aggregation-intensive queries.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.20049v1",
+      "title": "Does Code Cleanliness Affect Coding Agents? A Controlled Minimal-Pair Study",
+      "authors": [
+        "Priyansh Trivedi",
+        "Olivier Schmitt"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper investigates if code cleanliness impacts autonomous coding agents. Their core method uses \"minimal pairs\" of code repositories that are identical except for their structural and stylistic quality. The study found that while code cleanliness did not affect the agent's task completion rate, it significantly altered its operational footprint.",
+      "url": "http://arxiv.org/abs/2605.20049v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20049v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2605.20049v1/x1.png",
+      "figure_caption": "An example task in the benchmark, drawn from the genie pair. The agent reads an externally observable description (shown) and produces a code change that a hidden test suite, kept internal, exercises against the application’s public surface. This task asks the agent to add a structured failure-stage tag to Genie’s synchronous job-launch timer so that dashboards can attribute job-launch failures to a specific pipeline stage.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "papers": [
+    {
+      "id": "2605.20025v1",
+      "title": "AutoResearchClaw: Self-Reinforcing Autonomous Research with Human-AI Collaboration",
+      "authors": [
+        "Jiaqi Liu",
+        "Shi Qiu",
+        "Mairui Li",
+        "Bingzhou Li",
+        "Haonian Ji"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "AutoResearchClaw is a multi-agent autonomous research system that addresses the iterative nature of scientific discovery. Its core method involves structured multi-agent debate for hypothesis generation and analysis, coupled with a self-healing executor that learns from failures. The key contribution is a robust, collaborative framework that integrates human oversight and cross-run learning to enable more effective and resilient autonomous research.",
+      "url": "http://arxiv.org/abs/2605.20025v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20025v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.20025v1/figures/main_figure.png",
+      "figure_caption": "Overview of the AutoResearchClaw pipeline. Given a research idea, the system progresses through three stages: Discovery (scoping, literature search, multi-agent debate for hypothesis generation), Experimentation (self-healing code execution, result analysis with a second debate panel, and Pivot / Refine decisions), and Writing (drafting, review, revision, four-layer citation verification). Optional human-in-the-loop gates (orange) allow oversight at key checkpoints. The cross-run evolution system (bottom) injects time-decayed lessons from prior runs into all phases.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.19932v1",
+      "title": "PEEK: Context Map as an Orientation Cache for Long-Context LLM Agents",
+      "authors": [
+        "Zhuohan Gu",
+        "Qizheng Zhang",
+        "Omar Khattab",
+        "Samuel Madden"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "PEEK addresses the challenge of LLM agents repeatedly interacting with large contexts by introducing a \"context map\" as an orientation cache. This map, a small prompt artifact, stores reusable knowledge about the context's content, organization, and useful entities. PEEK's contribution is enabling agents to efficiently re-orient themselves within recurring contexts, improving performance and reducing computational overhead.",
+      "url": "http://arxiv.org/abs/2605.19932v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.19932v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.20087v1",
+      "title": "ThoughtTrace: Understanding User Thoughts in Real-World LLM Interactions",
+      "authors": [
+        "Chuanyang Jin",
+        "Binze Li",
+        "Haopeng Xie",
+        "Cathy Mengying Fang",
+        "Tianjian Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces ThoughtTrace, the first large-scale dataset pairing real-world human-AI conversations with users' explicit thoughts. The core contribution is capturing users' underlying reasoning and reactions, which are semantically distinct from their messages and difficult for current LLMs to infer. This dataset enables improved user behavior prediction and fine-grained alignment for personalized AI assistants.",
+      "url": "http://arxiv.org/abs/2605.20087v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20087v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.20087v1/x1.png",
+      "figure_caption": "A representative example from ThoughtTrace . A user interacts with a chatbot to complete daily tasks through multi-turn conversations (top), while annotating their latent thoughts during the conversations (bottom). Thoughts take two forms: reasons for sending user prompts and reactions to assistant responses, which can be categorized into several types (e.g., task motivation , style expectation ). Latent thoughts reveal users’ thought traces that drive the human-AI interactions in multi-turn conversations, providing valuable signals for user modeling and improving AI assistance.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.19952v1",
+      "title": "Rethinking How to Remember: Beyond Atomic Facts in Lifelong LLM Agent Memory",
+      "authors": [
+        "Jingwei Sun",
+        "Jianing Zhu",
+        "Jiangchao Yao",
+        "Tongliang Liu",
+        "Bo Han"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper proposes TriMem, a novel memory system for LLM agents that moves beyond atomic facts. Instead of relying solely on extracted facts, TriMem maintains three coexisting representation granularities: raw dialogue segments, extracted facts, and synthesized profiles. This approach allows for faithful storage of dialogue details, efficient retrieval of key information, and deep reasoning over aggregated semantic understanding, overcoming limitations of previous fact-centric methods.",
+      "url": "http://arxiv.org/abs/2605.19952v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.19952v1",
+      "score": 9.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.20061v1",
+      "title": "Rewarding Beliefs, Not Actions: Consistency-Guided Credit Assignment for Long-Horizon Agents",
+      "authors": [
+        "Wenjie Tang",
+        "Minne Li",
+        "Sijie Huang",
+        "Liquan Xiao",
+        "Yuan Zhou"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper proposes ReBel, a reinforcement learning method for long-horizon tasks where agents learn from verifiable rewards. ReBel addresses challenges in partially observable environments by explicitly modeling and updating agent beliefs, using belief consistency as a self-supervised signal to improve credit assignment. This approach aims to provide more robust learning by comparing trajectories with similar belief states, leading to lower-variance advantage estimates.",
+      "url": "http://arxiv.org/abs/2605.20061v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20061v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.20061v1/figures/main1.png",
+      "figure_caption": "Overview of ReBel. ReBel learns belief-aware policies for partially observable long-horizon tasks by making latent belief explicit and decomposing policy generation into belief, think, and action. It turns sparse terminal rewards into step-wise belief consistency feedback and performs belief-anchor grouping to support stable step-level advantage estimation.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.20179v1",
+      "title": "TIDE: Efficient and Lossless MoE Diffusion LLM Inference with I/O-aware Expert Offload",
+      "authors": [
+        "Zhiben Chen",
+        "Youpeng Zhao",
+        "Yang Sui",
+        "Jun Wang",
+        "Yuzhang Shang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "TIDE addresses the challenge of efficiently inferring large Mixture-of-Experts (MoE) diffusion LLMs on resource-constrained devices. Its core method is an I/O-aware expert offload strategy that exploits the temporal stability of expert activations during the diffusion process. By intelligently refreshing expert placements at intervals, TIDE minimizes I/O overhead and compute bottlenecks, enabling lossless and efficient inference.",
+      "url": "http://arxiv.org/abs/2605.20179v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20179v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.20179v1/figures/figure1.png",
+      "figure_caption": "(a) Similarity heatmap of expert routing across denoising steps within a block. Expert routing remains highly similar for nearby steps, and the diagonal bands show that this stability extends beyond immediate neighbors: step pairs separated by five denoising steps retain cosine similarity near 0.95 0.95 . (b) Overview of TIDE . At refresh steps , the system intelligently swaps the GPU and CPU experts based on token hit counts (number of tokens each expert has processed). At skipped steps , the system continues decoding with the current expert placement and does not migrate experts. By exploiting routing stability across adjacent steps, TIDE avoids unnecessary GPU-CPU I/O overhead and maintains high GPU utilization. (c) Throughput comparison of TIDE against state-of-the-art MoE inference solutions [Kamahori et al. , 2024 , Eliseev and Mazur, 2023 ] for LLaDA2.0 in a single GPU-CPU setting.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.20173v1",
+      "title": "A Methodology for Selecting and Composing Runtime Architecture Patterns for Production LLM Agents",
+      "authors": [
+        "Vasundra Srinivasan"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces the \"stochastic-deterministic boundary\" (SDB) as a core architectural concept for production LLM agents, defining a four-part contract for integrating LLM outputs into system actions. It then proposes a methodology for selecting and composing six runtime patterns (categorized by Coordination, State, and Control) to manage this SDB across different agent types, drawing parallels to distributed systems while accounting for the stochastic nature of LLMs.",
+      "url": "http://arxiv.org/abs/2605.20173v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20173v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.20084v1",
+      "title": "BalanceRAG: Joint Risk Calibration for Cascaded Retrieval-Augmented Generation",
+      "authors": [
+        "Zijun Jia",
+        "Yuanchang Ye",
+        "Sen Jia",
+        "Yiyao Qian",
+        "Haoning Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "BalanceRAG addresses the challenge of calibrating cascaded Retrieval-Augmented Generation (RAG) systems. Its core method involves jointly calibrating uncertainty thresholds for both LLM-only and RAG branches to achieve a target system-level risk. The contribution is a novel approach using sequential graphical testing to identify \"safe\" operating points on a 2D lattice of thresholds, enabling risk-adaptive calibration that retains more examples compared to stage-by-stage methods.",
+      "url": "http://arxiv.org/abs/2605.20084v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20084v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.20084v1/x1.png",
+      "figure_caption": "Distribution of the per-example score differences between RAG and LLM-only. S LLM ​ - ​ RAG S_{\\( \\mathrm \\){LLM\\( \\text{-} \\)RAG}} and S LLM ​ - ​ only S_{\\( \\mathrm \\){LLM\\( \\text{-} \\)only}} are the similarity scores between each path’s prediction and the ground-truth answer. The x-axis reports S LLM ​ - ​ RAG − S LLM ​ - ​ only S_{\\( \\mathrm \\){LLM\\( \\text{-} \\)RAG}}-S_{\\( \\mathrm \\){LLM\\( \\text{-} \\)only}} , with positive values favoring RAG and negative values favoring LLM-only, while the y-axis reports the number of examples. Colors distinguish whether both branches are correct, both are wrong, or only one branch is correct.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.20075v1",
+      "title": "CopT: Contrastive On-Policy Thinking with Continuous Spaces for General and Agentic Reasoning",
+      "authors": [
+        "Dachuan Shi",
+        "Hanlin Zhu",
+        "Xiangchi Yuan",
+        "Wanjia Zhao",
+        "Kejing Xia"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "CopT reverses the traditional Chain-of-Thought by first generating a draft answer and then using \"on-policy thinking\" to reflect and correct it. This approach leverages continuous embeddings as contrastive verifiers to assess the trustworthiness of the draft answer, aiming for more efficient and agentic reasoning.",
+      "url": "http://arxiv.org/abs/2605.20075v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20075v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.20075v1/x1.png",
+      "figure_caption": "(a) Conceptual comparison between CoT thinking and CopT on-policy thinking. (b) CopT contrasts the output distributions under discrete and continuous inputs. (c) CopT improves peak accuracy, marked by ∗ , across mathematics, coding, and agentic reasoning tasks and nearly halves token usage at matched accuracy.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.19966v1",
+      "title": "Detecting Fluent Optimization-Based Adversarial Prompts via Sequential Entropy Changes",
+      "authors": [
+        "Mohammed Alshaalan",
+        "Miguel R. D. Rodrigues"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper proposes a novel method for detecting adversarial prompts by treating them as an online change-point detection problem. It analyzes the stream of next-token entropy, using the LLM's system prompt to establish a baseline. The core contribution is a training-free, model-agnostic detector that effectively identifies and localizes adversarial suffixes by monitoring deviations from expected token probabilities, outperforming existing methods.",
+      "url": "http://arxiv.org/abs/2605.19966v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.19966v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.19966v1/x1.png",
+      "figure_caption": "Top: benign prompt where the CUSUM statistic W t + W_{t}^{+} (purple) stays below threshold h h (orange) at slack k = 0 k=0 (the canonical Page-CUSUM setting used for Table 1 ; Appendix A ). Bottom: adversarial prompt (AdvPrompter); a sustained upward shift in token entropy after the suffix onset (green) causes W t + W_{t}^{+} to cross h h , triggering an alarm at time \\( \\tau \\) (red). The shaded region denotes the ground-truth adversarial suffix. For comparison the WPP 15 baseline (brown dash-dot, plotted as the non-overlapping window-mean NLL the detector actually scores) and its F1-optimal threshold (brown dotted) are overlaid: on this fluent attack WPP 15 never crosses its threshold while CPD’s W t + W_{t}^{+} does.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.19943v1",
+      "title": "Probabilistic Tiny Recursive Model",
+      "authors": [
+        "Amin Sghaier",
+        "Ali Parviz",
+        "Alexia Jolicoeur-Martineau"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces Probabilistic Tiny Recursive Models (PTRM) to improve upon deterministic Tiny Recursive Models (TRM). PTRM addresses TRM's tendency to get stuck in suboptimal solutions by injecting Gaussian noise during recursion, allowing for parallel exploration of diverse solution paths. This stochastic approach, without retraining, significantly boosts accuracy on complex reasoning tasks by enabling better selection of the final answer.",
+      "url": "http://arxiv.org/abs/2605.19943v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.19943v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.20072v1",
+      "title": "Probing Embodied LLMs: When Higher Observation Fidelity Hurts Problem Solving",
+      "authors": [
+        "Oussama Zenkri",
+        "Oliver Brock"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "abstract": "This paper investigates how observation fidelity impacts embodied Large Language Model (LLM) agents in robotic tasks. The core method involves testing LLMs on a mechanical puzzle with varying levels of visual and symbolic information. The key contribution is the counterintuitive finding that LLMs perform best with raw RGB input and worst with perfect ground-truth observations, suggesting that some level of noise or ambiguity can actually improve their problem-solving abilities.",
+      "url": "http://arxiv.org/abs/2605.20072v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20072v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.20072v1/x1.png",
+      "figure_caption": "Our robotic system manipulating the Lockbox. Our Lockbox comprises two prismatic joints (sliding bars in the middle) and two revolute joints. The Lockbox is unlocked when the leftmost revolute joint, which we refer to as the target joint, is pulled. The robot employs a soft-hand end effector for manipulating the joints, an RGB-D camera for acquiring visual data, and a force-torque sensor for assessing the joint movability and guiding their manipulation.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.19940v1",
+      "title": "Robotics-Inspired Guardrails for Foundation Models in Socially Sensitive Domains",
+      "authors": [
+        "Rebecca Ramnauth",
+        "Drazen Brscic",
+        "Brian Scassellati"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "abstract": "This paper reframes safety for foundation models in sensitive domains from output-level checks to runtime behavioral control of interaction trajectories, inspired by robotics. Their core method, the Grounded Observer framework, uses formal constructs to enforce constraints during interactions, enabling real-time interventions to prevent undesirable behavior. This approach offers enforceable behavioral guarantees, a significant contribution beyond existing empirical risk reduction methods.",
+      "url": "http://arxiv.org/abs/2605.19940v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.19940v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.19940v1/figures/fig1-guardrail.png",
+      "figure_caption": "Figure 1. Guardrails as Constraint Enforcement Over Interaction Trajectories. A deployed foundation model induces a trajectory τ = ( s 0 , a 0 , s 1 , a 1 , … ) \\( \\tau \\)=(s_{0},a_{0},s_{1},a_{1},...) through state space 𝒮 \\( \\mathcal{S} \\) . A safe set 𝒮 safe ⊆ 𝒮 \\( \\mathcal{S} \\)_{\\( \\text{safe} \\)}\\( \\subseteq \\)\\( \\mathcal{S} \\) defines acceptable behavioral states. At each timestep, the model proposes actions according to policy π θ ​ ( a t ∣ s t ) \\( \\pi_{\\theta} \\)(a_{t}\\( \\mid \\) s_{t}) , but a “guardrail” restricts execution to the admissible action set 𝒜 safe ​ ( s t ) \\( \\mathcal{A} \\)_{\\( \\text{safe} \\)}(s_{t}) , ensuring that transitions s t + 1 s_{t+1} remain within 𝒮 safe \\( \\mathcal{S} \\)_{\\( \\text{safe} \\)} . This enforces forward invariance, preventing trajectories from entering unsafe regions rather than merely detecting violations after they occur.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.20086v1",
+      "title": "What Do Evolutionary Coding Agents Evolve?",
+      "authors": [
+        "Nico Pelleriti",
+        "Sree Harsha Nelaturu",
+        "Zhanke Zhou",
+        "Zongze Li",
+        "Max Zimmer"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.NE"
+      ],
+      "abstract": "This paper investigates what evolutionary coding agents, powered by LLMs, actually learn. They introduce EvoTrace, a dataset of evolutionary coding processes, and EvoReplay, a method to analyze these traces. This allows them to distinguish between genuine algorithmic innovation and other mechanisms like re-tuning or overfitting, providing a deeper understanding of how these agents evolve.",
+      "url": "http://arxiv.org/abs/2605.20086v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20086v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.20086v1/x1.png",
+      "figure_caption": "A taxonomy of edits performed by evolutionary coding agents. Each panel shows a representative parent–child diff (added lines in green, deleted lines in red) drawn from EvoTrace runs and labeled with one of nine recurring categories: Bug fix , External dependency , Architectural change , Composition , Local refinement , Pruning , Refactor , Efficiency , and Hyperparameter tuning . The categories range from minimal numeric edits (a single literal change) to structural rewrites (replacing a 14-gon with two concentric heptagons), and they form the basis of the LLM-as-judge edit annotation used throughout the paper. Edits are typically multi-label; we examine prevalence and per-edit utility in § 5.1 .",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.19852v1",
+      "title": "Are Tools Always Beneficial? Learning to Invoke Tools Adaptively for Dual-Mode Multimodal LLM Reasoning",
+      "authors": [
+        "Qinghe Ma",
+        "Zhen Zhao",
+        "Yiming Wu",
+        "Jian Zhang",
+        "Lei Bai"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces AutoTool, a method that enables multimodal large language models (MLLMs) to adaptively decide whether to use external tools for reasoning. By employing a reinforcement learning framework with a dual-mode strategy, AutoTool balances tool-assisted and text-centric reasoning to avoid redundant or misleading tool invocations, ultimately improving accuracy and efficiency.",
+      "url": "http://arxiv.org/abs/2605.19852v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.19852v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.19852v1/x2.png",
+      "figure_caption": "(a, b) Representative queries that do or do not trigger the zoom-in tool, illustrating that tool usage is not always necessary, while AutoTool adaptively invokes tools when beneficial. (c, d) Comparison of the proportion of tool-augmented reasoning trajectories during training, as well as the training and inference time costs between our AutoTool and SOTA DeepEyes (Zheng et al. , 2025 ) .",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.20176v1",
+      "title": "ClinSeekAgent: Automating Multimodal Evidence Seeking for Agentic Clinical Reasoning",
+      "authors": [
+        "Juncheng Wu",
+        "Letian Zhang",
+        "Yuhan Wang",
+        "Haoqin Tu",
+        "Hardy Chen"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "ClinSeekAgent automates the process of actively seeking and synthesizing multimodal evidence from diverse clinical data sources for LLM-based reasoning. Unlike previous approaches that assume pre-curated evidence, it dynamically queries knowledge bases, navigates EHRs, and uses imaging tools to gather information, refining hypotheses as it learns. This framework enables LLMs to make more grounded clinical decisions by actively acquiring and integrating evidence.",
+      "url": "http://arxiv.org/abs/2605.20176v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20176v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.20176v1/figure/teaser.png",
+      "figure_caption": "ClinSeekAgent Overview. ClinSeekAgent is an automated agentic evidence-seeking pipeline. It interacts with heterogeneous data sources to enable multimodal evidence seeking for clinical decision support. Compared with prior user-curated context settings, ClinSeekAgent is more flexible by acquiring richer information and knowledge from diverse tools.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.20170v1",
+      "title": "KoRe: Compact Knowledge Representations for Large Language Models",
+      "authors": [
+        "Davide Cavicchini",
+        "Fausto Giunchiglia",
+        "Jacopo Staiano"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "KoRe addresses the limitations of LLMs encoding knowledge within opaque parameters by introducing a method to represent 1-hop knowledge graph sub-graphs as compact, discrete tokens. These tokens are then injected into a pre-trained LLM backbone without requiring extensive retraining. This approach offers a more transparent and updatable way to integrate external knowledge, leading to competitive performance on knowledge-intensive tasks.",
+      "url": "http://arxiv.org/abs/2605.20170v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20170v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.20170v1/x1.png",
+      "figure_caption": "Taxonomy of Knowledge Augmentation Approaches for LLMs",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.20128v1",
+      "title": "MixRea: Benchmarking Explicit-Implicit Reasoning in Large Language Models",
+      "authors": [
+        "Yuanqing Cai",
+        "Ziyi Huang",
+        "Minhao Liu",
+        "Lixin Duan",
+        "Wen Li"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces the \"explicit-implicit reasoning\" task and the MixRea benchmark to assess if LLMs exhibit \"inattentional blindness\" to subtle cues, similar to humans. Their core method involves creating diverse reasoning questions with varying explicit and implicit information. The contribution lies in demonstrating widespread inattentional blindness in LLMs and proposing Potential Relation Completion Prompting (PRCP) as a method to improve their reasoning by recovering overlooked causal relations.",
+      "url": "http://arxiv.org/abs/2605.20128v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20128v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.20128v1/x1.png",
+      "figure_caption": "An explicit-implicit reasoning example from our MixRea benchmark. When reasoning about explicitly stated information in the question, LLMs must leverage distinctions among events presented in the options to identify and infer relevant implicit information from the story context. They then integrate these reasoning results to derive the optimal event set.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.19988v1",
+      "title": "A Case for Agentic Tuning: From Documentation to Action in PostgreSQL",
+      "authors": [
+        "Hongyu Lin",
+        "Mingyu Li",
+        "Weichen Zhang",
+        "Yihang Lou",
+        "Mingjie Xing"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.DB",
+        "cs.PF",
+        "cs.SE"
+      ],
+      "abstract": "This paper argues that traditional documentation-based system tuning is insufficient due to its static nature and lack of reasoning. It introduces PerfEvolve, a method that empowers LLM agents with executable skills to dynamically tune systems like PostgreSQL by verifying versions, profiling workloads, and optimizing parameters jointly. PerfEvolve significantly outperforms existing documentation-driven tuning methods.",
+      "url": "http://arxiv.org/abs/2605.19988v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.19988v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2605.19988v1/x1.png",
+      "figure_caption": "Latency increase on TPC-H when applying PG-Official and PGTune rules (7 of 22 queries degraded by > > 10%). Both rule sets lead to worse latency on the same kinds of sort- and aggregation-intensive queries.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.20049v1",
+      "title": "Does Code Cleanliness Affect Coding Agents? A Controlled Minimal-Pair Study",
+      "authors": [
+        "Priyansh Trivedi",
+        "Olivier Schmitt"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper investigates if code cleanliness impacts autonomous coding agents. Their core method uses \"minimal pairs\" of code repositories that are identical except for their structural and stylistic quality. The study found that while code cleanliness did not affect the agent's task completion rate, it significantly altered its operational footprint.",
+      "url": "http://arxiv.org/abs/2605.20049v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.20049v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2605.20049v1/x1.png",
+      "figure_caption": "An example task in the benchmark, drawn from the genie pair. The agent reads an externally observable description (shown) and produces a code change that a hidden test suite, kept internal, exercises against the application’s public surface. This task asks the agent to add a structured failure-stage tag to Genie’s synchronous job-launch timer so that dashboards can attribute job-launch failures to a specific pipeline stage.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "hacker_news": [
+    {
+      "id": 48196570,
+      "title": "Gemini 3.5 Flash",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+      "score": 801,
+      "created_at": "2026-05-19T17:43:45Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48196570",
+      "summary": "Google's Gemini 3.5 Flash is a new, faster, and more cost-effective AI model designed for large-scale applications, building on the capabilities of Gemini 3.5 Pro."
+    },
+    {
+      "id": 48197370,
+      "title": "Google changes its search box",
+      "url": "https://blog.google/products-and-platforms/products/search/search-io-2026/",
+      "score": 555,
+      "created_at": "2026-05-19T18:34:27Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48197370",
+      "summary": "Google is integrating AI-powered \"Search Generative Experience\" (SGE) into its search box, offering AI-generated overviews and conversational follow-ups to user queries."
+    },
+    {
+      "id": 48192383,
+      "title": "Show HN: Forge – Guardrails take an 8B model from 53% to 99% on agentic tasks",
+      "url": "https://github.com/antoinezambelli/forge",
+      "score": 493,
+      "created_at": "2026-05-19T12:23:07Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48192383",
+      "summary": "Forge, a new tool, significantly boosts an 8B model's performance on agentic tasks from 53% to 99% by implementing guardrails."
+    },
+    {
+      "id": 48200569,
+      "title": "Remove-AI-Watermarks – CLI and library for removing AI watermarks from images",
+      "url": "https://github.com/wiltodelta/remove-ai-watermarks",
+      "score": 287,
+      "created_at": "2026-05-19T22:30:31Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48200569",
+      "summary": "This tech news story introduces \"Remove-AI-Watermarks,\" a command-line interface and library designed to remove AI-generated watermarks from images."
+    },
+    {
+      "id": 48198291,
+      "title": "OpenAI Adopts Google's SynthID Watermark for AI Images with Verification Tool",
+      "url": "https://openai.com/index/advancing-content-provenance/",
+      "score": 283,
+      "created_at": "2026-05-19T19:34:30Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48198291",
+      "summary": "OpenAI is integrating Google's SynthID watermarking technology to invisibly mark AI-generated images, allowing for verification of their origin."
+    },
+    {
+      "id": 48197995,
+      "title": "Mistral AI acquires Emmi AI",
+      "url": "https://www.emmi.ai/news/mistral-ai-acquires-emmi-ai",
+      "score": 264,
+      "created_at": "2026-05-19T19:14:12Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48197995",
+      "summary": "Mistral AI has acquired Emmi AI, a company specializing in large language model development, to bolster its AI capabilities and expand its team."
+    },
+    {
+      "id": 48196656,
+      "title": "Gemini 3.5 Flash: frontier intelligence with action",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+      "score": 180,
+      "created_at": "2026-05-19T17:49:50Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48196656",
+      "summary": "Google's Gemini 3.5 Flash is a new frontier AI model optimized for speed and efficiency, enabling rapid processing of information and actions."
+    },
+    {
+      "id": 48195100,
+      "title": "AI is too expensive",
+      "url": "https://www.wheresyoured.at/ai-is-too-expensive/",
+      "score": 139,
+      "created_at": "2026-05-19T15:59:03Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48195100",
+      "summary": "The article argues that the high costs of developing and deploying AI are a significant barrier, potentially limiting its widespread adoption and accessibility."
+    },
+    {
+      "id": 48194098,
+      "title": "Why is almost everyone right-handed? A new study connects it to bipedalism",
+      "url": "https://www.ox.ac.uk/news/2026-05-15-why-is-almost-everyone-right-handed-the-answer-may-lie-in-how-we-learned-to-walk",
+      "score": 132,
+      "created_at": "2026-05-19T14:50:42Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48194098",
+      "summary": "A new study suggests that the prevalence of right-handedness in humans may be linked to the evolution of bipedalism, as upright walking potentially influenced brain development and motor control."
+    },
+    {
+      "id": 48196546,
+      "title": "Graduates are booing pep talks on AI at college commencements",
+      "url": "https://apnews.com/article/ai-college-commencement-anxiety-boo-35aec9bac660eaeb05c5b8d392db2cac",
+      "score": 116,
+      "created_at": "2026-05-19T17:42:11Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48196546",
+      "summary": "College graduates are booing commencement speeches about AI, expressing anxiety and a desire for more relevant messages beyond the technology's potential impact."
+    }
+  ],
+  "github_trending": [
+    {
+      "full_name": "tinyhumansai/openhuman",
+      "url": "https://github.com/tinyhumansai/openhuman",
+      "description": "Your Personal AI super intelligence. Private, Simple and extremely powerful.",
+      "stars_today": 3973,
+      "total_stars": 22884,
+      "language": "Rust",
+      "topics": [],
+      "summary": "OpenHuman is a personal AI superintelligence designed to be private, simple, and extremely powerful, acting as your dedicated AI assistant."
+    },
+    {
+      "full_name": "HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "stars_today": 1038,
+      "total_stars": 38170,
+      "language": "Python",
+      "topics": [],
+      "summary": "CLI-Anything enables any software to be controlled by AI agents by translating natural language commands into executable CLI commands, acting as a universal interface for agent-native software interaction."
+    },
+    {
+      "full_name": "Imbad0202/academic-research-skills",
+      "url": "https://github.com/Imbad0202/academic-research-skills",
+      "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
+      "stars_today": 3164,
+      "total_stars": 14911,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository provides a structured framework for academic research, guiding users through the iterative process of research, writing, review, revision, and finalization."
+    },
+    {
+      "full_name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "stars_today": 1623,
+      "total_stars": 199331,
+      "language": "Shell",
+      "topics": [],
+      "summary": "Superpowers is an agentic skills framework and software development methodology designed to enhance productivity and effectiveness in software projects."
+    },
+    {
+      "full_name": "anthropics/claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "stars_today": 171,
+      "total_stars": 20477,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository serves as an official, Anthropic-managed directory of high-quality Claude Code Plugins, enabling developers to extend Claude's capabilities."
+    },
+    {
+      "full_name": "rohitg00/agentmemory",
+      "url": "https://github.com/rohitg00/agentmemory",
+      "description": "#1 Persistent memory for AI coding agents based on real-world benchmarks",
+      "stars_today": 1609,
+      "total_stars": 14636,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "This repository provides persistent memory for AI coding agents, enabling them to retain and recall information effectively for improved performance on real-world coding tasks."
+    },
+    {
+      "full_name": "CloakHQ/CloakBrowser",
+      "url": "https://github.com/CloakHQ/CloakBrowser",
+      "description": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.",
+      "stars_today": 1463,
+      "total_stars": 17171,
+      "language": "Python",
+      "topics": [],
+      "summary": "CloakBrowser is a stealthy Chromium browser designed to bypass bot detection, functioning as a drop-in Playwright replacement with source-level fingerprint patches that pass all tests."
+    },
+    {
+      "full_name": "rtk-ai/rtk",
+      "url": "https://github.com/rtk-ai/rtk",
+      "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
+      "stars_today": 704,
+      "total_stars": 51507,
+      "language": "Rust",
+      "topics": [],
+      "summary": "RTK is a CLI proxy that significantly reduces LLM token consumption (60-90%) for common developer commands, delivered as a single, zero-dependency Rust binary."
+    },
+    {
+      "full_name": "msitarzewski/agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "stars_today": 1120,
+      "total_stars": 102256,
+      "language": "Shell",
+      "topics": [],
+      "summary": "This repository provides a comprehensive AI agency with specialized agents, each possessing a unique personality and expertise, to handle diverse tasks from frontend development to community management and critical analysis."
+    }
+  ],
+  "us_stocks": [],
+  "postdoc_jobs": [],
+  "jobs": [],
+  "supervisor_updates": [],
+  "weather": [
+    {
+      "query": "London",
+      "label": "London, England, United Kingdom",
+      "resolved_name": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "timezone": "Europe/London",
+      "forecast_date": "2026-05-20",
+      "condition": "Overcast",
+      "weather_code": 3,
+      "temperature_c": 16.7,
+      "apparent_temperature_c": 13.8,
+      "temp_max_c": 18.5,
+      "temp_min_c": 12.7,
+      "humidity_pct": 58,
+      "wind_speed_kmh": 17.6,
+      "precipitation_probability_pct": 27,
+      "is_day": true,
+      "sunrise": "2026-05-20T05:01",
+      "sunset": "2026-05-20T20:52",
+      "source": "Open-Meteo",
+      "source_url": "https://open-meteo.com/"
+    }
+  ]
+}
