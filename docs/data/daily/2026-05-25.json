@@ -1,0 +1,1765 @@
+{
+  "date": "2026-05-25",
+  "generated_at": "2026-05-25T10:58:45.398971+00:00",
+  "sections_ordered": [
+    {
+      "key": "quote_of_day",
+      "payload_key": "quote_of_day",
+      "title": "Words for the Morning",
+      "icon": "✦",
+      "items": [
+        {
+          "quote": "The slave may be happy, but happiness is not enough.",
+          "author": "Herbert Read",
+          "category": "happiness"
+        }
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "key": "weather",
+      "payload_key": "weather",
+      "title": "Weather",
+      "icon": "🌦️",
+      "items": [
+        {
+          "query": "London",
+          "label": "London, England, United Kingdom",
+          "resolved_name": "London",
+          "region": "England",
+          "country": "United Kingdom",
+          "latitude": 51.50853,
+          "longitude": -0.12574,
+          "timezone": "Europe/London",
+          "forecast_date": "2026-05-25",
+          "condition": "Clear sky",
+          "weather_code": 0,
+          "temperature_c": 28.4,
+          "apparent_temperature_c": 30.6,
+          "temp_max_c": 34.2,
+          "temp_min_c": 19.8,
+          "humidity_pct": 42,
+          "wind_speed_kmh": 6.5,
+          "precipitation_probability_pct": 0,
+          "is_day": true,
+          "sunrise": "2026-05-25T04:55",
+          "sunset": "2026-05-25T20:59",
+          "source": "Open-Meteo",
+          "source_url": "https://open-meteo.com/"
+        }
+      ],
+      "meta": {
+        "count": 1,
+        "city": "London"
+      }
+    },
+    {
+      "key": "arxiv",
+      "payload_key": "papers",
+      "title": "arXiv Papers",
+      "icon": "📄",
+      "items": [
+        {
+          "id": "2605.23590v1",
+          "title": "Co-ReAct: Rubrics as Step-Level Collaborators for ReAct Agents",
+          "authors": [
+            "Jiazheng Kang",
+            "Bowen Zhang",
+            "Zixin Song",
+            "Jiangwang Chen",
+            "Xiao Yang"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "Co-ReAct introduces a novel framework where rubrics act as step-level collaborators for ReAct agents during inference. By injecting rubrics into the agent's context at each decision point, Co-ReAct provides explicit guidance on what to target in evidence seeking, reasoning, and self-evaluation, leading to more focused and effective multi-step reasoning trajectories. This approach moves beyond rubrics as mere evaluators to become active guides for agent actions.",
+          "url": "http://arxiv.org/abs/2605.23590v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.23590v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.23590v1/x1.png",
+          "figure_caption": "Overview of Co-ReAct. (i) Collect: sample candidate next actions at each branching point and rank them with multi-judge expert consensus. (ii) Train: GRPO with a Spearman reward between the rubric-induced ranking and the expert ranking. (iii) Infer: the trained rubric drives a five-tuple (Rubric, Reason, Act, Verify, Observe) loop.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.23605v1",
+          "title": "DiLaDiff: Distilled Latent-Augmented Diffusion for Language Modeling",
+          "authors": [
+            "Jean-Marie Lemercier",
+            "Tomas Geffner",
+            "Karsten Kreis",
+            "Morteza Mardani",
+            "Arash Vahdat"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "DiLaDiff addresses the token correlation issue in diffusion language models by introducing a continuous latent space. This latent space, learned via an auto-encoder and a latent diffusion model, captures semantic relationships. A consistency model then distills this latent prior into a fast, few-step generative model, significantly improving sampling quality and inference speed over existing methods.",
+          "url": "http://arxiv.org/abs/2605.23605v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.23605v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.23605v1/x1.png",
+          "figure_caption": "DiLaDiff: hybrid continuous-discrete diffusion with self-distilled latent. The latent space is crafted with encoder ℰ \\( \\mathcal{E}_{\\phi} \\) and decoder 𝐱 θ {\\( \\mathbf{x} \\)}_{\\( \\theta \\)} and learned a posteriori with a diffusion process with denoiser 𝐳 ψ {\\( \\mathbf{z} \\)}_{\\( \\psi \\)} . The latent diffusion trajectories are further self-distilled with MeanFlow student 𝐮 η ​ ( 𝐳 τ , τ , r ) \\( \\mathbf{u}_{\\eta} \\)({\\( \\mathbf{z} \\)}_{\\( \\tau \\)},\\( \\tau \\),r) .",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.23899v1",
+          "title": "From Raw Experience to Skill Consumption: A Systematic Study of Model-Generated Agent Skills",
+          "authors": [
+            "Zisu Huang",
+            "Jingwen Xu",
+            "Yifan Yang",
+            "Ziyang Gong",
+            "Qihao Yang"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper systematically studies the full lifecycle of model-generated skills for language agents, from experience generation to skill extraction and consumption. Their core contribution is a utility-grounded evaluation framework that reveals model-generated skills are generally beneficial but their effectiveness is non-trivial and depends on various factors.",
+          "url": "http://arxiv.org/abs/2605.23899v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.23899v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.23899v1/x2.png",
+          "figure_caption": "Overview of our study design. We evaluate the full trajectory-to-skill lifecycle across three stages: experience generation, skill extraction, and skill consumption.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.23551v1",
+          "title": "Goal-Conditioned Agents that Learn Everything All at Once",
+          "authors": [
+            "Michael Matthews",
+            "Matthew Jackson",
+            "Michael Beukman",
+            "Thomas Foster",
+            "Alistair Letcher"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces Learning Everything All at Once (LEO), a method for goal-conditioned reinforcement learning. LEO efficiently utilizes all transitions by performing off-policy updates for every possible goal simultaneously, overcoming the computational infeasibility of naive relabeling. This approach significantly improves performance and achieves substantial speed-ups on various control tasks.",
+          "url": "http://arxiv.org/abs/2605.23551v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.23551v1",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.23825v1",
+          "title": "It's the humans, not the data: Geopolitical bias in LLMs originates in post-training, amplified by the language of the prompt",
+          "authors": [
+            "Stuart Bladon",
+            "Brinnae Bent"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper demonstrates that geopolitical bias in Large Language Models (LLMs) primarily emerges during the post-training (chat tuning) phase, not from the initial training data. The authors found that LLMs often develop a bias favoring the country of their developer after chat tuning, and this bias is further influenced by the language of the prompt.",
+          "url": "http://arxiv.org/abs/2605.23825v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.23825v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.23825v1/main_figure.png",
+          "figure_caption": "Overview, seven families. (A) Per-country preference base → \\( \\to \\) post-trained; for the six non-GLM bases, cross-country spread \\( \\sigma \\) grows post-training (Qwen 3.9 → 30.3 3.9\\( \\to \\) 30.3 pp). (B) Post-training \\( \\Delta \\) in China-favourability (EN, coherent subset). 3/3 Western labs shift anti-China; 3/4 Chinese labs shift pro-China; Yi shifts anti-China after prefill correction. GLM is shown with its (atypical) base preserved for completeness; see § Bias Is Created by Post-Training, Not Pretraining . The legend’s low-compliance encoding is described in § What MCQ Compliance Tells Us About Validity . (C) ZH − - EN shift on post-trained models: 5/7 descriptively pro-China but population-level claim is not statistically separable from the base trend (§ Linguistic Identity Modulates the Post-Training Bias ).",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.23723v1",
+          "title": "MemAudit: Post-hoc Auditing of Poisoned Agent Memory via Causal Attribution and Structural Anomaly Detection",
+          "authors": [
+            "Zhewen Tan",
+            "Yilun Yao",
+            "Huiyan Jin",
+            "Wenhan Yu",
+            "Guoan Wang"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "MemAudit is a post-hoc framework for auditing poisoned memory in LLM agents. It uses causal attribution to identify memories that causally influence harmful outputs and structural anomaly detection to pinpoint inconsistencies within the memory. This allows for the identification and mitigation of malicious memory injections after an agent has exhibited undesirable behavior.",
+          "url": "http://arxiv.org/abs/2605.23723v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.23723v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.23723v1/x1.png",
+          "figure_caption": "Overview of MemAudit. Given a harmful event e = ( q ∗ , y ∗ , R ∗ ) e=(q^{*},y^{*},R^{*}) , the framework performs post-hoc auditing over the memory store. It combines two complementary signals: CMIS, which measures the causal contribution of retrieved memories through counterfactual replay, and MCG, which identifies structurally anomalous memories in the global memory graph. The two signals are fused into a detoxification score for ranking suspicious memories. After removing the top-ranked memories, the agent becomes safer while preserving useful memory.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.23574v1",
+          "title": "Push Your Agent: Measuring and Enforcing Quantitative Goal Persistence in Long-Horizon LLM Agents",
+          "authors": [
+            "Yuandao Cai",
+            "Yuzhang Zhu",
+            "Liyou Gao",
+            "Wensheng Tang",
+            "Shengchao Qin"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.SE"
+          ],
+          "abstract": "This paper introduces Quantitative Goal Persistence (QGP) to measure how well LLM agents complete tasks requiring a specific number of distinct items. Their benchmark, PushBench, uses verifiers to track progress and identify issues like repeated work or false completion. They demonstrate that specialized controllers significantly improve QGP, outperforming standard methods in challenging long-horizon tasks.",
+          "url": "http://arxiv.org/abs/2605.23574v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.23574v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.23574v1/x1.png",
+          "figure_caption": "PushBench workflow: agents act through a controller, task environment, and verifier until the count goal is met or the budget is exhausted.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2605.23454v1",
+          "title": "ARES: Automated Rubric Synthesis for Scalable LLM Reinforcement Learning",
+          "authors": [
+            "Xiaoyuan Li",
+            "Keqin Bao",
+            "Moxin Li",
+            "Yubo Ma",
+            "Yichang Zhang"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "ARES automates the creation of question-answer pairs and corresponding weighted rubrics from raw text, enabling scalable reinforcement learning for LLMs on open-ended tasks. This framework addresses the limitations of expert-written rubrics and fixed task-level evaluations by generating instance-specific reward supervision. ARES's contribution lies in its ability to synthesize diverse and high-quality training data for LLM RL, improving evaluation beyond automatically verifiable answers.",
+          "url": "http://arxiv.org/abs/2605.23454v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.23454v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.23454v1/x1.png",
+          "figure_caption": "Overview of the six-stage ARES pipeline. Starting from raw pretraining documents, ARES performs document filtering, domain and persona conditioning, rubric-augmented QA generation, quality verification, rubric validation, and format conversion to produce training instances.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2605.23657v1",
+          "title": "OpenSkillEval: Automatically Auditing the Open Skill Ecosystem for LLM Agents",
+          "authors": [
+            "Jiahao Ying",
+            "Boxian Ai",
+            "Wei Tang",
+            "Siyuan Liu",
+            "Yixin Cao"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces OpenSkillEval, an automatic framework for evaluating LLM agents and the skills they use. It addresses the challenge of assessing the growing open-source skill ecosystem by generating realistic task instances from real-world artifacts and organizing community-contributed skills. The core contribution is a dynamic evaluation method that goes beyond static benchmarks to understand skill quality and guide user selection based on cost-performance.",
+          "url": "http://arxiv.org/abs/2605.23657v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.23657v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.23657v1/x1.png",
+          "figure_caption": "Overview of the OpenSkillEval framework. The framework supports automatic test case generation for five core task categories by reflecting evolving user needs. It further enables automatic evaluation from two complementary perspectives: (1) analysis of model trajectory traces to study how skills are used within skill-augmented agent systems, and (2) assessment of the quality of the final artifacts produced under skill augmentation.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2605.23459v1",
+          "title": "AI Assurance: A Comprehensive Testing Strategy for Enterprise AI Systems",
+          "authors": [
+            "Chitra Badagi",
+            "Divye Singh",
+            "Animesh Sen",
+            "Adinath Shirsath"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.SE"
+          ],
+          "abstract": "This paper proposes a new AI assurance strategy for enterprise AI systems, shifting from traditional correctness verification to continuous risk reduction. It emphasizes treating evaluation as a core engineering discipline and introduces a structured AI Failure Taxonomy and a revised AI Assurance Pyramid to address the unique probabilistic and emergent nature of these systems. The contribution lies in providing a comprehensive framework and operational guidance for managing the distinct risks associated with enterprise AI.",
+          "url": "http://arxiv.org/abs/2605.23459v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.23459v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.23655v1",
+          "title": "CVSearch: Empowering Multimodal LLMs with Cognitive Visual Search for High-Resolution Image Perception",
+          "authors": [
+            "Liupeng Li",
+            "Haoqian Kang",
+            "Zhenyu Lu",
+            "Jinpeng Wang",
+            "Bin Chen"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CV",
+            "cs.MM"
+          ],
+          "abstract": "CVSearch tackles the challenge of high-resolution image perception in multimodal LLMs by dynamically adapting its search strategy. It first attempts an efficient expert-assisted search and, if that fails, employs a novel semantic-aware scanning method that intelligently partitions images into coherent regions to avoid fragmentation. This approach balances coverage and efficiency, improving the LLM's ability to perceive detailed images.",
+          "url": "http://arxiv.org/abs/2605.23655v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.23655v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.23897v1",
+          "title": "ETCHR: Editing To Clarify and Harness Reasoning",
+          "authors": [
+            "Beichen Zhang",
+            "Yuhong Liu",
+            "Jinsong Li",
+            "Yuhang Zang",
+            "Jiaqi Wang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.CV"
+          ],
+          "abstract": "ETCHR addresses limitations in multimodal reasoning by decoupling an image editing model from a language understanding model. Its core method involves training a question-conditioned, reasoning-aware image editor that can perform visual transformations to clarify reasoning steps, overcoming the limitations of fixed toolkits and noisy intermediate images. The contribution is a novel approach that enhances visual reasoning by enabling editors to actively participate in the reasoning process, improving accuracy even with complex queries.",
+          "url": "http://arxiv.org/abs/2605.23897v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.23897v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.23897v1/x1.png",
+          "figure_caption": "ETCHR vs. prior “think with images” paradigms. (a) Tool-based methods emit action tokens to a renderer, limiting edits to low-level operations and requiring VLM fine-tuning. (b) Unified models share one backbone for text and images, weakening both and producing noisy intermediates. (c) ETCHR decouples a question-conditioned editor from the understanding MLLM and adds a verify-and-reason step, enabling plug-and-play use across tasks. (d) Across nine benchmarks, ETCHR (with Qwen3-VL-8B and Kimi K2.5 1T) surpasses tool-based and unified-model baselines.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.23861v1",
+          "title": "Leveraging Foundation Models for Causal Generative Modeling",
+          "authors": [
+            "Aneesh Komanduri",
+            "Xintao Wu"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CV"
+          ],
+          "abstract": "This paper introduces FM-CGM, a modular framework that leverages pretrained foundation models for end-to-end visual causal reasoning. It comprises a concept extractor, manipulator, and counterfactual generator, enabling zero-shot causal discovery, intervention, and generation. The key contribution is the development of Causal Semantic Guidance (CSG), a mechanism that ensures semantic interventions propagate correctly while preserving invariant relationships.",
+          "url": "http://arxiv.org/abs/2605.23861v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.23861v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.23861v1/x1.png",
+          "figure_caption": "Figure 1 . An overview of Foundation Model Powered Causal Generative Model (FM-CGM) consisting of a concept extractor, concept manipulator, and counterfactual generator enabled by foundation models",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.23901v1",
+          "title": "LLMs as Noisy Channels: A Shannon Perspective on Model Capacity and Scaling Laws",
+          "authors": [
+            "Xu Ouyang",
+            "Deyi Liu",
+            "Yuhang Cai",
+            "Jing Liu",
+            "Yuan Yang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.IT"
+          ],
+          "abstract": "This paper proposes the \"Shannon Scaling Law\" to explain LLM behavior beyond monotonic scaling. It models LLM training as information transmission over a noisy channel, where model parameters represent bandwidth and training tokens represent signal power. This framework reveals a fundamental Shannon capacity for LLMs, explaining non-monotonic performance degradation when the signal-to-noise ratio is insufficient.",
+          "url": "http://arxiv.org/abs/2605.23901v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.23901v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.23901v1/x1.png",
+          "figure_caption": "Loss landscapes between Pretraining and downstream SFT. While pretraining exhibits monotonic improvement, SFT reveals a loss basin, indicating that scaling either model size or token count beyond a critical threshold leads to performance degradation.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.23883v1",
+          "title": "PGT: Procedurally Generated Tasks for improving visual grounding in MLLMs",
+          "authors": [
+            "Rim Assouel",
+            "Amir Bar",
+            "Michal Drozdzal",
+            "Adriana Romero-Soriano"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CV"
+          ],
+          "abstract": "This paper introduces Procedurally Generated Tasks (PGT), a novel data-driven framework to enhance fine-grained visual understanding in Multimodal Large Language Models (MLLMs). PGT overlays geometric primitives on images to create dense supervision, disentangling visual grounding from semantic knowledge. This approach significantly improves performance on relational, quantitative, and 3D understanding benchmarks, with instruction tuning on PGT data yielding substantial gains on specific benchmarks like What'sUp and CV-Bench-2D.",
+          "url": "http://arxiv.org/abs/2605.23883v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.23883v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.23883v1/x1.png",
+          "figure_caption": "Overview of PGT. Top : The construction of our procedurally generated data to augment instruction tuning training datasets. Abstract geometric primitives are overlaid to training data, when available. Bottom : (Left) Examples of failure modes in fine-grained relational and spatial understanding of state-of-the-art MLLMs. In the first example the model can rely on the fact that a bowl is usually on a table and in the second example it can rely on the shortcut where object higher up as usually further from the camera (Right) PGT performance boosts in relational, quantitative, and 3D/depth understanding over the baseline when using different instruction tuning dataset sizes.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.23522v1",
+          "title": "Precise: SDE-Consistent Stochastic Sampling for RL Post-Training of Flow-Matching Models",
+          "authors": [
+            "Jade Zou",
+            "Tao Huang",
+            "Weijie Kong",
+            "Junzhe Li",
+            "Yue Wu"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CV"
+          ],
+          "abstract": "This paper proposes \"Precise,\" a method for improving Reinforcement Learning (RL) in flow-matching models by addressing the challenge of converting deterministic sampling to a stochastic policy. Precise breaks down sampler design into balancing exploration and faithful SDE discretization, deriving an SDE schedule to optimize this balance and improve RL performance.",
+          "url": "http://arxiv.org/abs/2605.23522v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.23522v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.23522v1/figures/sampler_design_coordinates.png",
+          "figure_caption": "Left: Sampler design has two coupled axes: the exploration-stability balance and SDE consistency. Existing stochastic samplers occupy different trade-offs, while Precise improves both. Right: The double-ring example illustrates failure modes of existing samplers: Flow-GRPO (Liu et al., 2025 ) introduces excess noise, while CPS (Wang & Yu, 2025 ) biases the marginal distribution.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.23904v1",
+          "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
+          "authors": [
+            "Yifan Yang",
+            "Ziyang Gong",
+            "Weiquan Huang",
+            "Qihao Yang",
+            "Ziwei Zhou"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "SkillOpt treats agent skills as trainable external states, optimizing them through controlled text edits rather than hand-crafting or loose self-revision. This systematic approach uses a separate optimizer model to make bounded add/delete/replace edits to a skill document, accepting only those that strictly improve performance. SkillOpt's core contribution is a controllable, text-space optimizer for agent skills that achieves stable, reproducible skill improvement without increasing inference cost.",
+          "url": "http://arxiv.org/abs/2605.23904v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.23904v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.23904v1/x2.png",
+          "figure_caption": "Overview of SkillOpt . The target model executes tasks with a current skill, an additional frontier optimizer model converts trajectories into bounded add/delete/replace skill edits, and a held-out gate accepts only edits that improve validation performance. Accepted edits are exported as a reusable skill artifact, while rejected edits become negative feedback for later updates.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.23751v1",
+          "title": "Approaching I/O-optimality for Approximate Attention",
+          "authors": [
+            "Pál András Papp",
+            "Aleksandros Sobczyk",
+            "Anastasios Zouzias"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "abstract": "This paper presents an I/O-efficient algorithm for computing attention in large language models, significantly reducing data transfers between fast and slow memory. By adapting an approximate attention framework, their method achieves an almost-linear I/O cost with respect to the input size $n$, approaching the theoretical lower bound. This work contributes to making large language model computations more memory-efficient.",
+          "url": "http://arxiv.org/abs/2605.23751v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.23751v1",
+          "score": 8.0,
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2605.23650v1",
+          "title": "Learning Kernel-Based MDPs from Episodic Preferential Feedback",
+          "authors": [
+            "Nikola Pavlovic",
+            "Sattar Vakili",
+            "Qing Zhao"
+          ],
+          "categories": [
+            "cs.LG",
+            "stat.ML"
+          ],
+          "abstract": "This paper develops a theoretical framework for learning Markov Decision Processes (MDPs) with kernel-based rewards and transitions using only episodic preferential feedback. The core method involves estimating values and confidence sets based on pairwise trajectory comparisons, modeled by a Bradley-Terry-Luce link. The main contribution is proving sublinear regret bounds, demonstrating that the learned policy converges to the optimal one with sufficient data.",
+          "url": "http://arxiv.org/abs/2605.23650v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.23650v1",
+          "score": 8.0,
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2605.23857v1",
+          "title": "Strong Teacher Not Needed? On Distillation in LLM Pretraining",
+          "authors": [
+            "Taiming Lu",
+            "Zhuang Liu"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "This paper investigates knowledge distillation for Large Language Model pretraining, challenging the assumption that a stronger teacher is always necessary. They demonstrate that even smaller, undertrained teachers can effectively improve larger students through careful loss mixing. Furthermore, a stronger teacher doesn't guarantee better results, and distillation primarily enhances generalization rather than in-domain performance.",
+          "url": "http://arxiv.org/abs/2605.23857v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.23857v1",
+          "score": 8.0,
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        }
+      ],
+      "meta": {
+        "papers_fetched": 100,
+        "papers_after_keyword_filter": 47,
+        "papers_after_llm_filter": 38,
+        "count": 20
+      }
+    },
+    {
+      "key": "hacker_news",
+      "payload_key": "hacker_news",
+      "title": "Hacker News",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": 48258684,
+          "title": "Memory has grown to nearly two-thirds of AI chip component costs",
+          "url": "https://epoch.ai/data-insights/ai-chip-component-cost-shares",
+          "score": 393,
+          "created_at": "2026-05-24T16:31:29Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48258684",
+          "summary": "Memory now accounts for almost two-thirds of the component costs in AI chips, significantly impacting overall expenses."
+        },
+        {
+          "id": 48256912,
+          "title": "Constraint Decay: The Fragility of LLM Agents in Back End Code Generation",
+          "url": "https://arxiv.org/abs/2605.06445",
+          "score": 243,
+          "created_at": "2026-05-24T12:55:53Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48256912",
+          "summary": "This research highlights how Large Language Model (LLM) agents struggle with backend code generation due to \"constraint decay,\" where their ability to adhere to complex requirements diminishes over time."
+        },
+        {
+          "id": 48257410,
+          "title": "DeepSeek to Make Permanent 75% Discount on Flagship AI Model",
+          "url": "https://www.bloomberg.com/news/articles/2026-05-23/deepseek-to-make-permanent-75-discount-on-flagship-ai-model",
+          "score": 207,
+          "created_at": "2026-05-24T14:09:33Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48257410",
+          "summary": "DeepSeek will permanently offer a 75% discount on its flagship AI model, making its advanced technology more accessible."
+        },
+        {
+          "id": 48257980,
+          "title": "'AI washing': firms are scrambling to rebrand themselves as tech-focused",
+          "url": "https://www.theguardian.com/technology/2026/may/24/ai-washing-pr-firms-scrambling-rebrand",
+          "score": 163,
+          "created_at": "2026-05-24T15:21:28Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48257980",
+          "summary": "Companies are increasingly rebranding themselves as AI-focused, a trend dubbed \"AI washing,\" as PR firms help them capitalize on the artificial intelligence hype."
+        }
+      ],
+      "meta": {
+        "count": 4
+      }
+    },
+    {
+      "key": "github_trending",
+      "payload_key": "github_trending",
+      "title": "GitHub Trending",
+      "icon": "⭐",
+      "items": [
+        {
+          "full_name": "Lum1104/Understand-Anything",
+          "url": "https://github.com/Lum1104/Understand-Anything",
+          "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+          "stars_today": 3999,
+          "total_stars": 28942,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "This repository's core function is to transform code into interactive knowledge graphs for exploration and querying, supporting various AI coding tools to enhance understanding over mere visual appeal."
+        },
+        {
+          "full_name": "anthropics/knowledge-work-plugins",
+          "url": "https://github.com/anthropics/knowledge-work-plugins",
+          "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+          "stars_today": 550,
+          "total_stars": 14532,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository provides open-source plugins designed to enhance Claude Cowork for knowledge workers, enabling them to integrate external tools and data for improved productivity."
+        },
+        {
+          "full_name": "rohitg00/ai-engineering-from-scratch",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+          "description": "Learn it. Build it. Ship it for others.",
+          "stars_today": 1853,
+          "total_stars": 17658,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository provides a hands-on guide to building and deploying AI systems from the ground up, focusing on practical application and sharing knowledge."
+        },
+        {
+          "full_name": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC",
+          "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+          "stars_today": 2052,
+          "total_stars": 191555,
+          "language": "JavaScript",
+          "topics": [],
+          "summary": "This repository provides an agent harness for performance optimization, focusing on skills, instincts, memory, security, and research-first development for various AI coding assistants like Claude Code and Codex."
+        },
+        {
+          "full_name": "mukul975/Anthropic-Cybersecurity-Skills",
+          "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+          "description": "754 structured cybersecurity skills for AI agents · Mapped to 5 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND & NIST AI RMF · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 26 security domains · Apache 2.0",
+          "stars_today": 930,
+          "total_stars": 8780,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository provides a structured dataset of 754 cybersecurity skills for AI agents, mapped to five major frameworks, designed to enhance AI security capabilities across various platforms."
+        },
+        {
+          "full_name": "colbymchenry/codegraph",
+          "url": "https://github.com/colbymchenry/codegraph",
+          "description": "Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, OpenCode, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+          "stars_today": 3003,
+          "total_stars": 23925,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "This repository provides a pre-indexed code knowledge graph for AI code assistants, enabling them to access code information with fewer tokens and tool calls, all processed locally."
+        },
+        {
+          "full_name": "manaflow-ai/cmux",
+          "url": "https://github.com/manaflow-ai/cmux",
+          "description": "Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents",
+          "stars_today": 696,
+          "total_stars": 19268,
+          "language": "Swift",
+          "topics": [],
+          "summary": "This repository provides a Ghostty-based macOS terminal featuring vertical tabs and notifications specifically designed for AI coding agents."
+        },
+        {
+          "full_name": "multica-ai/andrej-karpathy-skills",
+          "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+          "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+          "stars_today": 2551,
+          "total_stars": 153389,
+          "language": "",
+          "topics": [],
+          "summary": "This repository's core function is to enhance Claude's coding abilities by providing a single Markdown file that distills Andrej Karpathy's insights into common Large Language Model coding errors."
+        },
+        {
+          "full_name": "Fincept-Corporation/FinceptTerminal",
+          "url": "https://github.com/Fincept-Corporation/FinceptTerminal",
+          "description": "FinceptTerminal is a modern finance application offering advanced market analytics, investment research, and economic data tools, designed for interactive exploration and data-driven decision-making in a user-friendly environment.",
+          "stars_today": 462,
+          "total_stars": 23615,
+          "language": "Python",
+          "topics": [],
+          "summary": "FinceptTerminal is a modern finance application providing advanced market analytics, investment research, and economic data tools for interactive, data-driven decision-making in a user-friendly environment."
+        }
+      ],
+      "meta": {
+        "count": 9
+      }
+    }
+  ],
+  "meta": {
+    "papers_fetched": 100,
+    "papers_after_keyword_filter": 47,
+    "papers_after_llm_filter": 38,
+    "llm_model": "google/gemini-2.5-flash-lite",
+    "scoring_model": "google/gemini-2.5-flash-lite",
+    "summarization_model": "google/gemini-2.5-flash-lite",
+    "duration_seconds": 63
+  },
+  "quote_of_day": [
+    {
+      "quote": "The slave may be happy, but happiness is not enough.",
+      "author": "Herbert Read",
+      "category": "happiness"
+    }
+  ],
+  "hitokoto": [],
+  "arxiv": [
+    {
+      "id": "2605.23590v1",
+      "title": "Co-ReAct: Rubrics as Step-Level Collaborators for ReAct Agents",
+      "authors": [
+        "Jiazheng Kang",
+        "Bowen Zhang",
+        "Zixin Song",
+        "Jiangwang Chen",
+        "Xiao Yang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "Co-ReAct introduces a novel framework where rubrics act as step-level collaborators for ReAct agents during inference. By injecting rubrics into the agent's context at each decision point, Co-ReAct provides explicit guidance on what to target in evidence seeking, reasoning, and self-evaluation, leading to more focused and effective multi-step reasoning trajectories. This approach moves beyond rubrics as mere evaluators to become active guides for agent actions.",
+      "url": "http://arxiv.org/abs/2605.23590v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23590v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23590v1/x1.png",
+      "figure_caption": "Overview of Co-ReAct. (i) Collect: sample candidate next actions at each branching point and rank them with multi-judge expert consensus. (ii) Train: GRPO with a Spearman reward between the rubric-induced ranking and the expert ranking. (iii) Infer: the trained rubric drives a five-tuple (Rubric, Reason, Act, Verify, Observe) loop.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23605v1",
+      "title": "DiLaDiff: Distilled Latent-Augmented Diffusion for Language Modeling",
+      "authors": [
+        "Jean-Marie Lemercier",
+        "Tomas Geffner",
+        "Karsten Kreis",
+        "Morteza Mardani",
+        "Arash Vahdat"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "DiLaDiff addresses the token correlation issue in diffusion language models by introducing a continuous latent space. This latent space, learned via an auto-encoder and a latent diffusion model, captures semantic relationships. A consistency model then distills this latent prior into a fast, few-step generative model, significantly improving sampling quality and inference speed over existing methods.",
+      "url": "http://arxiv.org/abs/2605.23605v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23605v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23605v1/x1.png",
+      "figure_caption": "DiLaDiff: hybrid continuous-discrete diffusion with self-distilled latent. The latent space is crafted with encoder ℰ \\( \\mathcal{E}_{\\phi} \\) and decoder 𝐱 θ {\\( \\mathbf{x} \\)}_{\\( \\theta \\)} and learned a posteriori with a diffusion process with denoiser 𝐳 ψ {\\( \\mathbf{z} \\)}_{\\( \\psi \\)} . The latent diffusion trajectories are further self-distilled with MeanFlow student 𝐮 η ​ ( 𝐳 τ , τ , r ) \\( \\mathbf{u}_{\\eta} \\)({\\( \\mathbf{z} \\)}_{\\( \\tau \\)},\\( \\tau \\),r) .",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23899v1",
+      "title": "From Raw Experience to Skill Consumption: A Systematic Study of Model-Generated Agent Skills",
+      "authors": [
+        "Zisu Huang",
+        "Jingwen Xu",
+        "Yifan Yang",
+        "Ziyang Gong",
+        "Qihao Yang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper systematically studies the full lifecycle of model-generated skills for language agents, from experience generation to skill extraction and consumption. Their core contribution is a utility-grounded evaluation framework that reveals model-generated skills are generally beneficial but their effectiveness is non-trivial and depends on various factors.",
+      "url": "http://arxiv.org/abs/2605.23899v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23899v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23899v1/x2.png",
+      "figure_caption": "Overview of our study design. We evaluate the full trajectory-to-skill lifecycle across three stages: experience generation, skill extraction, and skill consumption.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23551v1",
+      "title": "Goal-Conditioned Agents that Learn Everything All at Once",
+      "authors": [
+        "Michael Matthews",
+        "Matthew Jackson",
+        "Michael Beukman",
+        "Thomas Foster",
+        "Alistair Letcher"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces Learning Everything All at Once (LEO), a method for goal-conditioned reinforcement learning. LEO efficiently utilizes all transitions by performing off-policy updates for every possible goal simultaneously, overcoming the computational infeasibility of naive relabeling. This approach significantly improves performance and achieves substantial speed-ups on various control tasks.",
+      "url": "http://arxiv.org/abs/2605.23551v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23551v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23825v1",
+      "title": "It's the humans, not the data: Geopolitical bias in LLMs originates in post-training, amplified by the language of the prompt",
+      "authors": [
+        "Stuart Bladon",
+        "Brinnae Bent"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper demonstrates that geopolitical bias in Large Language Models (LLMs) primarily emerges during the post-training (chat tuning) phase, not from the initial training data. The authors found that LLMs often develop a bias favoring the country of their developer after chat tuning, and this bias is further influenced by the language of the prompt.",
+      "url": "http://arxiv.org/abs/2605.23825v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23825v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23825v1/main_figure.png",
+      "figure_caption": "Overview, seven families. (A) Per-country preference base → \\( \\to \\) post-trained; for the six non-GLM bases, cross-country spread \\( \\sigma \\) grows post-training (Qwen 3.9 → 30.3 3.9\\( \\to \\) 30.3 pp). (B) Post-training \\( \\Delta \\) in China-favourability (EN, coherent subset). 3/3 Western labs shift anti-China; 3/4 Chinese labs shift pro-China; Yi shifts anti-China after prefill correction. GLM is shown with its (atypical) base preserved for completeness; see § Bias Is Created by Post-Training, Not Pretraining . The legend’s low-compliance encoding is described in § What MCQ Compliance Tells Us About Validity . (C) ZH − - EN shift on post-trained models: 5/7 descriptively pro-China but population-level claim is not statistically separable from the base trend (§ Linguistic Identity Modulates the Post-Training Bias ).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23723v1",
+      "title": "MemAudit: Post-hoc Auditing of Poisoned Agent Memory via Causal Attribution and Structural Anomaly Detection",
+      "authors": [
+        "Zhewen Tan",
+        "Yilun Yao",
+        "Huiyan Jin",
+        "Wenhan Yu",
+        "Guoan Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "MemAudit is a post-hoc framework for auditing poisoned memory in LLM agents. It uses causal attribution to identify memories that causally influence harmful outputs and structural anomaly detection to pinpoint inconsistencies within the memory. This allows for the identification and mitigation of malicious memory injections after an agent has exhibited undesirable behavior.",
+      "url": "http://arxiv.org/abs/2605.23723v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23723v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23723v1/x1.png",
+      "figure_caption": "Overview of MemAudit. Given a harmful event e = ( q ∗ , y ∗ , R ∗ ) e=(q^{*},y^{*},R^{*}) , the framework performs post-hoc auditing over the memory store. It combines two complementary signals: CMIS, which measures the causal contribution of retrieved memories through counterfactual replay, and MCG, which identifies structurally anomalous memories in the global memory graph. The two signals are fused into a detoxification score for ranking suspicious memories. After removing the top-ranked memories, the agent becomes safer while preserving useful memory.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23574v1",
+      "title": "Push Your Agent: Measuring and Enforcing Quantitative Goal Persistence in Long-Horizon LLM Agents",
+      "authors": [
+        "Yuandao Cai",
+        "Yuzhang Zhu",
+        "Liyou Gao",
+        "Wensheng Tang",
+        "Shengchao Qin"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces Quantitative Goal Persistence (QGP) to measure how well LLM agents complete tasks requiring a specific number of distinct items. Their benchmark, PushBench, uses verifiers to track progress and identify issues like repeated work or false completion. They demonstrate that specialized controllers significantly improve QGP, outperforming standard methods in challenging long-horizon tasks.",
+      "url": "http://arxiv.org/abs/2605.23574v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23574v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23574v1/x1.png",
+      "figure_caption": "PushBench workflow: agents act through a controller, task environment, and verifier until the count goal is met or the budget is exhausted.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2605.23454v1",
+      "title": "ARES: Automated Rubric Synthesis for Scalable LLM Reinforcement Learning",
+      "authors": [
+        "Xiaoyuan Li",
+        "Keqin Bao",
+        "Moxin Li",
+        "Yubo Ma",
+        "Yichang Zhang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "ARES automates the creation of question-answer pairs and corresponding weighted rubrics from raw text, enabling scalable reinforcement learning for LLMs on open-ended tasks. This framework addresses the limitations of expert-written rubrics and fixed task-level evaluations by generating instance-specific reward supervision. ARES's contribution lies in its ability to synthesize diverse and high-quality training data for LLM RL, improving evaluation beyond automatically verifiable answers.",
+      "url": "http://arxiv.org/abs/2605.23454v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23454v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23454v1/x1.png",
+      "figure_caption": "Overview of the six-stage ARES pipeline. Starting from raw pretraining documents, ARES performs document filtering, domain and persona conditioning, rubric-augmented QA generation, quality verification, rubric validation, and format conversion to produce training instances.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.23657v1",
+      "title": "OpenSkillEval: Automatically Auditing the Open Skill Ecosystem for LLM Agents",
+      "authors": [
+        "Jiahao Ying",
+        "Boxian Ai",
+        "Wei Tang",
+        "Siyuan Liu",
+        "Yixin Cao"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces OpenSkillEval, an automatic framework for evaluating LLM agents and the skills they use. It addresses the challenge of assessing the growing open-source skill ecosystem by generating realistic task instances from real-world artifacts and organizing community-contributed skills. The core contribution is a dynamic evaluation method that goes beyond static benchmarks to understand skill quality and guide user selection based on cost-performance.",
+      "url": "http://arxiv.org/abs/2605.23657v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23657v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23657v1/x1.png",
+      "figure_caption": "Overview of the OpenSkillEval framework. The framework supports automatic test case generation for five core task categories by reflecting evolving user needs. It further enables automatic evaluation from two complementary perspectives: (1) analysis of model trajectory traces to study how skills are used within skill-augmented agent systems, and (2) assessment of the quality of the final artifacts produced under skill augmentation.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.23459v1",
+      "title": "AI Assurance: A Comprehensive Testing Strategy for Enterprise AI Systems",
+      "authors": [
+        "Chitra Badagi",
+        "Divye Singh",
+        "Animesh Sen",
+        "Adinath Shirsath"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper proposes a new AI assurance strategy for enterprise AI systems, shifting from traditional correctness verification to continuous risk reduction. It emphasizes treating evaluation as a core engineering discipline and introduces a structured AI Failure Taxonomy and a revised AI Assurance Pyramid to address the unique probabilistic and emergent nature of these systems. The contribution lies in providing a comprehensive framework and operational guidance for managing the distinct risks associated with enterprise AI.",
+      "url": "http://arxiv.org/abs/2605.23459v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23459v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23655v1",
+      "title": "CVSearch: Empowering Multimodal LLMs with Cognitive Visual Search for High-Resolution Image Perception",
+      "authors": [
+        "Liupeng Li",
+        "Haoqian Kang",
+        "Zhenyu Lu",
+        "Jinpeng Wang",
+        "Bin Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CV",
+        "cs.MM"
+      ],
+      "abstract": "CVSearch tackles the challenge of high-resolution image perception in multimodal LLMs by dynamically adapting its search strategy. It first attempts an efficient expert-assisted search and, if that fails, employs a novel semantic-aware scanning method that intelligently partitions images into coherent regions to avoid fragmentation. This approach balances coverage and efficiency, improving the LLM's ability to perceive detailed images.",
+      "url": "http://arxiv.org/abs/2605.23655v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23655v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23897v1",
+      "title": "ETCHR: Editing To Clarify and Harness Reasoning",
+      "authors": [
+        "Beichen Zhang",
+        "Yuhong Liu",
+        "Jinsong Li",
+        "Yuhang Zang",
+        "Jiaqi Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "abstract": "ETCHR addresses limitations in multimodal reasoning by decoupling an image editing model from a language understanding model. Its core method involves training a question-conditioned, reasoning-aware image editor that can perform visual transformations to clarify reasoning steps, overcoming the limitations of fixed toolkits and noisy intermediate images. The contribution is a novel approach that enhances visual reasoning by enabling editors to actively participate in the reasoning process, improving accuracy even with complex queries.",
+      "url": "http://arxiv.org/abs/2605.23897v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23897v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.23897v1/x1.png",
+      "figure_caption": "ETCHR vs. prior “think with images” paradigms. (a) Tool-based methods emit action tokens to a renderer, limiting edits to low-level operations and requiring VLM fine-tuning. (b) Unified models share one backbone for text and images, weakening both and producing noisy intermediates. (c) ETCHR decouples a question-conditioned editor from the understanding MLLM and adds a verify-and-reason step, enabling plug-and-play use across tasks. (d) Across nine benchmarks, ETCHR (with Qwen3-VL-8B and Kimi K2.5 1T) surpasses tool-based and unified-model baselines.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23861v1",
+      "title": "Leveraging Foundation Models for Causal Generative Modeling",
+      "authors": [
+        "Aneesh Komanduri",
+        "Xintao Wu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CV"
+      ],
+      "abstract": "This paper introduces FM-CGM, a modular framework that leverages pretrained foundation models for end-to-end visual causal reasoning. It comprises a concept extractor, manipulator, and counterfactual generator, enabling zero-shot causal discovery, intervention, and generation. The key contribution is the development of Causal Semantic Guidance (CSG), a mechanism that ensures semantic interventions propagate correctly while preserving invariant relationships.",
+      "url": "http://arxiv.org/abs/2605.23861v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23861v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.23861v1/x1.png",
+      "figure_caption": "Figure 1 . An overview of Foundation Model Powered Causal Generative Model (FM-CGM) consisting of a concept extractor, concept manipulator, and counterfactual generator enabled by foundation models",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23901v1",
+      "title": "LLMs as Noisy Channels: A Shannon Perspective on Model Capacity and Scaling Laws",
+      "authors": [
+        "Xu Ouyang",
+        "Deyi Liu",
+        "Yuhang Cai",
+        "Jing Liu",
+        "Yuan Yang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.IT"
+      ],
+      "abstract": "This paper proposes the \"Shannon Scaling Law\" to explain LLM behavior beyond monotonic scaling. It models LLM training as information transmission over a noisy channel, where model parameters represent bandwidth and training tokens represent signal power. This framework reveals a fundamental Shannon capacity for LLMs, explaining non-monotonic performance degradation when the signal-to-noise ratio is insufficient.",
+      "url": "http://arxiv.org/abs/2605.23901v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23901v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.23901v1/x1.png",
+      "figure_caption": "Loss landscapes between Pretraining and downstream SFT. While pretraining exhibits monotonic improvement, SFT reveals a loss basin, indicating that scaling either model size or token count beyond a critical threshold leads to performance degradation.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23883v1",
+      "title": "PGT: Procedurally Generated Tasks for improving visual grounding in MLLMs",
+      "authors": [
+        "Rim Assouel",
+        "Amir Bar",
+        "Michal Drozdzal",
+        "Adriana Romero-Soriano"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "This paper introduces Procedurally Generated Tasks (PGT), a novel data-driven framework to enhance fine-grained visual understanding in Multimodal Large Language Models (MLLMs). PGT overlays geometric primitives on images to create dense supervision, disentangling visual grounding from semantic knowledge. This approach significantly improves performance on relational, quantitative, and 3D understanding benchmarks, with instruction tuning on PGT data yielding substantial gains on specific benchmarks like What'sUp and CV-Bench-2D.",
+      "url": "http://arxiv.org/abs/2605.23883v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23883v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.23883v1/x1.png",
+      "figure_caption": "Overview of PGT. Top : The construction of our procedurally generated data to augment instruction tuning training datasets. Abstract geometric primitives are overlaid to training data, when available. Bottom : (Left) Examples of failure modes in fine-grained relational and spatial understanding of state-of-the-art MLLMs. In the first example the model can rely on the fact that a bowl is usually on a table and in the second example it can rely on the shortcut where object higher up as usually further from the camera (Right) PGT performance boosts in relational, quantitative, and 3D/depth understanding over the baseline when using different instruction tuning dataset sizes.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23522v1",
+      "title": "Precise: SDE-Consistent Stochastic Sampling for RL Post-Training of Flow-Matching Models",
+      "authors": [
+        "Jade Zou",
+        "Tao Huang",
+        "Weijie Kong",
+        "Junzhe Li",
+        "Yue Wu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CV"
+      ],
+      "abstract": "This paper proposes \"Precise,\" a method for improving Reinforcement Learning (RL) in flow-matching models by addressing the challenge of converting deterministic sampling to a stochastic policy. Precise breaks down sampler design into balancing exploration and faithful SDE discretization, deriving an SDE schedule to optimize this balance and improve RL performance.",
+      "url": "http://arxiv.org/abs/2605.23522v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23522v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.23522v1/figures/sampler_design_coordinates.png",
+      "figure_caption": "Left: Sampler design has two coupled axes: the exploration-stability balance and SDE consistency. Existing stochastic samplers occupy different trade-offs, while Precise improves both. Right: The double-ring example illustrates failure modes of existing samplers: Flow-GRPO (Liu et al., 2025 ) introduces excess noise, while CPS (Wang & Yu, 2025 ) biases the marginal distribution.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23904v1",
+      "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
+      "authors": [
+        "Yifan Yang",
+        "Ziyang Gong",
+        "Weiquan Huang",
+        "Qihao Yang",
+        "Ziwei Zhou"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "SkillOpt treats agent skills as trainable external states, optimizing them through controlled text edits rather than hand-crafting or loose self-revision. This systematic approach uses a separate optimizer model to make bounded add/delete/replace edits to a skill document, accepting only those that strictly improve performance. SkillOpt's core contribution is a controllable, text-space optimizer for agent skills that achieves stable, reproducible skill improvement without increasing inference cost.",
+      "url": "http://arxiv.org/abs/2605.23904v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23904v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.23904v1/x2.png",
+      "figure_caption": "Overview of SkillOpt . The target model executes tasks with a current skill, an additional frontier optimizer model converts trajectories into bounded add/delete/replace skill edits, and a held-out gate accepts only edits that improve validation performance. Accepted edits are exported as a reusable skill artifact, while rejected edits become negative feedback for later updates.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23751v1",
+      "title": "Approaching I/O-optimality for Approximate Attention",
+      "authors": [
+        "Pál András Papp",
+        "Aleksandros Sobczyk",
+        "Anastasios Zouzias"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper presents an I/O-efficient algorithm for computing attention in large language models, significantly reducing data transfers between fast and slow memory. By adapting an approximate attention framework, their method achieves an almost-linear I/O cost with respect to the input size $n$, approaching the theoretical lower bound. This work contributes to making large language model computations more memory-efficient.",
+      "url": "http://arxiv.org/abs/2605.23751v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23751v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2605.23650v1",
+      "title": "Learning Kernel-Based MDPs from Episodic Preferential Feedback",
+      "authors": [
+        "Nikola Pavlovic",
+        "Sattar Vakili",
+        "Qing Zhao"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "abstract": "This paper develops a theoretical framework for learning Markov Decision Processes (MDPs) with kernel-based rewards and transitions using only episodic preferential feedback. The core method involves estimating values and confidence sets based on pairwise trajectory comparisons, modeled by a Bradley-Terry-Luce link. The main contribution is proving sublinear regret bounds, demonstrating that the learned policy converges to the optimal one with sufficient data.",
+      "url": "http://arxiv.org/abs/2605.23650v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23650v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2605.23857v1",
+      "title": "Strong Teacher Not Needed? On Distillation in LLM Pretraining",
+      "authors": [
+        "Taiming Lu",
+        "Zhuang Liu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper investigates knowledge distillation for Large Language Model pretraining, challenging the assumption that a stronger teacher is always necessary. They demonstrate that even smaller, undertrained teachers can effectively improve larger students through careful loss mixing. Furthermore, a stronger teacher doesn't guarantee better results, and distillation primarily enhances generalization rather than in-domain performance.",
+      "url": "http://arxiv.org/abs/2605.23857v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23857v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    }
+  ],
+  "papers": [
+    {
+      "id": "2605.23590v1",
+      "title": "Co-ReAct: Rubrics as Step-Level Collaborators for ReAct Agents",
+      "authors": [
+        "Jiazheng Kang",
+        "Bowen Zhang",
+        "Zixin Song",
+        "Jiangwang Chen",
+        "Xiao Yang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "Co-ReAct introduces a novel framework where rubrics act as step-level collaborators for ReAct agents during inference. By injecting rubrics into the agent's context at each decision point, Co-ReAct provides explicit guidance on what to target in evidence seeking, reasoning, and self-evaluation, leading to more focused and effective multi-step reasoning trajectories. This approach moves beyond rubrics as mere evaluators to become active guides for agent actions.",
+      "url": "http://arxiv.org/abs/2605.23590v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23590v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23590v1/x1.png",
+      "figure_caption": "Overview of Co-ReAct. (i) Collect: sample candidate next actions at each branching point and rank them with multi-judge expert consensus. (ii) Train: GRPO with a Spearman reward between the rubric-induced ranking and the expert ranking. (iii) Infer: the trained rubric drives a five-tuple (Rubric, Reason, Act, Verify, Observe) loop.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23605v1",
+      "title": "DiLaDiff: Distilled Latent-Augmented Diffusion for Language Modeling",
+      "authors": [
+        "Jean-Marie Lemercier",
+        "Tomas Geffner",
+        "Karsten Kreis",
+        "Morteza Mardani",
+        "Arash Vahdat"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "DiLaDiff addresses the token correlation issue in diffusion language models by introducing a continuous latent space. This latent space, learned via an auto-encoder and a latent diffusion model, captures semantic relationships. A consistency model then distills this latent prior into a fast, few-step generative model, significantly improving sampling quality and inference speed over existing methods.",
+      "url": "http://arxiv.org/abs/2605.23605v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23605v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23605v1/x1.png",
+      "figure_caption": "DiLaDiff: hybrid continuous-discrete diffusion with self-distilled latent. The latent space is crafted with encoder ℰ \\( \\mathcal{E}_{\\phi} \\) and decoder 𝐱 θ {\\( \\mathbf{x} \\)}_{\\( \\theta \\)} and learned a posteriori with a diffusion process with denoiser 𝐳 ψ {\\( \\mathbf{z} \\)}_{\\( \\psi \\)} . The latent diffusion trajectories are further self-distilled with MeanFlow student 𝐮 η ​ ( 𝐳 τ , τ , r ) \\( \\mathbf{u}_{\\eta} \\)({\\( \\mathbf{z} \\)}_{\\( \\tau \\)},\\( \\tau \\),r) .",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23899v1",
+      "title": "From Raw Experience to Skill Consumption: A Systematic Study of Model-Generated Agent Skills",
+      "authors": [
+        "Zisu Huang",
+        "Jingwen Xu",
+        "Yifan Yang",
+        "Ziyang Gong",
+        "Qihao Yang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper systematically studies the full lifecycle of model-generated skills for language agents, from experience generation to skill extraction and consumption. Their core contribution is a utility-grounded evaluation framework that reveals model-generated skills are generally beneficial but their effectiveness is non-trivial and depends on various factors.",
+      "url": "http://arxiv.org/abs/2605.23899v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23899v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23899v1/x2.png",
+      "figure_caption": "Overview of our study design. We evaluate the full trajectory-to-skill lifecycle across three stages: experience generation, skill extraction, and skill consumption.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23551v1",
+      "title": "Goal-Conditioned Agents that Learn Everything All at Once",
+      "authors": [
+        "Michael Matthews",
+        "Matthew Jackson",
+        "Michael Beukman",
+        "Thomas Foster",
+        "Alistair Letcher"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces Learning Everything All at Once (LEO), a method for goal-conditioned reinforcement learning. LEO efficiently utilizes all transitions by performing off-policy updates for every possible goal simultaneously, overcoming the computational infeasibility of naive relabeling. This approach significantly improves performance and achieves substantial speed-ups on various control tasks.",
+      "url": "http://arxiv.org/abs/2605.23551v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23551v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23825v1",
+      "title": "It's the humans, not the data: Geopolitical bias in LLMs originates in post-training, amplified by the language of the prompt",
+      "authors": [
+        "Stuart Bladon",
+        "Brinnae Bent"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper demonstrates that geopolitical bias in Large Language Models (LLMs) primarily emerges during the post-training (chat tuning) phase, not from the initial training data. The authors found that LLMs often develop a bias favoring the country of their developer after chat tuning, and this bias is further influenced by the language of the prompt.",
+      "url": "http://arxiv.org/abs/2605.23825v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23825v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23825v1/main_figure.png",
+      "figure_caption": "Overview, seven families. (A) Per-country preference base → \\( \\to \\) post-trained; for the six non-GLM bases, cross-country spread \\( \\sigma \\) grows post-training (Qwen 3.9 → 30.3 3.9\\( \\to \\) 30.3 pp). (B) Post-training \\( \\Delta \\) in China-favourability (EN, coherent subset). 3/3 Western labs shift anti-China; 3/4 Chinese labs shift pro-China; Yi shifts anti-China after prefill correction. GLM is shown with its (atypical) base preserved for completeness; see § Bias Is Created by Post-Training, Not Pretraining . The legend’s low-compliance encoding is described in § What MCQ Compliance Tells Us About Validity . (C) ZH − - EN shift on post-trained models: 5/7 descriptively pro-China but population-level claim is not statistically separable from the base trend (§ Linguistic Identity Modulates the Post-Training Bias ).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23723v1",
+      "title": "MemAudit: Post-hoc Auditing of Poisoned Agent Memory via Causal Attribution and Structural Anomaly Detection",
+      "authors": [
+        "Zhewen Tan",
+        "Yilun Yao",
+        "Huiyan Jin",
+        "Wenhan Yu",
+        "Guoan Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "MemAudit is a post-hoc framework for auditing poisoned memory in LLM agents. It uses causal attribution to identify memories that causally influence harmful outputs and structural anomaly detection to pinpoint inconsistencies within the memory. This allows for the identification and mitigation of malicious memory injections after an agent has exhibited undesirable behavior.",
+      "url": "http://arxiv.org/abs/2605.23723v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23723v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23723v1/x1.png",
+      "figure_caption": "Overview of MemAudit. Given a harmful event e = ( q ∗ , y ∗ , R ∗ ) e=(q^{*},y^{*},R^{*}) , the framework performs post-hoc auditing over the memory store. It combines two complementary signals: CMIS, which measures the causal contribution of retrieved memories through counterfactual replay, and MCG, which identifies structurally anomalous memories in the global memory graph. The two signals are fused into a detoxification score for ranking suspicious memories. After removing the top-ranked memories, the agent becomes safer while preserving useful memory.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23574v1",
+      "title": "Push Your Agent: Measuring and Enforcing Quantitative Goal Persistence in Long-Horizon LLM Agents",
+      "authors": [
+        "Yuandao Cai",
+        "Yuzhang Zhu",
+        "Liyou Gao",
+        "Wensheng Tang",
+        "Shengchao Qin"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces Quantitative Goal Persistence (QGP) to measure how well LLM agents complete tasks requiring a specific number of distinct items. Their benchmark, PushBench, uses verifiers to track progress and identify issues like repeated work or false completion. They demonstrate that specialized controllers significantly improve QGP, outperforming standard methods in challenging long-horizon tasks.",
+      "url": "http://arxiv.org/abs/2605.23574v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23574v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23574v1/x1.png",
+      "figure_caption": "PushBench workflow: agents act through a controller, task environment, and verifier until the count goal is met or the budget is exhausted.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2605.23454v1",
+      "title": "ARES: Automated Rubric Synthesis for Scalable LLM Reinforcement Learning",
+      "authors": [
+        "Xiaoyuan Li",
+        "Keqin Bao",
+        "Moxin Li",
+        "Yubo Ma",
+        "Yichang Zhang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "ARES automates the creation of question-answer pairs and corresponding weighted rubrics from raw text, enabling scalable reinforcement learning for LLMs on open-ended tasks. This framework addresses the limitations of expert-written rubrics and fixed task-level evaluations by generating instance-specific reward supervision. ARES's contribution lies in its ability to synthesize diverse and high-quality training data for LLM RL, improving evaluation beyond automatically verifiable answers.",
+      "url": "http://arxiv.org/abs/2605.23454v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23454v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23454v1/x1.png",
+      "figure_caption": "Overview of the six-stage ARES pipeline. Starting from raw pretraining documents, ARES performs document filtering, domain and persona conditioning, rubric-augmented QA generation, quality verification, rubric validation, and format conversion to produce training instances.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.23657v1",
+      "title": "OpenSkillEval: Automatically Auditing the Open Skill Ecosystem for LLM Agents",
+      "authors": [
+        "Jiahao Ying",
+        "Boxian Ai",
+        "Wei Tang",
+        "Siyuan Liu",
+        "Yixin Cao"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces OpenSkillEval, an automatic framework for evaluating LLM agents and the skills they use. It addresses the challenge of assessing the growing open-source skill ecosystem by generating realistic task instances from real-world artifacts and organizing community-contributed skills. The core contribution is a dynamic evaluation method that goes beyond static benchmarks to understand skill quality and guide user selection based on cost-performance.",
+      "url": "http://arxiv.org/abs/2605.23657v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23657v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23657v1/x1.png",
+      "figure_caption": "Overview of the OpenSkillEval framework. The framework supports automatic test case generation for five core task categories by reflecting evolving user needs. It further enables automatic evaluation from two complementary perspectives: (1) analysis of model trajectory traces to study how skills are used within skill-augmented agent systems, and (2) assessment of the quality of the final artifacts produced under skill augmentation.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2605.23459v1",
+      "title": "AI Assurance: A Comprehensive Testing Strategy for Enterprise AI Systems",
+      "authors": [
+        "Chitra Badagi",
+        "Divye Singh",
+        "Animesh Sen",
+        "Adinath Shirsath"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper proposes a new AI assurance strategy for enterprise AI systems, shifting from traditional correctness verification to continuous risk reduction. It emphasizes treating evaluation as a core engineering discipline and introduces a structured AI Failure Taxonomy and a revised AI Assurance Pyramid to address the unique probabilistic and emergent nature of these systems. The contribution lies in providing a comprehensive framework and operational guidance for managing the distinct risks associated with enterprise AI.",
+      "url": "http://arxiv.org/abs/2605.23459v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23459v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23655v1",
+      "title": "CVSearch: Empowering Multimodal LLMs with Cognitive Visual Search for High-Resolution Image Perception",
+      "authors": [
+        "Liupeng Li",
+        "Haoqian Kang",
+        "Zhenyu Lu",
+        "Jinpeng Wang",
+        "Bin Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CV",
+        "cs.MM"
+      ],
+      "abstract": "CVSearch tackles the challenge of high-resolution image perception in multimodal LLMs by dynamically adapting its search strategy. It first attempts an efficient expert-assisted search and, if that fails, employs a novel semantic-aware scanning method that intelligently partitions images into coherent regions to avoid fragmentation. This approach balances coverage and efficiency, improving the LLM's ability to perceive detailed images.",
+      "url": "http://arxiv.org/abs/2605.23655v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23655v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23897v1",
+      "title": "ETCHR: Editing To Clarify and Harness Reasoning",
+      "authors": [
+        "Beichen Zhang",
+        "Yuhong Liu",
+        "Jinsong Li",
+        "Yuhang Zang",
+        "Jiaqi Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "abstract": "ETCHR addresses limitations in multimodal reasoning by decoupling an image editing model from a language understanding model. Its core method involves training a question-conditioned, reasoning-aware image editor that can perform visual transformations to clarify reasoning steps, overcoming the limitations of fixed toolkits and noisy intermediate images. The contribution is a novel approach that enhances visual reasoning by enabling editors to actively participate in the reasoning process, improving accuracy even with complex queries.",
+      "url": "http://arxiv.org/abs/2605.23897v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23897v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.23897v1/x1.png",
+      "figure_caption": "ETCHR vs. prior “think with images” paradigms. (a) Tool-based methods emit action tokens to a renderer, limiting edits to low-level operations and requiring VLM fine-tuning. (b) Unified models share one backbone for text and images, weakening both and producing noisy intermediates. (c) ETCHR decouples a question-conditioned editor from the understanding MLLM and adds a verify-and-reason step, enabling plug-and-play use across tasks. (d) Across nine benchmarks, ETCHR (with Qwen3-VL-8B and Kimi K2.5 1T) surpasses tool-based and unified-model baselines.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23861v1",
+      "title": "Leveraging Foundation Models for Causal Generative Modeling",
+      "authors": [
+        "Aneesh Komanduri",
+        "Xintao Wu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CV"
+      ],
+      "abstract": "This paper introduces FM-CGM, a modular framework that leverages pretrained foundation models for end-to-end visual causal reasoning. It comprises a concept extractor, manipulator, and counterfactual generator, enabling zero-shot causal discovery, intervention, and generation. The key contribution is the development of Causal Semantic Guidance (CSG), a mechanism that ensures semantic interventions propagate correctly while preserving invariant relationships.",
+      "url": "http://arxiv.org/abs/2605.23861v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23861v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.23861v1/x1.png",
+      "figure_caption": "Figure 1 . An overview of Foundation Model Powered Causal Generative Model (FM-CGM) consisting of a concept extractor, concept manipulator, and counterfactual generator enabled by foundation models",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23901v1",
+      "title": "LLMs as Noisy Channels: A Shannon Perspective on Model Capacity and Scaling Laws",
+      "authors": [
+        "Xu Ouyang",
+        "Deyi Liu",
+        "Yuhang Cai",
+        "Jing Liu",
+        "Yuan Yang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.IT"
+      ],
+      "abstract": "This paper proposes the \"Shannon Scaling Law\" to explain LLM behavior beyond monotonic scaling. It models LLM training as information transmission over a noisy channel, where model parameters represent bandwidth and training tokens represent signal power. This framework reveals a fundamental Shannon capacity for LLMs, explaining non-monotonic performance degradation when the signal-to-noise ratio is insufficient.",
+      "url": "http://arxiv.org/abs/2605.23901v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23901v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.23901v1/x1.png",
+      "figure_caption": "Loss landscapes between Pretraining and downstream SFT. While pretraining exhibits monotonic improvement, SFT reveals a loss basin, indicating that scaling either model size or token count beyond a critical threshold leads to performance degradation.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23883v1",
+      "title": "PGT: Procedurally Generated Tasks for improving visual grounding in MLLMs",
+      "authors": [
+        "Rim Assouel",
+        "Amir Bar",
+        "Michal Drozdzal",
+        "Adriana Romero-Soriano"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "This paper introduces Procedurally Generated Tasks (PGT), a novel data-driven framework to enhance fine-grained visual understanding in Multimodal Large Language Models (MLLMs). PGT overlays geometric primitives on images to create dense supervision, disentangling visual grounding from semantic knowledge. This approach significantly improves performance on relational, quantitative, and 3D understanding benchmarks, with instruction tuning on PGT data yielding substantial gains on specific benchmarks like What'sUp and CV-Bench-2D.",
+      "url": "http://arxiv.org/abs/2605.23883v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23883v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.23883v1/x1.png",
+      "figure_caption": "Overview of PGT. Top : The construction of our procedurally generated data to augment instruction tuning training datasets. Abstract geometric primitives are overlaid to training data, when available. Bottom : (Left) Examples of failure modes in fine-grained relational and spatial understanding of state-of-the-art MLLMs. In the first example the model can rely on the fact that a bowl is usually on a table and in the second example it can rely on the shortcut where object higher up as usually further from the camera (Right) PGT performance boosts in relational, quantitative, and 3D/depth understanding over the baseline when using different instruction tuning dataset sizes.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23522v1",
+      "title": "Precise: SDE-Consistent Stochastic Sampling for RL Post-Training of Flow-Matching Models",
+      "authors": [
+        "Jade Zou",
+        "Tao Huang",
+        "Weijie Kong",
+        "Junzhe Li",
+        "Yue Wu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CV"
+      ],
+      "abstract": "This paper proposes \"Precise,\" a method for improving Reinforcement Learning (RL) in flow-matching models by addressing the challenge of converting deterministic sampling to a stochastic policy. Precise breaks down sampler design into balancing exploration and faithful SDE discretization, deriving an SDE schedule to optimize this balance and improve RL performance.",
+      "url": "http://arxiv.org/abs/2605.23522v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23522v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.23522v1/figures/sampler_design_coordinates.png",
+      "figure_caption": "Left: Sampler design has two coupled axes: the exploration-stability balance and SDE consistency. Existing stochastic samplers occupy different trade-offs, while Precise improves both. Right: The double-ring example illustrates failure modes of existing samplers: Flow-GRPO (Liu et al., 2025 ) introduces excess noise, while CPS (Wang & Yu, 2025 ) biases the marginal distribution.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23904v1",
+      "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
+      "authors": [
+        "Yifan Yang",
+        "Ziyang Gong",
+        "Weiquan Huang",
+        "Qihao Yang",
+        "Ziwei Zhou"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "SkillOpt treats agent skills as trainable external states, optimizing them through controlled text edits rather than hand-crafting or loose self-revision. This systematic approach uses a separate optimizer model to make bounded add/delete/replace edits to a skill document, accepting only those that strictly improve performance. SkillOpt's core contribution is a controllable, text-space optimizer for agent skills that achieves stable, reproducible skill improvement without increasing inference cost.",
+      "url": "http://arxiv.org/abs/2605.23904v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23904v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.23904v1/x2.png",
+      "figure_caption": "Overview of SkillOpt . The target model executes tasks with a current skill, an additional frontier optimizer model converts trajectories into bounded add/delete/replace skill edits, and a held-out gate accepts only edits that improve validation performance. Accepted edits are exported as a reusable skill artifact, while rejected edits become negative feedback for later updates.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23751v1",
+      "title": "Approaching I/O-optimality for Approximate Attention",
+      "authors": [
+        "Pál András Papp",
+        "Aleksandros Sobczyk",
+        "Anastasios Zouzias"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper presents an I/O-efficient algorithm for computing attention in large language models, significantly reducing data transfers between fast and slow memory. By adapting an approximate attention framework, their method achieves an almost-linear I/O cost with respect to the input size $n$, approaching the theoretical lower bound. This work contributes to making large language model computations more memory-efficient.",
+      "url": "http://arxiv.org/abs/2605.23751v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23751v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2605.23650v1",
+      "title": "Learning Kernel-Based MDPs from Episodic Preferential Feedback",
+      "authors": [
+        "Nikola Pavlovic",
+        "Sattar Vakili",
+        "Qing Zhao"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "abstract": "This paper develops a theoretical framework for learning Markov Decision Processes (MDPs) with kernel-based rewards and transitions using only episodic preferential feedback. The core method involves estimating values and confidence sets based on pairwise trajectory comparisons, modeled by a Bradley-Terry-Luce link. The main contribution is proving sublinear regret bounds, demonstrating that the learned policy converges to the optimal one with sufficient data.",
+      "url": "http://arxiv.org/abs/2605.23650v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23650v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2605.23857v1",
+      "title": "Strong Teacher Not Needed? On Distillation in LLM Pretraining",
+      "authors": [
+        "Taiming Lu",
+        "Zhuang Liu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper investigates knowledge distillation for Large Language Model pretraining, challenging the assumption that a stronger teacher is always necessary. They demonstrate that even smaller, undertrained teachers can effectively improve larger students through careful loss mixing. Furthermore, a stronger teacher doesn't guarantee better results, and distillation primarily enhances generalization rather than in-domain performance.",
+      "url": "http://arxiv.org/abs/2605.23857v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23857v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    }
+  ],
+  "hacker_news": [
+    {
+      "id": 48258684,
+      "title": "Memory has grown to nearly two-thirds of AI chip component costs",
+      "url": "https://epoch.ai/data-insights/ai-chip-component-cost-shares",
+      "score": 393,
+      "created_at": "2026-05-24T16:31:29Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48258684",
+      "summary": "Memory now accounts for almost two-thirds of the component costs in AI chips, significantly impacting overall expenses."
+    },
+    {
+      "id": 48256912,
+      "title": "Constraint Decay: The Fragility of LLM Agents in Back End Code Generation",
+      "url": "https://arxiv.org/abs/2605.06445",
+      "score": 243,
+      "created_at": "2026-05-24T12:55:53Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48256912",
+      "summary": "This research highlights how Large Language Model (LLM) agents struggle with backend code generation due to \"constraint decay,\" where their ability to adhere to complex requirements diminishes over time."
+    },
+    {
+      "id": 48257410,
+      "title": "DeepSeek to Make Permanent 75% Discount on Flagship AI Model",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-23/deepseek-to-make-permanent-75-discount-on-flagship-ai-model",
+      "score": 207,
+      "created_at": "2026-05-24T14:09:33Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48257410",
+      "summary": "DeepSeek will permanently offer a 75% discount on its flagship AI model, making its advanced technology more accessible."
+    },
+    {
+      "id": 48257980,
+      "title": "'AI washing': firms are scrambling to rebrand themselves as tech-focused",
+      "url": "https://www.theguardian.com/technology/2026/may/24/ai-washing-pr-firms-scrambling-rebrand",
+      "score": 163,
+      "created_at": "2026-05-24T15:21:28Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48257980",
+      "summary": "Companies are increasingly rebranding themselves as AI-focused, a trend dubbed \"AI washing,\" as PR firms help them capitalize on the artificial intelligence hype."
+    }
+  ],
+  "github_trending": [
+    {
+      "full_name": "Lum1104/Understand-Anything",
+      "url": "https://github.com/Lum1104/Understand-Anything",
+      "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+      "stars_today": 3999,
+      "total_stars": 28942,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "This repository's core function is to transform code into interactive knowledge graphs for exploration and querying, supporting various AI coding tools to enhance understanding over mere visual appeal."
+    },
+    {
+      "full_name": "anthropics/knowledge-work-plugins",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "stars_today": 550,
+      "total_stars": 14532,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository provides open-source plugins designed to enhance Claude Cowork for knowledge workers, enabling them to integrate external tools and data for improved productivity."
+    },
+    {
+      "full_name": "rohitg00/ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "stars_today": 1853,
+      "total_stars": 17658,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository provides a hands-on guide to building and deploying AI systems from the ground up, focusing on practical application and sharing knowledge."
+    },
+    {
+      "full_name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "stars_today": 2052,
+      "total_stars": 191555,
+      "language": "JavaScript",
+      "topics": [],
+      "summary": "This repository provides an agent harness for performance optimization, focusing on skills, instincts, memory, security, and research-first development for various AI coding assistants like Claude Code and Codex."
+    },
+    {
+      "full_name": "mukul975/Anthropic-Cybersecurity-Skills",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "description": "754 structured cybersecurity skills for AI agents · Mapped to 5 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND & NIST AI RMF · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 26 security domains · Apache 2.0",
+      "stars_today": 930,
+      "total_stars": 8780,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository provides a structured dataset of 754 cybersecurity skills for AI agents, mapped to five major frameworks, designed to enhance AI security capabilities across various platforms."
+    },
+    {
+      "full_name": "colbymchenry/codegraph",
+      "url": "https://github.com/colbymchenry/codegraph",
+      "description": "Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, OpenCode, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+      "stars_today": 3003,
+      "total_stars": 23925,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "This repository provides a pre-indexed code knowledge graph for AI code assistants, enabling them to access code information with fewer tokens and tool calls, all processed locally."
+    },
+    {
+      "full_name": "manaflow-ai/cmux",
+      "url": "https://github.com/manaflow-ai/cmux",
+      "description": "Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents",
+      "stars_today": 696,
+      "total_stars": 19268,
+      "language": "Swift",
+      "topics": [],
+      "summary": "This repository provides a Ghostty-based macOS terminal featuring vertical tabs and notifications specifically designed for AI coding agents."
+    },
+    {
+      "full_name": "multica-ai/andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "stars_today": 2551,
+      "total_stars": 153389,
+      "language": "",
+      "topics": [],
+      "summary": "This repository's core function is to enhance Claude's coding abilities by providing a single Markdown file that distills Andrej Karpathy's insights into common Large Language Model coding errors."
+    },
+    {
+      "full_name": "Fincept-Corporation/FinceptTerminal",
+      "url": "https://github.com/Fincept-Corporation/FinceptTerminal",
+      "description": "FinceptTerminal is a modern finance application offering advanced market analytics, investment research, and economic data tools, designed for interactive exploration and data-driven decision-making in a user-friendly environment.",
+      "stars_today": 462,
+      "total_stars": 23615,
+      "language": "Python",
+      "topics": [],
+      "summary": "FinceptTerminal is a modern finance application providing advanced market analytics, investment research, and economic data tools for interactive, data-driven decision-making in a user-friendly environment."
+    }
+  ],
+  "us_stocks": [],
+  "postdoc_jobs": [],
+  "jobs": [],
+  "supervisor_updates": [],
+  "weather": [
+    {
+      "query": "London",
+      "label": "London, England, United Kingdom",
+      "resolved_name": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "timezone": "Europe/London",
+      "forecast_date": "2026-05-25",
+      "condition": "Clear sky",
+      "weather_code": 0,
+      "temperature_c": 28.4,
+      "apparent_temperature_c": 30.6,
+      "temp_max_c": 34.2,
+      "temp_min_c": 19.8,
+      "humidity_pct": 42,
+      "wind_speed_kmh": 6.5,
+      "precipitation_probability_pct": 0,
+      "is_day": true,
+      "sunrise": "2026-05-25T04:55",
+      "sunset": "2026-05-25T20:59",
+      "source": "Open-Meteo",
+      "source_url": "https://open-meteo.com/"
+    }
+  ]
+}
