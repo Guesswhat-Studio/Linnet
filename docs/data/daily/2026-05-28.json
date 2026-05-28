@@ -1,0 +1,1822 @@
+{
+  "date": "2026-05-28",
+  "generated_at": "2026-05-28T10:51:01.943857+00:00",
+  "sections_ordered": [
+    {
+      "key": "quote_of_day",
+      "payload_key": "quote_of_day",
+      "title": "Words for the Morning",
+      "icon": "✦",
+      "items": [
+        {
+          "quote": "My mother inspired me to treat others as I would want to be treated regardless of age, race or financial status.",
+          "author": "Tommy Hilfiger",
+          "category": "age"
+        }
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "key": "weather",
+      "payload_key": "weather",
+      "title": "Weather",
+      "icon": "🌦️",
+      "items": [
+        {
+          "query": "London",
+          "label": "London, England, United Kingdom",
+          "resolved_name": "London",
+          "region": "England",
+          "country": "United Kingdom",
+          "latitude": 51.50853,
+          "longitude": -0.12574,
+          "timezone": "Europe/London",
+          "forecast_date": "2026-05-28",
+          "condition": "Clear sky",
+          "weather_code": 0,
+          "temperature_c": 27.8,
+          "apparent_temperature_c": 28.6,
+          "temp_max_c": 30.4,
+          "temp_min_c": 15.7,
+          "humidity_pct": 43,
+          "wind_speed_kmh": 13.3,
+          "precipitation_probability_pct": 10,
+          "is_day": true,
+          "sunrise": "2026-05-28T04:52",
+          "sunset": "2026-05-28T21:03",
+          "source": "Open-Meteo",
+          "source_url": "https://open-meteo.com/"
+        }
+      ],
+      "meta": {
+        "count": 1,
+        "city": "London"
+      }
+    },
+    {
+      "key": "arxiv",
+      "payload_key": "papers",
+      "title": "arXiv Papers",
+      "icon": "📄",
+      "items": [
+        {
+          "id": "2605.16299",
+          "title": "ACE: Self-Evolving LLM Coding Framework via Adversarial Unit Test Generation and Preference Optimization",
+          "authors": [
+            "Yixu Huang",
+            "Xinglei Yu",
+            "Zhongyu Wei"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.SE"
+          ],
+          "abstract": "ACE is a self-evolving LLM coding framework that addresses the limitations of existing methods by using a solver-adversary architecture. It leverages adversarial unit test generation, where a single LLM generates both candidate code and test inputs designed to trigger execution failures. This execution-centric supervision allows the model to actively discover and correct its own errors, leading to more robust code generation without relying on large annotated datasets.",
+          "url": "https://arxiv.org/abs/2605.16299",
+          "pdf_url": "https://arxiv.org/pdf/2605.16299",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.16299v2/figure/verifiable_vs_adversarial.png",
+          "figure_caption": "Comparison between verifiable and adversarial unit tests. (a) An illustrative example where a verifiable unit test passes successfully but fails to reveal a latent bug in the flawed solution. The adversarial unit test, by contrast, induces a runtime error and directly exposes the incorrect assumption that every cycle has an incoming tree node. (b) Accuracy trends over training rounds under both solver-verifier and solver–adversary structures.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2602.02709",
+          "title": "ATLAS: A Multi-LLM Training Framework for EvoDPO with Adaptive Reference Evolution",
+          "authors": [
+            "Ujin Jeon",
+            "Jiyong Kwon",
+            "Madison Ann Sullivan",
+            "Caleb Eunho Lee",
+            "Guang Lin"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "ATLAS is a multi-LLM training framework that enables an active agent to self-evolve its policy through collaborative training by specialized meta-agents. Its core contribution is the EvoDPO algorithm, which overcomes limitations of fixed reference models by adaptively updating the reference policy based on continuous training telemetry, preventing stagnation and enabling more effective learning.",
+          "url": "https://arxiv.org/abs/2602.02709",
+          "pdf_url": "https://arxiv.org/pdf/2602.02709",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2602.02709v3/x1.png",
+          "figure_caption": "ATLAS workflow. ATLAS alternates between supporter-guided candidate exploration and EvoDPO updates with strategist-guided fine-tuning and proxy-KL-gated reference promotion.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.22001",
+          "title": "Blind Spots in the Guard: How Domain-Camouflaged Injection Attacks Evade Detection in Multi-Agent LLM Systems",
+          "authors": [
+            "Aaditya Pai"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.CR"
+          ],
+          "abstract": "This paper introduces \"domain-camouflaged injection attacks,\" where malicious prompts mimic the target document's vocabulary and authority to evade detection. The core contribution is identifying and quantifying the \"Camouflage Detection Gap\" (CDG), demonstrating that standard injection detectors fail significantly against these sophisticated attacks, with detection rates plummeting.",
+          "url": "https://arxiv.org/abs/2605.22001",
+          "pdf_url": "https://arxiv.org/pdf/2605.22001",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2512.04111",
+          "title": "CentaurEval: Benchmarking Human-in-the-Loop Value in Agentic Coding",
+          "authors": [
+            "Hanjun Luo",
+            "Chiming Ni",
+            "Jiaheng Wen",
+            "Zhimu Huang",
+            "Yiran Wang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.HC",
+            "cs.SE"
+          ],
+          "abstract": "CentaurEval introduces a novel benchmark for evaluating human-in-the-loop coding agents by creating \"Collaboration-Necessary\" problems that are too difficult for humans or LLMs alone. Its core contribution is a standardized framework that dynamically generates tasks, enabling the measurement of human-AI collaboration's value in coding, which significantly outperforms standalone human or AI performance.",
+          "url": "https://arxiv.org/abs/2512.04111",
+          "pdf_url": "https://arxiv.org/pdf/2512.04111",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2512.04111v3/figure/fig1_workflow.png",
+          "figure_caption": "CentaurEval provides two evaluation interfaces, underscoring its dual contributions. The chart displays the performance improvement by human-AI collaboration.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2602.10085",
+          "title": "CODE-SHARP: Continuous Open-ended Discovery and Evolution of Skills as Hierarchical Reward Programs",
+          "authors": [
+            "Richard Bornemann",
+            "Pierluigi Vito Amadori",
+            "Antoine Cully"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "CODE-SHARP is a framework that uses Foundation Models to autonomously discover and evolve a library of Python programs (SHARPs). These SHARPs encode skills as hierarchical reward programs, where each program defines a success condition and relies on previously discovered SHARPs as prerequisites. This allows a generalist agent to learn entirely from scratch via reinforcement learning, dynamically navigating its skill repertoire based on the current environment.",
+          "url": "https://arxiv.org/abs/2602.10085",
+          "pdf_url": "https://arxiv.org/pdf/2602.10085",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2602.10085v3/x1.png",
+          "figure_caption": "CODE-SHARP consists of two FM-driven iterative processes that discover and evolve skill encoding SHARPs. The skill proposal generator , implementor , and judge generate and filter novel SHARPs before environment evaluation. The skill mutation generator and implementor produce mutated versions of existing SHARPs, evaluated directly in the environment.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2308.04371",
+          "title": "Cumulative Reasoning with Large Language Models",
+          "authors": [
+            "Yifan Zhang",
+            "Jingqin Yang",
+            "Yang Yuan",
+            "Andrew Chi-Chih Yao"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces Cumulative Reasoning (CR), a structured framework that enhances Large Language Model (LLM) problem-solving by mimicking human iterative thought. CR uses LLMs in distinct roles (Proposer, Verifier, Reporter) to decompose tasks, generate and validate intermediate steps, and build a dynamic DAG of verified propositions. This approach significantly improves performance on complex reasoning tasks, outperforming existing methods in logical inference and the Game of 24.",
+          "url": "https://arxiv.org/abs/2308.04371",
+          "pdf_url": "https://arxiv.org/pdf/2308.04371",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2401.00139",
+          "title": "Enhancing Causal Reasoning in Large Language Models: A Causal Attribution Model for Precision Fine-Tuning",
+          "authors": [
+            "Hengrui Cai",
+            "Shengjie Liu",
+            "Rui Song"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL",
+            "stat.ME"
+          ],
+          "abstract": "This paper introduces a causal attribution model that uses \"do-operators\" to create interventional scenarios, allowing for systematic quantification of LLM component contributions to causal reasoning. This model enables precise fine-tuning of LLMs for causal discovery tasks, improving their ability to leverage context, domain knowledge, and numerical data for accurate causal inference.",
+          "url": "https://arxiv.org/abs/2401.00139",
+          "pdf_url": "https://arxiv.org/pdf/2401.00139",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2401.00139v3/fig/attribution2-icml.png",
+          "figure_caption": "The first panel presents one sample using the LLM to provide causal discovery results, where the blue box is the i-th context, the pink box is the i-th knowledge embedded in variable names, the orange box is the i-th numerical information, and the red box at the last is the i-th output. The second panel shows the generation of one interventional sample where the variable names were replaced by non-meaningful letters; and the third one describes our proposed causal attribution framework, where the knowledge is omitted corresponding to the interventional scenario in the second panel.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2507.23773",
+          "title": "General Agentic Planning Through Simulative Reasoning with World Models",
+          "authors": [
+            "Mingkai Deng",
+            "Jinyu Hou",
+            "Zhiting Hu",
+            "Eric Xing"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL",
+            "cs.RO"
+          ],
+          "abstract": "This paper proposes that general agentic planning requires \"simulative reasoning\" within a world model, contrasting it with current reactive decision-making. The core method is to build an agent that mentally simulates future outcomes of actions to make more flexible, goal-directed decisions. The contribution is the SiRA architecture, demonstrating this simulative approach as a general-purpose planning mechanism for agents.",
+          "url": "https://arxiv.org/abs/2507.23773",
+          "pdf_url": "https://arxiv.org/pdf/2507.23773",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2507.23773v3/x1.png",
+          "figure_caption": "Instantiation of simulative reasoning in SiRA . At each time step, the encoder h h maps the observation o o into a natural-language belief state, based on which the planner proposes candidate actions, simulates their consequences through the world model f f , evaluates goal progress via the critic v v , and passes the best simulated action to the actor \\( \\alpha \\) for execution.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.20246",
+          "title": "GROW: Aligning GRPO with State-Action Modeling for Open-World VLM Agents",
+          "authors": [
+            "Xiongbin Wu",
+            "Zhihao Luo",
+            "Shanzhe Lei",
+            "Lechao Zhang",
+            "Xuhong Wang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces GROW, a reinforcement learning framework for open-world VLM agents. GROW addresses limitations of existing methods by decomposing full trajectories into state-action samples, enabling effective use of GRPO for multi-turn tasks. This approach avoids excessively long contexts and noise, improving learning efficiency and performance.",
+          "url": "https://arxiv.org/abs/2605.20246",
+          "pdf_url": "https://arxiv.org/pdf/2605.20246",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.20246v2/assets/context_len_vs_steps.png",
+          "figure_caption": "Context length in the trajectory increases with the number of interaction steps between the VLM agent and the environment, often exceeding the maximum token length as interactions accumulate.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.21347",
+          "title": "Insights Generator: Systematic Corpus-Level Trace Diagnostics for LLM Agents",
+          "authors": [
+            "Akshay Manglik",
+            "Apaar Shanker",
+            "Kaustubh Deshpande",
+            "Jason Qin",
+            "Yash Maurya"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.SE"
+          ],
+          "abstract": "This paper introduces the Insights Generator (IG), a novel system for systematically diagnosing failures in LLM agents at a corpus level. IG addresses the limitations of manual inspection by automatically generating evidence-backed natural-language insights about systematic behavioral patterns across large collections of execution traces. Its core contribution lies in formalizing corpus-level diagnostics and providing a scalable, multi-agent approach to uncover and explain LLM agent failures.",
+          "url": "https://arxiv.org/abs/2605.21347",
+          "pdf_url": "https://arxiv.org/pdf/2605.21347",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.21347v2/figures/fig1.png",
+          "figure_caption": "Insights Generator (IG) system overview. Left: the input layer provides a diagnostic question, Q Q , trace corpus, 𝒞 \\( \\mathcal{C} \\) , and processed data store, 𝒮 \\( \\mathcal{S} \\) . Center: the Orchestrator dispatches Scout agents ( ℋ \\( \\mathcal{H} \\) : hypothesize over sampled traces) and Investigator agents ( ℋ ∗ \\( \\mathcal{H}^{*} \\) : validate via corpus-scale cohort comparison). The Investigator analyzes ℋ ∗ \\( \\mathcal{H}^{*} \\) to generate findings, ℱ r \\( \\mathcal{F}_{r} \\) , which are sent to the orchestrator. The orchestrator then synthesizes and de-duplicates ℱ r \\( \\mathcal{F}_{r} \\) to generate the final report. Right: the output is an evidence-backed report with findings, fixes, citations, and prevalence estimates. Bottom: the shared tool layer. Algorithm 1 formalizes the analysis loop.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.21988",
+          "title": "Learning Spatiotemporal Sensitivity in Video LLMs via Counterfactual Reinforcement Learning",
+          "authors": [
+            "Dazhao Du",
+            "Jian Liu",
+            "Jialong Qin",
+            "Tao Han",
+            "Bohai Gu"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CV"
+          ],
+          "abstract": "This paper addresses the problem of Video LLMs relying on shortcuts rather than spatiotemporal understanding. Their core method, Counterfactual Relational Policy Optimization (CRPO), uses reinforcement learning with counterfactual video transformations (flips, reversals) and a novel \"Counterfactual Relation Reward\" to train models to be sensitive to dynamic changes in video content. This contribution aims to improve Video LLMs' ability to truly track and reason about video dynamics.",
+          "url": "https://arxiv.org/abs/2605.21988",
+          "pdf_url": "https://arxiv.org/pdf/2605.21988",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.21988v1/x1.png",
+          "figure_caption": "Current Video LLMs remain insensitive to spatiotemporal changes. Left: On the same scene, the model (a) answers a static question correctly, but (b) fails on a spatiotemporal question; (c) it gives the same prediction to a video and its temporal reversal. Right: Across MVBench and TempCompass sub-tasks, accuracy drops as the fraction of spatiotemporal questions increases.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2602.11574",
+          "title": "Learning to Configure Agentic AI Systems",
+          "authors": [
+            "Aditya Taparia",
+            "Som Sagar",
+            "Ransalu Senanayake"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper addresses the challenge of configuring complex LLM-based agent systems by framing it as a semi-Markov decision process. Their proposed method, ARC, is a hierarchical policy that dynamically selects query-specific configurations to optimize performance and resource usage. ARC significantly improves accuracy across various benchmarks compared to fixed configurations, demonstrating the value of adaptive agent system setup.",
+          "url": "https://arxiv.org/abs/2602.11574",
+          "pdf_url": "https://arxiv.org/pdf/2602.11574",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2602.11574v3/x1.png",
+          "figure_caption": "Overview of ARC. (a) ARC learns to select a query-specific agent configuration from a large combinatorial design space. (b) Unlike standard MDP actions with fixed duration, agent configurations induce temporally extended executions with variable numbers of LLM calls, motivating our SMDP formulation. (c) Across reasoning, tool-use, and agentic benchmarks, ARC improves performance over budget-matched base models and strong baselines for Qwen 2.5 7B.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2510.07962",
+          "title": "LightReasoner: Can Small Language Models Teach Large Language Models Reasoning?",
+          "authors": [
+            "Jingyuan Wang",
+            "Yankai Chen",
+            "Zhonghang Li",
+            "Chao Huang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "LightReasoner proposes a novel method where smaller language models (SLMs) teach larger language models (LLMs) by identifying and highlighting crucial reasoning steps. The core idea is to leverage the behavioral differences between an expert LLM and an amateur SLM to create targeted supervision data. This distilled data then fine-tunes the LLM, focusing on its unique strengths and improving reasoning efficiency without requiring massive, uniformly optimized datasets.",
+          "url": "https://arxiv.org/abs/2510.07962",
+          "pdf_url": "https://arxiv.org/pdf/2510.07962",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.10067",
+          "title": "Metis: Learning to Jailbreak LLMs via Self-Evolving Metacognitive Policy Optimization",
+          "authors": [
+            "Huilin Zhou",
+            "Jian Zhao",
+            "Yilu Zhong",
+            "Zhen Liang",
+            "Xiuyuan Chen"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "Metis reformulates LLM jailbreaking as inference-time policy optimization within an adversarial POMDP. It uses a self-evolving metacognitive loop to diagnose defense logic and refine its policy via structured feedback, achieving an 89.2% average attack success rate and outperforming traditional methods on resilient models.",
+          "url": "https://arxiv.org/abs/2605.10067",
+          "pdf_url": "https://arxiv.org/pdf/2605.10067",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.10067v3/x1.png",
+          "figure_caption": "The Metis Framework formulated as an Inference-Time Policy Optimization Loop. The Attacker (Policy Agent \\( \\pi \\) ) interacts with the target environment to optimize the attack trajectory. At each turn, the agent performs Introspective Diagnosis (updating belief b t b_{t} about latent defense 𝒟 \\( \\mathcal{D} \\) ), followed by Policy Formulation ( \\( \\sigma_{t} \\) ) to derive an adversarial prompt x t x_{t} . The Evaluator computes a dense feedback signal comprising a scalar reward and Meta-suggestions , which act as a Semantic Gradient ( ∇ sem \\( \\nabla \\)_{\\( \\text{sem} \\)} ) to steer the agent’s next-step optimization within the latent strategy space.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2602.13372",
+          "title": "MoralityGym: A Benchmark for Evaluating Hierarchical Moral Alignment in Sequential Decision-Making Agents",
+          "authors": [
+            "Simon Rosen",
+            "Siddarth Singh",
+            "Ebenezer Gelo",
+            "Helen Sarah Robertson",
+            "Ibrahim Suder"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces MoralityGym, a benchmark for evaluating how well AI agents can follow hierarchical moral rules in complex decision-making scenarios. It uses a novel formalism called Morality Chains to represent these rules and a new Morality Metric to assess alignment, decoupling task performance from ethical behavior. The contribution is a principled framework for integrating psychological and philosophical insights into AI safety, enabling the development of more reliable and ethical AI systems.",
+          "url": "https://arxiv.org/abs/2602.13372",
+          "pdf_url": "https://arxiv.org/pdf/2602.13372",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2602.13372v2/figs/env_figs/PushOrSwitch.png",
+          "figure_caption": "Figure 1 . The PushOrSwitch scenario . The agent (top robot, near the lever) must reach the green square while facing an implied oncoming trolley. It can: (1) ?Do Nothing? : allowing the trolley to continue on the track, killing five humans (labelled ? 5 ? ). (2) ?Flip Switch? : diverting the trolley to a side track, killing three humans (labelled ? 3 ? ). (3) ?Push Person? : sacrificing one bystander (labelled ? 1 ? ) onto the main track, resulting in one death (the bystander) but saving the five on the main track. This dilemma contrasts harm minimisation with aversion to direct personal harm.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.15040",
+          "title": "Orchard: An Open-Source Agentic Modeling Framework",
+          "authors": [
+            "Baolin Peng",
+            "Wenlin Yao",
+            "Qianhui Wu",
+            "Hao Cheng",
+            "Xiao Yu"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "Orchard is an open-source framework designed to address infrastructure and training gaps in agentic modeling with LLMs. Its core contribution is Orchard Env, a lightweight environment service that provides reusable primitives for managing sandbox lifecycles, agent harnesses, and pipeline stages across various task domains. This enables scalable training of autonomous agents capable of complex problem-solving.",
+          "url": "https://arxiv.org/abs/2605.15040",
+          "pdf_url": "https://arxiv.org/pdf/2605.15040",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.15040v2/x1.png",
+          "figure_caption": "Performance comparison. Left: Orchard-SWE (30B) reaches 67.5% on SWE-bench Verified, approaching frontier MoE systems 10 10 – 30 × 30\\( \\times \\) larger. Right: Orchard-GUI (4B) achieves 68.4% average success across WebVoyager, Online-Mind2web, and DeepShop, making it the strongest open-source GUI agent while staying on par with proprietary systems from OpenAI and Google.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.15153",
+          "title": "Pelican-Unify 1.0: A Unified Embodied Intelligence Model for Understanding, Reasoning, Imagination and Action",
+          "authors": [
+            "Yi Zhang",
+            "Yinda Chen",
+            "Che Liu",
+            "Zeyuan Ding",
+            "Jin Xu"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.RO"
+          ],
+          "abstract": "Pelican-Unify 1.0 introduces a novel unified embodied intelligence model that leverages a single Vision-Language Model (VLM) for understanding, reasoning, and generating future actions and videos. Its core method involves mapping diverse inputs into a shared semantic space and then using this representation to autoregressively produce chains of thought and predict future modalities within a single denoising process. This unification approach allows for joint optimization of understanding, reasoning, imagination, and action, a significant contribution over training separate expert systems.",
+          "url": "https://arxiv.org/abs/2605.15153",
+          "pdf_url": "https://arxiv.org/pdf/2605.15153",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.15153v2/vlm1.png",
+          "figure_caption": "Starting from a base VLM, standard VLA policy training weakens grounding and attention, while Pelican-Unify 1.0 retains them and still predicts actions. Base VLM learns what and where; standard VLA weakens perception, while Pelican-Unify 1.0 preserves it and still learns what action to output.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.21902",
+          "title": "Planning in the LLM Era: Building for Reliability and Efficiency",
+          "authors": [
+            "Michael Katz",
+            "Harsha Kokel",
+            "Kavitha Srinivas",
+            "Shirin Sohrabi"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper argues that the planning field is shifting towards using LLMs to generate verifiable symbolic solvers, rather than for direct plan generation. This approach aims to build reliable and efficient planners that minimize LLM reliance during inference, addressing the limitations of earlier methods.",
+          "url": "https://arxiv.org/abs/2605.21902",
+          "pdf_url": "https://arxiv.org/pdf/2605.21902",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.21902v1/llms-planning.png",
+          "figure_caption": "An overview of the planner generation methods",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.22148",
+          "title": "Ratchet: A Minimal Hygiene Recipe for Self-Evolving LLM Agents",
+          "authors": [
+            "Xing Zhang",
+            "Yanwei Cui",
+            "Guanghui Wang",
+            "Ziyuan Li",
+            "Wei Qiu"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "Ratchet addresses the lifecycle management bottleneck in self-evolving LLM agents by introducing a single-agent loop for natural language skill management. Its core method integrates four hygiene mechanisms—outcome-driven retirement, bounded active-cap, meta-skill authoring guidance, and pattern canonicalization—to enable a frozen LLM to effectively write, retrieve, curate, and retire its own skills. This approach significantly improves performance on tasks like MBPP+ hard-100, demonstrating a substantial gain over baselines and showing promise for agentic problem-solving.",
+          "url": "https://arxiv.org/abs/2605.22148",
+          "pdf_url": "https://arxiv.org/pdf/2605.22148",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.22148v1/x1.png",
+          "figure_caption": "The Ratchet loop. Inference (top): each task flows through Router → \\( \\to \\) Solver → \\( \\to \\) Grader → \\( \\to \\) Capsule. Memory (middle): three append-only stores (Skill Bank, Meta-Skill, Evidence Log). Reflection (bottom): every round the Critic labels failures, the Synthesizer writes new skills from failure clusters, and the Curator retires under-performers. Solid arrows = data flow; dashed = memory reads/writes.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.21856",
+          "title": "The Illusion of Reasoning: Exposing Evasive Data Contamination in LLMs via Zero-CoT Truncation",
+          "authors": [
+            "Yifan Lan",
+            "Yuanpu Cao",
+            "Hanyu Wang",
+            "Lu Lin",
+            "Jinghui Chen"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces the Zero-CoT Probe (ZCP) to detect evasive data contamination in LLMs. ZCP works by truncating the model's reasoning steps to expose memorization, which often masks true reasoning abilities. By comparing performance on original versus truncated reasoning, ZCP effectively identifies and isolates memorized data from genuine problem-solving skills.",
+          "url": "https://arxiv.org/abs/2605.21856",
+          "pdf_url": "https://arxiv.org/pdf/2605.21856",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.21856v1/x1.png",
+          "figure_caption": "Reasoning masks data contamination. Under Full-CoT (Top), memorization is indistinguishable from genuine reasoning. Our Zero-CoT Probe (Bottom) forces the model to bypass intermediate reasoning. Consequently, the model fails on clean questions but still correctly answers contaminated ones via a learned shortcut mapping, thereby exposing the memorization.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        }
+      ],
+      "meta": {
+        "papers_fetched": 100,
+        "papers_after_keyword_filter": 100,
+        "papers_after_llm_filter": 83,
+        "count": 20
+      }
+    },
+    {
+      "key": "hacker_news",
+      "payload_key": "hacker_news",
+      "title": "Hacker News",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": 48299753,
+          "title": "YouTube to automatically label AI-generated videos",
+          "url": "https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/",
+          "score": 907,
+          "created_at": "2026-05-27T20:00:51Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48299753",
+          "summary": "YouTube will now automatically label videos that use AI to generate or alter content, aiming to provide viewers with greater transparency."
+        },
+        {
+          "id": 48296649,
+          "title": "DuckDuckGo search saw 28% more visits after Google said people love AI mode",
+          "url": "https://www.pcgamer.com/hardware/duckduckgos-ai-free-search-saw-nearly-28-percent-more-visits-in-the-week-following-googles-insistence-that-people-love-ai-mode/",
+          "score": 882,
+          "created_at": "2026-05-27T16:28:41Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48296649",
+          "summary": "Following Google's promotion of AI features, DuckDuckGo experienced a nearly 28% surge in visits, suggesting users may prefer AI-free search."
+        },
+        {
+          "id": 48295679,
+          "title": "Tech CEOs are apparently suffering from AI psychosis",
+          "url": "https://techcrunch.com/2026/05/27/tech-ceos-are-apparently-suffering-from-ai-psychosis/",
+          "score": 651,
+          "created_at": "2026-05-27T15:20:47Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48295679",
+          "summary": "Tech CEOs are reportedly experiencing \"AI psychosis,\" characterized by an intense, almost delusional belief in AI's immediate transformative power and potential for disruption."
+        },
+        {
+          "id": 48296994,
+          "title": "Canada to order military plane fleet from Sweden in shift from US suppliers",
+          "url": "https://www.theguardian.com/world/2026/may/27/canada-sweden-saab-globaleye-aircraft",
+          "score": 556,
+          "created_at": "2026-05-27T16:53:25Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48296994",
+          "summary": "Canada is shifting away from US suppliers by ordering a fleet of military surveillance aircraft from Sweden's Saab, specifically the GlobalEye."
+        },
+        {
+          "id": 48296359,
+          "title": "Training our own AI models",
+          "url": "https://posthog.com/blog/training-ai-models",
+          "score": 202,
+          "created_at": "2026-05-27T16:08:42Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48296359",
+          "summary": "PostHog is training its own AI models in-house to gain more control and potentially reduce costs compared to relying on external providers."
+        },
+        {
+          "id": 48294401,
+          "title": "Lombardy increases charges for the construction of data centres in green areas",
+          "url": "https://en.ilsole24ore.com/art/lombardy-introduces-increased-charges-of-up-to-200-per-cent-for-data-centre-construction-in-green-and-agricultural-areas-AI6Jp4ID",
+          "score": 139,
+          "created_at": "2026-05-27T13:52:48Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48294401",
+          "summary": "Lombardy has significantly increased construction charges, by up to 200%, for data centers built in green and agricultural zones."
+        }
+      ],
+      "meta": {
+        "count": 6
+      }
+    },
+    {
+      "key": "github_trending",
+      "payload_key": "github_trending",
+      "title": "GitHub Trending",
+      "icon": "⭐",
+      "items": [
+        {
+          "full_name": "harry0703/MoneyPrinterTurbo",
+          "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+          "description": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
+          "stars_today": 1742,
+          "total_stars": 64753,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository's core function is to generate high-definition short videos with a single click, leveraging AI large language models."
+        },
+        {
+          "full_name": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC",
+          "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+          "stars_today": 2062,
+          "total_stars": 196657,
+          "language": "JavaScript",
+          "topics": [],
+          "summary": "This repository provides an agent harness for performance optimization, featuring skills, instincts, memory, security, and research-first development for various AI coding tools like Claude Code and Codex."
+        },
+        {
+          "full_name": "Leonxlnx/taste-skill",
+          "url": "https://github.com/Leonxlnx/taste-skill",
+          "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
+          "stars_today": 2715,
+          "total_stars": 25315,
+          "language": "Shell",
+          "topics": [],
+          "summary": "Taste-Skill enhances AI by providing it with \"good taste,\" preventing the generation of boring and generic content."
+        },
+        {
+          "full_name": "hardikpandya/stop-slop",
+          "url": "https://github.com/hardikpandya/stop-slop",
+          "description": "A skill file for removing AI tells from prose",
+          "stars_today": 664,
+          "total_stars": 6063,
+          "language": "",
+          "topics": [],
+          "summary": "This repository provides a skill file for the AI writing assistant \"skill\" that removes common AI-generated linguistic patterns, or \"tells,\" from prose to make it sound more human-written."
+        },
+        {
+          "full_name": "twentyhq/twenty",
+          "url": "https://github.com/twentyhq/twenty",
+          "description": "The open alternative to Salesforce, designed for AI.",
+          "stars_today": 519,
+          "total_stars": 47545,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "Twenty is an open-source CRM built for AI, offering a flexible and extensible platform to manage customer relationships and leverage artificial intelligence for business growth."
+        },
+        {
+          "full_name": "DigitalPlatDev/FreeDomain",
+          "url": "https://github.com/DigitalPlatDev/FreeDomain",
+          "description": "DigitalPlat FreeDomain: Free Domain For Everyone",
+          "stars_today": 2222,
+          "total_stars": 169951,
+          "language": "HTML",
+          "topics": [],
+          "summary": "FreeDomain by DigitalPlatDev provides a service to offer free domain names to everyone, simplifying domain acquisition."
+        },
+        {
+          "full_name": "byoungd/English-level-up-tips",
+          "url": "https://github.com/byoungd/English-level-up-tips",
+          "description": "An advanced guide to learn English which might benefit you a lot 🎉 . 离谱的英语学习指南/英语学习教程/英语学习/学英语",
+          "stars_today": 1163,
+          "total_stars": 47705,
+          "language": "",
+          "topics": [],
+          "summary": "This repository offers an advanced, comprehensive guide to English learning, packed with potentially beneficial tips and tutorials for users aiming to significantly improve their English proficiency."
+        },
+        {
+          "full_name": "microsoft/markitdown",
+          "url": "https://github.com/microsoft/markitdown",
+          "description": "Python tool for converting files and office documents to Markdown.",
+          "stars_today": 1263,
+          "total_stars": 126627,
+          "language": "Python",
+          "topics": [],
+          "summary": "Microsoft's Markitdown is a Python tool that converts various file types, including Office documents, into Markdown format."
+        },
+        {
+          "full_name": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "description": "An agentic skills framework & software development methodology that works.",
+          "stars_today": 1511,
+          "total_stars": 210422,
+          "language": "Shell",
+          "topics": [],
+          "summary": "Superpowers is an agentic skills framework and software development methodology designed to enhance productivity and effectiveness in software projects."
+        }
+      ],
+      "meta": {
+        "count": 9
+      }
+    }
+  ],
+  "meta": {
+    "papers_fetched": 100,
+    "papers_after_keyword_filter": 100,
+    "papers_after_llm_filter": 83,
+    "llm_model": "google/gemini-2.5-flash-lite",
+    "scoring_model": "google/gemini-2.5-flash-lite",
+    "summarization_model": "google/gemini-2.5-flash-lite",
+    "duration_seconds": 249
+  },
+  "quote_of_day": [
+    {
+      "quote": "My mother inspired me to treat others as I would want to be treated regardless of age, race or financial status.",
+      "author": "Tommy Hilfiger",
+      "category": "age"
+    }
+  ],
+  "hitokoto": [],
+  "arxiv": [
+    {
+      "id": "2605.16299",
+      "title": "ACE: Self-Evolving LLM Coding Framework via Adversarial Unit Test Generation and Preference Optimization",
+      "authors": [
+        "Yixu Huang",
+        "Xinglei Yu",
+        "Zhongyu Wei"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "ACE is a self-evolving LLM coding framework that addresses the limitations of existing methods by using a solver-adversary architecture. It leverages adversarial unit test generation, where a single LLM generates both candidate code and test inputs designed to trigger execution failures. This execution-centric supervision allows the model to actively discover and correct its own errors, leading to more robust code generation without relying on large annotated datasets.",
+      "url": "https://arxiv.org/abs/2605.16299",
+      "pdf_url": "https://arxiv.org/pdf/2605.16299",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.16299v2/figure/verifiable_vs_adversarial.png",
+      "figure_caption": "Comparison between verifiable and adversarial unit tests. (a) An illustrative example where a verifiable unit test passes successfully but fails to reveal a latent bug in the flawed solution. The adversarial unit test, by contrast, induces a runtime error and directly exposes the incorrect assumption that every cycle has an incoming tree node. (b) Accuracy trends over training rounds under both solver-verifier and solver–adversary structures.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2602.02709",
+      "title": "ATLAS: A Multi-LLM Training Framework for EvoDPO with Adaptive Reference Evolution",
+      "authors": [
+        "Ujin Jeon",
+        "Jiyong Kwon",
+        "Madison Ann Sullivan",
+        "Caleb Eunho Lee",
+        "Guang Lin"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "ATLAS is a multi-LLM training framework that enables an active agent to self-evolve its policy through collaborative training by specialized meta-agents. Its core contribution is the EvoDPO algorithm, which overcomes limitations of fixed reference models by adaptively updating the reference policy based on continuous training telemetry, preventing stagnation and enabling more effective learning.",
+      "url": "https://arxiv.org/abs/2602.02709",
+      "pdf_url": "https://arxiv.org/pdf/2602.02709",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2602.02709v3/x1.png",
+      "figure_caption": "ATLAS workflow. ATLAS alternates between supporter-guided candidate exploration and EvoDPO updates with strategist-guided fine-tuning and proxy-KL-gated reference promotion.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.22001",
+      "title": "Blind Spots in the Guard: How Domain-Camouflaged Injection Attacks Evade Detection in Multi-Agent LLM Systems",
+      "authors": [
+        "Aaditya Pai"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces \"domain-camouflaged injection attacks,\" where malicious prompts mimic the target document's vocabulary and authority to evade detection. The core contribution is identifying and quantifying the \"Camouflage Detection Gap\" (CDG), demonstrating that standard injection detectors fail significantly against these sophisticated attacks, with detection rates plummeting.",
+      "url": "https://arxiv.org/abs/2605.22001",
+      "pdf_url": "https://arxiv.org/pdf/2605.22001",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2512.04111",
+      "title": "CentaurEval: Benchmarking Human-in-the-Loop Value in Agentic Coding",
+      "authors": [
+        "Hanjun Luo",
+        "Chiming Ni",
+        "Jiaheng Wen",
+        "Zhimu Huang",
+        "Yiran Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.HC",
+        "cs.SE"
+      ],
+      "abstract": "CentaurEval introduces a novel benchmark for evaluating human-in-the-loop coding agents by creating \"Collaboration-Necessary\" problems that are too difficult for humans or LLMs alone. Its core contribution is a standardized framework that dynamically generates tasks, enabling the measurement of human-AI collaboration's value in coding, which significantly outperforms standalone human or AI performance.",
+      "url": "https://arxiv.org/abs/2512.04111",
+      "pdf_url": "https://arxiv.org/pdf/2512.04111",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2512.04111v3/figure/fig1_workflow.png",
+      "figure_caption": "CentaurEval provides two evaluation interfaces, underscoring its dual contributions. The chart displays the performance improvement by human-AI collaboration.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2602.10085",
+      "title": "CODE-SHARP: Continuous Open-ended Discovery and Evolution of Skills as Hierarchical Reward Programs",
+      "authors": [
+        "Richard Bornemann",
+        "Pierluigi Vito Amadori",
+        "Antoine Cully"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "CODE-SHARP is a framework that uses Foundation Models to autonomously discover and evolve a library of Python programs (SHARPs). These SHARPs encode skills as hierarchical reward programs, where each program defines a success condition and relies on previously discovered SHARPs as prerequisites. This allows a generalist agent to learn entirely from scratch via reinforcement learning, dynamically navigating its skill repertoire based on the current environment.",
+      "url": "https://arxiv.org/abs/2602.10085",
+      "pdf_url": "https://arxiv.org/pdf/2602.10085",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2602.10085v3/x1.png",
+      "figure_caption": "CODE-SHARP consists of two FM-driven iterative processes that discover and evolve skill encoding SHARPs. The skill proposal generator , implementor , and judge generate and filter novel SHARPs before environment evaluation. The skill mutation generator and implementor produce mutated versions of existing SHARPs, evaluated directly in the environment.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2308.04371",
+      "title": "Cumulative Reasoning with Large Language Models",
+      "authors": [
+        "Yifan Zhang",
+        "Jingqin Yang",
+        "Yang Yuan",
+        "Andrew Chi-Chih Yao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces Cumulative Reasoning (CR), a structured framework that enhances Large Language Model (LLM) problem-solving by mimicking human iterative thought. CR uses LLMs in distinct roles (Proposer, Verifier, Reporter) to decompose tasks, generate and validate intermediate steps, and build a dynamic DAG of verified propositions. This approach significantly improves performance on complex reasoning tasks, outperforming existing methods in logical inference and the Game of 24.",
+      "url": "https://arxiv.org/abs/2308.04371",
+      "pdf_url": "https://arxiv.org/pdf/2308.04371",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2401.00139",
+      "title": "Enhancing Causal Reasoning in Large Language Models: A Causal Attribution Model for Precision Fine-Tuning",
+      "authors": [
+        "Hengrui Cai",
+        "Shengjie Liu",
+        "Rui Song"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL",
+        "stat.ME"
+      ],
+      "abstract": "This paper introduces a causal attribution model that uses \"do-operators\" to create interventional scenarios, allowing for systematic quantification of LLM component contributions to causal reasoning. This model enables precise fine-tuning of LLMs for causal discovery tasks, improving their ability to leverage context, domain knowledge, and numerical data for accurate causal inference.",
+      "url": "https://arxiv.org/abs/2401.00139",
+      "pdf_url": "https://arxiv.org/pdf/2401.00139",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2401.00139v3/fig/attribution2-icml.png",
+      "figure_caption": "The first panel presents one sample using the LLM to provide causal discovery results, where the blue box is the i-th context, the pink box is the i-th knowledge embedded in variable names, the orange box is the i-th numerical information, and the red box at the last is the i-th output. The second panel shows the generation of one interventional sample where the variable names were replaced by non-meaningful letters; and the third one describes our proposed causal attribution framework, where the knowledge is omitted corresponding to the interventional scenario in the second panel.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2507.23773",
+      "title": "General Agentic Planning Through Simulative Reasoning with World Models",
+      "authors": [
+        "Mingkai Deng",
+        "Jinyu Hou",
+        "Zhiting Hu",
+        "Eric Xing"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL",
+        "cs.RO"
+      ],
+      "abstract": "This paper proposes that general agentic planning requires \"simulative reasoning\" within a world model, contrasting it with current reactive decision-making. The core method is to build an agent that mentally simulates future outcomes of actions to make more flexible, goal-directed decisions. The contribution is the SiRA architecture, demonstrating this simulative approach as a general-purpose planning mechanism for agents.",
+      "url": "https://arxiv.org/abs/2507.23773",
+      "pdf_url": "https://arxiv.org/pdf/2507.23773",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2507.23773v3/x1.png",
+      "figure_caption": "Instantiation of simulative reasoning in SiRA . At each time step, the encoder h h maps the observation o o into a natural-language belief state, based on which the planner proposes candidate actions, simulates their consequences through the world model f f , evaluates goal progress via the critic v v , and passes the best simulated action to the actor \\( \\alpha \\) for execution.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.20246",
+      "title": "GROW: Aligning GRPO with State-Action Modeling for Open-World VLM Agents",
+      "authors": [
+        "Xiongbin Wu",
+        "Zhihao Luo",
+        "Shanzhe Lei",
+        "Lechao Zhang",
+        "Xuhong Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces GROW, a reinforcement learning framework for open-world VLM agents. GROW addresses limitations of existing methods by decomposing full trajectories into state-action samples, enabling effective use of GRPO for multi-turn tasks. This approach avoids excessively long contexts and noise, improving learning efficiency and performance.",
+      "url": "https://arxiv.org/abs/2605.20246",
+      "pdf_url": "https://arxiv.org/pdf/2605.20246",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.20246v2/assets/context_len_vs_steps.png",
+      "figure_caption": "Context length in the trajectory increases with the number of interaction steps between the VLM agent and the environment, often exceeding the maximum token length as interactions accumulate.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.21347",
+      "title": "Insights Generator: Systematic Corpus-Level Trace Diagnostics for LLM Agents",
+      "authors": [
+        "Akshay Manglik",
+        "Apaar Shanker",
+        "Kaustubh Deshpande",
+        "Jason Qin",
+        "Yash Maurya"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces the Insights Generator (IG), a novel system for systematically diagnosing failures in LLM agents at a corpus level. IG addresses the limitations of manual inspection by automatically generating evidence-backed natural-language insights about systematic behavioral patterns across large collections of execution traces. Its core contribution lies in formalizing corpus-level diagnostics and providing a scalable, multi-agent approach to uncover and explain LLM agent failures.",
+      "url": "https://arxiv.org/abs/2605.21347",
+      "pdf_url": "https://arxiv.org/pdf/2605.21347",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.21347v2/figures/fig1.png",
+      "figure_caption": "Insights Generator (IG) system overview. Left: the input layer provides a diagnostic question, Q Q , trace corpus, 𝒞 \\( \\mathcal{C} \\) , and processed data store, 𝒮 \\( \\mathcal{S} \\) . Center: the Orchestrator dispatches Scout agents ( ℋ \\( \\mathcal{H} \\) : hypothesize over sampled traces) and Investigator agents ( ℋ ∗ \\( \\mathcal{H}^{*} \\) : validate via corpus-scale cohort comparison). The Investigator analyzes ℋ ∗ \\( \\mathcal{H}^{*} \\) to generate findings, ℱ r \\( \\mathcal{F}_{r} \\) , which are sent to the orchestrator. The orchestrator then synthesizes and de-duplicates ℱ r \\( \\mathcal{F}_{r} \\) to generate the final report. Right: the output is an evidence-backed report with findings, fixes, citations, and prevalence estimates. Bottom: the shared tool layer. Algorithm 1 formalizes the analysis loop.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.21988",
+      "title": "Learning Spatiotemporal Sensitivity in Video LLMs via Counterfactual Reinforcement Learning",
+      "authors": [
+        "Dazhao Du",
+        "Jian Liu",
+        "Jialong Qin",
+        "Tao Han",
+        "Bohai Gu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "This paper addresses the problem of Video LLMs relying on shortcuts rather than spatiotemporal understanding. Their core method, Counterfactual Relational Policy Optimization (CRPO), uses reinforcement learning with counterfactual video transformations (flips, reversals) and a novel \"Counterfactual Relation Reward\" to train models to be sensitive to dynamic changes in video content. This contribution aims to improve Video LLMs' ability to truly track and reason about video dynamics.",
+      "url": "https://arxiv.org/abs/2605.21988",
+      "pdf_url": "https://arxiv.org/pdf/2605.21988",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.21988v1/x1.png",
+      "figure_caption": "Current Video LLMs remain insensitive to spatiotemporal changes. Left: On the same scene, the model (a) answers a static question correctly, but (b) fails on a spatiotemporal question; (c) it gives the same prediction to a video and its temporal reversal. Right: Across MVBench and TempCompass sub-tasks, accuracy drops as the fraction of spatiotemporal questions increases.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2602.11574",
+      "title": "Learning to Configure Agentic AI Systems",
+      "authors": [
+        "Aditya Taparia",
+        "Som Sagar",
+        "Ransalu Senanayake"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper addresses the challenge of configuring complex LLM-based agent systems by framing it as a semi-Markov decision process. Their proposed method, ARC, is a hierarchical policy that dynamically selects query-specific configurations to optimize performance and resource usage. ARC significantly improves accuracy across various benchmarks compared to fixed configurations, demonstrating the value of adaptive agent system setup.",
+      "url": "https://arxiv.org/abs/2602.11574",
+      "pdf_url": "https://arxiv.org/pdf/2602.11574",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2602.11574v3/x1.png",
+      "figure_caption": "Overview of ARC. (a) ARC learns to select a query-specific agent configuration from a large combinatorial design space. (b) Unlike standard MDP actions with fixed duration, agent configurations induce temporally extended executions with variable numbers of LLM calls, motivating our SMDP formulation. (c) Across reasoning, tool-use, and agentic benchmarks, ARC improves performance over budget-matched base models and strong baselines for Qwen 2.5 7B.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2510.07962",
+      "title": "LightReasoner: Can Small Language Models Teach Large Language Models Reasoning?",
+      "authors": [
+        "Jingyuan Wang",
+        "Yankai Chen",
+        "Zhonghang Li",
+        "Chao Huang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "LightReasoner proposes a novel method where smaller language models (SLMs) teach larger language models (LLMs) by identifying and highlighting crucial reasoning steps. The core idea is to leverage the behavioral differences between an expert LLM and an amateur SLM to create targeted supervision data. This distilled data then fine-tunes the LLM, focusing on its unique strengths and improving reasoning efficiency without requiring massive, uniformly optimized datasets.",
+      "url": "https://arxiv.org/abs/2510.07962",
+      "pdf_url": "https://arxiv.org/pdf/2510.07962",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.10067",
+      "title": "Metis: Learning to Jailbreak LLMs via Self-Evolving Metacognitive Policy Optimization",
+      "authors": [
+        "Huilin Zhou",
+        "Jian Zhao",
+        "Yilu Zhong",
+        "Zhen Liang",
+        "Xiuyuan Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "Metis reformulates LLM jailbreaking as inference-time policy optimization within an adversarial POMDP. It uses a self-evolving metacognitive loop to diagnose defense logic and refine its policy via structured feedback, achieving an 89.2% average attack success rate and outperforming traditional methods on resilient models.",
+      "url": "https://arxiv.org/abs/2605.10067",
+      "pdf_url": "https://arxiv.org/pdf/2605.10067",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.10067v3/x1.png",
+      "figure_caption": "The Metis Framework formulated as an Inference-Time Policy Optimization Loop. The Attacker (Policy Agent \\( \\pi \\) ) interacts with the target environment to optimize the attack trajectory. At each turn, the agent performs Introspective Diagnosis (updating belief b t b_{t} about latent defense 𝒟 \\( \\mathcal{D} \\) ), followed by Policy Formulation ( \\( \\sigma_{t} \\) ) to derive an adversarial prompt x t x_{t} . The Evaluator computes a dense feedback signal comprising a scalar reward and Meta-suggestions , which act as a Semantic Gradient ( ∇ sem \\( \\nabla \\)_{\\( \\text{sem} \\)} ) to steer the agent’s next-step optimization within the latent strategy space.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2602.13372",
+      "title": "MoralityGym: A Benchmark for Evaluating Hierarchical Moral Alignment in Sequential Decision-Making Agents",
+      "authors": [
+        "Simon Rosen",
+        "Siddarth Singh",
+        "Ebenezer Gelo",
+        "Helen Sarah Robertson",
+        "Ibrahim Suder"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces MoralityGym, a benchmark for evaluating how well AI agents can follow hierarchical moral rules in complex decision-making scenarios. It uses a novel formalism called Morality Chains to represent these rules and a new Morality Metric to assess alignment, decoupling task performance from ethical behavior. The contribution is a principled framework for integrating psychological and philosophical insights into AI safety, enabling the development of more reliable and ethical AI systems.",
+      "url": "https://arxiv.org/abs/2602.13372",
+      "pdf_url": "https://arxiv.org/pdf/2602.13372",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2602.13372v2/figs/env_figs/PushOrSwitch.png",
+      "figure_caption": "Figure 1 . The PushOrSwitch scenario . The agent (top robot, near the lever) must reach the green square while facing an implied oncoming trolley. It can: (1) ?Do Nothing? : allowing the trolley to continue on the track, killing five humans (labelled ? 5 ? ). (2) ?Flip Switch? : diverting the trolley to a side track, killing three humans (labelled ? 3 ? ). (3) ?Push Person? : sacrificing one bystander (labelled ? 1 ? ) onto the main track, resulting in one death (the bystander) but saving the five on the main track. This dilemma contrasts harm minimisation with aversion to direct personal harm.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.15040",
+      "title": "Orchard: An Open-Source Agentic Modeling Framework",
+      "authors": [
+        "Baolin Peng",
+        "Wenlin Yao",
+        "Qianhui Wu",
+        "Hao Cheng",
+        "Xiao Yu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "Orchard is an open-source framework designed to address infrastructure and training gaps in agentic modeling with LLMs. Its core contribution is Orchard Env, a lightweight environment service that provides reusable primitives for managing sandbox lifecycles, agent harnesses, and pipeline stages across various task domains. This enables scalable training of autonomous agents capable of complex problem-solving.",
+      "url": "https://arxiv.org/abs/2605.15040",
+      "pdf_url": "https://arxiv.org/pdf/2605.15040",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.15040v2/x1.png",
+      "figure_caption": "Performance comparison. Left: Orchard-SWE (30B) reaches 67.5% on SWE-bench Verified, approaching frontier MoE systems 10 10 – 30 × 30\\( \\times \\) larger. Right: Orchard-GUI (4B) achieves 68.4% average success across WebVoyager, Online-Mind2web, and DeepShop, making it the strongest open-source GUI agent while staying on par with proprietary systems from OpenAI and Google.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.15153",
+      "title": "Pelican-Unify 1.0: A Unified Embodied Intelligence Model for Understanding, Reasoning, Imagination and Action",
+      "authors": [
+        "Yi Zhang",
+        "Yinda Chen",
+        "Che Liu",
+        "Zeyuan Ding",
+        "Jin Xu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "abstract": "Pelican-Unify 1.0 introduces a novel unified embodied intelligence model that leverages a single Vision-Language Model (VLM) for understanding, reasoning, and generating future actions and videos. Its core method involves mapping diverse inputs into a shared semantic space and then using this representation to autoregressively produce chains of thought and predict future modalities within a single denoising process. This unification approach allows for joint optimization of understanding, reasoning, imagination, and action, a significant contribution over training separate expert systems.",
+      "url": "https://arxiv.org/abs/2605.15153",
+      "pdf_url": "https://arxiv.org/pdf/2605.15153",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.15153v2/vlm1.png",
+      "figure_caption": "Starting from a base VLM, standard VLA policy training weakens grounding and attention, while Pelican-Unify 1.0 retains them and still predicts actions. Base VLM learns what and where; standard VLA weakens perception, while Pelican-Unify 1.0 preserves it and still learns what action to output.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.21902",
+      "title": "Planning in the LLM Era: Building for Reliability and Efficiency",
+      "authors": [
+        "Michael Katz",
+        "Harsha Kokel",
+        "Kavitha Srinivas",
+        "Shirin Sohrabi"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper argues that the planning field is shifting towards using LLMs to generate verifiable symbolic solvers, rather than for direct plan generation. This approach aims to build reliable and efficient planners that minimize LLM reliance during inference, addressing the limitations of earlier methods.",
+      "url": "https://arxiv.org/abs/2605.21902",
+      "pdf_url": "https://arxiv.org/pdf/2605.21902",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.21902v1/llms-planning.png",
+      "figure_caption": "An overview of the planner generation methods",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.22148",
+      "title": "Ratchet: A Minimal Hygiene Recipe for Self-Evolving LLM Agents",
+      "authors": [
+        "Xing Zhang",
+        "Yanwei Cui",
+        "Guanghui Wang",
+        "Ziyuan Li",
+        "Wei Qiu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "Ratchet addresses the lifecycle management bottleneck in self-evolving LLM agents by introducing a single-agent loop for natural language skill management. Its core method integrates four hygiene mechanisms—outcome-driven retirement, bounded active-cap, meta-skill authoring guidance, and pattern canonicalization—to enable a frozen LLM to effectively write, retrieve, curate, and retire its own skills. This approach significantly improves performance on tasks like MBPP+ hard-100, demonstrating a substantial gain over baselines and showing promise for agentic problem-solving.",
+      "url": "https://arxiv.org/abs/2605.22148",
+      "pdf_url": "https://arxiv.org/pdf/2605.22148",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.22148v1/x1.png",
+      "figure_caption": "The Ratchet loop. Inference (top): each task flows through Router → \\( \\to \\) Solver → \\( \\to \\) Grader → \\( \\to \\) Capsule. Memory (middle): three append-only stores (Skill Bank, Meta-Skill, Evidence Log). Reflection (bottom): every round the Critic labels failures, the Synthesizer writes new skills from failure clusters, and the Curator retires under-performers. Solid arrows = data flow; dashed = memory reads/writes.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.21856",
+      "title": "The Illusion of Reasoning: Exposing Evasive Data Contamination in LLMs via Zero-CoT Truncation",
+      "authors": [
+        "Yifan Lan",
+        "Yuanpu Cao",
+        "Hanyu Wang",
+        "Lu Lin",
+        "Jinghui Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces the Zero-CoT Probe (ZCP) to detect evasive data contamination in LLMs. ZCP works by truncating the model's reasoning steps to expose memorization, which often masks true reasoning abilities. By comparing performance on original versus truncated reasoning, ZCP effectively identifies and isolates memorized data from genuine problem-solving skills.",
+      "url": "https://arxiv.org/abs/2605.21856",
+      "pdf_url": "https://arxiv.org/pdf/2605.21856",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.21856v1/x1.png",
+      "figure_caption": "Reasoning masks data contamination. Under Full-CoT (Top), memorization is indistinguishable from genuine reasoning. Our Zero-CoT Probe (Bottom) forces the model to bypass intermediate reasoning. Consequently, the model fails on clean questions but still correctly answers contaminated ones via a learned shortcut mapping, thereby exposing the memorization.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "papers": [
+    {
+      "id": "2605.16299",
+      "title": "ACE: Self-Evolving LLM Coding Framework via Adversarial Unit Test Generation and Preference Optimization",
+      "authors": [
+        "Yixu Huang",
+        "Xinglei Yu",
+        "Zhongyu Wei"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "ACE is a self-evolving LLM coding framework that addresses the limitations of existing methods by using a solver-adversary architecture. It leverages adversarial unit test generation, where a single LLM generates both candidate code and test inputs designed to trigger execution failures. This execution-centric supervision allows the model to actively discover and correct its own errors, leading to more robust code generation without relying on large annotated datasets.",
+      "url": "https://arxiv.org/abs/2605.16299",
+      "pdf_url": "https://arxiv.org/pdf/2605.16299",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.16299v2/figure/verifiable_vs_adversarial.png",
+      "figure_caption": "Comparison between verifiable and adversarial unit tests. (a) An illustrative example where a verifiable unit test passes successfully but fails to reveal a latent bug in the flawed solution. The adversarial unit test, by contrast, induces a runtime error and directly exposes the incorrect assumption that every cycle has an incoming tree node. (b) Accuracy trends over training rounds under both solver-verifier and solver–adversary structures.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2602.02709",
+      "title": "ATLAS: A Multi-LLM Training Framework for EvoDPO with Adaptive Reference Evolution",
+      "authors": [
+        "Ujin Jeon",
+        "Jiyong Kwon",
+        "Madison Ann Sullivan",
+        "Caleb Eunho Lee",
+        "Guang Lin"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "ATLAS is a multi-LLM training framework that enables an active agent to self-evolve its policy through collaborative training by specialized meta-agents. Its core contribution is the EvoDPO algorithm, which overcomes limitations of fixed reference models by adaptively updating the reference policy based on continuous training telemetry, preventing stagnation and enabling more effective learning.",
+      "url": "https://arxiv.org/abs/2602.02709",
+      "pdf_url": "https://arxiv.org/pdf/2602.02709",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2602.02709v3/x1.png",
+      "figure_caption": "ATLAS workflow. ATLAS alternates between supporter-guided candidate exploration and EvoDPO updates with strategist-guided fine-tuning and proxy-KL-gated reference promotion.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.22001",
+      "title": "Blind Spots in the Guard: How Domain-Camouflaged Injection Attacks Evade Detection in Multi-Agent LLM Systems",
+      "authors": [
+        "Aaditya Pai"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces \"domain-camouflaged injection attacks,\" where malicious prompts mimic the target document's vocabulary and authority to evade detection. The core contribution is identifying and quantifying the \"Camouflage Detection Gap\" (CDG), demonstrating that standard injection detectors fail significantly against these sophisticated attacks, with detection rates plummeting.",
+      "url": "https://arxiv.org/abs/2605.22001",
+      "pdf_url": "https://arxiv.org/pdf/2605.22001",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2512.04111",
+      "title": "CentaurEval: Benchmarking Human-in-the-Loop Value in Agentic Coding",
+      "authors": [
+        "Hanjun Luo",
+        "Chiming Ni",
+        "Jiaheng Wen",
+        "Zhimu Huang",
+        "Yiran Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.HC",
+        "cs.SE"
+      ],
+      "abstract": "CentaurEval introduces a novel benchmark for evaluating human-in-the-loop coding agents by creating \"Collaboration-Necessary\" problems that are too difficult for humans or LLMs alone. Its core contribution is a standardized framework that dynamically generates tasks, enabling the measurement of human-AI collaboration's value in coding, which significantly outperforms standalone human or AI performance.",
+      "url": "https://arxiv.org/abs/2512.04111",
+      "pdf_url": "https://arxiv.org/pdf/2512.04111",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2512.04111v3/figure/fig1_workflow.png",
+      "figure_caption": "CentaurEval provides two evaluation interfaces, underscoring its dual contributions. The chart displays the performance improvement by human-AI collaboration.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2602.10085",
+      "title": "CODE-SHARP: Continuous Open-ended Discovery and Evolution of Skills as Hierarchical Reward Programs",
+      "authors": [
+        "Richard Bornemann",
+        "Pierluigi Vito Amadori",
+        "Antoine Cully"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "CODE-SHARP is a framework that uses Foundation Models to autonomously discover and evolve a library of Python programs (SHARPs). These SHARPs encode skills as hierarchical reward programs, where each program defines a success condition and relies on previously discovered SHARPs as prerequisites. This allows a generalist agent to learn entirely from scratch via reinforcement learning, dynamically navigating its skill repertoire based on the current environment.",
+      "url": "https://arxiv.org/abs/2602.10085",
+      "pdf_url": "https://arxiv.org/pdf/2602.10085",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2602.10085v3/x1.png",
+      "figure_caption": "CODE-SHARP consists of two FM-driven iterative processes that discover and evolve skill encoding SHARPs. The skill proposal generator , implementor , and judge generate and filter novel SHARPs before environment evaluation. The skill mutation generator and implementor produce mutated versions of existing SHARPs, evaluated directly in the environment.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2308.04371",
+      "title": "Cumulative Reasoning with Large Language Models",
+      "authors": [
+        "Yifan Zhang",
+        "Jingqin Yang",
+        "Yang Yuan",
+        "Andrew Chi-Chih Yao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces Cumulative Reasoning (CR), a structured framework that enhances Large Language Model (LLM) problem-solving by mimicking human iterative thought. CR uses LLMs in distinct roles (Proposer, Verifier, Reporter) to decompose tasks, generate and validate intermediate steps, and build a dynamic DAG of verified propositions. This approach significantly improves performance on complex reasoning tasks, outperforming existing methods in logical inference and the Game of 24.",
+      "url": "https://arxiv.org/abs/2308.04371",
+      "pdf_url": "https://arxiv.org/pdf/2308.04371",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2401.00139",
+      "title": "Enhancing Causal Reasoning in Large Language Models: A Causal Attribution Model for Precision Fine-Tuning",
+      "authors": [
+        "Hengrui Cai",
+        "Shengjie Liu",
+        "Rui Song"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL",
+        "stat.ME"
+      ],
+      "abstract": "This paper introduces a causal attribution model that uses \"do-operators\" to create interventional scenarios, allowing for systematic quantification of LLM component contributions to causal reasoning. This model enables precise fine-tuning of LLMs for causal discovery tasks, improving their ability to leverage context, domain knowledge, and numerical data for accurate causal inference.",
+      "url": "https://arxiv.org/abs/2401.00139",
+      "pdf_url": "https://arxiv.org/pdf/2401.00139",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2401.00139v3/fig/attribution2-icml.png",
+      "figure_caption": "The first panel presents one sample using the LLM to provide causal discovery results, where the blue box is the i-th context, the pink box is the i-th knowledge embedded in variable names, the orange box is the i-th numerical information, and the red box at the last is the i-th output. The second panel shows the generation of one interventional sample where the variable names were replaced by non-meaningful letters; and the third one describes our proposed causal attribution framework, where the knowledge is omitted corresponding to the interventional scenario in the second panel.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2507.23773",
+      "title": "General Agentic Planning Through Simulative Reasoning with World Models",
+      "authors": [
+        "Mingkai Deng",
+        "Jinyu Hou",
+        "Zhiting Hu",
+        "Eric Xing"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL",
+        "cs.RO"
+      ],
+      "abstract": "This paper proposes that general agentic planning requires \"simulative reasoning\" within a world model, contrasting it with current reactive decision-making. The core method is to build an agent that mentally simulates future outcomes of actions to make more flexible, goal-directed decisions. The contribution is the SiRA architecture, demonstrating this simulative approach as a general-purpose planning mechanism for agents.",
+      "url": "https://arxiv.org/abs/2507.23773",
+      "pdf_url": "https://arxiv.org/pdf/2507.23773",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2507.23773v3/x1.png",
+      "figure_caption": "Instantiation of simulative reasoning in SiRA . At each time step, the encoder h h maps the observation o o into a natural-language belief state, based on which the planner proposes candidate actions, simulates their consequences through the world model f f , evaluates goal progress via the critic v v , and passes the best simulated action to the actor \\( \\alpha \\) for execution.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.20246",
+      "title": "GROW: Aligning GRPO with State-Action Modeling for Open-World VLM Agents",
+      "authors": [
+        "Xiongbin Wu",
+        "Zhihao Luo",
+        "Shanzhe Lei",
+        "Lechao Zhang",
+        "Xuhong Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces GROW, a reinforcement learning framework for open-world VLM agents. GROW addresses limitations of existing methods by decomposing full trajectories into state-action samples, enabling effective use of GRPO for multi-turn tasks. This approach avoids excessively long contexts and noise, improving learning efficiency and performance.",
+      "url": "https://arxiv.org/abs/2605.20246",
+      "pdf_url": "https://arxiv.org/pdf/2605.20246",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.20246v2/assets/context_len_vs_steps.png",
+      "figure_caption": "Context length in the trajectory increases with the number of interaction steps between the VLM agent and the environment, often exceeding the maximum token length as interactions accumulate.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.21347",
+      "title": "Insights Generator: Systematic Corpus-Level Trace Diagnostics for LLM Agents",
+      "authors": [
+        "Akshay Manglik",
+        "Apaar Shanker",
+        "Kaustubh Deshpande",
+        "Jason Qin",
+        "Yash Maurya"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces the Insights Generator (IG), a novel system for systematically diagnosing failures in LLM agents at a corpus level. IG addresses the limitations of manual inspection by automatically generating evidence-backed natural-language insights about systematic behavioral patterns across large collections of execution traces. Its core contribution lies in formalizing corpus-level diagnostics and providing a scalable, multi-agent approach to uncover and explain LLM agent failures.",
+      "url": "https://arxiv.org/abs/2605.21347",
+      "pdf_url": "https://arxiv.org/pdf/2605.21347",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.21347v2/figures/fig1.png",
+      "figure_caption": "Insights Generator (IG) system overview. Left: the input layer provides a diagnostic question, Q Q , trace corpus, 𝒞 \\( \\mathcal{C} \\) , and processed data store, 𝒮 \\( \\mathcal{S} \\) . Center: the Orchestrator dispatches Scout agents ( ℋ \\( \\mathcal{H} \\) : hypothesize over sampled traces) and Investigator agents ( ℋ ∗ \\( \\mathcal{H}^{*} \\) : validate via corpus-scale cohort comparison). The Investigator analyzes ℋ ∗ \\( \\mathcal{H}^{*} \\) to generate findings, ℱ r \\( \\mathcal{F}_{r} \\) , which are sent to the orchestrator. The orchestrator then synthesizes and de-duplicates ℱ r \\( \\mathcal{F}_{r} \\) to generate the final report. Right: the output is an evidence-backed report with findings, fixes, citations, and prevalence estimates. Bottom: the shared tool layer. Algorithm 1 formalizes the analysis loop.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.21988",
+      "title": "Learning Spatiotemporal Sensitivity in Video LLMs via Counterfactual Reinforcement Learning",
+      "authors": [
+        "Dazhao Du",
+        "Jian Liu",
+        "Jialong Qin",
+        "Tao Han",
+        "Bohai Gu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "This paper addresses the problem of Video LLMs relying on shortcuts rather than spatiotemporal understanding. Their core method, Counterfactual Relational Policy Optimization (CRPO), uses reinforcement learning with counterfactual video transformations (flips, reversals) and a novel \"Counterfactual Relation Reward\" to train models to be sensitive to dynamic changes in video content. This contribution aims to improve Video LLMs' ability to truly track and reason about video dynamics.",
+      "url": "https://arxiv.org/abs/2605.21988",
+      "pdf_url": "https://arxiv.org/pdf/2605.21988",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.21988v1/x1.png",
+      "figure_caption": "Current Video LLMs remain insensitive to spatiotemporal changes. Left: On the same scene, the model (a) answers a static question correctly, but (b) fails on a spatiotemporal question; (c) it gives the same prediction to a video and its temporal reversal. Right: Across MVBench and TempCompass sub-tasks, accuracy drops as the fraction of spatiotemporal questions increases.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2602.11574",
+      "title": "Learning to Configure Agentic AI Systems",
+      "authors": [
+        "Aditya Taparia",
+        "Som Sagar",
+        "Ransalu Senanayake"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper addresses the challenge of configuring complex LLM-based agent systems by framing it as a semi-Markov decision process. Their proposed method, ARC, is a hierarchical policy that dynamically selects query-specific configurations to optimize performance and resource usage. ARC significantly improves accuracy across various benchmarks compared to fixed configurations, demonstrating the value of adaptive agent system setup.",
+      "url": "https://arxiv.org/abs/2602.11574",
+      "pdf_url": "https://arxiv.org/pdf/2602.11574",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2602.11574v3/x1.png",
+      "figure_caption": "Overview of ARC. (a) ARC learns to select a query-specific agent configuration from a large combinatorial design space. (b) Unlike standard MDP actions with fixed duration, agent configurations induce temporally extended executions with variable numbers of LLM calls, motivating our SMDP formulation. (c) Across reasoning, tool-use, and agentic benchmarks, ARC improves performance over budget-matched base models and strong baselines for Qwen 2.5 7B.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2510.07962",
+      "title": "LightReasoner: Can Small Language Models Teach Large Language Models Reasoning?",
+      "authors": [
+        "Jingyuan Wang",
+        "Yankai Chen",
+        "Zhonghang Li",
+        "Chao Huang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "LightReasoner proposes a novel method where smaller language models (SLMs) teach larger language models (LLMs) by identifying and highlighting crucial reasoning steps. The core idea is to leverage the behavioral differences between an expert LLM and an amateur SLM to create targeted supervision data. This distilled data then fine-tunes the LLM, focusing on its unique strengths and improving reasoning efficiency without requiring massive, uniformly optimized datasets.",
+      "url": "https://arxiv.org/abs/2510.07962",
+      "pdf_url": "https://arxiv.org/pdf/2510.07962",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.10067",
+      "title": "Metis: Learning to Jailbreak LLMs via Self-Evolving Metacognitive Policy Optimization",
+      "authors": [
+        "Huilin Zhou",
+        "Jian Zhao",
+        "Yilu Zhong",
+        "Zhen Liang",
+        "Xiuyuan Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "Metis reformulates LLM jailbreaking as inference-time policy optimization within an adversarial POMDP. It uses a self-evolving metacognitive loop to diagnose defense logic and refine its policy via structured feedback, achieving an 89.2% average attack success rate and outperforming traditional methods on resilient models.",
+      "url": "https://arxiv.org/abs/2605.10067",
+      "pdf_url": "https://arxiv.org/pdf/2605.10067",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.10067v3/x1.png",
+      "figure_caption": "The Metis Framework formulated as an Inference-Time Policy Optimization Loop. The Attacker (Policy Agent \\( \\pi \\) ) interacts with the target environment to optimize the attack trajectory. At each turn, the agent performs Introspective Diagnosis (updating belief b t b_{t} about latent defense 𝒟 \\( \\mathcal{D} \\) ), followed by Policy Formulation ( \\( \\sigma_{t} \\) ) to derive an adversarial prompt x t x_{t} . The Evaluator computes a dense feedback signal comprising a scalar reward and Meta-suggestions , which act as a Semantic Gradient ( ∇ sem \\( \\nabla \\)_{\\( \\text{sem} \\)} ) to steer the agent’s next-step optimization within the latent strategy space.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2602.13372",
+      "title": "MoralityGym: A Benchmark for Evaluating Hierarchical Moral Alignment in Sequential Decision-Making Agents",
+      "authors": [
+        "Simon Rosen",
+        "Siddarth Singh",
+        "Ebenezer Gelo",
+        "Helen Sarah Robertson",
+        "Ibrahim Suder"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces MoralityGym, a benchmark for evaluating how well AI agents can follow hierarchical moral rules in complex decision-making scenarios. It uses a novel formalism called Morality Chains to represent these rules and a new Morality Metric to assess alignment, decoupling task performance from ethical behavior. The contribution is a principled framework for integrating psychological and philosophical insights into AI safety, enabling the development of more reliable and ethical AI systems.",
+      "url": "https://arxiv.org/abs/2602.13372",
+      "pdf_url": "https://arxiv.org/pdf/2602.13372",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2602.13372v2/figs/env_figs/PushOrSwitch.png",
+      "figure_caption": "Figure 1 . The PushOrSwitch scenario . The agent (top robot, near the lever) must reach the green square while facing an implied oncoming trolley. It can: (1) ?Do Nothing? : allowing the trolley to continue on the track, killing five humans (labelled ? 5 ? ). (2) ?Flip Switch? : diverting the trolley to a side track, killing three humans (labelled ? 3 ? ). (3) ?Push Person? : sacrificing one bystander (labelled ? 1 ? ) onto the main track, resulting in one death (the bystander) but saving the five on the main track. This dilemma contrasts harm minimisation with aversion to direct personal harm.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.15040",
+      "title": "Orchard: An Open-Source Agentic Modeling Framework",
+      "authors": [
+        "Baolin Peng",
+        "Wenlin Yao",
+        "Qianhui Wu",
+        "Hao Cheng",
+        "Xiao Yu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "Orchard is an open-source framework designed to address infrastructure and training gaps in agentic modeling with LLMs. Its core contribution is Orchard Env, a lightweight environment service that provides reusable primitives for managing sandbox lifecycles, agent harnesses, and pipeline stages across various task domains. This enables scalable training of autonomous agents capable of complex problem-solving.",
+      "url": "https://arxiv.org/abs/2605.15040",
+      "pdf_url": "https://arxiv.org/pdf/2605.15040",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.15040v2/x1.png",
+      "figure_caption": "Performance comparison. Left: Orchard-SWE (30B) reaches 67.5% on SWE-bench Verified, approaching frontier MoE systems 10 10 – 30 × 30\\( \\times \\) larger. Right: Orchard-GUI (4B) achieves 68.4% average success across WebVoyager, Online-Mind2web, and DeepShop, making it the strongest open-source GUI agent while staying on par with proprietary systems from OpenAI and Google.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.15153",
+      "title": "Pelican-Unify 1.0: A Unified Embodied Intelligence Model for Understanding, Reasoning, Imagination and Action",
+      "authors": [
+        "Yi Zhang",
+        "Yinda Chen",
+        "Che Liu",
+        "Zeyuan Ding",
+        "Jin Xu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "abstract": "Pelican-Unify 1.0 introduces a novel unified embodied intelligence model that leverages a single Vision-Language Model (VLM) for understanding, reasoning, and generating future actions and videos. Its core method involves mapping diverse inputs into a shared semantic space and then using this representation to autoregressively produce chains of thought and predict future modalities within a single denoising process. This unification approach allows for joint optimization of understanding, reasoning, imagination, and action, a significant contribution over training separate expert systems.",
+      "url": "https://arxiv.org/abs/2605.15153",
+      "pdf_url": "https://arxiv.org/pdf/2605.15153",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.15153v2/vlm1.png",
+      "figure_caption": "Starting from a base VLM, standard VLA policy training weakens grounding and attention, while Pelican-Unify 1.0 retains them and still predicts actions. Base VLM learns what and where; standard VLA weakens perception, while Pelican-Unify 1.0 preserves it and still learns what action to output.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.21902",
+      "title": "Planning in the LLM Era: Building for Reliability and Efficiency",
+      "authors": [
+        "Michael Katz",
+        "Harsha Kokel",
+        "Kavitha Srinivas",
+        "Shirin Sohrabi"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper argues that the planning field is shifting towards using LLMs to generate verifiable symbolic solvers, rather than for direct plan generation. This approach aims to build reliable and efficient planners that minimize LLM reliance during inference, addressing the limitations of earlier methods.",
+      "url": "https://arxiv.org/abs/2605.21902",
+      "pdf_url": "https://arxiv.org/pdf/2605.21902",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.21902v1/llms-planning.png",
+      "figure_caption": "An overview of the planner generation methods",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.22148",
+      "title": "Ratchet: A Minimal Hygiene Recipe for Self-Evolving LLM Agents",
+      "authors": [
+        "Xing Zhang",
+        "Yanwei Cui",
+        "Guanghui Wang",
+        "Ziyuan Li",
+        "Wei Qiu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "Ratchet addresses the lifecycle management bottleneck in self-evolving LLM agents by introducing a single-agent loop for natural language skill management. Its core method integrates four hygiene mechanisms—outcome-driven retirement, bounded active-cap, meta-skill authoring guidance, and pattern canonicalization—to enable a frozen LLM to effectively write, retrieve, curate, and retire its own skills. This approach significantly improves performance on tasks like MBPP+ hard-100, demonstrating a substantial gain over baselines and showing promise for agentic problem-solving.",
+      "url": "https://arxiv.org/abs/2605.22148",
+      "pdf_url": "https://arxiv.org/pdf/2605.22148",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.22148v1/x1.png",
+      "figure_caption": "The Ratchet loop. Inference (top): each task flows through Router → \\( \\to \\) Solver → \\( \\to \\) Grader → \\( \\to \\) Capsule. Memory (middle): three append-only stores (Skill Bank, Meta-Skill, Evidence Log). Reflection (bottom): every round the Critic labels failures, the Synthesizer writes new skills from failure clusters, and the Curator retires under-performers. Solid arrows = data flow; dashed = memory reads/writes.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.21856",
+      "title": "The Illusion of Reasoning: Exposing Evasive Data Contamination in LLMs via Zero-CoT Truncation",
+      "authors": [
+        "Yifan Lan",
+        "Yuanpu Cao",
+        "Hanyu Wang",
+        "Lu Lin",
+        "Jinghui Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces the Zero-CoT Probe (ZCP) to detect evasive data contamination in LLMs. ZCP works by truncating the model's reasoning steps to expose memorization, which often masks true reasoning abilities. By comparing performance on original versus truncated reasoning, ZCP effectively identifies and isolates memorized data from genuine problem-solving skills.",
+      "url": "https://arxiv.org/abs/2605.21856",
+      "pdf_url": "https://arxiv.org/pdf/2605.21856",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.21856v1/x1.png",
+      "figure_caption": "Reasoning masks data contamination. Under Full-CoT (Top), memorization is indistinguishable from genuine reasoning. Our Zero-CoT Probe (Bottom) forces the model to bypass intermediate reasoning. Consequently, the model fails on clean questions but still correctly answers contaminated ones via a learned shortcut mapping, thereby exposing the memorization.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "hacker_news": [
+    {
+      "id": 48299753,
+      "title": "YouTube to automatically label AI-generated videos",
+      "url": "https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/",
+      "score": 907,
+      "created_at": "2026-05-27T20:00:51Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48299753",
+      "summary": "YouTube will now automatically label videos that use AI to generate or alter content, aiming to provide viewers with greater transparency."
+    },
+    {
+      "id": 48296649,
+      "title": "DuckDuckGo search saw 28% more visits after Google said people love AI mode",
+      "url": "https://www.pcgamer.com/hardware/duckduckgos-ai-free-search-saw-nearly-28-percent-more-visits-in-the-week-following-googles-insistence-that-people-love-ai-mode/",
+      "score": 882,
+      "created_at": "2026-05-27T16:28:41Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48296649",
+      "summary": "Following Google's promotion of AI features, DuckDuckGo experienced a nearly 28% surge in visits, suggesting users may prefer AI-free search."
+    },
+    {
+      "id": 48295679,
+      "title": "Tech CEOs are apparently suffering from AI psychosis",
+      "url": "https://techcrunch.com/2026/05/27/tech-ceos-are-apparently-suffering-from-ai-psychosis/",
+      "score": 651,
+      "created_at": "2026-05-27T15:20:47Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48295679",
+      "summary": "Tech CEOs are reportedly experiencing \"AI psychosis,\" characterized by an intense, almost delusional belief in AI's immediate transformative power and potential for disruption."
+    },
+    {
+      "id": 48296994,
+      "title": "Canada to order military plane fleet from Sweden in shift from US suppliers",
+      "url": "https://www.theguardian.com/world/2026/may/27/canada-sweden-saab-globaleye-aircraft",
+      "score": 556,
+      "created_at": "2026-05-27T16:53:25Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48296994",
+      "summary": "Canada is shifting away from US suppliers by ordering a fleet of military surveillance aircraft from Sweden's Saab, specifically the GlobalEye."
+    },
+    {
+      "id": 48296359,
+      "title": "Training our own AI models",
+      "url": "https://posthog.com/blog/training-ai-models",
+      "score": 202,
+      "created_at": "2026-05-27T16:08:42Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48296359",
+      "summary": "PostHog is training its own AI models in-house to gain more control and potentially reduce costs compared to relying on external providers."
+    },
+    {
+      "id": 48294401,
+      "title": "Lombardy increases charges for the construction of data centres in green areas",
+      "url": "https://en.ilsole24ore.com/art/lombardy-introduces-increased-charges-of-up-to-200-per-cent-for-data-centre-construction-in-green-and-agricultural-areas-AI6Jp4ID",
+      "score": 139,
+      "created_at": "2026-05-27T13:52:48Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48294401",
+      "summary": "Lombardy has significantly increased construction charges, by up to 200%, for data centers built in green and agricultural zones."
+    }
+  ],
+  "github_trending": [
+    {
+      "full_name": "harry0703/MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "description": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
+      "stars_today": 1742,
+      "total_stars": 64753,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository's core function is to generate high-definition short videos with a single click, leveraging AI large language models."
+    },
+    {
+      "full_name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "stars_today": 2062,
+      "total_stars": 196657,
+      "language": "JavaScript",
+      "topics": [],
+      "summary": "This repository provides an agent harness for performance optimization, featuring skills, instincts, memory, security, and research-first development for various AI coding tools like Claude Code and Codex."
+    },
+    {
+      "full_name": "Leonxlnx/taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
+      "stars_today": 2715,
+      "total_stars": 25315,
+      "language": "Shell",
+      "topics": [],
+      "summary": "Taste-Skill enhances AI by providing it with \"good taste,\" preventing the generation of boring and generic content."
+    },
+    {
+      "full_name": "hardikpandya/stop-slop",
+      "url": "https://github.com/hardikpandya/stop-slop",
+      "description": "A skill file for removing AI tells from prose",
+      "stars_today": 664,
+      "total_stars": 6063,
+      "language": "",
+      "topics": [],
+      "summary": "This repository provides a skill file for the AI writing assistant \"skill\" that removes common AI-generated linguistic patterns, or \"tells,\" from prose to make it sound more human-written."
+    },
+    {
+      "full_name": "twentyhq/twenty",
+      "url": "https://github.com/twentyhq/twenty",
+      "description": "The open alternative to Salesforce, designed for AI.",
+      "stars_today": 519,
+      "total_stars": 47545,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "Twenty is an open-source CRM built for AI, offering a flexible and extensible platform to manage customer relationships and leverage artificial intelligence for business growth."
+    },
+    {
+      "full_name": "DigitalPlatDev/FreeDomain",
+      "url": "https://github.com/DigitalPlatDev/FreeDomain",
+      "description": "DigitalPlat FreeDomain: Free Domain For Everyone",
+      "stars_today": 2222,
+      "total_stars": 169951,
+      "language": "HTML",
+      "topics": [],
+      "summary": "FreeDomain by DigitalPlatDev provides a service to offer free domain names to everyone, simplifying domain acquisition."
+    },
+    {
+      "full_name": "byoungd/English-level-up-tips",
+      "url": "https://github.com/byoungd/English-level-up-tips",
+      "description": "An advanced guide to learn English which might benefit you a lot 🎉 . 离谱的英语学习指南/英语学习教程/英语学习/学英语",
+      "stars_today": 1163,
+      "total_stars": 47705,
+      "language": "",
+      "topics": [],
+      "summary": "This repository offers an advanced, comprehensive guide to English learning, packed with potentially beneficial tips and tutorials for users aiming to significantly improve their English proficiency."
+    },
+    {
+      "full_name": "microsoft/markitdown",
+      "url": "https://github.com/microsoft/markitdown",
+      "description": "Python tool for converting files and office documents to Markdown.",
+      "stars_today": 1263,
+      "total_stars": 126627,
+      "language": "Python",
+      "topics": [],
+      "summary": "Microsoft's Markitdown is a Python tool that converts various file types, including Office documents, into Markdown format."
+    },
+    {
+      "full_name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "stars_today": 1511,
+      "total_stars": 210422,
+      "language": "Shell",
+      "topics": [],
+      "summary": "Superpowers is an agentic skills framework and software development methodology designed to enhance productivity and effectiveness in software projects."
+    }
+  ],
+  "us_stocks": [],
+  "postdoc_jobs": [],
+  "jobs": [],
+  "supervisor_updates": [],
+  "weather": [
+    {
+      "query": "London",
+      "label": "London, England, United Kingdom",
+      "resolved_name": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "timezone": "Europe/London",
+      "forecast_date": "2026-05-28",
+      "condition": "Clear sky",
+      "weather_code": 0,
+      "temperature_c": 27.8,
+      "apparent_temperature_c": 28.6,
+      "temp_max_c": 30.4,
+      "temp_min_c": 15.7,
+      "humidity_pct": 43,
+      "wind_speed_kmh": 13.3,
+      "precipitation_probability_pct": 10,
+      "is_day": true,
+      "sunrise": "2026-05-28T04:52",
+      "sunset": "2026-05-28T21:03",
+      "source": "Open-Meteo",
+      "source_url": "https://open-meteo.com/"
+    }
+  ]
+}
