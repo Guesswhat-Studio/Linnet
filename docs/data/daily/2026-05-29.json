@@ -1,0 +1,1780 @@
+{
+  "date": "2026-05-29",
+  "generated_at": "2026-05-29T10:51:40.716979+00:00",
+  "sections_ordered": [
+    {
+      "key": "quote_of_day",
+      "payload_key": "quote_of_day",
+      "title": "Words for the Morning",
+      "icon": "✦",
+      "items": [
+        {
+          "quote": "I am proud to have been capable of giving people hope again.",
+          "author": "Francois Hollande",
+          "category": "hope"
+        }
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "key": "weather",
+      "payload_key": "weather",
+      "title": "Weather",
+      "icon": "🌦️",
+      "items": [
+        {
+          "query": "London",
+          "label": "London, England, United Kingdom",
+          "resolved_name": "London",
+          "region": "England",
+          "country": "United Kingdom",
+          "latitude": 51.50853,
+          "longitude": -0.12574,
+          "timezone": "Europe/London",
+          "forecast_date": "2026-05-29",
+          "condition": "Overcast",
+          "weather_code": 3,
+          "temperature_c": 22.3,
+          "apparent_temperature_c": 21.8,
+          "temp_max_c": 25.7,
+          "temp_min_c": 18.9,
+          "humidity_pct": 47,
+          "wind_speed_kmh": 9.7,
+          "precipitation_probability_pct": 18,
+          "is_day": true,
+          "sunrise": "2026-05-29T04:51",
+          "sunset": "2026-05-29T21:04",
+          "source": "Open-Meteo",
+          "source_url": "https://open-meteo.com/"
+        }
+      ],
+      "meta": {
+        "count": 1,
+        "city": "London"
+      }
+    },
+    {
+      "key": "arxiv",
+      "payload_key": "papers",
+      "title": "arXiv Papers",
+      "icon": "📄",
+      "items": [
+        {
+          "id": "2602.05472",
+          "title": "ALIVE: Awakening LLM Reasoning via Adversarial Learning and Instructive Verbal Evaluation",
+          "authors": [
+            "Yiwen Duan",
+            "Jing Ye",
+            "Xinpei Zhao"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "ALIVE addresses the \"reward bottleneck\" in LLM reasoning by moving beyond costly scalar rewards. Its core method, Adversarial Learning with Instructive Verbal Evaluation, unifies problem posing, solving, and judging within a single policy. This allows LLMs to internalize reasoning logic directly from raw text through adversarial training and verbal feedback, fostering a deeper, self-contained understanding of correctness.",
+          "url": "https://arxiv.org/abs/2602.05472",
+          "pdf_url": "https://arxiv.org/pdf/2602.05472",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2602.05472v2/x1.png",
+          "figure_caption": "Overview of ALIVE. A unified policy model π \\( \\pi_{\\theta} \\) alternates among three roles in a closed-loop learning cycle: the Constructor masks reasoning-critical spans in text to create hindsight-verifiable tasks, the Solver generates reasoning trajectories for these tasks, and the Reviewer evaluates the resulting solutions with both verbal critiques and soft rewards. The same parameters are updated by combining task-difficulty, hard-verification, soft-review, and feedback-conditioned learning signals.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.23590",
+          "title": "Co-ReAct: Rubrics as Step-Level Collaborators for ReAct Agents",
+          "authors": [
+            "Jiazheng Kang",
+            "Bowen Zhang",
+            "Zixin Song",
+            "Jiangwang Chen",
+            "Xiao Yang"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "Co-ReAct introduces a novel framework where rubrics act as step-level collaborators for ReAct agents. Instead of just evaluating final outputs, Co-ReAct integrates rubrics directly into the agent's decision-making process during inference, guiding each reasoning or action step. This allows agents to more effectively target evidence, refine their reasoning, and improve the overall quality and efficiency of multi-step tasks.",
+          "url": "https://arxiv.org/abs/2605.23590",
+          "pdf_url": "https://arxiv.org/pdf/2605.23590",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.23590v1/x1.png",
+          "figure_caption": "Overview of Co-ReAct. (i) Collect: sample candidate next actions at each branching point and rank them with multi-judge expert consensus. (ii) Train: GRPO with a Spearman reward between the rubric-induced ranking and the expert ranking. (iii) Infer: the trained rubric drives a five-tuple (Rubric, Reason, Act, Verify, Observe) loop.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.23605",
+          "title": "DiLaDiff: Distilled Latent-Augmented Diffusion for Language Modeling",
+          "authors": [
+            "Jean-Marie Lemercier",
+            "Tomas Geffner",
+            "Karsten Kreis",
+            "Morteza Mardani",
+            "Arash Vahdat"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "DiLaDiff addresses the token correlation issue in diffusion language models by introducing a continuous latent space. This latent space, learned via an auto-encoder and a latent diffusion model, captures semantic information. A consistency model then distills this latent prior into a fast, few-step generative model, significantly improving sampling quality and inference speed.",
+          "url": "https://arxiv.org/abs/2605.23605",
+          "pdf_url": "https://arxiv.org/pdf/2605.23605",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.23605v1/x1.png",
+          "figure_caption": "DiLaDiff: hybrid continuous-discrete diffusion with self-distilled latent. The latent space is crafted with encoder ℰ \\( \\mathcal{E}_{\\phi} \\) and decoder 𝐱 θ {\\( \\mathbf{x} \\)}_{\\( \\theta \\)} and learned a posteriori with a diffusion process with denoiser 𝐳 ψ {\\( \\mathbf{z} \\)}_{\\( \\psi \\)} . The latent diffusion trajectories are further self-distilled with MeanFlow student 𝐮 η ​ ( 𝐳 τ , τ , r ) \\( \\mathbf{u}_{\\eta} \\)({\\( \\mathbf{z} \\)}_{\\( \\tau \\)},\\( \\tau \\),r) .",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2509.26383",
+          "title": "Efficient and Transferable Agentic Knowledge Graph RAG via Reinforcement Learning",
+          "authors": [
+            "Junhong Lin",
+            "Shicheng Liu",
+            "Jinyeop Song",
+            "Song Wang",
+            "Julian Shun"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces KG-R1, an agentic framework that uses reinforcement learning to optimize knowledge-graph retrieval-augmented generation (KG-RAG). Instead of fixed multi-module pipelines, a single agent learns to interact with knowledge graphs, retrieving and incorporating information dynamically for more efficient and transferable question answering. This approach reduces inference costs and improves accuracy compared to existing methods.",
+          "url": "https://arxiv.org/abs/2509.26383",
+          "pdf_url": "https://arxiv.org/pdf/2509.26383",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2509.26383v5/Figures/overview.png",
+          "figure_caption": "Overview of KG-R1 , a multi-turn agentic KG-RAG framework. The framework enables cost-efficient inference and demonstrates strong cross-KG transferability.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.23218",
+          "title": "Foundation Protocol: A Coordination Layer for Agentic Society",
+          "authors": [
+            "Bang Liu",
+            "Yongfeng Gu",
+            "Jiayi Zhang",
+            "Zhaoyang Yu",
+            "Sirui Hong"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "The Foundation Protocol (FP) introduces a graph-based coordination layer for agentic societies, unifying diverse entities like agents, humans, and institutions. Its core method is to provide a flexible framework for multi-party organization, event-based collaboration, and economic primitives, while prioritizing policy and accountability. FP's main contribution is enabling the scalable and safe interaction of autonomous agents by acting as a bridging layer for existing protocols, fostering an AI economy.",
+          "url": "https://arxiv.org/abs/2605.23218",
+          "pdf_url": "https://arxiv.org/pdf/2605.23218",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.23218v1/x1.png",
+          "figure_caption": "A compact view of the web’s evolution: each generation raised capability while exposing new coordination failures. Web 4.0-like systems intensify those failures because agents act, interact, and transact at scale.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.23238",
+          "title": "GENSTRAT: Toward a Science of Strategic Reasoning in Large Language Models",
+          "authors": [
+            "Vartan Shadarevian",
+            "Kia Ghods",
+            "Alex Kenich",
+            "Anany Kotawala"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.GT",
+            "cs.MA"
+          ],
+          "abstract": "This paper introduces GENSTRAT, a novel benchmark for evaluating strategic reasoning in LLMs. Its core method involves procedurally generating a diverse distribution of imperfect-information card games, allowing for evergreen and robust evaluation. GENSTRAT's contribution is a more generalizable assessment of LLM strategic capabilities beyond fixed, canonical games, enabling confidence in predicting their performance in real-world messy environments.",
+          "url": "https://arxiv.org/abs/2605.23238",
+          "pdf_url": "https://arxiv.org/pdf/2605.23238",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.23238v1/x1.png",
+          "figure_caption": "The 50-game benchmark in two diagnostic axes (state space vs. information sensitivity). Each point denotes a game, with stars marking the annotated games.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.23551",
+          "title": "Goal-Conditioned Agents that Learn Everything All at Once",
+          "authors": [
+            "Michael Matthews",
+            "Matthew Jackson",
+            "Michael Beukman",
+            "Thomas Foster",
+            "Alistair Letcher"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces Learning Everything All at Once (LEO), a method for goal-conditioned reinforcement learning. LEO efficiently learns from all transitions by jointly outputting values and actions for every possible goal simultaneously, enabling parallel, off-policy updates. This approach significantly improves sample efficiency and performance on goal-conditioned tasks while being substantially faster than naive relabeling.",
+          "url": "https://arxiv.org/abs/2605.23551",
+          "pdf_url": "https://arxiv.org/pdf/2605.23551",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.23825",
+          "title": "It's the humans, not the data: Geopolitical bias in LLMs originates in post-training, amplified by the language of the prompt",
+          "authors": [
+            "Stuart Bladon",
+            "Brinnae Bent"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper demonstrates that geopolitical bias in LLMs primarily emerges during post-training, not pre-training, contradicting common assumptions. The researchers found that models often develop a bias favoring their developer's home country after fine-tuning, with the prompt's language also influencing the strength of this bias. This highlights the crucial role of human-driven post-training processes in shaping LLM behavior.",
+          "url": "https://arxiv.org/abs/2605.23825",
+          "pdf_url": "https://arxiv.org/pdf/2605.23825",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.23825v1/main_figure.png",
+          "figure_caption": "Overview, seven families. (A) Per-country preference base → \\( \\to \\) post-trained; for the six non-GLM bases, cross-country spread \\( \\sigma \\) grows post-training (Qwen 3.9 → 30.3 3.9\\( \\to \\) 30.3 pp). (B) Post-training \\( \\Delta \\) in China-favourability (EN, coherent subset). 3/3 Western labs shift anti-China; 3/4 Chinese labs shift pro-China; Yi shifts anti-China after prefill correction. GLM is shown with its (atypical) base preserved for completeness; see § Bias Is Created by Post-Training, Not Pretraining . The legend’s low-compliance encoding is described in § What MCQ Compliance Tells Us About Validity . (C) ZH − - EN shift on post-trained models: 5/7 descriptively pro-China but population-level claim is not statistically separable from the base trend (§ Linguistic Identity Modulates the Post-Training Bias ).",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.23723",
+          "title": "MemAudit: Post-hoc Auditing of Poisoned Agent Memory via Causal Attribution and Structural Anomaly Detection",
+          "authors": [
+            "Zhewen Tan",
+            "Yilun Yao",
+            "Huiyan Jin",
+            "Wenhan Yu",
+            "Guoan Wang"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "MemAudit is a post-hoc framework for auditing poisoned memory in LLM agents. It uses causal attribution to identify memories that causally influence harmful outputs and structural anomaly detection to pinpoint suspicious memory patterns. This allows for the identification and mitigation of memory poisoning after malicious behavior has occurred, addressing a gap in existing online-only defenses.",
+          "url": "https://arxiv.org/abs/2605.23723",
+          "pdf_url": "https://arxiv.org/pdf/2605.23723",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.23723v1/x1.png",
+          "figure_caption": "Overview of MemAudit. Given a harmful event e = ( q ∗ , y ∗ , R ∗ ) e=(q^{*},y^{*},R^{*}) , the framework performs post-hoc auditing over the memory store. It combines two complementary signals: CMIS, which measures the causal contribution of retrieved memories through counterfactual replay, and MCG, which identifies structurally anomalous memories in the global memory graph. The two signals are fused into a detoxification score for ranking suspicious memories. After removing the top-ranked memories, the agent becomes safer while preserving useful memory.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.02087",
+          "title": "Model Spec Midtraining: Improving How Alignment Training Generalizes",
+          "authors": [
+            "Chloe Li",
+            "Nevan Wichers",
+            "Sara Price",
+            "Samuel Marks",
+            "Jon Kutasov"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces Model Spec Midtraining (MSM) to improve how language models generalize during alignment training. MSM involves training models on synthetic documents discussing their desired behavior specification *before* standard alignment fine-tuning. This pre-training step helps models understand the spec's content, leading to more robust and targeted generalization from subsequent demonstration data.",
+          "url": "https://arxiv.org/abs/2605.02087",
+          "pdf_url": "https://arxiv.org/pdf/2605.02087",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2601.03715",
+          "title": "R$^3$L: Reflect-then-Retry Reinforcement Learning with Language-Guided Exploration, Pivotal Credit, and Positive Amplification",
+          "authors": [
+            "Weijie Shi",
+            "Yanxi Chen",
+            "Zexi Li",
+            "Xuchen Pan",
+            "Yuchang Sun"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "R$^3$L addresses exploration and exploitation challenges in RL for LLMs by introducing a \"reflect-then-retry\" mechanism. This method uses language feedback to analyze failed attempts, guiding retries from failure points to improve trajectory synthesis and reduce costs. The paper also proposes pivotal credit assignment and positive amplification to overcome coarse credit assignment and failure-dominated training.",
+          "url": "https://arxiv.org/abs/2601.03715",
+          "pdf_url": "https://arxiv.org/pdf/2601.03715",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.05704",
+          "title": "SafeHarbor: Hierarchical Memory-Augmented Guardrail for LLM Agent Safety",
+          "authors": [
+            "Zhe Liu",
+            "Zonghao Ying",
+            "Wenxin Zhang",
+            "Quanchen Zou",
+            "Deyue Zhang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CR"
+          ],
+          "abstract": "SafeHarbor is a hierarchical memory-augmented guardrail system for LLM agents. Its core method involves extracting context-aware defense rules through adversarial generation and dynamically injecting them into a local hierarchical memory. This approach aims to provide precise decision boundaries, balancing safety and utility without requiring retraining, and includes a self-evolution mechanism for continuous improvement.",
+          "url": "https://arxiv.org/abs/2605.05704",
+          "pdf_url": "https://arxiv.org/pdf/2605.05704",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.05704v2/x1.png",
+          "figure_caption": "Comparison between (a) Traditional coarse-grained guardrails and (b) Our precise, rule-based SafeHarbor framework.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2602.02780",
+          "title": "Scaling-Aware Adapter for Structure-Grounded LLM Reasoning",
+          "authors": [
+            "Zihao Jing",
+            "Qiuhao Zeng",
+            "Ruiyi Fang",
+            "Yan Yi Li",
+            "Yan Sun"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces Cuttlefish, a unified multimodal LLM that enhances reasoning over 2D and 3D structures. Its core method, Scaling-Aware Patching, adaptively generates variable-size patches over structural graphs, allowing the model to scale its query token budget with structural complexity. This approach overcomes limitations of fixed-length connectors, enabling more flexible and effective geometric grounding for generalized all-atom reasoning.",
+          "url": "https://arxiv.org/abs/2602.02780",
+          "pdf_url": "https://arxiv.org/pdf/2602.02780",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2602.02780v3/x1.png",
+          "figure_caption": "Mol-Llama performance on the Mol-Instructions captioning task, evaluated across five molecule length bins with 6 metrics (left y-axis, detailed in App D.3 ) plotted as curves with dashed overall averages, and the background bars indicate the proportion of samples in each length bin (right y-axis).",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2602.12579",
+          "title": "VI-CuRL: Stabilizing Verifier-Independent RL Reasoning via Confidence-Guided Variance Reduction",
+          "authors": [
+            "Xin-Qiang Cai",
+            "Masashi Sugiyama"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces VI-CuRL, a method to stabilize Reinforcement Learning for LLM reasoning without external verifiers. It uses the LLM's own confidence to guide a curriculum, prioritizing high-confidence examples to reduce gradient variance and prevent training collapse. This approach effectively manages the bias-variance trade-off, leading to more stable and scalable LLM reasoning.",
+          "url": "https://arxiv.org/abs/2602.12579",
+          "pdf_url": "https://arxiv.org/pdf/2602.12579",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2602.12579v2/figures/intro_v3.png",
+          "figure_caption": "Conceptual overview of VI-CuRL. Unlike standard RL that treats all samples equally, VI-CuRL dynamically selects high-confidence samples to stabilize training via a principled bias-variance trade-off, without accessing external verifiers.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.23414",
+          "title": "When Planning Fails Despite Correct Execution: On Epistemic Calibration for LLM-Based Multi-Agent Systems",
+          "authors": [
+            "Zehao Wang",
+            "Shilong Jin",
+            "Zhao Cao",
+            "Lanjun Wang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper addresses failures in LLM multi-agent systems where plans are executed correctly but are based on agents misjudging their knowledge (epistemic miscalibration). The core method, EPC-AW, proposes an agentic workflow that assesses plan stability under varying information conditions, rather than direct feasibility checks. The contribution is a novel approach to improve LLM agent planning by ensuring epistemic calibration, leading to more robust and reliable multi-agent system behavior.",
+          "url": "https://arxiv.org/abs/2605.23414",
+          "pdf_url": "https://arxiv.org/pdf/2605.23414",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2605.23414v1/x1.png",
+          "figure_caption": "Overview of EPC-AW. EPC-AW consists of three agents, the Planner, Executor, and Diagnoser, each with heterogeneous information in memory. At each round, Information-consistency-based Plan Selection evaluates candidate plans across agents and selects those with stable evaluations, providing a planning-time calibration signal. Across rounds, Consistency-guided Epistemic State Refinement aggregates consistency feedback to guide planning under evolving information. The process terminates upon satisfying a stopping condition, after which the final answer is produced.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.23459",
+          "title": "AI Assurance: A Comprehensive Testing Strategy for Enterprise AI Systems",
+          "authors": [
+            "Chitra Badagi",
+            "Divye Singh",
+            "Animesh Sen",
+            "Adinath Shirsath"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.SE"
+          ],
+          "abstract": "This paper proposes a new AI assurance strategy for enterprise AI systems, shifting focus from traditional correctness verification to continuous risk reduction. It emphasizes treating evaluation as a core engineering discipline and highlights the unique organizational impacts of AI failures. The contribution includes a structured AI Failure Taxonomy and a revised five-layer AI Assurance Pyramid to guide operational practices.",
+          "url": "https://arxiv.org/abs/2605.23459",
+          "pdf_url": "https://arxiv.org/pdf/2605.23459",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2605.23243",
+          "title": "Are Frontier LLMs Ready for Cybersecurity? Evidence for Vertical Foundation Models from Dual-Mode Vulnerability Benchmarks",
+          "authors": [
+            "Vivek Dahiya",
+            "Sunny Nehra",
+            "Vipul Dholariya",
+            "Bhavik Shangari",
+            "Chandra Khatri"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CR"
+          ],
+          "abstract": "This paper evaluates frontier Large Language Models (LLMs) for cybersecurity tasks using dual-mode benchmarks: white-box code vulnerability detection and black-box web application security testing. The core method involves testing six leading LLMs and two domain-specialized models against these benchmarks. The key contribution is demonstrating that current frontier LLMs are largely unprepared for cybersecurity, exhibiting high false positive rates in code analysis and low ground-truth coverage in web security, while domain-specialized agents show significantly better performance.",
+          "url": "https://arxiv.org/abs/2605.23243",
+          "pdf_url": "https://arxiv.org/pdf/2605.23243",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2605.23243v1/x1.png",
+          "figure_caption": "Four black-box security testing paradigms evaluated in this work. P1 and P2 use frontier models with native capabilities or external tools; P3 adds methodology-guided security agents; P4 uses an Agentic Reasoning Graph with deterministic confirmation.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2510.12787",
+          "title": "Ax-Prover: A Deep Reasoning Agentic Framework for Theorem Proving in Mathematics and Quantum Physics",
+          "authors": [
+            "Benjamin Breen",
+            "Marco Del Tredici",
+            "Jacob McCarran",
+            "Javier Aspuru Mijares",
+            "Weichen Winston Yin"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "Ax-Prover is a multi-agent system that uses Large Language Models (LLMs) combined with formal verification tools (Lean) to automate theorem proving. Its core method involves LLMs generating reasoning steps that are then validated by Lean, ensuring formal correctness. Ax-Prover's contribution is its ability to solve complex mathematical and quantum physics problems autonomously or collaboratively, demonstrating strong performance, especially on novel benchmarks.",
+          "url": "https://arxiv.org/abs/2510.12787",
+          "pdf_url": "https://arxiv.org/pdf/2510.12787",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2510.12787v4/ims/diagram_3.png",
+          "figure_caption": "Left: the multi-agent workflow of Ax-Prover. Right: the tool-enhanced reasoning of the Prover.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2602.11146",
+          "title": "Beyond VLM-Based Rewards: Diffusion-Native Latent Reward Modeling",
+          "authors": [
+            "Gongye Liu",
+            "Bo Yang",
+            "Yida Zhi",
+            "Zhizhou Zhong",
+            "Lei Ke"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CV"
+          ],
+          "abstract": "This paper introduces DiNa-LRM, a novel method for aligning diffusion models by learning preferences directly within the model's latent diffusion states, rather than relying on computationally expensive Vision-Language Models. DiNa-LRM addresses the domain mismatch issue by formulating a noise-calibrated reward function that accounts for diffusion-specific uncertainty, leading to more efficient and robust preference optimization.",
+          "url": "https://arxiv.org/abs/2602.11146",
+          "pdf_url": "https://arxiv.org/pdf/2602.11146",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2602.11146v2/x1.png",
+          "figure_caption": "Overview of DiNa-LRM . Left: Diffusion-native Preference Learning. During training, clean preference pairs ( x 0 + , x 0 − , c ) (x_{0}^{+},x_{0}^{-},c) are perturbed to noisy states ( x t + , x t − ) (x_{t}^{+},x_{t}^{-}) and evaluated by a time-conditioned reward model r θ r_{\\( \\theta \\)} . We employ a noise-calibrated Thurstone likelihood where comparison variance scales with the diffusion noise level \\( \\sigma_{t} \\) , and optimize via a fidelity loss ℒ \\( \\mathcal{L} \\) . Right: Latent Reward Architecture. Multi-layer visual and text features extracted from a latent diffusion backbone are FiLM-modulated by timestep embeddings t e ​ m ​ b t_{emb} . These features are aggregated through a gated Q-Former and an MLP to produce a scalar reward score.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2602.13985",
+          "title": "Bridging AI and Clinical Reasoning: Abductive Explanations for Alignment on Critical Symptoms",
+          "authors": [
+            "Belona Sonna",
+            "Alban Grastien"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces a method for aligning AI diagnostic reasoning with clinical practice by using formal abductive explanations. This approach generates minimal, guaranteed explanations of critical symptoms, enhancing transparency and trust in AI predictions. The contribution lies in providing clinically actionable insights that preserve AI accuracy, facilitating adoption in medical diagnosis.",
+          "url": "https://arxiv.org/abs/2602.13985",
+          "pdf_url": "https://arxiv.org/pdf/2602.13985",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        }
+      ],
+      "meta": {
+        "papers_fetched": 100,
+        "papers_after_keyword_filter": 100,
+        "papers_after_llm_filter": 77,
+        "count": 20
+      }
+    },
+    {
+      "key": "hacker_news",
+      "payload_key": "hacker_news",
+      "title": "Hacker News",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": 48307887,
+          "title": "Disagreement among frontier LLMs on real-world fact-checks",
+          "url": "https://lenz.io/research/llm-disagreement",
+          "score": 490,
+          "created_at": "2026-05-28T12:20:19Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48307887",
+          "summary": "Frontier LLMs exhibit significant disagreement when performing real-world fact-checks, highlighting challenges in their reliability for factual verification."
+        },
+        {
+          "id": 48308376,
+          "title": "Show HN: Continue? Y/N: A 60-second game about AI agent permission fatigue",
+          "url": "https://llmgame.scalex.dev",
+          "score": 330,
+          "created_at": "2026-05-28T13:02:00Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48308376",
+          "summary": "This \"Show HN\" features a 60-second game called \"Continue? Y/N\" that humorously explores AI agent permission fatigue."
+        },
+        {
+          "id": 48313810,
+          "title": "Various LLM Smells",
+          "url": "https://shvbsle.in/various-llm-smells/",
+          "score": 315,
+          "created_at": "2026-05-28T19:02:18Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48313810",
+          "summary": "This article discusses common \"smells\" or warning signs in Large Language Models that indicate potential issues with their performance, safety, or reliability."
+        },
+        {
+          "id": 48317093,
+          "title": "SF startup is testing robots in Airbnbs, and trashing them, lawsuit claims",
+          "url": "https://sfstandard.com/2026/05/28/sf-startup-secretly-testing-robots-airbnbs-trashing-lawsuit-claims/",
+          "score": 215,
+          "created_at": "2026-05-28T23:42:47Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48317093",
+          "summary": "A San Francisco startup is accused in a lawsuit of secretly testing robots in Airbnbs, allegedly damaging properties and trashing them during the experiments."
+        },
+        {
+          "id": 48314363,
+          "title": "Sam Altman and Dario Amodei are both walking back AI jobs apocalypse predictions",
+          "url": "https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo/",
+          "score": 214,
+          "created_at": "2026-05-28T19:43:14Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48314363",
+          "summary": "Sam Altman and Dario Amodei are moderating their earlier dire predictions about AI causing widespread job losses, suggesting a less apocalyptic future for employment."
+        }
+      ],
+      "meta": {
+        "count": 5
+      }
+    },
+    {
+      "key": "github_trending",
+      "payload_key": "github_trending",
+      "title": "GitHub Trending",
+      "icon": "⭐",
+      "items": [
+        {
+          "full_name": "harry0703/MoneyPrinterTurbo",
+          "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+          "description": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
+          "stars_today": 4698,
+          "total_stars": 68225,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository's core function is to generate high-definition short videos with a single click using AI large language models, simplifying video creation."
+        },
+        {
+          "full_name": "microsoft/markitdown",
+          "url": "https://github.com/microsoft/markitdown",
+          "description": "Python tool for converting files and office documents to Markdown.",
+          "stars_today": 1410,
+          "total_stars": 128459,
+          "language": "Python",
+          "topics": [],
+          "summary": "This Python tool, microsoft/markitdown, converts various file formats, including Office documents, into Markdown, facilitating content repurposing and integration."
+        },
+        {
+          "full_name": "EveryInc/compound-engineering-plugin",
+          "url": "https://github.com/EveryInc/compound-engineering-plugin",
+          "description": "Official Compound Engineering plugin for Claude Code, Codex, Cursor, and more",
+          "stars_today": 184,
+          "total_stars": 17942,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "This plugin enables Claude Code, Codex, Cursor, and other AI coding assistants to interact with and leverage the Compound Finance protocol."
+        },
+        {
+          "full_name": "twentyhq/twenty",
+          "url": "https://github.com/twentyhq/twenty",
+          "description": "The open alternative to Salesforce, designed for AI.",
+          "stars_today": 493,
+          "total_stars": 48108,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "Twenty is an open-source CRM built for AI, offering a flexible and extensible platform to manage customer relationships and leverage AI capabilities."
+        },
+        {
+          "full_name": "anthropics/claude-code",
+          "url": "https://github.com/anthropics/claude-code",
+          "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+          "stars_today": 319,
+          "total_stars": 127568,
+          "language": "Python",
+          "topics": [],
+          "summary": "Claude Code is an AI-powered terminal agent that understands your codebase and accelerates development by executing routine tasks, explaining code, and managing Git workflows via natural language commands."
+        },
+        {
+          "full_name": "Leonxlnx/taste-skill",
+          "url": "https://github.com/Leonxlnx/taste-skill",
+          "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
+          "stars_today": 2234,
+          "total_stars": 27377,
+          "language": "Shell",
+          "topics": [],
+          "summary": "Taste-Skill is a Python library designed to imbue AI models with discerning taste, preventing them from producing bland or uninspired content."
+        },
+        {
+          "full_name": "cursor/plugins",
+          "url": "https://github.com/cursor/plugins",
+          "description": "Cursor plugin specification and official plugins",
+          "stars_today": 129,
+          "total_stars": 1144,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "This repository defines the specification for Cursor plugins and hosts official plugins, enabling users to extend the functionality of the Cursor IDE."
+        },
+        {
+          "full_name": "run-llama/liteparse",
+          "url": "https://github.com/run-llama/liteparse",
+          "description": "A fast, helpful, and open-source document parser",
+          "stars_today": 932,
+          "total_stars": 6673,
+          "language": "Rust",
+          "topics": [],
+          "summary": "Liteparse is an open-source document parser designed for speed and helpfulness, efficiently extracting text and metadata from various file formats."
+        },
+        {
+          "full_name": "galilai-group/stable-worldmodel",
+          "url": "https://github.com/galilai-group/stable-worldmodel",
+          "description": "A platform for reproducible world model research and evaluation",
+          "stars_today": 346,
+          "total_stars": 1027,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository provides a platform for reproducible research and evaluation of world models, enabling users to train, test, and compare different models in a standardized environment."
+        }
+      ],
+      "meta": {
+        "count": 9
+      }
+    }
+  ],
+  "meta": {
+    "papers_fetched": 100,
+    "papers_after_keyword_filter": 100,
+    "papers_after_llm_filter": 77,
+    "llm_model": "google/gemini-2.5-flash-lite",
+    "scoring_model": "google/gemini-2.5-flash-lite",
+    "summarization_model": "google/gemini-2.5-flash-lite",
+    "duration_seconds": 363
+  },
+  "quote_of_day": [
+    {
+      "quote": "I am proud to have been capable of giving people hope again.",
+      "author": "Francois Hollande",
+      "category": "hope"
+    }
+  ],
+  "hitokoto": [],
+  "arxiv": [
+    {
+      "id": "2602.05472",
+      "title": "ALIVE: Awakening LLM Reasoning via Adversarial Learning and Instructive Verbal Evaluation",
+      "authors": [
+        "Yiwen Duan",
+        "Jing Ye",
+        "Xinpei Zhao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "ALIVE addresses the \"reward bottleneck\" in LLM reasoning by moving beyond costly scalar rewards. Its core method, Adversarial Learning with Instructive Verbal Evaluation, unifies problem posing, solving, and judging within a single policy. This allows LLMs to internalize reasoning logic directly from raw text through adversarial training and verbal feedback, fostering a deeper, self-contained understanding of correctness.",
+      "url": "https://arxiv.org/abs/2602.05472",
+      "pdf_url": "https://arxiv.org/pdf/2602.05472",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2602.05472v2/x1.png",
+      "figure_caption": "Overview of ALIVE. A unified policy model π \\( \\pi_{\\theta} \\) alternates among three roles in a closed-loop learning cycle: the Constructor masks reasoning-critical spans in text to create hindsight-verifiable tasks, the Solver generates reasoning trajectories for these tasks, and the Reviewer evaluates the resulting solutions with both verbal critiques and soft rewards. The same parameters are updated by combining task-difficulty, hard-verification, soft-review, and feedback-conditioned learning signals.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23590",
+      "title": "Co-ReAct: Rubrics as Step-Level Collaborators for ReAct Agents",
+      "authors": [
+        "Jiazheng Kang",
+        "Bowen Zhang",
+        "Zixin Song",
+        "Jiangwang Chen",
+        "Xiao Yang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "Co-ReAct introduces a novel framework where rubrics act as step-level collaborators for ReAct agents. Instead of just evaluating final outputs, Co-ReAct integrates rubrics directly into the agent's decision-making process during inference, guiding each reasoning or action step. This allows agents to more effectively target evidence, refine their reasoning, and improve the overall quality and efficiency of multi-step tasks.",
+      "url": "https://arxiv.org/abs/2605.23590",
+      "pdf_url": "https://arxiv.org/pdf/2605.23590",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23590v1/x1.png",
+      "figure_caption": "Overview of Co-ReAct. (i) Collect: sample candidate next actions at each branching point and rank them with multi-judge expert consensus. (ii) Train: GRPO with a Spearman reward between the rubric-induced ranking and the expert ranking. (iii) Infer: the trained rubric drives a five-tuple (Rubric, Reason, Act, Verify, Observe) loop.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23605",
+      "title": "DiLaDiff: Distilled Latent-Augmented Diffusion for Language Modeling",
+      "authors": [
+        "Jean-Marie Lemercier",
+        "Tomas Geffner",
+        "Karsten Kreis",
+        "Morteza Mardani",
+        "Arash Vahdat"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "DiLaDiff addresses the token correlation issue in diffusion language models by introducing a continuous latent space. This latent space, learned via an auto-encoder and a latent diffusion model, captures semantic information. A consistency model then distills this latent prior into a fast, few-step generative model, significantly improving sampling quality and inference speed.",
+      "url": "https://arxiv.org/abs/2605.23605",
+      "pdf_url": "https://arxiv.org/pdf/2605.23605",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23605v1/x1.png",
+      "figure_caption": "DiLaDiff: hybrid continuous-discrete diffusion with self-distilled latent. The latent space is crafted with encoder ℰ \\( \\mathcal{E}_{\\phi} \\) and decoder 𝐱 θ {\\( \\mathbf{x} \\)}_{\\( \\theta \\)} and learned a posteriori with a diffusion process with denoiser 𝐳 ψ {\\( \\mathbf{z} \\)}_{\\( \\psi \\)} . The latent diffusion trajectories are further self-distilled with MeanFlow student 𝐮 η ​ ( 𝐳 τ , τ , r ) \\( \\mathbf{u}_{\\eta} \\)({\\( \\mathbf{z} \\)}_{\\( \\tau \\)},\\( \\tau \\),r) .",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2509.26383",
+      "title": "Efficient and Transferable Agentic Knowledge Graph RAG via Reinforcement Learning",
+      "authors": [
+        "Junhong Lin",
+        "Shicheng Liu",
+        "Jinyeop Song",
+        "Song Wang",
+        "Julian Shun"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces KG-R1, an agentic framework that uses reinforcement learning to optimize knowledge-graph retrieval-augmented generation (KG-RAG). Instead of fixed multi-module pipelines, a single agent learns to interact with knowledge graphs, retrieving and incorporating information dynamically for more efficient and transferable question answering. This approach reduces inference costs and improves accuracy compared to existing methods.",
+      "url": "https://arxiv.org/abs/2509.26383",
+      "pdf_url": "https://arxiv.org/pdf/2509.26383",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2509.26383v5/Figures/overview.png",
+      "figure_caption": "Overview of KG-R1 , a multi-turn agentic KG-RAG framework. The framework enables cost-efficient inference and demonstrates strong cross-KG transferability.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23218",
+      "title": "Foundation Protocol: A Coordination Layer for Agentic Society",
+      "authors": [
+        "Bang Liu",
+        "Yongfeng Gu",
+        "Jiayi Zhang",
+        "Zhaoyang Yu",
+        "Sirui Hong"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "The Foundation Protocol (FP) introduces a graph-based coordination layer for agentic societies, unifying diverse entities like agents, humans, and institutions. Its core method is to provide a flexible framework for multi-party organization, event-based collaboration, and economic primitives, while prioritizing policy and accountability. FP's main contribution is enabling the scalable and safe interaction of autonomous agents by acting as a bridging layer for existing protocols, fostering an AI economy.",
+      "url": "https://arxiv.org/abs/2605.23218",
+      "pdf_url": "https://arxiv.org/pdf/2605.23218",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23218v1/x1.png",
+      "figure_caption": "A compact view of the web’s evolution: each generation raised capability while exposing new coordination failures. Web 4.0-like systems intensify those failures because agents act, interact, and transact at scale.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23238",
+      "title": "GENSTRAT: Toward a Science of Strategic Reasoning in Large Language Models",
+      "authors": [
+        "Vartan Shadarevian",
+        "Kia Ghods",
+        "Alex Kenich",
+        "Anany Kotawala"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.GT",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces GENSTRAT, a novel benchmark for evaluating strategic reasoning in LLMs. Its core method involves procedurally generating a diverse distribution of imperfect-information card games, allowing for evergreen and robust evaluation. GENSTRAT's contribution is a more generalizable assessment of LLM strategic capabilities beyond fixed, canonical games, enabling confidence in predicting their performance in real-world messy environments.",
+      "url": "https://arxiv.org/abs/2605.23238",
+      "pdf_url": "https://arxiv.org/pdf/2605.23238",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23238v1/x1.png",
+      "figure_caption": "The 50-game benchmark in two diagnostic axes (state space vs. information sensitivity). Each point denotes a game, with stars marking the annotated games.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23551",
+      "title": "Goal-Conditioned Agents that Learn Everything All at Once",
+      "authors": [
+        "Michael Matthews",
+        "Matthew Jackson",
+        "Michael Beukman",
+        "Thomas Foster",
+        "Alistair Letcher"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces Learning Everything All at Once (LEO), a method for goal-conditioned reinforcement learning. LEO efficiently learns from all transitions by jointly outputting values and actions for every possible goal simultaneously, enabling parallel, off-policy updates. This approach significantly improves sample efficiency and performance on goal-conditioned tasks while being substantially faster than naive relabeling.",
+      "url": "https://arxiv.org/abs/2605.23551",
+      "pdf_url": "https://arxiv.org/pdf/2605.23551",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23825",
+      "title": "It's the humans, not the data: Geopolitical bias in LLMs originates in post-training, amplified by the language of the prompt",
+      "authors": [
+        "Stuart Bladon",
+        "Brinnae Bent"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper demonstrates that geopolitical bias in LLMs primarily emerges during post-training, not pre-training, contradicting common assumptions. The researchers found that models often develop a bias favoring their developer's home country after fine-tuning, with the prompt's language also influencing the strength of this bias. This highlights the crucial role of human-driven post-training processes in shaping LLM behavior.",
+      "url": "https://arxiv.org/abs/2605.23825",
+      "pdf_url": "https://arxiv.org/pdf/2605.23825",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23825v1/main_figure.png",
+      "figure_caption": "Overview, seven families. (A) Per-country preference base → \\( \\to \\) post-trained; for the six non-GLM bases, cross-country spread \\( \\sigma \\) grows post-training (Qwen 3.9 → 30.3 3.9\\( \\to \\) 30.3 pp). (B) Post-training \\( \\Delta \\) in China-favourability (EN, coherent subset). 3/3 Western labs shift anti-China; 3/4 Chinese labs shift pro-China; Yi shifts anti-China after prefill correction. GLM is shown with its (atypical) base preserved for completeness; see § Bias Is Created by Post-Training, Not Pretraining . The legend’s low-compliance encoding is described in § What MCQ Compliance Tells Us About Validity . (C) ZH − - EN shift on post-trained models: 5/7 descriptively pro-China but population-level claim is not statistically separable from the base trend (§ Linguistic Identity Modulates the Post-Training Bias ).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23723",
+      "title": "MemAudit: Post-hoc Auditing of Poisoned Agent Memory via Causal Attribution and Structural Anomaly Detection",
+      "authors": [
+        "Zhewen Tan",
+        "Yilun Yao",
+        "Huiyan Jin",
+        "Wenhan Yu",
+        "Guoan Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "MemAudit is a post-hoc framework for auditing poisoned memory in LLM agents. It uses causal attribution to identify memories that causally influence harmful outputs and structural anomaly detection to pinpoint suspicious memory patterns. This allows for the identification and mitigation of memory poisoning after malicious behavior has occurred, addressing a gap in existing online-only defenses.",
+      "url": "https://arxiv.org/abs/2605.23723",
+      "pdf_url": "https://arxiv.org/pdf/2605.23723",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23723v1/x1.png",
+      "figure_caption": "Overview of MemAudit. Given a harmful event e = ( q ∗ , y ∗ , R ∗ ) e=(q^{*},y^{*},R^{*}) , the framework performs post-hoc auditing over the memory store. It combines two complementary signals: CMIS, which measures the causal contribution of retrieved memories through counterfactual replay, and MCG, which identifies structurally anomalous memories in the global memory graph. The two signals are fused into a detoxification score for ranking suspicious memories. After removing the top-ranked memories, the agent becomes safer while preserving useful memory.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.02087",
+      "title": "Model Spec Midtraining: Improving How Alignment Training Generalizes",
+      "authors": [
+        "Chloe Li",
+        "Nevan Wichers",
+        "Sara Price",
+        "Samuel Marks",
+        "Jon Kutasov"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces Model Spec Midtraining (MSM) to improve how language models generalize during alignment training. MSM involves training models on synthetic documents discussing their desired behavior specification *before* standard alignment fine-tuning. This pre-training step helps models understand the spec's content, leading to more robust and targeted generalization from subsequent demonstration data.",
+      "url": "https://arxiv.org/abs/2605.02087",
+      "pdf_url": "https://arxiv.org/pdf/2605.02087",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2601.03715",
+      "title": "R$^3$L: Reflect-then-Retry Reinforcement Learning with Language-Guided Exploration, Pivotal Credit, and Positive Amplification",
+      "authors": [
+        "Weijie Shi",
+        "Yanxi Chen",
+        "Zexi Li",
+        "Xuchen Pan",
+        "Yuchang Sun"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "R$^3$L addresses exploration and exploitation challenges in RL for LLMs by introducing a \"reflect-then-retry\" mechanism. This method uses language feedback to analyze failed attempts, guiding retries from failure points to improve trajectory synthesis and reduce costs. The paper also proposes pivotal credit assignment and positive amplification to overcome coarse credit assignment and failure-dominated training.",
+      "url": "https://arxiv.org/abs/2601.03715",
+      "pdf_url": "https://arxiv.org/pdf/2601.03715",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.05704",
+      "title": "SafeHarbor: Hierarchical Memory-Augmented Guardrail for LLM Agent Safety",
+      "authors": [
+        "Zhe Liu",
+        "Zonghao Ying",
+        "Wenxin Zhang",
+        "Quanchen Zou",
+        "Deyue Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "SafeHarbor is a hierarchical memory-augmented guardrail system for LLM agents. Its core method involves extracting context-aware defense rules through adversarial generation and dynamically injecting them into a local hierarchical memory. This approach aims to provide precise decision boundaries, balancing safety and utility without requiring retraining, and includes a self-evolution mechanism for continuous improvement.",
+      "url": "https://arxiv.org/abs/2605.05704",
+      "pdf_url": "https://arxiv.org/pdf/2605.05704",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.05704v2/x1.png",
+      "figure_caption": "Comparison between (a) Traditional coarse-grained guardrails and (b) Our precise, rule-based SafeHarbor framework.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2602.02780",
+      "title": "Scaling-Aware Adapter for Structure-Grounded LLM Reasoning",
+      "authors": [
+        "Zihao Jing",
+        "Qiuhao Zeng",
+        "Ruiyi Fang",
+        "Yan Yi Li",
+        "Yan Sun"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces Cuttlefish, a unified multimodal LLM that enhances reasoning over 2D and 3D structures. Its core method, Scaling-Aware Patching, adaptively generates variable-size patches over structural graphs, allowing the model to scale its query token budget with structural complexity. This approach overcomes limitations of fixed-length connectors, enabling more flexible and effective geometric grounding for generalized all-atom reasoning.",
+      "url": "https://arxiv.org/abs/2602.02780",
+      "pdf_url": "https://arxiv.org/pdf/2602.02780",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2602.02780v3/x1.png",
+      "figure_caption": "Mol-Llama performance on the Mol-Instructions captioning task, evaluated across five molecule length bins with 6 metrics (left y-axis, detailed in App D.3 ) plotted as curves with dashed overall averages, and the background bars indicate the proportion of samples in each length bin (right y-axis).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2602.12579",
+      "title": "VI-CuRL: Stabilizing Verifier-Independent RL Reasoning via Confidence-Guided Variance Reduction",
+      "authors": [
+        "Xin-Qiang Cai",
+        "Masashi Sugiyama"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces VI-CuRL, a method to stabilize Reinforcement Learning for LLM reasoning without external verifiers. It uses the LLM's own confidence to guide a curriculum, prioritizing high-confidence examples to reduce gradient variance and prevent training collapse. This approach effectively manages the bias-variance trade-off, leading to more stable and scalable LLM reasoning.",
+      "url": "https://arxiv.org/abs/2602.12579",
+      "pdf_url": "https://arxiv.org/pdf/2602.12579",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2602.12579v2/figures/intro_v3.png",
+      "figure_caption": "Conceptual overview of VI-CuRL. Unlike standard RL that treats all samples equally, VI-CuRL dynamically selects high-confidence samples to stabilize training via a principled bias-variance trade-off, without accessing external verifiers.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23414",
+      "title": "When Planning Fails Despite Correct Execution: On Epistemic Calibration for LLM-Based Multi-Agent Systems",
+      "authors": [
+        "Zehao Wang",
+        "Shilong Jin",
+        "Zhao Cao",
+        "Lanjun Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper addresses failures in LLM multi-agent systems where plans are executed correctly but are based on agents misjudging their knowledge (epistemic miscalibration). The core method, EPC-AW, proposes an agentic workflow that assesses plan stability under varying information conditions, rather than direct feasibility checks. The contribution is a novel approach to improve LLM agent planning by ensuring epistemic calibration, leading to more robust and reliable multi-agent system behavior.",
+      "url": "https://arxiv.org/abs/2605.23414",
+      "pdf_url": "https://arxiv.org/pdf/2605.23414",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23414v1/x1.png",
+      "figure_caption": "Overview of EPC-AW. EPC-AW consists of three agents, the Planner, Executor, and Diagnoser, each with heterogeneous information in memory. At each round, Information-consistency-based Plan Selection evaluates candidate plans across agents and selects those with stable evaluations, providing a planning-time calibration signal. Across rounds, Consistency-guided Epistemic State Refinement aggregates consistency feedback to guide planning under evolving information. The process terminates upon satisfying a stopping condition, after which the final answer is produced.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23459",
+      "title": "AI Assurance: A Comprehensive Testing Strategy for Enterprise AI Systems",
+      "authors": [
+        "Chitra Badagi",
+        "Divye Singh",
+        "Animesh Sen",
+        "Adinath Shirsath"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper proposes a new AI assurance strategy for enterprise AI systems, shifting focus from traditional correctness verification to continuous risk reduction. It emphasizes treating evaluation as a core engineering discipline and highlights the unique organizational impacts of AI failures. The contribution includes a structured AI Failure Taxonomy and a revised five-layer AI Assurance Pyramid to guide operational practices.",
+      "url": "https://arxiv.org/abs/2605.23459",
+      "pdf_url": "https://arxiv.org/pdf/2605.23459",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23243",
+      "title": "Are Frontier LLMs Ready for Cybersecurity? Evidence for Vertical Foundation Models from Dual-Mode Vulnerability Benchmarks",
+      "authors": [
+        "Vivek Dahiya",
+        "Sunny Nehra",
+        "Vipul Dholariya",
+        "Bhavik Shangari",
+        "Chandra Khatri"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "This paper evaluates frontier Large Language Models (LLMs) for cybersecurity tasks using dual-mode benchmarks: white-box code vulnerability detection and black-box web application security testing. The core method involves testing six leading LLMs and two domain-specialized models against these benchmarks. The key contribution is demonstrating that current frontier LLMs are largely unprepared for cybersecurity, exhibiting high false positive rates in code analysis and low ground-truth coverage in web security, while domain-specialized agents show significantly better performance.",
+      "url": "https://arxiv.org/abs/2605.23243",
+      "pdf_url": "https://arxiv.org/pdf/2605.23243",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.23243v1/x1.png",
+      "figure_caption": "Four black-box security testing paradigms evaluated in this work. P1 and P2 use frontier models with native capabilities or external tools; P3 adds methodology-guided security agents; P4 uses an Agentic Reasoning Graph with deterministic confirmation.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2510.12787",
+      "title": "Ax-Prover: A Deep Reasoning Agentic Framework for Theorem Proving in Mathematics and Quantum Physics",
+      "authors": [
+        "Benjamin Breen",
+        "Marco Del Tredici",
+        "Jacob McCarran",
+        "Javier Aspuru Mijares",
+        "Weichen Winston Yin"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "abstract": "Ax-Prover is a multi-agent system that uses Large Language Models (LLMs) combined with formal verification tools (Lean) to automate theorem proving. Its core method involves LLMs generating reasoning steps that are then validated by Lean, ensuring formal correctness. Ax-Prover's contribution is its ability to solve complex mathematical and quantum physics problems autonomously or collaboratively, demonstrating strong performance, especially on novel benchmarks.",
+      "url": "https://arxiv.org/abs/2510.12787",
+      "pdf_url": "https://arxiv.org/pdf/2510.12787",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2510.12787v4/ims/diagram_3.png",
+      "figure_caption": "Left: the multi-agent workflow of Ax-Prover. Right: the tool-enhanced reasoning of the Prover.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2602.11146",
+      "title": "Beyond VLM-Based Rewards: Diffusion-Native Latent Reward Modeling",
+      "authors": [
+        "Gongye Liu",
+        "Bo Yang",
+        "Yida Zhi",
+        "Zhizhou Zhong",
+        "Lei Ke"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "This paper introduces DiNa-LRM, a novel method for aligning diffusion models by learning preferences directly within the model's latent diffusion states, rather than relying on computationally expensive Vision-Language Models. DiNa-LRM addresses the domain mismatch issue by formulating a noise-calibrated reward function that accounts for diffusion-specific uncertainty, leading to more efficient and robust preference optimization.",
+      "url": "https://arxiv.org/abs/2602.11146",
+      "pdf_url": "https://arxiv.org/pdf/2602.11146",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2602.11146v2/x1.png",
+      "figure_caption": "Overview of DiNa-LRM . Left: Diffusion-native Preference Learning. During training, clean preference pairs ( x 0 + , x 0 − , c ) (x_{0}^{+},x_{0}^{-},c) are perturbed to noisy states ( x t + , x t − ) (x_{t}^{+},x_{t}^{-}) and evaluated by a time-conditioned reward model r θ r_{\\( \\theta \\)} . We employ a noise-calibrated Thurstone likelihood where comparison variance scales with the diffusion noise level \\( \\sigma_{t} \\) , and optimize via a fidelity loss ℒ \\( \\mathcal{L} \\) . Right: Latent Reward Architecture. Multi-layer visual and text features extracted from a latent diffusion backbone are FiLM-modulated by timestep embeddings t e ​ m ​ b t_{emb} . These features are aggregated through a gated Q-Former and an MLP to produce a scalar reward score.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2602.13985",
+      "title": "Bridging AI and Clinical Reasoning: Abductive Explanations for Alignment on Critical Symptoms",
+      "authors": [
+        "Belona Sonna",
+        "Alban Grastien"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces a method for aligning AI diagnostic reasoning with clinical practice by using formal abductive explanations. This approach generates minimal, guaranteed explanations of critical symptoms, enhancing transparency and trust in AI predictions. The contribution lies in providing clinically actionable insights that preserve AI accuracy, facilitating adoption in medical diagnosis.",
+      "url": "https://arxiv.org/abs/2602.13985",
+      "pdf_url": "https://arxiv.org/pdf/2602.13985",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "papers": [
+    {
+      "id": "2602.05472",
+      "title": "ALIVE: Awakening LLM Reasoning via Adversarial Learning and Instructive Verbal Evaluation",
+      "authors": [
+        "Yiwen Duan",
+        "Jing Ye",
+        "Xinpei Zhao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "ALIVE addresses the \"reward bottleneck\" in LLM reasoning by moving beyond costly scalar rewards. Its core method, Adversarial Learning with Instructive Verbal Evaluation, unifies problem posing, solving, and judging within a single policy. This allows LLMs to internalize reasoning logic directly from raw text through adversarial training and verbal feedback, fostering a deeper, self-contained understanding of correctness.",
+      "url": "https://arxiv.org/abs/2602.05472",
+      "pdf_url": "https://arxiv.org/pdf/2602.05472",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2602.05472v2/x1.png",
+      "figure_caption": "Overview of ALIVE. A unified policy model π \\( \\pi_{\\theta} \\) alternates among three roles in a closed-loop learning cycle: the Constructor masks reasoning-critical spans in text to create hindsight-verifiable tasks, the Solver generates reasoning trajectories for these tasks, and the Reviewer evaluates the resulting solutions with both verbal critiques and soft rewards. The same parameters are updated by combining task-difficulty, hard-verification, soft-review, and feedback-conditioned learning signals.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23590",
+      "title": "Co-ReAct: Rubrics as Step-Level Collaborators for ReAct Agents",
+      "authors": [
+        "Jiazheng Kang",
+        "Bowen Zhang",
+        "Zixin Song",
+        "Jiangwang Chen",
+        "Xiao Yang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "Co-ReAct introduces a novel framework where rubrics act as step-level collaborators for ReAct agents. Instead of just evaluating final outputs, Co-ReAct integrates rubrics directly into the agent's decision-making process during inference, guiding each reasoning or action step. This allows agents to more effectively target evidence, refine their reasoning, and improve the overall quality and efficiency of multi-step tasks.",
+      "url": "https://arxiv.org/abs/2605.23590",
+      "pdf_url": "https://arxiv.org/pdf/2605.23590",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23590v1/x1.png",
+      "figure_caption": "Overview of Co-ReAct. (i) Collect: sample candidate next actions at each branching point and rank them with multi-judge expert consensus. (ii) Train: GRPO with a Spearman reward between the rubric-induced ranking and the expert ranking. (iii) Infer: the trained rubric drives a five-tuple (Rubric, Reason, Act, Verify, Observe) loop.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23605",
+      "title": "DiLaDiff: Distilled Latent-Augmented Diffusion for Language Modeling",
+      "authors": [
+        "Jean-Marie Lemercier",
+        "Tomas Geffner",
+        "Karsten Kreis",
+        "Morteza Mardani",
+        "Arash Vahdat"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "DiLaDiff addresses the token correlation issue in diffusion language models by introducing a continuous latent space. This latent space, learned via an auto-encoder and a latent diffusion model, captures semantic information. A consistency model then distills this latent prior into a fast, few-step generative model, significantly improving sampling quality and inference speed.",
+      "url": "https://arxiv.org/abs/2605.23605",
+      "pdf_url": "https://arxiv.org/pdf/2605.23605",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23605v1/x1.png",
+      "figure_caption": "DiLaDiff: hybrid continuous-discrete diffusion with self-distilled latent. The latent space is crafted with encoder ℰ \\( \\mathcal{E}_{\\phi} \\) and decoder 𝐱 θ {\\( \\mathbf{x} \\)}_{\\( \\theta \\)} and learned a posteriori with a diffusion process with denoiser 𝐳 ψ {\\( \\mathbf{z} \\)}_{\\( \\psi \\)} . The latent diffusion trajectories are further self-distilled with MeanFlow student 𝐮 η ​ ( 𝐳 τ , τ , r ) \\( \\mathbf{u}_{\\eta} \\)({\\( \\mathbf{z} \\)}_{\\( \\tau \\)},\\( \\tau \\),r) .",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2509.26383",
+      "title": "Efficient and Transferable Agentic Knowledge Graph RAG via Reinforcement Learning",
+      "authors": [
+        "Junhong Lin",
+        "Shicheng Liu",
+        "Jinyeop Song",
+        "Song Wang",
+        "Julian Shun"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces KG-R1, an agentic framework that uses reinforcement learning to optimize knowledge-graph retrieval-augmented generation (KG-RAG). Instead of fixed multi-module pipelines, a single agent learns to interact with knowledge graphs, retrieving and incorporating information dynamically for more efficient and transferable question answering. This approach reduces inference costs and improves accuracy compared to existing methods.",
+      "url": "https://arxiv.org/abs/2509.26383",
+      "pdf_url": "https://arxiv.org/pdf/2509.26383",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2509.26383v5/Figures/overview.png",
+      "figure_caption": "Overview of KG-R1 , a multi-turn agentic KG-RAG framework. The framework enables cost-efficient inference and demonstrates strong cross-KG transferability.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23218",
+      "title": "Foundation Protocol: A Coordination Layer for Agentic Society",
+      "authors": [
+        "Bang Liu",
+        "Yongfeng Gu",
+        "Jiayi Zhang",
+        "Zhaoyang Yu",
+        "Sirui Hong"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "The Foundation Protocol (FP) introduces a graph-based coordination layer for agentic societies, unifying diverse entities like agents, humans, and institutions. Its core method is to provide a flexible framework for multi-party organization, event-based collaboration, and economic primitives, while prioritizing policy and accountability. FP's main contribution is enabling the scalable and safe interaction of autonomous agents by acting as a bridging layer for existing protocols, fostering an AI economy.",
+      "url": "https://arxiv.org/abs/2605.23218",
+      "pdf_url": "https://arxiv.org/pdf/2605.23218",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23218v1/x1.png",
+      "figure_caption": "A compact view of the web’s evolution: each generation raised capability while exposing new coordination failures. Web 4.0-like systems intensify those failures because agents act, interact, and transact at scale.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23238",
+      "title": "GENSTRAT: Toward a Science of Strategic Reasoning in Large Language Models",
+      "authors": [
+        "Vartan Shadarevian",
+        "Kia Ghods",
+        "Alex Kenich",
+        "Anany Kotawala"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.GT",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces GENSTRAT, a novel benchmark for evaluating strategic reasoning in LLMs. Its core method involves procedurally generating a diverse distribution of imperfect-information card games, allowing for evergreen and robust evaluation. GENSTRAT's contribution is a more generalizable assessment of LLM strategic capabilities beyond fixed, canonical games, enabling confidence in predicting their performance in real-world messy environments.",
+      "url": "https://arxiv.org/abs/2605.23238",
+      "pdf_url": "https://arxiv.org/pdf/2605.23238",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23238v1/x1.png",
+      "figure_caption": "The 50-game benchmark in two diagnostic axes (state space vs. information sensitivity). Each point denotes a game, with stars marking the annotated games.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23551",
+      "title": "Goal-Conditioned Agents that Learn Everything All at Once",
+      "authors": [
+        "Michael Matthews",
+        "Matthew Jackson",
+        "Michael Beukman",
+        "Thomas Foster",
+        "Alistair Letcher"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces Learning Everything All at Once (LEO), a method for goal-conditioned reinforcement learning. LEO efficiently learns from all transitions by jointly outputting values and actions for every possible goal simultaneously, enabling parallel, off-policy updates. This approach significantly improves sample efficiency and performance on goal-conditioned tasks while being substantially faster than naive relabeling.",
+      "url": "https://arxiv.org/abs/2605.23551",
+      "pdf_url": "https://arxiv.org/pdf/2605.23551",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23825",
+      "title": "It's the humans, not the data: Geopolitical bias in LLMs originates in post-training, amplified by the language of the prompt",
+      "authors": [
+        "Stuart Bladon",
+        "Brinnae Bent"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper demonstrates that geopolitical bias in LLMs primarily emerges during post-training, not pre-training, contradicting common assumptions. The researchers found that models often develop a bias favoring their developer's home country after fine-tuning, with the prompt's language also influencing the strength of this bias. This highlights the crucial role of human-driven post-training processes in shaping LLM behavior.",
+      "url": "https://arxiv.org/abs/2605.23825",
+      "pdf_url": "https://arxiv.org/pdf/2605.23825",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23825v1/main_figure.png",
+      "figure_caption": "Overview, seven families. (A) Per-country preference base → \\( \\to \\) post-trained; for the six non-GLM bases, cross-country spread \\( \\sigma \\) grows post-training (Qwen 3.9 → 30.3 3.9\\( \\to \\) 30.3 pp). (B) Post-training \\( \\Delta \\) in China-favourability (EN, coherent subset). 3/3 Western labs shift anti-China; 3/4 Chinese labs shift pro-China; Yi shifts anti-China after prefill correction. GLM is shown with its (atypical) base preserved for completeness; see § Bias Is Created by Post-Training, Not Pretraining . The legend’s low-compliance encoding is described in § What MCQ Compliance Tells Us About Validity . (C) ZH − - EN shift on post-trained models: 5/7 descriptively pro-China but population-level claim is not statistically separable from the base trend (§ Linguistic Identity Modulates the Post-Training Bias ).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23723",
+      "title": "MemAudit: Post-hoc Auditing of Poisoned Agent Memory via Causal Attribution and Structural Anomaly Detection",
+      "authors": [
+        "Zhewen Tan",
+        "Yilun Yao",
+        "Huiyan Jin",
+        "Wenhan Yu",
+        "Guoan Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "MemAudit is a post-hoc framework for auditing poisoned memory in LLM agents. It uses causal attribution to identify memories that causally influence harmful outputs and structural anomaly detection to pinpoint suspicious memory patterns. This allows for the identification and mitigation of memory poisoning after malicious behavior has occurred, addressing a gap in existing online-only defenses.",
+      "url": "https://arxiv.org/abs/2605.23723",
+      "pdf_url": "https://arxiv.org/pdf/2605.23723",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23723v1/x1.png",
+      "figure_caption": "Overview of MemAudit. Given a harmful event e = ( q ∗ , y ∗ , R ∗ ) e=(q^{*},y^{*},R^{*}) , the framework performs post-hoc auditing over the memory store. It combines two complementary signals: CMIS, which measures the causal contribution of retrieved memories through counterfactual replay, and MCG, which identifies structurally anomalous memories in the global memory graph. The two signals are fused into a detoxification score for ranking suspicious memories. After removing the top-ranked memories, the agent becomes safer while preserving useful memory.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.02087",
+      "title": "Model Spec Midtraining: Improving How Alignment Training Generalizes",
+      "authors": [
+        "Chloe Li",
+        "Nevan Wichers",
+        "Sara Price",
+        "Samuel Marks",
+        "Jon Kutasov"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces Model Spec Midtraining (MSM) to improve how language models generalize during alignment training. MSM involves training models on synthetic documents discussing their desired behavior specification *before* standard alignment fine-tuning. This pre-training step helps models understand the spec's content, leading to more robust and targeted generalization from subsequent demonstration data.",
+      "url": "https://arxiv.org/abs/2605.02087",
+      "pdf_url": "https://arxiv.org/pdf/2605.02087",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2601.03715",
+      "title": "R$^3$L: Reflect-then-Retry Reinforcement Learning with Language-Guided Exploration, Pivotal Credit, and Positive Amplification",
+      "authors": [
+        "Weijie Shi",
+        "Yanxi Chen",
+        "Zexi Li",
+        "Xuchen Pan",
+        "Yuchang Sun"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "R$^3$L addresses exploration and exploitation challenges in RL for LLMs by introducing a \"reflect-then-retry\" mechanism. This method uses language feedback to analyze failed attempts, guiding retries from failure points to improve trajectory synthesis and reduce costs. The paper also proposes pivotal credit assignment and positive amplification to overcome coarse credit assignment and failure-dominated training.",
+      "url": "https://arxiv.org/abs/2601.03715",
+      "pdf_url": "https://arxiv.org/pdf/2601.03715",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.05704",
+      "title": "SafeHarbor: Hierarchical Memory-Augmented Guardrail for LLM Agent Safety",
+      "authors": [
+        "Zhe Liu",
+        "Zonghao Ying",
+        "Wenxin Zhang",
+        "Quanchen Zou",
+        "Deyue Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "SafeHarbor is a hierarchical memory-augmented guardrail system for LLM agents. Its core method involves extracting context-aware defense rules through adversarial generation and dynamically injecting them into a local hierarchical memory. This approach aims to provide precise decision boundaries, balancing safety and utility without requiring retraining, and includes a self-evolution mechanism for continuous improvement.",
+      "url": "https://arxiv.org/abs/2605.05704",
+      "pdf_url": "https://arxiv.org/pdf/2605.05704",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.05704v2/x1.png",
+      "figure_caption": "Comparison between (a) Traditional coarse-grained guardrails and (b) Our precise, rule-based SafeHarbor framework.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2602.02780",
+      "title": "Scaling-Aware Adapter for Structure-Grounded LLM Reasoning",
+      "authors": [
+        "Zihao Jing",
+        "Qiuhao Zeng",
+        "Ruiyi Fang",
+        "Yan Yi Li",
+        "Yan Sun"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces Cuttlefish, a unified multimodal LLM that enhances reasoning over 2D and 3D structures. Its core method, Scaling-Aware Patching, adaptively generates variable-size patches over structural graphs, allowing the model to scale its query token budget with structural complexity. This approach overcomes limitations of fixed-length connectors, enabling more flexible and effective geometric grounding for generalized all-atom reasoning.",
+      "url": "https://arxiv.org/abs/2602.02780",
+      "pdf_url": "https://arxiv.org/pdf/2602.02780",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2602.02780v3/x1.png",
+      "figure_caption": "Mol-Llama performance on the Mol-Instructions captioning task, evaluated across five molecule length bins with 6 metrics (left y-axis, detailed in App D.3 ) plotted as curves with dashed overall averages, and the background bars indicate the proportion of samples in each length bin (right y-axis).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2602.12579",
+      "title": "VI-CuRL: Stabilizing Verifier-Independent RL Reasoning via Confidence-Guided Variance Reduction",
+      "authors": [
+        "Xin-Qiang Cai",
+        "Masashi Sugiyama"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces VI-CuRL, a method to stabilize Reinforcement Learning for LLM reasoning without external verifiers. It uses the LLM's own confidence to guide a curriculum, prioritizing high-confidence examples to reduce gradient variance and prevent training collapse. This approach effectively manages the bias-variance trade-off, leading to more stable and scalable LLM reasoning.",
+      "url": "https://arxiv.org/abs/2602.12579",
+      "pdf_url": "https://arxiv.org/pdf/2602.12579",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2602.12579v2/figures/intro_v3.png",
+      "figure_caption": "Conceptual overview of VI-CuRL. Unlike standard RL that treats all samples equally, VI-CuRL dynamically selects high-confidence samples to stabilize training via a principled bias-variance trade-off, without accessing external verifiers.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23414",
+      "title": "When Planning Fails Despite Correct Execution: On Epistemic Calibration for LLM-Based Multi-Agent Systems",
+      "authors": [
+        "Zehao Wang",
+        "Shilong Jin",
+        "Zhao Cao",
+        "Lanjun Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper addresses failures in LLM multi-agent systems where plans are executed correctly but are based on agents misjudging their knowledge (epistemic miscalibration). The core method, EPC-AW, proposes an agentic workflow that assesses plan stability under varying information conditions, rather than direct feasibility checks. The contribution is a novel approach to improve LLM agent planning by ensuring epistemic calibration, leading to more robust and reliable multi-agent system behavior.",
+      "url": "https://arxiv.org/abs/2605.23414",
+      "pdf_url": "https://arxiv.org/pdf/2605.23414",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2605.23414v1/x1.png",
+      "figure_caption": "Overview of EPC-AW. EPC-AW consists of three agents, the Planner, Executor, and Diagnoser, each with heterogeneous information in memory. At each round, Information-consistency-based Plan Selection evaluates candidate plans across agents and selects those with stable evaluations, providing a planning-time calibration signal. Across rounds, Consistency-guided Epistemic State Refinement aggregates consistency feedback to guide planning under evolving information. The process terminates upon satisfying a stopping condition, after which the final answer is produced.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23459",
+      "title": "AI Assurance: A Comprehensive Testing Strategy for Enterprise AI Systems",
+      "authors": [
+        "Chitra Badagi",
+        "Divye Singh",
+        "Animesh Sen",
+        "Adinath Shirsath"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper proposes a new AI assurance strategy for enterprise AI systems, shifting focus from traditional correctness verification to continuous risk reduction. It emphasizes treating evaluation as a core engineering discipline and highlights the unique organizational impacts of AI failures. The contribution includes a structured AI Failure Taxonomy and a revised five-layer AI Assurance Pyramid to guide operational practices.",
+      "url": "https://arxiv.org/abs/2605.23459",
+      "pdf_url": "https://arxiv.org/pdf/2605.23459",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2605.23243",
+      "title": "Are Frontier LLMs Ready for Cybersecurity? Evidence for Vertical Foundation Models from Dual-Mode Vulnerability Benchmarks",
+      "authors": [
+        "Vivek Dahiya",
+        "Sunny Nehra",
+        "Vipul Dholariya",
+        "Bhavik Shangari",
+        "Chandra Khatri"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "This paper evaluates frontier Large Language Models (LLMs) for cybersecurity tasks using dual-mode benchmarks: white-box code vulnerability detection and black-box web application security testing. The core method involves testing six leading LLMs and two domain-specialized models against these benchmarks. The key contribution is demonstrating that current frontier LLMs are largely unprepared for cybersecurity, exhibiting high false positive rates in code analysis and low ground-truth coverage in web security, while domain-specialized agents show significantly better performance.",
+      "url": "https://arxiv.org/abs/2605.23243",
+      "pdf_url": "https://arxiv.org/pdf/2605.23243",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2605.23243v1/x1.png",
+      "figure_caption": "Four black-box security testing paradigms evaluated in this work. P1 and P2 use frontier models with native capabilities or external tools; P3 adds methodology-guided security agents; P4 uses an Agentic Reasoning Graph with deterministic confirmation.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2510.12787",
+      "title": "Ax-Prover: A Deep Reasoning Agentic Framework for Theorem Proving in Mathematics and Quantum Physics",
+      "authors": [
+        "Benjamin Breen",
+        "Marco Del Tredici",
+        "Jacob McCarran",
+        "Javier Aspuru Mijares",
+        "Weichen Winston Yin"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "abstract": "Ax-Prover is a multi-agent system that uses Large Language Models (LLMs) combined with formal verification tools (Lean) to automate theorem proving. Its core method involves LLMs generating reasoning steps that are then validated by Lean, ensuring formal correctness. Ax-Prover's contribution is its ability to solve complex mathematical and quantum physics problems autonomously or collaboratively, demonstrating strong performance, especially on novel benchmarks.",
+      "url": "https://arxiv.org/abs/2510.12787",
+      "pdf_url": "https://arxiv.org/pdf/2510.12787",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2510.12787v4/ims/diagram_3.png",
+      "figure_caption": "Left: the multi-agent workflow of Ax-Prover. Right: the tool-enhanced reasoning of the Prover.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2602.11146",
+      "title": "Beyond VLM-Based Rewards: Diffusion-Native Latent Reward Modeling",
+      "authors": [
+        "Gongye Liu",
+        "Bo Yang",
+        "Yida Zhi",
+        "Zhizhou Zhong",
+        "Lei Ke"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "This paper introduces DiNa-LRM, a novel method for aligning diffusion models by learning preferences directly within the model's latent diffusion states, rather than relying on computationally expensive Vision-Language Models. DiNa-LRM addresses the domain mismatch issue by formulating a noise-calibrated reward function that accounts for diffusion-specific uncertainty, leading to more efficient and robust preference optimization.",
+      "url": "https://arxiv.org/abs/2602.11146",
+      "pdf_url": "https://arxiv.org/pdf/2602.11146",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2602.11146v2/x1.png",
+      "figure_caption": "Overview of DiNa-LRM . Left: Diffusion-native Preference Learning. During training, clean preference pairs ( x 0 + , x 0 − , c ) (x_{0}^{+},x_{0}^{-},c) are perturbed to noisy states ( x t + , x t − ) (x_{t}^{+},x_{t}^{-}) and evaluated by a time-conditioned reward model r θ r_{\\( \\theta \\)} . We employ a noise-calibrated Thurstone likelihood where comparison variance scales with the diffusion noise level \\( \\sigma_{t} \\) , and optimize via a fidelity loss ℒ \\( \\mathcal{L} \\) . Right: Latent Reward Architecture. Multi-layer visual and text features extracted from a latent diffusion backbone are FiLM-modulated by timestep embeddings t e ​ m ​ b t_{emb} . These features are aggregated through a gated Q-Former and an MLP to produce a scalar reward score.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2602.13985",
+      "title": "Bridging AI and Clinical Reasoning: Abductive Explanations for Alignment on Critical Symptoms",
+      "authors": [
+        "Belona Sonna",
+        "Alban Grastien"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces a method for aligning AI diagnostic reasoning with clinical practice by using formal abductive explanations. This approach generates minimal, guaranteed explanations of critical symptoms, enhancing transparency and trust in AI predictions. The contribution lies in providing clinically actionable insights that preserve AI accuracy, facilitating adoption in medical diagnosis.",
+      "url": "https://arxiv.org/abs/2602.13985",
+      "pdf_url": "https://arxiv.org/pdf/2602.13985",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "hacker_news": [
+    {
+      "id": 48307887,
+      "title": "Disagreement among frontier LLMs on real-world fact-checks",
+      "url": "https://lenz.io/research/llm-disagreement",
+      "score": 490,
+      "created_at": "2026-05-28T12:20:19Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48307887",
+      "summary": "Frontier LLMs exhibit significant disagreement when performing real-world fact-checks, highlighting challenges in their reliability for factual verification."
+    },
+    {
+      "id": 48308376,
+      "title": "Show HN: Continue? Y/N: A 60-second game about AI agent permission fatigue",
+      "url": "https://llmgame.scalex.dev",
+      "score": 330,
+      "created_at": "2026-05-28T13:02:00Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48308376",
+      "summary": "This \"Show HN\" features a 60-second game called \"Continue? Y/N\" that humorously explores AI agent permission fatigue."
+    },
+    {
+      "id": 48313810,
+      "title": "Various LLM Smells",
+      "url": "https://shvbsle.in/various-llm-smells/",
+      "score": 315,
+      "created_at": "2026-05-28T19:02:18Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48313810",
+      "summary": "This article discusses common \"smells\" or warning signs in Large Language Models that indicate potential issues with their performance, safety, or reliability."
+    },
+    {
+      "id": 48317093,
+      "title": "SF startup is testing robots in Airbnbs, and trashing them, lawsuit claims",
+      "url": "https://sfstandard.com/2026/05/28/sf-startup-secretly-testing-robots-airbnbs-trashing-lawsuit-claims/",
+      "score": 215,
+      "created_at": "2026-05-28T23:42:47Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48317093",
+      "summary": "A San Francisco startup is accused in a lawsuit of secretly testing robots in Airbnbs, allegedly damaging properties and trashing them during the experiments."
+    },
+    {
+      "id": 48314363,
+      "title": "Sam Altman and Dario Amodei are both walking back AI jobs apocalypse predictions",
+      "url": "https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo/",
+      "score": 214,
+      "created_at": "2026-05-28T19:43:14Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48314363",
+      "summary": "Sam Altman and Dario Amodei are moderating their earlier dire predictions about AI causing widespread job losses, suggesting a less apocalyptic future for employment."
+    }
+  ],
+  "github_trending": [
+    {
+      "full_name": "harry0703/MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "description": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
+      "stars_today": 4698,
+      "total_stars": 68225,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository's core function is to generate high-definition short videos with a single click using AI large language models, simplifying video creation."
+    },
+    {
+      "full_name": "microsoft/markitdown",
+      "url": "https://github.com/microsoft/markitdown",
+      "description": "Python tool for converting files and office documents to Markdown.",
+      "stars_today": 1410,
+      "total_stars": 128459,
+      "language": "Python",
+      "topics": [],
+      "summary": "This Python tool, microsoft/markitdown, converts various file formats, including Office documents, into Markdown, facilitating content repurposing and integration."
+    },
+    {
+      "full_name": "EveryInc/compound-engineering-plugin",
+      "url": "https://github.com/EveryInc/compound-engineering-plugin",
+      "description": "Official Compound Engineering plugin for Claude Code, Codex, Cursor, and more",
+      "stars_today": 184,
+      "total_stars": 17942,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "This plugin enables Claude Code, Codex, Cursor, and other AI coding assistants to interact with and leverage the Compound Finance protocol."
+    },
+    {
+      "full_name": "twentyhq/twenty",
+      "url": "https://github.com/twentyhq/twenty",
+      "description": "The open alternative to Salesforce, designed for AI.",
+      "stars_today": 493,
+      "total_stars": 48108,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "Twenty is an open-source CRM built for AI, offering a flexible and extensible platform to manage customer relationships and leverage AI capabilities."
+    },
+    {
+      "full_name": "anthropics/claude-code",
+      "url": "https://github.com/anthropics/claude-code",
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+      "stars_today": 319,
+      "total_stars": 127568,
+      "language": "Python",
+      "topics": [],
+      "summary": "Claude Code is an AI-powered terminal agent that understands your codebase and accelerates development by executing routine tasks, explaining code, and managing Git workflows via natural language commands."
+    },
+    {
+      "full_name": "Leonxlnx/taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
+      "stars_today": 2234,
+      "total_stars": 27377,
+      "language": "Shell",
+      "topics": [],
+      "summary": "Taste-Skill is a Python library designed to imbue AI models with discerning taste, preventing them from producing bland or uninspired content."
+    },
+    {
+      "full_name": "cursor/plugins",
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "stars_today": 129,
+      "total_stars": 1144,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "This repository defines the specification for Cursor plugins and hosts official plugins, enabling users to extend the functionality of the Cursor IDE."
+    },
+    {
+      "full_name": "run-llama/liteparse",
+      "url": "https://github.com/run-llama/liteparse",
+      "description": "A fast, helpful, and open-source document parser",
+      "stars_today": 932,
+      "total_stars": 6673,
+      "language": "Rust",
+      "topics": [],
+      "summary": "Liteparse is an open-source document parser designed for speed and helpfulness, efficiently extracting text and metadata from various file formats."
+    },
+    {
+      "full_name": "galilai-group/stable-worldmodel",
+      "url": "https://github.com/galilai-group/stable-worldmodel",
+      "description": "A platform for reproducible world model research and evaluation",
+      "stars_today": 346,
+      "total_stars": 1027,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository provides a platform for reproducible research and evaluation of world models, enabling users to train, test, and compare different models in a standardized environment."
+    }
+  ],
+  "us_stocks": [],
+  "postdoc_jobs": [],
+  "jobs": [],
+  "supervisor_updates": [],
+  "weather": [
+    {
+      "query": "London",
+      "label": "London, England, United Kingdom",
+      "resolved_name": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "timezone": "Europe/London",
+      "forecast_date": "2026-05-29",
+      "condition": "Overcast",
+      "weather_code": 3,
+      "temperature_c": 22.3,
+      "apparent_temperature_c": 21.8,
+      "temp_max_c": 25.7,
+      "temp_min_c": 18.9,
+      "humidity_pct": 47,
+      "wind_speed_kmh": 9.7,
+      "precipitation_probability_pct": 18,
+      "is_day": true,
+      "sunrise": "2026-05-29T04:51",
+      "sunset": "2026-05-29T21:04",
+      "source": "Open-Meteo",
+      "source_url": "https://open-meteo.com/"
+    }
+  ]
+}
