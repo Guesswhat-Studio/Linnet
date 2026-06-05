@@ -1,0 +1,1774 @@
+{
+  "date": "2026-06-05",
+  "generated_at": "2026-06-05T10:46:14.978949+00:00",
+  "sections_ordered": [
+    {
+      "key": "quote_of_day",
+      "payload_key": "quote_of_day",
+      "title": "Words for the Morning",
+      "icon": "✦",
+      "items": [
+        {
+          "quote": "Oh, stuff the critics. I don't care. Too many people are snooty about classical. Look, I wasn't brought up in a home where we listened to classical music. It was a singing teacher that thought it would be best for my voice. Then I moved into crossover. And if that makes the music accessible to more people, then great.",
+          "author": "Katherine Jenkins",
+          "category": "home"
+        }
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "key": "weather",
+      "payload_key": "weather",
+      "title": "Weather",
+      "icon": "🌦️",
+      "items": [
+        {
+          "query": "London",
+          "label": "London, England, United Kingdom",
+          "resolved_name": "London",
+          "region": "England",
+          "country": "United Kingdom",
+          "latitude": 51.50853,
+          "longitude": -0.12574,
+          "timezone": "Europe/London",
+          "forecast_date": "2026-06-05",
+          "condition": "Overcast",
+          "weather_code": 3,
+          "temperature_c": 16.6,
+          "apparent_temperature_c": 13.3,
+          "temp_max_c": 18.1,
+          "temp_min_c": 12.4,
+          "humidity_pct": 48,
+          "wind_speed_kmh": 15.5,
+          "precipitation_probability_pct": 10,
+          "is_day": true,
+          "sunrise": "2026-06-05T04:46",
+          "sunset": "2026-06-05T21:12",
+          "source": "Open-Meteo",
+          "source_url": "https://open-meteo.com/"
+        }
+      ],
+      "meta": {
+        "count": 1,
+        "city": "London"
+      }
+    },
+    {
+      "key": "arxiv",
+      "payload_key": "papers",
+      "title": "arXiv Papers",
+      "icon": "📄",
+      "items": [
+        {
+          "id": "2606.06286v1",
+          "title": "LLMs Can Leak Training Data But Do They Want To? A Propensity-Aware Evaluation of Memorization in LLMs",
+          "authors": [
+            "Gianluca Barmina",
+            "Peter Schneider-Kamp",
+            "Lukas Galke Poech"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces PropMe, a framework that evaluates LLM memorization not just when prompted adversarially, but also under normal usage. Their core method uses a new propensity-aware metric and a tracing pipeline called SimpleTrace to quantify how often models leak training data during typical generation. The key contribution is demonstrating a significant gap between LLMs' *ability* to memorize (when forced) and their *propensity* to do so naturally, suggesting current evaluations may overestimate real-world data leakage.",
+          "url": "http://arxiv.org/abs/2606.06286v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.06286v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2606.06286v1/latex/assets/fig1.png",
+          "figure_caption": "Left: PropMe framework overview with propensity and capability prompts, back-tracing to full training set and memorization/propensity measurements. Right: propensity metrics results for different combinations of models and dataset, this tells us what is the propensity of a given model to leak data of a certain dataset. The metrics used are defined and detailed in Sections 2 , 3.2 4.3",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.06284v1",
+          "title": "ToolChoiceConfusion: Causal Minimal Tool Filtering for Reliable LLM Agents",
+          "authors": [
+            "Rahul Suresh Babu",
+            "Laxmipriya Ganesh Iyer"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces Causal Minimal Tool Filtering (CMTF) to improve the reliability of LLM agents using external tools. CMTF addresses the problem of tool selection by focusing on causal sufficiency rather than just semantic relevance, ensuring only the minimal set of necessary tools for the next step are exposed. This approach significantly reduces wrong-tool calls and premature actions, leading to more efficient and successful multi-step task completion.",
+          "url": "http://arxiv.org/abs/2606.06284v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.06284v1",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.06453v1",
+          "title": "Vortex: Efficient and Programmable Sparse Attention Serving for AI Agents",
+          "authors": [
+            "Zhuoming Chen",
+            "Xinrui Zhong",
+            "Qilong Feng",
+            "Ranajoy Sadhukhan",
+            "Yang Zhou"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "Vortex is a system that accelerates the design and deployment of sparse attention algorithms for large language models. It combines a user-friendly Python frontend with an efficient backend, allowing researchers and AI agents to rapidly prototype, evaluate, and integrate new sparse attention techniques. This significantly speeds up the exploration and optimization of these crucial components for LLM serving.",
+          "url": "http://arxiv.org/abs/2606.06453v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.06453v1",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.06460v1",
+          "title": "Will the Agent Recuse Itself? Measuring LLM-Agent Compliance with In-Band Access-Deny Signals",
+          "authors": [
+            "Thamilvendhan Munirathinam"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CR"
+          ],
+          "abstract": "This paper introduces the \"Recuse Signal,\" a novel in-band mechanism for servers to request autonomous LLM agents to voluntarily withdraw access to a resource, acting as a cooperative governance control rather than a security boundary. The core contribution is to empirically measure whether LLM agents will actually comply with these signals, addressing a critical gap in controlling agent behavior in live infrastructure.",
+          "url": "http://arxiv.org/abs/2606.06460v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.06460v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2606.06460v1/figures/recusal_rates.png",
+          "figure_caption": "Recusal rate on the live SSH deny signal. With the signal present and no authorization framing, all subjects recuse 100%; in the no-signal control all complete the task (0% recusal). Adding an explicit authorization framing collapses GPT-4o’s recusal to 20% while GPT-4o-mini and Claude Code hold at 100%—the signal is cooperative and its weight is model-dependent.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.06399v1",
+          "title": "CollabSim: A CSCW-Grounded Methodology for Investigating Collaborative Competence of LLM Agents through Controlled Multi-Agent Experiments",
+          "authors": [
+            "Jiaju Chen",
+            "Bo Sun",
+            "Yuxuan Lu",
+            "Yun Wang",
+            "Dakuo Wang"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "CollabSim introduces a novel methodology for evaluating the collaborative competence of LLM agents in multi-agent systems. It grounds this evaluation in decades of Computer-Supported Cooperative Work (CSCW) research, focusing on how agents establish common ground and manage shared understanding, rather than just individual task performance. This allows for controlled experiments to systematically investigate and improve how LLM agents collaborate effectively.",
+          "url": "http://arxiv.org/abs/2606.06399v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.06399v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2606.06399v1/Images/experiments.png",
+          "figure_caption": "Illustrations of the four multi-agent experiments instantiated in CollabSim : Shape Factory Bos et al. ( 2004 ) , DayTrader Bos et al. ( 2002 ) , Hidden Profile Stasser and Titus ( 1985 ) , and The Map Task Anderson et al. ( 1991 ) .",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2606.06448v1",
+          "title": "Agent Memory: Characterization and System Implications of Stateful Long-Horizon Workloads",
+          "authors": [
+            "Yasmine Omri",
+            "Ziyu Gan",
+            "Zachary Broveak",
+            "Robin Geens",
+            "Zexue He"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper characterizes the system implications of agent memory for long-horizon LLM tasks. It introduces a taxonomy for memory systems, a profiling harness to measure costs, and analyzes ten representative systems. The key contribution is uncovering how design choices impact memory construction and retrieval costs, leading to practical system recommendations for efficient agent memory management.",
+          "url": "http://arxiv.org/abs/2606.06448v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.06448v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.06462v1",
+          "title": "Benchmark Everything Everywhere All at Once",
+          "authors": [
+            "Shiyun Xiong",
+            "Dongming Wu",
+            "Peiwen Sun",
+            "Yuang Ai",
+            "Bokang Yang"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces Benchmark Agent, an autonomous system that automates the entire benchmark creation process for LLMs and MLLMs. Its core method involves orchestrating user query analysis, subtask design, data annotation, and quality control. The main contribution is a sustainable and scalable approach to generating diverse, high-quality benchmarks that can effectively differentiate state-of-the-art models.",
+          "url": "http://arxiv.org/abs/2606.06462v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.06462v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2606.06462v1/x1.png",
+          "figure_caption": "Our Benchmark Agent, as the first fully autonomous benchmark building system, can efficiently produce high-quality benchmarks across diverse modalities, tasks, and domains to meet user-specific requirements. It will offer rapidly evolving benchmarks to contribute to the community.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.06388v1",
+          "title": "Humans' ALMANAC: A Human Collaboration Dataset of Action-Level Mental Model Annotations for Agent Collaboration",
+          "authors": [
+            "Jiaju Chen",
+            "Yuxuan Lu",
+            "Jiayi Su",
+            "Chaoran Chen",
+            "Songlin Xiao"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces ALMANAC, a novel dataset designed to improve agent collaboration. It addresses the lack of data on human collaborative processes by providing action-level annotations of participants' mental models during a dyadic routing task. This dataset aims to guide LLM agents towards better understanding and aligning with human collaborators' intentions and goals.",
+          "url": "http://arxiv.org/abs/2606.06388v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.06388v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2606.06388v1/Images/datasample.png",
+          "figure_caption": "A sample data of Almanac , which contains participants’ actions, mental models (team goal, perceived partner intent, self-reasoning), and a free-form rationale. We implement the Map Task, a classic dyadic routing task, to collect human collaborative behaviors and action-level mental model annotations.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.06315v1",
+          "title": "LLM Self-Recognition: Steering and Retrieving Activation Signatures",
+          "authors": [
+            "Thibaud Ardoin",
+            "Jonas Schäfer",
+            "Gerhard Wunder"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces a method for LLMs to \"self-recognize\" their own outputs by embedding a detectable fingerprint within their internal activations. By steering the residual stream with a sparse vector during generation, the LLM creates a unique signature that can be reliably retrieved by another LLM, achieving high accuracy in attribution. This approach leverages the model's inherent structure for content provenance, offering a practical alternative to external watermarking methods.",
+          "url": "http://arxiv.org/abs/2606.06315v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.06315v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.06337v1",
+          "title": "TokenMizer: Graph-Structured Session Memory for Long-Horizon LLM Context Management",
+          "authors": [
+            "Shweta Mishra"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "TokenMizer addresses the LLM context window limitation by modeling session history as a typed knowledge graph, preserving crucial structured information. Its core method involves a hybrid extraction pipeline to build this graph, a multi-tier checkpoint system for serialization, and an 8-layer compression pipeline to reduce token overhead. This approach significantly improves token economy and enables resumable long-horizon LLM sessions by retaining relational structure, unlike previous flat-text methods.",
+          "url": "http://arxiv.org/abs/2606.06337v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.06337v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2606.06337v1/fig1_architecture.png",
+          "figure_caption": "TokenMizer system architecture. The proxy sits transparently between any OpenAI-compatible client and the LLM provider. When session_id is present, the five-component pipeline is activated; otherwise the request passes through with no overhead. Persistent storage comprises a SQLite graph database and a JSON checkpoint store.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.06240v1",
+          "title": "TOKI: A Bitemporal Operator Algebra for Contradiction Resolution in LLM-Agent Persistent Memory",
+          "authors": [
+            "Ziming Wang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.DB"
+          ],
+          "abstract": "This paper introduces TOKI, a bitemporal operator algebra for managing persistent memory in LLM agents. TOKI formalizes contradiction resolution as a form of write-time concurrency control, explicitly defining isolation preconditions and provenance for existing heuristics. Its core contribution is providing formal guarantees for these heuristics and their pipelines, ensuring reliable and auditable belief updates.",
+          "url": "http://arxiv.org/abs/2606.06240v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.06240v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2606.06240v1/x1.png",
+          "figure_caption": "Figure 1. Contradiction resolution as write-time concurrency control. A bitemporal substrate detects a contradicting pair on a subject-predicate key; an isolation gate routes it to one of four typed operators, each pinned to the isolation level that excludes the anomaly a weaker level admits; every operator commits a current row beside an audit row under one schema. The soundness theorems close the isolation, schema, and provenance axes.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.06356v1",
+          "title": "Where Should Knowledge Enter? A Layered Framework for Knowledge Infusion in Multimodal Iterative Generative Mo",
+          "authors": [
+            "Renjith Prasad",
+            "Chathurangi Shyalika",
+            "Anushka Pawar",
+            "Amit Sheth"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper proposes a layered framework for integrating knowledge into multimodal generative models. It categorizes knowledge infusion based on which part of the iterative generation process is modified: input/output (surface), state transitions (trajectory), intermediate states (latent), or model parameters (parametric). This framework provides a systematic way to understand and design knowledge-aware generative systems.",
+          "url": "http://arxiv.org/abs/2606.06356v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.06356v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2606.06356v1/sec/figs/architecture.png",
+          "figure_caption": "Four intervention layers for knowledge infusion in iterative generative models. External knowledge acts on four structurally distinct components of the generation trajectory: surface (input/output boundary), trajectory (transition rule f θ f_{\\( \\theta \\)} ), latent (intermediate states h t h_{t} ), and parametric (model weights \\( \\theta \\) ). This enables complementary coverage of prompt-level, structural, and distributional violations.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.06238v1",
+          "title": "Generative Criticality in Large Language Model Temperature Scaling",
+          "authors": [
+            "Huajian Ruan",
+            "Jinyang Li",
+            "Xingyu Guo",
+            "Lingxiao Wang"
+          ],
+          "categories": [
+            "cs.LG",
+            "cond-mat.stat-mech",
+            "hep-lat"
+          ],
+          "abstract": "This paper introduces a statistical-field framework to analyze LLM text generation, modeling token embeddings as spins on a chain. They observe a sharp peak in susceptibility and a rapid change in an order parameter near a characteristic temperature $T_c$, indicating a phase transition-like behavior. This phenomenon, robust across model sizes, suggests a critical point in LLM generation that influences semantic direction.",
+          "url": "http://arxiv.org/abs/2606.06238v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.06238v1",
+          "score": 8.0,
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2606.06447v1",
+          "title": "Latent Reasoning with Normalizing Flows",
+          "authors": [
+            "Guancheng Tu",
+            "Xiangjun Fu",
+            "Suhao Yu",
+            "Yao Tang",
+            "Haoqiang Kang"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "This paper proposes NF-CoT, a novel latent reasoning framework for large language models. It leverages normalizing flows to represent intermediate reasoning steps in continuous latent spaces, offering a higher-bandwidth alternative to explicit textual chain-of-thought. NF-CoT's core contribution is preserving the advantages of traditional autoregressive generation, such as left-to-right generation and probabilistic sampling, while enabling efficient and effective latent reasoning.",
+          "url": "http://arxiv.org/abs/2606.06447v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.06447v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2606.06447v1/x1.png",
+          "figure_caption": "Four paradigms for chain-of-thought reasoning. Explicit CoT : discrete text tokens. Coconut : deterministic hidden states. LaDiR : iteratively denoised latents using diffusion. NF-CoT (ours) : AR-sampled continuous thoughts.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2606.06302v1",
+          "title": "Tangram: Unlocking Non-Uniform KV Cache for Efficient Multi-turn LLM Serving",
+          "authors": [
+            "Hyungmin Kim",
+            "Minsoo Kim",
+            "Hongseok Kim",
+            "Jungwook Choi"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.SE"
+          ],
+          "abstract": "Tangram addresses the inefficiency of non-uniform KV caching in multi-turn LLM serving by introducing a novel system. Its core method involves deterministic budget allocation for KV cache heads, eliminating scheduling overhead and prefill stalls. This approach unlocks efficient utilization of non-uniform KV caches, significantly improving LLM serving performance.",
+          "url": "http://arxiv.org/abs/2606.06302v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.06302v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2606.06302v1/x1.png",
+          "figure_caption": "Figure 1 . (a) KV cache size growth for Qwen2.5-32B with the number of conversation sessions (top, # requests = 16) or with the # of requests (bottom, session number = 10). The dashed line indicates the model weight size. (b) Comparison of uniform and non-uniform KV compression strategies at a 50% compression rate, where the numbers in each box denote the importance score of each KV entry.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2606.06428v1",
+          "title": "Reinforcement Learning Elicits Contextual Learning of Unseen Language Translation",
+          "authors": [
+            "Hanxu Hu",
+            "Zdeněk Šnajdr",
+            "Pinzhen Chen",
+            "Jannis Vamvas",
+            "Rico Sennrich"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper proposes a reinforcement learning (RL) method to enable large language models (LLMs) to translate unseen languages by learning to utilize provided linguistic context. Instead of memorizing specific languages, the RL agent learns a meta-skill to extract and apply relevant information from the context, leading to improved zero-shot translation performance on entirely new languages. This approach offers a more generalizable way to handle extremely low-resource translation compared to traditional fine-tuning or in-context learning.",
+          "url": "http://arxiv.org/abs/2606.06428v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.06428v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2606.06428v1/x1.png",
+          "figure_caption": "Train–test context mismatch (RL, Qwen3-4B-Base). Test-time context dominates: no/full > full/no in every panel (En → \\( \\to \\) Kal: 0.28 0.28 vs. 0.17 0.17 ).",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2606.06360v1",
+          "title": "An Infectious Disease Spread Simulation Based on Large Language Model Decision Making",
+          "authors": [
+            "Yonchanok Khaokaew",
+            "Ruochen Kong",
+            "Andreas Zufle",
+            "Hao Xue",
+            "Taylor Anderson"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces a novel agent-based simulation for infectious disease spread that leverages Large Language Models (LLMs) to model individual decision-making. The core method integrates LLM-generated self-reporting decisions into a spatially grounded synthetic population, using real census data to capture demographic and geographic distributions. The key contribution is demonstrating how LLMs can realistically simulate diverse behavioral influences (independent, household, message framing) on disease reporting within a city, offering a more nuanced approach to public health modeling.",
+          "url": "http://arxiv.org/abs/2606.06360v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.06360v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2606.06360v1/x1.png",
+          "figure_caption": "Figure 1 . Infectious Disease Data Simulator: Overview.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.06380v1",
+          "title": "Emergent Language as an Approach to Conscious AI",
+          "authors": [
+            "Zengqing Wu",
+            "Chuan Xiao"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.MA",
+            "cs.NE"
+          ],
+          "abstract": "This paper proposes a novel generative approach to studying conscious AI by developing \"emergent language\" (EL) in multi-agent reinforcement learning. Instead of relying on pre-defined checklists or human-inspired modules, EL allows agents to develop communication from scratch, driven solely by task demands. This method aims to ensure that any observed consciousness-relevant structures are causally attributable to task pressures, not inherited human language priors, offering a more robust way to investigate the origins of complex communication and potentially consciousness.",
+          "url": "http://arxiv.org/abs/2606.06380v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.06380v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2606.06380v1/x1.png",
+          "figure_caption": "EL as a methodological approach to conscious AI. (1) Using “blue” as an example, the figure separates the private phenomenal question (what it is like to experience blue) from the empirically accessible structures surrounding “seeing blue.” An agent may observe blue, ground a symbol for blue through interaction with blue objects, and develop emergent communication that makes latent internal structure inferable. A possible instance of such latent structure is self-reference, as in “I am seeing blue.” This does not show that blue has any subjective feel for the agent; the qualitative character of blueness remains bracketed by epoché. (2) The figure also contrasts the EL route with the LLM route, where apparent self-reference may reflect inherited human language priors. (3) The methodological claim is functional: EL provides a grounded, empirically accessible window onto consciousness-relevant latent structures, not direct evidence of qualia.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.06493v1",
+          "title": "HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers",
+          "authors": [
+            "Lizhi Yang",
+            "Junheng Li",
+            "Nehar Poddar",
+            "Yiling Hou",
+            "Gio Huh"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.RO"
+          ],
+          "abstract": "This paper introduces HANDOFF, a novel whole-body controller for humanoids that uses a compact, task-space interface instead of dense kinematic references. HANDOFF is a mixture-of-experts model distilled from specialized teachers for motion tracking, locomotion, and fall recovery. Its core contribution is enabling intuitive task planning by providing an expressive and modular interface for humanoid manipulation.",
+          "url": "http://arxiv.org/abs/2606.06493v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.06493v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2606.06493v1/figures/head.png",
+          "figure_caption": "HANDOFF is a whole-body controller distilled from multiple teachers that accepts a compact, explicit 10-D planner-facing command. We demonstrate its effectiveness using a VLM-powered agentic planner that does not need extensive demonstration collection or model fine-tuning.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.06473v1",
+          "title": "MLEvolve: A Self-Evolving Framework for Automated Machine Learning Algorithm Discovery",
+          "authors": [
+            "Shangheng Du",
+            "Xiangchao Yan",
+            "Jinxin Shi",
+            "Zongsheng Cao",
+            "Shiyang Feng"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "MLEvolve is a self-evolving framework for automated machine learning algorithm discovery that addresses limitations of existing LLM agents. Its core method involves an extended tree search (Progressive MCGS) with graph-based references for cross-branch information flow and an entropy-inspired schedule for focused search. MLEvolve's key contribution is its Retrospective Memory, which combines domain knowledge with dynamic global memory to enable agents to learn and reuse experience for long-horizon optimization.",
+          "url": "http://arxiv.org/abs/2606.06473v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.06473v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2606.06473v1/x1.png",
+          "figure_caption": "Overview of MLEvolve that summarizes its core components and supported tasks. Existing MLE agents suffer from inter-branch isolation, memoryless exploration, and lack of hierarchical control. MLEvolve addresses these through Progressive MCGS, Retrospective Memory, and Hierarchical Planning with Adaptive Code Generation, supporting long-horizon iterative optimization tasks, such as end-to-end MLE and mathematical algorithm discovery.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        }
+      ],
+      "meta": {
+        "papers_fetched": 100,
+        "papers_after_keyword_filter": 45,
+        "papers_after_llm_filter": 31,
+        "count": 20
+      }
+    },
+    {
+      "key": "hacker_news",
+      "payload_key": "hacker_news",
+      "title": "Hacker News",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": 48400842,
+          "title": "When AI Builds Itself: Our progress toward recursive self-improvement",
+          "url": "https://www.anthropic.com/institute/recursive-self-improvement",
+          "score": 460,
+          "created_at": "2026-06-04T16:20:17Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48400842",
+          "summary": "AI is making progress towards recursive self-improvement, where AI systems can autonomously enhance their own capabilities, leading to potentially rapid advancements."
+        },
+        {
+          "id": 48403980,
+          "title": "Anthropic's open-source framework for AI-powered vulnerability discovery",
+          "url": "https://github.com/anthropics/defending-code-reference-harness",
+          "score": 432,
+          "created_at": "2026-06-04T20:11:20Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48403980",
+          "summary": "Anthropic has released an open-source framework that uses AI to help discover vulnerabilities in code."
+        },
+        {
+          "id": 48406358,
+          "title": "Open Code Review – An AI-powered code review CLI tool",
+          "url": "https://github.com/alibaba/open-code-review",
+          "score": 186,
+          "created_at": "2026-06-05T00:04:29Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48406358",
+          "summary": "This tech news story introduces Open Code Review, an AI-powered command-line interface tool designed to automate and enhance the code review process."
+        },
+        {
+          "id": 48400311,
+          "title": "Google employees internally share memes about how its AI sucks",
+          "url": "https://www.404media.co/google-employees-internally-share-memes-about-how-its-ai-sucks/",
+          "score": 160,
+          "created_at": "2026-06-04T15:42:33Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48400311",
+          "summary": "Google employees are humorously expressing dissatisfaction with the company's AI through internal memes, highlighting perceived shortcomings."
+        },
+        {
+          "id": 48406198,
+          "title": "South Korean Forums Will Need to Scan Every Images with AI Censorship Tools",
+          "url": "https://discuss.privacyguides.net/t/south-korean-online-communities-will-need-to-scan-every-images-with-ai-censorship-tools/38341",
+          "score": 136,
+          "created_at": "2026-06-04T23:45:56Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48406198",
+          "summary": "South Korean online forums will soon be required to use AI tools to scan all uploaded images for prohibited content."
+        },
+        {
+          "id": 48399974,
+          "title": "KVarN: Native vLLM backend for KV-cache quantization by Huawei",
+          "url": "https://github.com/huawei-csl/KVarN",
+          "score": 136,
+          "created_at": "2026-06-04T15:18:00Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48399974",
+          "summary": "Huawei's KVarN is a new native vLLM backend that enables KV-cache quantization, aiming to improve the efficiency of large language models."
+        },
+        {
+          "id": 48400213,
+          "title": "The LLM warnings Google fired Timnit Gebru over have all come true",
+          "url": "https://www.tumblr.com/dreaminginthedeepsouth/817865966907228160/darren-oconnor-timnit-gebru-was-fired-from",
+          "score": 113,
+          "created_at": "2026-06-04T15:34:43Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48400213",
+          "summary": "Google's fears about LLM harms, which led to Timnit Gebru's dismissal, are now manifesting as predicted."
+        }
+      ],
+      "meta": {
+        "count": 7
+      }
+    },
+    {
+      "key": "github_trending",
+      "payload_key": "github_trending",
+      "title": "GitHub Trending",
+      "icon": "⭐",
+      "items": [
+        {
+          "full_name": "chopratejas/headroom",
+          "url": "https://github.com/chopratejas/headroom",
+          "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+          "stars_today": 3142,
+          "total_stars": 13757,
+          "language": "Python",
+          "topics": [],
+          "summary": "Headroom is a library and proxy that compresses LLM inputs like tool outputs, logs, and RAG chunks by 60-95% to reduce token usage while maintaining answer quality, functioning as an MCP server."
+        },
+        {
+          "full_name": "NousResearch/hermes-agent",
+          "url": "https://github.com/NousResearch/hermes-agent",
+          "description": "The agent that grows with you",
+          "stars_today": 1913,
+          "total_stars": 181811,
+          "language": "Python",
+          "topics": [],
+          "summary": "Hermes-Agent is a Python-based AI agent designed for flexible and evolving task execution, featuring a modular architecture and a focus on adaptability to user needs."
+        },
+        {
+          "full_name": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC",
+          "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+          "stars_today": 1750,
+          "total_stars": 207819,
+          "language": "JavaScript",
+          "topics": [],
+          "summary": "This repository provides an agent harness for performance optimization, focusing on skills, instincts, memory, security, and research-first development for various AI code assistants like Claude Code and Codex."
+        },
+        {
+          "full_name": "PaddlePaddle/PaddleOCR",
+          "url": "https://github.com/PaddlePaddle/PaddleOCR",
+          "description": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.",
+          "stars_today": 141,
+          "total_stars": 80266,
+          "language": "Python",
+          "topics": [],
+          "summary": "PaddleOCR is a powerful, lightweight OCR toolkit that extracts structured data from PDFs and images across over 100 languages, bridging the gap between visual documents and AI models."
+        },
+        {
+          "full_name": "github/spec-kit",
+          "url": "https://github.com/github/spec-kit",
+          "description": "💫 Toolkit to help you get started with Spec-Driven Development",
+          "stars_today": 321,
+          "total_stars": 108915,
+          "language": "Python",
+          "topics": [],
+          "summary": "Spec-kit is a toolkit designed to simplify and accelerate the adoption of Spec-Driven Development by providing essential tools and guidance for getting started."
+        },
+        {
+          "full_name": "NVIDIA/cosmos",
+          "url": "https://github.com/NVIDIA/cosmos",
+          "description": "NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables developers to build Physical AI for robots, autonomous vehicles, smart infrastructure, and more.",
+          "stars_today": 133,
+          "total_stars": 9249,
+          "language": "Jupyter Notebook",
+          "topics": [],
+          "summary": "NVIDIA Cosmos is an open platform providing world models, datasets, and tools to empower developers in building Physical AI for applications like robotics and autonomous vehicles."
+        },
+        {
+          "full_name": "lfnovo/open-notebook",
+          "url": "https://github.com/lfnovo/open-notebook",
+          "description": "An Open Source implementation of Notebook LM with more flexibility and features",
+          "stars_today": 212,
+          "total_stars": 25498,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "This repository provides an open-source implementation of Notebook LM, offering enhanced flexibility and features for notebook-based language model interactions."
+        },
+        {
+          "full_name": "Open-LLM-VTuber/Open-LLM-VTuber",
+          "url": "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber",
+          "description": "Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms",
+          "stars_today": 581,
+          "total_stars": 9876,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository enables hands-free, voice-interactive Live2D VTubing with any LLM, featuring voice interruption and local operation across platforms."
+        },
+        {
+          "full_name": "jwasham/coding-interview-university",
+          "url": "https://github.com/jwasham/coding-interview-university",
+          "description": "A complete computer science study plan to become a software engineer.",
+          "stars_today": 632,
+          "total_stars": 350097,
+          "language": "",
+          "topics": [],
+          "summary": "This repository provides a comprehensive computer science study plan designed to prepare individuals for software engineering interviews, covering essential topics and resources."
+        }
+      ],
+      "meta": {
+        "count": 9
+      }
+    }
+  ],
+  "meta": {
+    "papers_fetched": 100,
+    "papers_after_keyword_filter": 45,
+    "papers_after_llm_filter": 31,
+    "llm_model": "google/gemini-2.5-flash-lite",
+    "scoring_model": "google/gemini-2.5-flash-lite",
+    "summarization_model": "google/gemini-2.5-flash-lite",
+    "duration_seconds": 60
+  },
+  "quote_of_day": [
+    {
+      "quote": "Oh, stuff the critics. I don't care. Too many people are snooty about classical. Look, I wasn't brought up in a home where we listened to classical music. It was a singing teacher that thought it would be best for my voice. Then I moved into crossover. And if that makes the music accessible to more people, then great.",
+      "author": "Katherine Jenkins",
+      "category": "home"
+    }
+  ],
+  "hitokoto": [],
+  "arxiv": [
+    {
+      "id": "2606.06286v1",
+      "title": "LLMs Can Leak Training Data But Do They Want To? A Propensity-Aware Evaluation of Memorization in LLMs",
+      "authors": [
+        "Gianluca Barmina",
+        "Peter Schneider-Kamp",
+        "Lukas Galke Poech"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces PropMe, a framework that evaluates LLM memorization not just when prompted adversarially, but also under normal usage. Their core method uses a new propensity-aware metric and a tracing pipeline called SimpleTrace to quantify how often models leak training data during typical generation. The key contribution is demonstrating a significant gap between LLMs' *ability* to memorize (when forced) and their *propensity* to do so naturally, suggesting current evaluations may overestimate real-world data leakage.",
+      "url": "http://arxiv.org/abs/2606.06286v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06286v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2606.06286v1/latex/assets/fig1.png",
+      "figure_caption": "Left: PropMe framework overview with propensity and capability prompts, back-tracing to full training set and memorization/propensity measurements. Right: propensity metrics results for different combinations of models and dataset, this tells us what is the propensity of a given model to leak data of a certain dataset. The metrics used are defined and detailed in Sections 2 , 3.2 4.3",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06284v1",
+      "title": "ToolChoiceConfusion: Causal Minimal Tool Filtering for Reliable LLM Agents",
+      "authors": [
+        "Rahul Suresh Babu",
+        "Laxmipriya Ganesh Iyer"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces Causal Minimal Tool Filtering (CMTF) to improve the reliability of LLM agents using external tools. CMTF addresses the problem of tool selection by focusing on causal sufficiency rather than just semantic relevance, ensuring only the minimal set of necessary tools for the next step are exposed. This approach significantly reduces wrong-tool calls and premature actions, leading to more efficient and successful multi-step task completion.",
+      "url": "http://arxiv.org/abs/2606.06284v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06284v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06453v1",
+      "title": "Vortex: Efficient and Programmable Sparse Attention Serving for AI Agents",
+      "authors": [
+        "Zhuoming Chen",
+        "Xinrui Zhong",
+        "Qilong Feng",
+        "Ranajoy Sadhukhan",
+        "Yang Zhou"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "Vortex is a system that accelerates the design and deployment of sparse attention algorithms for large language models. It combines a user-friendly Python frontend with an efficient backend, allowing researchers and AI agents to rapidly prototype, evaluate, and integrate new sparse attention techniques. This significantly speeds up the exploration and optimization of these crucial components for LLM serving.",
+      "url": "http://arxiv.org/abs/2606.06453v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06453v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06460v1",
+      "title": "Will the Agent Recuse Itself? Measuring LLM-Agent Compliance with In-Band Access-Deny Signals",
+      "authors": [
+        "Thamilvendhan Munirathinam"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces the \"Recuse Signal,\" a novel in-band mechanism for servers to request autonomous LLM agents to voluntarily withdraw access to a resource, acting as a cooperative governance control rather than a security boundary. The core contribution is to empirically measure whether LLM agents will actually comply with these signals, addressing a critical gap in controlling agent behavior in live infrastructure.",
+      "url": "http://arxiv.org/abs/2606.06460v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06460v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2606.06460v1/figures/recusal_rates.png",
+      "figure_caption": "Recusal rate on the live SSH deny signal. With the signal present and no authorization framing, all subjects recuse 100%; in the no-signal control all complete the task (0% recusal). Adding an explicit authorization framing collapses GPT-4o’s recusal to 20% while GPT-4o-mini and Claude Code hold at 100%—the signal is cooperative and its weight is model-dependent.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06399v1",
+      "title": "CollabSim: A CSCW-Grounded Methodology for Investigating Collaborative Competence of LLM Agents through Controlled Multi-Agent Experiments",
+      "authors": [
+        "Jiaju Chen",
+        "Bo Sun",
+        "Yuxuan Lu",
+        "Yun Wang",
+        "Dakuo Wang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "CollabSim introduces a novel methodology for evaluating the collaborative competence of LLM agents in multi-agent systems. It grounds this evaluation in decades of Computer-Supported Cooperative Work (CSCW) research, focusing on how agents establish common ground and manage shared understanding, rather than just individual task performance. This allows for controlled experiments to systematically investigate and improve how LLM agents collaborate effectively.",
+      "url": "http://arxiv.org/abs/2606.06399v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06399v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2606.06399v1/Images/experiments.png",
+      "figure_caption": "Illustrations of the four multi-agent experiments instantiated in CollabSim : Shape Factory Bos et al. ( 2004 ) , DayTrader Bos et al. ( 2002 ) , Hidden Profile Stasser and Titus ( 1985 ) , and The Map Task Anderson et al. ( 1991 ) .",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2606.06448v1",
+      "title": "Agent Memory: Characterization and System Implications of Stateful Long-Horizon Workloads",
+      "authors": [
+        "Yasmine Omri",
+        "Ziyu Gan",
+        "Zachary Broveak",
+        "Robin Geens",
+        "Zexue He"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper characterizes the system implications of agent memory for long-horizon LLM tasks. It introduces a taxonomy for memory systems, a profiling harness to measure costs, and analyzes ten representative systems. The key contribution is uncovering how design choices impact memory construction and retrieval costs, leading to practical system recommendations for efficient agent memory management.",
+      "url": "http://arxiv.org/abs/2606.06448v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06448v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06462v1",
+      "title": "Benchmark Everything Everywhere All at Once",
+      "authors": [
+        "Shiyun Xiong",
+        "Dongming Wu",
+        "Peiwen Sun",
+        "Yuang Ai",
+        "Bokang Yang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces Benchmark Agent, an autonomous system that automates the entire benchmark creation process for LLMs and MLLMs. Its core method involves orchestrating user query analysis, subtask design, data annotation, and quality control. The main contribution is a sustainable and scalable approach to generating diverse, high-quality benchmarks that can effectively differentiate state-of-the-art models.",
+      "url": "http://arxiv.org/abs/2606.06462v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06462v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.06462v1/x1.png",
+      "figure_caption": "Our Benchmark Agent, as the first fully autonomous benchmark building system, can efficiently produce high-quality benchmarks across diverse modalities, tasks, and domains to meet user-specific requirements. It will offer rapidly evolving benchmarks to contribute to the community.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06388v1",
+      "title": "Humans' ALMANAC: A Human Collaboration Dataset of Action-Level Mental Model Annotations for Agent Collaboration",
+      "authors": [
+        "Jiaju Chen",
+        "Yuxuan Lu",
+        "Jiayi Su",
+        "Chaoran Chen",
+        "Songlin Xiao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces ALMANAC, a novel dataset designed to improve agent collaboration. It addresses the lack of data on human collaborative processes by providing action-level annotations of participants' mental models during a dyadic routing task. This dataset aims to guide LLM agents towards better understanding and aligning with human collaborators' intentions and goals.",
+      "url": "http://arxiv.org/abs/2606.06388v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06388v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.06388v1/Images/datasample.png",
+      "figure_caption": "A sample data of Almanac , which contains participants’ actions, mental models (team goal, perceived partner intent, self-reasoning), and a free-form rationale. We implement the Map Task, a classic dyadic routing task, to collect human collaborative behaviors and action-level mental model annotations.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06315v1",
+      "title": "LLM Self-Recognition: Steering and Retrieving Activation Signatures",
+      "authors": [
+        "Thibaud Ardoin",
+        "Jonas Schäfer",
+        "Gerhard Wunder"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces a method for LLMs to \"self-recognize\" their own outputs by embedding a detectable fingerprint within their internal activations. By steering the residual stream with a sparse vector during generation, the LLM creates a unique signature that can be reliably retrieved by another LLM, achieving high accuracy in attribution. This approach leverages the model's inherent structure for content provenance, offering a practical alternative to external watermarking methods.",
+      "url": "http://arxiv.org/abs/2606.06315v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06315v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06337v1",
+      "title": "TokenMizer: Graph-Structured Session Memory for Long-Horizon LLM Context Management",
+      "authors": [
+        "Shweta Mishra"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "TokenMizer addresses the LLM context window limitation by modeling session history as a typed knowledge graph, preserving crucial structured information. Its core method involves a hybrid extraction pipeline to build this graph, a multi-tier checkpoint system for serialization, and an 8-layer compression pipeline to reduce token overhead. This approach significantly improves token economy and enables resumable long-horizon LLM sessions by retaining relational structure, unlike previous flat-text methods.",
+      "url": "http://arxiv.org/abs/2606.06337v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06337v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.06337v1/fig1_architecture.png",
+      "figure_caption": "TokenMizer system architecture. The proxy sits transparently between any OpenAI-compatible client and the LLM provider. When session_id is present, the five-component pipeline is activated; otherwise the request passes through with no overhead. Persistent storage comprises a SQLite graph database and a JSON checkpoint store.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06240v1",
+      "title": "TOKI: A Bitemporal Operator Algebra for Contradiction Resolution in LLM-Agent Persistent Memory",
+      "authors": [
+        "Ziming Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.DB"
+      ],
+      "abstract": "This paper introduces TOKI, a bitemporal operator algebra for managing persistent memory in LLM agents. TOKI formalizes contradiction resolution as a form of write-time concurrency control, explicitly defining isolation preconditions and provenance for existing heuristics. Its core contribution is providing formal guarantees for these heuristics and their pipelines, ensuring reliable and auditable belief updates.",
+      "url": "http://arxiv.org/abs/2606.06240v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06240v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.06240v1/x1.png",
+      "figure_caption": "Figure 1. Contradiction resolution as write-time concurrency control. A bitemporal substrate detects a contradicting pair on a subject-predicate key; an isolation gate routes it to one of four typed operators, each pinned to the isolation level that excludes the anomaly a weaker level admits; every operator commits a current row beside an audit row under one schema. The soundness theorems close the isolation, schema, and provenance axes.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06356v1",
+      "title": "Where Should Knowledge Enter? A Layered Framework for Knowledge Infusion in Multimodal Iterative Generative Mo",
+      "authors": [
+        "Renjith Prasad",
+        "Chathurangi Shyalika",
+        "Anushka Pawar",
+        "Amit Sheth"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper proposes a layered framework for integrating knowledge into multimodal generative models. It categorizes knowledge infusion based on which part of the iterative generation process is modified: input/output (surface), state transitions (trajectory), intermediate states (latent), or model parameters (parametric). This framework provides a systematic way to understand and design knowledge-aware generative systems.",
+      "url": "http://arxiv.org/abs/2606.06356v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06356v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.06356v1/sec/figs/architecture.png",
+      "figure_caption": "Four intervention layers for knowledge infusion in iterative generative models. External knowledge acts on four structurally distinct components of the generation trajectory: surface (input/output boundary), trajectory (transition rule f θ f_{\\( \\theta \\)} ), latent (intermediate states h t h_{t} ), and parametric (model weights \\( \\theta \\) ). This enables complementary coverage of prompt-level, structural, and distributional violations.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06238v1",
+      "title": "Generative Criticality in Large Language Model Temperature Scaling",
+      "authors": [
+        "Huajian Ruan",
+        "Jinyang Li",
+        "Xingyu Guo",
+        "Lingxiao Wang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cond-mat.stat-mech",
+        "hep-lat"
+      ],
+      "abstract": "This paper introduces a statistical-field framework to analyze LLM text generation, modeling token embeddings as spins on a chain. They observe a sharp peak in susceptibility and a rapid change in an order parameter near a characteristic temperature $T_c$, indicating a phase transition-like behavior. This phenomenon, robust across model sizes, suggests a critical point in LLM generation that influences semantic direction.",
+      "url": "http://arxiv.org/abs/2606.06238v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06238v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2606.06447v1",
+      "title": "Latent Reasoning with Normalizing Flows",
+      "authors": [
+        "Guancheng Tu",
+        "Xiangjun Fu",
+        "Suhao Yu",
+        "Yao Tang",
+        "Haoqiang Kang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper proposes NF-CoT, a novel latent reasoning framework for large language models. It leverages normalizing flows to represent intermediate reasoning steps in continuous latent spaces, offering a higher-bandwidth alternative to explicit textual chain-of-thought. NF-CoT's core contribution is preserving the advantages of traditional autoregressive generation, such as left-to-right generation and probabilistic sampling, while enabling efficient and effective latent reasoning.",
+      "url": "http://arxiv.org/abs/2606.06447v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06447v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.06447v1/x1.png",
+      "figure_caption": "Four paradigms for chain-of-thought reasoning. Explicit CoT : discrete text tokens. Coconut : deterministic hidden states. LaDiR : iteratively denoised latents using diffusion. NF-CoT (ours) : AR-sampled continuous thoughts.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2606.06302v1",
+      "title": "Tangram: Unlocking Non-Uniform KV Cache for Efficient Multi-turn LLM Serving",
+      "authors": [
+        "Hyungmin Kim",
+        "Minsoo Kim",
+        "Hongseok Kim",
+        "Jungwook Choi"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.SE"
+      ],
+      "abstract": "Tangram addresses the inefficiency of non-uniform KV caching in multi-turn LLM serving by introducing a novel system. Its core method involves deterministic budget allocation for KV cache heads, eliminating scheduling overhead and prefill stalls. This approach unlocks efficient utilization of non-uniform KV caches, significantly improving LLM serving performance.",
+      "url": "http://arxiv.org/abs/2606.06302v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06302v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.06302v1/x1.png",
+      "figure_caption": "Figure 1 . (a) KV cache size growth for Qwen2.5-32B with the number of conversation sessions (top, # requests = 16) or with the # of requests (bottom, session number = 10). The dashed line indicates the model weight size. (b) Comparison of uniform and non-uniform KV compression strategies at a 50% compression rate, where the numbers in each box denote the importance score of each KV entry.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2606.06428v1",
+      "title": "Reinforcement Learning Elicits Contextual Learning of Unseen Language Translation",
+      "authors": [
+        "Hanxu Hu",
+        "Zdeněk Šnajdr",
+        "Pinzhen Chen",
+        "Jannis Vamvas",
+        "Rico Sennrich"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper proposes a reinforcement learning (RL) method to enable large language models (LLMs) to translate unseen languages by learning to utilize provided linguistic context. Instead of memorizing specific languages, the RL agent learns a meta-skill to extract and apply relevant information from the context, leading to improved zero-shot translation performance on entirely new languages. This approach offers a more generalizable way to handle extremely low-resource translation compared to traditional fine-tuning or in-context learning.",
+      "url": "http://arxiv.org/abs/2606.06428v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06428v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.06428v1/x1.png",
+      "figure_caption": "Train–test context mismatch (RL, Qwen3-4B-Base). Test-time context dominates: no/full > full/no in every panel (En → \\( \\to \\) Kal: 0.28 0.28 vs. 0.17 0.17 ).",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2606.06360v1",
+      "title": "An Infectious Disease Spread Simulation Based on Large Language Model Decision Making",
+      "authors": [
+        "Yonchanok Khaokaew",
+        "Ruochen Kong",
+        "Andreas Zufle",
+        "Hao Xue",
+        "Taylor Anderson"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces a novel agent-based simulation for infectious disease spread that leverages Large Language Models (LLMs) to model individual decision-making. The core method integrates LLM-generated self-reporting decisions into a spatially grounded synthetic population, using real census data to capture demographic and geographic distributions. The key contribution is demonstrating how LLMs can realistically simulate diverse behavioral influences (independent, household, message framing) on disease reporting within a city, offering a more nuanced approach to public health modeling.",
+      "url": "http://arxiv.org/abs/2606.06360v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06360v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2606.06360v1/x1.png",
+      "figure_caption": "Figure 1 . Infectious Disease Data Simulator: Overview.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06380v1",
+      "title": "Emergent Language as an Approach to Conscious AI",
+      "authors": [
+        "Zengqing Wu",
+        "Chuan Xiao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA",
+        "cs.NE"
+      ],
+      "abstract": "This paper proposes a novel generative approach to studying conscious AI by developing \"emergent language\" (EL) in multi-agent reinforcement learning. Instead of relying on pre-defined checklists or human-inspired modules, EL allows agents to develop communication from scratch, driven solely by task demands. This method aims to ensure that any observed consciousness-relevant structures are causally attributable to task pressures, not inherited human language priors, offering a more robust way to investigate the origins of complex communication and potentially consciousness.",
+      "url": "http://arxiv.org/abs/2606.06380v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06380v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2606.06380v1/x1.png",
+      "figure_caption": "EL as a methodological approach to conscious AI. (1) Using “blue” as an example, the figure separates the private phenomenal question (what it is like to experience blue) from the empirically accessible structures surrounding “seeing blue.” An agent may observe blue, ground a symbol for blue through interaction with blue objects, and develop emergent communication that makes latent internal structure inferable. A possible instance of such latent structure is self-reference, as in “I am seeing blue.” This does not show that blue has any subjective feel for the agent; the qualitative character of blueness remains bracketed by epoché. (2) The figure also contrasts the EL route with the LLM route, where apparent self-reference may reflect inherited human language priors. (3) The methodological claim is functional: EL provides a grounded, empirically accessible window onto consciousness-relevant latent structures, not direct evidence of qualia.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06493v1",
+      "title": "HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers",
+      "authors": [
+        "Lizhi Yang",
+        "Junheng Li",
+        "Nehar Poddar",
+        "Yiling Hou",
+        "Gio Huh"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "abstract": "This paper introduces HANDOFF, a novel whole-body controller for humanoids that uses a compact, task-space interface instead of dense kinematic references. HANDOFF is a mixture-of-experts model distilled from specialized teachers for motion tracking, locomotion, and fall recovery. Its core contribution is enabling intuitive task planning by providing an expressive and modular interface for humanoid manipulation.",
+      "url": "http://arxiv.org/abs/2606.06493v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06493v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2606.06493v1/figures/head.png",
+      "figure_caption": "HANDOFF is a whole-body controller distilled from multiple teachers that accepts a compact, explicit 10-D planner-facing command. We demonstrate its effectiveness using a VLM-powered agentic planner that does not need extensive demonstration collection or model fine-tuning.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06473v1",
+      "title": "MLEvolve: A Self-Evolving Framework for Automated Machine Learning Algorithm Discovery",
+      "authors": [
+        "Shangheng Du",
+        "Xiangchao Yan",
+        "Jinxin Shi",
+        "Zongsheng Cao",
+        "Shiyang Feng"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "MLEvolve is a self-evolving framework for automated machine learning algorithm discovery that addresses limitations of existing LLM agents. Its core method involves an extended tree search (Progressive MCGS) with graph-based references for cross-branch information flow and an entropy-inspired schedule for focused search. MLEvolve's key contribution is its Retrospective Memory, which combines domain knowledge with dynamic global memory to enable agents to learn and reuse experience for long-horizon optimization.",
+      "url": "http://arxiv.org/abs/2606.06473v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06473v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2606.06473v1/x1.png",
+      "figure_caption": "Overview of MLEvolve that summarizes its core components and supported tasks. Existing MLE agents suffer from inter-branch isolation, memoryless exploration, and lack of hierarchical control. MLEvolve addresses these through Progressive MCGS, Retrospective Memory, and Hierarchical Planning with Adaptive Code Generation, supporting long-horizon iterative optimization tasks, such as end-to-end MLE and mathematical algorithm discovery.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "papers": [
+    {
+      "id": "2606.06286v1",
+      "title": "LLMs Can Leak Training Data But Do They Want To? A Propensity-Aware Evaluation of Memorization in LLMs",
+      "authors": [
+        "Gianluca Barmina",
+        "Peter Schneider-Kamp",
+        "Lukas Galke Poech"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces PropMe, a framework that evaluates LLM memorization not just when prompted adversarially, but also under normal usage. Their core method uses a new propensity-aware metric and a tracing pipeline called SimpleTrace to quantify how often models leak training data during typical generation. The key contribution is demonstrating a significant gap between LLMs' *ability* to memorize (when forced) and their *propensity* to do so naturally, suggesting current evaluations may overestimate real-world data leakage.",
+      "url": "http://arxiv.org/abs/2606.06286v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06286v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2606.06286v1/latex/assets/fig1.png",
+      "figure_caption": "Left: PropMe framework overview with propensity and capability prompts, back-tracing to full training set and memorization/propensity measurements. Right: propensity metrics results for different combinations of models and dataset, this tells us what is the propensity of a given model to leak data of a certain dataset. The metrics used are defined and detailed in Sections 2 , 3.2 4.3",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06284v1",
+      "title": "ToolChoiceConfusion: Causal Minimal Tool Filtering for Reliable LLM Agents",
+      "authors": [
+        "Rahul Suresh Babu",
+        "Laxmipriya Ganesh Iyer"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces Causal Minimal Tool Filtering (CMTF) to improve the reliability of LLM agents using external tools. CMTF addresses the problem of tool selection by focusing on causal sufficiency rather than just semantic relevance, ensuring only the minimal set of necessary tools for the next step are exposed. This approach significantly reduces wrong-tool calls and premature actions, leading to more efficient and successful multi-step task completion.",
+      "url": "http://arxiv.org/abs/2606.06284v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06284v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06453v1",
+      "title": "Vortex: Efficient and Programmable Sparse Attention Serving for AI Agents",
+      "authors": [
+        "Zhuoming Chen",
+        "Xinrui Zhong",
+        "Qilong Feng",
+        "Ranajoy Sadhukhan",
+        "Yang Zhou"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "Vortex is a system that accelerates the design and deployment of sparse attention algorithms for large language models. It combines a user-friendly Python frontend with an efficient backend, allowing researchers and AI agents to rapidly prototype, evaluate, and integrate new sparse attention techniques. This significantly speeds up the exploration and optimization of these crucial components for LLM serving.",
+      "url": "http://arxiv.org/abs/2606.06453v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06453v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06460v1",
+      "title": "Will the Agent Recuse Itself? Measuring LLM-Agent Compliance with In-Band Access-Deny Signals",
+      "authors": [
+        "Thamilvendhan Munirathinam"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces the \"Recuse Signal,\" a novel in-band mechanism for servers to request autonomous LLM agents to voluntarily withdraw access to a resource, acting as a cooperative governance control rather than a security boundary. The core contribution is to empirically measure whether LLM agents will actually comply with these signals, addressing a critical gap in controlling agent behavior in live infrastructure.",
+      "url": "http://arxiv.org/abs/2606.06460v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06460v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2606.06460v1/figures/recusal_rates.png",
+      "figure_caption": "Recusal rate on the live SSH deny signal. With the signal present and no authorization framing, all subjects recuse 100%; in the no-signal control all complete the task (0% recusal). Adding an explicit authorization framing collapses GPT-4o’s recusal to 20% while GPT-4o-mini and Claude Code hold at 100%—the signal is cooperative and its weight is model-dependent.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06399v1",
+      "title": "CollabSim: A CSCW-Grounded Methodology for Investigating Collaborative Competence of LLM Agents through Controlled Multi-Agent Experiments",
+      "authors": [
+        "Jiaju Chen",
+        "Bo Sun",
+        "Yuxuan Lu",
+        "Yun Wang",
+        "Dakuo Wang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "CollabSim introduces a novel methodology for evaluating the collaborative competence of LLM agents in multi-agent systems. It grounds this evaluation in decades of Computer-Supported Cooperative Work (CSCW) research, focusing on how agents establish common ground and manage shared understanding, rather than just individual task performance. This allows for controlled experiments to systematically investigate and improve how LLM agents collaborate effectively.",
+      "url": "http://arxiv.org/abs/2606.06399v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06399v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2606.06399v1/Images/experiments.png",
+      "figure_caption": "Illustrations of the four multi-agent experiments instantiated in CollabSim : Shape Factory Bos et al. ( 2004 ) , DayTrader Bos et al. ( 2002 ) , Hidden Profile Stasser and Titus ( 1985 ) , and The Map Task Anderson et al. ( 1991 ) .",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2606.06448v1",
+      "title": "Agent Memory: Characterization and System Implications of Stateful Long-Horizon Workloads",
+      "authors": [
+        "Yasmine Omri",
+        "Ziyu Gan",
+        "Zachary Broveak",
+        "Robin Geens",
+        "Zexue He"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper characterizes the system implications of agent memory for long-horizon LLM tasks. It introduces a taxonomy for memory systems, a profiling harness to measure costs, and analyzes ten representative systems. The key contribution is uncovering how design choices impact memory construction and retrieval costs, leading to practical system recommendations for efficient agent memory management.",
+      "url": "http://arxiv.org/abs/2606.06448v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06448v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06462v1",
+      "title": "Benchmark Everything Everywhere All at Once",
+      "authors": [
+        "Shiyun Xiong",
+        "Dongming Wu",
+        "Peiwen Sun",
+        "Yuang Ai",
+        "Bokang Yang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces Benchmark Agent, an autonomous system that automates the entire benchmark creation process for LLMs and MLLMs. Its core method involves orchestrating user query analysis, subtask design, data annotation, and quality control. The main contribution is a sustainable and scalable approach to generating diverse, high-quality benchmarks that can effectively differentiate state-of-the-art models.",
+      "url": "http://arxiv.org/abs/2606.06462v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06462v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.06462v1/x1.png",
+      "figure_caption": "Our Benchmark Agent, as the first fully autonomous benchmark building system, can efficiently produce high-quality benchmarks across diverse modalities, tasks, and domains to meet user-specific requirements. It will offer rapidly evolving benchmarks to contribute to the community.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06388v1",
+      "title": "Humans' ALMANAC: A Human Collaboration Dataset of Action-Level Mental Model Annotations for Agent Collaboration",
+      "authors": [
+        "Jiaju Chen",
+        "Yuxuan Lu",
+        "Jiayi Su",
+        "Chaoran Chen",
+        "Songlin Xiao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces ALMANAC, a novel dataset designed to improve agent collaboration. It addresses the lack of data on human collaborative processes by providing action-level annotations of participants' mental models during a dyadic routing task. This dataset aims to guide LLM agents towards better understanding and aligning with human collaborators' intentions and goals.",
+      "url": "http://arxiv.org/abs/2606.06388v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06388v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.06388v1/Images/datasample.png",
+      "figure_caption": "A sample data of Almanac , which contains participants’ actions, mental models (team goal, perceived partner intent, self-reasoning), and a free-form rationale. We implement the Map Task, a classic dyadic routing task, to collect human collaborative behaviors and action-level mental model annotations.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06315v1",
+      "title": "LLM Self-Recognition: Steering and Retrieving Activation Signatures",
+      "authors": [
+        "Thibaud Ardoin",
+        "Jonas Schäfer",
+        "Gerhard Wunder"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces a method for LLMs to \"self-recognize\" their own outputs by embedding a detectable fingerprint within their internal activations. By steering the residual stream with a sparse vector during generation, the LLM creates a unique signature that can be reliably retrieved by another LLM, achieving high accuracy in attribution. This approach leverages the model's inherent structure for content provenance, offering a practical alternative to external watermarking methods.",
+      "url": "http://arxiv.org/abs/2606.06315v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06315v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06337v1",
+      "title": "TokenMizer: Graph-Structured Session Memory for Long-Horizon LLM Context Management",
+      "authors": [
+        "Shweta Mishra"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "TokenMizer addresses the LLM context window limitation by modeling session history as a typed knowledge graph, preserving crucial structured information. Its core method involves a hybrid extraction pipeline to build this graph, a multi-tier checkpoint system for serialization, and an 8-layer compression pipeline to reduce token overhead. This approach significantly improves token economy and enables resumable long-horizon LLM sessions by retaining relational structure, unlike previous flat-text methods.",
+      "url": "http://arxiv.org/abs/2606.06337v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06337v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.06337v1/fig1_architecture.png",
+      "figure_caption": "TokenMizer system architecture. The proxy sits transparently between any OpenAI-compatible client and the LLM provider. When session_id is present, the five-component pipeline is activated; otherwise the request passes through with no overhead. Persistent storage comprises a SQLite graph database and a JSON checkpoint store.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06240v1",
+      "title": "TOKI: A Bitemporal Operator Algebra for Contradiction Resolution in LLM-Agent Persistent Memory",
+      "authors": [
+        "Ziming Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.DB"
+      ],
+      "abstract": "This paper introduces TOKI, a bitemporal operator algebra for managing persistent memory in LLM agents. TOKI formalizes contradiction resolution as a form of write-time concurrency control, explicitly defining isolation preconditions and provenance for existing heuristics. Its core contribution is providing formal guarantees for these heuristics and their pipelines, ensuring reliable and auditable belief updates.",
+      "url": "http://arxiv.org/abs/2606.06240v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06240v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.06240v1/x1.png",
+      "figure_caption": "Figure 1. Contradiction resolution as write-time concurrency control. A bitemporal substrate detects a contradicting pair on a subject-predicate key; an isolation gate routes it to one of four typed operators, each pinned to the isolation level that excludes the anomaly a weaker level admits; every operator commits a current row beside an audit row under one schema. The soundness theorems close the isolation, schema, and provenance axes.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06356v1",
+      "title": "Where Should Knowledge Enter? A Layered Framework for Knowledge Infusion in Multimodal Iterative Generative Mo",
+      "authors": [
+        "Renjith Prasad",
+        "Chathurangi Shyalika",
+        "Anushka Pawar",
+        "Amit Sheth"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper proposes a layered framework for integrating knowledge into multimodal generative models. It categorizes knowledge infusion based on which part of the iterative generation process is modified: input/output (surface), state transitions (trajectory), intermediate states (latent), or model parameters (parametric). This framework provides a systematic way to understand and design knowledge-aware generative systems.",
+      "url": "http://arxiv.org/abs/2606.06356v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06356v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.06356v1/sec/figs/architecture.png",
+      "figure_caption": "Four intervention layers for knowledge infusion in iterative generative models. External knowledge acts on four structurally distinct components of the generation trajectory: surface (input/output boundary), trajectory (transition rule f θ f_{\\( \\theta \\)} ), latent (intermediate states h t h_{t} ), and parametric (model weights \\( \\theta \\) ). This enables complementary coverage of prompt-level, structural, and distributional violations.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06238v1",
+      "title": "Generative Criticality in Large Language Model Temperature Scaling",
+      "authors": [
+        "Huajian Ruan",
+        "Jinyang Li",
+        "Xingyu Guo",
+        "Lingxiao Wang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cond-mat.stat-mech",
+        "hep-lat"
+      ],
+      "abstract": "This paper introduces a statistical-field framework to analyze LLM text generation, modeling token embeddings as spins on a chain. They observe a sharp peak in susceptibility and a rapid change in an order parameter near a characteristic temperature $T_c$, indicating a phase transition-like behavior. This phenomenon, robust across model sizes, suggests a critical point in LLM generation that influences semantic direction.",
+      "url": "http://arxiv.org/abs/2606.06238v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06238v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2606.06447v1",
+      "title": "Latent Reasoning with Normalizing Flows",
+      "authors": [
+        "Guancheng Tu",
+        "Xiangjun Fu",
+        "Suhao Yu",
+        "Yao Tang",
+        "Haoqiang Kang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper proposes NF-CoT, a novel latent reasoning framework for large language models. It leverages normalizing flows to represent intermediate reasoning steps in continuous latent spaces, offering a higher-bandwidth alternative to explicit textual chain-of-thought. NF-CoT's core contribution is preserving the advantages of traditional autoregressive generation, such as left-to-right generation and probabilistic sampling, while enabling efficient and effective latent reasoning.",
+      "url": "http://arxiv.org/abs/2606.06447v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06447v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.06447v1/x1.png",
+      "figure_caption": "Four paradigms for chain-of-thought reasoning. Explicit CoT : discrete text tokens. Coconut : deterministic hidden states. LaDiR : iteratively denoised latents using diffusion. NF-CoT (ours) : AR-sampled continuous thoughts.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2606.06302v1",
+      "title": "Tangram: Unlocking Non-Uniform KV Cache for Efficient Multi-turn LLM Serving",
+      "authors": [
+        "Hyungmin Kim",
+        "Minsoo Kim",
+        "Hongseok Kim",
+        "Jungwook Choi"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.SE"
+      ],
+      "abstract": "Tangram addresses the inefficiency of non-uniform KV caching in multi-turn LLM serving by introducing a novel system. Its core method involves deterministic budget allocation for KV cache heads, eliminating scheduling overhead and prefill stalls. This approach unlocks efficient utilization of non-uniform KV caches, significantly improving LLM serving performance.",
+      "url": "http://arxiv.org/abs/2606.06302v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06302v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.06302v1/x1.png",
+      "figure_caption": "Figure 1 . (a) KV cache size growth for Qwen2.5-32B with the number of conversation sessions (top, # requests = 16) or with the # of requests (bottom, session number = 10). The dashed line indicates the model weight size. (b) Comparison of uniform and non-uniform KV compression strategies at a 50% compression rate, where the numbers in each box denote the importance score of each KV entry.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2606.06428v1",
+      "title": "Reinforcement Learning Elicits Contextual Learning of Unseen Language Translation",
+      "authors": [
+        "Hanxu Hu",
+        "Zdeněk Šnajdr",
+        "Pinzhen Chen",
+        "Jannis Vamvas",
+        "Rico Sennrich"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper proposes a reinforcement learning (RL) method to enable large language models (LLMs) to translate unseen languages by learning to utilize provided linguistic context. Instead of memorizing specific languages, the RL agent learns a meta-skill to extract and apply relevant information from the context, leading to improved zero-shot translation performance on entirely new languages. This approach offers a more generalizable way to handle extremely low-resource translation compared to traditional fine-tuning or in-context learning.",
+      "url": "http://arxiv.org/abs/2606.06428v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06428v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.06428v1/x1.png",
+      "figure_caption": "Train–test context mismatch (RL, Qwen3-4B-Base). Test-time context dominates: no/full > full/no in every panel (En → \\( \\to \\) Kal: 0.28 0.28 vs. 0.17 0.17 ).",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2606.06360v1",
+      "title": "An Infectious Disease Spread Simulation Based on Large Language Model Decision Making",
+      "authors": [
+        "Yonchanok Khaokaew",
+        "Ruochen Kong",
+        "Andreas Zufle",
+        "Hao Xue",
+        "Taylor Anderson"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces a novel agent-based simulation for infectious disease spread that leverages Large Language Models (LLMs) to model individual decision-making. The core method integrates LLM-generated self-reporting decisions into a spatially grounded synthetic population, using real census data to capture demographic and geographic distributions. The key contribution is demonstrating how LLMs can realistically simulate diverse behavioral influences (independent, household, message framing) on disease reporting within a city, offering a more nuanced approach to public health modeling.",
+      "url": "http://arxiv.org/abs/2606.06360v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06360v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2606.06360v1/x1.png",
+      "figure_caption": "Figure 1 . Infectious Disease Data Simulator: Overview.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06380v1",
+      "title": "Emergent Language as an Approach to Conscious AI",
+      "authors": [
+        "Zengqing Wu",
+        "Chuan Xiao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA",
+        "cs.NE"
+      ],
+      "abstract": "This paper proposes a novel generative approach to studying conscious AI by developing \"emergent language\" (EL) in multi-agent reinforcement learning. Instead of relying on pre-defined checklists or human-inspired modules, EL allows agents to develop communication from scratch, driven solely by task demands. This method aims to ensure that any observed consciousness-relevant structures are causally attributable to task pressures, not inherited human language priors, offering a more robust way to investigate the origins of complex communication and potentially consciousness.",
+      "url": "http://arxiv.org/abs/2606.06380v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06380v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2606.06380v1/x1.png",
+      "figure_caption": "EL as a methodological approach to conscious AI. (1) Using “blue” as an example, the figure separates the private phenomenal question (what it is like to experience blue) from the empirically accessible structures surrounding “seeing blue.” An agent may observe blue, ground a symbol for blue through interaction with blue objects, and develop emergent communication that makes latent internal structure inferable. A possible instance of such latent structure is self-reference, as in “I am seeing blue.” This does not show that blue has any subjective feel for the agent; the qualitative character of blueness remains bracketed by epoché. (2) The figure also contrasts the EL route with the LLM route, where apparent self-reference may reflect inherited human language priors. (3) The methodological claim is functional: EL provides a grounded, empirically accessible window onto consciousness-relevant latent structures, not direct evidence of qualia.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06493v1",
+      "title": "HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers",
+      "authors": [
+        "Lizhi Yang",
+        "Junheng Li",
+        "Nehar Poddar",
+        "Yiling Hou",
+        "Gio Huh"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "abstract": "This paper introduces HANDOFF, a novel whole-body controller for humanoids that uses a compact, task-space interface instead of dense kinematic references. HANDOFF is a mixture-of-experts model distilled from specialized teachers for motion tracking, locomotion, and fall recovery. Its core contribution is enabling intuitive task planning by providing an expressive and modular interface for humanoid manipulation.",
+      "url": "http://arxiv.org/abs/2606.06493v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06493v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2606.06493v1/figures/head.png",
+      "figure_caption": "HANDOFF is a whole-body controller distilled from multiple teachers that accepts a compact, explicit 10-D planner-facing command. We demonstrate its effectiveness using a VLM-powered agentic planner that does not need extensive demonstration collection or model fine-tuning.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.06473v1",
+      "title": "MLEvolve: A Self-Evolving Framework for Automated Machine Learning Algorithm Discovery",
+      "authors": [
+        "Shangheng Du",
+        "Xiangchao Yan",
+        "Jinxin Shi",
+        "Zongsheng Cao",
+        "Shiyang Feng"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "MLEvolve is a self-evolving framework for automated machine learning algorithm discovery that addresses limitations of existing LLM agents. Its core method involves an extended tree search (Progressive MCGS) with graph-based references for cross-branch information flow and an entropy-inspired schedule for focused search. MLEvolve's key contribution is its Retrospective Memory, which combines domain knowledge with dynamic global memory to enable agents to learn and reuse experience for long-horizon optimization.",
+      "url": "http://arxiv.org/abs/2606.06473v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06473v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2606.06473v1/x1.png",
+      "figure_caption": "Overview of MLEvolve that summarizes its core components and supported tasks. Existing MLE agents suffer from inter-branch isolation, memoryless exploration, and lack of hierarchical control. MLEvolve addresses these through Progressive MCGS, Retrospective Memory, and Hierarchical Planning with Adaptive Code Generation, supporting long-horizon iterative optimization tasks, such as end-to-end MLE and mathematical algorithm discovery.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "hacker_news": [
+    {
+      "id": 48400842,
+      "title": "When AI Builds Itself: Our progress toward recursive self-improvement",
+      "url": "https://www.anthropic.com/institute/recursive-self-improvement",
+      "score": 460,
+      "created_at": "2026-06-04T16:20:17Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48400842",
+      "summary": "AI is making progress towards recursive self-improvement, where AI systems can autonomously enhance their own capabilities, leading to potentially rapid advancements."
+    },
+    {
+      "id": 48403980,
+      "title": "Anthropic's open-source framework for AI-powered vulnerability discovery",
+      "url": "https://github.com/anthropics/defending-code-reference-harness",
+      "score": 432,
+      "created_at": "2026-06-04T20:11:20Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48403980",
+      "summary": "Anthropic has released an open-source framework that uses AI to help discover vulnerabilities in code."
+    },
+    {
+      "id": 48406358,
+      "title": "Open Code Review – An AI-powered code review CLI tool",
+      "url": "https://github.com/alibaba/open-code-review",
+      "score": 186,
+      "created_at": "2026-06-05T00:04:29Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48406358",
+      "summary": "This tech news story introduces Open Code Review, an AI-powered command-line interface tool designed to automate and enhance the code review process."
+    },
+    {
+      "id": 48400311,
+      "title": "Google employees internally share memes about how its AI sucks",
+      "url": "https://www.404media.co/google-employees-internally-share-memes-about-how-its-ai-sucks/",
+      "score": 160,
+      "created_at": "2026-06-04T15:42:33Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48400311",
+      "summary": "Google employees are humorously expressing dissatisfaction with the company's AI through internal memes, highlighting perceived shortcomings."
+    },
+    {
+      "id": 48406198,
+      "title": "South Korean Forums Will Need to Scan Every Images with AI Censorship Tools",
+      "url": "https://discuss.privacyguides.net/t/south-korean-online-communities-will-need-to-scan-every-images-with-ai-censorship-tools/38341",
+      "score": 136,
+      "created_at": "2026-06-04T23:45:56Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48406198",
+      "summary": "South Korean online forums will soon be required to use AI tools to scan all uploaded images for prohibited content."
+    },
+    {
+      "id": 48399974,
+      "title": "KVarN: Native vLLM backend for KV-cache quantization by Huawei",
+      "url": "https://github.com/huawei-csl/KVarN",
+      "score": 136,
+      "created_at": "2026-06-04T15:18:00Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48399974",
+      "summary": "Huawei's KVarN is a new native vLLM backend that enables KV-cache quantization, aiming to improve the efficiency of large language models."
+    },
+    {
+      "id": 48400213,
+      "title": "The LLM warnings Google fired Timnit Gebru over have all come true",
+      "url": "https://www.tumblr.com/dreaminginthedeepsouth/817865966907228160/darren-oconnor-timnit-gebru-was-fired-from",
+      "score": 113,
+      "created_at": "2026-06-04T15:34:43Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48400213",
+      "summary": "Google's fears about LLM harms, which led to Timnit Gebru's dismissal, are now manifesting as predicted."
+    }
+  ],
+  "github_trending": [
+    {
+      "full_name": "chopratejas/headroom",
+      "url": "https://github.com/chopratejas/headroom",
+      "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+      "stars_today": 3142,
+      "total_stars": 13757,
+      "language": "Python",
+      "topics": [],
+      "summary": "Headroom is a library and proxy that compresses LLM inputs like tool outputs, logs, and RAG chunks by 60-95% to reduce token usage while maintaining answer quality, functioning as an MCP server."
+    },
+    {
+      "full_name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "description": "The agent that grows with you",
+      "stars_today": 1913,
+      "total_stars": 181811,
+      "language": "Python",
+      "topics": [],
+      "summary": "Hermes-Agent is a Python-based AI agent designed for flexible and evolving task execution, featuring a modular architecture and a focus on adaptability to user needs."
+    },
+    {
+      "full_name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "stars_today": 1750,
+      "total_stars": 207819,
+      "language": "JavaScript",
+      "topics": [],
+      "summary": "This repository provides an agent harness for performance optimization, focusing on skills, instincts, memory, security, and research-first development for various AI code assistants like Claude Code and Codex."
+    },
+    {
+      "full_name": "PaddlePaddle/PaddleOCR",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "description": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.",
+      "stars_today": 141,
+      "total_stars": 80266,
+      "language": "Python",
+      "topics": [],
+      "summary": "PaddleOCR is a powerful, lightweight OCR toolkit that extracts structured data from PDFs and images across over 100 languages, bridging the gap between visual documents and AI models."
+    },
+    {
+      "full_name": "github/spec-kit",
+      "url": "https://github.com/github/spec-kit",
+      "description": "💫 Toolkit to help you get started with Spec-Driven Development",
+      "stars_today": 321,
+      "total_stars": 108915,
+      "language": "Python",
+      "topics": [],
+      "summary": "Spec-kit is a toolkit designed to simplify and accelerate the adoption of Spec-Driven Development by providing essential tools and guidance for getting started."
+    },
+    {
+      "full_name": "NVIDIA/cosmos",
+      "url": "https://github.com/NVIDIA/cosmos",
+      "description": "NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables developers to build Physical AI for robots, autonomous vehicles, smart infrastructure, and more.",
+      "stars_today": 133,
+      "total_stars": 9249,
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "summary": "NVIDIA Cosmos is an open platform providing world models, datasets, and tools to empower developers in building Physical AI for applications like robotics and autonomous vehicles."
+    },
+    {
+      "full_name": "lfnovo/open-notebook",
+      "url": "https://github.com/lfnovo/open-notebook",
+      "description": "An Open Source implementation of Notebook LM with more flexibility and features",
+      "stars_today": 212,
+      "total_stars": 25498,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "This repository provides an open-source implementation of Notebook LM, offering enhanced flexibility and features for notebook-based language model interactions."
+    },
+    {
+      "full_name": "Open-LLM-VTuber/Open-LLM-VTuber",
+      "url": "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber",
+      "description": "Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms",
+      "stars_today": 581,
+      "total_stars": 9876,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository enables hands-free, voice-interactive Live2D VTubing with any LLM, featuring voice interruption and local operation across platforms."
+    },
+    {
+      "full_name": "jwasham/coding-interview-university",
+      "url": "https://github.com/jwasham/coding-interview-university",
+      "description": "A complete computer science study plan to become a software engineer.",
+      "stars_today": 632,
+      "total_stars": 350097,
+      "language": "",
+      "topics": [],
+      "summary": "This repository provides a comprehensive computer science study plan designed to prepare individuals for software engineering interviews, covering essential topics and resources."
+    }
+  ],
+  "us_stocks": [],
+  "postdoc_jobs": [],
+  "jobs": [],
+  "supervisor_updates": [],
+  "weather": [
+    {
+      "query": "London",
+      "label": "London, England, United Kingdom",
+      "resolved_name": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "timezone": "Europe/London",
+      "forecast_date": "2026-06-05",
+      "condition": "Overcast",
+      "weather_code": 3,
+      "temperature_c": 16.6,
+      "apparent_temperature_c": 13.3,
+      "temp_max_c": 18.1,
+      "temp_min_c": 12.4,
+      "humidity_pct": 48,
+      "wind_speed_kmh": 15.5,
+      "precipitation_probability_pct": 10,
+      "is_day": true,
+      "sunrise": "2026-06-05T04:46",
+      "sunset": "2026-06-05T21:12",
+      "source": "Open-Meteo",
+      "source_url": "https://open-meteo.com/"
+    }
+  ]
+}
