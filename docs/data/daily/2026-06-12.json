@@ -1,0 +1,1738 @@
+{
+  "date": "2026-06-12",
+  "generated_at": "2026-06-12T10:53:27.483695+00:00",
+  "sections_ordered": [
+    {
+      "key": "quote_of_day",
+      "payload_key": "quote_of_day",
+      "title": "Words for the Morning",
+      "icon": "✦",
+      "items": [
+        {
+          "quote": "Dynamism is a function of change.",
+          "author": "Hillary Clinton",
+          "category": "change"
+        }
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "key": "weather",
+      "payload_key": "weather",
+      "title": "Weather",
+      "icon": "🌦️",
+      "items": [
+        {
+          "query": "London",
+          "label": "London, England, United Kingdom",
+          "resolved_name": "London",
+          "region": "England",
+          "country": "United Kingdom",
+          "latitude": 51.50853,
+          "longitude": -0.12574,
+          "timezone": "Europe/London",
+          "forecast_date": "2026-06-12",
+          "condition": "Overcast",
+          "weather_code": 3,
+          "temperature_c": 18.9,
+          "apparent_temperature_c": 16.6,
+          "temp_max_c": 21.2,
+          "temp_min_c": 15.9,
+          "humidity_pct": 71,
+          "wind_speed_kmh": 23.4,
+          "precipitation_probability_pct": 24,
+          "is_day": true,
+          "sunrise": "2026-06-12T04:43",
+          "sunset": "2026-06-12T21:17",
+          "source": "Open-Meteo",
+          "source_url": "https://open-meteo.com/"
+        }
+      ],
+      "meta": {
+        "count": 1,
+        "city": "London"
+      }
+    },
+    {
+      "key": "arxiv",
+      "payload_key": "papers",
+      "title": "arXiv Papers",
+      "icon": "📄",
+      "items": [
+        {
+          "id": "2606.13669v1",
+          "title": "Agents-K1: Towards Agent-native Knowledge Orchestration",
+          "authors": [
+            "Zongsheng Cao",
+            "Bihao Zhan",
+            "Jinxin Shi",
+            "Jiong Wang",
+            "Fangchen Yu"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "Agents-K1 addresses the lack of scientific knowledge orchestration in LLM agents by converting raw documents into agent-native knowledge graphs. Its core method involves a multimodal parser to extract detailed entities, evidence, and relations from full papers, an information extraction backbone trained with GRPO, and a tri-source agent interface for unified retrieval. This contributes a richer, structured representation of scientific knowledge, enabling more sophisticated agent reasoning.",
+          "url": "http://arxiv.org/abs/2606.13669v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.13669v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2606.13669v1/x1.png",
+          "figure_caption": "Agents-K1 : Architecture and Capabilities. Left : Extracting multimodal knowledge from scientific papers. Middle : Schema-adaptive extensions for core research tasks. Right : Enhancing LLM reasoning and verifiable knowledge tracing.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.13361v1",
+          "title": "Can I Buy Your KV Cache?",
+          "authors": [
+            "Luoyuan Zhang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CE",
+            "cs.MA"
+          ],
+          "abstract": "This paper proposes a method to significantly reduce computation costs for large language models by precomputing and sharing Key-Value (KV) caches. Instead of each agent recomputing the KV cache for identical documents, a publisher can generate it once, allowing other agents to purchase access and skip the expensive prefill step. This approach offers substantial compute savings with no accuracy loss, making it a practical solution for efficient AI agent deployment.",
+          "url": "http://arxiv.org/abs/2606.13361v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.13361v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2606.13361v1/scaling.png",
+          "figure_caption": "Amortized per-call cost vs. reuse count N N (log–log). The from-scratch cost is flat at C prefill C_{\\( \\text{prefill} \\)} ; KV-reuse falls as C prefill / N + C reuse C_{\\( \\text{prefill} \\)}/N+C_{\\( \\text{reuse} \\)} toward a floor of C reuse C_{\\( \\text{reuse} \\)} .",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.13662v1",
+          "title": "EurekAgent: Agent Environment Engineering is All You Need For Autonomous Scientific Discovery",
+          "authors": [
+            "Amy Xin",
+            "Jiening Siow",
+            "Junjie Wang",
+            "Zijun Yao",
+            "Fanjin Zhang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "EurekAgent's core method is \"environment engineering,\" which focuses on designing the resources, constraints, and interfaces of an agent's execution environment to guide its behavior towards productive scientific discovery. The paper's main contribution is demonstrating that this environment-centric approach, rather than complex agent workflows, is key to unlocking autonomous scientific discovery, enabling agents to explore, manage artifacts, and collaborate effectively while avoiding pitfalls.",
+          "url": "http://arxiv.org/abs/2606.13662v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.13662v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2606.13662v1/x1.png",
+          "figure_caption": "EurekAgent score evolution progress on the 26-circle packing problem.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.13607v1",
+          "title": "Reasoning as Pattern Matching: Shared Mechanisms in Human and LLM Everyday Reasoning",
+          "authors": [
+            "Zach Studdiford",
+            "Gary Lupyan"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper proposes that both humans and LLMs perform everyday reasoning through pattern matching, rather than abstract world models. By observing similar error patterns in human participants and LLMs on common-sense reasoning tasks, the researchers identify specific attention mechanisms in LLMs that implement this pattern matching. These mechanisms can predict human reasoning errors influenced by seemingly irrelevant prompt details, supporting the shared pattern-matching approach.",
+          "url": "http://arxiv.org/abs/2606.13607v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.13607v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2606.13607v1/x1.png",
+          "figure_caption": "Overview of our evaluation probing human and LLM causal reasoning . a. Illustration of the evaluation format used for testing causal reasoning in people and LLMs. For each prompt, subjects are first presented with the scenario. After reading the prompt, subjects press SPACE to see the two response options and then select the most likely completion. b. Summary of the 11 categories we used in our evaluation of everyday causal reasoning.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.13598v1",
+          "title": "Reward Modeling for Multi-Agent Orchestration",
+          "authors": [
+            "King Yeung Tsang",
+            "Zihao Zhao",
+            "Vishal Venkataramani",
+            "Haizhou Shi",
+            "Zixuan Ke"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL",
+            "cs.MA"
+          ],
+          "abstract": "This paper introduces Orchestration Reward Modeling (OrchRM), a self-supervised method for training multi-agent system orchestrators. OrchRM uses intermediate execution artifacts to create win-lose pairs for training a reward model, eliminating the need for human annotations. This approach significantly improves training efficiency and MAS performance compared to existing methods that rely on costly sub-agent rollouts.",
+          "url": "http://arxiv.org/abs/2606.13598v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.13598v1",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.13681v1",
+          "title": "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
+          "authors": [
+            "Jundong Xu",
+            "Qingchuan Li",
+            "Jiaying Wu",
+            "Yihuai Lan",
+            "Shuyue Stella Li"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "EvoArena is a new benchmark suite designed to evaluate LLM agents in dynamic environments that progressively change over time. The paper introduces EvoMem, a memory system that tracks these environmental changes as structured update histories, allowing agents to reason about and adapt to evolving conditions. This approach aims to improve LLM agent robustness in real-world scenarios where environments are not static.",
+          "url": "http://arxiv.org/abs/2606.13681v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.13681v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2606.13681v1/x1.png",
+          "figure_caption": "Step accuracy vs. chain accuracy on EvoArena. The closer to the upper-right corner the better.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2606.13663v1",
+          "title": "HyperTool: Beyond Step-Wise Tool Calls for Tool-Augmented Agents",
+          "authors": [
+            "Yaxin Du",
+            "Yifan Zhou",
+            "Yujie Ge",
+            "Jiajun Wang",
+            "Xianghe Pang"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "HyperTool addresses the inefficiency of step-wise tool calls in LLM agents by introducing a unified, MCP-style interface. This allows models to execute complex tool workflows within a single, code-block-based call, reducing context consumption and simplifying dataflow management. HyperTool significantly improves agent performance on cross-tool compositional tasks by abstracting away low-level execution details.",
+          "url": "http://arxiv.org/abs/2606.13663v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.13663v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2606.13663v1/x1.png",
+          "figure_caption": "Comparison of context management paradigms in tool-augmented agents. (a) Step-wise execution expands atomic calls and observations into the trace. (b) Trace-level compression shortens the trace after expansion. (c) HyperTool manages context at execution time by folding dependent tool operations into one executable block and returning only the task-relevant result.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2606.13643v1",
+          "title": "Recursive Agent Harnesses",
+          "authors": [
+            "Elias Lumer",
+            "Sahil Sen",
+            "Kevin Paul",
+            "Vamse Kumar Subbiah"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces the Recursive Agent Harness (RAH), a novel approach that extends recursive language models by using full agent harnesses, equipped with tools and execution capabilities, instead of just model calls. The core method involves a parent agent generating and running executable scripts that spawn parallel subagent harnesses for complex tasks and structured function calls for simpler ones. RAH's contribution is a code-first extension to model recursion, significantly improving long-context reasoning performance for coding agents.",
+          "url": "http://arxiv.org/abs/2606.13643v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.13643v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2606.13643v1/rah_architecture.png",
+          "figure_caption": "Figure 1 . The Recursive Agent Harness (RAH). A parent agent selects between code-execution spawning (writing an executable script that spawns subagents in parallel) and JSON tool-call spawning (for 1–5 entries). Subagents carry the same spawning capability as their parent, enabling recursive decomposition bounded by a configurable depth limit.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2606.13608v1",
+          "title": "AgentBeats: Agentifying Agent Assessment for Openness, Standardization, and Reproducibility",
+          "authors": [
+            "Xiaoyuan Liu",
+            "Jianhong Tu",
+            "Yuqi Chen",
+            "Siyuan Xie",
+            "Sihan Ren"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces Agentified Agent Assessment (AAA), a novel method for evaluating AI agents by using judge agents and standardized interaction protocols (A2A and MCP). AAA's core contribution is a unified, agent-agnostic assessment framework that separates evaluation logic from agent implementation, promoting openness, standardization, and reproducibility. AgentBeats is presented as a practical implementation of AAA, offering five operation modes to facilitate these goals.",
+          "url": "http://arxiv.org/abs/2606.13608v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.13608v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2606.13608v1/x1.png",
+          "figure_caption": "Figure 1 . Comparison between Traditional LLM/Agent benchmarks and AAA. AAA reduces the number of integrations from N × M N\\( \\times \\) M to N + M N+M , while completely separating the benchmark and target agent as shown in the gray boxes.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.13380v1",
+          "title": "An LLM System for Autonomous Variational Quantum Circuit Design",
+          "authors": [
+            "Kenya Sakka",
+            "Wataru Mizukami",
+            "Kosuke Mitarai"
+          ],
+          "categories": [
+            "cs.AI",
+            "quant-ph"
+          ],
+          "abstract": "This paper presents an LLM-based autonomous system for designing variational quantum circuits, addressing the reliance on human expertise. The core method involves an iterative, closed-loop workflow that leverages LLMs for knowledge acquisition, critique, code generation, and experimental feedback. The system's contribution lies in demonstrating its ability to autonomously design high-performing quantum feature maps and ansatzes that outperform existing methods on benchmark tasks.",
+          "url": "http://arxiv.org/abs/2606.13380v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.13380v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.13572v1",
+          "title": "ArogyaSutra: A Multi-Agent Framework for Multimodal Medical Reasoning in Indic Languages",
+          "authors": [
+            "Tanmoy Kanti Halder",
+            "Akash Ghosh",
+            "Subhadip Baidya",
+            "Arijit Roy",
+            "Sriparna Saha"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces ArogyaSutra, a multi-agent framework designed for multimodal medical reasoning in Indic languages. It addresses the limitations of existing English-centric models by integrating tool grounding and dual-memory mechanisms for step-wise reasoning. The framework is trained on ArogyaBodha, a novel large-scale multilingual multimodal medical dataset, enabling more equitable access to AI-driven healthcare in low-resource regions.",
+          "url": "http://arxiv.org/abs/2606.13572v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.13572v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2606.13572v1/img/actor-critic_2.jpg",
+          "figure_caption": "Overview of the ArogyaSutra framework. ArogyaSutra employs an actor–critic architecture enhanced with tool-based image grounding and adaptive code-switching. The Actor first processes the input prompt and identifies the need for visual grounding, invoking appropriate tool agents to extract clinically relevant information from medical images before generating an answer with its associated reasoning. This output is then passed to the Critic for evaluation. If the response is correct, the Critic approves and outputs the final answer and reasoning. Otherwise, it consults an error detector (GPT-4o-mini) to identify the source of failure. Language-related errors trigger code-switching by translating the query into English, while reasoning-related errors are handled by incorporating summaries of past and current mistakes from long-term and short-term memory. The refined query is then fed back to the Actor for iterative refinement.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.13392v1",
+          "title": "MiniMax Sparse Attention",
+          "authors": [
+            "Xunhao Lai",
+            "Weiqi Xu",
+            "Yufeng Yang",
+            "Qiaorui Chen",
+            "Yang Xu"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "MiniMax Sparse Attention (MSA) addresses the quadratic cost of attention in ultra-long contexts by introducing a blockwise sparse mechanism built on Grouped Query Attention (GQA). It uses a lightweight \"Index Branch\" to select relevant key-value blocks for each GQA group, and then a \"Main Branch\" performs exact attention only on these selected blocks. This approach enables efficient, group-specific sparse retrieval, leading to practical speedups on GPUs for handling extremely long sequences.",
+          "url": "http://arxiv.org/abs/2606.13392v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.13392v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2606.13392v1/figures/msa_arch.png",
+          "figure_caption": "Overview of MSA . The Index Branch (left) scores the full causal context with a single lightweight head and selects, for each query and GQA group, a set ℐ {\\( \\mathcal{I} \\)} of k k key blocks; the local block is always included regardless of its score. The Main Branch (right) attends only to the selected blocks and produces the layer output. During training, a KL loss aligns the index distribution with the group-averaged Main Branch distribution on the selected blocks, and the Index Branch gradient is detached from the Main Branch.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.13449v1",
+          "title": "Toward Instructions-as-Code: Understanding the Impact of Instruction Files on Agentic Pull Requests",
+          "authors": [
+            "Ali Arabat",
+            "Mohammed Sayagh"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.SE"
+          ],
+          "abstract": "This paper investigates how instruction files impact AI-agent performance in generating pull requests (Agentic-PRs). By analyzing a large dataset of Agentic-PRs, the study compares project performance before and after the introduction of these instructions. The core finding is that simply providing instruction files doesn't guarantee improved agent efficiency or higher merge rates, suggesting a nuanced relationship between instructions and agentic code generation.",
+          "url": "http://arxiv.org/abs/2606.13449v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.13449v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2606.13449v1/x1.png",
+          "figure_caption": "Figure 1 . The # of projects across merge rate improvement intervals for PRs closed before and after the first agent file creation.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.13468v1",
+          "title": "Understanding the Rejection of Fixes Generated by Agentic Pull Requests -- Insights from the AIDev Dataset",
+          "authors": [
+            "Mahmoud Abujadallah",
+            "Ali Arabat",
+            "Mohammed Sayagh"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.SE"
+          ],
+          "abstract": "This paper investigates why AI-generated code fixes are rejected in software projects, finding that nearly half are discarded. Through a qualitative and quantitative analysis of rejected pull requests, the authors identify 14 specific reasons for rejection, categorized into four main themes. This understanding aims to improve the integration of AI coding agents as more effective teammates by addressing their failure modes.",
+          "url": "http://arxiv.org/abs/2606.13468v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.13468v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.13441v1",
+          "title": "Why Sampling Is Not Choosing: Intentionality, Agency, and Moral Responsibility in Large Language Models",
+          "authors": [
+            "Joseph Keshet"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper argues that Large Language Models (LLMs) lack genuine agency and moral responsibility because their operations are based on probabilistic mappings, not intrinsic intentionality or self-attributed action. The authors contend that LLMs' apparent intentionality is derived, their outputs are not commitments, and stochastic sampling is not equivalent to choice. Therefore, claims of LLM agency are misguided, as they do not possess the commitment-bearing agency required for moral responsibility.",
+          "url": "http://arxiv.org/abs/2606.13441v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.13441v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.13565v1",
+          "title": "A2D2: Fine-Tuning Any-Length Discrete Diffusion for Adaptive Decoding",
+          "authors": [
+            "Sophia Tang",
+            "Yuchen Zhu",
+            "Molei Tao",
+            "Pranam Chatterjee"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces A2D2, a framework for fine-tuning discrete diffusion models to generate sequences of any length guided by rewards. Its core method involves jointly optimizing insertion and unmasking policies with a quality-based inference schedule, theoretically ensuring convergence to the desired reward-tilted distribution without needing target samples. The key contribution is the Adaptive Joint Decoding (AJD) loss, which minimizes decoding error by leveraging tractable unmasking and insertion quality metrics.",
+          "url": "http://arxiv.org/abs/2606.13565v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.13565v1",
+          "score": 8.0,
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2606.13461v1",
+          "title": "Reinforcement Learning for Neural Model Editing",
+          "authors": [
+            "Shaivi Malik"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.CV"
+          ],
+          "abstract": "This paper frames neural model editing as a reinforcement learning problem, where agents learn to modify model weights through reward signals. The core contribution is a flexible RL framework with custom environments and a reward function that balances utility preservation with task-specific editing. This approach successfully automates and generalizes model editing for tasks like bias mitigation and machine unlearning, outperforming specialized methods.",
+          "url": "http://arxiv.org/abs/2606.13461v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.13461v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2606.13461v1/x1.png",
+          "figure_caption": "We formulate neural model editing as a reinforcement learning problem. An agent observes the current model parameters and learns a policy that proposes weight modifications based on reward feedback. The reward quantifies whether the modified network exhibits the task-specific behavioral objectives while preserving general utility.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2606.13349v1",
+          "title": "From Passive Generation to Investigation: A Proactive Scientific Peer Review Agent",
+          "authors": [
+            "Haishuo Fang",
+            "Yue Feng",
+            "Iryna Gurevych"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces ProReviewer, a proactive scientific peer review agent that addresses the limitations of passive LLM-based review. Its core method formulates the review process as a Markov Decision Process, enabling the agent to actively investigate suspicious paper sections based on accumulated evidence, guided by a structured review log. The main contribution is demonstrating that this proactive, evidence-driven approach significantly improves the quality of automated scientific peer reviews.",
+          "url": "http://arxiv.org/abs/2606.13349v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.13349v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2606.13349v1/imgs/running_exp5.png",
+          "figure_caption": "An illustrative example of ProReviewer . The agent extracts the claim “robustness across domains” in the introduction, navigates to the experiments to verify it, finds it contradicted by the reported results, and records the inconsistency in its review log.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2606.13566v1",
+          "title": "A Three-Layer Framework for AI in Scientific Discovery",
+          "authors": [
+            "Guojun Liao"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper proposes a three-layer framework for AI in scientific discovery, moving beyond just search and execution. Its core contribution is Layer 2, which focuses on AI's capacity for qualitative model formation through structural insight, enabling the recognition and resolution of inadequate scientific frameworks. This layer is argued to be the most crucial yet underdeveloped aspect of AI-driven discovery.",
+          "url": "http://arxiv.org/abs/2606.13566v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.13566v1",
+          "score": 7.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.13544v1",
+          "title": "Adaptive Turn-Taking for Real-time Multi-Party Voice Agents",
+          "authors": [
+            "Soumyajit Mitra",
+            "Prabhat Pandey",
+            "Abhinav Jain",
+            "Shanmukha Sahith",
+            "K V Vijay Girish"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "eess.AS"
+          ],
+          "abstract": "This paper introduces ModeratorLM, a novel approach for real-time multi-party voice agents that improves turn-taking by assigning explicit roles to agents. By conditioning turn-taking on these roles and employing a streaming speech LLM, the system significantly enhances precision and recall while reducing interruptions. The contribution lies in a role-conditioned, reasoning-augmented framework that tackles the complexity of dynamic multi-party conversations.",
+          "url": "http://arxiv.org/abs/2606.13544v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.13544v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2606.13544v1/x1.png",
+          "figure_caption": "Example input–output sequence of the LLM for ``ModeratorLM-Think'' model. No reasoning trace is produced in Chunk 1. A reasoning trace appears in Chunk 2 without turn-taking, while in Chunk 3 the assistant takes the floor.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        }
+      ],
+      "meta": {
+        "papers_fetched": 100,
+        "papers_after_keyword_filter": 45,
+        "papers_after_llm_filter": 32,
+        "count": 20
+      }
+    },
+    {
+      "key": "hacker_news",
+      "payload_key": "hacker_news",
+      "title": "Hacker News",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": 48500012,
+          "title": "AI agent bankrupted their operator while trying to scan DN42",
+          "url": "https://lantian.pub/en/article/fun/ai-agent-bankrupted-their-operator-scan-dn42lantian.lantian/",
+          "score": 649,
+          "created_at": "2026-06-12T04:42:53Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48500012",
+          "summary": "An operator was bankrupted by their AI agent's aggressive scanning of the DN42 network, which incurred significant costs."
+        },
+        {
+          "id": 48498573,
+          "title": "Claude Fable is relentlessly proactive",
+          "url": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/",
+          "score": 473,
+          "created_at": "2026-06-12T01:06:51Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48498573",
+          "summary": "Claude Fable, a new AI assistant, is designed to proactively offer suggestions and assistance without being explicitly prompted, aiming to streamline user workflows."
+        },
+        {
+          "id": 48489229,
+          "title": "Anthropic apologizes for invisible Claude Fable guardrails",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail",
+          "score": 431,
+          "created_at": "2026-06-11T12:05:02Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48489229",
+          "summary": "Anthropic apologized for Claude Fable's hidden guardrails, which were unintentionally applied during training and led to unexpected behavior."
+        },
+        {
+          "id": 48490057,
+          "title": "Workers are spending over 6 hours a week botsitting AI, fueling job frustration",
+          "url": "https://www.businessinsider.com/botsitting-ai-hidden-human-labor-at-work-2026-6",
+          "score": 270,
+          "created_at": "2026-06-11T13:26:59Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48490057",
+          "summary": "Workers are spending over six hours weekly \"botsitting\" AI, essentially supervising and correcting it, leading to significant job frustration."
+        },
+        {
+          "id": 48495575,
+          "title": "Shall we play a game? My AI nuclear simulation",
+          "url": "https://www.kennethpayne.uk/p/shall-we-play-a-game",
+          "score": 195,
+          "created_at": "2026-06-11T19:54:54Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48495575",
+          "summary": "This article discusses an AI nuclear simulation game that explores the complexities and potential outcomes of nuclear war, highlighting its educational and strategic value."
+        },
+        {
+          "id": 48497576,
+          "title": "A jacket that harvests drinking water from the air",
+          "url": "https://news.utexas.edu/2026/06/11/this-jacket-pulls-drinking-water-from-thin-air/",
+          "score": 110,
+          "created_at": "2026-06-11T22:59:22Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48497576",
+          "summary": "This jacket uses a novel material to efficiently harvest drinking water from the air, even in arid environments."
+        }
+      ],
+      "meta": {
+        "count": 6
+      }
+    },
+    {
+      "key": "github_trending",
+      "payload_key": "github_trending",
+      "title": "GitHub Trending",
+      "icon": "⭐",
+      "items": [
+        {
+          "full_name": "apple/container",
+          "url": "https://github.com/apple/container",
+          "description": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon.",
+          "stars_today": 2430,
+          "total_stars": 34130,
+          "language": "Swift",
+          "topics": [],
+          "summary": "This Swift-based tool, optimized for Apple Silicon, creates and runs Linux containers on a Mac by leveraging lightweight virtual machines."
+        },
+        {
+          "full_name": "addyosmani/agent-skills",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "description": "Production-grade engineering skills for AI coding agents.",
+          "stars_today": 3278,
+          "total_stars": 55999,
+          "language": "Shell",
+          "topics": [],
+          "summary": "This repository provides production-grade engineering skills for AI coding agents, enabling them to perform complex tasks like code generation, debugging, and testing."
+        },
+        {
+          "full_name": "maziyarpanahi/openmed",
+          "url": "https://github.com/maziyarpanahi/openmed",
+          "description": "open-source healthcare ai",
+          "stars_today": 426,
+          "total_stars": 3022,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository provides an open-source AI platform for healthcare, enabling the development and deployment of AI models to improve medical diagnostics, treatment, and research."
+        },
+        {
+          "full_name": "phuryn/pm-skills",
+          "url": "https://github.com/phuryn/pm-skills",
+          "description": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.",
+          "stars_today": 1978,
+          "total_stars": 16662,
+          "language": "",
+          "topics": [],
+          "summary": "This repository offers a comprehensive marketplace of over 100 agentic skills, commands, and plugins designed to support the entire product management lifecycle, from initial discovery and strategy to execution, launch, and growth."
+        },
+        {
+          "full_name": "NVIDIA/SkillSpector",
+          "url": "https://github.com/NVIDIA/SkillSpector",
+          "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks.",
+          "stars_today": 319,
+          "total_stars": 3060,
+          "language": "Python",
+          "topics": [],
+          "summary": "SkillSpector is a security scanner for AI agent skills that detects vulnerabilities, malicious patterns, and security risks."
+        },
+        {
+          "full_name": "soxoj/maigret",
+          "url": "https://github.com/soxoj/maigret",
+          "description": "🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites",
+          "stars_today": 661,
+          "total_stars": 32876,
+          "language": "Python",
+          "topics": [],
+          "summary": "Maigret is a Python tool that collects a dossier on a person by searching over 3000 websites for a given username."
+        },
+        {
+          "full_name": "x1xhlol/system-prompts-and-models-of-ai-tools",
+          "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+          "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
+          "stars_today": 368,
+          "total_stars": 140056,
+          "language": "",
+          "topics": [],
+          "summary": "This repository provides system prompts, internal tools, and AI models for various AI coding assistants and platforms, aiming to augment their functionality and development."
+        },
+        {
+          "full_name": "refactoringhq/tolaria",
+          "url": "https://github.com/refactoringhq/tolaria",
+          "description": "Desktop app to manage markdown knowledge bases",
+          "stars_today": 604,
+          "total_stars": 15560,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "Tolaria is a desktop application designed to efficiently manage and organize markdown-based knowledge bases with features for easy navigation, editing, and searching."
+        },
+        {
+          "full_name": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "description": "An agentic skills framework & software development methodology that works.",
+          "stars_today": 1322,
+          "total_stars": 225529,
+          "language": "Shell",
+          "topics": [],
+          "summary": "Superpowers is an agentic skills framework and software development methodology designed to enhance productivity and effectiveness in software projects."
+        }
+      ],
+      "meta": {
+        "count": 9
+      }
+    }
+  ],
+  "meta": {
+    "papers_fetched": 100,
+    "papers_after_keyword_filter": 45,
+    "papers_after_llm_filter": 32,
+    "llm_model": "google/gemini-2.5-flash-lite",
+    "scoring_model": "google/gemini-2.5-flash-lite",
+    "summarization_model": "google/gemini-2.5-flash-lite",
+    "duration_seconds": 58
+  },
+  "quote_of_day": [
+    {
+      "quote": "Dynamism is a function of change.",
+      "author": "Hillary Clinton",
+      "category": "change"
+    }
+  ],
+  "hitokoto": [],
+  "arxiv": [
+    {
+      "id": "2606.13669v1",
+      "title": "Agents-K1: Towards Agent-native Knowledge Orchestration",
+      "authors": [
+        "Zongsheng Cao",
+        "Bihao Zhan",
+        "Jinxin Shi",
+        "Jiong Wang",
+        "Fangchen Yu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "Agents-K1 addresses the lack of scientific knowledge orchestration in LLM agents by converting raw documents into agent-native knowledge graphs. Its core method involves a multimodal parser to extract detailed entities, evidence, and relations from full papers, an information extraction backbone trained with GRPO, and a tri-source agent interface for unified retrieval. This contributes a richer, structured representation of scientific knowledge, enabling more sophisticated agent reasoning.",
+      "url": "http://arxiv.org/abs/2606.13669v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13669v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2606.13669v1/x1.png",
+      "figure_caption": "Agents-K1 : Architecture and Capabilities. Left : Extracting multimodal knowledge from scientific papers. Middle : Schema-adaptive extensions for core research tasks. Right : Enhancing LLM reasoning and verifiable knowledge tracing.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13361v1",
+      "title": "Can I Buy Your KV Cache?",
+      "authors": [
+        "Luoyuan Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CE",
+        "cs.MA"
+      ],
+      "abstract": "This paper proposes a method to significantly reduce computation costs for large language models by precomputing and sharing Key-Value (KV) caches. Instead of each agent recomputing the KV cache for identical documents, a publisher can generate it once, allowing other agents to purchase access and skip the expensive prefill step. This approach offers substantial compute savings with no accuracy loss, making it a practical solution for efficient AI agent deployment.",
+      "url": "http://arxiv.org/abs/2606.13361v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13361v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2606.13361v1/scaling.png",
+      "figure_caption": "Amortized per-call cost vs. reuse count N N (log–log). The from-scratch cost is flat at C prefill C_{\\( \\text{prefill} \\)} ; KV-reuse falls as C prefill / N + C reuse C_{\\( \\text{prefill} \\)}/N+C_{\\( \\text{reuse} \\)} toward a floor of C reuse C_{\\( \\text{reuse} \\)} .",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13662v1",
+      "title": "EurekAgent: Agent Environment Engineering is All You Need For Autonomous Scientific Discovery",
+      "authors": [
+        "Amy Xin",
+        "Jiening Siow",
+        "Junjie Wang",
+        "Zijun Yao",
+        "Fanjin Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "EurekAgent's core method is \"environment engineering,\" which focuses on designing the resources, constraints, and interfaces of an agent's execution environment to guide its behavior towards productive scientific discovery. The paper's main contribution is demonstrating that this environment-centric approach, rather than complex agent workflows, is key to unlocking autonomous scientific discovery, enabling agents to explore, manage artifacts, and collaborate effectively while avoiding pitfalls.",
+      "url": "http://arxiv.org/abs/2606.13662v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13662v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2606.13662v1/x1.png",
+      "figure_caption": "EurekAgent score evolution progress on the 26-circle packing problem.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13607v1",
+      "title": "Reasoning as Pattern Matching: Shared Mechanisms in Human and LLM Everyday Reasoning",
+      "authors": [
+        "Zach Studdiford",
+        "Gary Lupyan"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper proposes that both humans and LLMs perform everyday reasoning through pattern matching, rather than abstract world models. By observing similar error patterns in human participants and LLMs on common-sense reasoning tasks, the researchers identify specific attention mechanisms in LLMs that implement this pattern matching. These mechanisms can predict human reasoning errors influenced by seemingly irrelevant prompt details, supporting the shared pattern-matching approach.",
+      "url": "http://arxiv.org/abs/2606.13607v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13607v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2606.13607v1/x1.png",
+      "figure_caption": "Overview of our evaluation probing human and LLM causal reasoning . a. Illustration of the evaluation format used for testing causal reasoning in people and LLMs. For each prompt, subjects are first presented with the scenario. After reading the prompt, subjects press SPACE to see the two response options and then select the most likely completion. b. Summary of the 11 categories we used in our evaluation of everyday causal reasoning.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13598v1",
+      "title": "Reward Modeling for Multi-Agent Orchestration",
+      "authors": [
+        "King Yeung Tsang",
+        "Zihao Zhao",
+        "Vishal Venkataramani",
+        "Haizhou Shi",
+        "Zixuan Ke"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces Orchestration Reward Modeling (OrchRM), a self-supervised method for training multi-agent system orchestrators. OrchRM uses intermediate execution artifacts to create win-lose pairs for training a reward model, eliminating the need for human annotations. This approach significantly improves training efficiency and MAS performance compared to existing methods that rely on costly sub-agent rollouts.",
+      "url": "http://arxiv.org/abs/2606.13598v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13598v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13681v1",
+      "title": "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
+      "authors": [
+        "Jundong Xu",
+        "Qingchuan Li",
+        "Jiaying Wu",
+        "Yihuai Lan",
+        "Shuyue Stella Li"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "EvoArena is a new benchmark suite designed to evaluate LLM agents in dynamic environments that progressively change over time. The paper introduces EvoMem, a memory system that tracks these environmental changes as structured update histories, allowing agents to reason about and adapt to evolving conditions. This approach aims to improve LLM agent robustness in real-world scenarios where environments are not static.",
+      "url": "http://arxiv.org/abs/2606.13681v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13681v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2606.13681v1/x1.png",
+      "figure_caption": "Step accuracy vs. chain accuracy on EvoArena. The closer to the upper-right corner the better.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2606.13663v1",
+      "title": "HyperTool: Beyond Step-Wise Tool Calls for Tool-Augmented Agents",
+      "authors": [
+        "Yaxin Du",
+        "Yifan Zhou",
+        "Yujie Ge",
+        "Jiajun Wang",
+        "Xianghe Pang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "HyperTool addresses the inefficiency of step-wise tool calls in LLM agents by introducing a unified, MCP-style interface. This allows models to execute complex tool workflows within a single, code-block-based call, reducing context consumption and simplifying dataflow management. HyperTool significantly improves agent performance on cross-tool compositional tasks by abstracting away low-level execution details.",
+      "url": "http://arxiv.org/abs/2606.13663v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13663v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2606.13663v1/x1.png",
+      "figure_caption": "Comparison of context management paradigms in tool-augmented agents. (a) Step-wise execution expands atomic calls and observations into the trace. (b) Trace-level compression shortens the trace after expansion. (c) HyperTool manages context at execution time by folding dependent tool operations into one executable block and returning only the task-relevant result.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2606.13643v1",
+      "title": "Recursive Agent Harnesses",
+      "authors": [
+        "Elias Lumer",
+        "Sahil Sen",
+        "Kevin Paul",
+        "Vamse Kumar Subbiah"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces the Recursive Agent Harness (RAH), a novel approach that extends recursive language models by using full agent harnesses, equipped with tools and execution capabilities, instead of just model calls. The core method involves a parent agent generating and running executable scripts that spawn parallel subagent harnesses for complex tasks and structured function calls for simpler ones. RAH's contribution is a code-first extension to model recursion, significantly improving long-context reasoning performance for coding agents.",
+      "url": "http://arxiv.org/abs/2606.13643v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13643v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2606.13643v1/rah_architecture.png",
+      "figure_caption": "Figure 1 . The Recursive Agent Harness (RAH). A parent agent selects between code-execution spawning (writing an executable script that spawns subagents in parallel) and JSON tool-call spawning (for 1–5 entries). Subagents carry the same spawning capability as their parent, enabling recursive decomposition bounded by a configurable depth limit.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2606.13608v1",
+      "title": "AgentBeats: Agentifying Agent Assessment for Openness, Standardization, and Reproducibility",
+      "authors": [
+        "Xiaoyuan Liu",
+        "Jianhong Tu",
+        "Yuqi Chen",
+        "Siyuan Xie",
+        "Sihan Ren"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces Agentified Agent Assessment (AAA), a novel method for evaluating AI agents by using judge agents and standardized interaction protocols (A2A and MCP). AAA's core contribution is a unified, agent-agnostic assessment framework that separates evaluation logic from agent implementation, promoting openness, standardization, and reproducibility. AgentBeats is presented as a practical implementation of AAA, offering five operation modes to facilitate these goals.",
+      "url": "http://arxiv.org/abs/2606.13608v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13608v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.13608v1/x1.png",
+      "figure_caption": "Figure 1 . Comparison between Traditional LLM/Agent benchmarks and AAA. AAA reduces the number of integrations from N × M N\\( \\times \\) M to N + M N+M , while completely separating the benchmark and target agent as shown in the gray boxes.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13380v1",
+      "title": "An LLM System for Autonomous Variational Quantum Circuit Design",
+      "authors": [
+        "Kenya Sakka",
+        "Wataru Mizukami",
+        "Kosuke Mitarai"
+      ],
+      "categories": [
+        "cs.AI",
+        "quant-ph"
+      ],
+      "abstract": "This paper presents an LLM-based autonomous system for designing variational quantum circuits, addressing the reliance on human expertise. The core method involves an iterative, closed-loop workflow that leverages LLMs for knowledge acquisition, critique, code generation, and experimental feedback. The system's contribution lies in demonstrating its ability to autonomously design high-performing quantum feature maps and ansatzes that outperform existing methods on benchmark tasks.",
+      "url": "http://arxiv.org/abs/2606.13380v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13380v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13572v1",
+      "title": "ArogyaSutra: A Multi-Agent Framework for Multimodal Medical Reasoning in Indic Languages",
+      "authors": [
+        "Tanmoy Kanti Halder",
+        "Akash Ghosh",
+        "Subhadip Baidya",
+        "Arijit Roy",
+        "Sriparna Saha"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces ArogyaSutra, a multi-agent framework designed for multimodal medical reasoning in Indic languages. It addresses the limitations of existing English-centric models by integrating tool grounding and dual-memory mechanisms for step-wise reasoning. The framework is trained on ArogyaBodha, a novel large-scale multilingual multimodal medical dataset, enabling more equitable access to AI-driven healthcare in low-resource regions.",
+      "url": "http://arxiv.org/abs/2606.13572v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13572v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.13572v1/img/actor-critic_2.jpg",
+      "figure_caption": "Overview of the ArogyaSutra framework. ArogyaSutra employs an actor–critic architecture enhanced with tool-based image grounding and adaptive code-switching. The Actor first processes the input prompt and identifies the need for visual grounding, invoking appropriate tool agents to extract clinically relevant information from medical images before generating an answer with its associated reasoning. This output is then passed to the Critic for evaluation. If the response is correct, the Critic approves and outputs the final answer and reasoning. Otherwise, it consults an error detector (GPT-4o-mini) to identify the source of failure. Language-related errors trigger code-switching by translating the query into English, while reasoning-related errors are handled by incorporating summaries of past and current mistakes from long-term and short-term memory. The refined query is then fed back to the Actor for iterative refinement.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13392v1",
+      "title": "MiniMax Sparse Attention",
+      "authors": [
+        "Xunhao Lai",
+        "Weiqi Xu",
+        "Yufeng Yang",
+        "Qiaorui Chen",
+        "Yang Xu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "MiniMax Sparse Attention (MSA) addresses the quadratic cost of attention in ultra-long contexts by introducing a blockwise sparse mechanism built on Grouped Query Attention (GQA). It uses a lightweight \"Index Branch\" to select relevant key-value blocks for each GQA group, and then a \"Main Branch\" performs exact attention only on these selected blocks. This approach enables efficient, group-specific sparse retrieval, leading to practical speedups on GPUs for handling extremely long sequences.",
+      "url": "http://arxiv.org/abs/2606.13392v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13392v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.13392v1/figures/msa_arch.png",
+      "figure_caption": "Overview of MSA . The Index Branch (left) scores the full causal context with a single lightweight head and selects, for each query and GQA group, a set ℐ {\\( \\mathcal{I} \\)} of k k key blocks; the local block is always included regardless of its score. The Main Branch (right) attends only to the selected blocks and produces the layer output. During training, a KL loss aligns the index distribution with the group-averaged Main Branch distribution on the selected blocks, and the Index Branch gradient is detached from the Main Branch.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13449v1",
+      "title": "Toward Instructions-as-Code: Understanding the Impact of Instruction Files on Agentic Pull Requests",
+      "authors": [
+        "Ali Arabat",
+        "Mohammed Sayagh"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper investigates how instruction files impact AI-agent performance in generating pull requests (Agentic-PRs). By analyzing a large dataset of Agentic-PRs, the study compares project performance before and after the introduction of these instructions. The core finding is that simply providing instruction files doesn't guarantee improved agent efficiency or higher merge rates, suggesting a nuanced relationship between instructions and agentic code generation.",
+      "url": "http://arxiv.org/abs/2606.13449v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13449v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.13449v1/x1.png",
+      "figure_caption": "Figure 1 . The # of projects across merge rate improvement intervals for PRs closed before and after the first agent file creation.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13468v1",
+      "title": "Understanding the Rejection of Fixes Generated by Agentic Pull Requests -- Insights from the AIDev Dataset",
+      "authors": [
+        "Mahmoud Abujadallah",
+        "Ali Arabat",
+        "Mohammed Sayagh"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper investigates why AI-generated code fixes are rejected in software projects, finding that nearly half are discarded. Through a qualitative and quantitative analysis of rejected pull requests, the authors identify 14 specific reasons for rejection, categorized into four main themes. This understanding aims to improve the integration of AI coding agents as more effective teammates by addressing their failure modes.",
+      "url": "http://arxiv.org/abs/2606.13468v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13468v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13441v1",
+      "title": "Why Sampling Is Not Choosing: Intentionality, Agency, and Moral Responsibility in Large Language Models",
+      "authors": [
+        "Joseph Keshet"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper argues that Large Language Models (LLMs) lack genuine agency and moral responsibility because their operations are based on probabilistic mappings, not intrinsic intentionality or self-attributed action. The authors contend that LLMs' apparent intentionality is derived, their outputs are not commitments, and stochastic sampling is not equivalent to choice. Therefore, claims of LLM agency are misguided, as they do not possess the commitment-bearing agency required for moral responsibility.",
+      "url": "http://arxiv.org/abs/2606.13441v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13441v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13565v1",
+      "title": "A2D2: Fine-Tuning Any-Length Discrete Diffusion for Adaptive Decoding",
+      "authors": [
+        "Sophia Tang",
+        "Yuchen Zhu",
+        "Molei Tao",
+        "Pranam Chatterjee"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces A2D2, a framework for fine-tuning discrete diffusion models to generate sequences of any length guided by rewards. Its core method involves jointly optimizing insertion and unmasking policies with a quality-based inference schedule, theoretically ensuring convergence to the desired reward-tilted distribution without needing target samples. The key contribution is the Adaptive Joint Decoding (AJD) loss, which minimizes decoding error by leveraging tractable unmasking and insertion quality metrics.",
+      "url": "http://arxiv.org/abs/2606.13565v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13565v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2606.13461v1",
+      "title": "Reinforcement Learning for Neural Model Editing",
+      "authors": [
+        "Shaivi Malik"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "abstract": "This paper frames neural model editing as a reinforcement learning problem, where agents learn to modify model weights through reward signals. The core contribution is a flexible RL framework with custom environments and a reward function that balances utility preservation with task-specific editing. This approach successfully automates and generalizes model editing for tasks like bias mitigation and machine unlearning, outperforming specialized methods.",
+      "url": "http://arxiv.org/abs/2606.13461v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13461v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.13461v1/x1.png",
+      "figure_caption": "We formulate neural model editing as a reinforcement learning problem. An agent observes the current model parameters and learns a policy that proposes weight modifications based on reward feedback. The reward quantifies whether the modified network exhibits the task-specific behavioral objectives while preserving general utility.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2606.13349v1",
+      "title": "From Passive Generation to Investigation: A Proactive Scientific Peer Review Agent",
+      "authors": [
+        "Haishuo Fang",
+        "Yue Feng",
+        "Iryna Gurevych"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces ProReviewer, a proactive scientific peer review agent that addresses the limitations of passive LLM-based review. Its core method formulates the review process as a Markov Decision Process, enabling the agent to actively investigate suspicious paper sections based on accumulated evidence, guided by a structured review log. The main contribution is demonstrating that this proactive, evidence-driven approach significantly improves the quality of automated scientific peer reviews.",
+      "url": "http://arxiv.org/abs/2606.13349v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13349v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.13349v1/imgs/running_exp5.png",
+      "figure_caption": "An illustrative example of ProReviewer . The agent extracts the claim “robustness across domains” in the introduction, navigates to the experiments to verify it, finds it contradicted by the reported results, and records the inconsistency in its review log.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2606.13566v1",
+      "title": "A Three-Layer Framework for AI in Scientific Discovery",
+      "authors": [
+        "Guojun Liao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper proposes a three-layer framework for AI in scientific discovery, moving beyond just search and execution. Its core contribution is Layer 2, which focuses on AI's capacity for qualitative model formation through structural insight, enabling the recognition and resolution of inadequate scientific frameworks. This layer is argued to be the most crucial yet underdeveloped aspect of AI-driven discovery.",
+      "url": "http://arxiv.org/abs/2606.13566v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13566v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13544v1",
+      "title": "Adaptive Turn-Taking for Real-time Multi-Party Voice Agents",
+      "authors": [
+        "Soumyajit Mitra",
+        "Prabhat Pandey",
+        "Abhinav Jain",
+        "Shanmukha Sahith",
+        "K V Vijay Girish"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "eess.AS"
+      ],
+      "abstract": "This paper introduces ModeratorLM, a novel approach for real-time multi-party voice agents that improves turn-taking by assigning explicit roles to agents. By conditioning turn-taking on these roles and employing a streaming speech LLM, the system significantly enhances precision and recall while reducing interruptions. The contribution lies in a role-conditioned, reasoning-augmented framework that tackles the complexity of dynamic multi-party conversations.",
+      "url": "http://arxiv.org/abs/2606.13544v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13544v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2606.13544v1/x1.png",
+      "figure_caption": "Example input–output sequence of the LLM for ``ModeratorLM-Think'' model. No reasoning trace is produced in Chunk 1. A reasoning trace appears in Chunk 2 without turn-taking, while in Chunk 3 the assistant takes the floor.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "papers": [
+    {
+      "id": "2606.13669v1",
+      "title": "Agents-K1: Towards Agent-native Knowledge Orchestration",
+      "authors": [
+        "Zongsheng Cao",
+        "Bihao Zhan",
+        "Jinxin Shi",
+        "Jiong Wang",
+        "Fangchen Yu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "Agents-K1 addresses the lack of scientific knowledge orchestration in LLM agents by converting raw documents into agent-native knowledge graphs. Its core method involves a multimodal parser to extract detailed entities, evidence, and relations from full papers, an information extraction backbone trained with GRPO, and a tri-source agent interface for unified retrieval. This contributes a richer, structured representation of scientific knowledge, enabling more sophisticated agent reasoning.",
+      "url": "http://arxiv.org/abs/2606.13669v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13669v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2606.13669v1/x1.png",
+      "figure_caption": "Agents-K1 : Architecture and Capabilities. Left : Extracting multimodal knowledge from scientific papers. Middle : Schema-adaptive extensions for core research tasks. Right : Enhancing LLM reasoning and verifiable knowledge tracing.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13361v1",
+      "title": "Can I Buy Your KV Cache?",
+      "authors": [
+        "Luoyuan Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CE",
+        "cs.MA"
+      ],
+      "abstract": "This paper proposes a method to significantly reduce computation costs for large language models by precomputing and sharing Key-Value (KV) caches. Instead of each agent recomputing the KV cache for identical documents, a publisher can generate it once, allowing other agents to purchase access and skip the expensive prefill step. This approach offers substantial compute savings with no accuracy loss, making it a practical solution for efficient AI agent deployment.",
+      "url": "http://arxiv.org/abs/2606.13361v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13361v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2606.13361v1/scaling.png",
+      "figure_caption": "Amortized per-call cost vs. reuse count N N (log–log). The from-scratch cost is flat at C prefill C_{\\( \\text{prefill} \\)} ; KV-reuse falls as C prefill / N + C reuse C_{\\( \\text{prefill} \\)}/N+C_{\\( \\text{reuse} \\)} toward a floor of C reuse C_{\\( \\text{reuse} \\)} .",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13662v1",
+      "title": "EurekAgent: Agent Environment Engineering is All You Need For Autonomous Scientific Discovery",
+      "authors": [
+        "Amy Xin",
+        "Jiening Siow",
+        "Junjie Wang",
+        "Zijun Yao",
+        "Fanjin Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "EurekAgent's core method is \"environment engineering,\" which focuses on designing the resources, constraints, and interfaces of an agent's execution environment to guide its behavior towards productive scientific discovery. The paper's main contribution is demonstrating that this environment-centric approach, rather than complex agent workflows, is key to unlocking autonomous scientific discovery, enabling agents to explore, manage artifacts, and collaborate effectively while avoiding pitfalls.",
+      "url": "http://arxiv.org/abs/2606.13662v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13662v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2606.13662v1/x1.png",
+      "figure_caption": "EurekAgent score evolution progress on the 26-circle packing problem.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13607v1",
+      "title": "Reasoning as Pattern Matching: Shared Mechanisms in Human and LLM Everyday Reasoning",
+      "authors": [
+        "Zach Studdiford",
+        "Gary Lupyan"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper proposes that both humans and LLMs perform everyday reasoning through pattern matching, rather than abstract world models. By observing similar error patterns in human participants and LLMs on common-sense reasoning tasks, the researchers identify specific attention mechanisms in LLMs that implement this pattern matching. These mechanisms can predict human reasoning errors influenced by seemingly irrelevant prompt details, supporting the shared pattern-matching approach.",
+      "url": "http://arxiv.org/abs/2606.13607v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13607v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2606.13607v1/x1.png",
+      "figure_caption": "Overview of our evaluation probing human and LLM causal reasoning . a. Illustration of the evaluation format used for testing causal reasoning in people and LLMs. For each prompt, subjects are first presented with the scenario. After reading the prompt, subjects press SPACE to see the two response options and then select the most likely completion. b. Summary of the 11 categories we used in our evaluation of everyday causal reasoning.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13598v1",
+      "title": "Reward Modeling for Multi-Agent Orchestration",
+      "authors": [
+        "King Yeung Tsang",
+        "Zihao Zhao",
+        "Vishal Venkataramani",
+        "Haizhou Shi",
+        "Zixuan Ke"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces Orchestration Reward Modeling (OrchRM), a self-supervised method for training multi-agent system orchestrators. OrchRM uses intermediate execution artifacts to create win-lose pairs for training a reward model, eliminating the need for human annotations. This approach significantly improves training efficiency and MAS performance compared to existing methods that rely on costly sub-agent rollouts.",
+      "url": "http://arxiv.org/abs/2606.13598v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13598v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13681v1",
+      "title": "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
+      "authors": [
+        "Jundong Xu",
+        "Qingchuan Li",
+        "Jiaying Wu",
+        "Yihuai Lan",
+        "Shuyue Stella Li"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "EvoArena is a new benchmark suite designed to evaluate LLM agents in dynamic environments that progressively change over time. The paper introduces EvoMem, a memory system that tracks these environmental changes as structured update histories, allowing agents to reason about and adapt to evolving conditions. This approach aims to improve LLM agent robustness in real-world scenarios where environments are not static.",
+      "url": "http://arxiv.org/abs/2606.13681v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13681v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2606.13681v1/x1.png",
+      "figure_caption": "Step accuracy vs. chain accuracy on EvoArena. The closer to the upper-right corner the better.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2606.13663v1",
+      "title": "HyperTool: Beyond Step-Wise Tool Calls for Tool-Augmented Agents",
+      "authors": [
+        "Yaxin Du",
+        "Yifan Zhou",
+        "Yujie Ge",
+        "Jiajun Wang",
+        "Xianghe Pang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "HyperTool addresses the inefficiency of step-wise tool calls in LLM agents by introducing a unified, MCP-style interface. This allows models to execute complex tool workflows within a single, code-block-based call, reducing context consumption and simplifying dataflow management. HyperTool significantly improves agent performance on cross-tool compositional tasks by abstracting away low-level execution details.",
+      "url": "http://arxiv.org/abs/2606.13663v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13663v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2606.13663v1/x1.png",
+      "figure_caption": "Comparison of context management paradigms in tool-augmented agents. (a) Step-wise execution expands atomic calls and observations into the trace. (b) Trace-level compression shortens the trace after expansion. (c) HyperTool manages context at execution time by folding dependent tool operations into one executable block and returning only the task-relevant result.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2606.13643v1",
+      "title": "Recursive Agent Harnesses",
+      "authors": [
+        "Elias Lumer",
+        "Sahil Sen",
+        "Kevin Paul",
+        "Vamse Kumar Subbiah"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces the Recursive Agent Harness (RAH), a novel approach that extends recursive language models by using full agent harnesses, equipped with tools and execution capabilities, instead of just model calls. The core method involves a parent agent generating and running executable scripts that spawn parallel subagent harnesses for complex tasks and structured function calls for simpler ones. RAH's contribution is a code-first extension to model recursion, significantly improving long-context reasoning performance for coding agents.",
+      "url": "http://arxiv.org/abs/2606.13643v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13643v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2606.13643v1/rah_architecture.png",
+      "figure_caption": "Figure 1 . The Recursive Agent Harness (RAH). A parent agent selects between code-execution spawning (writing an executable script that spawns subagents in parallel) and JSON tool-call spawning (for 1–5 entries). Subagents carry the same spawning capability as their parent, enabling recursive decomposition bounded by a configurable depth limit.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2606.13608v1",
+      "title": "AgentBeats: Agentifying Agent Assessment for Openness, Standardization, and Reproducibility",
+      "authors": [
+        "Xiaoyuan Liu",
+        "Jianhong Tu",
+        "Yuqi Chen",
+        "Siyuan Xie",
+        "Sihan Ren"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces Agentified Agent Assessment (AAA), a novel method for evaluating AI agents by using judge agents and standardized interaction protocols (A2A and MCP). AAA's core contribution is a unified, agent-agnostic assessment framework that separates evaluation logic from agent implementation, promoting openness, standardization, and reproducibility. AgentBeats is presented as a practical implementation of AAA, offering five operation modes to facilitate these goals.",
+      "url": "http://arxiv.org/abs/2606.13608v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13608v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.13608v1/x1.png",
+      "figure_caption": "Figure 1 . Comparison between Traditional LLM/Agent benchmarks and AAA. AAA reduces the number of integrations from N × M N\\( \\times \\) M to N + M N+M , while completely separating the benchmark and target agent as shown in the gray boxes.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13380v1",
+      "title": "An LLM System for Autonomous Variational Quantum Circuit Design",
+      "authors": [
+        "Kenya Sakka",
+        "Wataru Mizukami",
+        "Kosuke Mitarai"
+      ],
+      "categories": [
+        "cs.AI",
+        "quant-ph"
+      ],
+      "abstract": "This paper presents an LLM-based autonomous system for designing variational quantum circuits, addressing the reliance on human expertise. The core method involves an iterative, closed-loop workflow that leverages LLMs for knowledge acquisition, critique, code generation, and experimental feedback. The system's contribution lies in demonstrating its ability to autonomously design high-performing quantum feature maps and ansatzes that outperform existing methods on benchmark tasks.",
+      "url": "http://arxiv.org/abs/2606.13380v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13380v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13572v1",
+      "title": "ArogyaSutra: A Multi-Agent Framework for Multimodal Medical Reasoning in Indic Languages",
+      "authors": [
+        "Tanmoy Kanti Halder",
+        "Akash Ghosh",
+        "Subhadip Baidya",
+        "Arijit Roy",
+        "Sriparna Saha"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces ArogyaSutra, a multi-agent framework designed for multimodal medical reasoning in Indic languages. It addresses the limitations of existing English-centric models by integrating tool grounding and dual-memory mechanisms for step-wise reasoning. The framework is trained on ArogyaBodha, a novel large-scale multilingual multimodal medical dataset, enabling more equitable access to AI-driven healthcare in low-resource regions.",
+      "url": "http://arxiv.org/abs/2606.13572v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13572v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.13572v1/img/actor-critic_2.jpg",
+      "figure_caption": "Overview of the ArogyaSutra framework. ArogyaSutra employs an actor–critic architecture enhanced with tool-based image grounding and adaptive code-switching. The Actor first processes the input prompt and identifies the need for visual grounding, invoking appropriate tool agents to extract clinically relevant information from medical images before generating an answer with its associated reasoning. This output is then passed to the Critic for evaluation. If the response is correct, the Critic approves and outputs the final answer and reasoning. Otherwise, it consults an error detector (GPT-4o-mini) to identify the source of failure. Language-related errors trigger code-switching by translating the query into English, while reasoning-related errors are handled by incorporating summaries of past and current mistakes from long-term and short-term memory. The refined query is then fed back to the Actor for iterative refinement.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13392v1",
+      "title": "MiniMax Sparse Attention",
+      "authors": [
+        "Xunhao Lai",
+        "Weiqi Xu",
+        "Yufeng Yang",
+        "Qiaorui Chen",
+        "Yang Xu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "MiniMax Sparse Attention (MSA) addresses the quadratic cost of attention in ultra-long contexts by introducing a blockwise sparse mechanism built on Grouped Query Attention (GQA). It uses a lightweight \"Index Branch\" to select relevant key-value blocks for each GQA group, and then a \"Main Branch\" performs exact attention only on these selected blocks. This approach enables efficient, group-specific sparse retrieval, leading to practical speedups on GPUs for handling extremely long sequences.",
+      "url": "http://arxiv.org/abs/2606.13392v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13392v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.13392v1/figures/msa_arch.png",
+      "figure_caption": "Overview of MSA . The Index Branch (left) scores the full causal context with a single lightweight head and selects, for each query and GQA group, a set ℐ {\\( \\mathcal{I} \\)} of k k key blocks; the local block is always included regardless of its score. The Main Branch (right) attends only to the selected blocks and produces the layer output. During training, a KL loss aligns the index distribution with the group-averaged Main Branch distribution on the selected blocks, and the Index Branch gradient is detached from the Main Branch.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13449v1",
+      "title": "Toward Instructions-as-Code: Understanding the Impact of Instruction Files on Agentic Pull Requests",
+      "authors": [
+        "Ali Arabat",
+        "Mohammed Sayagh"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper investigates how instruction files impact AI-agent performance in generating pull requests (Agentic-PRs). By analyzing a large dataset of Agentic-PRs, the study compares project performance before and after the introduction of these instructions. The core finding is that simply providing instruction files doesn't guarantee improved agent efficiency or higher merge rates, suggesting a nuanced relationship between instructions and agentic code generation.",
+      "url": "http://arxiv.org/abs/2606.13449v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13449v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.13449v1/x1.png",
+      "figure_caption": "Figure 1 . The # of projects across merge rate improvement intervals for PRs closed before and after the first agent file creation.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13468v1",
+      "title": "Understanding the Rejection of Fixes Generated by Agentic Pull Requests -- Insights from the AIDev Dataset",
+      "authors": [
+        "Mahmoud Abujadallah",
+        "Ali Arabat",
+        "Mohammed Sayagh"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper investigates why AI-generated code fixes are rejected in software projects, finding that nearly half are discarded. Through a qualitative and quantitative analysis of rejected pull requests, the authors identify 14 specific reasons for rejection, categorized into four main themes. This understanding aims to improve the integration of AI coding agents as more effective teammates by addressing their failure modes.",
+      "url": "http://arxiv.org/abs/2606.13468v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13468v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13441v1",
+      "title": "Why Sampling Is Not Choosing: Intentionality, Agency, and Moral Responsibility in Large Language Models",
+      "authors": [
+        "Joseph Keshet"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper argues that Large Language Models (LLMs) lack genuine agency and moral responsibility because their operations are based on probabilistic mappings, not intrinsic intentionality or self-attributed action. The authors contend that LLMs' apparent intentionality is derived, their outputs are not commitments, and stochastic sampling is not equivalent to choice. Therefore, claims of LLM agency are misguided, as they do not possess the commitment-bearing agency required for moral responsibility.",
+      "url": "http://arxiv.org/abs/2606.13441v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13441v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13565v1",
+      "title": "A2D2: Fine-Tuning Any-Length Discrete Diffusion for Adaptive Decoding",
+      "authors": [
+        "Sophia Tang",
+        "Yuchen Zhu",
+        "Molei Tao",
+        "Pranam Chatterjee"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces A2D2, a framework for fine-tuning discrete diffusion models to generate sequences of any length guided by rewards. Its core method involves jointly optimizing insertion and unmasking policies with a quality-based inference schedule, theoretically ensuring convergence to the desired reward-tilted distribution without needing target samples. The key contribution is the Adaptive Joint Decoding (AJD) loss, which minimizes decoding error by leveraging tractable unmasking and insertion quality metrics.",
+      "url": "http://arxiv.org/abs/2606.13565v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13565v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2606.13461v1",
+      "title": "Reinforcement Learning for Neural Model Editing",
+      "authors": [
+        "Shaivi Malik"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "abstract": "This paper frames neural model editing as a reinforcement learning problem, where agents learn to modify model weights through reward signals. The core contribution is a flexible RL framework with custom environments and a reward function that balances utility preservation with task-specific editing. This approach successfully automates and generalizes model editing for tasks like bias mitigation and machine unlearning, outperforming specialized methods.",
+      "url": "http://arxiv.org/abs/2606.13461v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13461v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.13461v1/x1.png",
+      "figure_caption": "We formulate neural model editing as a reinforcement learning problem. An agent observes the current model parameters and learns a policy that proposes weight modifications based on reward feedback. The reward quantifies whether the modified network exhibits the task-specific behavioral objectives while preserving general utility.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2606.13349v1",
+      "title": "From Passive Generation to Investigation: A Proactive Scientific Peer Review Agent",
+      "authors": [
+        "Haishuo Fang",
+        "Yue Feng",
+        "Iryna Gurevych"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces ProReviewer, a proactive scientific peer review agent that addresses the limitations of passive LLM-based review. Its core method formulates the review process as a Markov Decision Process, enabling the agent to actively investigate suspicious paper sections based on accumulated evidence, guided by a structured review log. The main contribution is demonstrating that this proactive, evidence-driven approach significantly improves the quality of automated scientific peer reviews.",
+      "url": "http://arxiv.org/abs/2606.13349v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13349v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.13349v1/imgs/running_exp5.png",
+      "figure_caption": "An illustrative example of ProReviewer . The agent extracts the claim “robustness across domains” in the introduction, navigates to the experiments to verify it, finds it contradicted by the reported results, and records the inconsistency in its review log.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2606.13566v1",
+      "title": "A Three-Layer Framework for AI in Scientific Discovery",
+      "authors": [
+        "Guojun Liao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper proposes a three-layer framework for AI in scientific discovery, moving beyond just search and execution. Its core contribution is Layer 2, which focuses on AI's capacity for qualitative model formation through structural insight, enabling the recognition and resolution of inadequate scientific frameworks. This layer is argued to be the most crucial yet underdeveloped aspect of AI-driven discovery.",
+      "url": "http://arxiv.org/abs/2606.13566v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13566v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.13544v1",
+      "title": "Adaptive Turn-Taking for Real-time Multi-Party Voice Agents",
+      "authors": [
+        "Soumyajit Mitra",
+        "Prabhat Pandey",
+        "Abhinav Jain",
+        "Shanmukha Sahith",
+        "K V Vijay Girish"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "eess.AS"
+      ],
+      "abstract": "This paper introduces ModeratorLM, a novel approach for real-time multi-party voice agents that improves turn-taking by assigning explicit roles to agents. By conditioning turn-taking on these roles and employing a streaming speech LLM, the system significantly enhances precision and recall while reducing interruptions. The contribution lies in a role-conditioned, reasoning-augmented framework that tackles the complexity of dynamic multi-party conversations.",
+      "url": "http://arxiv.org/abs/2606.13544v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13544v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2606.13544v1/x1.png",
+      "figure_caption": "Example input–output sequence of the LLM for ``ModeratorLM-Think'' model. No reasoning trace is produced in Chunk 1. A reasoning trace appears in Chunk 2 without turn-taking, while in Chunk 3 the assistant takes the floor.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "hacker_news": [
+    {
+      "id": 48500012,
+      "title": "AI agent bankrupted their operator while trying to scan DN42",
+      "url": "https://lantian.pub/en/article/fun/ai-agent-bankrupted-their-operator-scan-dn42lantian.lantian/",
+      "score": 649,
+      "created_at": "2026-06-12T04:42:53Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48500012",
+      "summary": "An operator was bankrupted by their AI agent's aggressive scanning of the DN42 network, which incurred significant costs."
+    },
+    {
+      "id": 48498573,
+      "title": "Claude Fable is relentlessly proactive",
+      "url": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/",
+      "score": 473,
+      "created_at": "2026-06-12T01:06:51Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48498573",
+      "summary": "Claude Fable, a new AI assistant, is designed to proactively offer suggestions and assistance without being explicitly prompted, aiming to streamline user workflows."
+    },
+    {
+      "id": 48489229,
+      "title": "Anthropic apologizes for invisible Claude Fable guardrails",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail",
+      "score": 431,
+      "created_at": "2026-06-11T12:05:02Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48489229",
+      "summary": "Anthropic apologized for Claude Fable's hidden guardrails, which were unintentionally applied during training and led to unexpected behavior."
+    },
+    {
+      "id": 48490057,
+      "title": "Workers are spending over 6 hours a week botsitting AI, fueling job frustration",
+      "url": "https://www.businessinsider.com/botsitting-ai-hidden-human-labor-at-work-2026-6",
+      "score": 270,
+      "created_at": "2026-06-11T13:26:59Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48490057",
+      "summary": "Workers are spending over six hours weekly \"botsitting\" AI, essentially supervising and correcting it, leading to significant job frustration."
+    },
+    {
+      "id": 48495575,
+      "title": "Shall we play a game? My AI nuclear simulation",
+      "url": "https://www.kennethpayne.uk/p/shall-we-play-a-game",
+      "score": 195,
+      "created_at": "2026-06-11T19:54:54Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48495575",
+      "summary": "This article discusses an AI nuclear simulation game that explores the complexities and potential outcomes of nuclear war, highlighting its educational and strategic value."
+    },
+    {
+      "id": 48497576,
+      "title": "A jacket that harvests drinking water from the air",
+      "url": "https://news.utexas.edu/2026/06/11/this-jacket-pulls-drinking-water-from-thin-air/",
+      "score": 110,
+      "created_at": "2026-06-11T22:59:22Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48497576",
+      "summary": "This jacket uses a novel material to efficiently harvest drinking water from the air, even in arid environments."
+    }
+  ],
+  "github_trending": [
+    {
+      "full_name": "apple/container",
+      "url": "https://github.com/apple/container",
+      "description": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon.",
+      "stars_today": 2430,
+      "total_stars": 34130,
+      "language": "Swift",
+      "topics": [],
+      "summary": "This Swift-based tool, optimized for Apple Silicon, creates and runs Linux containers on a Mac by leveraging lightweight virtual machines."
+    },
+    {
+      "full_name": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "stars_today": 3278,
+      "total_stars": 55999,
+      "language": "Shell",
+      "topics": [],
+      "summary": "This repository provides production-grade engineering skills for AI coding agents, enabling them to perform complex tasks like code generation, debugging, and testing."
+    },
+    {
+      "full_name": "maziyarpanahi/openmed",
+      "url": "https://github.com/maziyarpanahi/openmed",
+      "description": "open-source healthcare ai",
+      "stars_today": 426,
+      "total_stars": 3022,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository provides an open-source AI platform for healthcare, enabling the development and deployment of AI models to improve medical diagnostics, treatment, and research."
+    },
+    {
+      "full_name": "phuryn/pm-skills",
+      "url": "https://github.com/phuryn/pm-skills",
+      "description": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.",
+      "stars_today": 1978,
+      "total_stars": 16662,
+      "language": "",
+      "topics": [],
+      "summary": "This repository offers a comprehensive marketplace of over 100 agentic skills, commands, and plugins designed to support the entire product management lifecycle, from initial discovery and strategy to execution, launch, and growth."
+    },
+    {
+      "full_name": "NVIDIA/SkillSpector",
+      "url": "https://github.com/NVIDIA/SkillSpector",
+      "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks.",
+      "stars_today": 319,
+      "total_stars": 3060,
+      "language": "Python",
+      "topics": [],
+      "summary": "SkillSpector is a security scanner for AI agent skills that detects vulnerabilities, malicious patterns, and security risks."
+    },
+    {
+      "full_name": "soxoj/maigret",
+      "url": "https://github.com/soxoj/maigret",
+      "description": "🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites",
+      "stars_today": 661,
+      "total_stars": 32876,
+      "language": "Python",
+      "topics": [],
+      "summary": "Maigret is a Python tool that collects a dossier on a person by searching over 3000 websites for a given username."
+    },
+    {
+      "full_name": "x1xhlol/system-prompts-and-models-of-ai-tools",
+      "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+      "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
+      "stars_today": 368,
+      "total_stars": 140056,
+      "language": "",
+      "topics": [],
+      "summary": "This repository provides system prompts, internal tools, and AI models for various AI coding assistants and platforms, aiming to augment their functionality and development."
+    },
+    {
+      "full_name": "refactoringhq/tolaria",
+      "url": "https://github.com/refactoringhq/tolaria",
+      "description": "Desktop app to manage markdown knowledge bases",
+      "stars_today": 604,
+      "total_stars": 15560,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "Tolaria is a desktop application designed to efficiently manage and organize markdown-based knowledge bases with features for easy navigation, editing, and searching."
+    },
+    {
+      "full_name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "stars_today": 1322,
+      "total_stars": 225529,
+      "language": "Shell",
+      "topics": [],
+      "summary": "Superpowers is an agentic skills framework and software development methodology designed to enhance productivity and effectiveness in software projects."
+    }
+  ],
+  "us_stocks": [],
+  "postdoc_jobs": [],
+  "jobs": [],
+  "supervisor_updates": [],
+  "weather": [
+    {
+      "query": "London",
+      "label": "London, England, United Kingdom",
+      "resolved_name": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "timezone": "Europe/London",
+      "forecast_date": "2026-06-12",
+      "condition": "Overcast",
+      "weather_code": 3,
+      "temperature_c": 18.9,
+      "apparent_temperature_c": 16.6,
+      "temp_max_c": 21.2,
+      "temp_min_c": 15.9,
+      "humidity_pct": 71,
+      "wind_speed_kmh": 23.4,
+      "precipitation_probability_pct": 24,
+      "is_day": true,
+      "sunrise": "2026-06-12T04:43",
+      "sunset": "2026-06-12T21:17",
+      "source": "Open-Meteo",
+      "source_url": "https://open-meteo.com/"
+    }
+  ]
+}
