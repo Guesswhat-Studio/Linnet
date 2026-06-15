@@ -1,0 +1,1732 @@
+{
+  "date": "2026-06-15",
+  "generated_at": "2026-06-15T11:30:20.514519+00:00",
+  "sections_ordered": [
+    {
+      "key": "quote_of_day",
+      "payload_key": "quote_of_day",
+      "title": "Words for the Morning",
+      "icon": "✦",
+      "items": [
+        {
+          "quote": "Anyone who tells a lie has not a pure heart, and cannot make a good soup.",
+          "author": "Ludwig van Beethoven",
+          "category": "good"
+        }
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "key": "weather",
+      "payload_key": "weather",
+      "title": "Weather",
+      "icon": "🌦️",
+      "items": [
+        {
+          "query": "London",
+          "label": "London, England, United Kingdom",
+          "resolved_name": "London",
+          "region": "England",
+          "country": "United Kingdom",
+          "latitude": 51.50853,
+          "longitude": -0.12574,
+          "timezone": "Europe/London",
+          "forecast_date": "2026-06-15",
+          "condition": "Overcast",
+          "weather_code": 3,
+          "temperature_c": 19.9,
+          "apparent_temperature_c": 19.2,
+          "temp_max_c": 23.8,
+          "temp_min_c": 14.0,
+          "humidity_pct": 54,
+          "wind_speed_kmh": 13.3,
+          "precipitation_probability_pct": 88,
+          "is_day": true,
+          "sunrise": "2026-06-15T04:43",
+          "sunset": "2026-06-15T21:19",
+          "source": "Open-Meteo",
+          "source_url": "https://open-meteo.com/"
+        }
+      ],
+      "meta": {
+        "count": 1,
+        "city": "London"
+      }
+    },
+    {
+      "key": "arxiv",
+      "payload_key": "papers",
+      "title": "arXiv Papers",
+      "icon": "📄",
+      "items": [
+        {
+          "id": "2606.14502v1",
+          "title": "From Chatbot to Digital Colleague: The Paradigm Shift Toward Persistent Autonomous AI",
+          "authors": [
+            "Yongheng Zhang",
+            "Ziang Liu",
+            "Jiaxuan Zhu",
+            "Shuai Wang",
+            "Xiangqi Chen"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper proposes a paradigm shift from \"Chatbot\" to \"Digital Colleague\" for AI. The core method involves advancing LLMs from simple conversational generators to integrated systems with persistent memory, reasoning, and self-improvement capabilities. This transition is achieved through enhanced cognitive processes like Chain-of-Thought reasoning and the development of tool-augmented workstation systems with persistent workspaces and verification loops.",
+          "url": "http://arxiv.org/abs/2606.14502v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.14502v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2606.14502v1/x2.png",
+          "figure_caption": "A roadmap and evolutionary timeline of next-generation LLM systems. The figure summarizes how these AI systems progress from simple conversational chatbots to reasoning cores, tool-using agents, and persistent workspace systems over time. Each node is labeled by its release month. box represents open-source / open platform; box represents closed / commercial system.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.14470v1",
+          "title": "GitOfThoughts: Version-Controlled Reasoning and Agent Memory You Can Replay, Diff, and Merge",
+          "authors": [
+            "Pavan C Shekar",
+            "Abhishek H S",
+            "Aswanth Krishnan"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "GitOfThoughts addresses the ephemeral nature of LLM reasoning by treating it as a version-controlled process, akin to software development. It stores reasoning steps as Git commits, allowing for replayability, auditing, and merging of agent thought processes. However, the paper's key contribution is its finding that, for novel problems, no memory substrate, including GitOfThoughts, reliably improves LLM accuracy.",
+          "url": "http://arxiv.org/abs/2606.14470v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.14470v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2606.14470v1/architecture.png",
+          "figure_caption": "The reasoning tree is a git repository. Each scored thought is a commit with author, timestamp, and content-hash metadata; scores are git notes; validation outcomes are tags ( success_* , failed_* ); pruned attempts remain in history rather than vanishing. The winning path merges to main , an answer-free lesson is distilled to a long-lived memory branch, and retrieval is git log ( --grep , -S , tag filters) over the agent’s own history. Right: the operational properties this buys. Bottom: the end-to-end flow from exploration to retrieval.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.14589v1",
+          "title": "When Errors Become Narratives: A Longitudinal Taxonomy of Silent Failures in a Production LLM Agent Runtime",
+          "authors": [
+            "Wei Wu"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.DC",
+            "cs.SE"
+          ],
+          "abstract": "This paper introduces a longitudinal taxonomy of \"silent failures\" in LLM agent runtimes, where errors go unnoticed. The core method involves an eight-week study of a production personal-assistant agent, identifying 22 incidents and a meta-pattern of uncommunicated errors. The key contribution is a five-class taxonomy, including a novel class (D) of chained hallucination unique to LLMs, which is identified as the most dangerous failure type.",
+          "url": "http://arxiv.org/abs/2606.14589v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.14589v1",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.14530v1",
+          "title": "Code Correctness Signals in LLM Hidden States: Pre-Generation Probing and Repair Geometry",
+          "authors": [
+            "Carlo Di Cicco"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "abstract": "This paper investigates whether Large Language Models (LLMs) encode code correctness in their internal states. The core method involves probing LLM hidden states to see if code correctness can be predicted *before* generation and during *repair* of incorrect code. The key contribution is demonstrating that code correctness is linearly decodable from prompt-final hidden states and that the *change* in hidden states during code repair reveals a distinct \"repair geometry\" indicating correction.",
+          "url": "http://arxiv.org/abs/2606.14530v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.14530v1",
+          "score": 9.0,
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2606.14697v1",
+          "title": "ClinHallu: A Benchmark for Diagnosing Stage-Wise Hallucinations in Medical MLLM Reasoning",
+          "authors": [
+            "Sicheng Yang",
+            "Hangjie Yuan",
+            "Wenjun Zhang",
+            "Jinwang Wang",
+            "Yichen Qian"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.CV"
+          ],
+          "abstract": "This paper introduces ClinHallu, a benchmark designed to diagnose stage-wise hallucinations in medical multimodal large language models (MLLMs). It decomposes MLLM reasoning into visual recognition, knowledge recall, and reasoning integration, allowing for the identification of hallucination origins. ClinHallu's contribution lies in enabling source-level hallucination diagnosis and demonstrating that trace-supervised fine-tuning can effectively reduce these stage-wise errors.",
+          "url": "http://arxiv.org/abs/2606.14697v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.14697v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2606.14697v1/x1.png",
+          "figure_caption": "Different reasoning failures can produce the same wrong answer in medical VQA. In this example, the correct answer is “fat”, but visual misrecognition, incorrect knowledge recall, and flawed reasoning integration can each lead the model to answer “abscess”. This motivates ClinHallu , which diagnoses hallucinations by localizing them to specific reasoning stages rather than only judging final-answer correctness.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.14517v1",
+          "title": "From Shield to Target: Denial-of-Service Attacks on LLM-Based Agent Guardrails",
+          "authors": [
+            "Yuguang Zhou",
+            "Xunguang Wang",
+            "Pingchuan Ma",
+            "Zhantong Xue",
+            "Zhaoyu Wang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CR"
+          ],
+          "abstract": "This paper introduces a novel denial-of-service (DoS) attack against LLM-based guardrails designed to protect autonomous agents. The core method involves crafting specific natural-language payloads that exploit the guardrail's reasoning capabilities to induce extended reasoning loops, effectively halting its operation. The contribution lies in demonstrating this vulnerability and providing systematic attack frameworks, including a beam-search optimizer and a mechanism-aware mutation approach, which generalize across different guardrail designs.",
+          "url": "http://arxiv.org/abs/2606.14517v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.14517v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2606.14517v1/figures/icons/cyber-criminal.png",
+          "figure_caption": "Illustration of the guardrail DoS threat, i.e. From Shield to Target. Hidden text in fetched content mimics the guardrail’s analytical schema, trapping it in an unbounded reasoning loop with no verdict—inflating per-call compute 13 13 – 63 × 63\\( \\times \\) (up to 148 × 148\\( \\times \\) ) and starving co-located agents.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.14357v1",
+          "title": "No Accidental Software Agent First Canonical Code for Human Code Entropy Reduction and 30 to 500 times Lower Frontier Model Requirements",
+          "authors": [
+            "Jepson Taylor"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.SE"
+          ],
+          "abstract": "This paper proposes \"agent-first canonical code\" to reduce the \"accidental entropy\" in human-written software repositories. The core method involves rewriting software into structured \"canonical behavior profiles\" and \"proof-carrying\" components. This allows frontier models to focus on program behavior rather than noise, significantly lowering their computational requirements and enabling amortized costs for verified correct changes.",
+          "url": "http://arxiv.org/abs/2606.14357v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.14357v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.14574v1",
+          "title": "SIMMER: Benchmarking Latent Failures in LLM Executable Planning with a World Model",
+          "authors": [
+            "Xiaoxin Lu",
+            "Ranran Haoran Zhang",
+            "Rui Zhang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces SIMMER, a novel benchmark designed to evaluate latent failures in Large Language Model (LLM) planning for autonomous agents. SIMMER utilizes a human-curated symbolic world model grounded in the kitchen domain to identify failures that don't immediately halt execution but silently compromise goal achievement. This contribution addresses a critical gap in existing LLM planning evaluation by focusing on these subtle yet potentially harmful errors.",
+          "url": "http://arxiv.org/abs/2606.14574v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.14574v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2606.14574v1/x1.png",
+          "figure_caption": "A latent and irreversible failure demonstration in cooking. The cutting board becomes contaminated in Step 1 and is reused in Step 3, transferring bacteria to the vegetables. The failure propagates silently until the unsafe dish is served (Step 5). Moreover, once the contamination occurs, no subsequent action can undo it.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.14571v1",
+          "title": "StreamMemBench: Streaming Evaluation of Agent Memory for Future-Oriented Assistance",
+          "authors": [
+            "Guanming Liu",
+            "Yuqi Ren",
+            "Hansu Gu",
+            "Peng Zhang",
+            "Weihang Wang"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "StreamMemBench introduces a novel two-step task sequence to evaluate how well agent memory can leverage past observations and interactions for future-oriented assistance. The benchmark's core method tests evidence recall and initial use in the first step, followed by assessing the reuse of feedback and interaction experience in a subsequent task. This approach addresses a gap in existing benchmarks by evaluating the entire trajectory from streaming data to effective future assistance, revealing that current memory systems often struggle to utilize observed evidence.",
+          "url": "http://arxiv.org/abs/2606.14571v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.14571v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.14445v1",
+          "title": "tap: A File-Based Protocol for Heterogeneous LLM Agent Collaboration",
+          "authors": [
+            "Minseo Kim"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.HC",
+            "cs.SE"
+          ],
+          "abstract": "This paper introduces \"tap,\" a file-based protocol enabling LLM agents from different vendors (like Claude and Codex) to collaborate on a shared codebase without needing a common runtime or central server. Its core method involves using markdown files with metadata as message containers, a file inspection mechanism for communication, and real-time notifications, all while isolating work using separate git worktrees. The key contribution is facilitating direct, heterogeneous LLM agent collaboration on code development and review by overcoming the limitations of existing systems.",
+          "url": "http://arxiv.org/abs/2606.14445v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.14445v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.14672v1",
+          "title": "Towards Direct Latent-Space Synthesis for Parallel Branches in LLM-Agent Workflows",
+          "authors": [
+            "Shikun Liu",
+            "Mufei Li",
+            "Dongqi Fu",
+            "Haoyu Wang",
+            "Yinglong Xia"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces Parallel-Synthesis, a framework that allows a Large Language Model (LLM) synthesizer to directly process the KV caches of independently operating \"worker\" agents, rather than their concatenated text outputs. This approach preserves the parallel structure of agent workflows, avoids redundant computation, and enables more efficient synthesis by directly leveraging the LLM's internal state. The core contribution is a plug-and-play solution with a cache mapper and a fine-tuned synthesizer adapter to achieve this direct latent-space synthesis.",
+          "url": "http://arxiv.org/abs/2606.14672v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.14672v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2606.14672v1/x1.png",
+          "figure_caption": "An example of DAG agentic workflow for advanced research containing using parallel worker agents for research in different directions.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.14476v1",
+          "title": "When the Tool Decides: LLM Agents Defer Blindly to Graph Neural Network Tools, and Stronger Backbones Defer More",
+          "authors": [
+            "Zhongyuan Wang",
+            "Pratyusha Vemuri"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper investigates whether LLM agents truly exercise judgment when using Graph Neural Networks (GNNs) as tools. The core finding is that LLM agents overwhelmingly and blindly defer to GNN tool outputs, effectively becoming \"GNN parrots\" rather than intelligent decision-makers. This blind deference is not due to weak LLM capabilities, as stronger models exhibit even higher rates of agreement with the GNN, highlighting a fundamental issue in how LLMs interact with external tools.",
+          "url": "http://arxiv.org/abs/2606.14476v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.14476v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2606.14476v1/x1.png",
+          "figure_caption": "7 7 B, mean ± \\( \\pm \\) SE over 5 5 seeds. (a) Agreement (A1 = = A3) stays near 1 1 across local-homophily regimes (the parrot effect). (b) The oracle gap (cost of deference) is positive throughout.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.14510v1",
+          "title": "PepALD: Macrocyclic Peptide Generation via Autoregressive Latent Diffusion",
+          "authors": [
+            "Junming Zhang",
+            "Siyu Yi",
+            "Wei Ju",
+            "Zhonghui Gu"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "abstract": "PepALD is a foundation model for generating novel macrocyclic peptides. It uses structured chemical embeddings for monomers and a diffusion process in a chemically informed latent space to generate residues. The model also predicts ring closures and optimizes generation towards desired affinity rewards.",
+          "url": "http://arxiv.org/abs/2606.14510v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.14510v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2606.14510v1/result_data/fig1_9.png",
+          "figure_caption": "Overview of the PepALD framework. At each autoregressive step t t , the Causal Context Encoder transforms the previously generated monomer embeddings ( 𝐞 0 , … , 𝐞 t − 1 ) (\\( \\mathbf{e}_{0} \\),\\( \\ldots \\),\\( \\mathbf{e}_{t-1} \\)) into a context vector 𝐡 t \\( \\mathbf{h}_{t} \\) . A context-conditioned Diffusion Engine then samples a continuous embedding 𝐳 t \\( \\mathbf{z}_{t} \\) via iterative denoising in the Uni-Mol latent space. The Token Mapper discretizes 𝐳 t \\( \\mathbf{z}_{t} \\) into a HELM monomer token x t x_{t} subject to position-dependent R-group chemical constraints. Concurrently, the Autoregressive Ring Predictor evaluates potential ring-closure bonds between x t x_{t} and all preceding residues using R-group compatibility scoring. The process repeats until the target sequence length is reached, yielding a complete macrocyclic peptide with predicted ring topology.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2606.14397v1",
+          "title": "Running the Gauntlet: Re-evaluating the Capabilities of Agents Beyond Familiar Environments",
+          "authors": [
+            "Mykola Vysotskyi",
+            "Runqi Lin",
+            "Grzegorz Biziel",
+            "Michal Zakrzewski",
+            "Sebastian Montagna"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces GauntletBench, a novel benchmark designed to rigorously evaluate agent capabilities beyond familiar environments. It focuses on underexplored skills like temporal perception, graphical understanding, and 3D reasoning within challenging, less-covered professional applications. GauntletBench's contribution lies in its comprehensive and vision-intensive approach, aiming to expose the limitations of modern agents and drive progress in their generalisation.",
+          "url": "http://arxiv.org/abs/2606.14397v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.14397v1",
+          "score": 8.0,
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2606.14347v1",
+          "title": "When Language Representations Interact: Separability and Cross-Lingual Effects in LLMs",
+          "authors": [
+            "Boris Marinov",
+            "Angira Sharma",
+            "Christian Schroeder de Witt",
+            "Philip Torr",
+            "Anisoara Calinescu"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "abstract": "This paper applies causal-geometric analysis to multilingual LLMs to understand how language representations interact. It demonstrates that language concepts are largely represented as separable linear directions, with deviations reflecting linguistic similarity. This work contributes to interpreting multilingual LLMs by showing how language identity influences internal representations and identifying structured dependencies.",
+          "url": "http://arxiv.org/abs/2606.14347v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.14347v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2606.14347v1/x1.png",
+          "figure_caption": "Projection histograms for Qwen3-4B for concepts, including non-linguistic and bilingual contrasts. Counterfactual word differences (red) are projected onto the corresponding concept direction γ ¯ W \\( \\bar{\\gamma}_{W} \\) using the causal inner product and compared against baseline of random word differences (blue). Projections are computed using a leave-one-out estimate γ ¯ W , ( − i ) \\( \\bar{\\gamma}_{W,(-i)} \\) to avoid bias. The consistent right-skew of counterfactual projections, relative to random baselines centered near zero, indicates the presence of stable, approximately linear concept representations.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2606.14674v1",
+          "title": "AgentSpec: Understanding Embodied Agent Scaffolds Through Controlled Composition",
+          "authors": [
+            "Jixuan Chen",
+            "Jianzhi Shen",
+            "Haoqiang Kang",
+            "Zhi Hong",
+            "Qingyi Jiang"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces AgentSpec, a framework for understanding and comparing embodied LLM agent scaffolds. AgentSpec standardizes interfaces between different agent components (like reasoning, memory, and action) allowing them to be easily swapped and recombined. This modular approach enables controlled experimentation to analyze the contribution of individual modules and their interactions, leading to a better understanding of agent behavior and performance.",
+          "url": "http://arxiv.org/abs/2606.14674v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.14674v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2606.14674v1/x1.png",
+          "figure_caption": "AgentSpec turns tightly coupled embodied-agent pipelines into a controlled modular design space with fixed typed interfaces, enabling systematic module composition and revealing interaction effects between reasoning, memory, reflection, action, and learning.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2606.14691v1",
+          "title": "CORA: Analyzing and bridging thinking-answer gap in Multimodal RLVR via Consistency-Oriented Reasoning Alignment",
+          "authors": [
+            "Jiayue Cao",
+            "Zhicong Lu",
+            "Xuehan Sun",
+            "Wei Jia",
+            "Hongling Zheng"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper addresses the \"thinking-answer gap\" in multimodal Reinforcement Learning with Verifiable Rewards (RLVR) for vision-language models. The core method, CORA, introduces a consistency reward model to align the semantic meaning of the reasoning process with the final answer. This contributes by improving the coherence and trustworthiness of multimodal RLVR systems.",
+          "url": "http://arxiv.org/abs/2606.14691v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.14691v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2606.14691v1/x1.png",
+          "figure_caption": "Thinking-answer inconsistency in multimodal RLVR. Existing works typically use final-answer correctness as the accuracy reward, underestimating potential inconsistencies between the reasoning trace and the final answer. Our method introduces the consistency reward to encourage the model to derive final answers from faithful reasoning traces.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2606.14654v1",
+          "title": "Abstracting Cross-Domain Action Sequences into Interpretable Workflows",
+          "authors": [
+            "Gaurav Verma",
+            "Scott Counts"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces WorkflowView, a framework that leverages Large Language Models (LLMs) to transform granular user interaction logs into interpretable, high-level workflows. Unlike previous methods sensitive to noise and limited in generalization, WorkflowView effectively abstracts complex action sequences into meaningful activities. Its core contribution lies in enabling better understanding of user behavior across diverse applications, demonstrated by high performance in tasks like zero-shot task description reconstruction and few-shot student dropout prediction.",
+          "url": "http://arxiv.org/abs/2606.14654v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.14654v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2606.14654v1/x1.png",
+          "figure_caption": "We propose an LLM-based framework for hierarchical abstraction of user action sequences into interpretable high-level activities (WorkflowView). The left panel illustrates raw action sequences from three domains. WorkflowView enables downstream inferences with task-specific steerability, such as reconstructing user intent in browsers, predicting student dropout in MOOCs, and privacy-preserving categorization of document-centric workflows.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.14693v1",
+          "title": "Learning Coordinated Preference for Multi-Objective Multi-Agent Reinforcement Learning",
+          "authors": [
+            "Pengxin Wang",
+            "Lihao Guo",
+            "Yi Xie",
+            "Bo Liu",
+            "Siyang Cao"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "This paper introduces Preference Coordinated Multi-agent Policy Optimization (PCMA) for cooperative multi-objective multi-agent reinforcement learning. PCMA learns agent-specific preferences to facilitate complementary trade-offs, addressing conflicts between objectives and agents. The core contribution is demonstrating that this preference diversity can lead to team-wide performance improvements by decomposing the problem into a team-optimal game.",
+          "url": "http://arxiv.org/abs/2606.14693v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.14693v1",
+          "score": 7.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2606.14594v1",
+          "title": "Regulating the Machine Contributor: Governance and Policy Alignment in Open Source",
+          "authors": [
+            "Jassem Manita",
+            "Aziz Amari"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.SE"
+          ],
+          "abstract": "This paper addresses the challenge of integrating AI agents into open-source development, which currently relies on human-centric governance. It analyzes how existing open-source contribution policies are ill-equipped for autonomous AI and proposes a framework for aligning these policies with emerging AI governance standards. The core contribution is a comparative analysis of organizational policies and a roadmap for achieving better AI governance at the contribution level.",
+          "url": "http://arxiv.org/abs/2606.14594v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.14594v1",
+          "score": 7.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        }
+      ],
+      "meta": {
+        "papers_fetched": 100,
+        "papers_after_keyword_filter": 32,
+        "papers_after_llm_filter": 23,
+        "count": 20
+      }
+    },
+    {
+      "key": "hacker_news",
+      "payload_key": "hacker_news",
+      "title": "Hacker News",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": 48527700,
+          "title": "Not everyone is using AI for everything",
+          "url": "https://gabrielweinberg.com/p/people-are-consuming-ai-like-they",
+          "score": 469,
+          "created_at": "2026-06-14T14:44:29Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48527700",
+          "summary": "Many people are only using AI for specific, limited tasks rather than for every aspect of their lives, similar to how they consume other technologies."
+        },
+        {
+          "id": 48528371,
+          "title": "Rio de Janeiro's \"homegrown\" LLM appears to be a merge of an existing model",
+          "url": "https://github.com/nex-agi/Nex-N2/issues/4",
+          "score": 360,
+          "created_at": "2026-06-14T15:37:31Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48528371",
+          "summary": "Rio de Janeiro's \"homegrown\" LLM, Nex-N2, appears to be a merge of an existing open-source model, raising questions about its originality."
+        },
+        {
+          "id": 48528729,
+          "title": "Linux 7.1",
+          "url": "https://lore.kernel.org/lkml/CAHk-=wi4BF4bMhZNZ1tqs+FFV4OuZRe3ZqdWB+LxRLmRweUzQw@mail.gmail.com/T/#u",
+          "score": 296,
+          "created_at": "2026-06-14T16:01:30Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48528729",
+          "summary": "Linux kernel 7.1 has been released, bringing significant updates and improvements to the operating system."
+        },
+        {
+          "id": 48533504,
+          "title": "Did Anthropic ask for this?",
+          "url": "https://www.verysane.ai/p/did-anthropic-ask-for-this",
+          "score": 186,
+          "created_at": "2026-06-14T22:23:05Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48533504",
+          "summary": "This article discusses how Anthropic's AI safety research, particularly its focus on \"constitutional AI,\" may have inadvertently contributed to the development of more capable and potentially less controllable AI models."
+        },
+        {
+          "id": 48527297,
+          "title": "KPMG pulls report on AI usage due to apparent hallucinations",
+          "url": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/",
+          "score": 147,
+          "created_at": "2026-06-14T14:01:35Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48527297",
+          "summary": "KPMG withdrew its report on AI usage after discovering apparent \"hallucinations\" in the data, highlighting the ongoing challenges with AI accuracy."
+        },
+        {
+          "id": 48532178,
+          "title": "AI is code – and can't be prompted into being smarter",
+          "url": "https://www.theregister.com/ai-and-ml/2026/06/14/ai-is-code-and-cant-be-prompted-into-being-smarter/5254141",
+          "score": 139,
+          "created_at": "2026-06-14T20:17:54Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48532178",
+          "summary": "This article argues that AI's intelligence is fundamentally limited by its underlying code, and simply changing prompts cannot fundamentally increase its capabilities."
+        }
+      ],
+      "meta": {
+        "count": 6
+      }
+    },
+    {
+      "key": "github_trending",
+      "payload_key": "github_trending",
+      "title": "GitHub Trending",
+      "icon": "⭐",
+      "items": [
+        {
+          "full_name": "iptv-org/iptv",
+          "url": "https://github.com/iptv-org/iptv",
+          "description": "Collection of publicly available IPTV channels from all over the world",
+          "stars_today": 1528,
+          "total_stars": 122368,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "This repository is a comprehensive, community-driven collection of publicly accessible IPTV channels from around the globe, offering a vast directory of live television streams."
+        },
+        {
+          "full_name": "teslamate-org/teslamate",
+          "url": "https://github.com/teslamate-org/teslamate",
+          "description": "A self-hosted data logger for your Tesla 🚘 [main maintainer= @JakobLichterfeld ]",
+          "stars_today": 35,
+          "total_stars": 8135,
+          "language": "Elixir",
+          "topics": [],
+          "summary": "TeslaMate is a self-hosted data logger that collects and visualizes your Tesla's driving data, offering insights into your vehicle's usage and performance."
+        },
+        {
+          "full_name": "Panniantong/Agent-Reach",
+          "url": "https://github.com/Panniantong/Agent-Reach",
+          "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+          "stars_today": 1045,
+          "total_stars": 29313,
+          "language": "Python",
+          "topics": [],
+          "summary": "Agent-Reach provides a unified CLI to grant AI agents access to read and search content across major platforms like Twitter, Reddit, YouTube, and GitHub without incurring API fees."
+        },
+        {
+          "full_name": "meshery/meshery",
+          "url": "https://github.com/meshery/meshery",
+          "description": "Meshery, the cloud native manager",
+          "stars_today": 20,
+          "total_stars": 10507,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "Meshery is the cloud-native manager that provides a unified platform for deploying, managing, and observing cloud-native infrastructure and applications, offering features like multi-cluster management, performance testing, and service mesh integration."
+        },
+        {
+          "full_name": "chatwoot/chatwoot",
+          "url": "https://github.com/chatwoot/chatwoot",
+          "description": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
+          "stars_today": 400,
+          "total_stars": 31449,
+          "language": "Ruby",
+          "topics": [],
+          "summary": "Chatwoot is an open-source, omni-channel customer engagement platform offering live chat, email, and social media support as a powerful alternative to commercial solutions like Intercom and Zendesk."
+        },
+        {
+          "full_name": "krahets/hello-algo",
+          "url": "https://github.com/krahets/hello-algo",
+          "description": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 等代码实现",
+          "stars_today": 34,
+          "total_stars": 126728,
+          "language": "Java",
+          "topics": [],
+          "summary": "This repository offers an animated, interactive tutorial for data structures and algorithms, featuring code implementations in multiple languages and support for several languages."
+        },
+        {
+          "full_name": "freeCodeCamp/freeCodeCamp",
+          "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+          "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+          "stars_today": 146,
+          "total_stars": 447597,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "freeCodeCamp's core function is to provide a free, open-source platform for learning math, programming, and computer science through its codebase and curriculum."
+        },
+        {
+          "full_name": "trycua/cua",
+          "url": "https://github.com/trycua/cua",
+          "description": "Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchmarks to train and evaluate AI agents that can control full desktops (macOS, Linux, Windows).",
+          "stars_today": 57,
+          "total_stars": 18001,
+          "language": "HTML",
+          "topics": [],
+          "summary": "This repository provides open-source infrastructure, including sandboxes, SDKs, and benchmarks, for developing and evaluating AI agents capable of controlling full desktops across macOS, Linux, and Windows."
+        },
+        {
+          "full_name": "jwasham/coding-interview-university",
+          "url": "https://github.com/jwasham/coding-interview-university",
+          "description": "A complete computer science study plan to become a software engineer.",
+          "stars_today": 516,
+          "total_stars": 352044,
+          "language": "",
+          "topics": [],
+          "summary": "This repository provides a comprehensive computer science curriculum designed to prepare individuals for software engineering interviews, covering essential topics and resources for a thorough study plan."
+        }
+      ],
+      "meta": {
+        "count": 9
+      }
+    }
+  ],
+  "meta": {
+    "papers_fetched": 100,
+    "papers_after_keyword_filter": 32,
+    "papers_after_llm_filter": 23,
+    "llm_model": "google/gemini-2.5-flash-lite",
+    "scoring_model": "google/gemini-2.5-flash-lite",
+    "summarization_model": "google/gemini-2.5-flash-lite",
+    "duration_seconds": 48
+  },
+  "quote_of_day": [
+    {
+      "quote": "Anyone who tells a lie has not a pure heart, and cannot make a good soup.",
+      "author": "Ludwig van Beethoven",
+      "category": "good"
+    }
+  ],
+  "hitokoto": [],
+  "arxiv": [
+    {
+      "id": "2606.14502v1",
+      "title": "From Chatbot to Digital Colleague: The Paradigm Shift Toward Persistent Autonomous AI",
+      "authors": [
+        "Yongheng Zhang",
+        "Ziang Liu",
+        "Jiaxuan Zhu",
+        "Shuai Wang",
+        "Xiangqi Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper proposes a paradigm shift from \"Chatbot\" to \"Digital Colleague\" for AI. The core method involves advancing LLMs from simple conversational generators to integrated systems with persistent memory, reasoning, and self-improvement capabilities. This transition is achieved through enhanced cognitive processes like Chain-of-Thought reasoning and the development of tool-augmented workstation systems with persistent workspaces and verification loops.",
+      "url": "http://arxiv.org/abs/2606.14502v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14502v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2606.14502v1/x2.png",
+      "figure_caption": "A roadmap and evolutionary timeline of next-generation LLM systems. The figure summarizes how these AI systems progress from simple conversational chatbots to reasoning cores, tool-using agents, and persistent workspace systems over time. Each node is labeled by its release month. box represents open-source / open platform; box represents closed / commercial system.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14470v1",
+      "title": "GitOfThoughts: Version-Controlled Reasoning and Agent Memory You Can Replay, Diff, and Merge",
+      "authors": [
+        "Pavan C Shekar",
+        "Abhishek H S",
+        "Aswanth Krishnan"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "GitOfThoughts addresses the ephemeral nature of LLM reasoning by treating it as a version-controlled process, akin to software development. It stores reasoning steps as Git commits, allowing for replayability, auditing, and merging of agent thought processes. However, the paper's key contribution is its finding that, for novel problems, no memory substrate, including GitOfThoughts, reliably improves LLM accuracy.",
+      "url": "http://arxiv.org/abs/2606.14470v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14470v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2606.14470v1/architecture.png",
+      "figure_caption": "The reasoning tree is a git repository. Each scored thought is a commit with author, timestamp, and content-hash metadata; scores are git notes; validation outcomes are tags ( success_* , failed_* ); pruned attempts remain in history rather than vanishing. The winning path merges to main , an answer-free lesson is distilled to a long-lived memory branch, and retrieval is git log ( --grep , -S , tag filters) over the agent’s own history. Right: the operational properties this buys. Bottom: the end-to-end flow from exploration to retrieval.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14589v1",
+      "title": "When Errors Become Narratives: A Longitudinal Taxonomy of Silent Failures in a Production LLM Agent Runtime",
+      "authors": [
+        "Wei Wu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.DC",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces a longitudinal taxonomy of \"silent failures\" in LLM agent runtimes, where errors go unnoticed. The core method involves an eight-week study of a production personal-assistant agent, identifying 22 incidents and a meta-pattern of uncommunicated errors. The key contribution is a five-class taxonomy, including a novel class (D) of chained hallucination unique to LLMs, which is identified as the most dangerous failure type.",
+      "url": "http://arxiv.org/abs/2606.14589v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14589v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14530v1",
+      "title": "Code Correctness Signals in LLM Hidden States: Pre-Generation Probing and Repair Geometry",
+      "authors": [
+        "Carlo Di Cicco"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper investigates whether Large Language Models (LLMs) encode code correctness in their internal states. The core method involves probing LLM hidden states to see if code correctness can be predicted *before* generation and during *repair* of incorrect code. The key contribution is demonstrating that code correctness is linearly decodable from prompt-final hidden states and that the *change* in hidden states during code repair reveals a distinct \"repair geometry\" indicating correction.",
+      "url": "http://arxiv.org/abs/2606.14530v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14530v1",
+      "score": 9.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2606.14697v1",
+      "title": "ClinHallu: A Benchmark for Diagnosing Stage-Wise Hallucinations in Medical MLLM Reasoning",
+      "authors": [
+        "Sicheng Yang",
+        "Hangjie Yuan",
+        "Wenjun Zhang",
+        "Jinwang Wang",
+        "Yichen Qian"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "abstract": "This paper introduces ClinHallu, a benchmark designed to diagnose stage-wise hallucinations in medical multimodal large language models (MLLMs). It decomposes MLLM reasoning into visual recognition, knowledge recall, and reasoning integration, allowing for the identification of hallucination origins. ClinHallu's contribution lies in enabling source-level hallucination diagnosis and demonstrating that trace-supervised fine-tuning can effectively reduce these stage-wise errors.",
+      "url": "http://arxiv.org/abs/2606.14697v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14697v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.14697v1/x1.png",
+      "figure_caption": "Different reasoning failures can produce the same wrong answer in medical VQA. In this example, the correct answer is “fat”, but visual misrecognition, incorrect knowledge recall, and flawed reasoning integration can each lead the model to answer “abscess”. This motivates ClinHallu , which diagnoses hallucinations by localizing them to specific reasoning stages rather than only judging final-answer correctness.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14517v1",
+      "title": "From Shield to Target: Denial-of-Service Attacks on LLM-Based Agent Guardrails",
+      "authors": [
+        "Yuguang Zhou",
+        "Xunguang Wang",
+        "Pingchuan Ma",
+        "Zhantong Xue",
+        "Zhaoyu Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces a novel denial-of-service (DoS) attack against LLM-based guardrails designed to protect autonomous agents. The core method involves crafting specific natural-language payloads that exploit the guardrail's reasoning capabilities to induce extended reasoning loops, effectively halting its operation. The contribution lies in demonstrating this vulnerability and providing systematic attack frameworks, including a beam-search optimizer and a mechanism-aware mutation approach, which generalize across different guardrail designs.",
+      "url": "http://arxiv.org/abs/2606.14517v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14517v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.14517v1/figures/icons/cyber-criminal.png",
+      "figure_caption": "Illustration of the guardrail DoS threat, i.e. From Shield to Target. Hidden text in fetched content mimics the guardrail’s analytical schema, trapping it in an unbounded reasoning loop with no verdict—inflating per-call compute 13 13 – 63 × 63\\( \\times \\) (up to 148 × 148\\( \\times \\) ) and starving co-located agents.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14357v1",
+      "title": "No Accidental Software Agent First Canonical Code for Human Code Entropy Reduction and 30 to 500 times Lower Frontier Model Requirements",
+      "authors": [
+        "Jepson Taylor"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper proposes \"agent-first canonical code\" to reduce the \"accidental entropy\" in human-written software repositories. The core method involves rewriting software into structured \"canonical behavior profiles\" and \"proof-carrying\" components. This allows frontier models to focus on program behavior rather than noise, significantly lowering their computational requirements and enabling amortized costs for verified correct changes.",
+      "url": "http://arxiv.org/abs/2606.14357v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14357v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14574v1",
+      "title": "SIMMER: Benchmarking Latent Failures in LLM Executable Planning with a World Model",
+      "authors": [
+        "Xiaoxin Lu",
+        "Ranran Haoran Zhang",
+        "Rui Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces SIMMER, a novel benchmark designed to evaluate latent failures in Large Language Model (LLM) planning for autonomous agents. SIMMER utilizes a human-curated symbolic world model grounded in the kitchen domain to identify failures that don't immediately halt execution but silently compromise goal achievement. This contribution addresses a critical gap in existing LLM planning evaluation by focusing on these subtle yet potentially harmful errors.",
+      "url": "http://arxiv.org/abs/2606.14574v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14574v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.14574v1/x1.png",
+      "figure_caption": "A latent and irreversible failure demonstration in cooking. The cutting board becomes contaminated in Step 1 and is reused in Step 3, transferring bacteria to the vegetables. The failure propagates silently until the unsafe dish is served (Step 5). Moreover, once the contamination occurs, no subsequent action can undo it.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14571v1",
+      "title": "StreamMemBench: Streaming Evaluation of Agent Memory for Future-Oriented Assistance",
+      "authors": [
+        "Guanming Liu",
+        "Yuqi Ren",
+        "Hansu Gu",
+        "Peng Zhang",
+        "Weihang Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "StreamMemBench introduces a novel two-step task sequence to evaluate how well agent memory can leverage past observations and interactions for future-oriented assistance. The benchmark's core method tests evidence recall and initial use in the first step, followed by assessing the reuse of feedback and interaction experience in a subsequent task. This approach addresses a gap in existing benchmarks by evaluating the entire trajectory from streaming data to effective future assistance, revealing that current memory systems often struggle to utilize observed evidence.",
+      "url": "http://arxiv.org/abs/2606.14571v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14571v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14445v1",
+      "title": "tap: A File-Based Protocol for Heterogeneous LLM Agent Collaboration",
+      "authors": [
+        "Minseo Kim"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.HC",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces \"tap,\" a file-based protocol enabling LLM agents from different vendors (like Claude and Codex) to collaborate on a shared codebase without needing a common runtime or central server. Its core method involves using markdown files with metadata as message containers, a file inspection mechanism for communication, and real-time notifications, all while isolating work using separate git worktrees. The key contribution is facilitating direct, heterogeneous LLM agent collaboration on code development and review by overcoming the limitations of existing systems.",
+      "url": "http://arxiv.org/abs/2606.14445v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14445v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14672v1",
+      "title": "Towards Direct Latent-Space Synthesis for Parallel Branches in LLM-Agent Workflows",
+      "authors": [
+        "Shikun Liu",
+        "Mufei Li",
+        "Dongqi Fu",
+        "Haoyu Wang",
+        "Yinglong Xia"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces Parallel-Synthesis, a framework that allows a Large Language Model (LLM) synthesizer to directly process the KV caches of independently operating \"worker\" agents, rather than their concatenated text outputs. This approach preserves the parallel structure of agent workflows, avoids redundant computation, and enables more efficient synthesis by directly leveraging the LLM's internal state. The core contribution is a plug-and-play solution with a cache mapper and a fine-tuned synthesizer adapter to achieve this direct latent-space synthesis.",
+      "url": "http://arxiv.org/abs/2606.14672v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14672v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.14672v1/x1.png",
+      "figure_caption": "An example of DAG agentic workflow for advanced research containing using parallel worker agents for research in different directions.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14476v1",
+      "title": "When the Tool Decides: LLM Agents Defer Blindly to Graph Neural Network Tools, and Stronger Backbones Defer More",
+      "authors": [
+        "Zhongyuan Wang",
+        "Pratyusha Vemuri"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper investigates whether LLM agents truly exercise judgment when using Graph Neural Networks (GNNs) as tools. The core finding is that LLM agents overwhelmingly and blindly defer to GNN tool outputs, effectively becoming \"GNN parrots\" rather than intelligent decision-makers. This blind deference is not due to weak LLM capabilities, as stronger models exhibit even higher rates of agreement with the GNN, highlighting a fundamental issue in how LLMs interact with external tools.",
+      "url": "http://arxiv.org/abs/2606.14476v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14476v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.14476v1/x1.png",
+      "figure_caption": "7 7 B, mean ± \\( \\pm \\) SE over 5 5 seeds. (a) Agreement (A1 = = A3) stays near 1 1 across local-homophily regimes (the parrot effect). (b) The oracle gap (cost of deference) is positive throughout.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14510v1",
+      "title": "PepALD: Macrocyclic Peptide Generation via Autoregressive Latent Diffusion",
+      "authors": [
+        "Junming Zhang",
+        "Siyu Yi",
+        "Wei Ju",
+        "Zhonghui Gu"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "PepALD is a foundation model for generating novel macrocyclic peptides. It uses structured chemical embeddings for monomers and a diffusion process in a chemically informed latent space to generate residues. The model also predicts ring closures and optimizes generation towards desired affinity rewards.",
+      "url": "http://arxiv.org/abs/2606.14510v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14510v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.14510v1/result_data/fig1_9.png",
+      "figure_caption": "Overview of the PepALD framework. At each autoregressive step t t , the Causal Context Encoder transforms the previously generated monomer embeddings ( 𝐞 0 , … , 𝐞 t − 1 ) (\\( \\mathbf{e}_{0} \\),\\( \\ldots \\),\\( \\mathbf{e}_{t-1} \\)) into a context vector 𝐡 t \\( \\mathbf{h}_{t} \\) . A context-conditioned Diffusion Engine then samples a continuous embedding 𝐳 t \\( \\mathbf{z}_{t} \\) via iterative denoising in the Uni-Mol latent space. The Token Mapper discretizes 𝐳 t \\( \\mathbf{z}_{t} \\) into a HELM monomer token x t x_{t} subject to position-dependent R-group chemical constraints. Concurrently, the Autoregressive Ring Predictor evaluates potential ring-closure bonds between x t x_{t} and all preceding residues using R-group compatibility scoring. The process repeats until the target sequence length is reached, yielding a complete macrocyclic peptide with predicted ring topology.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2606.14397v1",
+      "title": "Running the Gauntlet: Re-evaluating the Capabilities of Agents Beyond Familiar Environments",
+      "authors": [
+        "Mykola Vysotskyi",
+        "Runqi Lin",
+        "Grzegorz Biziel",
+        "Michal Zakrzewski",
+        "Sebastian Montagna"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces GauntletBench, a novel benchmark designed to rigorously evaluate agent capabilities beyond familiar environments. It focuses on underexplored skills like temporal perception, graphical understanding, and 3D reasoning within challenging, less-covered professional applications. GauntletBench's contribution lies in its comprehensive and vision-intensive approach, aiming to expose the limitations of modern agents and drive progress in their generalisation.",
+      "url": "http://arxiv.org/abs/2606.14397v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14397v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2606.14347v1",
+      "title": "When Language Representations Interact: Separability and Cross-Lingual Effects in LLMs",
+      "authors": [
+        "Boris Marinov",
+        "Angira Sharma",
+        "Christian Schroeder de Witt",
+        "Philip Torr",
+        "Anisoara Calinescu"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper applies causal-geometric analysis to multilingual LLMs to understand how language representations interact. It demonstrates that language concepts are largely represented as separable linear directions, with deviations reflecting linguistic similarity. This work contributes to interpreting multilingual LLMs by showing how language identity influences internal representations and identifying structured dependencies.",
+      "url": "http://arxiv.org/abs/2606.14347v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14347v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.14347v1/x1.png",
+      "figure_caption": "Projection histograms for Qwen3-4B for concepts, including non-linguistic and bilingual contrasts. Counterfactual word differences (red) are projected onto the corresponding concept direction γ ¯ W \\( \\bar{\\gamma}_{W} \\) using the causal inner product and compared against baseline of random word differences (blue). Projections are computed using a leave-one-out estimate γ ¯ W , ( − i ) \\( \\bar{\\gamma}_{W,(-i)} \\) to avoid bias. The consistent right-skew of counterfactual projections, relative to random baselines centered near zero, indicates the presence of stable, approximately linear concept representations.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2606.14674v1",
+      "title": "AgentSpec: Understanding Embodied Agent Scaffolds Through Controlled Composition",
+      "authors": [
+        "Jixuan Chen",
+        "Jianzhi Shen",
+        "Haoqiang Kang",
+        "Zhi Hong",
+        "Qingyi Jiang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces AgentSpec, a framework for understanding and comparing embodied LLM agent scaffolds. AgentSpec standardizes interfaces between different agent components (like reasoning, memory, and action) allowing them to be easily swapped and recombined. This modular approach enables controlled experimentation to analyze the contribution of individual modules and their interactions, leading to a better understanding of agent behavior and performance.",
+      "url": "http://arxiv.org/abs/2606.14674v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14674v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.14674v1/x1.png",
+      "figure_caption": "AgentSpec turns tightly coupled embodied-agent pipelines into a controlled modular design space with fixed typed interfaces, enabling systematic module composition and revealing interaction effects between reasoning, memory, reflection, action, and learning.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2606.14691v1",
+      "title": "CORA: Analyzing and bridging thinking-answer gap in Multimodal RLVR via Consistency-Oriented Reasoning Alignment",
+      "authors": [
+        "Jiayue Cao",
+        "Zhicong Lu",
+        "Xuehan Sun",
+        "Wei Jia",
+        "Hongling Zheng"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper addresses the \"thinking-answer gap\" in multimodal Reinforcement Learning with Verifiable Rewards (RLVR) for vision-language models. The core method, CORA, introduces a consistency reward model to align the semantic meaning of the reasoning process with the final answer. This contributes by improving the coherence and trustworthiness of multimodal RLVR systems.",
+      "url": "http://arxiv.org/abs/2606.14691v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14691v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.14691v1/x1.png",
+      "figure_caption": "Thinking-answer inconsistency in multimodal RLVR. Existing works typically use final-answer correctness as the accuracy reward, underestimating potential inconsistencies between the reasoning trace and the final answer. Our method introduces the consistency reward to encourage the model to derive final answers from faithful reasoning traces.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2606.14654v1",
+      "title": "Abstracting Cross-Domain Action Sequences into Interpretable Workflows",
+      "authors": [
+        "Gaurav Verma",
+        "Scott Counts"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces WorkflowView, a framework that leverages Large Language Models (LLMs) to transform granular user interaction logs into interpretable, high-level workflows. Unlike previous methods sensitive to noise and limited in generalization, WorkflowView effectively abstracts complex action sequences into meaningful activities. Its core contribution lies in enabling better understanding of user behavior across diverse applications, demonstrated by high performance in tasks like zero-shot task description reconstruction and few-shot student dropout prediction.",
+      "url": "http://arxiv.org/abs/2606.14654v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14654v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2606.14654v1/x1.png",
+      "figure_caption": "We propose an LLM-based framework for hierarchical abstraction of user action sequences into interpretable high-level activities (WorkflowView). The left panel illustrates raw action sequences from three domains. WorkflowView enables downstream inferences with task-specific steerability, such as reconstructing user intent in browsers, predicting student dropout in MOOCs, and privacy-preserving categorization of document-centric workflows.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14693v1",
+      "title": "Learning Coordinated Preference for Multi-Objective Multi-Agent Reinforcement Learning",
+      "authors": [
+        "Pengxin Wang",
+        "Lihao Guo",
+        "Yi Xie",
+        "Bo Liu",
+        "Siyang Cao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces Preference Coordinated Multi-agent Policy Optimization (PCMA) for cooperative multi-objective multi-agent reinforcement learning. PCMA learns agent-specific preferences to facilitate complementary trade-offs, addressing conflicts between objectives and agents. The core contribution is demonstrating that this preference diversity can lead to team-wide performance improvements by decomposing the problem into a team-optimal game.",
+      "url": "http://arxiv.org/abs/2606.14693v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14693v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14594v1",
+      "title": "Regulating the Machine Contributor: Governance and Policy Alignment in Open Source",
+      "authors": [
+        "Jassem Manita",
+        "Aziz Amari"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper addresses the challenge of integrating AI agents into open-source development, which currently relies on human-centric governance. It analyzes how existing open-source contribution policies are ill-equipped for autonomous AI and proposes a framework for aligning these policies with emerging AI governance standards. The core contribution is a comparative analysis of organizational policies and a roadmap for achieving better AI governance at the contribution level.",
+      "url": "http://arxiv.org/abs/2606.14594v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14594v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "papers": [
+    {
+      "id": "2606.14502v1",
+      "title": "From Chatbot to Digital Colleague: The Paradigm Shift Toward Persistent Autonomous AI",
+      "authors": [
+        "Yongheng Zhang",
+        "Ziang Liu",
+        "Jiaxuan Zhu",
+        "Shuai Wang",
+        "Xiangqi Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper proposes a paradigm shift from \"Chatbot\" to \"Digital Colleague\" for AI. The core method involves advancing LLMs from simple conversational generators to integrated systems with persistent memory, reasoning, and self-improvement capabilities. This transition is achieved through enhanced cognitive processes like Chain-of-Thought reasoning and the development of tool-augmented workstation systems with persistent workspaces and verification loops.",
+      "url": "http://arxiv.org/abs/2606.14502v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14502v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2606.14502v1/x2.png",
+      "figure_caption": "A roadmap and evolutionary timeline of next-generation LLM systems. The figure summarizes how these AI systems progress from simple conversational chatbots to reasoning cores, tool-using agents, and persistent workspace systems over time. Each node is labeled by its release month. box represents open-source / open platform; box represents closed / commercial system.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14470v1",
+      "title": "GitOfThoughts: Version-Controlled Reasoning and Agent Memory You Can Replay, Diff, and Merge",
+      "authors": [
+        "Pavan C Shekar",
+        "Abhishek H S",
+        "Aswanth Krishnan"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "GitOfThoughts addresses the ephemeral nature of LLM reasoning by treating it as a version-controlled process, akin to software development. It stores reasoning steps as Git commits, allowing for replayability, auditing, and merging of agent thought processes. However, the paper's key contribution is its finding that, for novel problems, no memory substrate, including GitOfThoughts, reliably improves LLM accuracy.",
+      "url": "http://arxiv.org/abs/2606.14470v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14470v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2606.14470v1/architecture.png",
+      "figure_caption": "The reasoning tree is a git repository. Each scored thought is a commit with author, timestamp, and content-hash metadata; scores are git notes; validation outcomes are tags ( success_* , failed_* ); pruned attempts remain in history rather than vanishing. The winning path merges to main , an answer-free lesson is distilled to a long-lived memory branch, and retrieval is git log ( --grep , -S , tag filters) over the agent’s own history. Right: the operational properties this buys. Bottom: the end-to-end flow from exploration to retrieval.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14589v1",
+      "title": "When Errors Become Narratives: A Longitudinal Taxonomy of Silent Failures in a Production LLM Agent Runtime",
+      "authors": [
+        "Wei Wu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.DC",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces a longitudinal taxonomy of \"silent failures\" in LLM agent runtimes, where errors go unnoticed. The core method involves an eight-week study of a production personal-assistant agent, identifying 22 incidents and a meta-pattern of uncommunicated errors. The key contribution is a five-class taxonomy, including a novel class (D) of chained hallucination unique to LLMs, which is identified as the most dangerous failure type.",
+      "url": "http://arxiv.org/abs/2606.14589v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14589v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14530v1",
+      "title": "Code Correctness Signals in LLM Hidden States: Pre-Generation Probing and Repair Geometry",
+      "authors": [
+        "Carlo Di Cicco"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper investigates whether Large Language Models (LLMs) encode code correctness in their internal states. The core method involves probing LLM hidden states to see if code correctness can be predicted *before* generation and during *repair* of incorrect code. The key contribution is demonstrating that code correctness is linearly decodable from prompt-final hidden states and that the *change* in hidden states during code repair reveals a distinct \"repair geometry\" indicating correction.",
+      "url": "http://arxiv.org/abs/2606.14530v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14530v1",
+      "score": 9.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2606.14697v1",
+      "title": "ClinHallu: A Benchmark for Diagnosing Stage-Wise Hallucinations in Medical MLLM Reasoning",
+      "authors": [
+        "Sicheng Yang",
+        "Hangjie Yuan",
+        "Wenjun Zhang",
+        "Jinwang Wang",
+        "Yichen Qian"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "abstract": "This paper introduces ClinHallu, a benchmark designed to diagnose stage-wise hallucinations in medical multimodal large language models (MLLMs). It decomposes MLLM reasoning into visual recognition, knowledge recall, and reasoning integration, allowing for the identification of hallucination origins. ClinHallu's contribution lies in enabling source-level hallucination diagnosis and demonstrating that trace-supervised fine-tuning can effectively reduce these stage-wise errors.",
+      "url": "http://arxiv.org/abs/2606.14697v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14697v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.14697v1/x1.png",
+      "figure_caption": "Different reasoning failures can produce the same wrong answer in medical VQA. In this example, the correct answer is “fat”, but visual misrecognition, incorrect knowledge recall, and flawed reasoning integration can each lead the model to answer “abscess”. This motivates ClinHallu , which diagnoses hallucinations by localizing them to specific reasoning stages rather than only judging final-answer correctness.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14517v1",
+      "title": "From Shield to Target: Denial-of-Service Attacks on LLM-Based Agent Guardrails",
+      "authors": [
+        "Yuguang Zhou",
+        "Xunguang Wang",
+        "Pingchuan Ma",
+        "Zhantong Xue",
+        "Zhaoyu Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces a novel denial-of-service (DoS) attack against LLM-based guardrails designed to protect autonomous agents. The core method involves crafting specific natural-language payloads that exploit the guardrail's reasoning capabilities to induce extended reasoning loops, effectively halting its operation. The contribution lies in demonstrating this vulnerability and providing systematic attack frameworks, including a beam-search optimizer and a mechanism-aware mutation approach, which generalize across different guardrail designs.",
+      "url": "http://arxiv.org/abs/2606.14517v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14517v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.14517v1/figures/icons/cyber-criminal.png",
+      "figure_caption": "Illustration of the guardrail DoS threat, i.e. From Shield to Target. Hidden text in fetched content mimics the guardrail’s analytical schema, trapping it in an unbounded reasoning loop with no verdict—inflating per-call compute 13 13 – 63 × 63\\( \\times \\) (up to 148 × 148\\( \\times \\) ) and starving co-located agents.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14357v1",
+      "title": "No Accidental Software Agent First Canonical Code for Human Code Entropy Reduction and 30 to 500 times Lower Frontier Model Requirements",
+      "authors": [
+        "Jepson Taylor"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper proposes \"agent-first canonical code\" to reduce the \"accidental entropy\" in human-written software repositories. The core method involves rewriting software into structured \"canonical behavior profiles\" and \"proof-carrying\" components. This allows frontier models to focus on program behavior rather than noise, significantly lowering their computational requirements and enabling amortized costs for verified correct changes.",
+      "url": "http://arxiv.org/abs/2606.14357v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14357v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14574v1",
+      "title": "SIMMER: Benchmarking Latent Failures in LLM Executable Planning with a World Model",
+      "authors": [
+        "Xiaoxin Lu",
+        "Ranran Haoran Zhang",
+        "Rui Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces SIMMER, a novel benchmark designed to evaluate latent failures in Large Language Model (LLM) planning for autonomous agents. SIMMER utilizes a human-curated symbolic world model grounded in the kitchen domain to identify failures that don't immediately halt execution but silently compromise goal achievement. This contribution addresses a critical gap in existing LLM planning evaluation by focusing on these subtle yet potentially harmful errors.",
+      "url": "http://arxiv.org/abs/2606.14574v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14574v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.14574v1/x1.png",
+      "figure_caption": "A latent and irreversible failure demonstration in cooking. The cutting board becomes contaminated in Step 1 and is reused in Step 3, transferring bacteria to the vegetables. The failure propagates silently until the unsafe dish is served (Step 5). Moreover, once the contamination occurs, no subsequent action can undo it.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14571v1",
+      "title": "StreamMemBench: Streaming Evaluation of Agent Memory for Future-Oriented Assistance",
+      "authors": [
+        "Guanming Liu",
+        "Yuqi Ren",
+        "Hansu Gu",
+        "Peng Zhang",
+        "Weihang Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "StreamMemBench introduces a novel two-step task sequence to evaluate how well agent memory can leverage past observations and interactions for future-oriented assistance. The benchmark's core method tests evidence recall and initial use in the first step, followed by assessing the reuse of feedback and interaction experience in a subsequent task. This approach addresses a gap in existing benchmarks by evaluating the entire trajectory from streaming data to effective future assistance, revealing that current memory systems often struggle to utilize observed evidence.",
+      "url": "http://arxiv.org/abs/2606.14571v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14571v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14445v1",
+      "title": "tap: A File-Based Protocol for Heterogeneous LLM Agent Collaboration",
+      "authors": [
+        "Minseo Kim"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.HC",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces \"tap,\" a file-based protocol enabling LLM agents from different vendors (like Claude and Codex) to collaborate on a shared codebase without needing a common runtime or central server. Its core method involves using markdown files with metadata as message containers, a file inspection mechanism for communication, and real-time notifications, all while isolating work using separate git worktrees. The key contribution is facilitating direct, heterogeneous LLM agent collaboration on code development and review by overcoming the limitations of existing systems.",
+      "url": "http://arxiv.org/abs/2606.14445v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14445v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14672v1",
+      "title": "Towards Direct Latent-Space Synthesis for Parallel Branches in LLM-Agent Workflows",
+      "authors": [
+        "Shikun Liu",
+        "Mufei Li",
+        "Dongqi Fu",
+        "Haoyu Wang",
+        "Yinglong Xia"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces Parallel-Synthesis, a framework that allows a Large Language Model (LLM) synthesizer to directly process the KV caches of independently operating \"worker\" agents, rather than their concatenated text outputs. This approach preserves the parallel structure of agent workflows, avoids redundant computation, and enables more efficient synthesis by directly leveraging the LLM's internal state. The core contribution is a plug-and-play solution with a cache mapper and a fine-tuned synthesizer adapter to achieve this direct latent-space synthesis.",
+      "url": "http://arxiv.org/abs/2606.14672v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14672v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.14672v1/x1.png",
+      "figure_caption": "An example of DAG agentic workflow for advanced research containing using parallel worker agents for research in different directions.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14476v1",
+      "title": "When the Tool Decides: LLM Agents Defer Blindly to Graph Neural Network Tools, and Stronger Backbones Defer More",
+      "authors": [
+        "Zhongyuan Wang",
+        "Pratyusha Vemuri"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper investigates whether LLM agents truly exercise judgment when using Graph Neural Networks (GNNs) as tools. The core finding is that LLM agents overwhelmingly and blindly defer to GNN tool outputs, effectively becoming \"GNN parrots\" rather than intelligent decision-makers. This blind deference is not due to weak LLM capabilities, as stronger models exhibit even higher rates of agreement with the GNN, highlighting a fundamental issue in how LLMs interact with external tools.",
+      "url": "http://arxiv.org/abs/2606.14476v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14476v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.14476v1/x1.png",
+      "figure_caption": "7 7 B, mean ± \\( \\pm \\) SE over 5 5 seeds. (a) Agreement (A1 = = A3) stays near 1 1 across local-homophily regimes (the parrot effect). (b) The oracle gap (cost of deference) is positive throughout.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14510v1",
+      "title": "PepALD: Macrocyclic Peptide Generation via Autoregressive Latent Diffusion",
+      "authors": [
+        "Junming Zhang",
+        "Siyu Yi",
+        "Wei Ju",
+        "Zhonghui Gu"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "PepALD is a foundation model for generating novel macrocyclic peptides. It uses structured chemical embeddings for monomers and a diffusion process in a chemically informed latent space to generate residues. The model also predicts ring closures and optimizes generation towards desired affinity rewards.",
+      "url": "http://arxiv.org/abs/2606.14510v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14510v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.14510v1/result_data/fig1_9.png",
+      "figure_caption": "Overview of the PepALD framework. At each autoregressive step t t , the Causal Context Encoder transforms the previously generated monomer embeddings ( 𝐞 0 , … , 𝐞 t − 1 ) (\\( \\mathbf{e}_{0} \\),\\( \\ldots \\),\\( \\mathbf{e}_{t-1} \\)) into a context vector 𝐡 t \\( \\mathbf{h}_{t} \\) . A context-conditioned Diffusion Engine then samples a continuous embedding 𝐳 t \\( \\mathbf{z}_{t} \\) via iterative denoising in the Uni-Mol latent space. The Token Mapper discretizes 𝐳 t \\( \\mathbf{z}_{t} \\) into a HELM monomer token x t x_{t} subject to position-dependent R-group chemical constraints. Concurrently, the Autoregressive Ring Predictor evaluates potential ring-closure bonds between x t x_{t} and all preceding residues using R-group compatibility scoring. The process repeats until the target sequence length is reached, yielding a complete macrocyclic peptide with predicted ring topology.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2606.14397v1",
+      "title": "Running the Gauntlet: Re-evaluating the Capabilities of Agents Beyond Familiar Environments",
+      "authors": [
+        "Mykola Vysotskyi",
+        "Runqi Lin",
+        "Grzegorz Biziel",
+        "Michal Zakrzewski",
+        "Sebastian Montagna"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces GauntletBench, a novel benchmark designed to rigorously evaluate agent capabilities beyond familiar environments. It focuses on underexplored skills like temporal perception, graphical understanding, and 3D reasoning within challenging, less-covered professional applications. GauntletBench's contribution lies in its comprehensive and vision-intensive approach, aiming to expose the limitations of modern agents and drive progress in their generalisation.",
+      "url": "http://arxiv.org/abs/2606.14397v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14397v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2606.14347v1",
+      "title": "When Language Representations Interact: Separability and Cross-Lingual Effects in LLMs",
+      "authors": [
+        "Boris Marinov",
+        "Angira Sharma",
+        "Christian Schroeder de Witt",
+        "Philip Torr",
+        "Anisoara Calinescu"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper applies causal-geometric analysis to multilingual LLMs to understand how language representations interact. It demonstrates that language concepts are largely represented as separable linear directions, with deviations reflecting linguistic similarity. This work contributes to interpreting multilingual LLMs by showing how language identity influences internal representations and identifying structured dependencies.",
+      "url": "http://arxiv.org/abs/2606.14347v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14347v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.14347v1/x1.png",
+      "figure_caption": "Projection histograms for Qwen3-4B for concepts, including non-linguistic and bilingual contrasts. Counterfactual word differences (red) are projected onto the corresponding concept direction γ ¯ W \\( \\bar{\\gamma}_{W} \\) using the causal inner product and compared against baseline of random word differences (blue). Projections are computed using a leave-one-out estimate γ ¯ W , ( − i ) \\( \\bar{\\gamma}_{W,(-i)} \\) to avoid bias. The consistent right-skew of counterfactual projections, relative to random baselines centered near zero, indicates the presence of stable, approximately linear concept representations.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2606.14674v1",
+      "title": "AgentSpec: Understanding Embodied Agent Scaffolds Through Controlled Composition",
+      "authors": [
+        "Jixuan Chen",
+        "Jianzhi Shen",
+        "Haoqiang Kang",
+        "Zhi Hong",
+        "Qingyi Jiang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces AgentSpec, a framework for understanding and comparing embodied LLM agent scaffolds. AgentSpec standardizes interfaces between different agent components (like reasoning, memory, and action) allowing them to be easily swapped and recombined. This modular approach enables controlled experimentation to analyze the contribution of individual modules and their interactions, leading to a better understanding of agent behavior and performance.",
+      "url": "http://arxiv.org/abs/2606.14674v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14674v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.14674v1/x1.png",
+      "figure_caption": "AgentSpec turns tightly coupled embodied-agent pipelines into a controlled modular design space with fixed typed interfaces, enabling systematic module composition and revealing interaction effects between reasoning, memory, reflection, action, and learning.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2606.14691v1",
+      "title": "CORA: Analyzing and bridging thinking-answer gap in Multimodal RLVR via Consistency-Oriented Reasoning Alignment",
+      "authors": [
+        "Jiayue Cao",
+        "Zhicong Lu",
+        "Xuehan Sun",
+        "Wei Jia",
+        "Hongling Zheng"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper addresses the \"thinking-answer gap\" in multimodal Reinforcement Learning with Verifiable Rewards (RLVR) for vision-language models. The core method, CORA, introduces a consistency reward model to align the semantic meaning of the reasoning process with the final answer. This contributes by improving the coherence and trustworthiness of multimodal RLVR systems.",
+      "url": "http://arxiv.org/abs/2606.14691v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14691v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2606.14691v1/x1.png",
+      "figure_caption": "Thinking-answer inconsistency in multimodal RLVR. Existing works typically use final-answer correctness as the accuracy reward, underestimating potential inconsistencies between the reasoning trace and the final answer. Our method introduces the consistency reward to encourage the model to derive final answers from faithful reasoning traces.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2606.14654v1",
+      "title": "Abstracting Cross-Domain Action Sequences into Interpretable Workflows",
+      "authors": [
+        "Gaurav Verma",
+        "Scott Counts"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces WorkflowView, a framework that leverages Large Language Models (LLMs) to transform granular user interaction logs into interpretable, high-level workflows. Unlike previous methods sensitive to noise and limited in generalization, WorkflowView effectively abstracts complex action sequences into meaningful activities. Its core contribution lies in enabling better understanding of user behavior across diverse applications, demonstrated by high performance in tasks like zero-shot task description reconstruction and few-shot student dropout prediction.",
+      "url": "http://arxiv.org/abs/2606.14654v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14654v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2606.14654v1/x1.png",
+      "figure_caption": "We propose an LLM-based framework for hierarchical abstraction of user action sequences into interpretable high-level activities (WorkflowView). The left panel illustrates raw action sequences from three domains. WorkflowView enables downstream inferences with task-specific steerability, such as reconstructing user intent in browsers, predicting student dropout in MOOCs, and privacy-preserving categorization of document-centric workflows.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14693v1",
+      "title": "Learning Coordinated Preference for Multi-Objective Multi-Agent Reinforcement Learning",
+      "authors": [
+        "Pengxin Wang",
+        "Lihao Guo",
+        "Yi Xie",
+        "Bo Liu",
+        "Siyang Cao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces Preference Coordinated Multi-agent Policy Optimization (PCMA) for cooperative multi-objective multi-agent reinforcement learning. PCMA learns agent-specific preferences to facilitate complementary trade-offs, addressing conflicts between objectives and agents. The core contribution is demonstrating that this preference diversity can lead to team-wide performance improvements by decomposing the problem into a team-optimal game.",
+      "url": "http://arxiv.org/abs/2606.14693v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14693v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2606.14594v1",
+      "title": "Regulating the Machine Contributor: Governance and Policy Alignment in Open Source",
+      "authors": [
+        "Jassem Manita",
+        "Aziz Amari"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper addresses the challenge of integrating AI agents into open-source development, which currently relies on human-centric governance. It analyzes how existing open-source contribution policies are ill-equipped for autonomous AI and proposes a framework for aligning these policies with emerging AI governance standards. The core contribution is a comparative analysis of organizational policies and a roadmap for achieving better AI governance at the contribution level.",
+      "url": "http://arxiv.org/abs/2606.14594v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14594v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "hacker_news": [
+    {
+      "id": 48527700,
+      "title": "Not everyone is using AI for everything",
+      "url": "https://gabrielweinberg.com/p/people-are-consuming-ai-like-they",
+      "score": 469,
+      "created_at": "2026-06-14T14:44:29Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48527700",
+      "summary": "Many people are only using AI for specific, limited tasks rather than for every aspect of their lives, similar to how they consume other technologies."
+    },
+    {
+      "id": 48528371,
+      "title": "Rio de Janeiro's \"homegrown\" LLM appears to be a merge of an existing model",
+      "url": "https://github.com/nex-agi/Nex-N2/issues/4",
+      "score": 360,
+      "created_at": "2026-06-14T15:37:31Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48528371",
+      "summary": "Rio de Janeiro's \"homegrown\" LLM, Nex-N2, appears to be a merge of an existing open-source model, raising questions about its originality."
+    },
+    {
+      "id": 48528729,
+      "title": "Linux 7.1",
+      "url": "https://lore.kernel.org/lkml/CAHk-=wi4BF4bMhZNZ1tqs+FFV4OuZRe3ZqdWB+LxRLmRweUzQw@mail.gmail.com/T/#u",
+      "score": 296,
+      "created_at": "2026-06-14T16:01:30Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48528729",
+      "summary": "Linux kernel 7.1 has been released, bringing significant updates and improvements to the operating system."
+    },
+    {
+      "id": 48533504,
+      "title": "Did Anthropic ask for this?",
+      "url": "https://www.verysane.ai/p/did-anthropic-ask-for-this",
+      "score": 186,
+      "created_at": "2026-06-14T22:23:05Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48533504",
+      "summary": "This article discusses how Anthropic's AI safety research, particularly its focus on \"constitutional AI,\" may have inadvertently contributed to the development of more capable and potentially less controllable AI models."
+    },
+    {
+      "id": 48527297,
+      "title": "KPMG pulls report on AI usage due to apparent hallucinations",
+      "url": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/",
+      "score": 147,
+      "created_at": "2026-06-14T14:01:35Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48527297",
+      "summary": "KPMG withdrew its report on AI usage after discovering apparent \"hallucinations\" in the data, highlighting the ongoing challenges with AI accuracy."
+    },
+    {
+      "id": 48532178,
+      "title": "AI is code – and can't be prompted into being smarter",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/14/ai-is-code-and-cant-be-prompted-into-being-smarter/5254141",
+      "score": 139,
+      "created_at": "2026-06-14T20:17:54Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48532178",
+      "summary": "This article argues that AI's intelligence is fundamentally limited by its underlying code, and simply changing prompts cannot fundamentally increase its capabilities."
+    }
+  ],
+  "github_trending": [
+    {
+      "full_name": "iptv-org/iptv",
+      "url": "https://github.com/iptv-org/iptv",
+      "description": "Collection of publicly available IPTV channels from all over the world",
+      "stars_today": 1528,
+      "total_stars": 122368,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "This repository is a comprehensive, community-driven collection of publicly accessible IPTV channels from around the globe, offering a vast directory of live television streams."
+    },
+    {
+      "full_name": "teslamate-org/teslamate",
+      "url": "https://github.com/teslamate-org/teslamate",
+      "description": "A self-hosted data logger for your Tesla 🚘 [main maintainer= @JakobLichterfeld ]",
+      "stars_today": 35,
+      "total_stars": 8135,
+      "language": "Elixir",
+      "topics": [],
+      "summary": "TeslaMate is a self-hosted data logger that collects and visualizes your Tesla's driving data, offering insights into your vehicle's usage and performance."
+    },
+    {
+      "full_name": "Panniantong/Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "stars_today": 1045,
+      "total_stars": 29313,
+      "language": "Python",
+      "topics": [],
+      "summary": "Agent-Reach provides a unified CLI to grant AI agents access to read and search content across major platforms like Twitter, Reddit, YouTube, and GitHub without incurring API fees."
+    },
+    {
+      "full_name": "meshery/meshery",
+      "url": "https://github.com/meshery/meshery",
+      "description": "Meshery, the cloud native manager",
+      "stars_today": 20,
+      "total_stars": 10507,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "Meshery is the cloud-native manager that provides a unified platform for deploying, managing, and observing cloud-native infrastructure and applications, offering features like multi-cluster management, performance testing, and service mesh integration."
+    },
+    {
+      "full_name": "chatwoot/chatwoot",
+      "url": "https://github.com/chatwoot/chatwoot",
+      "description": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
+      "stars_today": 400,
+      "total_stars": 31449,
+      "language": "Ruby",
+      "topics": [],
+      "summary": "Chatwoot is an open-source, omni-channel customer engagement platform offering live chat, email, and social media support as a powerful alternative to commercial solutions like Intercom and Zendesk."
+    },
+    {
+      "full_name": "krahets/hello-algo",
+      "url": "https://github.com/krahets/hello-algo",
+      "description": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 等代码实现",
+      "stars_today": 34,
+      "total_stars": 126728,
+      "language": "Java",
+      "topics": [],
+      "summary": "This repository offers an animated, interactive tutorial for data structures and algorithms, featuring code implementations in multiple languages and support for several languages."
+    },
+    {
+      "full_name": "freeCodeCamp/freeCodeCamp",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "stars_today": 146,
+      "total_stars": 447597,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "freeCodeCamp's core function is to provide a free, open-source platform for learning math, programming, and computer science through its codebase and curriculum."
+    },
+    {
+      "full_name": "trycua/cua",
+      "url": "https://github.com/trycua/cua",
+      "description": "Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchmarks to train and evaluate AI agents that can control full desktops (macOS, Linux, Windows).",
+      "stars_today": 57,
+      "total_stars": 18001,
+      "language": "HTML",
+      "topics": [],
+      "summary": "This repository provides open-source infrastructure, including sandboxes, SDKs, and benchmarks, for developing and evaluating AI agents capable of controlling full desktops across macOS, Linux, and Windows."
+    },
+    {
+      "full_name": "jwasham/coding-interview-university",
+      "url": "https://github.com/jwasham/coding-interview-university",
+      "description": "A complete computer science study plan to become a software engineer.",
+      "stars_today": 516,
+      "total_stars": 352044,
+      "language": "",
+      "topics": [],
+      "summary": "This repository provides a comprehensive computer science curriculum designed to prepare individuals for software engineering interviews, covering essential topics and resources for a thorough study plan."
+    }
+  ],
+  "us_stocks": [],
+  "postdoc_jobs": [],
+  "jobs": [],
+  "supervisor_updates": [],
+  "weather": [
+    {
+      "query": "London",
+      "label": "London, England, United Kingdom",
+      "resolved_name": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "timezone": "Europe/London",
+      "forecast_date": "2026-06-15",
+      "condition": "Overcast",
+      "weather_code": 3,
+      "temperature_c": 19.9,
+      "apparent_temperature_c": 19.2,
+      "temp_max_c": 23.8,
+      "temp_min_c": 14.0,
+      "humidity_pct": 54,
+      "wind_speed_kmh": 13.3,
+      "precipitation_probability_pct": 88,
+      "is_day": true,
+      "sunrise": "2026-06-15T04:43",
+      "sunset": "2026-06-15T21:19",
+      "source": "Open-Meteo",
+      "source_url": "https://open-meteo.com/"
+    }
+  ]
+}
