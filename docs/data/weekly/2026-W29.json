@@ -1,0 +1,480 @@
+{
+  "period": "2026-W29",
+  "summary": "This week's research reflects a strong push towards enhancing AI agent capabilities and addresses critical limitations in current large language models (LLMs).\n\n**Popular Directions:**\nA prominent trend is improving **long-horizon reasoning and memory** across agents. Papers like \"Remember When It Matters\" and \"Cognitive-structured Multimodal Agent\" introduce mechanisms for agents to selectively access and utilize past information, crucial for complex tasks. **Multi-agent systems** are also gaining traction, with frameworks like \"WebSwarm\" and \"G-Frame\" advocating for collaborative or game-theory-driven approaches to achieve better outcomes and reduce errors, particularly hallucinations. **Data quality and refinement** are central to achieving better performance, as seen in \"UltraX,\" which focuses on programmatic editing of pre-training data.\n\n**Notable Advances:**\nSignificant progress is being made in **multimodal understanding and generation**, with models like \"Cognitive-structured Multimodal Agent\" and \"WCog-VLA\" integrating vision, language, and action for tasks ranging from general understanding to autonomous driving. Robustness is a key focus, with methods like **watermarking (\"TRACE\")** and **semantic runtime auditing (\"Token-Flow Firewall\")** emerging to ensure AI integrity and attribution. New **benchmarks** such as \"UniClawBench,\" \"AUTOPILOT VQA,\" and \"OmniFood-Bench\" are crucial for standardized evaluation of proactive agents, vision-language models, and food-related reasoning.\n\n**Significant Shifts:**\nThere's a growing recognition of the \"Knowing-Using Gap,\" where memorized knowledge isn't effectively applied. Papers like \"Towards Mechanistically Understanding Why Memorized Knowledge Fails to Generalize\" offer insights into this problem, hinting at a shift towards understanding *how* LLMs learn and use information. The introduction of **\"Context Access Divide\"** signifies a move to consider new forms of AI inequality beyond data access, focusing on the qualitative difference in how AI agents interact with user knowledge. Finally, research into **patient-centered conversational AI** highlights the critical need for realistic human interaction modeling in specialized domains.",
+  "top_papers": [
+    {
+      "id": "2607.08497v1",
+      "title": "Cognitive-structured Multimodal Agent for Multimodal Understanding, Generation, and Editing",
+      "authors": [
+        "Feng Wang",
+        "Canmiao Fu",
+        "Zhipeng Huang",
+        "Chen Li",
+        "Jing Lyu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "abstract": "This paper introduces a Cognitive-structured Multimodal Agent that addresses limitations in current unified multimodal models by externalizing visual information into an Episodic Visual Memory. This allows for selective retrieval of relevant visual context during reasoning, overcoming issues with long-horizon dialogues and token explosion. The agent's contribution lies in its novel architecture with distinct engines for perception, memory retrieval, and task execution, along with a new dataset generation method to facilitate training for improved cross-turn multimodal understanding and generation.",
+      "url": "http://arxiv.org/abs/2607.08497v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08497v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.08497v1/x1.png",
+      "figure_caption": "A multi-turn multimodal dialogue produced by our Cognitive-structured Multimodal Agent, spanning 20 turns across four topics (stargazing dome, biological cells, cleanroom facility, spacecraft). The agent autonomously handles interleaved understanding, generation, and editing tasks while accurately retrieving and referencing visual episodes from earlier turns.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.08403v1",
+      "title": "Game Theory Driven Multi-Agent Framework Mitigates Language Model Hallucination",
+      "authors": [
+        "Runzhe Liu",
+        "Biquan Bie",
+        "Zihao Wang",
+        "Yuchao Ma",
+        "Yexin Liu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces G-Frame, a multi-agent framework that uses game theory to train language models for scientific domains. By integrating Bayesian and team game principles, G-Frame forces models to internalize domain constraints, significantly reducing hallucinations. This approach leads to specialized models like OmniChem, which achieve competitive performance with state-of-the-art models while exhibiting drastically fewer errors.",
+      "url": "http://arxiv.org/abs/2607.08403v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08403v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.08403v1/figures/Fig1.png",
+      "figure_caption": "a. G-Frame achieves adaptive strategies through two distinct modes: (i) team games and (ii) Bayesian games. b. The bar chart illustrates the number of open-source databases designated with chemical labels on Hugging Face as of May 15, 2025. Notably, a substantial portion of these datasets contains invalid entries or pertains to other domains; thus, the amount of genuinely usable data for chemistry is less than the reported. c, d, e. The workflow for building OmniChem using G-Frame is illustrated, consisting of three modules: data preprocessing, data synthesis, and model training. f. The composition of the journal corpus used for pre-training is shown.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.08393v1",
+      "title": "Towards Mechanistically Understanding Why Memorized Knowledge Fails to Generalize in Large Language Model Finetuning",
+      "authors": [
+        "Lu Dai",
+        "Ziyang Rao",
+        "Yili Wang",
+        "Hanqing Wang",
+        "Hao Liu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper addresses the \"Knowing-Using Gap\" in LLM fine-tuning, where models memorize new facts but fail to apply them in reasoning. Using a novel \"self-patching\" technique, they identify that memorized knowledge is internally present but not correctly routed to computation-effective layers. This \"knowledge-circuit misalignment\" is the core reason for generalization failure, and their diagnostic finding leads to a practical strategy that significantly improves generalization performance.",
+      "url": "http://arxiv.org/abs/2607.08393v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08393v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.08393v1/x1.png",
+      "figure_caption": "Illustration of the Knowing–Using Gap.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.08646v1",
+      "title": "UltraX: Refining Pre-Training Data at Scale with Adaptive Programmatic Editing",
+      "authors": [
+        "Xinlong Zhao",
+        "Dongsheng Liu",
+        "Hengyu Zhao",
+        "Zixuan Fu",
+        "Zheng Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "UltraX addresses the diminishing returns of scaling LLMs by focusing on data quality. Its core method is an adaptive programmatic editing framework that refines pre-training data at scale by enabling fine-grained insertion, deletion, and modification. This approach improves data quality efficiently and reliably, overcoming limitations of existing rule-based and LLM-based methods.",
+      "url": "http://arxiv.org/abs/2607.08646v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08646v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.08646v1/x4.png",
+      "figure_caption": "Overall workflow of UltraX, covering program-supervision generation, refinement model training, and inference-time program execution.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.08662v1",
+      "title": "WebSwarm: Recursive Multi-Agent Orchestration for Deep-and-Wide Web Search",
+      "authors": [
+        "Xiaoshuai Song",
+        "Liancheng Zhang",
+        "Kangzhi Zhao",
+        "Yutao Zhu",
+        "Zhongyuan Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "abstract": "WebSwarm addresses the limitations of single LLM agents in deep and wide web searches by introducing a recursive delegation framework. Its core method involves dynamically creating agentic search nodes that jointly decompose tasks, recursively expand search, and adaptively collaborate. This allows for more effective handling of complex research tasks by enabling agents to either solve objectives directly or delegate them to child nodes, improving both search depth and coverage.",
+      "url": "http://arxiv.org/abs/2607.08662v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08662v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.08662v1/x1.png",
+      "figure_caption": "Illustration of representative multi-agent orchestration paradigms and WebSwarm.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.08647v1",
+      "title": "Multi-Modal, Multi-Environment Machine Teaching for Robust Reward Learning",
+      "authors": [
+        "Ali Larian",
+        "Qian Lin",
+        "Chang Zong Wu",
+        "Daniel S. Brown"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper proposes a novel machine teaching method for robust reward learning in Inverse Reinforcement Learning (IRL). It addresses the challenge of learning reward functions that generalize across multiple environments by leveraging heterogeneous feedback modalities. The core contribution is demonstrating how different feedback types, particularly comparisons, provide stronger global constraints on reward functions, leading to improved robustness against environmental changes compared to single-environment, demonstration-only approaches.",
+      "url": "http://arxiv.org/abs/2607.08647v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08647v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.08716v1",
+      "title": "Remember When It Matters: Proactive Memory Agent for Long-Horizon Agents",
+      "authors": [
+        "Yifan Wu",
+        "Lizhu Zhang",
+        "Yuhang Zhou",
+        "Mingyi Wang",
+        "Bo Peng"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces a proactive memory agent that actively intervenes by injecting relevant memories into an action agent's decision-making process. This combats \"behavioral state decay\" in long-horizon tasks where crucial information is lost. The plug-and-play memory agent significantly improves task success rates by selectively reminding the action agent of important context, demonstrating its effectiveness across benchmark environments.",
+      "url": "http://arxiv.org/abs/2607.08716v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08716v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.08565v1",
+      "title": "SMetric: Rethink LLM Scheduling for Serving Agents with Balanced Session-centric Scheduling",
+      "authors": [
+        "Jiahao Wang",
+        "Kaizhan Lin",
+        "Kaixi Zhang",
+        "Jinbo Han",
+        "Xingda Wei"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.DC"
+      ],
+      "abstract": "This paper introduces SMetric, a novel LLM scheduling method for serving AI agents. It addresses the unique demands of agentic workloads, where complete responses are prioritized over per-token latency, and KV cache reuse is significantly higher. SMetric proposes a balanced session-centric approach that leverages global KV stores and intra-session locality to improve throughput without sacrificing KV cache efficiency, overcoming limitations of existing schedulers.",
+      "url": "http://arxiv.org/abs/2607.08565v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08565v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.08565v1/figs/sanitized/kvcache.png",
+      "figure_caption": "The KV$ store hierarchy for serving agents.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.08400v1",
+      "title": "TRACE: A Two-Channel Robust Attribution Watermark via Complementary Embeddings for LLM-Agent Trajectories",
+      "authors": [
+        "Zheng Gao",
+        "Xiaoyu Li",
+        "Xiaoyan Feng",
+        "Jiaojiao Jiang",
+        "Yang Song"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CR"
+      ],
+      "abstract": "TRACE embeds a robust watermark into LLM agent trajectories by using two complementary channels. One channel is content-based for deletion resilience, and the other is position-based for rewrite resilience. This dual approach allows for distortion-free action choices and self-synchronization, ensuring attribution even when trajectory logs are tampered with.",
+      "url": "http://arxiv.org/abs/2607.08400v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08400v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.08375v1",
+      "title": "WCog-VLA: A Dual-Level World-Cognitive Vision-Language-Action Model for End-to-End Autonomous Driving",
+      "authors": [
+        "Xuerun Yan",
+        "Zhexi Lian",
+        "Nuoheng Zhang",
+        "Shiyu Fang",
+        "Haoran Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "WCog-VLA addresses the limitations of reactive autonomous driving by introducing a dual-level framework for proactive driving. It achieves this by unifying world cognition and reasoning at a semantic level, incorporating 3D perception and agent tokens for dynamic understanding and Game-theoretic Chain-of-Thought reasoning. At a generative level, the Aligned Decoupled Diffusion Transformer synthesizes physically-plausible multi-agent trajectories, enabling more comprehensive world foresight.",
+      "url": "http://arxiv.org/abs/2607.08375v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08375v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.08375v1/x1.png",
+      "figure_caption": "Four paradigms of leveraging VLM in E2E autonomous driving. Our method (d) advances existing frameworks to enable proactive driving by establishing a dual-level world cognition with the integration of semantic forecasting and generative evolution.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.08740v1",
+      "title": "Workflow as Knowledge: Semantic Persistence for LLM-Mediated Workflows",
+      "authors": [
+        "Emanuele Quinto",
+        "Carlo Andrea Rozzi",
+        "Francesco Zanitti"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.PL",
+        "cs.SE"
+      ],
+      "abstract": "This paper proposes a conceptual model for LLM-mediated workflows, representing workflow definitions, instances, and execution details as persistent knowledge objects. The core method uses Lisp-inspired concepts like symbolic forms and live-image thinking to distinguish between deterministic \"derive\" operations and LLM-driven \"infer\" judgments. The main contribution is a framework for semantic persistence, where workflows themselves become enduring knowledge, not just producers of it.",
+      "url": "http://arxiv.org/abs/2607.08740v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08740v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.08740v1/figures/mermaid-001.55d3bc13c172.png",
+      "figure_caption": "Semantic workflow objects are interpreted by the DSL-machine control layer, which coordinates runtime services and writes back workflow instances, mediated effects, and records of inference, approval, and panel activity. The bidirectional relation indicates that the control layer both reads semantic objects and writes back persistent semantic objects or relations.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.08377v1",
+      "title": "Eigenvalue Calibration for Semantic Embeddings of Large Language Models",
+      "authors": [
+        "Sebastian G. Gruber",
+        "Nassim Walha",
+        "Francis Bach",
+        "Florian Buettner"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces a novel framework for calibrating the eigenvalues of semantic embeddings from LLMs, treating them as density matrix predictors. By applying temperature scaling to these eigenvalues, the authors demonstrate improved uncertainty quantification. Their work establishes theoretical links between entropy and risk, deriving a specific calibration inequality for eigenvalues and proving that temperature scaling optimizes calibration.",
+      "url": "http://arxiv.org/abs/2607.08377v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08377v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.08377v1/figures/rel_diagram_sampling_t_baseline_phi_4_mini_triviaqa.png",
+      "figure_caption": "Figure 10 : Eigenvalue-based reliability diagram (as computed by Algorithm 1 ) after applying the sampling temperature calibration baseline for the Figure 1(c) and Figure 1(d) setup (TriviaQA using Phi 4 Mini). Calibrating sampling temperature does reduce the eigenvalue ECE but the performance is limited compared to our matrix temperature scaling approach.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.08399v1",
+      "title": "Prompt Compression via Activation Aggregation",
+      "authors": [
+        "Thibaud Ardoin",
+        "Semira Einsele",
+        "Evis Bregu",
+        "Gerhard Wunder"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper proposes \"Prompt Compression via Activation Aggregation,\" a method to compress instruction prompts into a single activation vector. This compressed vector, a learned weighted sum of intermediate layer activations, can then be injected into an early layer of the LLM, replacing the original token sequence. The core contribution is demonstrating that this compression preserves task-relevant information with minimal accuracy loss, enabling efficient prompt processing for fixed instructions and revealing cross-layer compatibility in LLM activation spaces.",
+      "url": "http://arxiv.org/abs/2607.08399v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08399v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.08395v1",
+      "title": "Token-Flow Firewall: Semantic Runtime Auditing for Persistent AI Agents",
+      "authors": [
+        "Puji Wang",
+        "Yingchen Zhang",
+        "Ruqing Zhang",
+        "Jiafeng Guo",
+        "Xueqi Cheng"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces TokenWall, a runtime defense framework for persistent AI agents. Its core method is to treat natural-language token flows (like memory updates or tool arguments) as the primary attack surface. TokenWall acts as a semantic firewall, auditing these flows to intercept unsafe behavior before it reaches privileged parts of the agent's runtime.",
+      "url": "http://arxiv.org/abs/2607.08395v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08395v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.08395v1/x1.png",
+      "figure_caption": "Runtime auditing strategies for persistent AI agents. (a) Rule-based auditing is efficient but coarse. (b) Remote large-model auditing is more flexible but adds latency and remote exposure. (c) TokenWall performs local transfer-level auditing before protected sinks and supports allow, rewrite, defer, or block decisions.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2607.08768v1",
+      "title": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
+      "authors": [
+        "Zhekai Chen",
+        "Chengqi Duan",
+        "Kaiyue Sun",
+        "Bohao Li",
+        "Yuqing Wang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "UniClawBench introduces a capability-driven benchmark for evaluating proactive AI agents in real-world scenarios. It addresses limitations of existing benchmarks by focusing on five core agent capabilities and offering 400 bilingual tasks designed for dynamic, multi-turn interactions. This approach allows for a more granular understanding of agent performance and failure points.",
+      "url": "http://arxiv.org/abs/2607.08768v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08768v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.08768v1/x1.png",
+      "figure_caption": "Overview of UniClawBench. UniClawBench consists of 400 bilingual real-world tasks spanning 5 core capabilities: multimodal, long-context, skill usage, exploration, and cross-platform. We propose a three-role closed-loop evaluation framework, where an executor agent performs tasks in real environments, a supervisor evaluates trajectories and artifacts using hidden rubrics, and a user simulator provides natural feedback based on executor’s performance and supervisor’s signal, enabling multi-turn interaction. We conduct two sets of experiments to evaluate cross-model and cross-framework performance. The capability-level results reveal that framework choice exerts a stronger influence than model choice.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2607.08745v1",
+      "title": "AUTOPILOT VQA: Benchmarking Vision-Language Models for Incident-Centric Dashcam Understanding",
+      "authors": [
+        "Siddharth Damodharan",
+        "Radhika Gupta",
+        "Ali Alshami",
+        "Ryan Rabinowitz",
+        "Jugal Kalita"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "This paper introduces AUTOPILOT-VQA, a new benchmark designed to evaluate vision-language models' ability to understand safety-critical incidents in dashcam videos. The core method involves a dataset of structured questions about real-world driving events, covering various factors like weather, traffic, and accident details. This benchmark contributes by providing a standardized way to assess how reliably these models can reason about and answer questions related to hazardous driving situations.",
+      "url": "http://arxiv.org/abs/2607.08745v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08745v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2607.08745v1/VQA.png",
+      "figure_caption": "Overview of the VQA-Autopilot dataset annotation schema. The visualization illustrates the hierarchical structure of annotation categories, including environmental conditions, traffic context, incident types, outcomes, and associated attributes. This figure provides a high-level conceptual summary of the dataset design.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.08539v1",
+      "title": "DocMaster: A Hierarchical Structure-Aware System for Document Analysis",
+      "authors": [
+        "Ziqi Chen",
+        "Yingli Zhou",
+        "Fangyuan Zhang",
+        "Quanqing Xu",
+        "Chuanhui Yang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.DB"
+      ],
+      "abstract": "DocMaster addresses the challenge of analyzing complex documents by preserving their hierarchical structure, unlike existing systems that flatten them. Its core method involves parsing documents into hierarchical trees and building a structure-aware semantic index. This enables more accurate document filtering and in-depth analysis, improving upon previous approaches by leveraging the inherent organization of documents.",
+      "url": "http://arxiv.org/abs/2607.08539v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08539v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2607.08539v1/x1.png",
+      "figure_caption": "Figure 1 . The overall workflow of document analysis.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.08423v1",
+      "title": "OmniFood-Bench: Evaluating VLMs for Nutrient Reasoning and Personalized Health Advice",
+      "authors": [
+        "Qian Jiang",
+        "Zhecheng Shi",
+        "Jingpu Yang",
+        "Zirui Song",
+        "Miao Fang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "OmniFood-Bench is a new benchmark designed to evaluate Vision-Language Models (VLMs) on their ability to perform complex food-related reasoning. It moves beyond simple classification to assess how well VLMs can identify ingredients, estimate quantities, and ultimately provide personalized health advice, addressing the \"Systemic Information Asymmetry\" between food appearance and its nutritional content. This benchmark's contribution lies in its progressive evaluation of these critical capabilities, enabling better development of VLMs for dietary management and healthcare.",
+      "url": "http://arxiv.org/abs/2607.08423v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08423v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2607.08423v1/x1.png",
+      "figure_caption": "From Visual Recognition to Health Reasoning. Traditional food computing (top) focuses primarily on categorizing dishes. OmniFood-Bench (bottom) introduces a hierarchical evaluation pipeline that requires agents to bridge the “Semantic-Physical Gap”: traversing from ingredient identification to quantitative weight estimation, and finally to personalized, risk-aware medical advisory.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.08625v1",
+      "title": "The complexities of patient-centred conversational artificial intelligence",
+      "authors": [
+        "João Matos",
+        "Olivia Buege",
+        "Donny Cheung",
+        "Gary S. Collins",
+        "Paula Dhiman"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper highlights the limitations of current health chatbot evaluations, which often use idealized patient simulations. The authors developed a novel patient simulator that models diverse communication styles and emotional states, achieving near-human realism in Turing-style tests. Their work demonstrates that accommodating patient communication diversity is crucial for accurate urgency assessment by LLM-powered chatbots, as communication style significantly impacts triage outcomes.",
+      "url": "http://arxiv.org/abs/2607.08625v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08625v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.08495v1",
+      "title": "The Context Access Divide: Interaction-Level Architecture as a Complementary Dimension of Agentic Inequality",
+      "authors": [
+        "Masahiro Fujita"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CY"
+      ],
+      "abstract": "This paper introduces the \"Context Access Divide\" (CAD) as a new dimension of AI inequality, distinct from existing measures of availability, quality, and quantity. The CAD highlights how the ability of an AI to dynamically retrieve relevant context from a user's knowledge corpus, versus requiring manual document attachment, significantly impacts AI utility for knowledge workers. This difference creates a qualitative threshold in AI usefulness, placing a heavy cognitive burden on users whose systems lack dynamic context retrieval.",
+      "url": "http://arxiv.org/abs/2607.08495v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08495v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2607.08495v1/x1.png",
+      "figure_caption": "Simulated success probability under conjunctive context dependency. (a) MAM success probability as a function of corpus size N N , for varying levels of task conjunctivity k k . (b) Heatmap of MAM success probability jointly across N N and k k . (c) Comparison of the three architectures (MAM, Walled DCRM with α = 0.6 \\( \\alpha \\)=0.6 , Open DCRM) at fixed conjunctivity k = 3 k=3 . Parameters: q max = 0.95 q_{\\( \\max \\)}=0.95 , q min = 0.05 q_{\\( \\min \\)}=0.05 , N 0 = 50 N_{0}=50 , β = 1 \\( \\beta \\)=1 , q eco = 0.92 q_{\\( \\text{eco} \\)}=0.92 , q dcrm = 0.95 q_{\\( \\text{dcrm} \\)}=0.95 . All parameter values are illustrative; see Section 3.3.1 for the underlying model and Section 3.3.2 for limitations.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "new_jobs": [],
+  "trending_keywords": [],
+  "keyword_frequency": {},
+  "daily_refs": [
+    "2026-07-06",
+    "2026-07-07",
+    "2026-07-08",
+    "2026-07-09",
+    "2026-07-10",
+    "2026-07-11",
+    "2026-07-12"
+  ]
+}
