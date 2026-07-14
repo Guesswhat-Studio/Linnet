@@ -1,0 +1,1726 @@
+{
+  "date": "2026-07-14",
+  "generated_at": "2026-07-14T10:09:21.232256+00:00",
+  "sections_ordered": [
+    {
+      "key": "quote_of_day",
+      "payload_key": "quote_of_day",
+      "title": "Words for the Morning",
+      "icon": "✦",
+      "items": [
+        {
+          "quote": "All the art of living lies in a fine mingling of letting go and holding on.",
+          "author": "Havelock Ellis",
+          "category": "art"
+        }
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "key": "weather",
+      "payload_key": "weather",
+      "title": "Weather",
+      "icon": "🌦️",
+      "items": [
+        {
+          "query": "London",
+          "label": "London, England, United Kingdom",
+          "resolved_name": "London",
+          "region": "England",
+          "country": "United Kingdom",
+          "latitude": 51.50853,
+          "longitude": -0.12574,
+          "timezone": "Europe/London",
+          "forecast_date": "2026-07-14",
+          "condition": "Overcast",
+          "weather_code": 3,
+          "temperature_c": 21.8,
+          "apparent_temperature_c": 21.4,
+          "temp_max_c": 29.7,
+          "temp_min_c": 16.9,
+          "humidity_pct": 65,
+          "wind_speed_kmh": 14.0,
+          "precipitation_probability_pct": 0,
+          "is_day": true,
+          "sunrise": "2026-07-14T05:00",
+          "sunset": "2026-07-14T21:13",
+          "source": "Open-Meteo",
+          "source_url": "https://open-meteo.com/"
+        }
+      ],
+      "meta": {
+        "count": 1,
+        "city": "London"
+      }
+    },
+    {
+      "key": "arxiv",
+      "payload_key": "papers",
+      "title": "arXiv Papers",
+      "icon": "📄",
+      "items": [
+        {
+          "id": "2607.11614v1",
+          "title": "Extending LLM Context via Associative Recurrent Memory",
+          "authors": [
+            "Gleb Kuzmin",
+            "Ivan Rodkin",
+            "Aydar Bulatov",
+            "Yuri Kuratov",
+            "Lyudmila Rvanova"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces the Associative Recurrent Memory Transformer (ARMT) to overcome the context length limitations of standard transformers. ARMT achieves constant memory scaling and improved efficiency by incorporating an associative recurrent memory mechanism. The authors also contribute domain-specific long-context datasets and a training recipe that combines pre-training, synthetic data, and curriculum learning to effectively extend LLM context.",
+          "url": "http://arxiv.org/abs/2607.11614v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.11614v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2607.11614v1/x1.png",
+          "figure_caption": "Base LLM architecture (left) and ARMT architecture (right). ARMT divides the input text into segments and processes them sequentially, allowing the model to handle long contexts.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.11505v1",
+          "title": "Proxy Exploration and Reusable Guidance: A Modular LLM Post-Training Paradigm via Proxy-Guided Update Signals",
+          "authors": [
+            "Daocheng Fu",
+            "Rong Wu",
+            "Yu Yang",
+            "Xuemeng Yang",
+            "Jianbiao Mei"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces Proxy-guided Update Signal Transfer (PUST), a modular post-training framework for LLMs. PUST decouples exploration from alignment by using a lightweight proxy model to efficiently discover high-reward behaviors. The relative improvement signal from the proxy is then transferred to guide the primary LLM's policy, enabling reusable and transferable optimization signals.",
+          "url": "http://arxiv.org/abs/2607.11505v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.11505v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2607.11505v1/x1.png",
+          "figure_caption": "Comparison of post-training pipelines. (a) Serial : Sequential domain exploration, risking catastrophic forgetting. (b) Parallel : Parallel domain exploration followed by unified policy alignment. (c) Proxy Asynchronous (Ours) : A proxy model conducts asynchronous exploration; extracted signals are subsequently transferred to various primary models. Decoupling these update signals from the base model enables seamless propagation and reuse.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.11643v1",
+          "title": "Xiaomi-Robotics-U0: Unified Embodied Synthesis with World Foundation Model",
+          "authors": [
+            "Xinghang Li",
+            "Jun Guo",
+            "Qiwei Li",
+            "Long Qian",
+            "Hang Lai"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.RO"
+          ],
+          "abstract": "This paper introduces Xiaomi-Robotics-U0, a unified 38-billion-parameter model for embodied AI. Its core method is to treat embodied generation as an extension of existing foundation image/video models, jointly optimizing various tasks like scene and video generation. The key contribution is a framework that preserves the broad knowledge of foundation models while adapting them to robot-specific constraints, enabling high-quality multi-view embodied synthesis.",
+          "url": "http://arxiv.org/abs/2607.11643v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.11643v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2607.11643v1/x1.png",
+          "figure_caption": "Embodied and general capabilities of Xiaomi-Robotics-U0 . The rectangle corresponds to the initial observations for the same embodiment, the pairwise transfer sample, and the keyframes within a video for the embodied capabilities. All frames are referenced and generated images.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.11475v1",
+          "title": "HyperSafe: Inference-Time Safety Recovery for Fine-Tuned Language Models",
+          "authors": [
+            "Aznaur Aliev",
+            "Carlos Hinojosa",
+            "Abdelrahman Eldesokey",
+            "Bang An",
+            "Bernard Ghanem"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "HyperSafe addresses the fragility of safety in fine-tuned language models by proposing a post-hoc, model-specific approach. It generates a \"Safe Side Network\" (SSN) for each fine-tuned model by learning a mapping from layer-wise activation fingerprints to SSN parameters. This allows for non-invasive safety restoration without retraining or affecting task performance.",
+          "url": "http://arxiv.org/abs/2607.11475v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.11475v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2607.11475v1/x1.png",
+          "figure_caption": "HyperSafe pipeline. Stages 1–3 (training, one-time): fine-tune the base model on each training domain (1), train a domain-specific SSN per fine-tuned checkpoint (2), and train the hypernetwork to map activation fingerprints to SSN weights (3). Stage 4 (deployment): for any new fine-tuned model, extract calibration activations and generate a model-specific SSN in a single forward pass.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2607.11503v1",
+          "title": "GEIS: A Generation-Evaluation-Improvement Loop of Agent Skills for Long-Form Article Generation",
+          "authors": [
+            "Jiale Zhang",
+            "Juntao Hu",
+            "Zhijian Ou"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "GEIS introduces a novel Generation-Evaluation-Improvement loop for long-form article generation. Its core method involves a structured cycle of agent skills, including planning, drafting, and evaluation, to address challenges like long context and complex instructions. The key contribution is a declarative and inspectable skill-based system that allows for iterative improvement of agent capabilities through structured feedback and rule-level patching.",
+          "url": "http://arxiv.org/abs/2607.11503v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.11503v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2607.11503v1/figures/article_writer_process.png",
+          "figure_caption": "The six-stage article-writer process. Request normalizes the user task, Plan constructs the article outline, Draft writes the full article, Audit checks quality, Refine revises weak parts, and Deliver emits the final text or document.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2607.11698v1",
+          "title": "Agent Hacks Agent: Autoresearch for Production-Agent Red-Teaming",
+          "authors": [
+            "Xutao Mao",
+            "Xiang Zheng",
+            "Cong Wang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CR"
+          ],
+          "abstract": "This paper introduces AHA, an automated red-teaming method for LLM agents. AHA uses one agent to discover vulnerabilities in another by forming and testing hypotheses about unsafe behavior. Its core contribution is a falsifiable discovery loop that generates reusable vulnerability knowledge, represented in a Vulnerability Concept Graph, to improve agent safety.",
+          "url": "http://arxiv.org/abs/2607.11698v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.11698v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2607.11698v1/x1.png",
+          "figure_caption": "AHA overview. An autoresearch loop turns executed red-team trajectories into a frozen, reusable VCG, the auditable artifact this paper produces and evaluates.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.11689v1",
+          "title": "From World Action Models to Embodied Brains: A Roadmap for Open-World Physical Intelligence",
+          "authors": [
+            "Yuanzhi Liang",
+            "Xufeng Zhan",
+            "Haibin Huang",
+            "Chi Zhang",
+            "Xuelong Li"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.RO"
+          ],
+          "abstract": "This paper proposes a roadmap for developing physical intelligence by addressing fragmentation in current research. It identifies key gaps in model representation, standardization, and system composition, and introduces the concept of an \"embodied brain\" as a unified target. This embodied brain would integrate multimodal context, compare interventions, and issue action commands, fostering progress towards agents capable of reasoning and acting in the physical world.",
+          "url": "http://arxiv.org/abs/2607.11689v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.11689v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2607.11689v1/x1.png",
+          "figure_caption": "System-level progression from WAM research to an embodied brain and a co-evolving physical-intelligence stack. WAMs provide a current route for studying intervention-conditioned prediction, while the embodied brain remains the broader target for reusable physical reasoning and intent formation.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.11818v1",
+          "title": "MM-ToolSandBox: A Unified Framework for Evaluating Visual Tool-Calling Agents",
+          "authors": [
+            "Kaixin Ma",
+            "Di Feng",
+            "Alexander Metz",
+            "Jiarui Lu",
+            "Eshan Verma"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CV"
+          ],
+          "abstract": "MM-ToolSandBox is a unified framework and benchmark designed to evaluate visual tool-calling agents. It offers a stateful execution environment with over 500 tools across diverse domains, supporting complex multi-turn, multi-image tasks. The framework's contribution lies in its realistic simulation of conversational phenomena and its automated generation of challenging, visually grounded scenarios, revealing significant limitations in current agent capabilities.",
+          "url": "http://arxiv.org/abs/2607.11818v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.11818v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.11683v1",
+          "title": "RAGU: A Multi-Step GraphRAG Engine with a Compact Domain-Adapted LLM",
+          "authors": [
+            "Mikhail Komarov",
+            "Ivan Bondarenko",
+            "Stanislav Shtuka",
+            "Oleg Sedukhin",
+            "Roman Shuvalov"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "RAGU is a modular GraphRAG engine that improves knowledge graph construction by separating extraction from consolidation, using a two-stage process with deduplication and summarization. Its core contribution is a compact, domain-adapted LLM (Meno-Lite-0.1) trained for language skills, which outperforms larger models in knowledge graph construction and matches them on GraphRAG tasks. This approach leads to more accurate and complete knowledge retrieval for LLMs.",
+          "url": "http://arxiv.org/abs/2607.11683v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.11683v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2607.11683v1/figures/llm_quality.png",
+          "figure_caption": "Effect of model size on world-knowledge (CheGeKa) vs. language-skill (MultiQ) tasks in the Qwen2.5-Instruct family (F1 scores on MERA Fenogenova et al. ( 2024 ) ). CheGeKa F1 grows 21.1 × \\( \\times \\) from 0.5 B to 72 B; MultiQ only 4 × \\( \\times \\) . Log-linear slopes: 0.65 vs. 0.26.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.11751v1",
+          "title": "When Local Monitors Miss Compositional Harm: Diagnosing Distributed Backdoors in Multi-Agent Systems",
+          "authors": [
+            "Yibo Hu",
+            "Ren Wang"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.CR",
+            "cs.MA"
+          ],
+          "abstract": "This paper introduces the concept of \"distributed backdoors\" in multi-agent LLM systems, where a harmful payload is split across agents such that individual local checks pass. The core contribution is demonstrating that traditional local monitors are insufficient to detect these attacks because the fragments appear benign in isolation, creating an \"observability boundary\" that prevents detection.",
+          "url": "http://arxiv.org/abs/2607.11751v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.11751v1",
+          "score": 8.0,
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2607.11783v1",
+          "title": "How Temperature Shapes Ideological Discourse in Retrieval-Augmented Generation?",
+          "authors": [
+            "Elmira Salari",
+            "Hazem Amamou",
+            "José Victor de Souza",
+            "Shruti Kshirsagar",
+            "Maria Nunes Delfino"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper investigates how ideological biases in retrieved information affect LLM outputs within Retrieval-Augmented Generation (RAG). Using Lexical Multidimensional Analysis on COVID-19 treatment articles, they identified three ideological discourses. By varying sampling temperatures, the study demonstrates that RAG can transmit, amplify, or suppress these ideological viewpoints in LLM-generated answers.",
+          "url": "http://arxiv.org/abs/2607.11783v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.11783v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2607.11783v1/Figures/factors_v2.jpg",
+          "figure_caption": "Factor scores.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2607.11564v1",
+          "title": "PaperRouter-Agent: A Content-Grounded LLM Agent for Personalized Hierarchical Paper Routing",
+          "authors": [
+            "Keshen Zhou",
+            "Lintao Wang",
+            "Suqin Yuan",
+            "Zhuqiang Lu",
+            "Yu Luo"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.HC",
+            "cs.IR"
+          ],
+          "abstract": "This paper introduces PaperRouter-Agent, a novel LLM agent designed for personalized hierarchical paper routing. Its core method involves grounding routing decisions in the content of existing papers within user-defined folders, rather than relying solely on folder names. The agent's contribution is a training-free approach that effectively assigns new papers to a user's unique and evolving folder hierarchy by analyzing folder members and incorporating feedback.",
+          "url": "http://arxiv.org/abs/2607.11564v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.11564v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2607.11564v1/x1.png",
+          "figure_caption": "Example: Comparison of a name-based baseline and the proposed content-grounded PaperRouter-Agent. While the baseline misclassifies a multimodal paper based solely on its title, the proposed agent accurately routes it to appropriate topical and metadata-defined folders.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2607.11444v1",
+          "title": "UMoE:Unlocking Every Expert in Domain-Specific Training",
+          "authors": [
+            "Xuefeng Li",
+            "Pengfei Liu"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces UMoE, a method to optimize Mixture-of-Experts (MoE) models for domain-specific tasks. UMoE realigns the expert pool by pruning underperforming experts and regrowing new ones, preserving original model size and inference cost. This approach significantly improves domain-specific performance over standard fine-tuning without requiring per-domain hyperparameter tuning.",
+          "url": "http://arxiv.org/abs/2607.11444v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.11444v1",
+          "score": 8.0,
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2607.11459v1",
+          "title": "A Multimodal Dataset for Large Language Model Applications in the Energy Domain",
+          "authors": [
+            "Costas Mylonas",
+            "Magda Foti"
+          ],
+          "categories": [
+            "cs.AI",
+            "eess.SY"
+          ],
+          "abstract": "This paper introduces mAIEnergy, a novel multimodal dataset designed to advance Large Language Model applications in the energy sector. It comprises diverse data types, including text, images, time series, and geospatial information, all harmonized and structured for immediate use. The dataset's core contribution is providing a comprehensive, ready-to-use energy knowledge base, facilitating LLM training and research in this critical domain.",
+          "url": "http://arxiv.org/abs/2607.11459v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.11459v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2607.11459v1/figures/architecture.png",
+          "figure_caption": "Overview of the workflow used to generate the mAIEnergy dataset.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.11493v1",
+          "title": "Agentic Skill Optimization over Lie Algebroids",
+          "authors": [
+            "Sridhar Mahadevan"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "math.CT"
+          ],
+          "abstract": "This paper introduces LASKO, a framework for optimizing agent skills by modeling them as structured artifacts. LASKO treats skill edits as operations within a controlled Lie algebroid, allowing for a more nuanced understanding of how changes affect system behavior beyond simple vector space manipulations. Its core contribution is a principled method to optimize these complex, context-dependent skill edits, considering their order and underlying structure.",
+          "url": "http://arxiv.org/abs/2607.11493v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.11493v1",
+          "score": 7.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.11707v1",
+          "title": "An Explainable Agentic System for Detection of Conversational Scams with Summary-Based Memory",
+          "authors": [
+            "Ahmed Omar Salim Adnan",
+            "Yogananda Manjunath",
+            "Shivanjali Khare"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CR",
+            "cs.HC",
+            "cs.MA"
+          ],
+          "abstract": "This paper introduces an explainable agentic system to detect sophisticated, long-term conversational scams, which current message-level detectors miss. Its core method utilizes a summary-based memory to track scam progression. The key contribution is a novel benchmark, ConScamBench-278, for evaluating such systems and demonstrating high performance across various scam types.",
+          "url": "http://arxiv.org/abs/2607.11707v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.11707v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2607.11707v1/figures/jina-replace.png",
+          "figure_caption": "The URL extraction and analysis pipeline. The system replaces third-party API dependencies with a local headless browser and Docling to prevent data leakage and tracking while improving the analysis of dynamic, JavaScript-heavy phishing content.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.11508v1",
+          "title": "CDFM: Towards a General-Purpose Causal Discovery Foundation Model",
+          "authors": [
+            "Jie Qiao",
+            "Ruichu Cai",
+            "Zijian Li",
+            "Weilin Chen",
+            "Pengfei Hua"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "stat.ML"
+          ],
+          "abstract": "This paper introduces the Causal Discovery Foundation Model (CDFM), a unified framework for general-purpose causal discovery. CDFM aims to overcome the limitations of dataset-specific algorithms by enabling zero-shot structural inference across diverse domains. Its core contribution lies in leveraging theoretical insights into causal identifiability and incorporating causal prior mechanisms to achieve reliable generalization.",
+          "url": "http://arxiv.org/abs/2607.11508v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.11508v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2607.11508v1/x1.png",
+          "figure_caption": "Paradigm shift from traditional causal discovery to CDFM. Instead of selecting algorithms and verifying assumptions for each dataset, CDFM performs lightweight preprocessing and directly infers causal structures using a pretrained foundation model. The model is pretrained on diverse synthetic causal mechanisms and structures, enabling generalized causal reasoning across heterogeneous data distributions.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.11578v1",
+          "title": "DiffEEG: A Self-Supervised Denoising Diffusion Model for Learning EEG Generic Representations",
+          "authors": [
+            "Abdulkader Helwan",
+            "Lina Abou-Abbas",
+            "Hussein El Amouri",
+            "Belkacem Chikhaoui",
+            "Khadidja Henni"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CV",
+            "eess.SP"
+          ],
+          "abstract": "DiffEEG is a self-supervised denoising diffusion model that learns generic EEG representations from unlabeled data. It addresses annotation scarcity and class imbalance in seizure detection by pre-training a 1D U-Net with self-attention and then fine-tuning with reinforcement learning to directly optimize for seizure detection metrics like F1-score. This approach significantly improves seizure detection and subtyping performance, particularly for rare seizure events.",
+          "url": "http://arxiv.org/abs/2607.11578v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.11578v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2607.11578v1/x1.png",
+          "figure_caption": "Overview of the DiffEEG 1D U-Net architecture, showing the encoder, bottleneck, and decoders pathway used for feature extraction.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.11862v1",
+          "title": "Evidence-Backed Video Question Answering",
+          "authors": [
+            "Shijie Wang",
+            "Honglu Zhou",
+            "Ziyang Wang",
+            "Ran Xu",
+            "Caiming Xiong"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CV"
+          ],
+          "abstract": "This paper introduces E-VQA, a new task that requires Video LLMs to provide not just answers but also precise spatio-temporal evidence (temporal segments and object masks) to support their responses. The core contribution is the creation of the ST-Evidence benchmark and a large-scale instruction dataset to train models that can achieve verifiable visual grounding, addressing the current \"black box\" nature of Video LLMs and revealing a disconnect between answering ability and true visual understanding.",
+          "url": "http://arxiv.org/abs/2607.11862v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.11862v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2607.11862v1/x1.png",
+          "figure_caption": "E-VQA: Evidence-Backed Video Question Answering . Models provide textual answers to video questions while grounding their reasoning in spatio-temporal evidence, including relevant temporal video segments and densely tracked segmentation masks that highlight the spatio-temporal visual regions supporting the answer.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.11586v1",
+          "title": "HCRMap: Pressure-Aware Hot-Expert Residency Mapping for 3.5D MoE Chiplet Inference",
+          "authors": [
+            "Yongqin Zhang"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "HCRMap addresses the challenge of imbalanced expert usage in Mixture-of-Experts (MoE) models on 3.5D chiplet systems. Its core method dynamically manages expert replicas by considering expert hotness, costs, and resource pressure to decide which experts to promote, retain, demote, or evict. The contribution is a pressure-aware framework that maps tokens to suitable resident replicas, mitigating compute imbalance and communication pressure.",
+          "url": "http://arxiv.org/abs/2607.11586v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.11586v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2607.11586v1/figures/moe_arch_pipeline.png",
+          "figure_caption": "MoE FFN serving pipeline for selected experts.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        }
+      ],
+      "meta": {
+        "papers_fetched": 100,
+        "papers_after_keyword_filter": 41,
+        "papers_after_llm_filter": 32,
+        "count": 20
+      }
+    },
+    {
+      "key": "hacker_news",
+      "payload_key": "hacker_news",
+      "title": "Hacker News",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": 48897991,
+          "title": "Samsung Health app threatens data deletion if users opt out AI training",
+          "url": "https://neow.in/cWsyMTV3",
+          "score": 325,
+          "created_at": "2026-07-13T20:01:43Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48897991",
+          "summary": "Samsung Health users face potential data deletion if they decline AI training, raising privacy concerns."
+        },
+        {
+          "id": 48901292,
+          "title": "What will be left for us to work on?",
+          "url": "https://www.normaltech.ai/p/what-will-be-left-for-us-to-work",
+          "score": 136,
+          "created_at": "2026-07-14T01:44:40Z",
+          "comments_url": "https://news.ycombinator.com/item?id=48901292",
+          "summary": "This article explores how AI's increasing capabilities might automate many current jobs, prompting a discussion about what future work will look like and what skills will remain valuable."
+        }
+      ],
+      "meta": {
+        "count": 2
+      }
+    },
+    {
+      "key": "github_trending",
+      "payload_key": "github_trending",
+      "title": "GitHub Trending",
+      "icon": "⭐",
+      "items": [
+        {
+          "full_name": "OpenCut-app/OpenCut",
+          "url": "https://github.com/OpenCut-app/OpenCut",
+          "description": "The open-source CapCut alternative",
+          "stars_today": 1229,
+          "total_stars": 68364,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "OpenCut is an open-source video editing application that aims to provide a free and accessible alternative to CapCut, offering core video editing functionalities."
+        },
+        {
+          "full_name": "Dicklesworthstone/destructive_command_guard",
+          "url": "https://github.com/Dicklesworthstone/destructive_command_guard",
+          "description": "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.",
+          "stars_today": 1295,
+          "total_stars": 4025,
+          "language": "Rust",
+          "topics": [],
+          "summary": "The Destructive Command Guard (dcg) is a tool designed to prevent dangerous Git and shell commands from being executed by agents, thereby safeguarding systems from accidental or malicious data loss."
+        },
+        {
+          "full_name": "HKUDS/Vibe-Trading",
+          "url": "https://github.com/HKUDS/Vibe-Trading",
+          "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
+          "stars_today": 1153,
+          "total_stars": 22355,
+          "language": "Python",
+          "topics": [],
+          "summary": "Vibe-Trading is a personal trading agent that automates trading strategies, offering features for strategy development, backtesting, and live execution."
+        },
+        {
+          "full_name": "moeru-ai/airi",
+          "url": "https://github.com/moeru-ai/airi",
+          "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
+          "stars_today": 78,
+          "total_stars": 42222,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "Airi is a self-hosted, user-owned Grok companion that brings virtual waifu and cyber beings to life, aiming for Neuro-sama's capabilities with real-time voice chat and game playing across Web, macOS, and Windows."
+        },
+        {
+          "full_name": "Shubhamsaboo/awesome-llm-apps",
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+          "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
+          "stars_today": 996,
+          "total_stars": 120185,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository provides over 100 runnable AI agent and RAG applications, designed for easy cloning, customization, and deployment."
+        },
+        {
+          "full_name": "Nutlope/hallmark",
+          "url": "https://github.com/Nutlope/hallmark",
+          "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+          "stars_today": 794,
+          "total_stars": 5620,
+          "language": "CSS",
+          "topics": [],
+          "summary": "Hallmark is a design skill for AI code assistants like Claude Code, Cursor, and Codex, designed to combat AI-generated \"slop\" by promoting better coding practices."
+        },
+        {
+          "full_name": "Raphire/Win11Debloat",
+          "url": "https://github.com/Raphire/Win11Debloat",
+          "description": "A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.",
+          "stars_today": 118,
+          "total_stars": 51204,
+          "language": "PowerShell",
+          "topics": [],
+          "summary": "This PowerShell script declutters and customizes Windows 10/11 by removing pre-installed apps, disabling telemetry, and performing other system tweaks."
+        },
+        {
+          "full_name": "Graphify-Labs/graphify",
+          "url": "https://github.com/Graphify-Labs/graphify",
+          "description": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
+          "stars_today": 1095,
+          "total_stars": 85465,
+          "language": "Python",
+          "topics": [],
+          "summary": "Graphify transforms code, data, and documentation into a queryable knowledge graph, enabling AI assistants to understand and interact with your entire project, from app code to infrastructure."
+        },
+        {
+          "full_name": "hasaneyldrm/exercises-dataset",
+          "url": "https://github.com/hasaneyldrm/exercises-dataset",
+          "description": "1,324-exercise fitness dataset — animation GIFs, 180×180 thumbnails, muscle-group & equipment data, and step-by-step instructions in 6 languages. The exercise data layer behind the LogPress app.",
+          "stars_today": 451,
+          "total_stars": 13021,
+          "language": "HTML",
+          "topics": [],
+          "summary": "This repository provides a comprehensive fitness dataset of 1,324 exercises, including animation GIFs, thumbnails, muscle/equipment tags, and multilingual instructions, serving as the data foundation for the LogPress app."
+        }
+      ],
+      "meta": {
+        "count": 9
+      }
+    }
+  ],
+  "meta": {
+    "papers_fetched": 100,
+    "papers_after_keyword_filter": 41,
+    "papers_after_llm_filter": 32,
+    "llm_model": "google/gemini-2.5-flash-lite",
+    "scoring_model": "google/gemini-2.5-flash-lite",
+    "summarization_model": "google/gemini-2.5-flash-lite",
+    "duration_seconds": 61
+  },
+  "quote_of_day": [
+    {
+      "quote": "All the art of living lies in a fine mingling of letting go and holding on.",
+      "author": "Havelock Ellis",
+      "category": "art"
+    }
+  ],
+  "hitokoto": [],
+  "arxiv": [
+    {
+      "id": "2607.11614v1",
+      "title": "Extending LLM Context via Associative Recurrent Memory",
+      "authors": [
+        "Gleb Kuzmin",
+        "Ivan Rodkin",
+        "Aydar Bulatov",
+        "Yuri Kuratov",
+        "Lyudmila Rvanova"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces the Associative Recurrent Memory Transformer (ARMT) to overcome the context length limitations of standard transformers. ARMT achieves constant memory scaling and improved efficiency by incorporating an associative recurrent memory mechanism. The authors also contribute domain-specific long-context datasets and a training recipe that combines pre-training, synthetic data, and curriculum learning to effectively extend LLM context.",
+      "url": "http://arxiv.org/abs/2607.11614v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11614v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.11614v1/x1.png",
+      "figure_caption": "Base LLM architecture (left) and ARMT architecture (right). ARMT divides the input text into segments and processes them sequentially, allowing the model to handle long contexts.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11505v1",
+      "title": "Proxy Exploration and Reusable Guidance: A Modular LLM Post-Training Paradigm via Proxy-Guided Update Signals",
+      "authors": [
+        "Daocheng Fu",
+        "Rong Wu",
+        "Yu Yang",
+        "Xuemeng Yang",
+        "Jianbiao Mei"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces Proxy-guided Update Signal Transfer (PUST), a modular post-training framework for LLMs. PUST decouples exploration from alignment by using a lightweight proxy model to efficiently discover high-reward behaviors. The relative improvement signal from the proxy is then transferred to guide the primary LLM's policy, enabling reusable and transferable optimization signals.",
+      "url": "http://arxiv.org/abs/2607.11505v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11505v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.11505v1/x1.png",
+      "figure_caption": "Comparison of post-training pipelines. (a) Serial : Sequential domain exploration, risking catastrophic forgetting. (b) Parallel : Parallel domain exploration followed by unified policy alignment. (c) Proxy Asynchronous (Ours) : A proxy model conducts asynchronous exploration; extracted signals are subsequently transferred to various primary models. Decoupling these update signals from the base model enables seamless propagation and reuse.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11643v1",
+      "title": "Xiaomi-Robotics-U0: Unified Embodied Synthesis with World Foundation Model",
+      "authors": [
+        "Xinghang Li",
+        "Jun Guo",
+        "Qiwei Li",
+        "Long Qian",
+        "Hang Lai"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "abstract": "This paper introduces Xiaomi-Robotics-U0, a unified 38-billion-parameter model for embodied AI. Its core method is to treat embodied generation as an extension of existing foundation image/video models, jointly optimizing various tasks like scene and video generation. The key contribution is a framework that preserves the broad knowledge of foundation models while adapting them to robot-specific constraints, enabling high-quality multi-view embodied synthesis.",
+      "url": "http://arxiv.org/abs/2607.11643v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11643v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.11643v1/x1.png",
+      "figure_caption": "Embodied and general capabilities of Xiaomi-Robotics-U0 . The rectangle corresponds to the initial observations for the same embodiment, the pairwise transfer sample, and the keyframes within a video for the embodied capabilities. All frames are referenced and generated images.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11475v1",
+      "title": "HyperSafe: Inference-Time Safety Recovery for Fine-Tuned Language Models",
+      "authors": [
+        "Aznaur Aliev",
+        "Carlos Hinojosa",
+        "Abdelrahman Eldesokey",
+        "Bang An",
+        "Bernard Ghanem"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "HyperSafe addresses the fragility of safety in fine-tuned language models by proposing a post-hoc, model-specific approach. It generates a \"Safe Side Network\" (SSN) for each fine-tuned model by learning a mapping from layer-wise activation fingerprints to SSN parameters. This allows for non-invasive safety restoration without retraining or affecting task performance.",
+      "url": "http://arxiv.org/abs/2607.11475v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11475v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.11475v1/x1.png",
+      "figure_caption": "HyperSafe pipeline. Stages 1–3 (training, one-time): fine-tune the base model on each training domain (1), train a domain-specific SSN per fine-tuned checkpoint (2), and train the hypernetwork to map activation fingerprints to SSN weights (3). Stage 4 (deployment): for any new fine-tuned model, extract calibration activations and generate a model-specific SSN in a single forward pass.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.11503v1",
+      "title": "GEIS: A Generation-Evaluation-Improvement Loop of Agent Skills for Long-Form Article Generation",
+      "authors": [
+        "Jiale Zhang",
+        "Juntao Hu",
+        "Zhijian Ou"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "GEIS introduces a novel Generation-Evaluation-Improvement loop for long-form article generation. Its core method involves a structured cycle of agent skills, including planning, drafting, and evaluation, to address challenges like long context and complex instructions. The key contribution is a declarative and inspectable skill-based system that allows for iterative improvement of agent capabilities through structured feedback and rule-level patching.",
+      "url": "http://arxiv.org/abs/2607.11503v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11503v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.11503v1/figures/article_writer_process.png",
+      "figure_caption": "The six-stage article-writer process. Request normalizes the user task, Plan constructs the article outline, Draft writes the full article, Audit checks quality, Refine revises weak parts, and Deliver emits the final text or document.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2607.11698v1",
+      "title": "Agent Hacks Agent: Autoresearch for Production-Agent Red-Teaming",
+      "authors": [
+        "Xutao Mao",
+        "Xiang Zheng",
+        "Cong Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces AHA, an automated red-teaming method for LLM agents. AHA uses one agent to discover vulnerabilities in another by forming and testing hypotheses about unsafe behavior. Its core contribution is a falsifiable discovery loop that generates reusable vulnerability knowledge, represented in a Vulnerability Concept Graph, to improve agent safety.",
+      "url": "http://arxiv.org/abs/2607.11698v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11698v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.11698v1/x1.png",
+      "figure_caption": "AHA overview. An autoresearch loop turns executed red-team trajectories into a frozen, reusable VCG, the auditable artifact this paper produces and evaluates.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11689v1",
+      "title": "From World Action Models to Embodied Brains: A Roadmap for Open-World Physical Intelligence",
+      "authors": [
+        "Yuanzhi Liang",
+        "Xufeng Zhan",
+        "Haibin Huang",
+        "Chi Zhang",
+        "Xuelong Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "abstract": "This paper proposes a roadmap for developing physical intelligence by addressing fragmentation in current research. It identifies key gaps in model representation, standardization, and system composition, and introduces the concept of an \"embodied brain\" as a unified target. This embodied brain would integrate multimodal context, compare interventions, and issue action commands, fostering progress towards agents capable of reasoning and acting in the physical world.",
+      "url": "http://arxiv.org/abs/2607.11689v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11689v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.11689v1/x1.png",
+      "figure_caption": "System-level progression from WAM research to an embodied brain and a co-evolving physical-intelligence stack. WAMs provide a current route for studying intervention-conditioned prediction, while the embodied brain remains the broader target for reusable physical reasoning and intent formation.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11818v1",
+      "title": "MM-ToolSandBox: A Unified Framework for Evaluating Visual Tool-Calling Agents",
+      "authors": [
+        "Kaixin Ma",
+        "Di Feng",
+        "Alexander Metz",
+        "Jiarui Lu",
+        "Eshan Verma"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "MM-ToolSandBox is a unified framework and benchmark designed to evaluate visual tool-calling agents. It offers a stateful execution environment with over 500 tools across diverse domains, supporting complex multi-turn, multi-image tasks. The framework's contribution lies in its realistic simulation of conversational phenomena and its automated generation of challenging, visually grounded scenarios, revealing significant limitations in current agent capabilities.",
+      "url": "http://arxiv.org/abs/2607.11818v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11818v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11683v1",
+      "title": "RAGU: A Multi-Step GraphRAG Engine with a Compact Domain-Adapted LLM",
+      "authors": [
+        "Mikhail Komarov",
+        "Ivan Bondarenko",
+        "Stanislav Shtuka",
+        "Oleg Sedukhin",
+        "Roman Shuvalov"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "RAGU is a modular GraphRAG engine that improves knowledge graph construction by separating extraction from consolidation, using a two-stage process with deduplication and summarization. Its core contribution is a compact, domain-adapted LLM (Meno-Lite-0.1) trained for language skills, which outperforms larger models in knowledge graph construction and matches them on GraphRAG tasks. This approach leads to more accurate and complete knowledge retrieval for LLMs.",
+      "url": "http://arxiv.org/abs/2607.11683v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11683v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.11683v1/figures/llm_quality.png",
+      "figure_caption": "Effect of model size on world-knowledge (CheGeKa) vs. language-skill (MultiQ) tasks in the Qwen2.5-Instruct family (F1 scores on MERA Fenogenova et al. ( 2024 ) ). CheGeKa F1 grows 21.1 × \\( \\times \\) from 0.5 B to 72 B; MultiQ only 4 × \\( \\times \\) . Log-linear slopes: 0.65 vs. 0.26.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11751v1",
+      "title": "When Local Monitors Miss Compositional Harm: Diagnosing Distributed Backdoors in Multi-Agent Systems",
+      "authors": [
+        "Yibo Hu",
+        "Ren Wang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CR",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces the concept of \"distributed backdoors\" in multi-agent LLM systems, where a harmful payload is split across agents such that individual local checks pass. The core contribution is demonstrating that traditional local monitors are insufficient to detect these attacks because the fragments appear benign in isolation, creating an \"observability boundary\" that prevents detection.",
+      "url": "http://arxiv.org/abs/2607.11751v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11751v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.11783v1",
+      "title": "How Temperature Shapes Ideological Discourse in Retrieval-Augmented Generation?",
+      "authors": [
+        "Elmira Salari",
+        "Hazem Amamou",
+        "José Victor de Souza",
+        "Shruti Kshirsagar",
+        "Maria Nunes Delfino"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper investigates how ideological biases in retrieved information affect LLM outputs within Retrieval-Augmented Generation (RAG). Using Lexical Multidimensional Analysis on COVID-19 treatment articles, they identified three ideological discourses. By varying sampling temperatures, the study demonstrates that RAG can transmit, amplify, or suppress these ideological viewpoints in LLM-generated answers.",
+      "url": "http://arxiv.org/abs/2607.11783v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11783v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.11783v1/Figures/factors_v2.jpg",
+      "figure_caption": "Factor scores.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2607.11564v1",
+      "title": "PaperRouter-Agent: A Content-Grounded LLM Agent for Personalized Hierarchical Paper Routing",
+      "authors": [
+        "Keshen Zhou",
+        "Lintao Wang",
+        "Suqin Yuan",
+        "Zhuqiang Lu",
+        "Yu Luo"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.HC",
+        "cs.IR"
+      ],
+      "abstract": "This paper introduces PaperRouter-Agent, a novel LLM agent designed for personalized hierarchical paper routing. Its core method involves grounding routing decisions in the content of existing papers within user-defined folders, rather than relying solely on folder names. The agent's contribution is a training-free approach that effectively assigns new papers to a user's unique and evolving folder hierarchy by analyzing folder members and incorporating feedback.",
+      "url": "http://arxiv.org/abs/2607.11564v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11564v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.11564v1/x1.png",
+      "figure_caption": "Example: Comparison of a name-based baseline and the proposed content-grounded PaperRouter-Agent. While the baseline misclassifies a multimodal paper based solely on its title, the proposed agent accurately routes it to appropriate topical and metadata-defined folders.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2607.11444v1",
+      "title": "UMoE:Unlocking Every Expert in Domain-Specific Training",
+      "authors": [
+        "Xuefeng Li",
+        "Pengfei Liu"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces UMoE, a method to optimize Mixture-of-Experts (MoE) models for domain-specific tasks. UMoE realigns the expert pool by pruning underperforming experts and regrowing new ones, preserving original model size and inference cost. This approach significantly improves domain-specific performance over standard fine-tuning without requiring per-domain hyperparameter tuning.",
+      "url": "http://arxiv.org/abs/2607.11444v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11444v1",
+      "score": 8.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2607.11459v1",
+      "title": "A Multimodal Dataset for Large Language Model Applications in the Energy Domain",
+      "authors": [
+        "Costas Mylonas",
+        "Magda Foti"
+      ],
+      "categories": [
+        "cs.AI",
+        "eess.SY"
+      ],
+      "abstract": "This paper introduces mAIEnergy, a novel multimodal dataset designed to advance Large Language Model applications in the energy sector. It comprises diverse data types, including text, images, time series, and geospatial information, all harmonized and structured for immediate use. The dataset's core contribution is providing a comprehensive, ready-to-use energy knowledge base, facilitating LLM training and research in this critical domain.",
+      "url": "http://arxiv.org/abs/2607.11459v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11459v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2607.11459v1/figures/architecture.png",
+      "figure_caption": "Overview of the workflow used to generate the mAIEnergy dataset.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11493v1",
+      "title": "Agentic Skill Optimization over Lie Algebroids",
+      "authors": [
+        "Sridhar Mahadevan"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "math.CT"
+      ],
+      "abstract": "This paper introduces LASKO, a framework for optimizing agent skills by modeling them as structured artifacts. LASKO treats skill edits as operations within a controlled Lie algebroid, allowing for a more nuanced understanding of how changes affect system behavior beyond simple vector space manipulations. Its core contribution is a principled method to optimize these complex, context-dependent skill edits, considering their order and underlying structure.",
+      "url": "http://arxiv.org/abs/2607.11493v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11493v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11707v1",
+      "title": "An Explainable Agentic System for Detection of Conversational Scams with Summary-Based Memory",
+      "authors": [
+        "Ahmed Omar Salim Adnan",
+        "Yogananda Manjunath",
+        "Shivanjali Khare"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR",
+        "cs.HC",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces an explainable agentic system to detect sophisticated, long-term conversational scams, which current message-level detectors miss. Its core method utilizes a summary-based memory to track scam progression. The key contribution is a novel benchmark, ConScamBench-278, for evaluating such systems and demonstrating high performance across various scam types.",
+      "url": "http://arxiv.org/abs/2607.11707v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11707v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2607.11707v1/figures/jina-replace.png",
+      "figure_caption": "The URL extraction and analysis pipeline. The system replaces third-party API dependencies with a local headless browser and Docling to prevent data leakage and tracking while improving the analysis of dynamic, JavaScript-heavy phishing content.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11508v1",
+      "title": "CDFM: Towards a General-Purpose Causal Discovery Foundation Model",
+      "authors": [
+        "Jie Qiao",
+        "Ruichu Cai",
+        "Zijian Li",
+        "Weilin Chen",
+        "Pengfei Hua"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "stat.ML"
+      ],
+      "abstract": "This paper introduces the Causal Discovery Foundation Model (CDFM), a unified framework for general-purpose causal discovery. CDFM aims to overcome the limitations of dataset-specific algorithms by enabling zero-shot structural inference across diverse domains. Its core contribution lies in leveraging theoretical insights into causal identifiability and incorporating causal prior mechanisms to achieve reliable generalization.",
+      "url": "http://arxiv.org/abs/2607.11508v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11508v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2607.11508v1/x1.png",
+      "figure_caption": "Paradigm shift from traditional causal discovery to CDFM. Instead of selecting algorithms and verifying assumptions for each dataset, CDFM performs lightweight preprocessing and directly infers causal structures using a pretrained foundation model. The model is pretrained on diverse synthetic causal mechanisms and structures, enabling generalized causal reasoning across heterogeneous data distributions.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11578v1",
+      "title": "DiffEEG: A Self-Supervised Denoising Diffusion Model for Learning EEG Generic Representations",
+      "authors": [
+        "Abdulkader Helwan",
+        "Lina Abou-Abbas",
+        "Hussein El Amouri",
+        "Belkacem Chikhaoui",
+        "Khadidja Henni"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CV",
+        "eess.SP"
+      ],
+      "abstract": "DiffEEG is a self-supervised denoising diffusion model that learns generic EEG representations from unlabeled data. It addresses annotation scarcity and class imbalance in seizure detection by pre-training a 1D U-Net with self-attention and then fine-tuning with reinforcement learning to directly optimize for seizure detection metrics like F1-score. This approach significantly improves seizure detection and subtyping performance, particularly for rare seizure events.",
+      "url": "http://arxiv.org/abs/2607.11578v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11578v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2607.11578v1/x1.png",
+      "figure_caption": "Overview of the DiffEEG 1D U-Net architecture, showing the encoder, bottleneck, and decoders pathway used for feature extraction.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11862v1",
+      "title": "Evidence-Backed Video Question Answering",
+      "authors": [
+        "Shijie Wang",
+        "Honglu Zhou",
+        "Ziyang Wang",
+        "Ran Xu",
+        "Caiming Xiong"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "This paper introduces E-VQA, a new task that requires Video LLMs to provide not just answers but also precise spatio-temporal evidence (temporal segments and object masks) to support their responses. The core contribution is the creation of the ST-Evidence benchmark and a large-scale instruction dataset to train models that can achieve verifiable visual grounding, addressing the current \"black box\" nature of Video LLMs and revealing a disconnect between answering ability and true visual understanding.",
+      "url": "http://arxiv.org/abs/2607.11862v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11862v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2607.11862v1/x1.png",
+      "figure_caption": "E-VQA: Evidence-Backed Video Question Answering . Models provide textual answers to video questions while grounding their reasoning in spatio-temporal evidence, including relevant temporal video segments and densely tracked segmentation masks that highlight the spatio-temporal visual regions supporting the answer.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11586v1",
+      "title": "HCRMap: Pressure-Aware Hot-Expert Residency Mapping for 3.5D MoE Chiplet Inference",
+      "authors": [
+        "Yongqin Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "HCRMap addresses the challenge of imbalanced expert usage in Mixture-of-Experts (MoE) models on 3.5D chiplet systems. Its core method dynamically manages expert replicas by considering expert hotness, costs, and resource pressure to decide which experts to promote, retain, demote, or evict. The contribution is a pressure-aware framework that maps tokens to suitable resident replicas, mitigating compute imbalance and communication pressure.",
+      "url": "http://arxiv.org/abs/2607.11586v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11586v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2607.11586v1/figures/moe_arch_pipeline.png",
+      "figure_caption": "MoE FFN serving pipeline for selected experts.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "papers": [
+    {
+      "id": "2607.11614v1",
+      "title": "Extending LLM Context via Associative Recurrent Memory",
+      "authors": [
+        "Gleb Kuzmin",
+        "Ivan Rodkin",
+        "Aydar Bulatov",
+        "Yuri Kuratov",
+        "Lyudmila Rvanova"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces the Associative Recurrent Memory Transformer (ARMT) to overcome the context length limitations of standard transformers. ARMT achieves constant memory scaling and improved efficiency by incorporating an associative recurrent memory mechanism. The authors also contribute domain-specific long-context datasets and a training recipe that combines pre-training, synthetic data, and curriculum learning to effectively extend LLM context.",
+      "url": "http://arxiv.org/abs/2607.11614v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11614v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.11614v1/x1.png",
+      "figure_caption": "Base LLM architecture (left) and ARMT architecture (right). ARMT divides the input text into segments and processes them sequentially, allowing the model to handle long contexts.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11505v1",
+      "title": "Proxy Exploration and Reusable Guidance: A Modular LLM Post-Training Paradigm via Proxy-Guided Update Signals",
+      "authors": [
+        "Daocheng Fu",
+        "Rong Wu",
+        "Yu Yang",
+        "Xuemeng Yang",
+        "Jianbiao Mei"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces Proxy-guided Update Signal Transfer (PUST), a modular post-training framework for LLMs. PUST decouples exploration from alignment by using a lightweight proxy model to efficiently discover high-reward behaviors. The relative improvement signal from the proxy is then transferred to guide the primary LLM's policy, enabling reusable and transferable optimization signals.",
+      "url": "http://arxiv.org/abs/2607.11505v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11505v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.11505v1/x1.png",
+      "figure_caption": "Comparison of post-training pipelines. (a) Serial : Sequential domain exploration, risking catastrophic forgetting. (b) Parallel : Parallel domain exploration followed by unified policy alignment. (c) Proxy Asynchronous (Ours) : A proxy model conducts asynchronous exploration; extracted signals are subsequently transferred to various primary models. Decoupling these update signals from the base model enables seamless propagation and reuse.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11643v1",
+      "title": "Xiaomi-Robotics-U0: Unified Embodied Synthesis with World Foundation Model",
+      "authors": [
+        "Xinghang Li",
+        "Jun Guo",
+        "Qiwei Li",
+        "Long Qian",
+        "Hang Lai"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "abstract": "This paper introduces Xiaomi-Robotics-U0, a unified 38-billion-parameter model for embodied AI. Its core method is to treat embodied generation as an extension of existing foundation image/video models, jointly optimizing various tasks like scene and video generation. The key contribution is a framework that preserves the broad knowledge of foundation models while adapting them to robot-specific constraints, enabling high-quality multi-view embodied synthesis.",
+      "url": "http://arxiv.org/abs/2607.11643v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11643v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.11643v1/x1.png",
+      "figure_caption": "Embodied and general capabilities of Xiaomi-Robotics-U0 . The rectangle corresponds to the initial observations for the same embodiment, the pairwise transfer sample, and the keyframes within a video for the embodied capabilities. All frames are referenced and generated images.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11475v1",
+      "title": "HyperSafe: Inference-Time Safety Recovery for Fine-Tuned Language Models",
+      "authors": [
+        "Aznaur Aliev",
+        "Carlos Hinojosa",
+        "Abdelrahman Eldesokey",
+        "Bang An",
+        "Bernard Ghanem"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "HyperSafe addresses the fragility of safety in fine-tuned language models by proposing a post-hoc, model-specific approach. It generates a \"Safe Side Network\" (SSN) for each fine-tuned model by learning a mapping from layer-wise activation fingerprints to SSN parameters. This allows for non-invasive safety restoration without retraining or affecting task performance.",
+      "url": "http://arxiv.org/abs/2607.11475v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11475v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.11475v1/x1.png",
+      "figure_caption": "HyperSafe pipeline. Stages 1–3 (training, one-time): fine-tune the base model on each training domain (1), train a domain-specific SSN per fine-tuned checkpoint (2), and train the hypernetwork to map activation fingerprints to SSN weights (3). Stage 4 (deployment): for any new fine-tuned model, extract calibration activations and generate a model-specific SSN in a single forward pass.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.11503v1",
+      "title": "GEIS: A Generation-Evaluation-Improvement Loop of Agent Skills for Long-Form Article Generation",
+      "authors": [
+        "Jiale Zhang",
+        "Juntao Hu",
+        "Zhijian Ou"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "GEIS introduces a novel Generation-Evaluation-Improvement loop for long-form article generation. Its core method involves a structured cycle of agent skills, including planning, drafting, and evaluation, to address challenges like long context and complex instructions. The key contribution is a declarative and inspectable skill-based system that allows for iterative improvement of agent capabilities through structured feedback and rule-level patching.",
+      "url": "http://arxiv.org/abs/2607.11503v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11503v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.11503v1/figures/article_writer_process.png",
+      "figure_caption": "The six-stage article-writer process. Request normalizes the user task, Plan constructs the article outline, Draft writes the full article, Audit checks quality, Refine revises weak parts, and Deliver emits the final text or document.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2607.11698v1",
+      "title": "Agent Hacks Agent: Autoresearch for Production-Agent Red-Teaming",
+      "authors": [
+        "Xutao Mao",
+        "Xiang Zheng",
+        "Cong Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces AHA, an automated red-teaming method for LLM agents. AHA uses one agent to discover vulnerabilities in another by forming and testing hypotheses about unsafe behavior. Its core contribution is a falsifiable discovery loop that generates reusable vulnerability knowledge, represented in a Vulnerability Concept Graph, to improve agent safety.",
+      "url": "http://arxiv.org/abs/2607.11698v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11698v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.11698v1/x1.png",
+      "figure_caption": "AHA overview. An autoresearch loop turns executed red-team trajectories into a frozen, reusable VCG, the auditable artifact this paper produces and evaluates.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11689v1",
+      "title": "From World Action Models to Embodied Brains: A Roadmap for Open-World Physical Intelligence",
+      "authors": [
+        "Yuanzhi Liang",
+        "Xufeng Zhan",
+        "Haibin Huang",
+        "Chi Zhang",
+        "Xuelong Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "abstract": "This paper proposes a roadmap for developing physical intelligence by addressing fragmentation in current research. It identifies key gaps in model representation, standardization, and system composition, and introduces the concept of an \"embodied brain\" as a unified target. This embodied brain would integrate multimodal context, compare interventions, and issue action commands, fostering progress towards agents capable of reasoning and acting in the physical world.",
+      "url": "http://arxiv.org/abs/2607.11689v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11689v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.11689v1/x1.png",
+      "figure_caption": "System-level progression from WAM research to an embodied brain and a co-evolving physical-intelligence stack. WAMs provide a current route for studying intervention-conditioned prediction, while the embodied brain remains the broader target for reusable physical reasoning and intent formation.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11818v1",
+      "title": "MM-ToolSandBox: A Unified Framework for Evaluating Visual Tool-Calling Agents",
+      "authors": [
+        "Kaixin Ma",
+        "Di Feng",
+        "Alexander Metz",
+        "Jiarui Lu",
+        "Eshan Verma"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "MM-ToolSandBox is a unified framework and benchmark designed to evaluate visual tool-calling agents. It offers a stateful execution environment with over 500 tools across diverse domains, supporting complex multi-turn, multi-image tasks. The framework's contribution lies in its realistic simulation of conversational phenomena and its automated generation of challenging, visually grounded scenarios, revealing significant limitations in current agent capabilities.",
+      "url": "http://arxiv.org/abs/2607.11818v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11818v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11683v1",
+      "title": "RAGU: A Multi-Step GraphRAG Engine with a Compact Domain-Adapted LLM",
+      "authors": [
+        "Mikhail Komarov",
+        "Ivan Bondarenko",
+        "Stanislav Shtuka",
+        "Oleg Sedukhin",
+        "Roman Shuvalov"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "RAGU is a modular GraphRAG engine that improves knowledge graph construction by separating extraction from consolidation, using a two-stage process with deduplication and summarization. Its core contribution is a compact, domain-adapted LLM (Meno-Lite-0.1) trained for language skills, which outperforms larger models in knowledge graph construction and matches them on GraphRAG tasks. This approach leads to more accurate and complete knowledge retrieval for LLMs.",
+      "url": "http://arxiv.org/abs/2607.11683v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11683v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.11683v1/figures/llm_quality.png",
+      "figure_caption": "Effect of model size on world-knowledge (CheGeKa) vs. language-skill (MultiQ) tasks in the Qwen2.5-Instruct family (F1 scores on MERA Fenogenova et al. ( 2024 ) ). CheGeKa F1 grows 21.1 × \\( \\times \\) from 0.5 B to 72 B; MultiQ only 4 × \\( \\times \\) . Log-linear slopes: 0.65 vs. 0.26.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11751v1",
+      "title": "When Local Monitors Miss Compositional Harm: Diagnosing Distributed Backdoors in Multi-Agent Systems",
+      "authors": [
+        "Yibo Hu",
+        "Ren Wang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CR",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces the concept of \"distributed backdoors\" in multi-agent LLM systems, where a harmful payload is split across agents such that individual local checks pass. The core contribution is demonstrating that traditional local monitors are insufficient to detect these attacks because the fragments appear benign in isolation, creating an \"observability boundary\" that prevents detection.",
+      "url": "http://arxiv.org/abs/2607.11751v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11751v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.11783v1",
+      "title": "How Temperature Shapes Ideological Discourse in Retrieval-Augmented Generation?",
+      "authors": [
+        "Elmira Salari",
+        "Hazem Amamou",
+        "José Victor de Souza",
+        "Shruti Kshirsagar",
+        "Maria Nunes Delfino"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper investigates how ideological biases in retrieved information affect LLM outputs within Retrieval-Augmented Generation (RAG). Using Lexical Multidimensional Analysis on COVID-19 treatment articles, they identified three ideological discourses. By varying sampling temperatures, the study demonstrates that RAG can transmit, amplify, or suppress these ideological viewpoints in LLM-generated answers.",
+      "url": "http://arxiv.org/abs/2607.11783v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11783v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.11783v1/Figures/factors_v2.jpg",
+      "figure_caption": "Factor scores.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2607.11564v1",
+      "title": "PaperRouter-Agent: A Content-Grounded LLM Agent for Personalized Hierarchical Paper Routing",
+      "authors": [
+        "Keshen Zhou",
+        "Lintao Wang",
+        "Suqin Yuan",
+        "Zhuqiang Lu",
+        "Yu Luo"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.HC",
+        "cs.IR"
+      ],
+      "abstract": "This paper introduces PaperRouter-Agent, a novel LLM agent designed for personalized hierarchical paper routing. Its core method involves grounding routing decisions in the content of existing papers within user-defined folders, rather than relying solely on folder names. The agent's contribution is a training-free approach that effectively assigns new papers to a user's unique and evolving folder hierarchy by analyzing folder members and incorporating feedback.",
+      "url": "http://arxiv.org/abs/2607.11564v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11564v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.11564v1/x1.png",
+      "figure_caption": "Example: Comparison of a name-based baseline and the proposed content-grounded PaperRouter-Agent. While the baseline misclassifies a multimodal paper based solely on its title, the proposed agent accurately routes it to appropriate topical and metadata-defined folders.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2607.11444v1",
+      "title": "UMoE:Unlocking Every Expert in Domain-Specific Training",
+      "authors": [
+        "Xuefeng Li",
+        "Pengfei Liu"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces UMoE, a method to optimize Mixture-of-Experts (MoE) models for domain-specific tasks. UMoE realigns the expert pool by pruning underperforming experts and regrowing new ones, preserving original model size and inference cost. This approach significantly improves domain-specific performance over standard fine-tuning without requiring per-domain hyperparameter tuning.",
+      "url": "http://arxiv.org/abs/2607.11444v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11444v1",
+      "score": 8.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2607.11459v1",
+      "title": "A Multimodal Dataset for Large Language Model Applications in the Energy Domain",
+      "authors": [
+        "Costas Mylonas",
+        "Magda Foti"
+      ],
+      "categories": [
+        "cs.AI",
+        "eess.SY"
+      ],
+      "abstract": "This paper introduces mAIEnergy, a novel multimodal dataset designed to advance Large Language Model applications in the energy sector. It comprises diverse data types, including text, images, time series, and geospatial information, all harmonized and structured for immediate use. The dataset's core contribution is providing a comprehensive, ready-to-use energy knowledge base, facilitating LLM training and research in this critical domain.",
+      "url": "http://arxiv.org/abs/2607.11459v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11459v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2607.11459v1/figures/architecture.png",
+      "figure_caption": "Overview of the workflow used to generate the mAIEnergy dataset.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11493v1",
+      "title": "Agentic Skill Optimization over Lie Algebroids",
+      "authors": [
+        "Sridhar Mahadevan"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "math.CT"
+      ],
+      "abstract": "This paper introduces LASKO, a framework for optimizing agent skills by modeling them as structured artifacts. LASKO treats skill edits as operations within a controlled Lie algebroid, allowing for a more nuanced understanding of how changes affect system behavior beyond simple vector space manipulations. Its core contribution is a principled method to optimize these complex, context-dependent skill edits, considering their order and underlying structure.",
+      "url": "http://arxiv.org/abs/2607.11493v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11493v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11707v1",
+      "title": "An Explainable Agentic System for Detection of Conversational Scams with Summary-Based Memory",
+      "authors": [
+        "Ahmed Omar Salim Adnan",
+        "Yogananda Manjunath",
+        "Shivanjali Khare"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR",
+        "cs.HC",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces an explainable agentic system to detect sophisticated, long-term conversational scams, which current message-level detectors miss. Its core method utilizes a summary-based memory to track scam progression. The key contribution is a novel benchmark, ConScamBench-278, for evaluating such systems and demonstrating high performance across various scam types.",
+      "url": "http://arxiv.org/abs/2607.11707v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11707v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2607.11707v1/figures/jina-replace.png",
+      "figure_caption": "The URL extraction and analysis pipeline. The system replaces third-party API dependencies with a local headless browser and Docling to prevent data leakage and tracking while improving the analysis of dynamic, JavaScript-heavy phishing content.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11508v1",
+      "title": "CDFM: Towards a General-Purpose Causal Discovery Foundation Model",
+      "authors": [
+        "Jie Qiao",
+        "Ruichu Cai",
+        "Zijian Li",
+        "Weilin Chen",
+        "Pengfei Hua"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "stat.ML"
+      ],
+      "abstract": "This paper introduces the Causal Discovery Foundation Model (CDFM), a unified framework for general-purpose causal discovery. CDFM aims to overcome the limitations of dataset-specific algorithms by enabling zero-shot structural inference across diverse domains. Its core contribution lies in leveraging theoretical insights into causal identifiability and incorporating causal prior mechanisms to achieve reliable generalization.",
+      "url": "http://arxiv.org/abs/2607.11508v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11508v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2607.11508v1/x1.png",
+      "figure_caption": "Paradigm shift from traditional causal discovery to CDFM. Instead of selecting algorithms and verifying assumptions for each dataset, CDFM performs lightweight preprocessing and directly infers causal structures using a pretrained foundation model. The model is pretrained on diverse synthetic causal mechanisms and structures, enabling generalized causal reasoning across heterogeneous data distributions.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11578v1",
+      "title": "DiffEEG: A Self-Supervised Denoising Diffusion Model for Learning EEG Generic Representations",
+      "authors": [
+        "Abdulkader Helwan",
+        "Lina Abou-Abbas",
+        "Hussein El Amouri",
+        "Belkacem Chikhaoui",
+        "Khadidja Henni"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CV",
+        "eess.SP"
+      ],
+      "abstract": "DiffEEG is a self-supervised denoising diffusion model that learns generic EEG representations from unlabeled data. It addresses annotation scarcity and class imbalance in seizure detection by pre-training a 1D U-Net with self-attention and then fine-tuning with reinforcement learning to directly optimize for seizure detection metrics like F1-score. This approach significantly improves seizure detection and subtyping performance, particularly for rare seizure events.",
+      "url": "http://arxiv.org/abs/2607.11578v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11578v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2607.11578v1/x1.png",
+      "figure_caption": "Overview of the DiffEEG 1D U-Net architecture, showing the encoder, bottleneck, and decoders pathway used for feature extraction.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11862v1",
+      "title": "Evidence-Backed Video Question Answering",
+      "authors": [
+        "Shijie Wang",
+        "Honglu Zhou",
+        "Ziyang Wang",
+        "Ran Xu",
+        "Caiming Xiong"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "This paper introduces E-VQA, a new task that requires Video LLMs to provide not just answers but also precise spatio-temporal evidence (temporal segments and object masks) to support their responses. The core contribution is the creation of the ST-Evidence benchmark and a large-scale instruction dataset to train models that can achieve verifiable visual grounding, addressing the current \"black box\" nature of Video LLMs and revealing a disconnect between answering ability and true visual understanding.",
+      "url": "http://arxiv.org/abs/2607.11862v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11862v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2607.11862v1/x1.png",
+      "figure_caption": "E-VQA: Evidence-Backed Video Question Answering . Models provide textual answers to video questions while grounding their reasoning in spatio-temporal evidence, including relevant temporal video segments and densely tracked segmentation masks that highlight the spatio-temporal visual regions supporting the answer.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.11586v1",
+      "title": "HCRMap: Pressure-Aware Hot-Expert Residency Mapping for 3.5D MoE Chiplet Inference",
+      "authors": [
+        "Yongqin Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "HCRMap addresses the challenge of imbalanced expert usage in Mixture-of-Experts (MoE) models on 3.5D chiplet systems. Its core method dynamically manages expert replicas by considering expert hotness, costs, and resource pressure to decide which experts to promote, retain, demote, or evict. The contribution is a pressure-aware framework that maps tokens to suitable resident replicas, mitigating compute imbalance and communication pressure.",
+      "url": "http://arxiv.org/abs/2607.11586v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11586v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2607.11586v1/figures/moe_arch_pipeline.png",
+      "figure_caption": "MoE FFN serving pipeline for selected experts.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "hacker_news": [
+    {
+      "id": 48897991,
+      "title": "Samsung Health app threatens data deletion if users opt out AI training",
+      "url": "https://neow.in/cWsyMTV3",
+      "score": 325,
+      "created_at": "2026-07-13T20:01:43Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48897991",
+      "summary": "Samsung Health users face potential data deletion if they decline AI training, raising privacy concerns."
+    },
+    {
+      "id": 48901292,
+      "title": "What will be left for us to work on?",
+      "url": "https://www.normaltech.ai/p/what-will-be-left-for-us-to-work",
+      "score": 136,
+      "created_at": "2026-07-14T01:44:40Z",
+      "comments_url": "https://news.ycombinator.com/item?id=48901292",
+      "summary": "This article explores how AI's increasing capabilities might automate many current jobs, prompting a discussion about what future work will look like and what skills will remain valuable."
+    }
+  ],
+  "github_trending": [
+    {
+      "full_name": "OpenCut-app/OpenCut",
+      "url": "https://github.com/OpenCut-app/OpenCut",
+      "description": "The open-source CapCut alternative",
+      "stars_today": 1229,
+      "total_stars": 68364,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "OpenCut is an open-source video editing application that aims to provide a free and accessible alternative to CapCut, offering core video editing functionalities."
+    },
+    {
+      "full_name": "Dicklesworthstone/destructive_command_guard",
+      "url": "https://github.com/Dicklesworthstone/destructive_command_guard",
+      "description": "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.",
+      "stars_today": 1295,
+      "total_stars": 4025,
+      "language": "Rust",
+      "topics": [],
+      "summary": "The Destructive Command Guard (dcg) is a tool designed to prevent dangerous Git and shell commands from being executed by agents, thereby safeguarding systems from accidental or malicious data loss."
+    },
+    {
+      "full_name": "HKUDS/Vibe-Trading",
+      "url": "https://github.com/HKUDS/Vibe-Trading",
+      "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
+      "stars_today": 1153,
+      "total_stars": 22355,
+      "language": "Python",
+      "topics": [],
+      "summary": "Vibe-Trading is a personal trading agent that automates trading strategies, offering features for strategy development, backtesting, and live execution."
+    },
+    {
+      "full_name": "moeru-ai/airi",
+      "url": "https://github.com/moeru-ai/airi",
+      "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
+      "stars_today": 78,
+      "total_stars": 42222,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "Airi is a self-hosted, user-owned Grok companion that brings virtual waifu and cyber beings to life, aiming for Neuro-sama's capabilities with real-time voice chat and game playing across Web, macOS, and Windows."
+    },
+    {
+      "full_name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
+      "stars_today": 996,
+      "total_stars": 120185,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository provides over 100 runnable AI agent and RAG applications, designed for easy cloning, customization, and deployment."
+    },
+    {
+      "full_name": "Nutlope/hallmark",
+      "url": "https://github.com/Nutlope/hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "stars_today": 794,
+      "total_stars": 5620,
+      "language": "CSS",
+      "topics": [],
+      "summary": "Hallmark is a design skill for AI code assistants like Claude Code, Cursor, and Codex, designed to combat AI-generated \"slop\" by promoting better coding practices."
+    },
+    {
+      "full_name": "Raphire/Win11Debloat",
+      "url": "https://github.com/Raphire/Win11Debloat",
+      "description": "A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.",
+      "stars_today": 118,
+      "total_stars": 51204,
+      "language": "PowerShell",
+      "topics": [],
+      "summary": "This PowerShell script declutters and customizes Windows 10/11 by removing pre-installed apps, disabling telemetry, and performing other system tweaks."
+    },
+    {
+      "full_name": "Graphify-Labs/graphify",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "description": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
+      "stars_today": 1095,
+      "total_stars": 85465,
+      "language": "Python",
+      "topics": [],
+      "summary": "Graphify transforms code, data, and documentation into a queryable knowledge graph, enabling AI assistants to understand and interact with your entire project, from app code to infrastructure."
+    },
+    {
+      "full_name": "hasaneyldrm/exercises-dataset",
+      "url": "https://github.com/hasaneyldrm/exercises-dataset",
+      "description": "1,324-exercise fitness dataset — animation GIFs, 180×180 thumbnails, muscle-group & equipment data, and step-by-step instructions in 6 languages. The exercise data layer behind the LogPress app.",
+      "stars_today": 451,
+      "total_stars": 13021,
+      "language": "HTML",
+      "topics": [],
+      "summary": "This repository provides a comprehensive fitness dataset of 1,324 exercises, including animation GIFs, thumbnails, muscle/equipment tags, and multilingual instructions, serving as the data foundation for the LogPress app."
+    }
+  ],
+  "us_stocks": [],
+  "postdoc_jobs": [],
+  "jobs": [],
+  "supervisor_updates": [],
+  "weather": [
+    {
+      "query": "London",
+      "label": "London, England, United Kingdom",
+      "resolved_name": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "timezone": "Europe/London",
+      "forecast_date": "2026-07-14",
+      "condition": "Overcast",
+      "weather_code": 3,
+      "temperature_c": 21.8,
+      "apparent_temperature_c": 21.4,
+      "temp_max_c": 29.7,
+      "temp_min_c": 16.9,
+      "humidity_pct": 65,
+      "wind_speed_kmh": 14.0,
+      "precipitation_probability_pct": 0,
+      "is_day": true,
+      "sunrise": "2026-07-14T05:00",
+      "sunset": "2026-07-14T21:13",
+      "source": "Open-Meteo",
+      "source_url": "https://open-meteo.com/"
+    }
+  ]
+}
