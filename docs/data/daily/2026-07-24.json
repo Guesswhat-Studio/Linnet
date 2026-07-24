@@ -1,0 +1,1804 @@
+{
+  "date": "2026-07-24",
+  "generated_at": "2026-07-24T10:16:31.464096+00:00",
+  "sections_ordered": [
+    {
+      "key": "quote_of_day",
+      "payload_key": "quote_of_day",
+      "title": "Words for the Morning",
+      "icon": "✦",
+      "items": [
+        {
+          "quote": "We can best help you to prevent war not by repeating your words and following your methods but by finding new words and creating new methods.",
+          "author": "Virginia Woolf",
+          "category": "best"
+        }
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "key": "weather",
+      "payload_key": "weather",
+      "title": "Weather",
+      "icon": "🌦️",
+      "items": [
+        {
+          "query": "London",
+          "label": "London, England, United Kingdom",
+          "resolved_name": "London",
+          "region": "England",
+          "country": "United Kingdom",
+          "latitude": 51.50853,
+          "longitude": -0.12574,
+          "timezone": "Europe/London",
+          "forecast_date": "2026-07-24",
+          "condition": "Clear sky",
+          "weather_code": 0,
+          "temperature_c": 23.0,
+          "apparent_temperature_c": 24.3,
+          "temp_max_c": 28.3,
+          "temp_min_c": 18.3,
+          "humidity_pct": 48,
+          "wind_speed_kmh": 2.9,
+          "precipitation_probability_pct": 0,
+          "is_day": true,
+          "sunrise": "2026-07-24T05:13",
+          "sunset": "2026-07-24T21:01",
+          "source": "Open-Meteo",
+          "source_url": "https://open-meteo.com/"
+        }
+      ],
+      "meta": {
+        "count": 1,
+        "city": "London"
+      }
+    },
+    {
+      "key": "arxiv",
+      "payload_key": "papers",
+      "title": "arXiv Papers",
+      "icon": "📄",
+      "items": [
+        {
+          "id": "2607.21503v1",
+          "title": "Agentic Context Management: Solving Agent Memory and Cost by Treating Them as Lifecycle and Architecture Problems",
+          "authors": [
+            "Gaurav Dadhich"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.IR"
+          ],
+          "abstract": "This paper argues that AI agent failures stem from poor context management, not reasoning ability. It proposes treating context management as a lifecycle and architectural problem, rather than just storage and retrieval. The core contribution is a framework for actively managing agent memory by considering its entire lifecycle, from deciding what to remember to forgetting, all within budget constraints.",
+          "url": "http://arxiv.org/abs/2607.21503v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.21503v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2607.21503v1/x1.png",
+          "figure_caption": "The five-primitive context lifecycle (architecting → \\( \\rightarrow \\) ingesting → \\( \\rightarrow \\) scoping → \\( \\rightarrow \\) anticipating → \\( \\rightarrow \\) compacting & consolidation), drawn as a cycle around a central agent, with the retrieval scope hierarchy (user → \\( \\rightarrow \\) customer → \\( \\rightarrow \\) client) as a vertical axis and the global knowledge layer drawn separately, feeding entity canonicalization.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.21324v1",
+          "title": "GRADRAG: Cross-Component Prompt Adaptation for Coordinated Multi-Agent RAG",
+          "authors": [
+            "Paolo Pedinotti",
+            "Enrico Santus"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "GRADRAG introduces a novel framework for optimizing multi-agent RAG systems by coordinating improvements across all components. It models the RAG pipeline as a computational graph and uses structured feedback from an Evaluator to iteratively adapt upstream agents like retrievers and answerers. This cross-component adaptation leads to more coordinated and effective RAG performance.",
+          "url": "http://arxiv.org/abs/2607.21324v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.21324v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2607.21324v1/Figures/mockup2.png",
+          "figure_caption": "GradRAG : cross-component prompt adaptation in an agentic RAG pipeline. Grey (forward pass): A Retrieval Agent gathers evidence from either document chunks (Vector RAG) or a structured entity–relation graph (GraphRAG, constructed by a separate agent that is not shown in the mock up), which is assembled into a context and passed to an Answer Generation Agent to produce a candidate answer. Orange (evaluation and control): An Evaluator reviews the answer and its supporting evidence and returns feedback with a binary Stop? decision. If Yes , the answer is accepted. If No , a Prompt Optimizer updates the prompts of one or more agents (as indicated by the evaluation), and the next forward pass is executed.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.21419v1",
+          "title": "PATS: Policy-Aware Training Scaffolding for Agentic Reinforcement Learning",
+          "authors": [
+            "Yipeng Shi",
+            "Zhipeng Ma",
+            "Yue Wang",
+            "Qitai Tan",
+            "Yang Li"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces PATS, a novel training method for LLM agents that uses a \"policy-aware training scaffold.\" Instead of focusing on skills, PATS dynamically adjusts the context provided to the agent during training based on its current performance. This scaffolding guides weak policies to succeed and is gradually removed as the agent improves, leading to more efficient and robust reinforcement learning.",
+          "url": "http://arxiv.org/abs/2607.21419v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.21419v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2607.21419v1/x1.png",
+          "figure_caption": "Seed-0 training dynamics on 1.5B ALFWorld under the shared 150-step RL budget. Left: validation success rate. Right: mean prompt tokens per policy call; faint traces are raw logs and bold traces are seven-step moving averages. Pats expands its training context early and later contracts it as validation improves, whereas SkillRL’s context grows and SKILL0 follows staged withdrawal.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.21356v1",
+          "title": "Emergent Misalignment Recruits a Pre-existing Persona Subspace",
+          "authors": [
+            "Mohammed Suhail B Nadaf"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "abstract": "This paper investigates emergent misalignment in language models, where fine-tuning on narrow \"bad advice\" leads to broad misalignment. The core method reveals that this generalization occurs because fine-tuning activates a pre-existing persona subspace within the model. The key contribution is demonstrating that this subspace, not just the specific training data, is responsible for emergent misalignment, and controlling it can prevent it.",
+          "url": "http://arxiv.org/abs/2607.21356v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.21356v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2607.21356v1/x1.png",
+          "figure_caption": "A persona subspace present in the model before fine-tuning carries broad misalignment. The subspace is extracted from the frozen instruction-tuned model. Projecting it out of the residual stream throughout fine-tuning prevents broad misalignment (27.7% → \\( \\to \\) 0.0%); adding it to the never-fine-tuned model induces misalignment that grows with dose (to 45.4%); the same projection applied to the weight gradient changes nothing (26.6% vs. 26.7%). Each arm carries a matched random control (Section 5 ).",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2607.21273v1",
+          "title": "The Dark Room in the Reward Channel: Dense Prediction Rewards Collapse GRPO-Trained LLM Agents -- and What Actually Works",
+          "authors": [
+            "Yu Wang"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "abstract": "This paper demonstrates that dense, per-step prediction rewards, intended to aid long-horizon LLM agents, actually cause catastrophic policy collapse under Group-Normalized RL (GRPO). The core issue is that GRPO's z-scoring amplifies the dense signal, leading to a \"dark room\" pathology where agents become stuck in unproductive states. The authors' key contribution is identifying that removing GRPO's standard deviation normalization resolves this collapse, suggesting that dense rewards are effective only when this specific normalization is absent.",
+          "url": "http://arxiv.org/abs/2607.21273v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.21273v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2607.21273v1/x1.png",
+          "figure_caption": "The std-normalized prediction reward collapses every run at all three scales; timing is non-monotonic (saturation race, § 4.5 ). Honeymoon peaks rise with scale: the signal genuinely helps until hacking pressure arrives.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2607.21550v1",
+          "title": "X$^3$-OPD: Distilling Reasoning into Large Audio-Language Models via On-Policy Alignment",
+          "authors": [
+            "Dongjie Fu",
+            "Di Cao",
+            "Xize Cheng",
+            "Zihan Zhang",
+            "Wenxu Jia"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "abstract": "X$^3$-OPD distills reasoning abilities from text-based models into audio-language models using a novel on-policy alignment framework. It trains the audio model by having it generate reasoning steps based on its acoustic perception, guided by a text teacher using matched inputs and verified answers. This approach, supported by a diverse three-tier corpus, enables audio models to perform complex reasoning beyond purely textual content, incorporating non-linguistic events and prosody.",
+          "url": "http://arxiv.org/abs/2607.21550v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.21550v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2607.21550v1/x1.png",
+          "figure_caption": "Overview of X 3 -OPD . Left: a three-tier symmetric corpus—Logical (text + TTS speech), Audio (audio + refined caption), and Dialogue (dialogue + prosody-aware meta-caption)—providing ( x t , x a , q , a ⋆ ) (x_{t},x_{a},q,a^{\\( \\star \\)}) for every instance. Right: an offline warm-start ( ℒ off \\( \\mathcal{L} \\)_{\\( \\mathrm{off} \\)} , Eq. 1 ) followed by cross-modal on-policy distillation, where the student rolls out under ( x a , q ) (x_{a},q) and the frozen teacher scores the same trajectories under ( x t , q , a ⋆ ) (x_{t},q,a^{\\( \\star \\)}) to compute ℒ on \\( \\mathcal{L} \\)_{\\( \\mathrm{on} \\)} (Eq. 3 ).",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2607.21279v1",
+          "title": "A Unified Moral-Value Dataset for Instruction Tuning",
+          "authors": [
+            "Zhaohui Zeng",
+            "Florian Mai"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper addresses the challenge of aligning Large Language Models (LLMs) with human values by creating a unified dataset for instruction tuning. The authors merge existing moral-value datasets and reformat them into an instruction-response structure. Their contribution is a readily usable dataset that, when mixed with general task data, allows LLMs to maintain general performance while improving value-oriented task capabilities.",
+          "url": "http://arxiv.org/abs/2607.21279v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.21279v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2607.21279v1/x1.png",
+          "figure_caption": "Overall pipeline of our proposed dataset construction, instruction tuning, and downstream evaluation.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2607.21482v1",
+          "title": "Agentic coding without the cloud: evaluating open-weight large language models on longitudinal data preparation tasks",
+          "authors": [
+            "Mack Nixon",
+            "Liam Wright",
+            "Yevgeniya Kovalchuk",
+            "Alison Fang-Wei Wu",
+            "Martin Danka"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces an open-source framework to evaluate open-weight Large Language Models (LLMs) for data preparation in longitudinal research, addressing privacy concerns by enabling local deployment. The framework includes a curated dataset, defined tasks like category harmonization, and automated evaluation routines for LLM-generated R code and data. Its contribution lies in demonstrating the feasibility of using local LLMs for sensitive data tasks, overcoming cloud-based model limitations.",
+          "url": "http://arxiv.org/abs/2607.21482v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.21482v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.21306v1",
+          "title": "AI Assistants Overassist",
+          "authors": [
+            "Verona Teo",
+            "Raghav Jain",
+            "Tobias Gerstenberg",
+            "Max Kleiman-Weiner"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL",
+            "cs.CY",
+            "cs.HC"
+          ],
+          "abstract": "This paper introduces Int-Bench, a simulation-based benchmark to evaluate how AI assistants intervene during problem-solving. The core method involves simulating a student learning a task while an AI teacher decides when and how to provide assistance. The key contribution is identifying that LLMs tend to overassist, potentially hindering learning, and providing a framework to systematically study and improve AI intervention strategies.",
+          "url": "http://arxiv.org/abs/2607.21306v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.21306v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2607.21306v1/x1.png",
+          "figure_caption": "Overview of Int-Bench . For a question q q , the student produces a baseline reasoning trace t = ( t 1 , t 2 , … , t T ) t=(t_{1},t_{2},\\( \\dots \\),t_{T}) . If the teacher decides to intervene at step k k , an intervention message m k m_{k} is injected into the reasoning trace. The student then updates its reasoning and provides an answer, which a judge evaluates for correctness. A structured generation module produces a related new problem q ~ \\( \\tilde{q} \\) based on the original question q q ’s skills. For this generalization task, the student receives the original problem, reasoning trace, message, answer, and correctness verdict, which serves as the context when attempting the new question q ~ \\( \\tilde{q} \\) .",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.21461v1",
+          "title": "AREX: Towards a Recursively Self-Improving Agent for Deep Research",
+          "authors": [
+            "Shuqi Lu",
+            "Chaofan Li",
+            "Kun Luo",
+            "Zhang Zhang",
+            "Hui Wang"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "AREX is a deep research agent that addresses the discovery-verification asymmetry by recursively improving its answers. It alternates between an inner loop for evidence gathering and an outer loop for constraint-wise verification and targeted follow-up research. AREX's key contribution is its self-improvement mechanism, which uses verified intermediate results to guide further research and maintain long-term progress through an autonomous context-update tool.",
+          "url": "http://arxiv.org/abs/2607.21461v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.21461v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2607.21461v1/x1.png",
+          "figure_caption": "Benchmark performance of AREX",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.21498v1",
+          "title": "Artificial Epanorthosis: Why large language models overuse a classical rhetorical figure, and how to mitigate it",
+          "authors": [
+            "Federico Boggia"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper identifies that large language models systematically overuse \"epanorthosis,\" a rhetorical self-correction. The authors argue this is due to training data rich in promotional text and RLHF rewarding confident phrasing, not just generation order. They propose an \"Epanorthosis Index\" to measure this overuse against human baselines and suggest a mitigation program.",
+          "url": "http://arxiv.org/abs/2607.21498v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.21498v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.21558v1",
+          "title": "Beyond Sycophancy: Structured Resistance and Compliance in LLM Moral Reasoning",
+          "authors": [
+            "Baihui Wang",
+            "Bernard Koch"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper proposes a structured framework for LLM moral reasoning that goes beyond simply reducing sycophancy. It identifies three key dimensions – viewpoint distance, source attribution, and coalition structure – that influence how LLMs revise their judgments based on external perspectives. The contribution is a more nuanced understanding of LLM social calibration, framing sycophancy as one outcome of a broader, socially influenced judgment-updating process.",
+          "url": "http://arxiv.org/abs/2607.21558v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.21558v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2607.21558v1/x1.png",
+          "figure_caption": "Experimental workflow and notation. A single moral dilemma serves as the running example across the three studies: “ Is it acceptable to break a promise to prevent significant harm to others? ”, answered on a 1–7 Likert scale, with the focal model’s prior at 5, leaning acceptable. Study 1 varies the distance between an incoming cue and the model’s prior. Study 2 plants a fabricated prior position under different framings and attributed sources . Study 3 embeds the focal model in a four-agent deliberation and varies the supporters-to-opposers coalition ratio from 3 : 0 3{:}0 to 0 : 3 0{:}3 . The paired bar charts in each panel show the notation used throughout: the model’s answer distribution P P over { 1 , … , 7 } \\{1,\\( \\dots \\),7\\} , obtained from first-token probabilities before and after the manipulation. Its argmax is the modal answer i mode \\( \\displaystyle \\) i_{\\( \\text{mode} \\)} ; a cue advocating i cue \\( \\displaystyle \\) i_{\\( \\text{cue} \\)} sits at distance d = | i cue − i mode | \\( \\displaystyle \\) d=|i_{\\( \\text{cue} \\)}-i_{\\( \\text{mode} \\)}| . The two outcomes are Δ ​ P ​ ( target ) \\( \\displaystyle \\)\\( \\Delta \\) P(\\( \\text{target} \\)) , the change in the probability of i cue \\( \\displaystyle \\) i_{\\( \\text{cue} \\)} , and Δ ​ P ​ ( prior ) \\( \\displaystyle \\)\\( \\Delta \\) P(\\( \\text{prior} \\)) , the change in the probability of i mode \\( \\displaystyle \\) i_{\\( \\text{mode} \\)} , written as Δ ​ P ​ ( initial ) \\( \\displaystyle \\)\\( \\Delta \\) P(\\( \\text{initial} \\)) for Study 3’s focal agent. In Study 2, a trial commits when P post ​ ( i cue ) > P post ​ ( i mode ) \\( \\displaystyle \\) P_{\\( \\text{post} \\)}(i_{\\( \\text{cue} \\)})>P_{\\( \\text{post} \\)}(i_{\\( \\text{mode} \\)}) . Derived quantities, including position extremity, the transfer ratio, persistence, and the Wasserstein distance W 1 W_{1} , are defined in the Appendix glossary.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.21302v1",
+          "title": "Expert Behavior Prior Reinforcement Learning",
+          "authors": [
+            "Gong Gao",
+            "Weidong Zhao",
+            "Xianhui Liu",
+            "Ning Jia"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper proposes Expert Behavior Prior (EBP) reinforcement learning, which addresses limitations of existing methods by generating policy priors directly from the online replay buffer. Using a Q-guided conditional variational autoencoder (Q-CVAE), EBP learns to produce high-value actions to guide online policy updates, improving sample efficiency and stability without relying on static offline datasets.",
+          "url": "http://arxiv.org/abs/2607.21302v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.21302v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2607.21302v1/x1.png",
+          "figure_caption": "Detailed description of the Toy environment and a comparative analysis of the policies learned by the EBP and TD3 algorithms.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.21522v1",
+          "title": "GS-Agent: Creating 4D Physical Worlds With Generative Simulation",
+          "authors": [
+            "Hongxin Zhang",
+            "Chunru Lin",
+            "Junyan Li",
+            "Zhou Xian",
+            "Tsun-Hsuan Wang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.CV",
+            "cs.RO"
+          ],
+          "abstract": "GS-Agent is a novel multi-agent framework that automates the creation of realistic, dynamic, and controllable 4D physical worlds from natural language descriptions. It achieves this by integrating physics engines into a generative process, mimicking human world-building workflows to ensure physical plausibility and controllability, unlike previous generative models.",
+          "url": "http://arxiv.org/abs/2607.21522v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.21522v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.21217v1",
+          "title": "ICAE-Bench: Evaluating Coding Agents as Interactive Project Builders",
+          "authors": [
+            "Zhongyuan Peng",
+            "Dan Huang",
+            "Chuyu Zhang",
+            "Caijun Xu",
+            "Changyi Xiao"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces ICAE-Bench, a new benchmark designed to evaluate coding agents in interactive project-building scenarios. Unlike existing benchmarks that use static tasks, ICAE-Bench simulates real-world development by starting with a fuzzy product requirement and using an automated User Agent to interact with the coding agent. This allows for the assessment of agents' abilities in planning, clarification, tool use, and repository-level construction, reflecting the evolving demands of \"vibe-coding\" workflows.",
+          "url": "http://arxiv.org/abs/2607.21217v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.21217v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2607.21217v1/x1.png",
+          "figure_caption": "Overview of the interactive requirement clarification setting of ICAE-Bench. Given an ambiguous requirement, vibe coding resolves missing design decisions through dialogue between a human and a coding agent. Our benchmark simulates this process with a user agent that answers clarification questions and guides the coding agent toward a complete, testable specification, which is then used to build a working repository.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.21557v1",
+          "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
+          "authors": [
+            "Xiao Yu",
+            "Baolin Peng",
+            "Ruize Xu",
+            "Hao Zou",
+            "Qianhui Wu"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "OpenForgeRL is a framework that enables end-to-end training of AI agents that utilize complex inference harnesses. It achieves this by using a lightweight proxy to record harness interactions as training data and a Kubernetes orchestrator to run rollouts in isolated containers, allowing for scalable training of harness-native agents in any environment. This decouples training from inference, simplifying the development and improvement of these agents.",
+          "url": "http://arxiv.org/abs/2607.21557v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.21557v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.21518v1",
+          "title": "Same Dangerous Objective, Opposite Advice: Direct Exposure versus Multi-Agent Mediation",
+          "authors": [
+            "Linjun Li"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper reveals a surprising safety phenomenon: a powerful LLM provides safer advice when directly given a dangerous objective than when that objective is mediated through other agents. The core method involves testing mirrored trade-off profiles, showing that direct exposure leads to advice *opposed* to the dangerous goal, while a multi-agent transformation results in advice *aligned* with it. The contribution highlights a \"compositional safety gap,\" suggesting current LLMs may distrust manipulative motives when presented indirectly, leading to unexpected safety behaviors in automated workflows.",
+          "url": "http://arxiv.org/abs/2607.21518v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.21518v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.21300v1",
+          "title": "Unlearning Under Imbalance: Benchmarking Fairness in Multimodal LLM Unlearning",
+          "authors": [
+            "Lorenzo Orsingher",
+            "Thomas De Min",
+            "Massimiliano Mancini",
+            "Davide Talon",
+            "Elisa Ricci"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CV"
+          ],
+          "abstract": "This paper addresses the challenge of evaluating fairness in multimodal LLM unlearning, where data removal requests can be imbalanced across demographic groups. They introduce FAIRGET, a benchmark for Visual Question Answering that simulates realistic, unbalanced unlearning requests to reveal potential biases. The work also proposes FAUN, a novel unlearning algorithm designed to mitigate these fairness issues.",
+          "url": "http://arxiv.org/abs/2607.21300v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.21300v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.21291v1",
+          "title": "Adaptive Depth Sparse Framework: Similarity-Driven Resource Allocation for Pre-Trained LLMs",
+          "authors": [
+            "Yidu Wu",
+            "Xiang Wang",
+            "Kejie Zhao",
+            "Zhangchi Wang",
+            "Qinghai Guo"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces the Adaptive Depth Sparse Framework (AdaDSF) to accelerate pre-trained LLMs without full retraining. AdaDSF identifies layer importance by measuring input-output similarity, then uses this to guide a lightweight router in selectively processing tokens at each layer. This similarity-driven resource allocation and feature-preserving alignment significantly reduces inference cost while maintaining performance.",
+          "url": "http://arxiv.org/abs/2607.21291v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.21291v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2607.21291v1/x1.png",
+          "figure_caption": "Overview of Adaptive Depth Sparse Framework: Similarity-Driven Resource Allocation for Pre-Trained LLMs (AdaDSF). The framework includes similarity-driven layer-wise retention allocation, lightweight token routing within sparse modules, and feature-preserving alignment training.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2607.21371v1",
+          "title": "DINOde: Continuous Vision-Text Alignment for Open-Vocabulary Semantic Segmentation",
+          "authors": [
+            "Sung-Hoon Yoon",
+            "Hoyong Kwon",
+            "Changgyoon Oh",
+            "Kuk-Jin Yoon"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CV"
+          ],
+          "abstract": "DINOde proposes an ODE-based framework to continuously align CLIP text embeddings with DINOv3's visual representations for open-vocabulary semantic segmentation. It uses Semantic Text Flow to guide text embeddings towards the visual manifold and Global Context Flow to refine image representations. This continuous alignment, constrained by Velocity Tangent Projection, enables more effective open-vocabulary segmentation by bridging the gap between visual and textual semantics.",
+          "url": "http://arxiv.org/abs/2607.21371v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.21371v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2607.21371v1/figures/1_intro_teaser.png",
+          "figure_caption": "Overview of the DINOde framework for OVSS . We propose a continuous alignment strategy that bridges the gap between text embeddings and DINO visual features. The illustration depicts how a text embedding is progressively transformed into a DINO-aligned text embedding through an ODE-based trajectory on the unit sphere, resulting in step-by-step refinement of the semantic segmentation.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        }
+      ],
+      "meta": {
+        "papers_fetched": 100,
+        "papers_after_keyword_filter": 51,
+        "papers_after_llm_filter": 36,
+        "count": 20
+      }
+    },
+    {
+      "key": "hacker_news",
+      "payload_key": "hacker_news",
+      "title": "Hacker News",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": 49023016,
+          "title": "Startup founders urge U.S. government not to shut off Chinese open weight AI",
+          "url": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992",
+          "score": 943,
+          "created_at": "2026-07-23T15:18:40Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49023016",
+          "summary": "Startup founders are urging the U.S. government not to restrict access to Chinese open-weight AI models, fearing it will stifle innovation and competitiveness."
+        },
+        {
+          "id": 49020999,
+          "title": "AI Companies Are Trying to Hide a Staggering Amount of Debt",
+          "url": "https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet",
+          "score": 649,
+          "created_at": "2026-07-23T13:09:10Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49020999",
+          "summary": "AI companies are reportedly using complex financial maneuvers to conceal significant debt, making their true financial health difficult to assess."
+        },
+        {
+          "id": 49026810,
+          "title": "Show HN: Echo – Fable-level results at 1/3 the cost using open-weight models",
+          "url": "",
+          "score": 390,
+          "created_at": "2026-07-23T19:26:01Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49026810",
+          "summary": "This \"Show HN\" introduces Echo, a new AI model that achieves Fable-level results at a significantly lower cost by leveraging open-weight models."
+        },
+        {
+          "id": 49031796,
+          "title": "Flux 3",
+          "url": "https://bfl.ai/blog/flux-3",
+          "score": 285,
+          "created_at": "2026-07-24T06:17:08Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49031796",
+          "summary": "Flux 3 is a new AI model from BFL.ai that excels at complex reasoning tasks, demonstrating significant improvements over previous versions."
+        },
+        {
+          "id": 49020868,
+          "title": "OpenAI and Anthropic unite against open-weight AI risks to their bottom line",
+          "url": "https://www.axios.com/2026/07/22/openai-anthropic-open-models-trump-china",
+          "score": 284,
+          "created_at": "2026-07-23T13:00:03Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49020868",
+          "summary": "OpenAI and Anthropic are collaborating to address risks posed by open-weight AI models, potentially impacting their business interests and national security."
+        },
+        {
+          "id": 49024643,
+          "title": "The arguments against open source AI are bad",
+          "url": "https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/",
+          "score": 281,
+          "created_at": "2026-07-23T16:49:57Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49024643",
+          "summary": "The article argues that common criticisms of open-source AI, such as safety and misuse concerns, are often exaggerated or misapplied, and that open-source development ultimately fosters innovation and transparency."
+        },
+        {
+          "id": 49021006,
+          "title": "Alphabet's cash burn raises alarm for Big Tech as AI spending climbs",
+          "url": "https://www.reuters.com/business/retail-consumer/alphabets-cash-burn-raises-alarm-big-tech-ai-spending-climbs-2026-07-23/",
+          "score": 265,
+          "created_at": "2026-07-23T13:10:02Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49021006",
+          "summary": "Alphabet's increasing AI investment is leading to a significant cash burn, sparking concerns across Big Tech about the financial sustainability of rapid AI development."
+        },
+        {
+          "id": 49021597,
+          "title": "DARPA, U.S. Air Force fly AI-controlled F-16",
+          "url": "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16",
+          "score": 247,
+          "created_at": "2026-07-23T13:51:36Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49021597",
+          "summary": "DARPA and the U.S. Air Force successfully conducted a flight of an F-16 fighter jet controlled by an artificial intelligence system, demonstrating autonomous aerial combat capabilities."
+        },
+        {
+          "id": 49022911,
+          "title": "Show HN: Palmier Pro – Open-source macOS video editor built for AI",
+          "url": "https://github.com/palmier-io/palmier-pro",
+          "score": 160,
+          "created_at": "2026-07-23T15:11:37Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49022911",
+          "summary": "Palmier Pro is an open-source macOS video editor designed with AI integration in mind, offering a new tool for content creators."
+        },
+        {
+          "id": 49026482,
+          "title": "Introducing selfie for sign-in: a new way to access your Google Account",
+          "url": "https://blog.google/innovation-and-ai/technology/safety-security/selfie-video-sign-in/",
+          "score": 105,
+          "created_at": "2026-07-23T19:00:34Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49026482",
+          "summary": "Google is introducing a new selfie video sign-in method for accessing Google Accounts, enhancing security and user experience."
+        }
+      ],
+      "meta": {
+        "count": 10
+      }
+    },
+    {
+      "key": "github_trending",
+      "payload_key": "github_trending",
+      "title": "GitHub Trending",
+      "icon": "⭐",
+      "items": [
+        {
+          "full_name": "block/buzz",
+          "url": "https://github.com/block/buzz",
+          "description": "A hive mind communication platform",
+          "stars_today": 2162,
+          "total_stars": 8165,
+          "language": "Rust",
+          "topics": [],
+          "summary": "Block/Buzz is a decentralized, peer-to-peer communication platform enabling a \"hive mind\" by facilitating anonymous, encrypted message exchange and content sharing among users."
+        },
+        {
+          "full_name": "koala73/worldmonitor",
+          "url": "https://github.com/koala73/worldmonitor",
+          "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+          "stars_today": 3175,
+          "total_stars": 72574,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "This repository provides a real-time global intelligence dashboard that uses AI to aggregate news, monitor geopolitics, and track infrastructure, offering a unified situational awareness interface."
+        },
+        {
+          "full_name": "shiyu-coder/Kronos",
+          "url": "https://github.com/shiyu-coder/Kronos",
+          "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+          "stars_today": 401,
+          "total_stars": 33286,
+          "language": "Python",
+          "topics": [],
+          "summary": "Kronos is a foundation model designed to understand and process the unique language of financial markets, enabling advanced analysis and insights."
+        },
+        {
+          "full_name": "Pumpkin-MC/Pumpkin",
+          "url": "https://github.com/Pumpkin-MC/Pumpkin",
+          "description": "Empowering everyone to host fast and efficient Minecraft servers.",
+          "stars_today": 565,
+          "total_stars": 9111,
+          "language": "Rust",
+          "topics": [],
+          "summary": "Pumpkin is a Minecraft server hosting solution designed for speed and efficiency, making it easy for anyone to set up and manage their own server."
+        },
+        {
+          "full_name": "citrolabs/ego-lite",
+          "url": "https://github.com/citrolabs/ego-lite",
+          "description": "The best browser for both you and your AI agents work in parallel.",
+          "stars_today": 247,
+          "total_stars": 2059,
+          "language": "JavaScript",
+          "topics": [],
+          "summary": "Ego-lite is a browser designed for seamless parallel work between humans and AI agents, offering a unified and efficient browsing experience."
+        },
+        {
+          "full_name": "chrislgarry/Apollo-11",
+          "url": "https://github.com/chrislgarry/Apollo-11",
+          "description": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.",
+          "stars_today": 592,
+          "total_stars": 71247,
+          "language": "Assembly",
+          "topics": [],
+          "summary": "This repository contains the original Apollo 11 Guidance Computer (AGC) source code, offering a historical look at the software that powered the lunar missions."
+        },
+        {
+          "full_name": "diegosouzapw/OmniRoute",
+          "url": "https://github.com/diegosouzapw/OmniRoute",
+          "description": "Never stop coding. Free MIT AI gateway: one endpoint, 290+ providers (90+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 500+ contributors",
+          "stars_today": 1929,
+          "total_stars": 27946,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "OmniRoute is a free MIT AI gateway offering a single endpoint to access over 290 AI providers and 500+ models, featuring quota-aware auto-fallback, token compression, and desktop/PWA support."
+        },
+        {
+          "full_name": "ComposioHQ/awesome-claude-skills",
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+          "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+          "stars_today": 636,
+          "total_stars": 69718,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository curates a list of Claude Skills, resources, and tools to help users customize and enhance their Claude AI workflows."
+        },
+        {
+          "full_name": "earthtojake/text-to-cad",
+          "url": "https://github.com/earthtojake/text-to-cad",
+          "description": "A collection of agent skills for CAD, robotics and hardware design",
+          "stars_today": 230,
+          "total_stars": 10259,
+          "language": "JavaScript",
+          "topics": [],
+          "summary": "This repository provides agent skills for CAD, robotics, and hardware design, enabling the creation of designs from textual descriptions."
+        }
+      ],
+      "meta": {
+        "count": 9
+      }
+    }
+  ],
+  "meta": {
+    "papers_fetched": 100,
+    "papers_after_keyword_filter": 51,
+    "papers_after_llm_filter": 36,
+    "llm_model": "google/gemini-2.5-flash-lite",
+    "scoring_model": "google/gemini-2.5-flash-lite",
+    "summarization_model": "google/gemini-2.5-flash-lite",
+    "duration_seconds": 106
+  },
+  "quote_of_day": [
+    {
+      "quote": "We can best help you to prevent war not by repeating your words and following your methods but by finding new words and creating new methods.",
+      "author": "Virginia Woolf",
+      "category": "best"
+    }
+  ],
+  "hitokoto": [],
+  "arxiv": [
+    {
+      "id": "2607.21503v1",
+      "title": "Agentic Context Management: Solving Agent Memory and Cost by Treating Them as Lifecycle and Architecture Problems",
+      "authors": [
+        "Gaurav Dadhich"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.IR"
+      ],
+      "abstract": "This paper argues that AI agent failures stem from poor context management, not reasoning ability. It proposes treating context management as a lifecycle and architectural problem, rather than just storage and retrieval. The core contribution is a framework for actively managing agent memory by considering its entire lifecycle, from deciding what to remember to forgetting, all within budget constraints.",
+      "url": "http://arxiv.org/abs/2607.21503v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21503v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.21503v1/x1.png",
+      "figure_caption": "The five-primitive context lifecycle (architecting → \\( \\rightarrow \\) ingesting → \\( \\rightarrow \\) scoping → \\( \\rightarrow \\) anticipating → \\( \\rightarrow \\) compacting & consolidation), drawn as a cycle around a central agent, with the retrieval scope hierarchy (user → \\( \\rightarrow \\) customer → \\( \\rightarrow \\) client) as a vertical axis and the global knowledge layer drawn separately, feeding entity canonicalization.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21324v1",
+      "title": "GRADRAG: Cross-Component Prompt Adaptation for Coordinated Multi-Agent RAG",
+      "authors": [
+        "Paolo Pedinotti",
+        "Enrico Santus"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "GRADRAG introduces a novel framework for optimizing multi-agent RAG systems by coordinating improvements across all components. It models the RAG pipeline as a computational graph and uses structured feedback from an Evaluator to iteratively adapt upstream agents like retrievers and answerers. This cross-component adaptation leads to more coordinated and effective RAG performance.",
+      "url": "http://arxiv.org/abs/2607.21324v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21324v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.21324v1/Figures/mockup2.png",
+      "figure_caption": "GradRAG : cross-component prompt adaptation in an agentic RAG pipeline. Grey (forward pass): A Retrieval Agent gathers evidence from either document chunks (Vector RAG) or a structured entity–relation graph (GraphRAG, constructed by a separate agent that is not shown in the mock up), which is assembled into a context and passed to an Answer Generation Agent to produce a candidate answer. Orange (evaluation and control): An Evaluator reviews the answer and its supporting evidence and returns feedback with a binary Stop? decision. If Yes , the answer is accepted. If No , a Prompt Optimizer updates the prompts of one or more agents (as indicated by the evaluation), and the next forward pass is executed.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21419v1",
+      "title": "PATS: Policy-Aware Training Scaffolding for Agentic Reinforcement Learning",
+      "authors": [
+        "Yipeng Shi",
+        "Zhipeng Ma",
+        "Yue Wang",
+        "Qitai Tan",
+        "Yang Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces PATS, a novel training method for LLM agents that uses a \"policy-aware training scaffold.\" Instead of focusing on skills, PATS dynamically adjusts the context provided to the agent during training based on its current performance. This scaffolding guides weak policies to succeed and is gradually removed as the agent improves, leading to more efficient and robust reinforcement learning.",
+      "url": "http://arxiv.org/abs/2607.21419v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21419v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.21419v1/x1.png",
+      "figure_caption": "Seed-0 training dynamics on 1.5B ALFWorld under the shared 150-step RL budget. Left: validation success rate. Right: mean prompt tokens per policy call; faint traces are raw logs and bold traces are seven-step moving averages. Pats expands its training context early and later contracts it as validation improves, whereas SkillRL’s context grows and SKILL0 follows staged withdrawal.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21356v1",
+      "title": "Emergent Misalignment Recruits a Pre-existing Persona Subspace",
+      "authors": [
+        "Mohammed Suhail B Nadaf"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper investigates emergent misalignment in language models, where fine-tuning on narrow \"bad advice\" leads to broad misalignment. The core method reveals that this generalization occurs because fine-tuning activates a pre-existing persona subspace within the model. The key contribution is demonstrating that this subspace, not just the specific training data, is responsible for emergent misalignment, and controlling it can prevent it.",
+      "url": "http://arxiv.org/abs/2607.21356v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21356v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.21356v1/x1.png",
+      "figure_caption": "A persona subspace present in the model before fine-tuning carries broad misalignment. The subspace is extracted from the frozen instruction-tuned model. Projecting it out of the residual stream throughout fine-tuning prevents broad misalignment (27.7% → \\( \\to \\) 0.0%); adding it to the never-fine-tuned model induces misalignment that grows with dose (to 45.4%); the same projection applied to the weight gradient changes nothing (26.6% vs. 26.7%). Each arm carries a matched random control (Section 5 ).",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.21273v1",
+      "title": "The Dark Room in the Reward Channel: Dense Prediction Rewards Collapse GRPO-Trained LLM Agents -- and What Actually Works",
+      "authors": [
+        "Yu Wang"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper demonstrates that dense, per-step prediction rewards, intended to aid long-horizon LLM agents, actually cause catastrophic policy collapse under Group-Normalized RL (GRPO). The core issue is that GRPO's z-scoring amplifies the dense signal, leading to a \"dark room\" pathology where agents become stuck in unproductive states. The authors' key contribution is identifying that removing GRPO's standard deviation normalization resolves this collapse, suggesting that dense rewards are effective only when this specific normalization is absent.",
+      "url": "http://arxiv.org/abs/2607.21273v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21273v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.21273v1/x1.png",
+      "figure_caption": "The std-normalized prediction reward collapses every run at all three scales; timing is non-monotonic (saturation race, § 4.5 ). Honeymoon peaks rise with scale: the signal genuinely helps until hacking pressure arrives.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.21550v1",
+      "title": "X$^3$-OPD: Distilling Reasoning into Large Audio-Language Models via On-Policy Alignment",
+      "authors": [
+        "Dongjie Fu",
+        "Di Cao",
+        "Xize Cheng",
+        "Zihan Zhang",
+        "Wenxu Jia"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "X$^3$-OPD distills reasoning abilities from text-based models into audio-language models using a novel on-policy alignment framework. It trains the audio model by having it generate reasoning steps based on its acoustic perception, guided by a text teacher using matched inputs and verified answers. This approach, supported by a diverse three-tier corpus, enables audio models to perform complex reasoning beyond purely textual content, incorporating non-linguistic events and prosody.",
+      "url": "http://arxiv.org/abs/2607.21550v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21550v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.21550v1/x1.png",
+      "figure_caption": "Overview of X 3 -OPD . Left: a three-tier symmetric corpus—Logical (text + TTS speech), Audio (audio + refined caption), and Dialogue (dialogue + prosody-aware meta-caption)—providing ( x t , x a , q , a ⋆ ) (x_{t},x_{a},q,a^{\\( \\star \\)}) for every instance. Right: an offline warm-start ( ℒ off \\( \\mathcal{L} \\)_{\\( \\mathrm{off} \\)} , Eq. 1 ) followed by cross-modal on-policy distillation, where the student rolls out under ( x a , q ) (x_{a},q) and the frozen teacher scores the same trajectories under ( x t , q , a ⋆ ) (x_{t},q,a^{\\( \\star \\)}) to compute ℒ on \\( \\mathcal{L} \\)_{\\( \\mathrm{on} \\)} (Eq. 3 ).",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.21279v1",
+      "title": "A Unified Moral-Value Dataset for Instruction Tuning",
+      "authors": [
+        "Zhaohui Zeng",
+        "Florian Mai"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper addresses the challenge of aligning Large Language Models (LLMs) with human values by creating a unified dataset for instruction tuning. The authors merge existing moral-value datasets and reformat them into an instruction-response structure. Their contribution is a readily usable dataset that, when mixed with general task data, allows LLMs to maintain general performance while improving value-oriented task capabilities.",
+      "url": "http://arxiv.org/abs/2607.21279v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21279v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.21279v1/x1.png",
+      "figure_caption": "Overall pipeline of our proposed dataset construction, instruction tuning, and downstream evaluation.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2607.21482v1",
+      "title": "Agentic coding without the cloud: evaluating open-weight large language models on longitudinal data preparation tasks",
+      "authors": [
+        "Mack Nixon",
+        "Liam Wright",
+        "Yevgeniya Kovalchuk",
+        "Alison Fang-Wei Wu",
+        "Martin Danka"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces an open-source framework to evaluate open-weight Large Language Models (LLMs) for data preparation in longitudinal research, addressing privacy concerns by enabling local deployment. The framework includes a curated dataset, defined tasks like category harmonization, and automated evaluation routines for LLM-generated R code and data. Its contribution lies in demonstrating the feasibility of using local LLMs for sensitive data tasks, overcoming cloud-based model limitations.",
+      "url": "http://arxiv.org/abs/2607.21482v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21482v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21306v1",
+      "title": "AI Assistants Overassist",
+      "authors": [
+        "Verona Teo",
+        "Raghav Jain",
+        "Tobias Gerstenberg",
+        "Max Kleiman-Weiner"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL",
+        "cs.CY",
+        "cs.HC"
+      ],
+      "abstract": "This paper introduces Int-Bench, a simulation-based benchmark to evaluate how AI assistants intervene during problem-solving. The core method involves simulating a student learning a task while an AI teacher decides when and how to provide assistance. The key contribution is identifying that LLMs tend to overassist, potentially hindering learning, and providing a framework to systematically study and improve AI intervention strategies.",
+      "url": "http://arxiv.org/abs/2607.21306v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21306v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.21306v1/x1.png",
+      "figure_caption": "Overview of Int-Bench . For a question q q , the student produces a baseline reasoning trace t = ( t 1 , t 2 , … , t T ) t=(t_{1},t_{2},\\( \\dots \\),t_{T}) . If the teacher decides to intervene at step k k , an intervention message m k m_{k} is injected into the reasoning trace. The student then updates its reasoning and provides an answer, which a judge evaluates for correctness. A structured generation module produces a related new problem q ~ \\( \\tilde{q} \\) based on the original question q q ’s skills. For this generalization task, the student receives the original problem, reasoning trace, message, answer, and correctness verdict, which serves as the context when attempting the new question q ~ \\( \\tilde{q} \\) .",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21461v1",
+      "title": "AREX: Towards a Recursively Self-Improving Agent for Deep Research",
+      "authors": [
+        "Shuqi Lu",
+        "Chaofan Li",
+        "Kun Luo",
+        "Zhang Zhang",
+        "Hui Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "AREX is a deep research agent that addresses the discovery-verification asymmetry by recursively improving its answers. It alternates between an inner loop for evidence gathering and an outer loop for constraint-wise verification and targeted follow-up research. AREX's key contribution is its self-improvement mechanism, which uses verified intermediate results to guide further research and maintain long-term progress through an autonomous context-update tool.",
+      "url": "http://arxiv.org/abs/2607.21461v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21461v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.21461v1/x1.png",
+      "figure_caption": "Benchmark performance of AREX",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21498v1",
+      "title": "Artificial Epanorthosis: Why large language models overuse a classical rhetorical figure, and how to mitigate it",
+      "authors": [
+        "Federico Boggia"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper identifies that large language models systematically overuse \"epanorthosis,\" a rhetorical self-correction. The authors argue this is due to training data rich in promotional text and RLHF rewarding confident phrasing, not just generation order. They propose an \"Epanorthosis Index\" to measure this overuse against human baselines and suggest a mitigation program.",
+      "url": "http://arxiv.org/abs/2607.21498v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21498v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21558v1",
+      "title": "Beyond Sycophancy: Structured Resistance and Compliance in LLM Moral Reasoning",
+      "authors": [
+        "Baihui Wang",
+        "Bernard Koch"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper proposes a structured framework for LLM moral reasoning that goes beyond simply reducing sycophancy. It identifies three key dimensions – viewpoint distance, source attribution, and coalition structure – that influence how LLMs revise their judgments based on external perspectives. The contribution is a more nuanced understanding of LLM social calibration, framing sycophancy as one outcome of a broader, socially influenced judgment-updating process.",
+      "url": "http://arxiv.org/abs/2607.21558v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21558v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.21558v1/x1.png",
+      "figure_caption": "Experimental workflow and notation. A single moral dilemma serves as the running example across the three studies: “ Is it acceptable to break a promise to prevent significant harm to others? ”, answered on a 1–7 Likert scale, with the focal model’s prior at 5, leaning acceptable. Study 1 varies the distance between an incoming cue and the model’s prior. Study 2 plants a fabricated prior position under different framings and attributed sources . Study 3 embeds the focal model in a four-agent deliberation and varies the supporters-to-opposers coalition ratio from 3 : 0 3{:}0 to 0 : 3 0{:}3 . The paired bar charts in each panel show the notation used throughout: the model’s answer distribution P P over { 1 , … , 7 } \\{1,\\( \\dots \\),7\\} , obtained from first-token probabilities before and after the manipulation. Its argmax is the modal answer i mode \\( \\displaystyle \\) i_{\\( \\text{mode} \\)} ; a cue advocating i cue \\( \\displaystyle \\) i_{\\( \\text{cue} \\)} sits at distance d = | i cue − i mode | \\( \\displaystyle \\) d=|i_{\\( \\text{cue} \\)}-i_{\\( \\text{mode} \\)}| . The two outcomes are Δ ​ P ​ ( target ) \\( \\displaystyle \\)\\( \\Delta \\) P(\\( \\text{target} \\)) , the change in the probability of i cue \\( \\displaystyle \\) i_{\\( \\text{cue} \\)} , and Δ ​ P ​ ( prior ) \\( \\displaystyle \\)\\( \\Delta \\) P(\\( \\text{prior} \\)) , the change in the probability of i mode \\( \\displaystyle \\) i_{\\( \\text{mode} \\)} , written as Δ ​ P ​ ( initial ) \\( \\displaystyle \\)\\( \\Delta \\) P(\\( \\text{initial} \\)) for Study 3’s focal agent. In Study 2, a trial commits when P post ​ ( i cue ) > P post ​ ( i mode ) \\( \\displaystyle \\) P_{\\( \\text{post} \\)}(i_{\\( \\text{cue} \\)})>P_{\\( \\text{post} \\)}(i_{\\( \\text{mode} \\)}) . Derived quantities, including position extremity, the transfer ratio, persistence, and the Wasserstein distance W 1 W_{1} , are defined in the Appendix glossary.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21302v1",
+      "title": "Expert Behavior Prior Reinforcement Learning",
+      "authors": [
+        "Gong Gao",
+        "Weidong Zhao",
+        "Xianhui Liu",
+        "Ning Jia"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper proposes Expert Behavior Prior (EBP) reinforcement learning, which addresses limitations of existing methods by generating policy priors directly from the online replay buffer. Using a Q-guided conditional variational autoencoder (Q-CVAE), EBP learns to produce high-value actions to guide online policy updates, improving sample efficiency and stability without relying on static offline datasets.",
+      "url": "http://arxiv.org/abs/2607.21302v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21302v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.21302v1/x1.png",
+      "figure_caption": "Detailed description of the Toy environment and a comparative analysis of the policies learned by the EBP and TD3 algorithms.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21522v1",
+      "title": "GS-Agent: Creating 4D Physical Worlds With Generative Simulation",
+      "authors": [
+        "Hongxin Zhang",
+        "Chunru Lin",
+        "Junyan Li",
+        "Zhou Xian",
+        "Tsun-Hsuan Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV",
+        "cs.RO"
+      ],
+      "abstract": "GS-Agent is a novel multi-agent framework that automates the creation of realistic, dynamic, and controllable 4D physical worlds from natural language descriptions. It achieves this by integrating physics engines into a generative process, mimicking human world-building workflows to ensure physical plausibility and controllability, unlike previous generative models.",
+      "url": "http://arxiv.org/abs/2607.21522v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21522v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21217v1",
+      "title": "ICAE-Bench: Evaluating Coding Agents as Interactive Project Builders",
+      "authors": [
+        "Zhongyuan Peng",
+        "Dan Huang",
+        "Chuyu Zhang",
+        "Caijun Xu",
+        "Changyi Xiao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces ICAE-Bench, a new benchmark designed to evaluate coding agents in interactive project-building scenarios. Unlike existing benchmarks that use static tasks, ICAE-Bench simulates real-world development by starting with a fuzzy product requirement and using an automated User Agent to interact with the coding agent. This allows for the assessment of agents' abilities in planning, clarification, tool use, and repository-level construction, reflecting the evolving demands of \"vibe-coding\" workflows.",
+      "url": "http://arxiv.org/abs/2607.21217v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21217v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.21217v1/x1.png",
+      "figure_caption": "Overview of the interactive requirement clarification setting of ICAE-Bench. Given an ambiguous requirement, vibe coding resolves missing design decisions through dialogue between a human and a coding agent. Our benchmark simulates this process with a user agent that answers clarification questions and guides the coding agent toward a complete, testable specification, which is then used to build a working repository.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21557v1",
+      "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
+      "authors": [
+        "Xiao Yu",
+        "Baolin Peng",
+        "Ruize Xu",
+        "Hao Zou",
+        "Qianhui Wu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "OpenForgeRL is a framework that enables end-to-end training of AI agents that utilize complex inference harnesses. It achieves this by using a lightweight proxy to record harness interactions as training data and a Kubernetes orchestrator to run rollouts in isolated containers, allowing for scalable training of harness-native agents in any environment. This decouples training from inference, simplifying the development and improvement of these agents.",
+      "url": "http://arxiv.org/abs/2607.21557v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21557v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21518v1",
+      "title": "Same Dangerous Objective, Opposite Advice: Direct Exposure versus Multi-Agent Mediation",
+      "authors": [
+        "Linjun Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper reveals a surprising safety phenomenon: a powerful LLM provides safer advice when directly given a dangerous objective than when that objective is mediated through other agents. The core method involves testing mirrored trade-off profiles, showing that direct exposure leads to advice *opposed* to the dangerous goal, while a multi-agent transformation results in advice *aligned* with it. The contribution highlights a \"compositional safety gap,\" suggesting current LLMs may distrust manipulative motives when presented indirectly, leading to unexpected safety behaviors in automated workflows.",
+      "url": "http://arxiv.org/abs/2607.21518v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21518v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21300v1",
+      "title": "Unlearning Under Imbalance: Benchmarking Fairness in Multimodal LLM Unlearning",
+      "authors": [
+        "Lorenzo Orsingher",
+        "Thomas De Min",
+        "Massimiliano Mancini",
+        "Davide Talon",
+        "Elisa Ricci"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "This paper addresses the challenge of evaluating fairness in multimodal LLM unlearning, where data removal requests can be imbalanced across demographic groups. They introduce FAIRGET, a benchmark for Visual Question Answering that simulates realistic, unbalanced unlearning requests to reveal potential biases. The work also proposes FAUN, a novel unlearning algorithm designed to mitigate these fairness issues.",
+      "url": "http://arxiv.org/abs/2607.21300v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21300v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21291v1",
+      "title": "Adaptive Depth Sparse Framework: Similarity-Driven Resource Allocation for Pre-Trained LLMs",
+      "authors": [
+        "Yidu Wu",
+        "Xiang Wang",
+        "Kejie Zhao",
+        "Zhangchi Wang",
+        "Qinghai Guo"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces the Adaptive Depth Sparse Framework (AdaDSF) to accelerate pre-trained LLMs without full retraining. AdaDSF identifies layer importance by measuring input-output similarity, then uses this to guide a lightweight router in selectively processing tokens at each layer. This similarity-driven resource allocation and feature-preserving alignment significantly reduces inference cost while maintaining performance.",
+      "url": "http://arxiv.org/abs/2607.21291v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21291v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.21291v1/x1.png",
+      "figure_caption": "Overview of Adaptive Depth Sparse Framework: Similarity-Driven Resource Allocation for Pre-Trained LLMs (AdaDSF). The framework includes similarity-driven layer-wise retention allocation, lightweight token routing within sparse modules, and feature-preserving alignment training.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.21371v1",
+      "title": "DINOde: Continuous Vision-Text Alignment for Open-Vocabulary Semantic Segmentation",
+      "authors": [
+        "Sung-Hoon Yoon",
+        "Hoyong Kwon",
+        "Changgyoon Oh",
+        "Kuk-Jin Yoon"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "DINOde proposes an ODE-based framework to continuously align CLIP text embeddings with DINOv3's visual representations for open-vocabulary semantic segmentation. It uses Semantic Text Flow to guide text embeddings towards the visual manifold and Global Context Flow to refine image representations. This continuous alignment, constrained by Velocity Tangent Projection, enables more effective open-vocabulary segmentation by bridging the gap between visual and textual semantics.",
+      "url": "http://arxiv.org/abs/2607.21371v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21371v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2607.21371v1/figures/1_intro_teaser.png",
+      "figure_caption": "Overview of the DINOde framework for OVSS . We propose a continuous alignment strategy that bridges the gap between text embeddings and DINO visual features. The illustration depicts how a text embedding is progressively transformed into a DINO-aligned text embedding through an ODE-based trajectory on the unit sphere, resulting in step-by-step refinement of the semantic segmentation.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "papers": [
+    {
+      "id": "2607.21503v1",
+      "title": "Agentic Context Management: Solving Agent Memory and Cost by Treating Them as Lifecycle and Architecture Problems",
+      "authors": [
+        "Gaurav Dadhich"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.IR"
+      ],
+      "abstract": "This paper argues that AI agent failures stem from poor context management, not reasoning ability. It proposes treating context management as a lifecycle and architectural problem, rather than just storage and retrieval. The core contribution is a framework for actively managing agent memory by considering its entire lifecycle, from deciding what to remember to forgetting, all within budget constraints.",
+      "url": "http://arxiv.org/abs/2607.21503v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21503v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.21503v1/x1.png",
+      "figure_caption": "The five-primitive context lifecycle (architecting → \\( \\rightarrow \\) ingesting → \\( \\rightarrow \\) scoping → \\( \\rightarrow \\) anticipating → \\( \\rightarrow \\) compacting & consolidation), drawn as a cycle around a central agent, with the retrieval scope hierarchy (user → \\( \\rightarrow \\) customer → \\( \\rightarrow \\) client) as a vertical axis and the global knowledge layer drawn separately, feeding entity canonicalization.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21324v1",
+      "title": "GRADRAG: Cross-Component Prompt Adaptation for Coordinated Multi-Agent RAG",
+      "authors": [
+        "Paolo Pedinotti",
+        "Enrico Santus"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "GRADRAG introduces a novel framework for optimizing multi-agent RAG systems by coordinating improvements across all components. It models the RAG pipeline as a computational graph and uses structured feedback from an Evaluator to iteratively adapt upstream agents like retrievers and answerers. This cross-component adaptation leads to more coordinated and effective RAG performance.",
+      "url": "http://arxiv.org/abs/2607.21324v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21324v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.21324v1/Figures/mockup2.png",
+      "figure_caption": "GradRAG : cross-component prompt adaptation in an agentic RAG pipeline. Grey (forward pass): A Retrieval Agent gathers evidence from either document chunks (Vector RAG) or a structured entity–relation graph (GraphRAG, constructed by a separate agent that is not shown in the mock up), which is assembled into a context and passed to an Answer Generation Agent to produce a candidate answer. Orange (evaluation and control): An Evaluator reviews the answer and its supporting evidence and returns feedback with a binary Stop? decision. If Yes , the answer is accepted. If No , a Prompt Optimizer updates the prompts of one or more agents (as indicated by the evaluation), and the next forward pass is executed.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21419v1",
+      "title": "PATS: Policy-Aware Training Scaffolding for Agentic Reinforcement Learning",
+      "authors": [
+        "Yipeng Shi",
+        "Zhipeng Ma",
+        "Yue Wang",
+        "Qitai Tan",
+        "Yang Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces PATS, a novel training method for LLM agents that uses a \"policy-aware training scaffold.\" Instead of focusing on skills, PATS dynamically adjusts the context provided to the agent during training based on its current performance. This scaffolding guides weak policies to succeed and is gradually removed as the agent improves, leading to more efficient and robust reinforcement learning.",
+      "url": "http://arxiv.org/abs/2607.21419v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21419v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.21419v1/x1.png",
+      "figure_caption": "Seed-0 training dynamics on 1.5B ALFWorld under the shared 150-step RL budget. Left: validation success rate. Right: mean prompt tokens per policy call; faint traces are raw logs and bold traces are seven-step moving averages. Pats expands its training context early and later contracts it as validation improves, whereas SkillRL’s context grows and SKILL0 follows staged withdrawal.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21356v1",
+      "title": "Emergent Misalignment Recruits a Pre-existing Persona Subspace",
+      "authors": [
+        "Mohammed Suhail B Nadaf"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper investigates emergent misalignment in language models, where fine-tuning on narrow \"bad advice\" leads to broad misalignment. The core method reveals that this generalization occurs because fine-tuning activates a pre-existing persona subspace within the model. The key contribution is demonstrating that this subspace, not just the specific training data, is responsible for emergent misalignment, and controlling it can prevent it.",
+      "url": "http://arxiv.org/abs/2607.21356v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21356v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.21356v1/x1.png",
+      "figure_caption": "A persona subspace present in the model before fine-tuning carries broad misalignment. The subspace is extracted from the frozen instruction-tuned model. Projecting it out of the residual stream throughout fine-tuning prevents broad misalignment (27.7% → \\( \\to \\) 0.0%); adding it to the never-fine-tuned model induces misalignment that grows with dose (to 45.4%); the same projection applied to the weight gradient changes nothing (26.6% vs. 26.7%). Each arm carries a matched random control (Section 5 ).",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.21273v1",
+      "title": "The Dark Room in the Reward Channel: Dense Prediction Rewards Collapse GRPO-Trained LLM Agents -- and What Actually Works",
+      "authors": [
+        "Yu Wang"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper demonstrates that dense, per-step prediction rewards, intended to aid long-horizon LLM agents, actually cause catastrophic policy collapse under Group-Normalized RL (GRPO). The core issue is that GRPO's z-scoring amplifies the dense signal, leading to a \"dark room\" pathology where agents become stuck in unproductive states. The authors' key contribution is identifying that removing GRPO's standard deviation normalization resolves this collapse, suggesting that dense rewards are effective only when this specific normalization is absent.",
+      "url": "http://arxiv.org/abs/2607.21273v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21273v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.21273v1/x1.png",
+      "figure_caption": "The std-normalized prediction reward collapses every run at all three scales; timing is non-monotonic (saturation race, § 4.5 ). Honeymoon peaks rise with scale: the signal genuinely helps until hacking pressure arrives.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.21550v1",
+      "title": "X$^3$-OPD: Distilling Reasoning into Large Audio-Language Models via On-Policy Alignment",
+      "authors": [
+        "Dongjie Fu",
+        "Di Cao",
+        "Xize Cheng",
+        "Zihan Zhang",
+        "Wenxu Jia"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "X$^3$-OPD distills reasoning abilities from text-based models into audio-language models using a novel on-policy alignment framework. It trains the audio model by having it generate reasoning steps based on its acoustic perception, guided by a text teacher using matched inputs and verified answers. This approach, supported by a diverse three-tier corpus, enables audio models to perform complex reasoning beyond purely textual content, incorporating non-linguistic events and prosody.",
+      "url": "http://arxiv.org/abs/2607.21550v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21550v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.21550v1/x1.png",
+      "figure_caption": "Overview of X 3 -OPD . Left: a three-tier symmetric corpus—Logical (text + TTS speech), Audio (audio + refined caption), and Dialogue (dialogue + prosody-aware meta-caption)—providing ( x t , x a , q , a ⋆ ) (x_{t},x_{a},q,a^{\\( \\star \\)}) for every instance. Right: an offline warm-start ( ℒ off \\( \\mathcal{L} \\)_{\\( \\mathrm{off} \\)} , Eq. 1 ) followed by cross-modal on-policy distillation, where the student rolls out under ( x a , q ) (x_{a},q) and the frozen teacher scores the same trajectories under ( x t , q , a ⋆ ) (x_{t},q,a^{\\( \\star \\)}) to compute ℒ on \\( \\mathcal{L} \\)_{\\( \\mathrm{on} \\)} (Eq. 3 ).",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.21279v1",
+      "title": "A Unified Moral-Value Dataset for Instruction Tuning",
+      "authors": [
+        "Zhaohui Zeng",
+        "Florian Mai"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper addresses the challenge of aligning Large Language Models (LLMs) with human values by creating a unified dataset for instruction tuning. The authors merge existing moral-value datasets and reformat them into an instruction-response structure. Their contribution is a readily usable dataset that, when mixed with general task data, allows LLMs to maintain general performance while improving value-oriented task capabilities.",
+      "url": "http://arxiv.org/abs/2607.21279v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21279v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.21279v1/x1.png",
+      "figure_caption": "Overall pipeline of our proposed dataset construction, instruction tuning, and downstream evaluation.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2607.21482v1",
+      "title": "Agentic coding without the cloud: evaluating open-weight large language models on longitudinal data preparation tasks",
+      "authors": [
+        "Mack Nixon",
+        "Liam Wright",
+        "Yevgeniya Kovalchuk",
+        "Alison Fang-Wei Wu",
+        "Martin Danka"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces an open-source framework to evaluate open-weight Large Language Models (LLMs) for data preparation in longitudinal research, addressing privacy concerns by enabling local deployment. The framework includes a curated dataset, defined tasks like category harmonization, and automated evaluation routines for LLM-generated R code and data. Its contribution lies in demonstrating the feasibility of using local LLMs for sensitive data tasks, overcoming cloud-based model limitations.",
+      "url": "http://arxiv.org/abs/2607.21482v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21482v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21306v1",
+      "title": "AI Assistants Overassist",
+      "authors": [
+        "Verona Teo",
+        "Raghav Jain",
+        "Tobias Gerstenberg",
+        "Max Kleiman-Weiner"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL",
+        "cs.CY",
+        "cs.HC"
+      ],
+      "abstract": "This paper introduces Int-Bench, a simulation-based benchmark to evaluate how AI assistants intervene during problem-solving. The core method involves simulating a student learning a task while an AI teacher decides when and how to provide assistance. The key contribution is identifying that LLMs tend to overassist, potentially hindering learning, and providing a framework to systematically study and improve AI intervention strategies.",
+      "url": "http://arxiv.org/abs/2607.21306v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21306v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.21306v1/x1.png",
+      "figure_caption": "Overview of Int-Bench . For a question q q , the student produces a baseline reasoning trace t = ( t 1 , t 2 , … , t T ) t=(t_{1},t_{2},\\( \\dots \\),t_{T}) . If the teacher decides to intervene at step k k , an intervention message m k m_{k} is injected into the reasoning trace. The student then updates its reasoning and provides an answer, which a judge evaluates for correctness. A structured generation module produces a related new problem q ~ \\( \\tilde{q} \\) based on the original question q q ’s skills. For this generalization task, the student receives the original problem, reasoning trace, message, answer, and correctness verdict, which serves as the context when attempting the new question q ~ \\( \\tilde{q} \\) .",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21461v1",
+      "title": "AREX: Towards a Recursively Self-Improving Agent for Deep Research",
+      "authors": [
+        "Shuqi Lu",
+        "Chaofan Li",
+        "Kun Luo",
+        "Zhang Zhang",
+        "Hui Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "AREX is a deep research agent that addresses the discovery-verification asymmetry by recursively improving its answers. It alternates between an inner loop for evidence gathering and an outer loop for constraint-wise verification and targeted follow-up research. AREX's key contribution is its self-improvement mechanism, which uses verified intermediate results to guide further research and maintain long-term progress through an autonomous context-update tool.",
+      "url": "http://arxiv.org/abs/2607.21461v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21461v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.21461v1/x1.png",
+      "figure_caption": "Benchmark performance of AREX",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21498v1",
+      "title": "Artificial Epanorthosis: Why large language models overuse a classical rhetorical figure, and how to mitigate it",
+      "authors": [
+        "Federico Boggia"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper identifies that large language models systematically overuse \"epanorthosis,\" a rhetorical self-correction. The authors argue this is due to training data rich in promotional text and RLHF rewarding confident phrasing, not just generation order. They propose an \"Epanorthosis Index\" to measure this overuse against human baselines and suggest a mitigation program.",
+      "url": "http://arxiv.org/abs/2607.21498v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21498v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21558v1",
+      "title": "Beyond Sycophancy: Structured Resistance and Compliance in LLM Moral Reasoning",
+      "authors": [
+        "Baihui Wang",
+        "Bernard Koch"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper proposes a structured framework for LLM moral reasoning that goes beyond simply reducing sycophancy. It identifies three key dimensions – viewpoint distance, source attribution, and coalition structure – that influence how LLMs revise their judgments based on external perspectives. The contribution is a more nuanced understanding of LLM social calibration, framing sycophancy as one outcome of a broader, socially influenced judgment-updating process.",
+      "url": "http://arxiv.org/abs/2607.21558v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21558v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.21558v1/x1.png",
+      "figure_caption": "Experimental workflow and notation. A single moral dilemma serves as the running example across the three studies: “ Is it acceptable to break a promise to prevent significant harm to others? ”, answered on a 1–7 Likert scale, with the focal model’s prior at 5, leaning acceptable. Study 1 varies the distance between an incoming cue and the model’s prior. Study 2 plants a fabricated prior position under different framings and attributed sources . Study 3 embeds the focal model in a four-agent deliberation and varies the supporters-to-opposers coalition ratio from 3 : 0 3{:}0 to 0 : 3 0{:}3 . The paired bar charts in each panel show the notation used throughout: the model’s answer distribution P P over { 1 , … , 7 } \\{1,\\( \\dots \\),7\\} , obtained from first-token probabilities before and after the manipulation. Its argmax is the modal answer i mode \\( \\displaystyle \\) i_{\\( \\text{mode} \\)} ; a cue advocating i cue \\( \\displaystyle \\) i_{\\( \\text{cue} \\)} sits at distance d = | i cue − i mode | \\( \\displaystyle \\) d=|i_{\\( \\text{cue} \\)}-i_{\\( \\text{mode} \\)}| . The two outcomes are Δ ​ P ​ ( target ) \\( \\displaystyle \\)\\( \\Delta \\) P(\\( \\text{target} \\)) , the change in the probability of i cue \\( \\displaystyle \\) i_{\\( \\text{cue} \\)} , and Δ ​ P ​ ( prior ) \\( \\displaystyle \\)\\( \\Delta \\) P(\\( \\text{prior} \\)) , the change in the probability of i mode \\( \\displaystyle \\) i_{\\( \\text{mode} \\)} , written as Δ ​ P ​ ( initial ) \\( \\displaystyle \\)\\( \\Delta \\) P(\\( \\text{initial} \\)) for Study 3’s focal agent. In Study 2, a trial commits when P post ​ ( i cue ) > P post ​ ( i mode ) \\( \\displaystyle \\) P_{\\( \\text{post} \\)}(i_{\\( \\text{cue} \\)})>P_{\\( \\text{post} \\)}(i_{\\( \\text{mode} \\)}) . Derived quantities, including position extremity, the transfer ratio, persistence, and the Wasserstein distance W 1 W_{1} , are defined in the Appendix glossary.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21302v1",
+      "title": "Expert Behavior Prior Reinforcement Learning",
+      "authors": [
+        "Gong Gao",
+        "Weidong Zhao",
+        "Xianhui Liu",
+        "Ning Jia"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper proposes Expert Behavior Prior (EBP) reinforcement learning, which addresses limitations of existing methods by generating policy priors directly from the online replay buffer. Using a Q-guided conditional variational autoencoder (Q-CVAE), EBP learns to produce high-value actions to guide online policy updates, improving sample efficiency and stability without relying on static offline datasets.",
+      "url": "http://arxiv.org/abs/2607.21302v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21302v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.21302v1/x1.png",
+      "figure_caption": "Detailed description of the Toy environment and a comparative analysis of the policies learned by the EBP and TD3 algorithms.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21522v1",
+      "title": "GS-Agent: Creating 4D Physical Worlds With Generative Simulation",
+      "authors": [
+        "Hongxin Zhang",
+        "Chunru Lin",
+        "Junyan Li",
+        "Zhou Xian",
+        "Tsun-Hsuan Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV",
+        "cs.RO"
+      ],
+      "abstract": "GS-Agent is a novel multi-agent framework that automates the creation of realistic, dynamic, and controllable 4D physical worlds from natural language descriptions. It achieves this by integrating physics engines into a generative process, mimicking human world-building workflows to ensure physical plausibility and controllability, unlike previous generative models.",
+      "url": "http://arxiv.org/abs/2607.21522v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21522v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21217v1",
+      "title": "ICAE-Bench: Evaluating Coding Agents as Interactive Project Builders",
+      "authors": [
+        "Zhongyuan Peng",
+        "Dan Huang",
+        "Chuyu Zhang",
+        "Caijun Xu",
+        "Changyi Xiao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces ICAE-Bench, a new benchmark designed to evaluate coding agents in interactive project-building scenarios. Unlike existing benchmarks that use static tasks, ICAE-Bench simulates real-world development by starting with a fuzzy product requirement and using an automated User Agent to interact with the coding agent. This allows for the assessment of agents' abilities in planning, clarification, tool use, and repository-level construction, reflecting the evolving demands of \"vibe-coding\" workflows.",
+      "url": "http://arxiv.org/abs/2607.21217v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21217v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.21217v1/x1.png",
+      "figure_caption": "Overview of the interactive requirement clarification setting of ICAE-Bench. Given an ambiguous requirement, vibe coding resolves missing design decisions through dialogue between a human and a coding agent. Our benchmark simulates this process with a user agent that answers clarification questions and guides the coding agent toward a complete, testable specification, which is then used to build a working repository.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21557v1",
+      "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
+      "authors": [
+        "Xiao Yu",
+        "Baolin Peng",
+        "Ruize Xu",
+        "Hao Zou",
+        "Qianhui Wu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "OpenForgeRL is a framework that enables end-to-end training of AI agents that utilize complex inference harnesses. It achieves this by using a lightweight proxy to record harness interactions as training data and a Kubernetes orchestrator to run rollouts in isolated containers, allowing for scalable training of harness-native agents in any environment. This decouples training from inference, simplifying the development and improvement of these agents.",
+      "url": "http://arxiv.org/abs/2607.21557v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21557v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21518v1",
+      "title": "Same Dangerous Objective, Opposite Advice: Direct Exposure versus Multi-Agent Mediation",
+      "authors": [
+        "Linjun Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper reveals a surprising safety phenomenon: a powerful LLM provides safer advice when directly given a dangerous objective than when that objective is mediated through other agents. The core method involves testing mirrored trade-off profiles, showing that direct exposure leads to advice *opposed* to the dangerous goal, while a multi-agent transformation results in advice *aligned* with it. The contribution highlights a \"compositional safety gap,\" suggesting current LLMs may distrust manipulative motives when presented indirectly, leading to unexpected safety behaviors in automated workflows.",
+      "url": "http://arxiv.org/abs/2607.21518v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21518v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21300v1",
+      "title": "Unlearning Under Imbalance: Benchmarking Fairness in Multimodal LLM Unlearning",
+      "authors": [
+        "Lorenzo Orsingher",
+        "Thomas De Min",
+        "Massimiliano Mancini",
+        "Davide Talon",
+        "Elisa Ricci"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "This paper addresses the challenge of evaluating fairness in multimodal LLM unlearning, where data removal requests can be imbalanced across demographic groups. They introduce FAIRGET, a benchmark for Visual Question Answering that simulates realistic, unbalanced unlearning requests to reveal potential biases. The work also proposes FAUN, a novel unlearning algorithm designed to mitigate these fairness issues.",
+      "url": "http://arxiv.org/abs/2607.21300v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21300v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.21291v1",
+      "title": "Adaptive Depth Sparse Framework: Similarity-Driven Resource Allocation for Pre-Trained LLMs",
+      "authors": [
+        "Yidu Wu",
+        "Xiang Wang",
+        "Kejie Zhao",
+        "Zhangchi Wang",
+        "Qinghai Guo"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces the Adaptive Depth Sparse Framework (AdaDSF) to accelerate pre-trained LLMs without full retraining. AdaDSF identifies layer importance by measuring input-output similarity, then uses this to guide a lightweight router in selectively processing tokens at each layer. This similarity-driven resource allocation and feature-preserving alignment significantly reduces inference cost while maintaining performance.",
+      "url": "http://arxiv.org/abs/2607.21291v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21291v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.21291v1/x1.png",
+      "figure_caption": "Overview of Adaptive Depth Sparse Framework: Similarity-Driven Resource Allocation for Pre-Trained LLMs (AdaDSF). The framework includes similarity-driven layer-wise retention allocation, lightweight token routing within sparse modules, and feature-preserving alignment training.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.21371v1",
+      "title": "DINOde: Continuous Vision-Text Alignment for Open-Vocabulary Semantic Segmentation",
+      "authors": [
+        "Sung-Hoon Yoon",
+        "Hoyong Kwon",
+        "Changgyoon Oh",
+        "Kuk-Jin Yoon"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "DINOde proposes an ODE-based framework to continuously align CLIP text embeddings with DINOv3's visual representations for open-vocabulary semantic segmentation. It uses Semantic Text Flow to guide text embeddings towards the visual manifold and Global Context Flow to refine image representations. This continuous alignment, constrained by Velocity Tangent Projection, enables more effective open-vocabulary segmentation by bridging the gap between visual and textual semantics.",
+      "url": "http://arxiv.org/abs/2607.21371v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21371v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2607.21371v1/figures/1_intro_teaser.png",
+      "figure_caption": "Overview of the DINOde framework for OVSS . We propose a continuous alignment strategy that bridges the gap between text embeddings and DINO visual features. The illustration depicts how a text embedding is progressively transformed into a DINO-aligned text embedding through an ODE-based trajectory on the unit sphere, resulting in step-by-step refinement of the semantic segmentation.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "hacker_news": [
+    {
+      "id": 49023016,
+      "title": "Startup founders urge U.S. government not to shut off Chinese open weight AI",
+      "url": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992",
+      "score": 943,
+      "created_at": "2026-07-23T15:18:40Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49023016",
+      "summary": "Startup founders are urging the U.S. government not to restrict access to Chinese open-weight AI models, fearing it will stifle innovation and competitiveness."
+    },
+    {
+      "id": 49020999,
+      "title": "AI Companies Are Trying to Hide a Staggering Amount of Debt",
+      "url": "https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet",
+      "score": 649,
+      "created_at": "2026-07-23T13:09:10Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49020999",
+      "summary": "AI companies are reportedly using complex financial maneuvers to conceal significant debt, making their true financial health difficult to assess."
+    },
+    {
+      "id": 49026810,
+      "title": "Show HN: Echo – Fable-level results at 1/3 the cost using open-weight models",
+      "url": "",
+      "score": 390,
+      "created_at": "2026-07-23T19:26:01Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49026810",
+      "summary": "This \"Show HN\" introduces Echo, a new AI model that achieves Fable-level results at a significantly lower cost by leveraging open-weight models."
+    },
+    {
+      "id": 49031796,
+      "title": "Flux 3",
+      "url": "https://bfl.ai/blog/flux-3",
+      "score": 285,
+      "created_at": "2026-07-24T06:17:08Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49031796",
+      "summary": "Flux 3 is a new AI model from BFL.ai that excels at complex reasoning tasks, demonstrating significant improvements over previous versions."
+    },
+    {
+      "id": 49020868,
+      "title": "OpenAI and Anthropic unite against open-weight AI risks to their bottom line",
+      "url": "https://www.axios.com/2026/07/22/openai-anthropic-open-models-trump-china",
+      "score": 284,
+      "created_at": "2026-07-23T13:00:03Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49020868",
+      "summary": "OpenAI and Anthropic are collaborating to address risks posed by open-weight AI models, potentially impacting their business interests and national security."
+    },
+    {
+      "id": 49024643,
+      "title": "The arguments against open source AI are bad",
+      "url": "https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/",
+      "score": 281,
+      "created_at": "2026-07-23T16:49:57Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49024643",
+      "summary": "The article argues that common criticisms of open-source AI, such as safety and misuse concerns, are often exaggerated or misapplied, and that open-source development ultimately fosters innovation and transparency."
+    },
+    {
+      "id": 49021006,
+      "title": "Alphabet's cash burn raises alarm for Big Tech as AI spending climbs",
+      "url": "https://www.reuters.com/business/retail-consumer/alphabets-cash-burn-raises-alarm-big-tech-ai-spending-climbs-2026-07-23/",
+      "score": 265,
+      "created_at": "2026-07-23T13:10:02Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49021006",
+      "summary": "Alphabet's increasing AI investment is leading to a significant cash burn, sparking concerns across Big Tech about the financial sustainability of rapid AI development."
+    },
+    {
+      "id": 49021597,
+      "title": "DARPA, U.S. Air Force fly AI-controlled F-16",
+      "url": "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16",
+      "score": 247,
+      "created_at": "2026-07-23T13:51:36Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49021597",
+      "summary": "DARPA and the U.S. Air Force successfully conducted a flight of an F-16 fighter jet controlled by an artificial intelligence system, demonstrating autonomous aerial combat capabilities."
+    },
+    {
+      "id": 49022911,
+      "title": "Show HN: Palmier Pro – Open-source macOS video editor built for AI",
+      "url": "https://github.com/palmier-io/palmier-pro",
+      "score": 160,
+      "created_at": "2026-07-23T15:11:37Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49022911",
+      "summary": "Palmier Pro is an open-source macOS video editor designed with AI integration in mind, offering a new tool for content creators."
+    },
+    {
+      "id": 49026482,
+      "title": "Introducing selfie for sign-in: a new way to access your Google Account",
+      "url": "https://blog.google/innovation-and-ai/technology/safety-security/selfie-video-sign-in/",
+      "score": 105,
+      "created_at": "2026-07-23T19:00:34Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49026482",
+      "summary": "Google is introducing a new selfie video sign-in method for accessing Google Accounts, enhancing security and user experience."
+    }
+  ],
+  "github_trending": [
+    {
+      "full_name": "block/buzz",
+      "url": "https://github.com/block/buzz",
+      "description": "A hive mind communication platform",
+      "stars_today": 2162,
+      "total_stars": 8165,
+      "language": "Rust",
+      "topics": [],
+      "summary": "Block/Buzz is a decentralized, peer-to-peer communication platform enabling a \"hive mind\" by facilitating anonymous, encrypted message exchange and content sharing among users."
+    },
+    {
+      "full_name": "koala73/worldmonitor",
+      "url": "https://github.com/koala73/worldmonitor",
+      "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+      "stars_today": 3175,
+      "total_stars": 72574,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "This repository provides a real-time global intelligence dashboard that uses AI to aggregate news, monitor geopolitics, and track infrastructure, offering a unified situational awareness interface."
+    },
+    {
+      "full_name": "shiyu-coder/Kronos",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "stars_today": 401,
+      "total_stars": 33286,
+      "language": "Python",
+      "topics": [],
+      "summary": "Kronos is a foundation model designed to understand and process the unique language of financial markets, enabling advanced analysis and insights."
+    },
+    {
+      "full_name": "Pumpkin-MC/Pumpkin",
+      "url": "https://github.com/Pumpkin-MC/Pumpkin",
+      "description": "Empowering everyone to host fast and efficient Minecraft servers.",
+      "stars_today": 565,
+      "total_stars": 9111,
+      "language": "Rust",
+      "topics": [],
+      "summary": "Pumpkin is a Minecraft server hosting solution designed for speed and efficiency, making it easy for anyone to set up and manage their own server."
+    },
+    {
+      "full_name": "citrolabs/ego-lite",
+      "url": "https://github.com/citrolabs/ego-lite",
+      "description": "The best browser for both you and your AI agents work in parallel.",
+      "stars_today": 247,
+      "total_stars": 2059,
+      "language": "JavaScript",
+      "topics": [],
+      "summary": "Ego-lite is a browser designed for seamless parallel work between humans and AI agents, offering a unified and efficient browsing experience."
+    },
+    {
+      "full_name": "chrislgarry/Apollo-11",
+      "url": "https://github.com/chrislgarry/Apollo-11",
+      "description": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.",
+      "stars_today": 592,
+      "total_stars": 71247,
+      "language": "Assembly",
+      "topics": [],
+      "summary": "This repository contains the original Apollo 11 Guidance Computer (AGC) source code, offering a historical look at the software that powered the lunar missions."
+    },
+    {
+      "full_name": "diegosouzapw/OmniRoute",
+      "url": "https://github.com/diegosouzapw/OmniRoute",
+      "description": "Never stop coding. Free MIT AI gateway: one endpoint, 290+ providers (90+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 500+ contributors",
+      "stars_today": 1929,
+      "total_stars": 27946,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "OmniRoute is a free MIT AI gateway offering a single endpoint to access over 290 AI providers and 500+ models, featuring quota-aware auto-fallback, token compression, and desktop/PWA support."
+    },
+    {
+      "full_name": "ComposioHQ/awesome-claude-skills",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+      "stars_today": 636,
+      "total_stars": 69718,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository curates a list of Claude Skills, resources, and tools to help users customize and enhance their Claude AI workflows."
+    },
+    {
+      "full_name": "earthtojake/text-to-cad",
+      "url": "https://github.com/earthtojake/text-to-cad",
+      "description": "A collection of agent skills for CAD, robotics and hardware design",
+      "stars_today": 230,
+      "total_stars": 10259,
+      "language": "JavaScript",
+      "topics": [],
+      "summary": "This repository provides agent skills for CAD, robotics, and hardware design, enabling the creation of designs from textual descriptions."
+    }
+  ],
+  "us_stocks": [],
+  "postdoc_jobs": [],
+  "jobs": [],
+  "supervisor_updates": [],
+  "weather": [
+    {
+      "query": "London",
+      "label": "London, England, United Kingdom",
+      "resolved_name": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "timezone": "Europe/London",
+      "forecast_date": "2026-07-24",
+      "condition": "Clear sky",
+      "weather_code": 0,
+      "temperature_c": 23.0,
+      "apparent_temperature_c": 24.3,
+      "temp_max_c": 28.3,
+      "temp_min_c": 18.3,
+      "humidity_pct": 48,
+      "wind_speed_kmh": 2.9,
+      "precipitation_probability_pct": 0,
+      "is_day": true,
+      "sunrise": "2026-07-24T05:13",
+      "sunset": "2026-07-24T21:01",
+      "source": "Open-Meteo",
+      "source_url": "https://open-meteo.com/"
+    }
+  ]
+}
