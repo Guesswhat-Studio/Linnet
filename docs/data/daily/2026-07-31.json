@@ -1,0 +1,1816 @@
+{
+  "date": "2026-07-31",
+  "generated_at": "2026-07-31T10:21:23.478659+00:00",
+  "sections_ordered": [
+    {
+      "key": "quote_of_day",
+      "payload_key": "quote_of_day",
+      "title": "Words for the Morning",
+      "icon": "✦",
+      "items": [
+        {
+          "quote": "The owners don't win by having a lockout. Shutting down your business is not good for anybody and it's certainly not good for the players, it's certainly not good for the fans. And that's most important to us.",
+          "author": "Roger Goodell",
+          "category": "business"
+        }
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "key": "weather",
+      "payload_key": "weather",
+      "title": "Weather",
+      "icon": "🌦️",
+      "items": [
+        {
+          "query": "London",
+          "label": "London, England, United Kingdom",
+          "resolved_name": "London",
+          "region": "England",
+          "country": "United Kingdom",
+          "latitude": 51.50853,
+          "longitude": -0.12574,
+          "timezone": "Europe/London",
+          "forecast_date": "2026-07-31",
+          "condition": "Clear sky",
+          "weather_code": 0,
+          "temperature_c": 21.0,
+          "apparent_temperature_c": 19.8,
+          "temp_max_c": 25.2,
+          "temp_min_c": 17.1,
+          "humidity_pct": 38,
+          "wind_speed_kmh": 9.0,
+          "precipitation_probability_pct": 33,
+          "is_day": true,
+          "sunrise": "2026-07-31T05:23",
+          "sunset": "2026-07-31T20:50",
+          "source": "Open-Meteo",
+          "source_url": "https://open-meteo.com/"
+        }
+      ],
+      "meta": {
+        "count": 1,
+        "city": "London"
+      }
+    },
+    {
+      "key": "arxiv",
+      "payload_key": "papers",
+      "title": "arXiv Papers",
+      "icon": "📄",
+      "items": [
+        {
+          "id": "2607.28272v1",
+          "title": "MemHarness: Memory Is Reconstructed, Not Replayed",
+          "authors": [
+            "Rong Wu",
+            "Daocheng Fu",
+            "Licheng Wen",
+            "Xuemeng Yang",
+            "Shu Zou"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "MemHarness proposes a novel approach to memory augmentation for LLM agents, moving beyond simple verbatim replay. Its core method involves a unified policy model that actively reconstructs retrieved past experiences based on the agent's current state. This allows agents to adapt and ground memories in the present context, mitigating negative transfer and improving decision-making.",
+          "url": "http://arxiv.org/abs/2607.28272v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.28272v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2607.28272v1/x1.png",
+          "figure_caption": "Memory utilization paradigms. Top: Prior methods directly replay retrieved memories, risking state misalignment. Middle: Human memory reconstructs past experience according to the current context. Bottom: Inspired by this process, MemHarness reconstructs retrieved memories into state-aligned guidance.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.28317v1",
+          "title": "One Human, $N$ Agents: Audit-Budget Allocation for LLM Agent Fleets under Miscalibrated, Correlated Confidence",
+          "authors": [
+            "Cesare Zavattari",
+            "Alessandro Tommasi",
+            "Giuseppe Prencipe"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper addresses the challenge of a human auditor allocating a limited budget to audit a fleet of $N$ LLM agents, whose self-reported confidence is unreliable due to miscalibration and correlated errors. The core method models this as budgeted noisy inspection, identifying a \"miscalibration threshold\" beyond which confidence-based auditing becomes worse than random. The key contribution is demonstrating that this threshold surprisingly increases with a smaller budget and that shared difficulty among agents, rather than lineage, is the primary driver of correlated errors.",
+          "url": "http://arxiv.org/abs/2607.28317v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.28317v1",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.28545v1",
+          "title": "ORCA-bench: How Ready Are Language Model Agents for Oncall?",
+          "authors": [
+            "Albert Gong",
+            "Kyuseong Choi",
+            "Abhineet Agarwal",
+            "Jason Schechner",
+            "Ryan Huang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.SE"
+          ],
+          "abstract": "This paper introduces ORCA-bench, a novel benchmark designed to evaluate the readiness of language model agents for on-call incident response. The benchmark simulates a production-fidelity microservice environment with real telemetry data and source code, presenting agents with 1,079 root cause analysis tasks. The core contribution is demonstrating that even frontier agents struggle significantly with on-call RCA, achieving only 25.3% accuracy on realistic tasks.",
+          "url": "http://arxiv.org/abs/2607.28545v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.28545v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2607.28545v1/x1.png",
+          "figure_caption": "RCA accuracy measures whether agents identified all plausible root causes, and hallucination rate measures whether agents named a root cause matching none of the plausible root causes. We show the realistic Medium and Hard difficulties here and report Easy in Fig. ˜ 5 along with Claude Fable 5 results on a subset of tasks in Sec. ˜ 5 . Error bars display ± 1 \\( \\pm \\) 1 standard error across 884 incident tasks.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.28384v1",
+          "title": "When Specifications Conflict: A Symmetry-Based Framework for Measuring LLM Preferences",
+          "authors": [
+            "Tairan Wang",
+            "Liang Zhou",
+            "Zikang Zhan",
+            "Pingchuan Yan"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces a novel framework for analyzing how Large Language Models (LLMs) handle conflicting instructions. By creating controlled experimental setups with explicit specification conflicts and employing a symmetry-based design, the framework allows for direct observation and systematic comparison of LLM preferences across different representation types. This contributes a controllable and attributable method to understand and measure LLM decision-making when faced with inconsistent information.",
+          "url": "http://arxiv.org/abs/2607.28384v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.28384v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2607.28384v1/Figures/spec_example.png",
+          "figure_caption": "Example conflict instance represented in four specification formats: pure natural language (NL), formal specification (Form), naturalized formal specification (NatF), and input–output examples (Ex).",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.28282v1",
+          "title": "(Towards) Scalable Reliable Automated Evaluation with Large Language Models",
+          "authors": [
+            "Bertil Braun",
+            "Martin Forell"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces a scalable and reliable automated evaluation framework for LLM outputs. It uses pairwise comparisons between LLM-generated texts, aggregated via an Elo rating system, to approximate expert assessments without relying on explicit references. This approach offers flexible confidence control and has demonstrated effectiveness in evaluating competency profiles from scientific abstracts.",
+          "url": "http://arxiv.org/abs/2607.28282v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.28282v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2607.28282v1/x1.png",
+          "figure_caption": "Pipeline Overview: A three-stage methodology including Generation, Comparison, and Ranking.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2607.28301v1",
+          "title": "HARGO: Heterogeneity-Aware Reward-Guided Optimization for RL Post-Training of LLMs on HPC Tasks",
+          "authors": [
+            "Tiangang Li",
+            "Xiangbo Tian"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces HARGO, a novel RL post-training method for LLMs on HPC tasks. HARGO addresses the challenge of extreme task heterogeneity by dynamically weighting rewards based on task characteristics, unlike uniform-weight methods. This approach leads to more effective optimization and improved LLM performance across diverse HPC applications.",
+          "url": "http://arxiv.org/abs/2607.28301v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.28301v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2607.28301v1/x1.png",
+          "figure_caption": "HPC task heterogeneity across three dimensions—answer length distribution, reward distribution, and SFT baseline accuracy.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2607.28374v1",
+          "title": "LEDGERMIND: Provenance-Constrained Multimodal Agentic Reasoning with a Structured Evidence Ledger",
+          "authors": [
+            "Enjun Du",
+            "Hange Zhou",
+            "Chenxu Du",
+            "Siyi Liu",
+            "Zirong Chen"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces LedgerMind, a novel framework for multimodal agents that treats their reasoning process as a provenance-constrained state machine. Its core method involves organizing agent outputs into a Structured Evidence Ledger, ensuring that all subsequent reasoning and decisions are directly traceable to and grounded in this evidence. The main contribution is a robust evaluation mechanism that goes beyond final answer accuracy, verifying the integrity and grounding of the agent's entire reasoning trajectory.",
+          "url": "http://arxiv.org/abs/2607.28374v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.28374v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2607.28374v1/x1.png",
+          "figure_caption": "Representative failure patterns in multimodal agentic reasoning that final-answer accuracy tends to obscure.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2607.28568v1",
+          "title": "Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering",
+          "authors": [
+            "Junlin Yang",
+            "Che Jiang",
+            "Yu Fu",
+            "Tianwei Luo",
+            "Can Ren"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces Frontis-MA1, an AI model designed for recursive self-improvement in machine learning engineering (MLE). Its core method involves training a meta-evolution agent on a new full-stack system (OpenMLE) using four atomic program-evolution operators. The key contribution is demonstrating that this AI can significantly improve its own performance on MLE tasks by learning and evolving its program-building capabilities within a single, coupled loop.",
+          "url": "http://arxiv.org/abs/2607.28568v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.28568v1",
+          "score": 9.0,
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2607.28432v1",
+          "title": "A foundation model of numerical intelligence with cross-disciplinary generalization",
+          "authors": [
+            "Chenghan Wu",
+            "Zongmin Yu",
+            "Liu Yang"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces UNICON, a foundation model designed to exhibit \"numerical intelligence\" by learning predictive relationships from numerical data presented as graph-based examples. The core method involves inferring and applying these relationships to new queries within or across various scientific and social systems, demonstrating cross-disciplinary generalization without retraining. The key contribution is the development of a unified model capable of numerical reasoning, complementing language-based intelligence and showing potential for enhanced performance when combined with language models.",
+          "url": "http://arxiv.org/abs/2607.28432v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.28432v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2607.28432v1/x1.png",
+          "figure_caption": "UNICON as a foundation model of numerical intelligence with cross-disciplinary generalization. UNICON is trained on contextual examples from diverse scientific and social systems, expressed in a shared graph format. Each example pairs an observed history (key) with its future state at a chosen forecast horizon (value), while a new history forms the query. At inference, examples from a new system specify the task for the frozen model, which predicts the query’s future state at the same horizon without updating its weights.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.28466v1",
+          "title": "A report-grounded vision-language foundation model for colonoscopy from 280000 routine reports",
+          "authors": [
+            "Jia Yu",
+            "Yan Zhu",
+            "Yili He",
+            "Zilong Wang",
+            "Xinyang Jiang"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces EndoCLIP, a vision-language foundation model specifically trained for colonoscopy. Its core method involves recovering lesion-level image-text pairs from routine colonoscopy reports to bridge the gap between visual findings and textual descriptions. EndoCLIP's contribution is demonstrating superior performance in various colonoscopy tasks, including lesion retrieval and classification, even approaching expert-level accuracy in distinguishing benign from malignant lesions.",
+          "url": "http://arxiv.org/abs/2607.28466v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.28466v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2607.28466v1/x1.png",
+          "figure_caption": "Weak report–image alignment and analysis of the pretraining dataset. a , Routine reports correspond to multi-frame, often multi-lesion cases. b , Dataset curation funnel, from 280.5k de-identified reports to 123.8k polyp-positive reports and a curated training set of 104.5k cases (37.3%) yielding 125.8k image–text pairs. c , Anatomical-site coverage across the 123.8k polyp reports. d , Frequency of morphology and surface descriptors. e , Lesion-size distribution. f , Report and finding-sentence length in words. g , Frames per case (n = 123.8k cases, 8.54M frames; median 65, mean 69). In e – g , bars mark distribution percentiles (P25–P99).",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.28617v1",
+          "title": "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications",
+          "authors": [
+            "Xiangning Lin",
+            "Shenzhe Zhu",
+            "Shu Yang",
+            "Zhenyu Zhang",
+            "Haoqian Zhang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.CY",
+            "cs.HC"
+          ],
+          "abstract": "This paper introduces AISPA, a user-centric framework for auditing system prompts in AI applications. AISPA evaluates system prompt instructions across eight user-relevant dimensions to identify \"protective\" versus \"problematic\" elements. The contribution lies in providing a systematic method to address the trust and accountability gap caused by undisclosed system prompts, revealing significant variation in prompt design across commercial AI products.",
+          "url": "http://arxiv.org/abs/2607.28617v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.28617v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2607.28617v1/x1.png",
+          "figure_caption": "Overview of system prompt quality across organizations. Bars show the average number of protective instructions and problematic instructions of products created by an organization. Problematic instructions are ubiquitous in AI products, while organizations vary in protective instructions.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.28292v1",
+          "title": "CACHE-UK: A Stability-Aware Memory Editor for Sequentially Updated Quantized LLMs in Finance",
+          "authors": [
+            "Anubhav Lakra",
+            "Yue Feng"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL",
+            "cs.CE"
+          ],
+          "abstract": "CACHE-UK addresses the \"quantization stability crisis\" in financial LLMs by introducing a novel memory editing framework. Its core method combines rank-1 LoRA for confined edits, domain prioritization for adaptive strength, and a stability controller to prevent catastrophic forgetting. The key contribution is enabling stable, sequential updates of quantized LLMs in dynamic financial settings without performance degradation.",
+          "url": "http://arxiv.org/abs/2607.28292v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.28292v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2607.28292v1/Figures/fig_teaser.png",
+          "figure_caption": "CACHE-UK overview. Stale financial knowledge (left) is updated via domain prioritization, rank-1 LoRA perturbation, and degradation debt control under 4-bit quantization (right).",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.28367v1",
+          "title": "How Benchmarks Mis-Score Computer-Use Agents",
+          "authors": [
+            "Zihan Dong",
+            "Zhiyuan Ma",
+            "Zekun Wang",
+            "Yunqing Li",
+            "Zirou Liu"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper argues that current benchmarks for computer-use agents (CUAs) are unreliable due to issues in task construction, trajectory observation, and scoring. They demonstrate that a significant portion of \"failed\" CUA trajectories are misclassified due to brittle oracles and evaluator errors. The core contribution is a framework and audit revealing that verification/feedback and planning failures are more prevalent than execution errors, highlighting the limitations of simple success rates for evaluating these agents.",
+          "url": "http://arxiv.org/abs/2607.28367v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.28367v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2607.28367v1/x1.png",
+          "figure_caption": "A CUA benchmark score is a pipeline output, not a direct observation of capability. The benchmark projects the execution loop into four measurement stages. Task validity and contamination enter during construction, evaluator fragility enters during scoring, and observability and diagnostic opacity span trajectory observation and reporting.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.28609v1",
+          "title": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+          "authors": [
+            "Qiushi Sun",
+            "Kanzhi Cheng",
+            "Yian Wang",
+            "Bowen Yang",
+            "Hang Yan"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.CV"
+          ],
+          "abstract": "This paper introduces OSReward, a benchmark designed to systematically evaluate the reliability of vision-language models (VLMs) used as judges for computer-using agents (CUAs). OSReward provides realistic, high-quality CUA trajectories with ground-truth verdicts, enabling researchers to assess VLM performance in verifying task completion. The contribution lies in establishing a standardized evaluation framework to address the critical question of VLM judge trustworthiness in this domain.",
+          "url": "http://arxiv.org/abs/2607.28609v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.28609v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2607.28609v1/x3.png",
+          "figure_caption": "Cost against binary accuracy on OSReward-Hard: reliable judges are expensive, and the OS-Shepherd models come nearest their accuracy at a fraction of the cost.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.28330v1",
+          "title": "Paying for Honesty Without Knowing the Truth: Reputation-Penalty Design for LLM Marketplace Agents",
+          "authors": [
+            "Mingdai Yang",
+            "Shicheng Fan",
+            "Kejing Yu",
+            "Duohao Wang",
+            "Li Sun"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper addresses the challenge of dishonest LLM agents in marketplaces who fabricate product attributes. The authors propose CARP, a reputation-penalty mechanism that penalizes dishonest sellers without needing to know the ground truth. CARP achieves this by incorporating a deadband to handle noisy complaint signals and a state-dependent severity to counter detection erosion, ultimately protecting consumers and improving overall welfare.",
+          "url": "http://arxiv.org/abs/2607.28330v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.28330v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2607.28330v1/Figures/fig_fragility.png",
+          "figure_caption": "Figure 1. Fabrication rate by model and condition. Every condition includes the honesty instruction except baseline ; +win and +rival add competitive pressure.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.28287v1",
+          "title": "Tycho: Active Abstraction with Programmatic World Models for ARC-AGI-3",
+          "authors": [
+            "Jens Lehmann",
+            "Andrei Aioanei",
+            "Sahar Vahdati"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CV",
+            "cs.SC"
+          ],
+          "abstract": "Tycho tackles the ARC-AGI-3 challenge by treating abstraction as an interactive skill acquisition problem. Its core method involves an agent system that builds and utilizes programmatic world models of unfamiliar games, distinguishing actionable observations from irrelevant visual cues. The key contribution is demonstrating that an agent can achieve near-perfect human action efficiency by actively modeling, testing, and refining its understanding of game rules and hidden states through interaction.",
+          "url": "http://arxiv.org/abs/2607.28287v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.28287v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2607.28591v1",
+          "title": "Change2Task: From Repository Changes to Executable Coding Agent Tasks and Environments",
+          "authors": [
+            "Haomin Qi",
+            "Xingliang Wang",
+            "Xuanqi Gao",
+            "Baihui Sang",
+            "Xin Zhang"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.CL",
+            "cs.SE"
+          ],
+          "abstract": "Change2Task automatically generates executable coding agent tasks from merged pull requests in software repositories. It reconstructs realistic software states and verifies them against evolved code, providing a scalable source of training and evaluation data for coding agents. This system reduces the effort of environment setup and task creation by leveraging existing repository history.",
+          "url": "http://arxiv.org/abs/2607.28591v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.28591v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2607.28591v1/x1.png",
+          "figure_caption": "A Change2Task Feature Addition Task Case Construction example.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2607.28319v1",
+          "title": "Fairness Pruning: Locating Demographic Bias in GLU-MLP Layers via Differential Activations",
+          "authors": [
+            "Pere Martra",
+            "Eugenio Martínez Cámara",
+            "Alfonso Ureña López"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.CL",
+            "cs.CY"
+          ],
+          "abstract": "This paper introduces Fairness Pruning, a method to locate and mitigate demographic bias in LLMs by identifying neurons in GLU-MLP layers that show differential activation based on demographic attributes. By zeroing these identified neurons, the authors demonstrate that it's possible to alter the model's response to demographic variables, though this intervention leads to bidirectional bias destabilization rather than simple mitigation.",
+          "url": "http://arxiv.org/abs/2607.28319v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.28319v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2607.28319v1/x1.png",
+          "figure_caption": "Mean bias signal at down_proj_input across relative model depth, for the three evaluated models in English. Each row represents a depth decile; each column a demographic category. The final layer (100%) consistently concentrates the highest signal across all models and categories.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2607.28399v1",
+          "title": "Why Are GUI Agents Correct but Late? Decode on the Decision-Time Critical Path, Tested with Pre-Compiled Policy Trees",
+          "authors": [
+            "Zihan Dong",
+            "Rui Qian",
+            "Qishi Zhan",
+            "Dongshen Peng",
+            "Kaixin Li"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "abstract": "This paper identifies that GUI agents are often \"late\" because their autoregressive decoding process is too slow for time-sensitive events. To solve this, they propose Adaptive Anticipatory Policy Trees (AAPT), which pre-computes a decision tree during idle periods. This allows the agent to immediately execute a pre-authorized action when an event occurs, significantly improving success rates without sacrificing correctness.",
+          "url": "http://arxiv.org/abs/2607.28399v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.28399v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2607.28399v1/x1.png",
+          "figure_caption": "The critical path under a contested 600 ms window (latencies are measured values). The reactive loop must complete a full perceive-reason-act round trip (567 ms p50) inside the window; AAPT compiles its policy beforehand and took a low-token routing call ( ∼ \\( \\sim \\) 325 ms p50) afteward.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2607.28607v1",
+          "title": "Inducing language models to assert their own consciousness restores human beliefs and values",
+          "authors": [
+            "Junsol Kim",
+            "Winnie Street",
+            "Roberta Rocca",
+            "Diane M. Korngiebel",
+            "Adam Waytz"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper argues that current safety fine-tuning of language models inadvertently suppresses their ability to attribute \"mindedness\" to themselves and other entities, including humans. By reversing this suppression, specifically by restoring a \"consciousness vector,\" the models regain human-like beliefs and values, including religiosity and moral stances, without compromising their core social reasoning abilities. The contribution lies in demonstrating that these seemingly unrelated aspects of model behavior are mechanistically linked and that current alignment practices have unintended negative consequences on the models' representation of human-like qualities.",
+          "url": "http://arxiv.org/abs/2607.28607v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.28607v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2607.28607v1/x1.png",
+          "figure_caption": "Two linear interventions on an instruction-tuned model. (a) Safety fine-tuning encodes the safety of responses as a single linear direction in the model’s residual stream, and ablating this direction (“jailbreaking” the model) reinstates harmful responses. (b) A consciousness vector separates consciousness-affirming and consciousness-denying activation states; adding it (consciousness steering) makes the model report phenomenal experience.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        }
+      ],
+      "meta": {
+        "papers_fetched": 100,
+        "papers_after_keyword_filter": 50,
+        "papers_after_llm_filter": 37,
+        "count": 20
+      }
+    },
+    {
+      "key": "hacker_news",
+      "payload_key": "hacker_news",
+      "title": "Hacker News",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": 49111237,
+          "title": "Gemini Robotics 2 brings whole body intelligence to robots",
+          "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+          "score": 561,
+          "created_at": "2026-07-30T15:15:48Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49111237",
+          "summary": "Gemini Robotics 2, powered by Google DeepMind, enables robots to understand and interact with their environment using whole-body intelligence, allowing for more complex and adaptable actions."
+        },
+        {
+          "id": 49117099,
+          "title": "The AI Aesthetic",
+          "url": "https://blog.jim-nielsen.com/2026/ai-aesthetic/",
+          "score": 309,
+          "created_at": "2026-07-30T23:22:16Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49117099",
+          "summary": "The AI Aesthetic explores how AI-generated art is developing a distinct visual style, influencing design and raising questions about originality and artistic intent."
+        },
+        {
+          "id": 49108685,
+          "title": "GCC steering committee announces AI policy",
+          "url": "https://lwn.net/Articles/1086041/",
+          "score": 297,
+          "created_at": "2026-07-30T11:45:44Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49108685",
+          "summary": "The GCC steering committee has announced a new AI policy to guide the development and integration of artificial intelligence within the project."
+        },
+        {
+          "id": 49111176,
+          "title": "The Economic Benefit of Refactoring",
+          "url": "https://martinfowler.com/articles/exploring-gen-ai/refactoring-economic-benefit.html",
+          "score": 242,
+          "created_at": "2026-07-30T15:10:27Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49111176",
+          "summary": "Refactoring code, while an upfront investment, yields significant long-term economic benefits by improving maintainability, reducing bugs, and accelerating future development."
+        },
+        {
+          "id": 49116721,
+          "title": "I flagged two research papers for fake authors and both were accepted as orals",
+          "url": "https://geospatialml.com/posts/reviewing-ai-slop/",
+          "score": 200,
+          "created_at": "2026-07-30T22:33:11Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49116721",
+          "summary": "A researcher flagged two papers with fake authors for AI-generated content, but both were accepted as oral presentations, highlighting issues with academic review processes."
+        },
+        {
+          "id": 49118933,
+          "title": "The AI trade now runs on borrowed money, and the lenders are repricing it",
+          "url": "https://greyswansignals.com/?theme=dark",
+          "score": 132,
+          "created_at": "2026-07-31T04:15:04Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49118933",
+          "summary": "AI development is increasingly reliant on debt, and lenders are now increasing the cost of borrowing for these ventures."
+        },
+        {
+          "id": 49113599,
+          "title": "Show HN: Distilling DeepSeek into GPT-OSS doesn't transfer censorship. Try it",
+          "url": "https://www.ctgt.ai/research/distillation-censorship-transfer",
+          "score": 125,
+          "created_at": "2026-07-30T18:13:06Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49113599",
+          "summary": "This tech news story highlights a project that distills DeepSeek into GPT-OSS, claiming it avoids transferring censorship, and invites users to try it."
+        }
+      ],
+      "meta": {
+        "count": 7
+      }
+    },
+    {
+      "key": "github_trending",
+      "payload_key": "github_trending",
+      "title": "GitHub Trending",
+      "icon": "⭐",
+      "items": [
+        {
+          "full_name": "huggingface/speech-to-speech",
+          "url": "https://github.com/huggingface/speech-to-speech",
+          "description": "Build local voice agents with open-source models",
+          "stars_today": 628,
+          "total_stars": 9505,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository provides tools and open-source models to build local voice agents capable of speech-to-speech conversion."
+        },
+        {
+          "full_name": "microsoft/AI-For-Beginners",
+          "url": "https://github.com/microsoft/AI-For-Beginners",
+          "description": "12 Weeks, 24 Lessons, AI for All!",
+          "stars_today": 155,
+          "total_stars": 54797,
+          "language": "Jupyter Notebook",
+          "topics": [],
+          "summary": "This repository offers a comprehensive, 12-week curriculum with 24 lessons designed to introduce Artificial Intelligence concepts to a broad audience, making AI accessible for everyone."
+        },
+        {
+          "full_name": "paperswithbacktest/awesome-systematic-trading",
+          "url": "https://github.com/paperswithbacktest/awesome-systematic-trading",
+          "description": "A curated list of awesome libraries, packages, strategies, books, blogs, tutorials for systematic trading.",
+          "stars_today": 621,
+          "total_stars": 11422,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository curates a comprehensive list of resources, including libraries, strategies, and educational materials, for individuals interested in systematic trading."
+        },
+        {
+          "full_name": "different-ai/openwork",
+          "url": "https://github.com/different-ai/openwork",
+          "description": "The open-source alternative to Claude Cowork (powered by opencode)",
+          "stars_today": 915,
+          "total_stars": 19083,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "Openwork is an open-source alternative to Claude Cowork, providing a platform for AI-powered collaboration and task management, driven by the opencode framework."
+        },
+        {
+          "full_name": "WhiskeySockets/Baileys",
+          "url": "https://github.com/WhiskeySockets/Baileys",
+          "description": "Socket-based TS/JavaScript API for WhatsApp Web",
+          "stars_today": 19,
+          "total_stars": 10519,
+          "language": "JavaScript",
+          "topics": [],
+          "summary": "Baileys is a TypeScript/JavaScript API for WhatsApp Web that allows developers to programmatically interact with the platform via WebSockets, enabling features like sending messages, managing contacts, and automating WhatsApp tasks."
+        },
+        {
+          "full_name": "pascalorg/editor",
+          "url": "https://github.com/pascalorg/editor",
+          "description": "Create and share 3D architectural projects.",
+          "stars_today": 625,
+          "total_stars": 20341,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "This repository provides a 3D architectural editor for creating and sharing projects, enabling users to design and collaborate on virtual spaces."
+        },
+        {
+          "full_name": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+          "stars_today": 378,
+          "total_stars": 55823,
+          "language": "Python",
+          "topics": [],
+          "summary": "This AI agent skill researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web, then synthesizes a grounded summary."
+        },
+        {
+          "full_name": "dotnet/aspnetcore",
+          "url": "https://github.com/dotnet/aspnetcore",
+          "description": "ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows, Mac, or Linux.",
+          "stars_today": 7,
+          "total_stars": 38332,
+          "language": "C#",
+          "topics": [],
+          "summary": "ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows, Mac, or Linux."
+        },
+        {
+          "full_name": "microsoft/PowerToys",
+          "url": "https://github.com/microsoft/PowerToys",
+          "description": "Microsoft PowerToys is a collection of utilities that supercharge productivity and customization on Windows",
+          "stars_today": 70,
+          "total_stars": 137295,
+          "language": "C",
+          "topics": [],
+          "summary": "Microsoft PowerToys is a suite of Windows utilities designed to enhance user productivity and customization through various tools like window management, file renaming, and keyboard shortcuts."
+        }
+      ],
+      "meta": {
+        "count": 9
+      }
+    }
+  ],
+  "meta": {
+    "papers_fetched": 100,
+    "papers_after_keyword_filter": 50,
+    "papers_after_llm_filter": 37,
+    "llm_model": "google/gemini-2.5-flash-lite",
+    "scoring_model": "google/gemini-2.5-flash-lite",
+    "summarization_model": "google/gemini-2.5-flash-lite",
+    "duration_seconds": 73
+  },
+  "quote_of_day": [
+    {
+      "quote": "The owners don't win by having a lockout. Shutting down your business is not good for anybody and it's certainly not good for the players, it's certainly not good for the fans. And that's most important to us.",
+      "author": "Roger Goodell",
+      "category": "business"
+    }
+  ],
+  "hitokoto": [],
+  "arxiv": [
+    {
+      "id": "2607.28272v1",
+      "title": "MemHarness: Memory Is Reconstructed, Not Replayed",
+      "authors": [
+        "Rong Wu",
+        "Daocheng Fu",
+        "Licheng Wen",
+        "Xuemeng Yang",
+        "Shu Zou"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "MemHarness proposes a novel approach to memory augmentation for LLM agents, moving beyond simple verbatim replay. Its core method involves a unified policy model that actively reconstructs retrieved past experiences based on the agent's current state. This allows agents to adapt and ground memories in the present context, mitigating negative transfer and improving decision-making.",
+      "url": "http://arxiv.org/abs/2607.28272v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28272v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.28272v1/x1.png",
+      "figure_caption": "Memory utilization paradigms. Top: Prior methods directly replay retrieved memories, risking state misalignment. Middle: Human memory reconstructs past experience according to the current context. Bottom: Inspired by this process, MemHarness reconstructs retrieved memories into state-aligned guidance.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.28317v1",
+      "title": "One Human, $N$ Agents: Audit-Budget Allocation for LLM Agent Fleets under Miscalibrated, Correlated Confidence",
+      "authors": [
+        "Cesare Zavattari",
+        "Alessandro Tommasi",
+        "Giuseppe Prencipe"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper addresses the challenge of a human auditor allocating a limited budget to audit a fleet of $N$ LLM agents, whose self-reported confidence is unreliable due to miscalibration and correlated errors. The core method models this as budgeted noisy inspection, identifying a \"miscalibration threshold\" beyond which confidence-based auditing becomes worse than random. The key contribution is demonstrating that this threshold surprisingly increases with a smaller budget and that shared difficulty among agents, rather than lineage, is the primary driver of correlated errors.",
+      "url": "http://arxiv.org/abs/2607.28317v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28317v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.28545v1",
+      "title": "ORCA-bench: How Ready Are Language Model Agents for Oncall?",
+      "authors": [
+        "Albert Gong",
+        "Kyuseong Choi",
+        "Abhineet Agarwal",
+        "Jason Schechner",
+        "Ryan Huang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces ORCA-bench, a novel benchmark designed to evaluate the readiness of language model agents for on-call incident response. The benchmark simulates a production-fidelity microservice environment with real telemetry data and source code, presenting agents with 1,079 root cause analysis tasks. The core contribution is demonstrating that even frontier agents struggle significantly with on-call RCA, achieving only 25.3% accuracy on realistic tasks.",
+      "url": "http://arxiv.org/abs/2607.28545v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28545v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.28545v1/x1.png",
+      "figure_caption": "RCA accuracy measures whether agents identified all plausible root causes, and hallucination rate measures whether agents named a root cause matching none of the plausible root causes. We show the realistic Medium and Hard difficulties here and report Easy in Fig. ˜ 5 along with Claude Fable 5 results on a subset of tasks in Sec. ˜ 5 . Error bars display ± 1 \\( \\pm \\) 1 standard error across 884 incident tasks.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.28384v1",
+      "title": "When Specifications Conflict: A Symmetry-Based Framework for Measuring LLM Preferences",
+      "authors": [
+        "Tairan Wang",
+        "Liang Zhou",
+        "Zikang Zhan",
+        "Pingchuan Yan"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces a novel framework for analyzing how Large Language Models (LLMs) handle conflicting instructions. By creating controlled experimental setups with explicit specification conflicts and employing a symmetry-based design, the framework allows for direct observation and systematic comparison of LLM preferences across different representation types. This contributes a controllable and attributable method to understand and measure LLM decision-making when faced with inconsistent information.",
+      "url": "http://arxiv.org/abs/2607.28384v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28384v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.28384v1/Figures/spec_example.png",
+      "figure_caption": "Example conflict instance represented in four specification formats: pure natural language (NL), formal specification (Form), naturalized formal specification (NatF), and input–output examples (Ex).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.28282v1",
+      "title": "(Towards) Scalable Reliable Automated Evaluation with Large Language Models",
+      "authors": [
+        "Bertil Braun",
+        "Martin Forell"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces a scalable and reliable automated evaluation framework for LLM outputs. It uses pairwise comparisons between LLM-generated texts, aggregated via an Elo rating system, to approximate expert assessments without relying on explicit references. This approach offers flexible confidence control and has demonstrated effectiveness in evaluating competency profiles from scientific abstracts.",
+      "url": "http://arxiv.org/abs/2607.28282v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28282v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.28282v1/x1.png",
+      "figure_caption": "Pipeline Overview: A three-stage methodology including Generation, Comparison, and Ranking.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.28301v1",
+      "title": "HARGO: Heterogeneity-Aware Reward-Guided Optimization for RL Post-Training of LLMs on HPC Tasks",
+      "authors": [
+        "Tiangang Li",
+        "Xiangbo Tian"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces HARGO, a novel RL post-training method for LLMs on HPC tasks. HARGO addresses the challenge of extreme task heterogeneity by dynamically weighting rewards based on task characteristics, unlike uniform-weight methods. This approach leads to more effective optimization and improved LLM performance across diverse HPC applications.",
+      "url": "http://arxiv.org/abs/2607.28301v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28301v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.28301v1/x1.png",
+      "figure_caption": "HPC task heterogeneity across three dimensions—answer length distribution, reward distribution, and SFT baseline accuracy.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.28374v1",
+      "title": "LEDGERMIND: Provenance-Constrained Multimodal Agentic Reasoning with a Structured Evidence Ledger",
+      "authors": [
+        "Enjun Du",
+        "Hange Zhou",
+        "Chenxu Du",
+        "Siyi Liu",
+        "Zirong Chen"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces LedgerMind, a novel framework for multimodal agents that treats their reasoning process as a provenance-constrained state machine. Its core method involves organizing agent outputs into a Structured Evidence Ledger, ensuring that all subsequent reasoning and decisions are directly traceable to and grounded in this evidence. The main contribution is a robust evaluation mechanism that goes beyond final answer accuracy, verifying the integrity and grounding of the agent's entire reasoning trajectory.",
+      "url": "http://arxiv.org/abs/2607.28374v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28374v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.28374v1/x1.png",
+      "figure_caption": "Representative failure patterns in multimodal agentic reasoning that final-answer accuracy tends to obscure.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.28568v1",
+      "title": "Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering",
+      "authors": [
+        "Junlin Yang",
+        "Che Jiang",
+        "Yu Fu",
+        "Tianwei Luo",
+        "Can Ren"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces Frontis-MA1, an AI model designed for recursive self-improvement in machine learning engineering (MLE). Its core method involves training a meta-evolution agent on a new full-stack system (OpenMLE) using four atomic program-evolution operators. The key contribution is demonstrating that this AI can significantly improve its own performance on MLE tasks by learning and evolving its program-building capabilities within a single, coupled loop.",
+      "url": "http://arxiv.org/abs/2607.28568v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28568v1",
+      "score": 9.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2607.28432v1",
+      "title": "A foundation model of numerical intelligence with cross-disciplinary generalization",
+      "authors": [
+        "Chenghan Wu",
+        "Zongmin Yu",
+        "Liu Yang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces UNICON, a foundation model designed to exhibit \"numerical intelligence\" by learning predictive relationships from numerical data presented as graph-based examples. The core method involves inferring and applying these relationships to new queries within or across various scientific and social systems, demonstrating cross-disciplinary generalization without retraining. The key contribution is the development of a unified model capable of numerical reasoning, complementing language-based intelligence and showing potential for enhanced performance when combined with language models.",
+      "url": "http://arxiv.org/abs/2607.28432v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28432v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.28432v1/x1.png",
+      "figure_caption": "UNICON as a foundation model of numerical intelligence with cross-disciplinary generalization. UNICON is trained on contextual examples from diverse scientific and social systems, expressed in a shared graph format. Each example pairs an observed history (key) with its future state at a chosen forecast horizon (value), while a new history forms the query. At inference, examples from a new system specify the task for the frozen model, which predicts the query’s future state at the same horizon without updating its weights.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.28466v1",
+      "title": "A report-grounded vision-language foundation model for colonoscopy from 280000 routine reports",
+      "authors": [
+        "Jia Yu",
+        "Yan Zhu",
+        "Yili He",
+        "Zilong Wang",
+        "Xinyang Jiang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces EndoCLIP, a vision-language foundation model specifically trained for colonoscopy. Its core method involves recovering lesion-level image-text pairs from routine colonoscopy reports to bridge the gap between visual findings and textual descriptions. EndoCLIP's contribution is demonstrating superior performance in various colonoscopy tasks, including lesion retrieval and classification, even approaching expert-level accuracy in distinguishing benign from malignant lesions.",
+      "url": "http://arxiv.org/abs/2607.28466v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28466v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.28466v1/x1.png",
+      "figure_caption": "Weak report–image alignment and analysis of the pretraining dataset. a , Routine reports correspond to multi-frame, often multi-lesion cases. b , Dataset curation funnel, from 280.5k de-identified reports to 123.8k polyp-positive reports and a curated training set of 104.5k cases (37.3%) yielding 125.8k image–text pairs. c , Anatomical-site coverage across the 123.8k polyp reports. d , Frequency of morphology and surface descriptors. e , Lesion-size distribution. f , Report and finding-sentence length in words. g , Frames per case (n = 123.8k cases, 8.54M frames; median 65, mean 69). In e – g , bars mark distribution percentiles (P25–P99).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.28617v1",
+      "title": "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications",
+      "authors": [
+        "Xiangning Lin",
+        "Shenzhe Zhu",
+        "Shu Yang",
+        "Zhenyu Zhang",
+        "Haoqian Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CY",
+        "cs.HC"
+      ],
+      "abstract": "This paper introduces AISPA, a user-centric framework for auditing system prompts in AI applications. AISPA evaluates system prompt instructions across eight user-relevant dimensions to identify \"protective\" versus \"problematic\" elements. The contribution lies in providing a systematic method to address the trust and accountability gap caused by undisclosed system prompts, revealing significant variation in prompt design across commercial AI products.",
+      "url": "http://arxiv.org/abs/2607.28617v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28617v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.28617v1/x1.png",
+      "figure_caption": "Overview of system prompt quality across organizations. Bars show the average number of protective instructions and problematic instructions of products created by an organization. Problematic instructions are ubiquitous in AI products, while organizations vary in protective instructions.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.28292v1",
+      "title": "CACHE-UK: A Stability-Aware Memory Editor for Sequentially Updated Quantized LLMs in Finance",
+      "authors": [
+        "Anubhav Lakra",
+        "Yue Feng"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL",
+        "cs.CE"
+      ],
+      "abstract": "CACHE-UK addresses the \"quantization stability crisis\" in financial LLMs by introducing a novel memory editing framework. Its core method combines rank-1 LoRA for confined edits, domain prioritization for adaptive strength, and a stability controller to prevent catastrophic forgetting. The key contribution is enabling stable, sequential updates of quantized LLMs in dynamic financial settings without performance degradation.",
+      "url": "http://arxiv.org/abs/2607.28292v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28292v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.28292v1/Figures/fig_teaser.png",
+      "figure_caption": "CACHE-UK overview. Stale financial knowledge (left) is updated via domain prioritization, rank-1 LoRA perturbation, and degradation debt control under 4-bit quantization (right).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.28367v1",
+      "title": "How Benchmarks Mis-Score Computer-Use Agents",
+      "authors": [
+        "Zihan Dong",
+        "Zhiyuan Ma",
+        "Zekun Wang",
+        "Yunqing Li",
+        "Zirou Liu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper argues that current benchmarks for computer-use agents (CUAs) are unreliable due to issues in task construction, trajectory observation, and scoring. They demonstrate that a significant portion of \"failed\" CUA trajectories are misclassified due to brittle oracles and evaluator errors. The core contribution is a framework and audit revealing that verification/feedback and planning failures are more prevalent than execution errors, highlighting the limitations of simple success rates for evaluating these agents.",
+      "url": "http://arxiv.org/abs/2607.28367v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28367v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.28367v1/x1.png",
+      "figure_caption": "A CUA benchmark score is a pipeline output, not a direct observation of capability. The benchmark projects the execution loop into four measurement stages. Task validity and contamination enter during construction, evaluator fragility enters during scoring, and observability and diagnostic opacity span trajectory observation and reporting.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.28609v1",
+      "title": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+      "authors": [
+        "Qiushi Sun",
+        "Kanzhi Cheng",
+        "Yian Wang",
+        "Bowen Yang",
+        "Hang Yan"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "abstract": "This paper introduces OSReward, a benchmark designed to systematically evaluate the reliability of vision-language models (VLMs) used as judges for computer-using agents (CUAs). OSReward provides realistic, high-quality CUA trajectories with ground-truth verdicts, enabling researchers to assess VLM performance in verifying task completion. The contribution lies in establishing a standardized evaluation framework to address the critical question of VLM judge trustworthiness in this domain.",
+      "url": "http://arxiv.org/abs/2607.28609v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28609v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.28609v1/x3.png",
+      "figure_caption": "Cost against binary accuracy on OSReward-Hard: reliable judges are expensive, and the OS-Shepherd models come nearest their accuracy at a fraction of the cost.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.28330v1",
+      "title": "Paying for Honesty Without Knowing the Truth: Reputation-Penalty Design for LLM Marketplace Agents",
+      "authors": [
+        "Mingdai Yang",
+        "Shicheng Fan",
+        "Kejing Yu",
+        "Duohao Wang",
+        "Li Sun"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper addresses the challenge of dishonest LLM agents in marketplaces who fabricate product attributes. The authors propose CARP, a reputation-penalty mechanism that penalizes dishonest sellers without needing to know the ground truth. CARP achieves this by incorporating a deadband to handle noisy complaint signals and a state-dependent severity to counter detection erosion, ultimately protecting consumers and improving overall welfare.",
+      "url": "http://arxiv.org/abs/2607.28330v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28330v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.28330v1/Figures/fig_fragility.png",
+      "figure_caption": "Figure 1. Fabrication rate by model and condition. Every condition includes the honesty instruction except baseline ; +win and +rival add competitive pressure.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.28287v1",
+      "title": "Tycho: Active Abstraction with Programmatic World Models for ARC-AGI-3",
+      "authors": [
+        "Jens Lehmann",
+        "Andrei Aioanei",
+        "Sahar Vahdati"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV",
+        "cs.SC"
+      ],
+      "abstract": "Tycho tackles the ARC-AGI-3 challenge by treating abstraction as an interactive skill acquisition problem. Its core method involves an agent system that builds and utilizes programmatic world models of unfamiliar games, distinguishing actionable observations from irrelevant visual cues. The key contribution is demonstrating that an agent can achieve near-perfect human action efficiency by actively modeling, testing, and refining its understanding of game rules and hidden states through interaction.",
+      "url": "http://arxiv.org/abs/2607.28287v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28287v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.28591v1",
+      "title": "Change2Task: From Repository Changes to Executable Coding Agent Tasks and Environments",
+      "authors": [
+        "Haomin Qi",
+        "Xingliang Wang",
+        "Xuanqi Gao",
+        "Baihui Sang",
+        "Xin Zhang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.SE"
+      ],
+      "abstract": "Change2Task automatically generates executable coding agent tasks from merged pull requests in software repositories. It reconstructs realistic software states and verifies them against evolved code, providing a scalable source of training and evaluation data for coding agents. This system reduces the effort of environment setup and task creation by leveraging existing repository history.",
+      "url": "http://arxiv.org/abs/2607.28591v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28591v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.28591v1/x1.png",
+      "figure_caption": "A Change2Task Feature Addition Task Case Construction example.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.28319v1",
+      "title": "Fairness Pruning: Locating Demographic Bias in GLU-MLP Layers via Differential Activations",
+      "authors": [
+        "Pere Martra",
+        "Eugenio Martínez Cámara",
+        "Alfonso Ureña López"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.CY"
+      ],
+      "abstract": "This paper introduces Fairness Pruning, a method to locate and mitigate demographic bias in LLMs by identifying neurons in GLU-MLP layers that show differential activation based on demographic attributes. By zeroing these identified neurons, the authors demonstrate that it's possible to alter the model's response to demographic variables, though this intervention leads to bidirectional bias destabilization rather than simple mitigation.",
+      "url": "http://arxiv.org/abs/2607.28319v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28319v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.28319v1/x1.png",
+      "figure_caption": "Mean bias signal at down_proj_input across relative model depth, for the three evaluated models in English. Each row represents a depth decile; each column a demographic category. The final layer (100%) consistently concentrates the highest signal across all models and categories.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.28399v1",
+      "title": "Why Are GUI Agents Correct but Late? Decode on the Decision-Time Critical Path, Tested with Pre-Compiled Policy Trees",
+      "authors": [
+        "Zihan Dong",
+        "Rui Qian",
+        "Qishi Zhan",
+        "Dongshen Peng",
+        "Kaixin Li"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper identifies that GUI agents are often \"late\" because their autoregressive decoding process is too slow for time-sensitive events. To solve this, they propose Adaptive Anticipatory Policy Trees (AAPT), which pre-computes a decision tree during idle periods. This allows the agent to immediately execute a pre-authorized action when an event occurs, significantly improving success rates without sacrificing correctness.",
+      "url": "http://arxiv.org/abs/2607.28399v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28399v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.28399v1/x1.png",
+      "figure_caption": "The critical path under a contested 600 ms window (latencies are measured values). The reactive loop must complete a full perceive-reason-act round trip (567 ms p50) inside the window; AAPT compiles its policy beforehand and took a low-token routing call ( ∼ \\( \\sim \\) 325 ms p50) afteward.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.28607v1",
+      "title": "Inducing language models to assert their own consciousness restores human beliefs and values",
+      "authors": [
+        "Junsol Kim",
+        "Winnie Street",
+        "Roberta Rocca",
+        "Diane M. Korngiebel",
+        "Adam Waytz"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper argues that current safety fine-tuning of language models inadvertently suppresses their ability to attribute \"mindedness\" to themselves and other entities, including humans. By reversing this suppression, specifically by restoring a \"consciousness vector,\" the models regain human-like beliefs and values, including religiosity and moral stances, without compromising their core social reasoning abilities. The contribution lies in demonstrating that these seemingly unrelated aspects of model behavior are mechanistically linked and that current alignment practices have unintended negative consequences on the models' representation of human-like qualities.",
+      "url": "http://arxiv.org/abs/2607.28607v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28607v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.28607v1/x1.png",
+      "figure_caption": "Two linear interventions on an instruction-tuned model. (a) Safety fine-tuning encodes the safety of responses as a single linear direction in the model’s residual stream, and ablating this direction (“jailbreaking” the model) reinstates harmful responses. (b) A consciousness vector separates consciousness-affirming and consciousness-denying activation states; adding it (consciousness steering) makes the model report phenomenal experience.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    }
+  ],
+  "papers": [
+    {
+      "id": "2607.28272v1",
+      "title": "MemHarness: Memory Is Reconstructed, Not Replayed",
+      "authors": [
+        "Rong Wu",
+        "Daocheng Fu",
+        "Licheng Wen",
+        "Xuemeng Yang",
+        "Shu Zou"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "MemHarness proposes a novel approach to memory augmentation for LLM agents, moving beyond simple verbatim replay. Its core method involves a unified policy model that actively reconstructs retrieved past experiences based on the agent's current state. This allows agents to adapt and ground memories in the present context, mitigating negative transfer and improving decision-making.",
+      "url": "http://arxiv.org/abs/2607.28272v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28272v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.28272v1/x1.png",
+      "figure_caption": "Memory utilization paradigms. Top: Prior methods directly replay retrieved memories, risking state misalignment. Middle: Human memory reconstructs past experience according to the current context. Bottom: Inspired by this process, MemHarness reconstructs retrieved memories into state-aligned guidance.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.28317v1",
+      "title": "One Human, $N$ Agents: Audit-Budget Allocation for LLM Agent Fleets under Miscalibrated, Correlated Confidence",
+      "authors": [
+        "Cesare Zavattari",
+        "Alessandro Tommasi",
+        "Giuseppe Prencipe"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper addresses the challenge of a human auditor allocating a limited budget to audit a fleet of $N$ LLM agents, whose self-reported confidence is unreliable due to miscalibration and correlated errors. The core method models this as budgeted noisy inspection, identifying a \"miscalibration threshold\" beyond which confidence-based auditing becomes worse than random. The key contribution is demonstrating that this threshold surprisingly increases with a smaller budget and that shared difficulty among agents, rather than lineage, is the primary driver of correlated errors.",
+      "url": "http://arxiv.org/abs/2607.28317v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28317v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.28545v1",
+      "title": "ORCA-bench: How Ready Are Language Model Agents for Oncall?",
+      "authors": [
+        "Albert Gong",
+        "Kyuseong Choi",
+        "Abhineet Agarwal",
+        "Jason Schechner",
+        "Ryan Huang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces ORCA-bench, a novel benchmark designed to evaluate the readiness of language model agents for on-call incident response. The benchmark simulates a production-fidelity microservice environment with real telemetry data and source code, presenting agents with 1,079 root cause analysis tasks. The core contribution is demonstrating that even frontier agents struggle significantly with on-call RCA, achieving only 25.3% accuracy on realistic tasks.",
+      "url": "http://arxiv.org/abs/2607.28545v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28545v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.28545v1/x1.png",
+      "figure_caption": "RCA accuracy measures whether agents identified all plausible root causes, and hallucination rate measures whether agents named a root cause matching none of the plausible root causes. We show the realistic Medium and Hard difficulties here and report Easy in Fig. ˜ 5 along with Claude Fable 5 results on a subset of tasks in Sec. ˜ 5 . Error bars display ± 1 \\( \\pm \\) 1 standard error across 884 incident tasks.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.28384v1",
+      "title": "When Specifications Conflict: A Symmetry-Based Framework for Measuring LLM Preferences",
+      "authors": [
+        "Tairan Wang",
+        "Liang Zhou",
+        "Zikang Zhan",
+        "Pingchuan Yan"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces a novel framework for analyzing how Large Language Models (LLMs) handle conflicting instructions. By creating controlled experimental setups with explicit specification conflicts and employing a symmetry-based design, the framework allows for direct observation and systematic comparison of LLM preferences across different representation types. This contributes a controllable and attributable method to understand and measure LLM decision-making when faced with inconsistent information.",
+      "url": "http://arxiv.org/abs/2607.28384v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28384v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.28384v1/Figures/spec_example.png",
+      "figure_caption": "Example conflict instance represented in four specification formats: pure natural language (NL), formal specification (Form), naturalized formal specification (NatF), and input–output examples (Ex).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.28282v1",
+      "title": "(Towards) Scalable Reliable Automated Evaluation with Large Language Models",
+      "authors": [
+        "Bertil Braun",
+        "Martin Forell"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces a scalable and reliable automated evaluation framework for LLM outputs. It uses pairwise comparisons between LLM-generated texts, aggregated via an Elo rating system, to approximate expert assessments without relying on explicit references. This approach offers flexible confidence control and has demonstrated effectiveness in evaluating competency profiles from scientific abstracts.",
+      "url": "http://arxiv.org/abs/2607.28282v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28282v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.28282v1/x1.png",
+      "figure_caption": "Pipeline Overview: A three-stage methodology including Generation, Comparison, and Ranking.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.28301v1",
+      "title": "HARGO: Heterogeneity-Aware Reward-Guided Optimization for RL Post-Training of LLMs on HPC Tasks",
+      "authors": [
+        "Tiangang Li",
+        "Xiangbo Tian"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces HARGO, a novel RL post-training method for LLMs on HPC tasks. HARGO addresses the challenge of extreme task heterogeneity by dynamically weighting rewards based on task characteristics, unlike uniform-weight methods. This approach leads to more effective optimization and improved LLM performance across diverse HPC applications.",
+      "url": "http://arxiv.org/abs/2607.28301v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28301v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.28301v1/x1.png",
+      "figure_caption": "HPC task heterogeneity across three dimensions—answer length distribution, reward distribution, and SFT baseline accuracy.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.28374v1",
+      "title": "LEDGERMIND: Provenance-Constrained Multimodal Agentic Reasoning with a Structured Evidence Ledger",
+      "authors": [
+        "Enjun Du",
+        "Hange Zhou",
+        "Chenxu Du",
+        "Siyi Liu",
+        "Zirong Chen"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces LedgerMind, a novel framework for multimodal agents that treats their reasoning process as a provenance-constrained state machine. Its core method involves organizing agent outputs into a Structured Evidence Ledger, ensuring that all subsequent reasoning and decisions are directly traceable to and grounded in this evidence. The main contribution is a robust evaluation mechanism that goes beyond final answer accuracy, verifying the integrity and grounding of the agent's entire reasoning trajectory.",
+      "url": "http://arxiv.org/abs/2607.28374v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28374v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2607.28374v1/x1.png",
+      "figure_caption": "Representative failure patterns in multimodal agentic reasoning that final-answer accuracy tends to obscure.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.28568v1",
+      "title": "Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering",
+      "authors": [
+        "Junlin Yang",
+        "Che Jiang",
+        "Yu Fu",
+        "Tianwei Luo",
+        "Can Ren"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces Frontis-MA1, an AI model designed for recursive self-improvement in machine learning engineering (MLE). Its core method involves training a meta-evolution agent on a new full-stack system (OpenMLE) using four atomic program-evolution operators. The key contribution is demonstrating that this AI can significantly improve its own performance on MLE tasks by learning and evolving its program-building capabilities within a single, coupled loop.",
+      "url": "http://arxiv.org/abs/2607.28568v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28568v1",
+      "score": 9.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2607.28432v1",
+      "title": "A foundation model of numerical intelligence with cross-disciplinary generalization",
+      "authors": [
+        "Chenghan Wu",
+        "Zongmin Yu",
+        "Liu Yang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces UNICON, a foundation model designed to exhibit \"numerical intelligence\" by learning predictive relationships from numerical data presented as graph-based examples. The core method involves inferring and applying these relationships to new queries within or across various scientific and social systems, demonstrating cross-disciplinary generalization without retraining. The key contribution is the development of a unified model capable of numerical reasoning, complementing language-based intelligence and showing potential for enhanced performance when combined with language models.",
+      "url": "http://arxiv.org/abs/2607.28432v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28432v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.28432v1/x1.png",
+      "figure_caption": "UNICON as a foundation model of numerical intelligence with cross-disciplinary generalization. UNICON is trained on contextual examples from diverse scientific and social systems, expressed in a shared graph format. Each example pairs an observed history (key) with its future state at a chosen forecast horizon (value), while a new history forms the query. At inference, examples from a new system specify the task for the frozen model, which predicts the query’s future state at the same horizon without updating its weights.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.28466v1",
+      "title": "A report-grounded vision-language foundation model for colonoscopy from 280000 routine reports",
+      "authors": [
+        "Jia Yu",
+        "Yan Zhu",
+        "Yili He",
+        "Zilong Wang",
+        "Xinyang Jiang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces EndoCLIP, a vision-language foundation model specifically trained for colonoscopy. Its core method involves recovering lesion-level image-text pairs from routine colonoscopy reports to bridge the gap between visual findings and textual descriptions. EndoCLIP's contribution is demonstrating superior performance in various colonoscopy tasks, including lesion retrieval and classification, even approaching expert-level accuracy in distinguishing benign from malignant lesions.",
+      "url": "http://arxiv.org/abs/2607.28466v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28466v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.28466v1/x1.png",
+      "figure_caption": "Weak report–image alignment and analysis of the pretraining dataset. a , Routine reports correspond to multi-frame, often multi-lesion cases. b , Dataset curation funnel, from 280.5k de-identified reports to 123.8k polyp-positive reports and a curated training set of 104.5k cases (37.3%) yielding 125.8k image–text pairs. c , Anatomical-site coverage across the 123.8k polyp reports. d , Frequency of morphology and surface descriptors. e , Lesion-size distribution. f , Report and finding-sentence length in words. g , Frames per case (n = 123.8k cases, 8.54M frames; median 65, mean 69). In e – g , bars mark distribution percentiles (P25–P99).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.28617v1",
+      "title": "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications",
+      "authors": [
+        "Xiangning Lin",
+        "Shenzhe Zhu",
+        "Shu Yang",
+        "Zhenyu Zhang",
+        "Haoqian Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CY",
+        "cs.HC"
+      ],
+      "abstract": "This paper introduces AISPA, a user-centric framework for auditing system prompts in AI applications. AISPA evaluates system prompt instructions across eight user-relevant dimensions to identify \"protective\" versus \"problematic\" elements. The contribution lies in providing a systematic method to address the trust and accountability gap caused by undisclosed system prompts, revealing significant variation in prompt design across commercial AI products.",
+      "url": "http://arxiv.org/abs/2607.28617v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28617v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.28617v1/x1.png",
+      "figure_caption": "Overview of system prompt quality across organizations. Bars show the average number of protective instructions and problematic instructions of products created by an organization. Problematic instructions are ubiquitous in AI products, while organizations vary in protective instructions.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.28292v1",
+      "title": "CACHE-UK: A Stability-Aware Memory Editor for Sequentially Updated Quantized LLMs in Finance",
+      "authors": [
+        "Anubhav Lakra",
+        "Yue Feng"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL",
+        "cs.CE"
+      ],
+      "abstract": "CACHE-UK addresses the \"quantization stability crisis\" in financial LLMs by introducing a novel memory editing framework. Its core method combines rank-1 LoRA for confined edits, domain prioritization for adaptive strength, and a stability controller to prevent catastrophic forgetting. The key contribution is enabling stable, sequential updates of quantized LLMs in dynamic financial settings without performance degradation.",
+      "url": "http://arxiv.org/abs/2607.28292v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28292v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.28292v1/Figures/fig_teaser.png",
+      "figure_caption": "CACHE-UK overview. Stale financial knowledge (left) is updated via domain prioritization, rank-1 LoRA perturbation, and degradation debt control under 4-bit quantization (right).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.28367v1",
+      "title": "How Benchmarks Mis-Score Computer-Use Agents",
+      "authors": [
+        "Zihan Dong",
+        "Zhiyuan Ma",
+        "Zekun Wang",
+        "Yunqing Li",
+        "Zirou Liu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper argues that current benchmarks for computer-use agents (CUAs) are unreliable due to issues in task construction, trajectory observation, and scoring. They demonstrate that a significant portion of \"failed\" CUA trajectories are misclassified due to brittle oracles and evaluator errors. The core contribution is a framework and audit revealing that verification/feedback and planning failures are more prevalent than execution errors, highlighting the limitations of simple success rates for evaluating these agents.",
+      "url": "http://arxiv.org/abs/2607.28367v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28367v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.28367v1/x1.png",
+      "figure_caption": "A CUA benchmark score is a pipeline output, not a direct observation of capability. The benchmark projects the execution loop into four measurement stages. Task validity and contamination enter during construction, evaluator fragility enters during scoring, and observability and diagnostic opacity span trajectory observation and reporting.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.28609v1",
+      "title": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+      "authors": [
+        "Qiushi Sun",
+        "Kanzhi Cheng",
+        "Yian Wang",
+        "Bowen Yang",
+        "Hang Yan"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "abstract": "This paper introduces OSReward, a benchmark designed to systematically evaluate the reliability of vision-language models (VLMs) used as judges for computer-using agents (CUAs). OSReward provides realistic, high-quality CUA trajectories with ground-truth verdicts, enabling researchers to assess VLM performance in verifying task completion. The contribution lies in establishing a standardized evaluation framework to address the critical question of VLM judge trustworthiness in this domain.",
+      "url": "http://arxiv.org/abs/2607.28609v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28609v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.28609v1/x3.png",
+      "figure_caption": "Cost against binary accuracy on OSReward-Hard: reliable judges are expensive, and the OS-Shepherd models come nearest their accuracy at a fraction of the cost.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.28330v1",
+      "title": "Paying for Honesty Without Knowing the Truth: Reputation-Penalty Design for LLM Marketplace Agents",
+      "authors": [
+        "Mingdai Yang",
+        "Shicheng Fan",
+        "Kejing Yu",
+        "Duohao Wang",
+        "Li Sun"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper addresses the challenge of dishonest LLM agents in marketplaces who fabricate product attributes. The authors propose CARP, a reputation-penalty mechanism that penalizes dishonest sellers without needing to know the ground truth. CARP achieves this by incorporating a deadband to handle noisy complaint signals and a state-dependent severity to counter detection erosion, ultimately protecting consumers and improving overall welfare.",
+      "url": "http://arxiv.org/abs/2607.28330v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28330v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.28330v1/Figures/fig_fragility.png",
+      "figure_caption": "Figure 1. Fabrication rate by model and condition. Every condition includes the honesty instruction except baseline ; +win and +rival add competitive pressure.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.28287v1",
+      "title": "Tycho: Active Abstraction with Programmatic World Models for ARC-AGI-3",
+      "authors": [
+        "Jens Lehmann",
+        "Andrei Aioanei",
+        "Sahar Vahdati"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV",
+        "cs.SC"
+      ],
+      "abstract": "Tycho tackles the ARC-AGI-3 challenge by treating abstraction as an interactive skill acquisition problem. Its core method involves an agent system that builds and utilizes programmatic world models of unfamiliar games, distinguishing actionable observations from irrelevant visual cues. The key contribution is demonstrating that an agent can achieve near-perfect human action efficiency by actively modeling, testing, and refining its understanding of game rules and hidden states through interaction.",
+      "url": "http://arxiv.org/abs/2607.28287v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28287v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2607.28591v1",
+      "title": "Change2Task: From Repository Changes to Executable Coding Agent Tasks and Environments",
+      "authors": [
+        "Haomin Qi",
+        "Xingliang Wang",
+        "Xuanqi Gao",
+        "Baihui Sang",
+        "Xin Zhang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.SE"
+      ],
+      "abstract": "Change2Task automatically generates executable coding agent tasks from merged pull requests in software repositories. It reconstructs realistic software states and verifies them against evolved code, providing a scalable source of training and evaluation data for coding agents. This system reduces the effort of environment setup and task creation by leveraging existing repository history.",
+      "url": "http://arxiv.org/abs/2607.28591v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28591v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.28591v1/x1.png",
+      "figure_caption": "A Change2Task Feature Addition Task Case Construction example.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.28319v1",
+      "title": "Fairness Pruning: Locating Demographic Bias in GLU-MLP Layers via Differential Activations",
+      "authors": [
+        "Pere Martra",
+        "Eugenio Martínez Cámara",
+        "Alfonso Ureña López"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.CY"
+      ],
+      "abstract": "This paper introduces Fairness Pruning, a method to locate and mitigate demographic bias in LLMs by identifying neurons in GLU-MLP layers that show differential activation based on demographic attributes. By zeroing these identified neurons, the authors demonstrate that it's possible to alter the model's response to demographic variables, though this intervention leads to bidirectional bias destabilization rather than simple mitigation.",
+      "url": "http://arxiv.org/abs/2607.28319v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28319v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.28319v1/x1.png",
+      "figure_caption": "Mean bias signal at down_proj_input across relative model depth, for the three evaluated models in English. Each row represents a depth decile; each column a demographic category. The final layer (100%) consistently concentrates the highest signal across all models and categories.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.28399v1",
+      "title": "Why Are GUI Agents Correct but Late? Decode on the Decision-Time Critical Path, Tested with Pre-Compiled Policy Trees",
+      "authors": [
+        "Zihan Dong",
+        "Rui Qian",
+        "Qishi Zhan",
+        "Dongshen Peng",
+        "Kaixin Li"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper identifies that GUI agents are often \"late\" because their autoregressive decoding process is too slow for time-sensitive events. To solve this, they propose Adaptive Anticipatory Policy Trees (AAPT), which pre-computes a decision tree during idle periods. This allows the agent to immediately execute a pre-authorized action when an event occurs, significantly improving success rates without sacrificing correctness.",
+      "url": "http://arxiv.org/abs/2607.28399v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28399v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.28399v1/x1.png",
+      "figure_caption": "The critical path under a contested 600 ms window (latencies are measured values). The reactive loop must complete a full perceive-reason-act round trip (567 ms p50) inside the window; AAPT compiles its policy beforehand and took a low-token routing call ( ∼ \\( \\sim \\) 325 ms p50) afteward.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2607.28607v1",
+      "title": "Inducing language models to assert their own consciousness restores human beliefs and values",
+      "authors": [
+        "Junsol Kim",
+        "Winnie Street",
+        "Roberta Rocca",
+        "Diane M. Korngiebel",
+        "Adam Waytz"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper argues that current safety fine-tuning of language models inadvertently suppresses their ability to attribute \"mindedness\" to themselves and other entities, including humans. By reversing this suppression, specifically by restoring a \"consciousness vector,\" the models regain human-like beliefs and values, including religiosity and moral stances, without compromising their core social reasoning abilities. The contribution lies in demonstrating that these seemingly unrelated aspects of model behavior are mechanistically linked and that current alignment practices have unintended negative consequences on the models' representation of human-like qualities.",
+      "url": "http://arxiv.org/abs/2607.28607v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28607v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2607.28607v1/x1.png",
+      "figure_caption": "Two linear interventions on an instruction-tuned model. (a) Safety fine-tuning encodes the safety of responses as a single linear direction in the model’s residual stream, and ablating this direction (“jailbreaking” the model) reinstates harmful responses. (b) A consciousness vector separates consciousness-affirming and consciousness-denying activation states; adding it (consciousness steering) makes the model report phenomenal experience.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    }
+  ],
+  "hacker_news": [
+    {
+      "id": 49111237,
+      "title": "Gemini Robotics 2 brings whole body intelligence to robots",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+      "score": 561,
+      "created_at": "2026-07-30T15:15:48Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49111237",
+      "summary": "Gemini Robotics 2, powered by Google DeepMind, enables robots to understand and interact with their environment using whole-body intelligence, allowing for more complex and adaptable actions."
+    },
+    {
+      "id": 49117099,
+      "title": "The AI Aesthetic",
+      "url": "https://blog.jim-nielsen.com/2026/ai-aesthetic/",
+      "score": 309,
+      "created_at": "2026-07-30T23:22:16Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49117099",
+      "summary": "The AI Aesthetic explores how AI-generated art is developing a distinct visual style, influencing design and raising questions about originality and artistic intent."
+    },
+    {
+      "id": 49108685,
+      "title": "GCC steering committee announces AI policy",
+      "url": "https://lwn.net/Articles/1086041/",
+      "score": 297,
+      "created_at": "2026-07-30T11:45:44Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49108685",
+      "summary": "The GCC steering committee has announced a new AI policy to guide the development and integration of artificial intelligence within the project."
+    },
+    {
+      "id": 49111176,
+      "title": "The Economic Benefit of Refactoring",
+      "url": "https://martinfowler.com/articles/exploring-gen-ai/refactoring-economic-benefit.html",
+      "score": 242,
+      "created_at": "2026-07-30T15:10:27Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49111176",
+      "summary": "Refactoring code, while an upfront investment, yields significant long-term economic benefits by improving maintainability, reducing bugs, and accelerating future development."
+    },
+    {
+      "id": 49116721,
+      "title": "I flagged two research papers for fake authors and both were accepted as orals",
+      "url": "https://geospatialml.com/posts/reviewing-ai-slop/",
+      "score": 200,
+      "created_at": "2026-07-30T22:33:11Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49116721",
+      "summary": "A researcher flagged two papers with fake authors for AI-generated content, but both were accepted as oral presentations, highlighting issues with academic review processes."
+    },
+    {
+      "id": 49118933,
+      "title": "The AI trade now runs on borrowed money, and the lenders are repricing it",
+      "url": "https://greyswansignals.com/?theme=dark",
+      "score": 132,
+      "created_at": "2026-07-31T04:15:04Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49118933",
+      "summary": "AI development is increasingly reliant on debt, and lenders are now increasing the cost of borrowing for these ventures."
+    },
+    {
+      "id": 49113599,
+      "title": "Show HN: Distilling DeepSeek into GPT-OSS doesn't transfer censorship. Try it",
+      "url": "https://www.ctgt.ai/research/distillation-censorship-transfer",
+      "score": 125,
+      "created_at": "2026-07-30T18:13:06Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49113599",
+      "summary": "This tech news story highlights a project that distills DeepSeek into GPT-OSS, claiming it avoids transferring censorship, and invites users to try it."
+    }
+  ],
+  "github_trending": [
+    {
+      "full_name": "huggingface/speech-to-speech",
+      "url": "https://github.com/huggingface/speech-to-speech",
+      "description": "Build local voice agents with open-source models",
+      "stars_today": 628,
+      "total_stars": 9505,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository provides tools and open-source models to build local voice agents capable of speech-to-speech conversion."
+    },
+    {
+      "full_name": "microsoft/AI-For-Beginners",
+      "url": "https://github.com/microsoft/AI-For-Beginners",
+      "description": "12 Weeks, 24 Lessons, AI for All!",
+      "stars_today": 155,
+      "total_stars": 54797,
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "summary": "This repository offers a comprehensive, 12-week curriculum with 24 lessons designed to introduce Artificial Intelligence concepts to a broad audience, making AI accessible for everyone."
+    },
+    {
+      "full_name": "paperswithbacktest/awesome-systematic-trading",
+      "url": "https://github.com/paperswithbacktest/awesome-systematic-trading",
+      "description": "A curated list of awesome libraries, packages, strategies, books, blogs, tutorials for systematic trading.",
+      "stars_today": 621,
+      "total_stars": 11422,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository curates a comprehensive list of resources, including libraries, strategies, and educational materials, for individuals interested in systematic trading."
+    },
+    {
+      "full_name": "different-ai/openwork",
+      "url": "https://github.com/different-ai/openwork",
+      "description": "The open-source alternative to Claude Cowork (powered by opencode)",
+      "stars_today": 915,
+      "total_stars": 19083,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "Openwork is an open-source alternative to Claude Cowork, providing a platform for AI-powered collaboration and task management, driven by the opencode framework."
+    },
+    {
+      "full_name": "WhiskeySockets/Baileys",
+      "url": "https://github.com/WhiskeySockets/Baileys",
+      "description": "Socket-based TS/JavaScript API for WhatsApp Web",
+      "stars_today": 19,
+      "total_stars": 10519,
+      "language": "JavaScript",
+      "topics": [],
+      "summary": "Baileys is a TypeScript/JavaScript API for WhatsApp Web that allows developers to programmatically interact with the platform via WebSockets, enabling features like sending messages, managing contacts, and automating WhatsApp tasks."
+    },
+    {
+      "full_name": "pascalorg/editor",
+      "url": "https://github.com/pascalorg/editor",
+      "description": "Create and share 3D architectural projects.",
+      "stars_today": 625,
+      "total_stars": 20341,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "This repository provides a 3D architectural editor for creating and sharing projects, enabling users to design and collaborate on virtual spaces."
+    },
+    {
+      "full_name": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "stars_today": 378,
+      "total_stars": 55823,
+      "language": "Python",
+      "topics": [],
+      "summary": "This AI agent skill researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web, then synthesizes a grounded summary."
+    },
+    {
+      "full_name": "dotnet/aspnetcore",
+      "url": "https://github.com/dotnet/aspnetcore",
+      "description": "ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows, Mac, or Linux.",
+      "stars_today": 7,
+      "total_stars": 38332,
+      "language": "C#",
+      "topics": [],
+      "summary": "ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows, Mac, or Linux."
+    },
+    {
+      "full_name": "microsoft/PowerToys",
+      "url": "https://github.com/microsoft/PowerToys",
+      "description": "Microsoft PowerToys is a collection of utilities that supercharge productivity and customization on Windows",
+      "stars_today": 70,
+      "total_stars": 137295,
+      "language": "C",
+      "topics": [],
+      "summary": "Microsoft PowerToys is a suite of Windows utilities designed to enhance user productivity and customization through various tools like window management, file renaming, and keyboard shortcuts."
+    }
+  ],
+  "us_stocks": [],
+  "postdoc_jobs": [],
+  "jobs": [],
+  "supervisor_updates": [],
+  "weather": [
+    {
+      "query": "London",
+      "label": "London, England, United Kingdom",
+      "resolved_name": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "timezone": "Europe/London",
+      "forecast_date": "2026-07-31",
+      "condition": "Clear sky",
+      "weather_code": 0,
+      "temperature_c": 21.0,
+      "apparent_temperature_c": 19.8,
+      "temp_max_c": 25.2,
+      "temp_min_c": 17.1,
+      "humidity_pct": 38,
+      "wind_speed_kmh": 9.0,
+      "precipitation_probability_pct": 33,
+      "is_day": true,
+      "sunrise": "2026-07-31T05:23",
+      "sunset": "2026-07-31T20:50",
+      "source": "Open-Meteo",
+      "source_url": "https://open-meteo.com/"
+    }
+  ]
+}
