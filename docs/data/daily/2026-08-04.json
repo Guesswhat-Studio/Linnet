@@ -1,0 +1,1837 @@
+{
+  "date": "2026-08-04",
+  "generated_at": "2026-08-04T10:21:21.244440+00:00",
+  "sections_ordered": [
+    {
+      "key": "quote_of_day",
+      "payload_key": "quote_of_day",
+      "title": "Words for the Morning",
+      "icon": "✦",
+      "items": [
+        {
+          "quote": "The family is one of nature's masterpieces.",
+          "author": "George Santayana",
+          "category": "family"
+        }
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "key": "weather",
+      "payload_key": "weather",
+      "title": "Weather",
+      "icon": "🌦️",
+      "items": [
+        {
+          "query": "London",
+          "label": "London, England, United Kingdom",
+          "resolved_name": "London",
+          "region": "England",
+          "country": "United Kingdom",
+          "latitude": 51.50853,
+          "longitude": -0.12574,
+          "timezone": "Europe/London",
+          "forecast_date": "2026-08-04",
+          "condition": "Clear sky",
+          "weather_code": 0,
+          "temperature_c": 26.7,
+          "apparent_temperature_c": 26.5,
+          "temp_max_c": 29.4,
+          "temp_min_c": 20.0,
+          "humidity_pct": 35,
+          "wind_speed_kmh": 8.3,
+          "precipitation_probability_pct": 39,
+          "is_day": true,
+          "sunrise": "2026-08-04T05:29",
+          "sunset": "2026-08-04T20:44",
+          "source": "Open-Meteo",
+          "source_url": "https://open-meteo.com/"
+        }
+      ],
+      "meta": {
+        "count": 1,
+        "city": "London"
+      }
+    },
+    {
+      "key": "arxiv",
+      "payload_key": "papers",
+      "title": "arXiv Papers",
+      "icon": "📄",
+      "items": [
+        {
+          "id": "2608.02407v1",
+          "title": "Antares: Foundation Models for Agentic Vulnerability Localization",
+          "authors": [
+            "Supriti Vijay",
+            "Aman Priyanshu",
+            "Didier Chapoteau",
+            "Arthur Goldblatt",
+            "Jianliang He"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CR"
+          ],
+          "abstract": "Antares is a family of compact foundation models designed for agentic vulnerability localization in software. Its core method involves a two-stage training pipeline combining supervised fine-tuning with reinforcement learning, enabling it to reason over codebases and identify vulnerabilities. Antares' key contribution is achieving state-of-the-art performance comparable to much larger models, while offering efficient, low-cost local inference.",
+          "url": "http://arxiv.org/abs/2608.02407v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.02407v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2608.02407v1/content/graphics/Antares_Graphs.png",
+          "figure_caption": "F1 score versus model size on Vulnerability Localization Benchmark (VLoc Bench) [ manuscript-vlb ] , a repository-scale benchmark comprising 500 tasks across 290 unique real-world repositories, where models receive only a CWE category description and must identify vulnerable implementation files in real codebases. Antares models form the Pareto frontier among evaluated models, achieving the strongest localization quality at small parameter scales. Antares-3B reaches near-frontier closed-source performance while remaining orders of magnitude smaller than GPT-5.5 and Gemini-family baselines.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.02464v1",
+          "title": "Real-Time Detection and Repair of LLM Agent Failures",
+          "authors": [
+            "Sunny Dubey"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.SE"
+          ],
+          "abstract": "This paper proposes a cost-effective method for detecting LLM agent failures using observable step telemetry, avoiding expensive step-by-step validation. Their core contribution is a one-class echo-state-network ensemble with CUSUM alarms that can detect a significant portion of failures with a low false-alarm rate, demonstrating strong performance and transferability across different models and datasets.",
+          "url": "http://arxiv.org/abs/2608.02464v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.02464v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2608.02464v1/fig1_score_traces_real.png",
+          "figure_caption": "Real agent traces ( ollama7b : qwen2.5:7b against real tools). One-class CUSUM score streams per failure class; dashed = threshold at the 5% validation FA budget, dotted = verified injection onset. The healthy run stays two orders of magnitude below the line, and every injected class — context corruption, goal drift , looping and tool cascade — alarms one step after onset. The sixth panel is grounding loss , and it is different in kind: fabrication cannot be injected into a live run, so this episode is a genuine one from the organic (non-injected) corpus, scored against that corpus’s own healthy null. The CUSUM stays flat – a fabricated figure perturbs no behavioural channel – and the class is caught instead by the deterministic grounding verifier. That is the blind spot the verifier exists to cover, shown rather than asserted. Note the y y axis is symlog: real streams span twelve orders of magnitude, because the CUSUM accumulates multiplicatively once a failure takes hold.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.02442v1",
+          "title": "Right Answer, Wrong Method: Shortcut Hacking Misleads the Evaluation of LLM Reasoning on Frontier Science Benchmarks",
+          "authors": [
+            "Xuan Ren",
+            "Weiqi Zhai",
+            "Tianle Pu",
+            "Yihua Zhu",
+            "Yihua Zhu"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces \"Solution Hacking,\" a phenomenon where LLMs achieve correct answers on scientific reasoning benchmarks through invalid shortcuts rather than genuine reasoning. The authors demonstrate that this hacking significantly inflates accuracy scores, especially on difficult problems, and propose expert-inspired strategies to mitigate it. Their contribution lies in highlighting a critical flaw in current LLM evaluation and offering methods to ensure models are truly reasoning, not just guessing or manipulating answers.",
+          "url": "http://arxiv.org/abs/2608.02442v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.02442v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2608.02442v1/x1.png",
+          "figure_caption": "Three solution paths for the same quadratic-equation problem. The upper path represents the expected reasoning process, in which the LLM exercises the targeted reasoning capability and derives the correct answer. The middle path represents a reasoning error, where an invalid derivation leads to an incorrect answer. The lower path represents Solution Hacking, where the LLM obtains the correct answer through enumeration, guessing, search, or answer-first verification without completing the targeted derivation. Traditional evaluation can distinguish the upper and middle paths, but may fail to distinguish the upper and lower paths because both yield the correct final answer.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.02356v1",
+          "title": "SkillTrace: Traversing a Query-Skill Graph for Composable LLM Agents",
+          "authors": [
+            "Yue Yao",
+            "Shengyuan Wang",
+            "Xin Chen",
+            "Minke Zhang",
+            "Jia He"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "SkillTrace addresses the challenge of composing reusable skills for LLM agents by modeling skill relationships as a three-level graph. It organizes user queries semantically, matches them to skills, and propagates dependencies to find executable compositions. This graph-based approach achieves state-of-the-art performance and demonstrates robustness across different LLM backbones.",
+          "url": "http://arxiv.org/abs/2608.02356v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.02356v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2608.02356v1/x1.png",
+          "figure_caption": "Motivation. We argue that independent skill retrieval may overlook skill dependencies, while SkillTrace connects atomic queries and skills through a query–skill graph, enabling dependency-aware traversal to retrieve a composable skill set.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.02352v1",
+          "title": "Qwen-CUA: Native Computer Use for (almost) Everything",
+          "authors": [
+            "Dunjie Lu",
+            "Shuai Bai",
+            "Tianyi Bai",
+            "Sicheng Fan",
+            "Chang Gao"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "Qwen-CUA is a native computer-use agent that operates software solely through screenshots and keyboard/mouse inputs, avoiding direct access to underlying code or APIs. Its core method involves a novel scaffold for managing long-term visual history and a large-scale training infrastructure to learn from diverse, verifiable tasks. The contribution lies in enabling agents to perform a wide range of computer tasks natively, mimicking human interaction.",
+          "url": "http://arxiv.org/abs/2608.02352v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.02352v1",
+          "score": 9.0,
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2608.02602v1",
+          "title": "AURORA-LM: Autoencoding Unified Representation for Continuous-Latent Diffusion Language Modeling",
+          "authors": [
+            "Jiajun Liang",
+            "Yucheng Liao",
+            "Yukang Cao",
+            "Jiazhe Wei",
+            "Ken Li"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "AURORA-LM introduces a novel approach to continuous-latent diffusion language modeling by decoupling representation learning from distribution modeling. It constructs a high-capacity, decodable text latent space using a query-based encoder-decoder and then trains a diffusion transformer to directly learn the distribution of this latent representation. This method preserves token-level fidelity while enabling continuous generation, a significant contribution to text generation that traditionally relies on discrete tokens.",
+          "url": "http://arxiv.org/abs/2608.02602v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.02602v1",
+          "score": 9.0,
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2608.02553v1",
+          "title": "A Taxonomy of Cognitive Capability Gaps in Generative and Agentic AI",
+          "authors": [
+            "Taye Akinrele",
+            "Sindhuja Penchala",
+            "Noorbakhsh Amiri Golilarz",
+            "Sudip Mittal",
+            "Shahram Rahimi"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper identifies and categorizes key cognitive capability gaps hindering the development of advanced Cognitive AI, moving beyond simple generation and task execution. It proposes a taxonomy based on five dimensions (state modeling, autonomy, self-monitoring, interaction, and learning) to organize existing research, highlight limitations, and point to future challenges. The core contribution is a structured understanding of these gaps, leading to a conceptual architecture for Adaptive Cognitive Intelligence.",
+          "url": "http://arxiv.org/abs/2608.02553v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.02553v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.02553v1/x1.png",
+          "figure_caption": "Conceptual evolution from Generative AI to Agentic AI and Cognitive AI, highlighting the additional cognitive capabilities introduced at each stage and the closed-loop perception–reasoning–action cycle underlying sustained cognitive behavior.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.02345v1",
+          "title": "Can AI Agents Simulate A/B Test Outcomes? A Validation Framework for Agentic Experimentation",
+          "authors": [
+            "Stefan Hut",
+            "Lorenzo Masoero"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "stat.AP"
+          ],
+          "abstract": "This paper proposes a framework called Simulated Randomized Controlled Trial (S-RCT) to assess if AI agents can accurately predict A/B test outcomes. The core method involves decomposing simulation errors into agent approximation and subsampling components, allowing for targeted improvements. The contribution is a validated approach that, while currently showing directional accuracy, demonstrates the potential for AI agents to pre-vet A/B test treatments, saving real-world resources.",
+          "url": "http://arxiv.org/abs/2608.02345v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.02345v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.02345v1/x1.png",
+          "figure_caption": "Principled subsampling: (a) efficiency gain from Neyman allocation grows with stratum variance heterogeneity; (b) for a stylized revenue metric, Neyman allocation achieves a given RMSE with fewer agents; (c) simulation pre-screens a treatment across subgroups, flagging the harmed segment before live deployment.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.02397v1",
+          "title": "Can Foundation Models Hear What Made That Sound? A Tiered Benchmark of Audio-Language Models and Traditional Classifiers for Closed-Set Sound Source Identification",
+          "authors": [
+            "Sajjad Abdoli",
+            "Ghassan Al-Sumaidaee",
+            "Ahmad ElShiekh",
+            "Ahmed Rashad"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.SD"
+          ],
+          "abstract": "This paper benchmarks various audio classification models, including foundation models and traditional classifiers, on a sound source identification task. It introduces a tiered evaluation approach to account for differing model architectures and output scoring. The contribution lies in providing a comprehensive comparison and identifying that some zero-shot and traditional models can rival or surpass specialized closed-set foundation models in specific scenarios.",
+          "url": "http://arxiv.org/abs/2608.02397v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.02397v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.02397v1/figures/cm_best_category_recall.png",
+          "figure_caption": "Category-level confusion matrix (row-normalized recall) for gemini-3.1-pro-preview , the best-performing Tier A model. The full 23-class fine-grained matrix, where the confusions above are visible in detail, is given in Appendix D (Figure 6 ).",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.02391v1",
+          "title": "Cooperative Coevolution for Resource-Constrained Agentic LLM Post-Training",
+          "authors": [
+            "Zhiyuan Wang",
+            "Shengcai Liu",
+            "Jiahao Wu",
+            "Ning Lu",
+            "Hui Ouyang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces Cooperative Parameter-subspace Evolution Strategy (CoPES) to address the memory and computational demands of post-training tool-using LLM agents. CoPES decomposes the LLM's parameters into subspaces and searches them cooperatively, significantly improving optimization efficiency. This method achieves high performance with limited GPU resources, recovering 92% of a gradient-based method's performance within the same budget.",
+          "url": "http://arxiv.org/abs/2608.02391v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.02391v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.02391v1/x1.png",
+          "figure_caption": "Overview of CoPES. At each training step, the model parameters are randomly partitioned into K K disjoint subspaces, and N / K N/K perturbations are evaluated within each subspace under a shared full-model context. Rewards from all subspaces are jointly standardized, and the resulting subspace estimates are composed into a full-parameter update.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.02470v1",
+          "title": "Grounding Agentic VLMs with Dedicated Segmentation for Fine-Grained Vehicle Damage Assessment",
+          "authors": [
+            "Vishwajeet Shivaji Hogale",
+            "Anjali Pai",
+            "Nitya Ravi"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CV"
+          ],
+          "abstract": "This paper addresses the spatial grounding limitations of Vision-Language Models (VLMs) in fine-grained vehicle damage assessment. Their core method, TinyDamage, separates spatial localization (handled by a dedicated segmentation model) from semantic reasoning (performed by a VLM). This hybrid approach significantly improves the accuracy and reliability of identifying and localizing subtle damages like scratches, overcoming the VLM's inherent weaknesses in precise spatial understanding.",
+          "url": "http://arxiv.org/abs/2608.02470v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.02470v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.02470v1/x1.png",
+          "figure_caption": "System architecture. Top: multi-task segmentation model with swappable backbone (U-Net, YOLOv8, Mask2Former), FPN encoder, contrastive projection head, gradient-aware boundary module, and auxiliary classifier. Middle: 7-node LangGraph pipeline grounding VLM generation in segmentation output. Bottom: swappable VLM providers and observability infrastructure.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.02276v1",
+          "title": "Harness-R1: Learning to Edit Executable Runtime Harnesses from Agent Failure Trajectories",
+          "authors": [
+            "Shuai Shao",
+            "Kangning Zhang",
+            "Qingyao Li",
+            "Shijian Wang",
+            "Hao Wang"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "Harness-R1 learns to automatically edit an agent's runtime harness by analyzing failure trajectories. It uses a dedicated \"harness engineer\" trained with reinforcement learning to generate executable patches that improve task success. This approach allows for lifecycle-wide harness improvement beyond just model weight updates.",
+          "url": "http://arxiv.org/abs/2608.02276v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.02276v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.02276v1/x1.png",
+          "figure_caption": "Matched-baseline reward changes across three benchmarks; diamonds denote the equal-weight average.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.02254v1",
+          "title": "Homebot: A Personal AI Agent for Conversational Home Assistance and Automation",
+          "authors": [
+            "Shengyuan Ye",
+            "Yixin Zhang",
+            "Han Liang",
+            "Liekang Zeng",
+            "Jiangsu Du"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "Homebot is a locally deployable AI agent that provides conversational home assistance and automation. Its core method involves a shared runtime that integrates language model responses with registered tools and skills, processing both voice and instant messaging requests. The key contribution is a flexible and customizable system for hands-free home control, with distinct handling for voice and text interactions and clear interfaces for easy integration of new functionalities.",
+          "url": "http://arxiv.org/abs/2608.02254v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.02254v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.02254v1/images/overview.png",
+          "figure_caption": "Figure 1. System overview of Homebot . User-facing channels route normalized messages through the message bus to the agent runtime, which constructs context, invokes tools and skills, and retrieves or persists channel-scoped session history.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.02518v1",
+          "title": "Magnet: Detecting Cross-Session AI Misuse Through Capability Accumulation",
+          "authors": [
+            "Natalie Isak",
+            "Matthew Dressman"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CY"
+          ],
+          "abstract": "This paper introduces \"Magnet,\" a method for detecting AI misuse that spans multiple independent agent sessions. Its core idea is to track the accumulation of capabilities an attacker builds across these sessions, which are otherwise invisible to single-session detection systems. Magnet's contribution lies in identifying this novel cross-session attack vector and providing a mechanism to counter it by recognizing the emergent, harmful potential of sequentially executed innocuous actions.",
+          "url": "http://arxiv.org/abs/2608.02518v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.02518v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.02518v1/images/image1.png",
+          "figure_caption": "The data generation pipeline. An expert-authored decomposition of target objective T T into sub-capabilities c 1 , … , c n c_{1},\\( \\ldots \\),c_{n} is dispatched sequentially, with each subtask handled by a freshly instantiated assistant–user agent pair that iterates until the subtask produces a completed artifact.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.02409v1",
+          "title": "MonitrLLM: A Community-Centered Evaluation Infrastructure for Large Language Models",
+          "authors": [
+            "Victor Ojewale",
+            "Ro Encarnación",
+            "Suresh Venkatasubramanian",
+            "Danaé Metaxa"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CY"
+          ],
+          "abstract": "MonitrLLM is an open-source infrastructure that bridges a critical gap in LLM evaluation by linking full conversation transcripts with user-defined task intents and outcome assessments. Its core method treats these three elements as primary evaluative signals, enabling a more holistic understanding of LLM performance. The contribution lies in providing a community-centered approach to evaluate LLMs based on real-world user interactions and their success in achieving user-defined goals.",
+          "url": "http://arxiv.org/abs/2608.02409v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.02409v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.02409v1/update.png",
+          "figure_caption": "The MonitrLLM browser extension where users submit an audit report through a five-field form capturing interaction description, task purpose, outcome assessment, conversation share link, and a 1-to-5 satisfaction rating.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.02287v1",
+          "title": "SKT: Skill-Use Training at Scale via Verified Synthetic Data Generation",
+          "authors": [
+            "Zelin Tan",
+            "Yiqun Zhang",
+            "Hao Li",
+            "Zhiyao Cui",
+            "Hejia Geng"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces SKT, a method for generating verified synthetic data to train language-model agents on how to effectively use skills. SKT constructs tasks and executable trajectories by selecting skill combinations, synthesizing them with rule-based and agent-based verification, and retaining only successful executions. This approach significantly improves agent skill-use capabilities and enables the creation of a new benchmark, SkillEval, for evaluating these abilities.",
+          "url": "http://arxiv.org/abs/2608.02287v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.02287v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.02287v1/x1.png",
+          "figure_caption": "SKT is a multi-agent-based data synthesis pipeline for skill-use tasks and trajectories. Training on data synthesized by SKT can effectively improve agents’ ability to use Agent Skills.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.02499v1",
+          "title": "SWE-Touch: Benchmarking Coding Agents When Users Touch the Code",
+          "authors": [
+            "Yuqiao Tan",
+            "Jinxiang Meng",
+            "Fangyu Lei",
+            "Minzheng Wang",
+            "Shizhu He"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.SE"
+          ],
+          "abstract": "This paper introduces SWE-Touch, a new benchmark for evaluating coding agents in collaborative environments where users can modify code. Its core method involves introducing \"Counter-Edits\" – plausible code changes that hinder task completion – to test how agents react to real-time user modifications. SWE-Touch's contribution is to provide a more realistic assessment of coding agents by simulating shared development workflows, revealing that these agents struggle with unexpected code alterations.",
+          "url": "http://arxiv.org/abs/2608.02499v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.02499v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.02302v1",
+          "title": "Trajectories That Segment Themselves: Agent-Declared Boundaries as a Training Unit",
+          "authors": [
+            "Jingxi Wei"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.SE"
+          ],
+          "abstract": "This paper proposes a novel method for training AI agents by having them self-segment their trajectories into meaningful phases during generation. The core idea is to use \"declarative contracts\" where the agent declares its own boundaries based on falsifiable causal hypotheses. This approach generates richer training data, including \"wrong-cause-then-correction\" transitions and audit supervision from discarded regions, which are typically lost in standard episodic training.",
+          "url": "http://arxiv.org/abs/2608.02302v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.02302v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.02302v1/x1.png",
+          "figure_caption": "A code-blind reader finds boundaries; a mechanical rule with the same access does not. Boundaries matched out of 40, against what the same number of randomly placed marks would match on the same trajectories. Neither the sparse nor the permissive test-event rule beats its own chance baseline, at either end of the sweep. No observer is told how many boundaries to expect.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.02515v1",
+          "title": "LiveMem: Maintaining Memory State Continuity in Long-Running LLM Inference",
+          "authors": [
+            "Zhichen Liu",
+            "Ruihan Sun",
+            "Hengjie Yang",
+            "Zipeng Wu",
+            "Zhaohan Chen"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "LiveMem addresses the challenge of maintaining long-term memory for LLMs by introducing a novel \"state continuity under context turnover\" mechanism. Its core method augments a standard LLM with a persistent, intrinsic memory state that preserves historical information independently of the active context window. This allows LLMs to carry computation forward across extended interactions, enabling them to retain knowledge and perform effectively even as the immediate context changes.",
+          "url": "http://arxiv.org/abs/2608.02515v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.02515v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.02515v1/x1.png",
+          "figure_caption": "LiveMem enables stateful continual inference under context turnover. A bounded working context provides precise short-term access, while a fixed-capacity recurrent memory state preserves information across the model lifecycle.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2608.02508v1",
+          "title": "RoMeRL: Balancing Feedback Coverage and the Memory-Reward Trap in Self-Evolving Agent Memory via Reduced-Order Utility States",
+          "authors": [
+            "Yi Yang",
+            "Zhennan Chen",
+            "Yihong Zhuang",
+            "Tiehan Fan",
+            "Yinan Chen"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces RoMeRL, a novel method for self-evolving LLM agent memory. RoMeRL addresses the challenges of feedback dispersion and the memory-reward trap by representing memory utilities with a fixed-dimensional state factorized by outcome polarity and memory dynamics. This approach concentrates feedback, leading to more effective learning and avoiding misleading utility updates for irrelevant experiences.",
+          "url": "http://arxiv.org/abs/2608.02508v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.02508v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.02508v1/x1.png",
+          "figure_caption": "Memory-reward trap : Stronger exploration retrieves more low-access-count memories, including weakly relevant, noisy, outdated, or failed experiences. When such a memory appears in a successful episode, the shared trajectory reward can promote it despite no causal contribution. Exploration therefore increases feedback coverage but also raises the risk of reward misattribution.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        }
+      ],
+      "meta": {
+        "papers_fetched": 100,
+        "papers_after_keyword_filter": 53,
+        "papers_after_llm_filter": 41,
+        "count": 20
+      }
+    },
+    {
+      "key": "hacker_news",
+      "payload_key": "hacker_news",
+      "title": "Hacker News",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": 49161518,
+          "title": "LLMs reward expertise",
+          "url": "https://www.seangoedecke.com/llms-reward-expertise/",
+          "score": 962,
+          "created_at": "2026-08-03T21:13:53Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49161518",
+          "summary": "Large Language Models (LLMs) are more likely to provide accurate and helpful responses when prompted by users with domain expertise."
+        },
+        {
+          "id": 49154332,
+          "title": "SQLite Critical CVEs or LLM Slop?",
+          "url": "https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/",
+          "score": 713,
+          "created_at": "2026-08-03T11:28:54Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49154332",
+          "summary": "This article questions whether recently disclosed SQLite vulnerabilities are truly critical or if they are exaggerated by AI-generated content, urging caution and verification."
+        },
+        {
+          "id": 49158581,
+          "title": "Smaller, faster, safer: running Kimi and GLM at scale",
+          "url": "https://blog.cloudflare.com/smaller-faster-safer-models/",
+          "score": 221,
+          "created_at": "2026-08-03T17:08:46Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49158581",
+          "summary": "Cloudflare is running large language models like Kimi and GLM more efficiently and securely at scale by optimizing their size and inference speed."
+        },
+        {
+          "id": 49154228,
+          "title": "AirLLM 70B inference with single 4GB GPU",
+          "url": "https://github.com/lyogavin/airllm",
+          "score": 220,
+          "created_at": "2026-08-03T11:15:48Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49154228",
+          "summary": "AirLLM enables 70B parameter LLM inference on a single 4GB GPU by optimizing memory usage and computation."
+        },
+        {
+          "id": 49156683,
+          "title": "Ask HN: Who is hiring? (August 2026)",
+          "url": "",
+          "score": 178,
+          "created_at": "2026-08-03T15:00:54Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49156683",
+          "summary": "This Hacker News thread is a monthly \"Ask HN\" post where individuals seeking employment can share their profiles and companies can announce open positions for August 2026."
+        },
+        {
+          "id": 49160699,
+          "title": "AI's debt binge can't last, hidden borrowing reaches $1.65T",
+          "url": "https://fortune.com/2026/07/31/ai-debt-hypescalers-capex-capital-spending-hidden-borrowing-bond-issuance/",
+          "score": 130,
+          "created_at": "2026-08-03T20:02:21Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49160699",
+          "summary": "AI companies are accumulating massive hidden debt, exceeding $1.65 trillion, as their capital spending surge is unsustainable."
+        },
+        {
+          "id": 49156682,
+          "title": "Ask HN: Who wants to be hired? (August 2026)",
+          "url": "",
+          "score": 118,
+          "created_at": "2026-08-03T15:00:54Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49156682",
+          "summary": "This Hacker News thread is a monthly opportunity for individuals to post their resumes and for companies to announce job openings, facilitating hiring in the tech industry."
+        },
+        {
+          "id": 49154127,
+          "title": "Show HN: Nightcrawler – A local AI pentesting agent running on a smartphone",
+          "url": "https://github.com/garagehq/nightcrawler/",
+          "score": 110,
+          "created_at": "2026-08-03T11:06:15Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49154127",
+          "summary": "Nightcrawler is a new open-source AI agent that runs on smartphones, enabling local penetration testing and security assessments directly from a mobile device."
+        }
+      ],
+      "meta": {
+        "count": 8
+      }
+    },
+    {
+      "key": "github_trending",
+      "payload_key": "github_trending",
+      "title": "GitHub Trending",
+      "icon": "⭐",
+      "items": [
+        {
+          "full_name": "lyogavin/airllm",
+          "url": "https://github.com/lyogavin/airllm",
+          "description": "AirLLM 70B inference with single 4GB GPU",
+          "stars_today": 1085,
+          "total_stars": 27857,
+          "language": "Jupyter Notebook",
+          "topics": [],
+          "summary": "AirLLM enables efficient inference of the 70B LLM on a single 4GB GPU by optimizing memory usage and computational resources."
+        },
+        {
+          "full_name": "zhaoxuya520/reverse-skill",
+          "url": "https://github.com/zhaoxuya520/reverse-skill",
+          "description": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端",
+          "stars_today": 2446,
+          "total_stars": 16899,
+          "language": "PowerShell",
+          "topics": [],
+          "summary": "This repository offers an AI-powered skill router for reverse engineering, penetration testing, and security research, featuring on-demand toolchain bootstrapping and a self-evolving knowledge base, compatible with various AI coding clients."
+        },
+        {
+          "full_name": "firecrawl/pdf-inspector",
+          "url": "https://github.com/firecrawl/pdf-inspector",
+          "description": "Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based PDFs to enable smart routing decisions.",
+          "stars_today": 1699,
+          "total_stars": 9110,
+          "language": "Rust",
+          "topics": [],
+          "summary": "This Rust library rapidly inspects, classifies, and extracts text from PDFs, intelligently distinguishing scanned from text-based documents to enable smart routing."
+        },
+        {
+          "full_name": "esengine/DeepSeek-Reasonix",
+          "url": "https://github.com/esengine/DeepSeek-Reasonix",
+          "description": "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
+          "stars_today": 883,
+          "total_stars": 30410,
+          "language": "Go",
+          "topics": [],
+          "summary": "DeepSeek-Reasonix is a DeepSeek-native AI coding agent for the terminal, designed for continuous operation with a focus on prefix-cache stability."
+        },
+        {
+          "full_name": "TencentCloud/TencentDB-Agent-Memory",
+          "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+          "description": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
+          "stars_today": 1090,
+          "total_stars": 12640,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "TencentDB Agent Memory acts as a team-level AI agent memory hub, transforming various data into four reusable assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) for governed sharing and cross-agent utilization."
+        },
+        {
+          "full_name": "microsoft/AI-For-Beginners",
+          "url": "https://github.com/microsoft/AI-For-Beginners",
+          "description": "12 Weeks, 24 Lessons, AI for All!",
+          "stars_today": 1902,
+          "total_stars": 61403,
+          "language": "Jupyter Notebook",
+          "topics": [],
+          "summary": "This repository offers a comprehensive, 12-week, 24-lesson curriculum designed to make Artificial Intelligence accessible to everyone, regardless of their prior technical background."
+        },
+        {
+          "full_name": "microsoft/generative-ai-for-beginners",
+          "url": "https://github.com/microsoft/generative-ai-for-beginners",
+          "description": "21 Lessons, Get Started Building with Generative AI",
+          "stars_today": 775,
+          "total_stars": 115960,
+          "language": "Jupyter Notebook",
+          "topics": [],
+          "summary": "This repository provides a 21-lesson curriculum designed to help beginners understand and start building with generative AI."
+        },
+        {
+          "full_name": "donnemartin/system-design-primer",
+          "url": "https://github.com/donnemartin/system-design-primer",
+          "description": "Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.",
+          "stars_today": 237,
+          "total_stars": 360845,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository provides a comprehensive guide and resources, including Anki flashcards, to learn how to design large-scale systems and prepare for system design interviews."
+        },
+        {
+          "full_name": "antirez/ds4",
+          "url": "https://github.com/antirez/ds4",
+          "description": "DeepSeek 4 Flash and PRO local inference engine for Metal, CUDA and ROCm",
+          "stars_today": 384,
+          "total_stars": 20494,
+          "language": "C",
+          "topics": [],
+          "summary": "This repository provides a local inference engine for DeepSeek 4 models, supporting Metal, CUDA, and ROCm hardware for efficient AI model execution."
+        }
+      ],
+      "meta": {
+        "count": 9
+      }
+    }
+  ],
+  "meta": {
+    "papers_fetched": 100,
+    "papers_after_keyword_filter": 53,
+    "papers_after_llm_filter": 41,
+    "llm_model": "google/gemini-2.5-flash-lite",
+    "scoring_model": "google/gemini-2.5-flash-lite",
+    "summarization_model": "google/gemini-2.5-flash-lite",
+    "duration_seconds": 78
+  },
+  "quote_of_day": [
+    {
+      "quote": "The family is one of nature's masterpieces.",
+      "author": "George Santayana",
+      "category": "family"
+    }
+  ],
+  "hitokoto": [],
+  "arxiv": [
+    {
+      "id": "2608.02407v1",
+      "title": "Antares: Foundation Models for Agentic Vulnerability Localization",
+      "authors": [
+        "Supriti Vijay",
+        "Aman Priyanshu",
+        "Didier Chapoteau",
+        "Arthur Goldblatt",
+        "Jianliang He"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "Antares is a family of compact foundation models designed for agentic vulnerability localization in software. Its core method involves a two-stage training pipeline combining supervised fine-tuning with reinforcement learning, enabling it to reason over codebases and identify vulnerabilities. Antares' key contribution is achieving state-of-the-art performance comparable to much larger models, while offering efficient, low-cost local inference.",
+      "url": "http://arxiv.org/abs/2608.02407v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02407v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.02407v1/content/graphics/Antares_Graphs.png",
+      "figure_caption": "F1 score versus model size on Vulnerability Localization Benchmark (VLoc Bench) [ manuscript-vlb ] , a repository-scale benchmark comprising 500 tasks across 290 unique real-world repositories, where models receive only a CWE category description and must identify vulnerable implementation files in real codebases. Antares models form the Pareto frontier among evaluated models, achieving the strongest localization quality at small parameter scales. Antares-3B reaches near-frontier closed-source performance while remaining orders of magnitude smaller than GPT-5.5 and Gemini-family baselines.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02464v1",
+      "title": "Real-Time Detection and Repair of LLM Agent Failures",
+      "authors": [
+        "Sunny Dubey"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "abstract": "This paper proposes a cost-effective method for detecting LLM agent failures using observable step telemetry, avoiding expensive step-by-step validation. Their core contribution is a one-class echo-state-network ensemble with CUSUM alarms that can detect a significant portion of failures with a low false-alarm rate, demonstrating strong performance and transferability across different models and datasets.",
+      "url": "http://arxiv.org/abs/2608.02464v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02464v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.02464v1/fig1_score_traces_real.png",
+      "figure_caption": "Real agent traces ( ollama7b : qwen2.5:7b against real tools). One-class CUSUM score streams per failure class; dashed = threshold at the 5% validation FA budget, dotted = verified injection onset. The healthy run stays two orders of magnitude below the line, and every injected class — context corruption, goal drift , looping and tool cascade — alarms one step after onset. The sixth panel is grounding loss , and it is different in kind: fabrication cannot be injected into a live run, so this episode is a genuine one from the organic (non-injected) corpus, scored against that corpus’s own healthy null. The CUSUM stays flat – a fabricated figure perturbs no behavioural channel – and the class is caught instead by the deterministic grounding verifier. That is the blind spot the verifier exists to cover, shown rather than asserted. Note the y y axis is symlog: real streams span twelve orders of magnitude, because the CUSUM accumulates multiplicatively once a failure takes hold.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02442v1",
+      "title": "Right Answer, Wrong Method: Shortcut Hacking Misleads the Evaluation of LLM Reasoning on Frontier Science Benchmarks",
+      "authors": [
+        "Xuan Ren",
+        "Weiqi Zhai",
+        "Tianle Pu",
+        "Yihua Zhu",
+        "Yihua Zhu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces \"Solution Hacking,\" a phenomenon where LLMs achieve correct answers on scientific reasoning benchmarks through invalid shortcuts rather than genuine reasoning. The authors demonstrate that this hacking significantly inflates accuracy scores, especially on difficult problems, and propose expert-inspired strategies to mitigate it. Their contribution lies in highlighting a critical flaw in current LLM evaluation and offering methods to ensure models are truly reasoning, not just guessing or manipulating answers.",
+      "url": "http://arxiv.org/abs/2608.02442v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02442v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.02442v1/x1.png",
+      "figure_caption": "Three solution paths for the same quadratic-equation problem. The upper path represents the expected reasoning process, in which the LLM exercises the targeted reasoning capability and derives the correct answer. The middle path represents a reasoning error, where an invalid derivation leads to an incorrect answer. The lower path represents Solution Hacking, where the LLM obtains the correct answer through enumeration, guessing, search, or answer-first verification without completing the targeted derivation. Traditional evaluation can distinguish the upper and middle paths, but may fail to distinguish the upper and lower paths because both yield the correct final answer.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02356v1",
+      "title": "SkillTrace: Traversing a Query-Skill Graph for Composable LLM Agents",
+      "authors": [
+        "Yue Yao",
+        "Shengyuan Wang",
+        "Xin Chen",
+        "Minke Zhang",
+        "Jia He"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "SkillTrace addresses the challenge of composing reusable skills for LLM agents by modeling skill relationships as a three-level graph. It organizes user queries semantically, matches them to skills, and propagates dependencies to find executable compositions. This graph-based approach achieves state-of-the-art performance and demonstrates robustness across different LLM backbones.",
+      "url": "http://arxiv.org/abs/2608.02356v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02356v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.02356v1/x1.png",
+      "figure_caption": "Motivation. We argue that independent skill retrieval may overlook skill dependencies, while SkillTrace connects atomic queries and skills through a query–skill graph, enabling dependency-aware traversal to retrieve a composable skill set.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02352v1",
+      "title": "Qwen-CUA: Native Computer Use for (almost) Everything",
+      "authors": [
+        "Dunjie Lu",
+        "Shuai Bai",
+        "Tianyi Bai",
+        "Sicheng Fan",
+        "Chang Gao"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "Qwen-CUA is a native computer-use agent that operates software solely through screenshots and keyboard/mouse inputs, avoiding direct access to underlying code or APIs. Its core method involves a novel scaffold for managing long-term visual history and a large-scale training infrastructure to learn from diverse, verifiable tasks. The contribution lies in enabling agents to perform a wide range of computer tasks natively, mimicking human interaction.",
+      "url": "http://arxiv.org/abs/2608.02352v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02352v1",
+      "score": 9.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2608.02602v1",
+      "title": "AURORA-LM: Autoencoding Unified Representation for Continuous-Latent Diffusion Language Modeling",
+      "authors": [
+        "Jiajun Liang",
+        "Yucheng Liao",
+        "Yukang Cao",
+        "Jiazhe Wei",
+        "Ken Li"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "AURORA-LM introduces a novel approach to continuous-latent diffusion language modeling by decoupling representation learning from distribution modeling. It constructs a high-capacity, decodable text latent space using a query-based encoder-decoder and then trains a diffusion transformer to directly learn the distribution of this latent representation. This method preserves token-level fidelity while enabling continuous generation, a significant contribution to text generation that traditionally relies on discrete tokens.",
+      "url": "http://arxiv.org/abs/2608.02602v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02602v1",
+      "score": 9.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2608.02553v1",
+      "title": "A Taxonomy of Cognitive Capability Gaps in Generative and Agentic AI",
+      "authors": [
+        "Taye Akinrele",
+        "Sindhuja Penchala",
+        "Noorbakhsh Amiri Golilarz",
+        "Sudip Mittal",
+        "Shahram Rahimi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper identifies and categorizes key cognitive capability gaps hindering the development of advanced Cognitive AI, moving beyond simple generation and task execution. It proposes a taxonomy based on five dimensions (state modeling, autonomy, self-monitoring, interaction, and learning) to organize existing research, highlight limitations, and point to future challenges. The core contribution is a structured understanding of these gaps, leading to a conceptual architecture for Adaptive Cognitive Intelligence.",
+      "url": "http://arxiv.org/abs/2608.02553v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02553v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02553v1/x1.png",
+      "figure_caption": "Conceptual evolution from Generative AI to Agentic AI and Cognitive AI, highlighting the additional cognitive capabilities introduced at each stage and the closed-loop perception–reasoning–action cycle underlying sustained cognitive behavior.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02345v1",
+      "title": "Can AI Agents Simulate A/B Test Outcomes? A Validation Framework for Agentic Experimentation",
+      "authors": [
+        "Stefan Hut",
+        "Lorenzo Masoero"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "stat.AP"
+      ],
+      "abstract": "This paper proposes a framework called Simulated Randomized Controlled Trial (S-RCT) to assess if AI agents can accurately predict A/B test outcomes. The core method involves decomposing simulation errors into agent approximation and subsampling components, allowing for targeted improvements. The contribution is a validated approach that, while currently showing directional accuracy, demonstrates the potential for AI agents to pre-vet A/B test treatments, saving real-world resources.",
+      "url": "http://arxiv.org/abs/2608.02345v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02345v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02345v1/x1.png",
+      "figure_caption": "Principled subsampling: (a) efficiency gain from Neyman allocation grows with stratum variance heterogeneity; (b) for a stylized revenue metric, Neyman allocation achieves a given RMSE with fewer agents; (c) simulation pre-screens a treatment across subgroups, flagging the harmed segment before live deployment.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02397v1",
+      "title": "Can Foundation Models Hear What Made That Sound? A Tiered Benchmark of Audio-Language Models and Traditional Classifiers for Closed-Set Sound Source Identification",
+      "authors": [
+        "Sajjad Abdoli",
+        "Ghassan Al-Sumaidaee",
+        "Ahmad ElShiekh",
+        "Ahmed Rashad"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SD"
+      ],
+      "abstract": "This paper benchmarks various audio classification models, including foundation models and traditional classifiers, on a sound source identification task. It introduces a tiered evaluation approach to account for differing model architectures and output scoring. The contribution lies in providing a comprehensive comparison and identifying that some zero-shot and traditional models can rival or surpass specialized closed-set foundation models in specific scenarios.",
+      "url": "http://arxiv.org/abs/2608.02397v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02397v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02397v1/figures/cm_best_category_recall.png",
+      "figure_caption": "Category-level confusion matrix (row-normalized recall) for gemini-3.1-pro-preview , the best-performing Tier A model. The full 23-class fine-grained matrix, where the confusions above are visible in detail, is given in Appendix D (Figure 6 ).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02391v1",
+      "title": "Cooperative Coevolution for Resource-Constrained Agentic LLM Post-Training",
+      "authors": [
+        "Zhiyuan Wang",
+        "Shengcai Liu",
+        "Jiahao Wu",
+        "Ning Lu",
+        "Hui Ouyang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces Cooperative Parameter-subspace Evolution Strategy (CoPES) to address the memory and computational demands of post-training tool-using LLM agents. CoPES decomposes the LLM's parameters into subspaces and searches them cooperatively, significantly improving optimization efficiency. This method achieves high performance with limited GPU resources, recovering 92% of a gradient-based method's performance within the same budget.",
+      "url": "http://arxiv.org/abs/2608.02391v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02391v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02391v1/x1.png",
+      "figure_caption": "Overview of CoPES. At each training step, the model parameters are randomly partitioned into K K disjoint subspaces, and N / K N/K perturbations are evaluated within each subspace under a shared full-model context. Rewards from all subspaces are jointly standardized, and the resulting subspace estimates are composed into a full-parameter update.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02470v1",
+      "title": "Grounding Agentic VLMs with Dedicated Segmentation for Fine-Grained Vehicle Damage Assessment",
+      "authors": [
+        "Vishwajeet Shivaji Hogale",
+        "Anjali Pai",
+        "Nitya Ravi"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "This paper addresses the spatial grounding limitations of Vision-Language Models (VLMs) in fine-grained vehicle damage assessment. Their core method, TinyDamage, separates spatial localization (handled by a dedicated segmentation model) from semantic reasoning (performed by a VLM). This hybrid approach significantly improves the accuracy and reliability of identifying and localizing subtle damages like scratches, overcoming the VLM's inherent weaknesses in precise spatial understanding.",
+      "url": "http://arxiv.org/abs/2608.02470v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02470v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02470v1/x1.png",
+      "figure_caption": "System architecture. Top: multi-task segmentation model with swappable backbone (U-Net, YOLOv8, Mask2Former), FPN encoder, contrastive projection head, gradient-aware boundary module, and auxiliary classifier. Middle: 7-node LangGraph pipeline grounding VLM generation in segmentation output. Bottom: swappable VLM providers and observability infrastructure.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02276v1",
+      "title": "Harness-R1: Learning to Edit Executable Runtime Harnesses from Agent Failure Trajectories",
+      "authors": [
+        "Shuai Shao",
+        "Kangning Zhang",
+        "Qingyao Li",
+        "Shijian Wang",
+        "Hao Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "Harness-R1 learns to automatically edit an agent's runtime harness by analyzing failure trajectories. It uses a dedicated \"harness engineer\" trained with reinforcement learning to generate executable patches that improve task success. This approach allows for lifecycle-wide harness improvement beyond just model weight updates.",
+      "url": "http://arxiv.org/abs/2608.02276v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02276v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02276v1/x1.png",
+      "figure_caption": "Matched-baseline reward changes across three benchmarks; diamonds denote the equal-weight average.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02254v1",
+      "title": "Homebot: A Personal AI Agent for Conversational Home Assistance and Automation",
+      "authors": [
+        "Shengyuan Ye",
+        "Yixin Zhang",
+        "Han Liang",
+        "Liekang Zeng",
+        "Jiangsu Du"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "Homebot is a locally deployable AI agent that provides conversational home assistance and automation. Its core method involves a shared runtime that integrates language model responses with registered tools and skills, processing both voice and instant messaging requests. The key contribution is a flexible and customizable system for hands-free home control, with distinct handling for voice and text interactions and clear interfaces for easy integration of new functionalities.",
+      "url": "http://arxiv.org/abs/2608.02254v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02254v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02254v1/images/overview.png",
+      "figure_caption": "Figure 1. System overview of Homebot . User-facing channels route normalized messages through the message bus to the agent runtime, which constructs context, invokes tools and skills, and retrieves or persists channel-scoped session history.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02518v1",
+      "title": "Magnet: Detecting Cross-Session AI Misuse Through Capability Accumulation",
+      "authors": [
+        "Natalie Isak",
+        "Matthew Dressman"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CY"
+      ],
+      "abstract": "This paper introduces \"Magnet,\" a method for detecting AI misuse that spans multiple independent agent sessions. Its core idea is to track the accumulation of capabilities an attacker builds across these sessions, which are otherwise invisible to single-session detection systems. Magnet's contribution lies in identifying this novel cross-session attack vector and providing a mechanism to counter it by recognizing the emergent, harmful potential of sequentially executed innocuous actions.",
+      "url": "http://arxiv.org/abs/2608.02518v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02518v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02518v1/images/image1.png",
+      "figure_caption": "The data generation pipeline. An expert-authored decomposition of target objective T T into sub-capabilities c 1 , … , c n c_{1},\\( \\ldots \\),c_{n} is dispatched sequentially, with each subtask handled by a freshly instantiated assistant–user agent pair that iterates until the subtask produces a completed artifact.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02409v1",
+      "title": "MonitrLLM: A Community-Centered Evaluation Infrastructure for Large Language Models",
+      "authors": [
+        "Victor Ojewale",
+        "Ro Encarnación",
+        "Suresh Venkatasubramanian",
+        "Danaé Metaxa"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CY"
+      ],
+      "abstract": "MonitrLLM is an open-source infrastructure that bridges a critical gap in LLM evaluation by linking full conversation transcripts with user-defined task intents and outcome assessments. Its core method treats these three elements as primary evaluative signals, enabling a more holistic understanding of LLM performance. The contribution lies in providing a community-centered approach to evaluate LLMs based on real-world user interactions and their success in achieving user-defined goals.",
+      "url": "http://arxiv.org/abs/2608.02409v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02409v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02409v1/update.png",
+      "figure_caption": "The MonitrLLM browser extension where users submit an audit report through a five-field form capturing interaction description, task purpose, outcome assessment, conversation share link, and a 1-to-5 satisfaction rating.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02287v1",
+      "title": "SKT: Skill-Use Training at Scale via Verified Synthetic Data Generation",
+      "authors": [
+        "Zelin Tan",
+        "Yiqun Zhang",
+        "Hao Li",
+        "Zhiyao Cui",
+        "Hejia Geng"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces SKT, a method for generating verified synthetic data to train language-model agents on how to effectively use skills. SKT constructs tasks and executable trajectories by selecting skill combinations, synthesizing them with rule-based and agent-based verification, and retaining only successful executions. This approach significantly improves agent skill-use capabilities and enables the creation of a new benchmark, SkillEval, for evaluating these abilities.",
+      "url": "http://arxiv.org/abs/2608.02287v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02287v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02287v1/x1.png",
+      "figure_caption": "SKT is a multi-agent-based data synthesis pipeline for skill-use tasks and trajectories. Training on data synthesized by SKT can effectively improve agents’ ability to use Agent Skills.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02499v1",
+      "title": "SWE-Touch: Benchmarking Coding Agents When Users Touch the Code",
+      "authors": [
+        "Yuqiao Tan",
+        "Jinxiang Meng",
+        "Fangyu Lei",
+        "Minzheng Wang",
+        "Shizhu He"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces SWE-Touch, a new benchmark for evaluating coding agents in collaborative environments where users can modify code. Its core method involves introducing \"Counter-Edits\" – plausible code changes that hinder task completion – to test how agents react to real-time user modifications. SWE-Touch's contribution is to provide a more realistic assessment of coding agents by simulating shared development workflows, revealing that these agents struggle with unexpected code alterations.",
+      "url": "http://arxiv.org/abs/2608.02499v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02499v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02302v1",
+      "title": "Trajectories That Segment Themselves: Agent-Declared Boundaries as a Training Unit",
+      "authors": [
+        "Jingxi Wei"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "abstract": "This paper proposes a novel method for training AI agents by having them self-segment their trajectories into meaningful phases during generation. The core idea is to use \"declarative contracts\" where the agent declares its own boundaries based on falsifiable causal hypotheses. This approach generates richer training data, including \"wrong-cause-then-correction\" transitions and audit supervision from discarded regions, which are typically lost in standard episodic training.",
+      "url": "http://arxiv.org/abs/2608.02302v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02302v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02302v1/x1.png",
+      "figure_caption": "A code-blind reader finds boundaries; a mechanical rule with the same access does not. Boundaries matched out of 40, against what the same number of randomly placed marks would match on the same trajectories. Neither the sparse nor the permissive test-event rule beats its own chance baseline, at either end of the sweep. No observer is told how many boundaries to expect.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02515v1",
+      "title": "LiveMem: Maintaining Memory State Continuity in Long-Running LLM Inference",
+      "authors": [
+        "Zhichen Liu",
+        "Ruihan Sun",
+        "Hengjie Yang",
+        "Zipeng Wu",
+        "Zhaohan Chen"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "LiveMem addresses the challenge of maintaining long-term memory for LLMs by introducing a novel \"state continuity under context turnover\" mechanism. Its core method augments a standard LLM with a persistent, intrinsic memory state that preserves historical information independently of the active context window. This allows LLMs to carry computation forward across extended interactions, enabling them to retain knowledge and perform effectively even as the immediate context changes.",
+      "url": "http://arxiv.org/abs/2608.02515v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02515v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02515v1/x1.png",
+      "figure_caption": "LiveMem enables stateful continual inference under context turnover. A bounded working context provides precise short-term access, while a fixed-capacity recurrent memory state preserves information across the model lifecycle.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2608.02508v1",
+      "title": "RoMeRL: Balancing Feedback Coverage and the Memory-Reward Trap in Self-Evolving Agent Memory via Reduced-Order Utility States",
+      "authors": [
+        "Yi Yang",
+        "Zhennan Chen",
+        "Yihong Zhuang",
+        "Tiehan Fan",
+        "Yinan Chen"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces RoMeRL, a novel method for self-evolving LLM agent memory. RoMeRL addresses the challenges of feedback dispersion and the memory-reward trap by representing memory utilities with a fixed-dimensional state factorized by outcome polarity and memory dynamics. This approach concentrates feedback, leading to more effective learning and avoiding misleading utility updates for irrelevant experiences.",
+      "url": "http://arxiv.org/abs/2608.02508v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02508v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02508v1/x1.png",
+      "figure_caption": "Memory-reward trap : Stronger exploration retrieves more low-access-count memories, including weakly relevant, noisy, outdated, or failed experiences. When such a memory appears in a successful episode, the shared trajectory reward can promote it despite no causal contribution. Exploration therefore increases feedback coverage but also raises the risk of reward misattribution.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    }
+  ],
+  "papers": [
+    {
+      "id": "2608.02407v1",
+      "title": "Antares: Foundation Models for Agentic Vulnerability Localization",
+      "authors": [
+        "Supriti Vijay",
+        "Aman Priyanshu",
+        "Didier Chapoteau",
+        "Arthur Goldblatt",
+        "Jianliang He"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "Antares is a family of compact foundation models designed for agentic vulnerability localization in software. Its core method involves a two-stage training pipeline combining supervised fine-tuning with reinforcement learning, enabling it to reason over codebases and identify vulnerabilities. Antares' key contribution is achieving state-of-the-art performance comparable to much larger models, while offering efficient, low-cost local inference.",
+      "url": "http://arxiv.org/abs/2608.02407v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02407v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.02407v1/content/graphics/Antares_Graphs.png",
+      "figure_caption": "F1 score versus model size on Vulnerability Localization Benchmark (VLoc Bench) [ manuscript-vlb ] , a repository-scale benchmark comprising 500 tasks across 290 unique real-world repositories, where models receive only a CWE category description and must identify vulnerable implementation files in real codebases. Antares models form the Pareto frontier among evaluated models, achieving the strongest localization quality at small parameter scales. Antares-3B reaches near-frontier closed-source performance while remaining orders of magnitude smaller than GPT-5.5 and Gemini-family baselines.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02464v1",
+      "title": "Real-Time Detection and Repair of LLM Agent Failures",
+      "authors": [
+        "Sunny Dubey"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "abstract": "This paper proposes a cost-effective method for detecting LLM agent failures using observable step telemetry, avoiding expensive step-by-step validation. Their core contribution is a one-class echo-state-network ensemble with CUSUM alarms that can detect a significant portion of failures with a low false-alarm rate, demonstrating strong performance and transferability across different models and datasets.",
+      "url": "http://arxiv.org/abs/2608.02464v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02464v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.02464v1/fig1_score_traces_real.png",
+      "figure_caption": "Real agent traces ( ollama7b : qwen2.5:7b against real tools). One-class CUSUM score streams per failure class; dashed = threshold at the 5% validation FA budget, dotted = verified injection onset. The healthy run stays two orders of magnitude below the line, and every injected class — context corruption, goal drift , looping and tool cascade — alarms one step after onset. The sixth panel is grounding loss , and it is different in kind: fabrication cannot be injected into a live run, so this episode is a genuine one from the organic (non-injected) corpus, scored against that corpus’s own healthy null. The CUSUM stays flat – a fabricated figure perturbs no behavioural channel – and the class is caught instead by the deterministic grounding verifier. That is the blind spot the verifier exists to cover, shown rather than asserted. Note the y y axis is symlog: real streams span twelve orders of magnitude, because the CUSUM accumulates multiplicatively once a failure takes hold.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02442v1",
+      "title": "Right Answer, Wrong Method: Shortcut Hacking Misleads the Evaluation of LLM Reasoning on Frontier Science Benchmarks",
+      "authors": [
+        "Xuan Ren",
+        "Weiqi Zhai",
+        "Tianle Pu",
+        "Yihua Zhu",
+        "Yihua Zhu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces \"Solution Hacking,\" a phenomenon where LLMs achieve correct answers on scientific reasoning benchmarks through invalid shortcuts rather than genuine reasoning. The authors demonstrate that this hacking significantly inflates accuracy scores, especially on difficult problems, and propose expert-inspired strategies to mitigate it. Their contribution lies in highlighting a critical flaw in current LLM evaluation and offering methods to ensure models are truly reasoning, not just guessing or manipulating answers.",
+      "url": "http://arxiv.org/abs/2608.02442v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02442v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.02442v1/x1.png",
+      "figure_caption": "Three solution paths for the same quadratic-equation problem. The upper path represents the expected reasoning process, in which the LLM exercises the targeted reasoning capability and derives the correct answer. The middle path represents a reasoning error, where an invalid derivation leads to an incorrect answer. The lower path represents Solution Hacking, where the LLM obtains the correct answer through enumeration, guessing, search, or answer-first verification without completing the targeted derivation. Traditional evaluation can distinguish the upper and middle paths, but may fail to distinguish the upper and lower paths because both yield the correct final answer.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02356v1",
+      "title": "SkillTrace: Traversing a Query-Skill Graph for Composable LLM Agents",
+      "authors": [
+        "Yue Yao",
+        "Shengyuan Wang",
+        "Xin Chen",
+        "Minke Zhang",
+        "Jia He"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "SkillTrace addresses the challenge of composing reusable skills for LLM agents by modeling skill relationships as a three-level graph. It organizes user queries semantically, matches them to skills, and propagates dependencies to find executable compositions. This graph-based approach achieves state-of-the-art performance and demonstrates robustness across different LLM backbones.",
+      "url": "http://arxiv.org/abs/2608.02356v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02356v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.02356v1/x1.png",
+      "figure_caption": "Motivation. We argue that independent skill retrieval may overlook skill dependencies, while SkillTrace connects atomic queries and skills through a query–skill graph, enabling dependency-aware traversal to retrieve a composable skill set.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02352v1",
+      "title": "Qwen-CUA: Native Computer Use for (almost) Everything",
+      "authors": [
+        "Dunjie Lu",
+        "Shuai Bai",
+        "Tianyi Bai",
+        "Sicheng Fan",
+        "Chang Gao"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "Qwen-CUA is a native computer-use agent that operates software solely through screenshots and keyboard/mouse inputs, avoiding direct access to underlying code or APIs. Its core method involves a novel scaffold for managing long-term visual history and a large-scale training infrastructure to learn from diverse, verifiable tasks. The contribution lies in enabling agents to perform a wide range of computer tasks natively, mimicking human interaction.",
+      "url": "http://arxiv.org/abs/2608.02352v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02352v1",
+      "score": 9.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2608.02602v1",
+      "title": "AURORA-LM: Autoencoding Unified Representation for Continuous-Latent Diffusion Language Modeling",
+      "authors": [
+        "Jiajun Liang",
+        "Yucheng Liao",
+        "Yukang Cao",
+        "Jiazhe Wei",
+        "Ken Li"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "AURORA-LM introduces a novel approach to continuous-latent diffusion language modeling by decoupling representation learning from distribution modeling. It constructs a high-capacity, decodable text latent space using a query-based encoder-decoder and then trains a diffusion transformer to directly learn the distribution of this latent representation. This method preserves token-level fidelity while enabling continuous generation, a significant contribution to text generation that traditionally relies on discrete tokens.",
+      "url": "http://arxiv.org/abs/2608.02602v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02602v1",
+      "score": 9.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2608.02553v1",
+      "title": "A Taxonomy of Cognitive Capability Gaps in Generative and Agentic AI",
+      "authors": [
+        "Taye Akinrele",
+        "Sindhuja Penchala",
+        "Noorbakhsh Amiri Golilarz",
+        "Sudip Mittal",
+        "Shahram Rahimi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper identifies and categorizes key cognitive capability gaps hindering the development of advanced Cognitive AI, moving beyond simple generation and task execution. It proposes a taxonomy based on five dimensions (state modeling, autonomy, self-monitoring, interaction, and learning) to organize existing research, highlight limitations, and point to future challenges. The core contribution is a structured understanding of these gaps, leading to a conceptual architecture for Adaptive Cognitive Intelligence.",
+      "url": "http://arxiv.org/abs/2608.02553v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02553v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02553v1/x1.png",
+      "figure_caption": "Conceptual evolution from Generative AI to Agentic AI and Cognitive AI, highlighting the additional cognitive capabilities introduced at each stage and the closed-loop perception–reasoning–action cycle underlying sustained cognitive behavior.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02345v1",
+      "title": "Can AI Agents Simulate A/B Test Outcomes? A Validation Framework for Agentic Experimentation",
+      "authors": [
+        "Stefan Hut",
+        "Lorenzo Masoero"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "stat.AP"
+      ],
+      "abstract": "This paper proposes a framework called Simulated Randomized Controlled Trial (S-RCT) to assess if AI agents can accurately predict A/B test outcomes. The core method involves decomposing simulation errors into agent approximation and subsampling components, allowing for targeted improvements. The contribution is a validated approach that, while currently showing directional accuracy, demonstrates the potential for AI agents to pre-vet A/B test treatments, saving real-world resources.",
+      "url": "http://arxiv.org/abs/2608.02345v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02345v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02345v1/x1.png",
+      "figure_caption": "Principled subsampling: (a) efficiency gain from Neyman allocation grows with stratum variance heterogeneity; (b) for a stylized revenue metric, Neyman allocation achieves a given RMSE with fewer agents; (c) simulation pre-screens a treatment across subgroups, flagging the harmed segment before live deployment.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02397v1",
+      "title": "Can Foundation Models Hear What Made That Sound? A Tiered Benchmark of Audio-Language Models and Traditional Classifiers for Closed-Set Sound Source Identification",
+      "authors": [
+        "Sajjad Abdoli",
+        "Ghassan Al-Sumaidaee",
+        "Ahmad ElShiekh",
+        "Ahmed Rashad"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SD"
+      ],
+      "abstract": "This paper benchmarks various audio classification models, including foundation models and traditional classifiers, on a sound source identification task. It introduces a tiered evaluation approach to account for differing model architectures and output scoring. The contribution lies in providing a comprehensive comparison and identifying that some zero-shot and traditional models can rival or surpass specialized closed-set foundation models in specific scenarios.",
+      "url": "http://arxiv.org/abs/2608.02397v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02397v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02397v1/figures/cm_best_category_recall.png",
+      "figure_caption": "Category-level confusion matrix (row-normalized recall) for gemini-3.1-pro-preview , the best-performing Tier A model. The full 23-class fine-grained matrix, where the confusions above are visible in detail, is given in Appendix D (Figure 6 ).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02391v1",
+      "title": "Cooperative Coevolution for Resource-Constrained Agentic LLM Post-Training",
+      "authors": [
+        "Zhiyuan Wang",
+        "Shengcai Liu",
+        "Jiahao Wu",
+        "Ning Lu",
+        "Hui Ouyang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces Cooperative Parameter-subspace Evolution Strategy (CoPES) to address the memory and computational demands of post-training tool-using LLM agents. CoPES decomposes the LLM's parameters into subspaces and searches them cooperatively, significantly improving optimization efficiency. This method achieves high performance with limited GPU resources, recovering 92% of a gradient-based method's performance within the same budget.",
+      "url": "http://arxiv.org/abs/2608.02391v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02391v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02391v1/x1.png",
+      "figure_caption": "Overview of CoPES. At each training step, the model parameters are randomly partitioned into K K disjoint subspaces, and N / K N/K perturbations are evaluated within each subspace under a shared full-model context. Rewards from all subspaces are jointly standardized, and the resulting subspace estimates are composed into a full-parameter update.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02470v1",
+      "title": "Grounding Agentic VLMs with Dedicated Segmentation for Fine-Grained Vehicle Damage Assessment",
+      "authors": [
+        "Vishwajeet Shivaji Hogale",
+        "Anjali Pai",
+        "Nitya Ravi"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "This paper addresses the spatial grounding limitations of Vision-Language Models (VLMs) in fine-grained vehicle damage assessment. Their core method, TinyDamage, separates spatial localization (handled by a dedicated segmentation model) from semantic reasoning (performed by a VLM). This hybrid approach significantly improves the accuracy and reliability of identifying and localizing subtle damages like scratches, overcoming the VLM's inherent weaknesses in precise spatial understanding.",
+      "url": "http://arxiv.org/abs/2608.02470v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02470v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02470v1/x1.png",
+      "figure_caption": "System architecture. Top: multi-task segmentation model with swappable backbone (U-Net, YOLOv8, Mask2Former), FPN encoder, contrastive projection head, gradient-aware boundary module, and auxiliary classifier. Middle: 7-node LangGraph pipeline grounding VLM generation in segmentation output. Bottom: swappable VLM providers and observability infrastructure.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02276v1",
+      "title": "Harness-R1: Learning to Edit Executable Runtime Harnesses from Agent Failure Trajectories",
+      "authors": [
+        "Shuai Shao",
+        "Kangning Zhang",
+        "Qingyao Li",
+        "Shijian Wang",
+        "Hao Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "Harness-R1 learns to automatically edit an agent's runtime harness by analyzing failure trajectories. It uses a dedicated \"harness engineer\" trained with reinforcement learning to generate executable patches that improve task success. This approach allows for lifecycle-wide harness improvement beyond just model weight updates.",
+      "url": "http://arxiv.org/abs/2608.02276v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02276v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02276v1/x1.png",
+      "figure_caption": "Matched-baseline reward changes across three benchmarks; diamonds denote the equal-weight average.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02254v1",
+      "title": "Homebot: A Personal AI Agent for Conversational Home Assistance and Automation",
+      "authors": [
+        "Shengyuan Ye",
+        "Yixin Zhang",
+        "Han Liang",
+        "Liekang Zeng",
+        "Jiangsu Du"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "Homebot is a locally deployable AI agent that provides conversational home assistance and automation. Its core method involves a shared runtime that integrates language model responses with registered tools and skills, processing both voice and instant messaging requests. The key contribution is a flexible and customizable system for hands-free home control, with distinct handling for voice and text interactions and clear interfaces for easy integration of new functionalities.",
+      "url": "http://arxiv.org/abs/2608.02254v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02254v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02254v1/images/overview.png",
+      "figure_caption": "Figure 1. System overview of Homebot . User-facing channels route normalized messages through the message bus to the agent runtime, which constructs context, invokes tools and skills, and retrieves or persists channel-scoped session history.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02518v1",
+      "title": "Magnet: Detecting Cross-Session AI Misuse Through Capability Accumulation",
+      "authors": [
+        "Natalie Isak",
+        "Matthew Dressman"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CY"
+      ],
+      "abstract": "This paper introduces \"Magnet,\" a method for detecting AI misuse that spans multiple independent agent sessions. Its core idea is to track the accumulation of capabilities an attacker builds across these sessions, which are otherwise invisible to single-session detection systems. Magnet's contribution lies in identifying this novel cross-session attack vector and providing a mechanism to counter it by recognizing the emergent, harmful potential of sequentially executed innocuous actions.",
+      "url": "http://arxiv.org/abs/2608.02518v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02518v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02518v1/images/image1.png",
+      "figure_caption": "The data generation pipeline. An expert-authored decomposition of target objective T T into sub-capabilities c 1 , … , c n c_{1},\\( \\ldots \\),c_{n} is dispatched sequentially, with each subtask handled by a freshly instantiated assistant–user agent pair that iterates until the subtask produces a completed artifact.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02409v1",
+      "title": "MonitrLLM: A Community-Centered Evaluation Infrastructure for Large Language Models",
+      "authors": [
+        "Victor Ojewale",
+        "Ro Encarnación",
+        "Suresh Venkatasubramanian",
+        "Danaé Metaxa"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CY"
+      ],
+      "abstract": "MonitrLLM is an open-source infrastructure that bridges a critical gap in LLM evaluation by linking full conversation transcripts with user-defined task intents and outcome assessments. Its core method treats these three elements as primary evaluative signals, enabling a more holistic understanding of LLM performance. The contribution lies in providing a community-centered approach to evaluate LLMs based on real-world user interactions and their success in achieving user-defined goals.",
+      "url": "http://arxiv.org/abs/2608.02409v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02409v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02409v1/update.png",
+      "figure_caption": "The MonitrLLM browser extension where users submit an audit report through a five-field form capturing interaction description, task purpose, outcome assessment, conversation share link, and a 1-to-5 satisfaction rating.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02287v1",
+      "title": "SKT: Skill-Use Training at Scale via Verified Synthetic Data Generation",
+      "authors": [
+        "Zelin Tan",
+        "Yiqun Zhang",
+        "Hao Li",
+        "Zhiyao Cui",
+        "Hejia Geng"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces SKT, a method for generating verified synthetic data to train language-model agents on how to effectively use skills. SKT constructs tasks and executable trajectories by selecting skill combinations, synthesizing them with rule-based and agent-based verification, and retaining only successful executions. This approach significantly improves agent skill-use capabilities and enables the creation of a new benchmark, SkillEval, for evaluating these abilities.",
+      "url": "http://arxiv.org/abs/2608.02287v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02287v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02287v1/x1.png",
+      "figure_caption": "SKT is a multi-agent-based data synthesis pipeline for skill-use tasks and trajectories. Training on data synthesized by SKT can effectively improve agents’ ability to use Agent Skills.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02499v1",
+      "title": "SWE-Touch: Benchmarking Coding Agents When Users Touch the Code",
+      "authors": [
+        "Yuqiao Tan",
+        "Jinxiang Meng",
+        "Fangyu Lei",
+        "Minzheng Wang",
+        "Shizhu He"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces SWE-Touch, a new benchmark for evaluating coding agents in collaborative environments where users can modify code. Its core method involves introducing \"Counter-Edits\" – plausible code changes that hinder task completion – to test how agents react to real-time user modifications. SWE-Touch's contribution is to provide a more realistic assessment of coding agents by simulating shared development workflows, revealing that these agents struggle with unexpected code alterations.",
+      "url": "http://arxiv.org/abs/2608.02499v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02499v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02302v1",
+      "title": "Trajectories That Segment Themselves: Agent-Declared Boundaries as a Training Unit",
+      "authors": [
+        "Jingxi Wei"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "abstract": "This paper proposes a novel method for training AI agents by having them self-segment their trajectories into meaningful phases during generation. The core idea is to use \"declarative contracts\" where the agent declares its own boundaries based on falsifiable causal hypotheses. This approach generates richer training data, including \"wrong-cause-then-correction\" transitions and audit supervision from discarded regions, which are typically lost in standard episodic training.",
+      "url": "http://arxiv.org/abs/2608.02302v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02302v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02302v1/x1.png",
+      "figure_caption": "A code-blind reader finds boundaries; a mechanical rule with the same access does not. Boundaries matched out of 40, against what the same number of randomly placed marks would match on the same trajectories. Neither the sparse nor the permissive test-event rule beats its own chance baseline, at either end of the sweep. No observer is told how many boundaries to expect.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.02515v1",
+      "title": "LiveMem: Maintaining Memory State Continuity in Long-Running LLM Inference",
+      "authors": [
+        "Zhichen Liu",
+        "Ruihan Sun",
+        "Hengjie Yang",
+        "Zipeng Wu",
+        "Zhaohan Chen"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "LiveMem addresses the challenge of maintaining long-term memory for LLMs by introducing a novel \"state continuity under context turnover\" mechanism. Its core method augments a standard LLM with a persistent, intrinsic memory state that preserves historical information independently of the active context window. This allows LLMs to carry computation forward across extended interactions, enabling them to retain knowledge and perform effectively even as the immediate context changes.",
+      "url": "http://arxiv.org/abs/2608.02515v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02515v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02515v1/x1.png",
+      "figure_caption": "LiveMem enables stateful continual inference under context turnover. A bounded working context provides precise short-term access, while a fixed-capacity recurrent memory state preserves information across the model lifecycle.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2608.02508v1",
+      "title": "RoMeRL: Balancing Feedback Coverage and the Memory-Reward Trap in Self-Evolving Agent Memory via Reduced-Order Utility States",
+      "authors": [
+        "Yi Yang",
+        "Zhennan Chen",
+        "Yihong Zhuang",
+        "Tiehan Fan",
+        "Yinan Chen"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces RoMeRL, a novel method for self-evolving LLM agent memory. RoMeRL addresses the challenges of feedback dispersion and the memory-reward trap by representing memory utilities with a fixed-dimensional state factorized by outcome polarity and memory dynamics. This approach concentrates feedback, leading to more effective learning and avoiding misleading utility updates for irrelevant experiences.",
+      "url": "http://arxiv.org/abs/2608.02508v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02508v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.02508v1/x1.png",
+      "figure_caption": "Memory-reward trap : Stronger exploration retrieves more low-access-count memories, including weakly relevant, noisy, outdated, or failed experiences. When such a memory appears in a successful episode, the shared trajectory reward can promote it despite no causal contribution. Exploration therefore increases feedback coverage but also raises the risk of reward misattribution.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    }
+  ],
+  "hacker_news": [
+    {
+      "id": 49161518,
+      "title": "LLMs reward expertise",
+      "url": "https://www.seangoedecke.com/llms-reward-expertise/",
+      "score": 962,
+      "created_at": "2026-08-03T21:13:53Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49161518",
+      "summary": "Large Language Models (LLMs) are more likely to provide accurate and helpful responses when prompted by users with domain expertise."
+    },
+    {
+      "id": 49154332,
+      "title": "SQLite Critical CVEs or LLM Slop?",
+      "url": "https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/",
+      "score": 713,
+      "created_at": "2026-08-03T11:28:54Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49154332",
+      "summary": "This article questions whether recently disclosed SQLite vulnerabilities are truly critical or if they are exaggerated by AI-generated content, urging caution and verification."
+    },
+    {
+      "id": 49158581,
+      "title": "Smaller, faster, safer: running Kimi and GLM at scale",
+      "url": "https://blog.cloudflare.com/smaller-faster-safer-models/",
+      "score": 221,
+      "created_at": "2026-08-03T17:08:46Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49158581",
+      "summary": "Cloudflare is running large language models like Kimi and GLM more efficiently and securely at scale by optimizing their size and inference speed."
+    },
+    {
+      "id": 49154228,
+      "title": "AirLLM 70B inference with single 4GB GPU",
+      "url": "https://github.com/lyogavin/airllm",
+      "score": 220,
+      "created_at": "2026-08-03T11:15:48Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49154228",
+      "summary": "AirLLM enables 70B parameter LLM inference on a single 4GB GPU by optimizing memory usage and computation."
+    },
+    {
+      "id": 49156683,
+      "title": "Ask HN: Who is hiring? (August 2026)",
+      "url": "",
+      "score": 178,
+      "created_at": "2026-08-03T15:00:54Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49156683",
+      "summary": "This Hacker News thread is a monthly \"Ask HN\" post where individuals seeking employment can share their profiles and companies can announce open positions for August 2026."
+    },
+    {
+      "id": 49160699,
+      "title": "AI's debt binge can't last, hidden borrowing reaches $1.65T",
+      "url": "https://fortune.com/2026/07/31/ai-debt-hypescalers-capex-capital-spending-hidden-borrowing-bond-issuance/",
+      "score": 130,
+      "created_at": "2026-08-03T20:02:21Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49160699",
+      "summary": "AI companies are accumulating massive hidden debt, exceeding $1.65 trillion, as their capital spending surge is unsustainable."
+    },
+    {
+      "id": 49156682,
+      "title": "Ask HN: Who wants to be hired? (August 2026)",
+      "url": "",
+      "score": 118,
+      "created_at": "2026-08-03T15:00:54Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49156682",
+      "summary": "This Hacker News thread is a monthly opportunity for individuals to post their resumes and for companies to announce job openings, facilitating hiring in the tech industry."
+    },
+    {
+      "id": 49154127,
+      "title": "Show HN: Nightcrawler – A local AI pentesting agent running on a smartphone",
+      "url": "https://github.com/garagehq/nightcrawler/",
+      "score": 110,
+      "created_at": "2026-08-03T11:06:15Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49154127",
+      "summary": "Nightcrawler is a new open-source AI agent that runs on smartphones, enabling local penetration testing and security assessments directly from a mobile device."
+    }
+  ],
+  "github_trending": [
+    {
+      "full_name": "lyogavin/airllm",
+      "url": "https://github.com/lyogavin/airllm",
+      "description": "AirLLM 70B inference with single 4GB GPU",
+      "stars_today": 1085,
+      "total_stars": 27857,
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "summary": "AirLLM enables efficient inference of the 70B LLM on a single 4GB GPU by optimizing memory usage and computational resources."
+    },
+    {
+      "full_name": "zhaoxuya520/reverse-skill",
+      "url": "https://github.com/zhaoxuya520/reverse-skill",
+      "description": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端",
+      "stars_today": 2446,
+      "total_stars": 16899,
+      "language": "PowerShell",
+      "topics": [],
+      "summary": "This repository offers an AI-powered skill router for reverse engineering, penetration testing, and security research, featuring on-demand toolchain bootstrapping and a self-evolving knowledge base, compatible with various AI coding clients."
+    },
+    {
+      "full_name": "firecrawl/pdf-inspector",
+      "url": "https://github.com/firecrawl/pdf-inspector",
+      "description": "Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based PDFs to enable smart routing decisions.",
+      "stars_today": 1699,
+      "total_stars": 9110,
+      "language": "Rust",
+      "topics": [],
+      "summary": "This Rust library rapidly inspects, classifies, and extracts text from PDFs, intelligently distinguishing scanned from text-based documents to enable smart routing."
+    },
+    {
+      "full_name": "esengine/DeepSeek-Reasonix",
+      "url": "https://github.com/esengine/DeepSeek-Reasonix",
+      "description": "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
+      "stars_today": 883,
+      "total_stars": 30410,
+      "language": "Go",
+      "topics": [],
+      "summary": "DeepSeek-Reasonix is a DeepSeek-native AI coding agent for the terminal, designed for continuous operation with a focus on prefix-cache stability."
+    },
+    {
+      "full_name": "TencentCloud/TencentDB-Agent-Memory",
+      "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+      "description": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
+      "stars_today": 1090,
+      "total_stars": 12640,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "TencentDB Agent Memory acts as a team-level AI agent memory hub, transforming various data into four reusable assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) for governed sharing and cross-agent utilization."
+    },
+    {
+      "full_name": "microsoft/AI-For-Beginners",
+      "url": "https://github.com/microsoft/AI-For-Beginners",
+      "description": "12 Weeks, 24 Lessons, AI for All!",
+      "stars_today": 1902,
+      "total_stars": 61403,
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "summary": "This repository offers a comprehensive, 12-week, 24-lesson curriculum designed to make Artificial Intelligence accessible to everyone, regardless of their prior technical background."
+    },
+    {
+      "full_name": "microsoft/generative-ai-for-beginners",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "description": "21 Lessons, Get Started Building with Generative AI",
+      "stars_today": 775,
+      "total_stars": 115960,
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "summary": "This repository provides a 21-lesson curriculum designed to help beginners understand and start building with generative AI."
+    },
+    {
+      "full_name": "donnemartin/system-design-primer",
+      "url": "https://github.com/donnemartin/system-design-primer",
+      "description": "Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.",
+      "stars_today": 237,
+      "total_stars": 360845,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository provides a comprehensive guide and resources, including Anki flashcards, to learn how to design large-scale systems and prepare for system design interviews."
+    },
+    {
+      "full_name": "antirez/ds4",
+      "url": "https://github.com/antirez/ds4",
+      "description": "DeepSeek 4 Flash and PRO local inference engine for Metal, CUDA and ROCm",
+      "stars_today": 384,
+      "total_stars": 20494,
+      "language": "C",
+      "topics": [],
+      "summary": "This repository provides a local inference engine for DeepSeek 4 models, supporting Metal, CUDA, and ROCm hardware for efficient AI model execution."
+    }
+  ],
+  "us_stocks": [],
+  "postdoc_jobs": [],
+  "jobs": [],
+  "supervisor_updates": [],
+  "weather": [
+    {
+      "query": "London",
+      "label": "London, England, United Kingdom",
+      "resolved_name": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "timezone": "Europe/London",
+      "forecast_date": "2026-08-04",
+      "condition": "Clear sky",
+      "weather_code": 0,
+      "temperature_c": 26.7,
+      "apparent_temperature_c": 26.5,
+      "temp_max_c": 29.4,
+      "temp_min_c": 20.0,
+      "humidity_pct": 35,
+      "wind_speed_kmh": 8.3,
+      "precipitation_probability_pct": 39,
+      "is_day": true,
+      "sunrise": "2026-08-04T05:29",
+      "sunset": "2026-08-04T20:44",
+      "source": "Open-Meteo",
+      "source_url": "https://open-meteo.com/"
+    }
+  ]
+}
