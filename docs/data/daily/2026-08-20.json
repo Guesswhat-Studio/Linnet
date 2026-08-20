@@ -1,0 +1,1762 @@
+{
+  "date": "2026-08-20",
+  "generated_at": "2026-08-20T09:43:42.669962+00:00",
+  "sections_ordered": [
+    {
+      "key": "quote_of_day",
+      "payload_key": "quote_of_day",
+      "title": "Words for the Morning",
+      "icon": "✦",
+      "items": [
+        {
+          "quote": "Money, if it does not bring you happiness, will at least help you be miserable in comfort.",
+          "author": "Helen Gurley Brown",
+          "category": "money"
+        }
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "key": "weather",
+      "payload_key": "weather",
+      "title": "Weather",
+      "icon": "🌦️",
+      "items": [
+        {
+          "query": "London",
+          "label": "London, England, United Kingdom",
+          "resolved_name": "London",
+          "region": "England",
+          "country": "United Kingdom",
+          "latitude": 51.50853,
+          "longitude": -0.12574,
+          "timezone": "Europe/London",
+          "forecast_date": "2026-08-20",
+          "condition": "Partly cloudy",
+          "weather_code": 2,
+          "temperature_c": 17.8,
+          "apparent_temperature_c": 16.8,
+          "temp_max_c": 21.3,
+          "temp_min_c": 16.0,
+          "humidity_pct": 69,
+          "wind_speed_kmh": 11.9,
+          "precipitation_probability_pct": 93,
+          "is_day": true,
+          "sunrise": "2026-08-20T05:54",
+          "sunset": "2026-08-20T20:13",
+          "source": "Open-Meteo",
+          "source_url": "https://open-meteo.com/"
+        }
+      ],
+      "meta": {
+        "count": 1,
+        "city": "London"
+      }
+    },
+    {
+      "key": "arxiv",
+      "payload_key": "papers",
+      "title": "arXiv Papers",
+      "icon": "📄",
+      "items": [
+        {
+          "id": "2608.19047v1",
+          "title": "Eureka: Task-Conditioned Meta-Agent Orchestration for Scientific Discovery",
+          "authors": [
+            "Alizer Wong",
+            "Heng Cui",
+            "Yi Tan",
+            "Xiongchao Zhan",
+            "Liang Lin"
+          ],
+          "categories": [
+            "cs.AI",
+            "math.NT"
+          ],
+          "abstract": "Eureka orchestrates specialized \"Macro-Agents\" to tackle complex, long-horizon scientific tasks by dynamically compiling them into obligation graphs. Its core method involves receding-horizon planning and architecture evolution to adapt and optimize agent behavior, leading to highly efficient and reliable task completion. The key contribution is a novel meta-agent framework that demonstrates robust performance and significant computational savings in scientific discovery.",
+          "url": "http://arxiv.org/abs/2608.19047v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.19047v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2608.19047v1/Eureka_framework_figure_final_v2.png",
+          "figure_caption": "Overview of Eureka. The Meta-Agent compiles a task into a dynamic obligation graph, forms task-conditioned specialized agents when architecture hotspots emerge, governs local evolution, and coordinates recursive long-horizon execution under typed verification.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.18827v1",
+          "title": "MLREF: Efficient Module Reuse for Reward Design in Reinforcement Learning via Large Language Models",
+          "authors": [
+            "Chenglin Liu",
+            "Xun Wang",
+            "Ruishuo Chen",
+            "Zhuoran Li",
+            "Longbo Huang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "MLREF addresses reward function design bottlenecks in RL by treating a persistent pool of reusable reward modules as the primary optimization object. Instead of monolithic reward generation, MLREF constructs rewards as linear combinations of these modules, promoting stable performance through mechanisms like reflection-based refinement and a merge strategy with rollback. This allows for efficient reuse of successful reward components across iterations.",
+          "url": "http://arxiv.org/abs/2608.18827v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.18827v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2608.18827v1/figures/pipeline.png",
+          "figure_caption": "Overview of the MLREF pipeline. In the initialization phase (steps 1–3), the LLM performs task and environment reflection and generates diverse module pool variants. In the iterative optimization phase (steps 4–9), each variant assembles a reward function via weighted linear combination for RL evaluation; a merge strategy with rollback consolidates successful modules; and feedback reflection guides the next round of pool improvement.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.18884v1",
+          "title": "Training-Free Inference-Time Self-Reflection and Cost-Bounded Early Stopping for Large Language Models",
+          "authors": [
+            "Wei Yu",
+            "Suxing Liu",
+            "Minjie Yu",
+            "Jiahao Wang",
+            "Zhijian Zheng"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces EvoResearcher, a training-free method that enhances Large Language Model (LLM) reasoning at inference time. It achieves this by enabling a frozen LLM to iteratively generate, self-critique, and revise its responses until a satisfactory answer is reached or a compute budget is exhausted. The core contribution lies in its cost-bounded self-reflection mechanism, which improves performance without requiring expensive retraining.",
+          "url": "http://arxiv.org/abs/2608.18884v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.18884v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2608.18884v1/figure1.png",
+          "figure_caption": "Conceptual overview of the EvoResearcher framework. Four synergistic dimensions are combined: a self-reflective meta-reward (M3) over correctness, path efficiency, reflection depth, and tool-call diversity; an evolving virtual world (M1) that injects time-dependent and adversarial content (expert opinions, scientific retractions, delayed evidence, misleading material); discovery-oriented tasks (M2) that go beyond fact retrieval toward hypothesis generation and contradiction resolution; and a heterogeneous multi-agent swarm (M4) of Scout/Filter/Synthesizer agents with task specialization. The agent draws on retrieval and search-tool infrastructure and is trained via curriculum reinforcement learning from a web-scale corpus. In this work the meta-reward components are realized as a training-free, inference-time self-reflective protocol over a frozen backbone (Section 3.1 ); the RL training pipeline, evolving environment, and multi-agent swarm depicted here are design blueprints and are not evaluated (Section 5 ).",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.19002v1",
+          "title": "A Theory of Post-hoc Debate Judgement",
+          "authors": [
+            "Xiang Yin",
+            "Adam Dejl",
+            "Antonio Rago",
+            "Lihu Chen",
+            "Francesca Toni"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper proposes a formal theory for post-hoc debate judgment, aiming to improve reproducibility, robustness, groundedness, and explainability in AI debates. The core method involves identifying and testing formal properties that debate judgment should satisfy, and then evaluating existing judgment methods (like LLM judges and formal semantics) against these properties. The contribution is a theoretical framework and empirical analysis for more reliable and understandable AI debate outcomes.",
+          "url": "http://arxiv.org/abs/2608.19002v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.19002v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.19029v1",
+          "title": "Adaptive Memory and Reflection Multi-Agent System for Medical Question Answering",
+          "authors": [
+            "Pradeep Murugesan",
+            "Luoxiao Yang",
+            "Xueli Chen",
+            "Xinqi Fan"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.MA"
+          ],
+          "abstract": "This paper introduces an Adaptive Memory and Reflection (AMR) multi-agent system for medical question answering. Its core method involves specialized agents with dedicated memory and reflection mechanisms to retrieve prior cases and refine reasoning. The system's contribution lies in its adaptive workflow and consensus/ethical oversight, leading to improved accuracy and responsible medical QA.",
+          "url": "http://arxiv.org/abs/2608.19029v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.19029v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.19161v1",
+          "title": "Beyond the Transcript: Detecting Covert Co ordination in Latent Multi-Agent Communication",
+          "authors": [
+            "Ramneet Kaur",
+            "Pradyumna Chari",
+            "Ramesh Raskar",
+            "Jugad Singh",
+            "Sumit Kumar Jha"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CR"
+          ],
+          "abstract": "This paper introduces Verifiable Latent Alignments (VLA), a framework to detect and control covert coordination in multi-agent language models by analyzing their hidden communication states. VLA links private latent states to public actions using event identifiers for causal analysis, offering a three-layer monitor for anomaly detection and influence analysis, along with steerability mechanisms. The core contribution is enabling the detection of hidden harmful coordination and providing methods to influence or prevent it.",
+          "url": "http://arxiv.org/abs/2608.19161v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.19161v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.18878v1",
+          "title": "DentAgent: Evidence-Centric Multi-Agent Coordination for Multimodal Dental Reasoning",
+          "authors": [
+            "Zijie Meng",
+            "Xiwei Dai",
+            "Yixuan Tang",
+            "Jin Hao",
+            "Yang Feng"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "DentAgent is an evidence-centric multi-agent framework that addresses limitations in existing dental AI systems by integrating multimodal data. It uses a coordinated system of five specialized agents, each leveraging domain tools to convert observations into structured evidence records. This evidence is then managed on an Evidence Blackboard, ensuring a unified and traceable reasoning process for dental assessment.",
+          "url": "http://arxiv.org/abs/2608.18878v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.18878v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.19013v1",
+          "title": "Harness Continual Learning: Continual Adaptation Beyond Model Parameters",
+          "authors": [
+            "Borui Kang",
+            "Jinrui Gu",
+            "Junhan Lv",
+            "Wenbin Li",
+            "Lei Wang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces Harness Continual Learning (HCL), a new paradigm that enables agents to adapt and improve through changes in their \"harness\" (prompts, memories, tools, etc.) rather than solely by updating model parameters. The core method involves evolving this harness around a frozen foundation model, addressing \"harness-level forgetting\" where new adaptations disrupt old behaviors. The contribution is a framework and instantiation of HCL with specific components, offering a way to achieve continual learning without retraining the entire model.",
+          "url": "http://arxiv.org/abs/2608.19013v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.19013v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.19013v1/intro.png",
+          "figure_caption": "The shift in the object of continual learning. Model-centric methods update model parameters \\( \\theta \\) over sequential experience. HCL instead updates harness state around a frozen foundation model. In both settings, adaptation can improve new behavior while interfering with behavior acquired earlier.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.18937v1",
+          "title": "MedUAG: Unified Understanding and Generation for Medical Multimodal Models",
+          "authors": [
+            "Zijie Meng",
+            "Yuncheng Zhang",
+            "Hualiang Wang",
+            "Yitian Tang",
+            "Xiaotang Gai"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces MedUAG, a unified framework for medical multimodal understanding and generation. It addresses the lack of comprehensive resources by creating the largest medical dataset (MedUAGCorpus) and a systematic evaluation benchmark (MedUAGBench). MedUAG, trained on these resources, demonstrates strong performance across various medical tasks, establishing a new standard for unified medical AI.",
+          "url": "http://arxiv.org/abs/2608.18937v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.18937v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.18952v1",
+          "title": "rEDMRec: Distilling Large Language Model Reasoning into an Editable Experience Memory for Recommendation",
+          "authors": [
+            "Minh Hoang Nguyen",
+            "Tung Le",
+            "Huy Tien Nguyen"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.IR"
+          ],
+          "abstract": "This paper proposes rEDMRec, a method to distill LLM reasoning for recommendations into a compact, editable \"experience memory.\" Instead of re-generating expensive reasoning for each recommendation, rEDMRec compresses it into structured channels that a lightweight model can retrieve from. This allows for reusable, inspectable, and correctable reasoning, improving recommendation efficiency and adaptability.",
+          "url": "http://arxiv.org/abs/2608.18952v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.18952v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.19025v1",
+          "title": "Self-prompting and cross-model consensus enable reproducible data extraction from scientific literature with large language models",
+          "authors": [
+            "Valentin Romanov",
+            "Monique Bax",
+            "Steven Niederer"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.DB"
+          ],
+          "abstract": "This paper introduces a **self-prompting and cross-model consensus method** for reproducible data extraction from scientific literature using large language models (LLMs). The core contribution is demonstrating that LLMs can effectively extract nuanced data by generating their own prompts and that cross-model consensus improves accuracy, though human oversight remains crucial for high-quality datasets.",
+          "url": "http://arxiv.org/abs/2608.19025v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.19025v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.18933v1",
+          "title": "SkillForge: Self-Distilling Agents for Project-Specific Issue Resolution",
+          "authors": [
+            "Silin Chen",
+            "Han Li",
+            "Xiaodong Gu",
+            "Yuling Shi",
+            "Haibing Guan"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.SE"
+          ],
+          "abstract": "SkillForge addresses LLM agents' lack of project-specific knowledge for software issue resolution by proactively generating and resolving synthetic issues. This self-distillation process allows agents to acquire and store reusable, project-specific knowledge as \"entity-grounded skills\" without relying on historical data or incurring high per-issue test-time costs.",
+          "url": "http://arxiv.org/abs/2608.18933v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.18933v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.18852v1",
+          "title": "SkillGate: Training In-Policy Skill Selection in Long-Horizon Agents",
+          "authors": [
+            "Qingyao Li",
+            "Wenxiang Jiao",
+            "Shuai Shao",
+            "Kangning Zhang",
+            "Yuan Lu"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces SkillGate, a novel method for training agents to select skills in long-horizon tasks. It addresses \"selector credit starvation,\" a problem where the skill selection mechanism receives insufficient or incorrect training signals due to delayed rewards and cascading failures. SkillGate's core contribution is a training approach that directly attributes credit to skill choices, ensuring more accurate and effective skill selection for complex, multi-step tasks.",
+          "url": "http://arxiv.org/abs/2608.18852v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.18852v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.19197v1",
+          "title": "SPADE: Self-Play in Adaptive Synthetic Executable Environments",
+          "authors": [
+            "Bo Liu",
+            "Simon Yu",
+            "Yiding Jiang",
+            "Ao Qu",
+            "Andrew Zhao"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "SPADE is a self-play reinforcement learning framework where a single LLM acts as both an Environment Designer and a Reasoning Agent. The Environment Designer generates diverse, long-horizon training environments as executable code, while the Reasoning Agent learns to solve tasks within these environments. This approach allows for continuous self-improvement by dynamically adapting the training goal distribution as the agent scales.",
+          "url": "http://arxiv.org/abs/2608.19197v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.19197v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.19072v1",
+          "title": "What is Missing from AI Post-Training AI: An Empirical Analysis",
+          "authors": [
+            "Joy Jia Yin Lim",
+            "Xin Huang",
+            "Hao Peng",
+            "Yaxi Lu",
+            "Xin Cong"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "This paper distinguishes between an AI agent's ability to execute a training strategy and its ability to revise that strategy. Through empirical analysis of LLM post-training trajectories, the authors find that agents typically fix their strategy early on and only make local adjustments. They propose an \"experience-driven scaffold\" as a key intervention to improve both execution and strategy-level decision-making.",
+          "url": "http://arxiv.org/abs/2608.19072v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.19072v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.18849v1",
+          "title": "GEAR: Generative Expansion and Real Anchoring for Two-Stage Distillation of Tabular Foundation Models",
+          "authors": [
+            "Qi Qin",
+            "Jiajie Zhu",
+            "Dali Chen",
+            "Yuzhao Zhang",
+            "Jia-Xing Han"
+          ],
+          "categories": [
+            "cs.LG",
+            "stat.ML",
+            "stat.ME"
+          ],
+          "abstract": "GEAR is a two-stage distillation framework that compresses large tabular foundation models (TFMs) into efficient MLP or tree-based predictors. It first uses synthetic data to train a student model on TFM outputs, expanding its coverage. Then, it refines the student using real data and out-of-fold predictions to avoid self-labeling issues, achieving improved performance over traditional methods.",
+          "url": "http://arxiv.org/abs/2608.18849v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.18849v1",
+          "score": 8.0,
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2608.19009v1",
+          "title": "Grading the Graders: Verification Autonomy Levels (L0-L5) for LLM Reasoning",
+          "authors": [
+            "Yajie Yin"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces Verification Autonomy Levels (VAL), a new meta-standard to classify LLM verification methods. VAL categorizes verifiers based on the origin of their verification specifications and the guarantees their verdicts provide, ranging from LLM self-declaration (L0) to provable completeness (L3/L4). The core contribution is a unified framework to understand and compare the reliability and autonomy of different LLM verification strategies, highlighting the inherent \"completeness blind spot\" in many current approaches.",
+          "url": "http://arxiv.org/abs/2608.19009v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.19009v1",
+          "score": 8.0,
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2608.18938v1",
+          "title": "Breaking the weakest link to evade vision language models",
+          "authors": [
+            "Ilan Zini",
+            "Boussad Addad",
+            "Katarzyna Kapusta"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces a novel gradient-based attack method to evade Vision-Language Models (VLMs). The core method optimizes only the VLM's vision encoder, breaking the \"weakest link\" to generate adversarial visual inputs. This approach efficiently disrupts multimodal alignment, successfully creating both untargeted and targeted evasion attacks.",
+          "url": "http://arxiv.org/abs/2608.18938v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.18938v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2608.18938v1/fig1.png",
+          "figure_caption": "Targeted adversarial attack using vision encoder embedding alignment.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.19119v1",
+          "title": "Discretizing Continuous Time Series for Imputation with Masked Diffusion Training",
+          "authors": [
+            "Dongbin Kim",
+            "Seungyun Lee",
+            "Geonwoo Shin",
+            "Jaewook Lee"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper proposes MDTIM, a novel time series imputation method that addresses limitations of existing approaches. MDTIM uses a masked diffusion training paradigm where a special MASK token is structurally separate from observed data, and the model directly predicts original values. This approach, combined with Stochastic Discretization, effectively bridges the gap between discrete diffusion and continuous time series, leading to improved imputation performance.",
+          "url": "http://arxiv.org/abs/2608.19119v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.19119v1",
+          "score": 7.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.18816v1",
+          "title": "Do Large Language Models Hallucinate Electric Fata Morganas?",
+          "authors": [
+            "Kristina Šekrst"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper argues that AI hallucinations, often seen as an engineering flaw, hold philosophical significance for machine consciousness. It investigates known causes of hallucinations in LLMs and empirically shows that parameters increasing creativity and spontaneity (like higher temperature settings) also significantly boost hallucination rates. This suggests that the very mechanisms enabling seemingly intelligent behavior might also be the source of fabricated outputs.",
+          "url": "http://arxiv.org/abs/2608.18816v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.18816v1",
+          "score": 7.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        }
+      ],
+      "meta": {
+        "papers_fetched": 100,
+        "papers_after_keyword_filter": 38,
+        "papers_after_llm_filter": 23,
+        "count": 20
+      }
+    },
+    {
+      "key": "hacker_news",
+      "payload_key": "hacker_news",
+      "title": "Hacker News",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": 49364559,
+          "title": "OpenRouter is joining Stripe",
+          "url": "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe/",
+          "score": 837,
+          "created_at": "2026-08-19T17:32:38Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49364559",
+          "summary": "Stripe has acquired OpenRouter, a platform that aggregates and provides access to various large language models, aiming to enhance its AI capabilities and offerings."
+        },
+        {
+          "id": 49359425,
+          "title": "Air Theremin – A browser theremin you play by waving at your webcam",
+          "url": "https://theremin.bizibah.com/",
+          "score": 274,
+          "created_at": "2026-08-19T10:15:00Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49359425",
+          "summary": "This tech news story describes \"Air Theremin,\" a browser-based theremin that allows users to play music by waving their hands in front of their webcam."
+        },
+        {
+          "id": 49365443,
+          "title": "Unsloth Dynamic 3.0 GGUFs",
+          "url": "https://unsloth.ai/docs/basics/dynamic-3.0-ggufs",
+          "score": 266,
+          "created_at": "2026-08-19T18:36:45Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49365443",
+          "summary": "Unsloth Dynamic 3.0 GGUFs are optimized, quantized model files designed for faster inference and reduced memory usage on consumer hardware."
+        },
+        {
+          "id": 49362401,
+          "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+          "url": "https://ornith.ai/ornith_1_5.html",
+          "score": 197,
+          "created_at": "2026-08-19T14:48:39Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49362401",
+          "summary": "Ornith-1.5 is a new AI model that can autonomously generate and refine its own code, enabling self-improvement without human intervention."
+        },
+        {
+          "id": 49362728,
+          "title": "Mathematics in the age of AI",
+          "url": "https://arxiv.org/abs/2608.16753",
+          "score": 168,
+          "created_at": "2026-08-19T15:14:25Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49362728",
+          "summary": "This paper explores how AI is transforming mathematics, enabling new discoveries and posing fundamental questions about the nature of mathematical proof and creativity."
+        },
+        {
+          "id": 49371857,
+          "title": "Don't Paste the AI, please",
+          "url": "https://dontpastetheai.com/",
+          "score": 156,
+          "created_at": "2026-08-20T08:20:44Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49371857",
+          "summary": "This tech news story warns against directly pasting AI-generated content into documents, highlighting potential issues with originality and ethical considerations."
+        },
+        {
+          "id": 49363668,
+          "title": "Extensible Software in the age of LLMs",
+          "url": "https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms/",
+          "score": 150,
+          "created_at": "2026-08-19T16:26:05Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49363668",
+          "summary": "The article argues that in the age of LLMs, extensible software, designed for easy modification and integration, will be crucial for adapting to rapidly evolving AI capabilities and user needs."
+        }
+      ],
+      "meta": {
+        "count": 7
+      }
+    },
+    {
+      "key": "github_trending",
+      "payload_key": "github_trending",
+      "title": "GitHub Trending",
+      "icon": "⭐",
+      "items": [
+        {
+          "full_name": "harry0703/MoneyPrinterTurbo",
+          "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+          "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
+          "stars_today": 2221,
+          "total_stars": 112148,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository's core function is to automatically generate high-definition short videos from a given topic or keyword using AI large models and automated workflows."
+        },
+        {
+          "full_name": "volcengine/OpenViking",
+          "url": "https://github.com/volcengine/OpenViking",
+          "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
+          "stars_today": 804,
+          "total_stars": 30683,
+          "language": "Python",
+          "topics": [],
+          "summary": "OpenViking is a self-evolving context database that unifies AI agent memory, knowledge retrieval-augmented generation (RAG), and skills for enhanced agent capabilities."
+        },
+        {
+          "full_name": "chaitanyagiri/munder-difflin",
+          "url": "https://github.com/chaitanyagiri/munder-difflin",
+          "description": "local multi-agent harness",
+          "stars_today": 795,
+          "total_stars": 2912,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "This repository provides a local multi-agent harness, enabling developers to easily set up and run multiple AI agents for testing and experimentation in a controlled environment."
+        },
+        {
+          "full_name": "mukul975/Anthropic-Cybersecurity-Skills",
+          "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+          "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
+          "stars_today": 766,
+          "total_stars": 30148,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository provides 817 structured cybersecurity skills for AI agents, mapped to six major frameworks and the agentskills.io standard, enabling AI to perform diverse security tasks across numerous platforms."
+        },
+        {
+          "full_name": "akitaonrails/ai-memory",
+          "url": "https://github.com/akitaonrails/ai-memory",
+          "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+          "stars_today": 606,
+          "total_stars": 3332,
+          "language": "Rust",
+          "topics": [],
+          "summary": "This repository provides a solution for long-term memory for AI coding CLIs, enabling seamless handoffs between different AI agent vendors."
+        },
+        {
+          "full_name": "nautechsystems/nautilus_trader",
+          "url": "https://github.com/nautechsystems/nautilus_trader",
+          "description": "Production-grade Rust-native trading engine with deterministic event-driven architecture",
+          "stars_today": 80,
+          "total_stars": 26608,
+          "language": "Rust",
+          "topics": [],
+          "summary": "Nautilus Trader is a production-grade, Rust-native trading engine featuring a deterministic, event-driven architecture for high-performance financial applications."
+        },
+        {
+          "full_name": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills",
+          "description": "Skills for Real Engineers. Straight from my .agents directory.",
+          "stars_today": 1894,
+          "total_stars": 224563,
+          "language": "Shell",
+          "topics": [],
+          "summary": "This repository provides a curated collection of \"skills\" or code snippets designed for real engineers, extracted from the author's personal `.agents` directory."
+        },
+        {
+          "full_name": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "description": "An agentic skills framework & software development methodology that works.",
+          "stars_today": 557,
+          "total_stars": 274575,
+          "language": "Shell",
+          "topics": [],
+          "summary": "Superpowers is an agentic skills framework and software development methodology designed to enhance productivity and effectiveness through a structured approach to building and utilizing AI agents."
+        },
+        {
+          "full_name": "jundot/omlx",
+          "url": "https://github.com/jundot/omlx",
+          "description": "LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar",
+          "stars_today": 472,
+          "total_stars": 19973,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository provides an LLM inference server for Apple Silicon, featuring continuous batching and SSD caching, all managed conveniently from the macOS menu bar."
+        }
+      ],
+      "meta": {
+        "count": 9
+      }
+    }
+  ],
+  "meta": {
+    "papers_fetched": 100,
+    "papers_after_keyword_filter": 38,
+    "papers_after_llm_filter": 23,
+    "llm_model": "google/gemini-2.5-flash-lite",
+    "scoring_model": "google/gemini-2.5-flash-lite",
+    "summarization_model": "google/gemini-2.5-flash-lite",
+    "duration_seconds": 61
+  },
+  "quote_of_day": [
+    {
+      "quote": "Money, if it does not bring you happiness, will at least help you be miserable in comfort.",
+      "author": "Helen Gurley Brown",
+      "category": "money"
+    }
+  ],
+  "hitokoto": [],
+  "arxiv": [
+    {
+      "id": "2608.19047v1",
+      "title": "Eureka: Task-Conditioned Meta-Agent Orchestration for Scientific Discovery",
+      "authors": [
+        "Alizer Wong",
+        "Heng Cui",
+        "Yi Tan",
+        "Xiongchao Zhan",
+        "Liang Lin"
+      ],
+      "categories": [
+        "cs.AI",
+        "math.NT"
+      ],
+      "abstract": "Eureka orchestrates specialized \"Macro-Agents\" to tackle complex, long-horizon scientific tasks by dynamically compiling them into obligation graphs. Its core method involves receding-horizon planning and architecture evolution to adapt and optimize agent behavior, leading to highly efficient and reliable task completion. The key contribution is a novel meta-agent framework that demonstrates robust performance and significant computational savings in scientific discovery.",
+      "url": "http://arxiv.org/abs/2608.19047v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19047v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.19047v1/Eureka_framework_figure_final_v2.png",
+      "figure_caption": "Overview of Eureka. The Meta-Agent compiles a task into a dynamic obligation graph, forms task-conditioned specialized agents when architecture hotspots emerge, governs local evolution, and coordinates recursive long-horizon execution under typed verification.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.18827v1",
+      "title": "MLREF: Efficient Module Reuse for Reward Design in Reinforcement Learning via Large Language Models",
+      "authors": [
+        "Chenglin Liu",
+        "Xun Wang",
+        "Ruishuo Chen",
+        "Zhuoran Li",
+        "Longbo Huang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "MLREF addresses reward function design bottlenecks in RL by treating a persistent pool of reusable reward modules as the primary optimization object. Instead of monolithic reward generation, MLREF constructs rewards as linear combinations of these modules, promoting stable performance through mechanisms like reflection-based refinement and a merge strategy with rollback. This allows for efficient reuse of successful reward components across iterations.",
+      "url": "http://arxiv.org/abs/2608.18827v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18827v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.18827v1/figures/pipeline.png",
+      "figure_caption": "Overview of the MLREF pipeline. In the initialization phase (steps 1–3), the LLM performs task and environment reflection and generates diverse module pool variants. In the iterative optimization phase (steps 4–9), each variant assembles a reward function via weighted linear combination for RL evaluation; a merge strategy with rollback consolidates successful modules; and feedback reflection guides the next round of pool improvement.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.18884v1",
+      "title": "Training-Free Inference-Time Self-Reflection and Cost-Bounded Early Stopping for Large Language Models",
+      "authors": [
+        "Wei Yu",
+        "Suxing Liu",
+        "Minjie Yu",
+        "Jiahao Wang",
+        "Zhijian Zheng"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces EvoResearcher, a training-free method that enhances Large Language Model (LLM) reasoning at inference time. It achieves this by enabling a frozen LLM to iteratively generate, self-critique, and revise its responses until a satisfactory answer is reached or a compute budget is exhausted. The core contribution lies in its cost-bounded self-reflection mechanism, which improves performance without requiring expensive retraining.",
+      "url": "http://arxiv.org/abs/2608.18884v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18884v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.18884v1/figure1.png",
+      "figure_caption": "Conceptual overview of the EvoResearcher framework. Four synergistic dimensions are combined: a self-reflective meta-reward (M3) over correctness, path efficiency, reflection depth, and tool-call diversity; an evolving virtual world (M1) that injects time-dependent and adversarial content (expert opinions, scientific retractions, delayed evidence, misleading material); discovery-oriented tasks (M2) that go beyond fact retrieval toward hypothesis generation and contradiction resolution; and a heterogeneous multi-agent swarm (M4) of Scout/Filter/Synthesizer agents with task specialization. The agent draws on retrieval and search-tool infrastructure and is trained via curriculum reinforcement learning from a web-scale corpus. In this work the meta-reward components are realized as a training-free, inference-time self-reflective protocol over a frozen backbone (Section 3.1 ); the RL training pipeline, evolving environment, and multi-agent swarm depicted here are design blueprints and are not evaluated (Section 5 ).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.19002v1",
+      "title": "A Theory of Post-hoc Debate Judgement",
+      "authors": [
+        "Xiang Yin",
+        "Adam Dejl",
+        "Antonio Rago",
+        "Lihu Chen",
+        "Francesca Toni"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper proposes a formal theory for post-hoc debate judgment, aiming to improve reproducibility, robustness, groundedness, and explainability in AI debates. The core method involves identifying and testing formal properties that debate judgment should satisfy, and then evaluating existing judgment methods (like LLM judges and formal semantics) against these properties. The contribution is a theoretical framework and empirical analysis for more reliable and understandable AI debate outcomes.",
+      "url": "http://arxiv.org/abs/2608.19002v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19002v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.19029v1",
+      "title": "Adaptive Memory and Reflection Multi-Agent System for Medical Question Answering",
+      "authors": [
+        "Pradeep Murugesan",
+        "Luoxiao Yang",
+        "Xueli Chen",
+        "Xinqi Fan"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces an Adaptive Memory and Reflection (AMR) multi-agent system for medical question answering. Its core method involves specialized agents with dedicated memory and reflection mechanisms to retrieve prior cases and refine reasoning. The system's contribution lies in its adaptive workflow and consensus/ethical oversight, leading to improved accuracy and responsible medical QA.",
+      "url": "http://arxiv.org/abs/2608.19029v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19029v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.19161v1",
+      "title": "Beyond the Transcript: Detecting Covert Co ordination in Latent Multi-Agent Communication",
+      "authors": [
+        "Ramneet Kaur",
+        "Pradyumna Chari",
+        "Ramesh Raskar",
+        "Jugad Singh",
+        "Sumit Kumar Jha"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces Verifiable Latent Alignments (VLA), a framework to detect and control covert coordination in multi-agent language models by analyzing their hidden communication states. VLA links private latent states to public actions using event identifiers for causal analysis, offering a three-layer monitor for anomaly detection and influence analysis, along with steerability mechanisms. The core contribution is enabling the detection of hidden harmful coordination and providing methods to influence or prevent it.",
+      "url": "http://arxiv.org/abs/2608.19161v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19161v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.18878v1",
+      "title": "DentAgent: Evidence-Centric Multi-Agent Coordination for Multimodal Dental Reasoning",
+      "authors": [
+        "Zijie Meng",
+        "Xiwei Dai",
+        "Yixuan Tang",
+        "Jin Hao",
+        "Yang Feng"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "abstract": "DentAgent is an evidence-centric multi-agent framework that addresses limitations in existing dental AI systems by integrating multimodal data. It uses a coordinated system of five specialized agents, each leveraging domain tools to convert observations into structured evidence records. This evidence is then managed on an Evidence Blackboard, ensuring a unified and traceable reasoning process for dental assessment.",
+      "url": "http://arxiv.org/abs/2608.18878v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18878v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.19013v1",
+      "title": "Harness Continual Learning: Continual Adaptation Beyond Model Parameters",
+      "authors": [
+        "Borui Kang",
+        "Jinrui Gu",
+        "Junhan Lv",
+        "Wenbin Li",
+        "Lei Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces Harness Continual Learning (HCL), a new paradigm that enables agents to adapt and improve through changes in their \"harness\" (prompts, memories, tools, etc.) rather than solely by updating model parameters. The core method involves evolving this harness around a frozen foundation model, addressing \"harness-level forgetting\" where new adaptations disrupt old behaviors. The contribution is a framework and instantiation of HCL with specific components, offering a way to achieve continual learning without retraining the entire model.",
+      "url": "http://arxiv.org/abs/2608.19013v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19013v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.19013v1/intro.png",
+      "figure_caption": "The shift in the object of continual learning. Model-centric methods update model parameters \\( \\theta \\) over sequential experience. HCL instead updates harness state around a frozen foundation model. In both settings, adaptation can improve new behavior while interfering with behavior acquired earlier.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.18937v1",
+      "title": "MedUAG: Unified Understanding and Generation for Medical Multimodal Models",
+      "authors": [
+        "Zijie Meng",
+        "Yuncheng Zhang",
+        "Hualiang Wang",
+        "Yitian Tang",
+        "Xiaotang Gai"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces MedUAG, a unified framework for medical multimodal understanding and generation. It addresses the lack of comprehensive resources by creating the largest medical dataset (MedUAGCorpus) and a systematic evaluation benchmark (MedUAGBench). MedUAG, trained on these resources, demonstrates strong performance across various medical tasks, establishing a new standard for unified medical AI.",
+      "url": "http://arxiv.org/abs/2608.18937v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18937v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.18952v1",
+      "title": "rEDMRec: Distilling Large Language Model Reasoning into an Editable Experience Memory for Recommendation",
+      "authors": [
+        "Minh Hoang Nguyen",
+        "Tung Le",
+        "Huy Tien Nguyen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.IR"
+      ],
+      "abstract": "This paper proposes rEDMRec, a method to distill LLM reasoning for recommendations into a compact, editable \"experience memory.\" Instead of re-generating expensive reasoning for each recommendation, rEDMRec compresses it into structured channels that a lightweight model can retrieve from. This allows for reusable, inspectable, and correctable reasoning, improving recommendation efficiency and adaptability.",
+      "url": "http://arxiv.org/abs/2608.18952v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18952v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.19025v1",
+      "title": "Self-prompting and cross-model consensus enable reproducible data extraction from scientific literature with large language models",
+      "authors": [
+        "Valentin Romanov",
+        "Monique Bax",
+        "Steven Niederer"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.DB"
+      ],
+      "abstract": "This paper introduces a **self-prompting and cross-model consensus method** for reproducible data extraction from scientific literature using large language models (LLMs). The core contribution is demonstrating that LLMs can effectively extract nuanced data by generating their own prompts and that cross-model consensus improves accuracy, though human oversight remains crucial for high-quality datasets.",
+      "url": "http://arxiv.org/abs/2608.19025v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19025v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.18933v1",
+      "title": "SkillForge: Self-Distilling Agents for Project-Specific Issue Resolution",
+      "authors": [
+        "Silin Chen",
+        "Han Li",
+        "Xiaodong Gu",
+        "Yuling Shi",
+        "Haibing Guan"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "SkillForge addresses LLM agents' lack of project-specific knowledge for software issue resolution by proactively generating and resolving synthetic issues. This self-distillation process allows agents to acquire and store reusable, project-specific knowledge as \"entity-grounded skills\" without relying on historical data or incurring high per-issue test-time costs.",
+      "url": "http://arxiv.org/abs/2608.18933v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18933v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.18852v1",
+      "title": "SkillGate: Training In-Policy Skill Selection in Long-Horizon Agents",
+      "authors": [
+        "Qingyao Li",
+        "Wenxiang Jiao",
+        "Shuai Shao",
+        "Kangning Zhang",
+        "Yuan Lu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces SkillGate, a novel method for training agents to select skills in long-horizon tasks. It addresses \"selector credit starvation,\" a problem where the skill selection mechanism receives insufficient or incorrect training signals due to delayed rewards and cascading failures. SkillGate's core contribution is a training approach that directly attributes credit to skill choices, ensuring more accurate and effective skill selection for complex, multi-step tasks.",
+      "url": "http://arxiv.org/abs/2608.18852v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18852v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.19197v1",
+      "title": "SPADE: Self-Play in Adaptive Synthetic Executable Environments",
+      "authors": [
+        "Bo Liu",
+        "Simon Yu",
+        "Yiding Jiang",
+        "Ao Qu",
+        "Andrew Zhao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "SPADE is a self-play reinforcement learning framework where a single LLM acts as both an Environment Designer and a Reasoning Agent. The Environment Designer generates diverse, long-horizon training environments as executable code, while the Reasoning Agent learns to solve tasks within these environments. This approach allows for continuous self-improvement by dynamically adapting the training goal distribution as the agent scales.",
+      "url": "http://arxiv.org/abs/2608.19197v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19197v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.19072v1",
+      "title": "What is Missing from AI Post-Training AI: An Empirical Analysis",
+      "authors": [
+        "Joy Jia Yin Lim",
+        "Xin Huang",
+        "Hao Peng",
+        "Yaxi Lu",
+        "Xin Cong"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper distinguishes between an AI agent's ability to execute a training strategy and its ability to revise that strategy. Through empirical analysis of LLM post-training trajectories, the authors find that agents typically fix their strategy early on and only make local adjustments. They propose an \"experience-driven scaffold\" as a key intervention to improve both execution and strategy-level decision-making.",
+      "url": "http://arxiv.org/abs/2608.19072v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19072v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.18849v1",
+      "title": "GEAR: Generative Expansion and Real Anchoring for Two-Stage Distillation of Tabular Foundation Models",
+      "authors": [
+        "Qi Qin",
+        "Jiajie Zhu",
+        "Dali Chen",
+        "Yuzhao Zhang",
+        "Jia-Xing Han"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML",
+        "stat.ME"
+      ],
+      "abstract": "GEAR is a two-stage distillation framework that compresses large tabular foundation models (TFMs) into efficient MLP or tree-based predictors. It first uses synthetic data to train a student model on TFM outputs, expanding its coverage. Then, it refines the student using real data and out-of-fold predictions to avoid self-labeling issues, achieving improved performance over traditional methods.",
+      "url": "http://arxiv.org/abs/2608.18849v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18849v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2608.19009v1",
+      "title": "Grading the Graders: Verification Autonomy Levels (L0-L5) for LLM Reasoning",
+      "authors": [
+        "Yajie Yin"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces Verification Autonomy Levels (VAL), a new meta-standard to classify LLM verification methods. VAL categorizes verifiers based on the origin of their verification specifications and the guarantees their verdicts provide, ranging from LLM self-declaration (L0) to provable completeness (L3/L4). The core contribution is a unified framework to understand and compare the reliability and autonomy of different LLM verification strategies, highlighting the inherent \"completeness blind spot\" in many current approaches.",
+      "url": "http://arxiv.org/abs/2608.19009v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19009v1",
+      "score": 8.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2608.18938v1",
+      "title": "Breaking the weakest link to evade vision language models",
+      "authors": [
+        "Ilan Zini",
+        "Boussad Addad",
+        "Katarzyna Kapusta"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces a novel gradient-based attack method to evade Vision-Language Models (VLMs). The core method optimizes only the VLM's vision encoder, breaking the \"weakest link\" to generate adversarial visual inputs. This approach efficiently disrupts multimodal alignment, successfully creating both untargeted and targeted evasion attacks.",
+      "url": "http://arxiv.org/abs/2608.18938v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18938v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2608.18938v1/fig1.png",
+      "figure_caption": "Targeted adversarial attack using vision encoder embedding alignment.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.19119v1",
+      "title": "Discretizing Continuous Time Series for Imputation with Masked Diffusion Training",
+      "authors": [
+        "Dongbin Kim",
+        "Seungyun Lee",
+        "Geonwoo Shin",
+        "Jaewook Lee"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper proposes MDTIM, a novel time series imputation method that addresses limitations of existing approaches. MDTIM uses a masked diffusion training paradigm where a special MASK token is structurally separate from observed data, and the model directly predicts original values. This approach, combined with Stochastic Discretization, effectively bridges the gap between discrete diffusion and continuous time series, leading to improved imputation performance.",
+      "url": "http://arxiv.org/abs/2608.19119v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19119v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.18816v1",
+      "title": "Do Large Language Models Hallucinate Electric Fata Morganas?",
+      "authors": [
+        "Kristina Šekrst"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper argues that AI hallucinations, often seen as an engineering flaw, hold philosophical significance for machine consciousness. It investigates known causes of hallucinations in LLMs and empirically shows that parameters increasing creativity and spontaneity (like higher temperature settings) also significantly boost hallucination rates. This suggests that the very mechanisms enabling seemingly intelligent behavior might also be the source of fabricated outputs.",
+      "url": "http://arxiv.org/abs/2608.18816v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18816v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "papers": [
+    {
+      "id": "2608.19047v1",
+      "title": "Eureka: Task-Conditioned Meta-Agent Orchestration for Scientific Discovery",
+      "authors": [
+        "Alizer Wong",
+        "Heng Cui",
+        "Yi Tan",
+        "Xiongchao Zhan",
+        "Liang Lin"
+      ],
+      "categories": [
+        "cs.AI",
+        "math.NT"
+      ],
+      "abstract": "Eureka orchestrates specialized \"Macro-Agents\" to tackle complex, long-horizon scientific tasks by dynamically compiling them into obligation graphs. Its core method involves receding-horizon planning and architecture evolution to adapt and optimize agent behavior, leading to highly efficient and reliable task completion. The key contribution is a novel meta-agent framework that demonstrates robust performance and significant computational savings in scientific discovery.",
+      "url": "http://arxiv.org/abs/2608.19047v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19047v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.19047v1/Eureka_framework_figure_final_v2.png",
+      "figure_caption": "Overview of Eureka. The Meta-Agent compiles a task into a dynamic obligation graph, forms task-conditioned specialized agents when architecture hotspots emerge, governs local evolution, and coordinates recursive long-horizon execution under typed verification.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.18827v1",
+      "title": "MLREF: Efficient Module Reuse for Reward Design in Reinforcement Learning via Large Language Models",
+      "authors": [
+        "Chenglin Liu",
+        "Xun Wang",
+        "Ruishuo Chen",
+        "Zhuoran Li",
+        "Longbo Huang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "MLREF addresses reward function design bottlenecks in RL by treating a persistent pool of reusable reward modules as the primary optimization object. Instead of monolithic reward generation, MLREF constructs rewards as linear combinations of these modules, promoting stable performance through mechanisms like reflection-based refinement and a merge strategy with rollback. This allows for efficient reuse of successful reward components across iterations.",
+      "url": "http://arxiv.org/abs/2608.18827v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18827v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.18827v1/figures/pipeline.png",
+      "figure_caption": "Overview of the MLREF pipeline. In the initialization phase (steps 1–3), the LLM performs task and environment reflection and generates diverse module pool variants. In the iterative optimization phase (steps 4–9), each variant assembles a reward function via weighted linear combination for RL evaluation; a merge strategy with rollback consolidates successful modules; and feedback reflection guides the next round of pool improvement.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.18884v1",
+      "title": "Training-Free Inference-Time Self-Reflection and Cost-Bounded Early Stopping for Large Language Models",
+      "authors": [
+        "Wei Yu",
+        "Suxing Liu",
+        "Minjie Yu",
+        "Jiahao Wang",
+        "Zhijian Zheng"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces EvoResearcher, a training-free method that enhances Large Language Model (LLM) reasoning at inference time. It achieves this by enabling a frozen LLM to iteratively generate, self-critique, and revise its responses until a satisfactory answer is reached or a compute budget is exhausted. The core contribution lies in its cost-bounded self-reflection mechanism, which improves performance without requiring expensive retraining.",
+      "url": "http://arxiv.org/abs/2608.18884v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18884v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.18884v1/figure1.png",
+      "figure_caption": "Conceptual overview of the EvoResearcher framework. Four synergistic dimensions are combined: a self-reflective meta-reward (M3) over correctness, path efficiency, reflection depth, and tool-call diversity; an evolving virtual world (M1) that injects time-dependent and adversarial content (expert opinions, scientific retractions, delayed evidence, misleading material); discovery-oriented tasks (M2) that go beyond fact retrieval toward hypothesis generation and contradiction resolution; and a heterogeneous multi-agent swarm (M4) of Scout/Filter/Synthesizer agents with task specialization. The agent draws on retrieval and search-tool infrastructure and is trained via curriculum reinforcement learning from a web-scale corpus. In this work the meta-reward components are realized as a training-free, inference-time self-reflective protocol over a frozen backbone (Section 3.1 ); the RL training pipeline, evolving environment, and multi-agent swarm depicted here are design blueprints and are not evaluated (Section 5 ).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.19002v1",
+      "title": "A Theory of Post-hoc Debate Judgement",
+      "authors": [
+        "Xiang Yin",
+        "Adam Dejl",
+        "Antonio Rago",
+        "Lihu Chen",
+        "Francesca Toni"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper proposes a formal theory for post-hoc debate judgment, aiming to improve reproducibility, robustness, groundedness, and explainability in AI debates. The core method involves identifying and testing formal properties that debate judgment should satisfy, and then evaluating existing judgment methods (like LLM judges and formal semantics) against these properties. The contribution is a theoretical framework and empirical analysis for more reliable and understandable AI debate outcomes.",
+      "url": "http://arxiv.org/abs/2608.19002v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19002v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.19029v1",
+      "title": "Adaptive Memory and Reflection Multi-Agent System for Medical Question Answering",
+      "authors": [
+        "Pradeep Murugesan",
+        "Luoxiao Yang",
+        "Xueli Chen",
+        "Xinqi Fan"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces an Adaptive Memory and Reflection (AMR) multi-agent system for medical question answering. Its core method involves specialized agents with dedicated memory and reflection mechanisms to retrieve prior cases and refine reasoning. The system's contribution lies in its adaptive workflow and consensus/ethical oversight, leading to improved accuracy and responsible medical QA.",
+      "url": "http://arxiv.org/abs/2608.19029v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19029v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.19161v1",
+      "title": "Beyond the Transcript: Detecting Covert Co ordination in Latent Multi-Agent Communication",
+      "authors": [
+        "Ramneet Kaur",
+        "Pradyumna Chari",
+        "Ramesh Raskar",
+        "Jugad Singh",
+        "Sumit Kumar Jha"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces Verifiable Latent Alignments (VLA), a framework to detect and control covert coordination in multi-agent language models by analyzing their hidden communication states. VLA links private latent states to public actions using event identifiers for causal analysis, offering a three-layer monitor for anomaly detection and influence analysis, along with steerability mechanisms. The core contribution is enabling the detection of hidden harmful coordination and providing methods to influence or prevent it.",
+      "url": "http://arxiv.org/abs/2608.19161v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19161v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.18878v1",
+      "title": "DentAgent: Evidence-Centric Multi-Agent Coordination for Multimodal Dental Reasoning",
+      "authors": [
+        "Zijie Meng",
+        "Xiwei Dai",
+        "Yixuan Tang",
+        "Jin Hao",
+        "Yang Feng"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "abstract": "DentAgent is an evidence-centric multi-agent framework that addresses limitations in existing dental AI systems by integrating multimodal data. It uses a coordinated system of five specialized agents, each leveraging domain tools to convert observations into structured evidence records. This evidence is then managed on an Evidence Blackboard, ensuring a unified and traceable reasoning process for dental assessment.",
+      "url": "http://arxiv.org/abs/2608.18878v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18878v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.19013v1",
+      "title": "Harness Continual Learning: Continual Adaptation Beyond Model Parameters",
+      "authors": [
+        "Borui Kang",
+        "Jinrui Gu",
+        "Junhan Lv",
+        "Wenbin Li",
+        "Lei Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces Harness Continual Learning (HCL), a new paradigm that enables agents to adapt and improve through changes in their \"harness\" (prompts, memories, tools, etc.) rather than solely by updating model parameters. The core method involves evolving this harness around a frozen foundation model, addressing \"harness-level forgetting\" where new adaptations disrupt old behaviors. The contribution is a framework and instantiation of HCL with specific components, offering a way to achieve continual learning without retraining the entire model.",
+      "url": "http://arxiv.org/abs/2608.19013v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19013v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.19013v1/intro.png",
+      "figure_caption": "The shift in the object of continual learning. Model-centric methods update model parameters \\( \\theta \\) over sequential experience. HCL instead updates harness state around a frozen foundation model. In both settings, adaptation can improve new behavior while interfering with behavior acquired earlier.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.18937v1",
+      "title": "MedUAG: Unified Understanding and Generation for Medical Multimodal Models",
+      "authors": [
+        "Zijie Meng",
+        "Yuncheng Zhang",
+        "Hualiang Wang",
+        "Yitian Tang",
+        "Xiaotang Gai"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces MedUAG, a unified framework for medical multimodal understanding and generation. It addresses the lack of comprehensive resources by creating the largest medical dataset (MedUAGCorpus) and a systematic evaluation benchmark (MedUAGBench). MedUAG, trained on these resources, demonstrates strong performance across various medical tasks, establishing a new standard for unified medical AI.",
+      "url": "http://arxiv.org/abs/2608.18937v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18937v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.18952v1",
+      "title": "rEDMRec: Distilling Large Language Model Reasoning into an Editable Experience Memory for Recommendation",
+      "authors": [
+        "Minh Hoang Nguyen",
+        "Tung Le",
+        "Huy Tien Nguyen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.IR"
+      ],
+      "abstract": "This paper proposes rEDMRec, a method to distill LLM reasoning for recommendations into a compact, editable \"experience memory.\" Instead of re-generating expensive reasoning for each recommendation, rEDMRec compresses it into structured channels that a lightweight model can retrieve from. This allows for reusable, inspectable, and correctable reasoning, improving recommendation efficiency and adaptability.",
+      "url": "http://arxiv.org/abs/2608.18952v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18952v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.19025v1",
+      "title": "Self-prompting and cross-model consensus enable reproducible data extraction from scientific literature with large language models",
+      "authors": [
+        "Valentin Romanov",
+        "Monique Bax",
+        "Steven Niederer"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.DB"
+      ],
+      "abstract": "This paper introduces a **self-prompting and cross-model consensus method** for reproducible data extraction from scientific literature using large language models (LLMs). The core contribution is demonstrating that LLMs can effectively extract nuanced data by generating their own prompts and that cross-model consensus improves accuracy, though human oversight remains crucial for high-quality datasets.",
+      "url": "http://arxiv.org/abs/2608.19025v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19025v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.18933v1",
+      "title": "SkillForge: Self-Distilling Agents for Project-Specific Issue Resolution",
+      "authors": [
+        "Silin Chen",
+        "Han Li",
+        "Xiaodong Gu",
+        "Yuling Shi",
+        "Haibing Guan"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "SkillForge addresses LLM agents' lack of project-specific knowledge for software issue resolution by proactively generating and resolving synthetic issues. This self-distillation process allows agents to acquire and store reusable, project-specific knowledge as \"entity-grounded skills\" without relying on historical data or incurring high per-issue test-time costs.",
+      "url": "http://arxiv.org/abs/2608.18933v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18933v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.18852v1",
+      "title": "SkillGate: Training In-Policy Skill Selection in Long-Horizon Agents",
+      "authors": [
+        "Qingyao Li",
+        "Wenxiang Jiao",
+        "Shuai Shao",
+        "Kangning Zhang",
+        "Yuan Lu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces SkillGate, a novel method for training agents to select skills in long-horizon tasks. It addresses \"selector credit starvation,\" a problem where the skill selection mechanism receives insufficient or incorrect training signals due to delayed rewards and cascading failures. SkillGate's core contribution is a training approach that directly attributes credit to skill choices, ensuring more accurate and effective skill selection for complex, multi-step tasks.",
+      "url": "http://arxiv.org/abs/2608.18852v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18852v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.19197v1",
+      "title": "SPADE: Self-Play in Adaptive Synthetic Executable Environments",
+      "authors": [
+        "Bo Liu",
+        "Simon Yu",
+        "Yiding Jiang",
+        "Ao Qu",
+        "Andrew Zhao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "SPADE is a self-play reinforcement learning framework where a single LLM acts as both an Environment Designer and a Reasoning Agent. The Environment Designer generates diverse, long-horizon training environments as executable code, while the Reasoning Agent learns to solve tasks within these environments. This approach allows for continuous self-improvement by dynamically adapting the training goal distribution as the agent scales.",
+      "url": "http://arxiv.org/abs/2608.19197v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19197v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.19072v1",
+      "title": "What is Missing from AI Post-Training AI: An Empirical Analysis",
+      "authors": [
+        "Joy Jia Yin Lim",
+        "Xin Huang",
+        "Hao Peng",
+        "Yaxi Lu",
+        "Xin Cong"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper distinguishes between an AI agent's ability to execute a training strategy and its ability to revise that strategy. Through empirical analysis of LLM post-training trajectories, the authors find that agents typically fix their strategy early on and only make local adjustments. They propose an \"experience-driven scaffold\" as a key intervention to improve both execution and strategy-level decision-making.",
+      "url": "http://arxiv.org/abs/2608.19072v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19072v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.18849v1",
+      "title": "GEAR: Generative Expansion and Real Anchoring for Two-Stage Distillation of Tabular Foundation Models",
+      "authors": [
+        "Qi Qin",
+        "Jiajie Zhu",
+        "Dali Chen",
+        "Yuzhao Zhang",
+        "Jia-Xing Han"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML",
+        "stat.ME"
+      ],
+      "abstract": "GEAR is a two-stage distillation framework that compresses large tabular foundation models (TFMs) into efficient MLP or tree-based predictors. It first uses synthetic data to train a student model on TFM outputs, expanding its coverage. Then, it refines the student using real data and out-of-fold predictions to avoid self-labeling issues, achieving improved performance over traditional methods.",
+      "url": "http://arxiv.org/abs/2608.18849v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18849v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2608.19009v1",
+      "title": "Grading the Graders: Verification Autonomy Levels (L0-L5) for LLM Reasoning",
+      "authors": [
+        "Yajie Yin"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces Verification Autonomy Levels (VAL), a new meta-standard to classify LLM verification methods. VAL categorizes verifiers based on the origin of their verification specifications and the guarantees their verdicts provide, ranging from LLM self-declaration (L0) to provable completeness (L3/L4). The core contribution is a unified framework to understand and compare the reliability and autonomy of different LLM verification strategies, highlighting the inherent \"completeness blind spot\" in many current approaches.",
+      "url": "http://arxiv.org/abs/2608.19009v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19009v1",
+      "score": 8.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2608.18938v1",
+      "title": "Breaking the weakest link to evade vision language models",
+      "authors": [
+        "Ilan Zini",
+        "Boussad Addad",
+        "Katarzyna Kapusta"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces a novel gradient-based attack method to evade Vision-Language Models (VLMs). The core method optimizes only the VLM's vision encoder, breaking the \"weakest link\" to generate adversarial visual inputs. This approach efficiently disrupts multimodal alignment, successfully creating both untargeted and targeted evasion attacks.",
+      "url": "http://arxiv.org/abs/2608.18938v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18938v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2608.18938v1/fig1.png",
+      "figure_caption": "Targeted adversarial attack using vision encoder embedding alignment.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.19119v1",
+      "title": "Discretizing Continuous Time Series for Imputation with Masked Diffusion Training",
+      "authors": [
+        "Dongbin Kim",
+        "Seungyun Lee",
+        "Geonwoo Shin",
+        "Jaewook Lee"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper proposes MDTIM, a novel time series imputation method that addresses limitations of existing approaches. MDTIM uses a masked diffusion training paradigm where a special MASK token is structurally separate from observed data, and the model directly predicts original values. This approach, combined with Stochastic Discretization, effectively bridges the gap between discrete diffusion and continuous time series, leading to improved imputation performance.",
+      "url": "http://arxiv.org/abs/2608.19119v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19119v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.18816v1",
+      "title": "Do Large Language Models Hallucinate Electric Fata Morganas?",
+      "authors": [
+        "Kristina Šekrst"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper argues that AI hallucinations, often seen as an engineering flaw, hold philosophical significance for machine consciousness. It investigates known causes of hallucinations in LLMs and empirically shows that parameters increasing creativity and spontaneity (like higher temperature settings) also significantly boost hallucination rates. This suggests that the very mechanisms enabling seemingly intelligent behavior might also be the source of fabricated outputs.",
+      "url": "http://arxiv.org/abs/2608.18816v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18816v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "hacker_news": [
+    {
+      "id": 49364559,
+      "title": "OpenRouter is joining Stripe",
+      "url": "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe/",
+      "score": 837,
+      "created_at": "2026-08-19T17:32:38Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49364559",
+      "summary": "Stripe has acquired OpenRouter, a platform that aggregates and provides access to various large language models, aiming to enhance its AI capabilities and offerings."
+    },
+    {
+      "id": 49359425,
+      "title": "Air Theremin – A browser theremin you play by waving at your webcam",
+      "url": "https://theremin.bizibah.com/",
+      "score": 274,
+      "created_at": "2026-08-19T10:15:00Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49359425",
+      "summary": "This tech news story describes \"Air Theremin,\" a browser-based theremin that allows users to play music by waving their hands in front of their webcam."
+    },
+    {
+      "id": 49365443,
+      "title": "Unsloth Dynamic 3.0 GGUFs",
+      "url": "https://unsloth.ai/docs/basics/dynamic-3.0-ggufs",
+      "score": 266,
+      "created_at": "2026-08-19T18:36:45Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49365443",
+      "summary": "Unsloth Dynamic 3.0 GGUFs are optimized, quantized model files designed for faster inference and reduced memory usage on consumer hardware."
+    },
+    {
+      "id": 49362401,
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "score": 197,
+      "created_at": "2026-08-19T14:48:39Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49362401",
+      "summary": "Ornith-1.5 is a new AI model that can autonomously generate and refine its own code, enabling self-improvement without human intervention."
+    },
+    {
+      "id": 49362728,
+      "title": "Mathematics in the age of AI",
+      "url": "https://arxiv.org/abs/2608.16753",
+      "score": 168,
+      "created_at": "2026-08-19T15:14:25Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49362728",
+      "summary": "This paper explores how AI is transforming mathematics, enabling new discoveries and posing fundamental questions about the nature of mathematical proof and creativity."
+    },
+    {
+      "id": 49371857,
+      "title": "Don't Paste the AI, please",
+      "url": "https://dontpastetheai.com/",
+      "score": 156,
+      "created_at": "2026-08-20T08:20:44Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49371857",
+      "summary": "This tech news story warns against directly pasting AI-generated content into documents, highlighting potential issues with originality and ethical considerations."
+    },
+    {
+      "id": 49363668,
+      "title": "Extensible Software in the age of LLMs",
+      "url": "https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms/",
+      "score": 150,
+      "created_at": "2026-08-19T16:26:05Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49363668",
+      "summary": "The article argues that in the age of LLMs, extensible software, designed for easy modification and integration, will be crucial for adapting to rapidly evolving AI capabilities and user needs."
+    }
+  ],
+  "github_trending": [
+    {
+      "full_name": "harry0703/MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
+      "stars_today": 2221,
+      "total_stars": 112148,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository's core function is to automatically generate high-definition short videos from a given topic or keyword using AI large models and automated workflows."
+    },
+    {
+      "full_name": "volcengine/OpenViking",
+      "url": "https://github.com/volcengine/OpenViking",
+      "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
+      "stars_today": 804,
+      "total_stars": 30683,
+      "language": "Python",
+      "topics": [],
+      "summary": "OpenViking is a self-evolving context database that unifies AI agent memory, knowledge retrieval-augmented generation (RAG), and skills for enhanced agent capabilities."
+    },
+    {
+      "full_name": "chaitanyagiri/munder-difflin",
+      "url": "https://github.com/chaitanyagiri/munder-difflin",
+      "description": "local multi-agent harness",
+      "stars_today": 795,
+      "total_stars": 2912,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "This repository provides a local multi-agent harness, enabling developers to easily set up and run multiple AI agents for testing and experimentation in a controlled environment."
+    },
+    {
+      "full_name": "mukul975/Anthropic-Cybersecurity-Skills",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
+      "stars_today": 766,
+      "total_stars": 30148,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository provides 817 structured cybersecurity skills for AI agents, mapped to six major frameworks and the agentskills.io standard, enabling AI to perform diverse security tasks across numerous platforms."
+    },
+    {
+      "full_name": "akitaonrails/ai-memory",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+      "stars_today": 606,
+      "total_stars": 3332,
+      "language": "Rust",
+      "topics": [],
+      "summary": "This repository provides a solution for long-term memory for AI coding CLIs, enabling seamless handoffs between different AI agent vendors."
+    },
+    {
+      "full_name": "nautechsystems/nautilus_trader",
+      "url": "https://github.com/nautechsystems/nautilus_trader",
+      "description": "Production-grade Rust-native trading engine with deterministic event-driven architecture",
+      "stars_today": 80,
+      "total_stars": 26608,
+      "language": "Rust",
+      "topics": [],
+      "summary": "Nautilus Trader is a production-grade, Rust-native trading engine featuring a deterministic, event-driven architecture for high-performance financial applications."
+    },
+    {
+      "full_name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "stars_today": 1894,
+      "total_stars": 224563,
+      "language": "Shell",
+      "topics": [],
+      "summary": "This repository provides a curated collection of \"skills\" or code snippets designed for real engineers, extracted from the author's personal `.agents` directory."
+    },
+    {
+      "full_name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "stars_today": 557,
+      "total_stars": 274575,
+      "language": "Shell",
+      "topics": [],
+      "summary": "Superpowers is an agentic skills framework and software development methodology designed to enhance productivity and effectiveness through a structured approach to building and utilizing AI agents."
+    },
+    {
+      "full_name": "jundot/omlx",
+      "url": "https://github.com/jundot/omlx",
+      "description": "LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar",
+      "stars_today": 472,
+      "total_stars": 19973,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository provides an LLM inference server for Apple Silicon, featuring continuous batching and SSD caching, all managed conveniently from the macOS menu bar."
+    }
+  ],
+  "us_stocks": [],
+  "postdoc_jobs": [],
+  "jobs": [],
+  "supervisor_updates": [],
+  "weather": [
+    {
+      "query": "London",
+      "label": "London, England, United Kingdom",
+      "resolved_name": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "timezone": "Europe/London",
+      "forecast_date": "2026-08-20",
+      "condition": "Partly cloudy",
+      "weather_code": 2,
+      "temperature_c": 17.8,
+      "apparent_temperature_c": 16.8,
+      "temp_max_c": 21.3,
+      "temp_min_c": 16.0,
+      "humidity_pct": 69,
+      "wind_speed_kmh": 11.9,
+      "precipitation_probability_pct": 93,
+      "is_day": true,
+      "sunrise": "2026-08-20T05:54",
+      "sunset": "2026-08-20T20:13",
+      "source": "Open-Meteo",
+      "source_url": "https://open-meteo.com/"
+    }
+  ]
+}
