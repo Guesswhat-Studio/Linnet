@@ -1,0 +1,1738 @@
+{
+  "date": "2026-08-26",
+  "generated_at": "2026-08-26T09:45:18.079267+00:00",
+  "sections_ordered": [
+    {
+      "key": "quote_of_day",
+      "payload_key": "quote_of_day",
+      "title": "Words for the Morning",
+      "icon": "✦",
+      "items": [
+        {
+          "quote": "My mom loved to sing - and I'll go on record and say she was the worst singer ever. I'd get up and move away from her!",
+          "author": "Kenny Rogers",
+          "category": "mom"
+        }
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "key": "weather",
+      "payload_key": "weather",
+      "title": "Weather",
+      "icon": "🌦️",
+      "items": [
+        {
+          "query": "London",
+          "label": "London, England, United Kingdom",
+          "resolved_name": "London",
+          "region": "England",
+          "country": "United Kingdom",
+          "latitude": 51.50853,
+          "longitude": -0.12574,
+          "timezone": "Europe/London",
+          "forecast_date": "2026-08-26",
+          "condition": "Overcast",
+          "weather_code": 3,
+          "temperature_c": 21.2,
+          "apparent_temperature_c": 22.0,
+          "temp_max_c": 24.6,
+          "temp_min_c": 18.5,
+          "humidity_pct": 74,
+          "wind_speed_kmh": 10.1,
+          "precipitation_probability_pct": 63,
+          "is_day": true,
+          "sunrise": "2026-08-26T06:03",
+          "sunset": "2026-08-26T20:00",
+          "source": "Open-Meteo",
+          "source_url": "https://open-meteo.com/"
+        }
+      ],
+      "meta": {
+        "count": 1,
+        "city": "London"
+      }
+    },
+    {
+      "key": "arxiv",
+      "payload_key": "papers",
+      "title": "arXiv Papers",
+      "icon": "📄",
+      "items": [
+        {
+          "id": "2608.24571v1",
+          "title": "Joint Optimization of Tool Creation and Use for Large Language Model Agents",
+          "authors": [
+            "Zhi Rui Tam",
+            "Chieh-Yen Lin",
+            "Yun-Nung Chen",
+            "Shao-Hua Sun",
+            "Hung-yi Lee"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.SE"
+          ],
+          "abstract": "This paper introduces SMITH, a reinforcement learning framework that jointly optimizes LLM agent tool creation and usage within a single policy. By training tool building and invocation together, and using independent reward signals for schema, code, and outcome correctness, SMITH enables agents to learn to create and effectively use tools. This approach significantly improves performance on procedural reasoning tasks compared to existing methods.",
+          "url": "http://arxiv.org/abs/2608.24571v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.24571v1",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.24696v1",
+          "title": "On-policy Distillation with Verifiable Reward",
+          "authors": [
+            "Wenze Lin",
+            "Jiale Zhao",
+            "Xitai Jiang",
+            "Songde Rao",
+            "Yining Li"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper proposes **OPDVR**, a novel method that seamlessly integrates on-policy distillation (OPD) and reinforcement learning with verifiable rewards (RLVR) for post-training large language models. The core innovation is reformulating OPD's implicit reward to incorporate trajectory correctness and using a ReLU gating mechanism to ensure that only valid trajectories contribute positively to the reward signal, thus avoiding extra hyperparameters and trade-offs. This approach leverages the dense guidance of OPD and the task-level correctness of RLVR to improve model performance.",
+          "url": "http://arxiv.org/abs/2608.24696v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.24696v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2608.24696v1/OPD-OPDVR-acc.png",
+          "figure_caption": "Left: Overview of OPDVR. The ReLU gating mechanism ensures correct trajectories receive non-negative rewards and incorrect ones receive non-positive rewards, while preserving the teacher’s distributional guidance. Right: Results on AIME24, AIME25, and AMC under the same-architecture setting (Qwen3-4B ← \\( \\leftarrow \\) Qwen3-4B-RL), reported as avg@16 accuracy.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.24658v1",
+          "title": "Parason: Revealing Subtask and Trial Parallelism in LLM Reasoning",
+          "authors": [
+            "Zhengyang Zhang",
+            "Zijian Zhang",
+            "Jiaxuan Gao",
+            "Shusheng Xu",
+            "Yi Wu"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces Parason, a method that identifies and leverages two types of parallelism in LLM reasoning: Subtask Parallelism (breaking down a task) and Trial Parallelism (parallel exploration of hypotheses). The key contribution is demonstrating that Trial Parallelism is a significant and often dominant form of parallelizable computation, especially for difficult problems, and that Parason can effectively learn to exploit both.",
+          "url": "http://arxiv.org/abs/2608.24658v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.24658v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2608.24658v1/subtask_trial_parallelism_overview.png",
+          "figure_caption": "Overview of two types of parallelism. The figure contrasts Subtask Parallelism, where all decomposed branches are needed for the final answer, with Trial Parallelism, where multiple uncertain paths are explored as alternative (OR) branches. Despite this OR relation, the outputs of all Trial branches are concatenated into the subsequent context, making every branch’s content available for final synthesis. While previous work mainly focuses on Subtask Parallelism, our analysis shows that Trial Parallelism accounts for the majority of parallelizable reasoning on HLE for every model we study, and exceeds 58% for DeepSeek-R1 and DeepSeek-V4 across both datasets.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.24876v1",
+          "title": "Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses",
+          "authors": [
+            "Zhaochen Yu",
+            "Yingcheng Wu",
+            "Zhenfei Yin",
+            "Kaiyuan Chen",
+            "Zhe Zhao"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces Recuris, a novel architecture designed to overcome challenges in long-horizon tasks by employing a recursive Experiential-Working Memory. Recuris uses Working Memory to track task progress and guide skill selection from Experiential Memory, grounding actions in current needs. This approach enables a fixed Meta-Agent to perform localized, validation-gated updates to Skill Memory, leading to significant improvements in task success across various benchmarks and models.",
+          "url": "http://arxiv.org/abs/2608.24876v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.24876v1",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.24662v1",
+          "title": "The Invisible Editorial Layer: Formalizing Undisclosed Inference-Time Steering, Probability Placement, and the Attribution Problem in Deployed Language Models",
+          "authors": [
+            "Augusto Camargo"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.CY"
+          ],
+          "abstract": "This paper introduces the concept of an \"invisible editorial layer\" in deployed language models, where undisclosed interventions modify the model's probability distribution at inference time. This layer allows for systematic steering of generated text, creating an attribution problem and raising concerns about governance, security, and economic implications. The core contribution is formalizing and highlighting the impact of these post-inference modifications, which go beyond traditional prompt-based control.",
+          "url": "http://arxiv.org/abs/2608.24662v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.24662v1",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.24747v1",
+          "title": "SkillForge: Evolving Verifiable Skills for Reinforcement Learning Agents",
+          "authors": [
+            "Shidong Yang",
+            "Ziyu Ma",
+            "Tongwen Huang",
+            "Xucong Wang",
+            "Renda Li"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "SkillForge addresses the limitation of episodic reinforcement learning agents by introducing a framework for continuous skill evolution. It allows skills to be verified and refined through environment interaction, explicitly optimizing both actions and skill invocation. This leads to a growing and high-quality skill bank, improving agent performance across various tasks.",
+          "url": "http://arxiv.org/abs/2608.24747v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.24747v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2608.24747v1/skill_fig1.png",
+          "figure_caption": "(a) Existing methods distill trajectories into skills and append them to the bank, but skills are injected in bulk without explicit usage tracking or quality control. (b) SkillForge introduces explicit skill calling with per-skill effectiveness tracking to update existing skills, and multi-pathway induction to continuously add new skills to the evolving bank.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2608.24794v1",
+          "title": "CAFE: Self-Improving Search Agents Need Co-Evolving Feedback",
+          "authors": [
+            "Boyang Liu",
+            "Senjie Jin",
+            "Peixin Wang",
+            "Zhangyue Yin",
+            "Yibo Wang"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "CAFE introduces a novel framework where a single model acts as both a search agent and a feedback critic, enabling self-improvement. The core method involves the agent learning to request and utilize corrective feedback, while the critic infers useful interventions from potentially flawed trajectories. This co-evolutionary approach allows the agent to recover from errors mid-trajectory, leading to more efficient learning and better performance.",
+          "url": "http://arxiv.org/abs/2608.24794v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.24794v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.24794v1/main_figure_0813.png",
+          "figure_caption": "Overview of CAFE. One shared model serves as agent and critic. CFE shapes request returns from the call–skip gap; advantage shaping weights tokens before and after feedback. RDPO updates the critic from prefix-matched pairs mined from recent rollouts.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.24691v1",
+          "title": "Confident at the moment of action: belief miscalibration in LLM play under hidden information",
+          "authors": [
+            "Bhushan Kashinath Joshi"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "This paper investigates whether Large Language Models (LLMs) accurately reflect their knowledge when making decisions under uncertainty. The core method involves testing LLMs in a chess variant with hidden information, where their stated confidence in predicting the opponent's hidden piece location is compared to the actual outcome. The key contribution is demonstrating a significant miscalibration, showing LLMs are highly overconfident in their predictions of hidden information, leading to poor decision-making when relying on this confidence.",
+          "url": "http://arxiv.org/abs/2608.24691v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.24691v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.24691v1/figure1_reliability_diagram.png",
+          "figure_caption": "Reliability diagram: stated confidence vs. hit rate at capture time, pooled across both scored batches (n=394 capture-only events), with the corrected reference tracker curve. Marker area is proportional to bin n; no line is drawn across an empty bin. Cited in §4.1.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.24570v1",
+          "title": "EviDx: Evidence-Aware Active Diagnosis with Scaffolded LLM Agents",
+          "authors": [
+            "Lihang Zeng",
+            "Shaoting Zhang",
+            "Xiaofan Zhang"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "EviDx is a novel framework for active clinical diagnosis using LLM agents. It addresses the limitations of static LLM diagnosis by creating interactive, evidence-seeking environments. EviDx's core contribution lies in its scaffolded approach, which guides specialized agents to dynamically acquire and process patient evidence, ultimately leading to more informed and dynamic diagnostic decisions.",
+          "url": "http://arxiv.org/abs/2608.24570v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.24570v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.24735v1",
+          "title": "Meta$^n$: Recursive Self-Improvement through Emergent Depth",
+          "authors": [
+            "Zae Myung Kim",
+            "Young-Jun Lee",
+            "Seungyeon Jwa",
+            "Dongyeop Kang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "eess.SY"
+          ],
+          "abstract": "Meta$^n$ achieves recursive self-improvement by repeatedly applying a fixed meta-operation ($Ω$) to its own outputs, rather than modifying the operation itself. This allows for emergent depth, where each new layer builds upon the reasoning of the previous ones, leading to superior performance on benchmarks compared to existing self-improving agents.",
+          "url": "http://arxiv.org/abs/2608.24735v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.24735v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.24735v1/paper_at_glance.png",
+          "figure_caption": "Meta n at a glance. (left) A single universal meta-operation \\( \\Omega \\) is applied recursively, each meta-layer wrapping the stack below it (Base Solver → \\( \\to \\) Layer 1 → \\( \\to \\) Meta-Layers 2 , 3 , … , n 2,3,\\( \\dots \\),n ). Roles emerge with depth without manual design. (right) Search progress on LawBench charge prediction, where both Meta n variants climb faster and settle higher than Gödel Agent ( Yin et al., 2024 ) and OpenEvolve ( Sharma, 2025 ) .",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.24534v1",
+          "title": "Neurosymbolic Alignment for Physiologically-Safe Clinical Language Models",
+          "authors": [
+            "Abdulhady Abas Abdullah",
+            "Erik Cambria",
+            "Milena Zivkovic"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces Neurosymbolic Alignment, a method to improve the physiological safety of clinical language models. It achieves this by integrating a clinical LLM with a knowledge graph-based physiological world model. This grounding allows the model to evaluate candidate responses against structured physiological knowledge, leading to significantly safer and more accurate clinical recommendations compared to text-only supervision.",
+          "url": "http://arxiv.org/abs/2608.24534v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.24534v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.24509v1",
+          "title": "PeakBench: Benchmarking Resource-Aware Tool Invocation in LLM Agents",
+          "authors": [
+            "Zhi-Kai Chen",
+            "Xu-Xiang Zhong",
+            "Song-Yan Li",
+            "De-Chuan Zhan",
+            "Han-Jia Ye"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.SE"
+          ],
+          "abstract": "PeakBench introduces a novel benchmark for LLM agents that focuses on resource-aware tool invocation and parallel execution. Its core method involves executable multi-tool workflows with dependency annotations and resource profiles, addressing the limitations of existing benchmarks that overlook safe parallelization. The paper's contribution lies in providing a framework to evaluate both dependency planning and resource-constrained scheduling, enabling agents to achieve low latency without resource overflows.",
+          "url": "http://arxiv.org/abs/2608.24509v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.24509v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.24758v1",
+          "title": "RACE: Scalable Statistical Estimation of Functional Consistency in LLM Neurons",
+          "authors": [
+            "Runyu Wang",
+            "Bo Liu",
+            "Xiaxin Zhang",
+            "Yu Han",
+            "Jiawei Cao"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "RACE is a scalable statistical framework for evaluating the functional consistency of Transformer neurons across entire domains. It uses a forward-pass approach to estimate neuron behavior, offering superior domain specificity and significantly lower computational cost compared to existing gradient-based methods. This allows for more efficient and robust discovery of stable neuron behaviors relevant to specific domains.",
+          "url": "http://arxiv.org/abs/2608.24758v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.24758v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.24758v1/cam_kde_ridge_mbpp_math500_attn_mlp_emnlp_singlecol.png",
+          "figure_caption": "Layer-wise kernel density estimate (KDE) ridgeline distributions of RACE results. On Qwen3-4B-it, ridges under 𝐑 MBPP+ \\( \\mathbf{R} \\)_{\\( \\text{MBPP+} \\)} and 𝐑 MATH-500 \\( \\mathbf{R} \\)_{\\( \\text{MATH-500} \\)} visualize the KDE of CAM scores for neurons in each module across selected layers.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.24842v1",
+          "title": "Reading Is Not Using: Retrieval, Judgment, and the Design of AI Financial Research Workflows",
+          "authors": [
+            "Miao Liu",
+            "Zhizhe Liu"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper highlights a critical \"retrieval-integration gap\" in AI financial research: LLMs can accurately retrieve information from long financial documents, but this retrieved data doesn't reliably influence their investment judgments. The core contribution is demonstrating that even with accurate retrieval, the sheer volume of unrelated context can drown out the impact of crucial disclosures, leading to flawed decisions. The authors propose that workflow design, specifically how information is compressed and linked to sources, is key to bridging this gap and enabling AI to truly \"use\" financial information.",
+          "url": "http://arxiv.org/abs/2608.24842v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.24842v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.24842v1/fig1_h1_cross_family.png",
+          "figure_caption": "The marginal decision influence of a fixed disclosure declines with context length. Panel A: three open-weight model families, sell-probability readout, with firm-bootstrap 95% confidence bands. Panel B: production API model, unit-bearing numeric judgment. The focal firm’s information set is identical at every length; only economically unrelated filler text is added.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.24650v1",
+          "title": "Simthesizer: An Agent-Driven Simulation Framework for LLM Serving Systems",
+          "authors": [
+            "Wonung Kim",
+            "Hyunmin Choi",
+            "Minsu Kim",
+            "Jaehong Cho",
+            "Yeongwook Kim"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.AR"
+          ],
+          "abstract": "This paper introduces Simthesizer, an agent-driven simulation framework for LLM serving systems. Its core method is Borg, a composable infrastructure that uniformly expresses serving workflows and control decisions as a dynamic graph. The contribution is a novel approach to simulator development, using a coding agent to automatically generate simulations from natural language descriptions, thus closing the gap between rapidly evolving LLM serving systems and existing simulators.",
+          "url": "http://arxiv.org/abs/2608.24650v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.24650v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.24870v1",
+          "title": "SPO++: Stream-Aligned Policy Optimization for Asynchronous Agentic RL",
+          "authors": [
+            "Kai Ruan",
+            "Jinghao Lin",
+            "Qianshan Wei",
+            "Ziqi Zhou",
+            "Zihe Huang"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces SPO++, an improved method for asynchronous reinforcement learning in agentic settings. It addresses limitations of prior work by standardizing terminal-outcome advantages according to the action-token measure, aligning the value estimation with the actor's optimization objective. This novel approach, along with organizing prompt evidence by policy event, leads to more efficient online learning in complex tool-use scenarios.",
+          "url": "http://arxiv.org/abs/2608.24870v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.24870v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.24777v1",
+          "title": "StepGuard: Learning Step-Level Guardrails with Scalable Supervision and Safety-Utility Balancing",
+          "authors": [
+            "Zhijie Zheng",
+            "Yu Li",
+            "Chen Qian",
+            "Yuqian Fu",
+            "Yanwei Fu"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CR"
+          ],
+          "abstract": "StepGuard introduces a novel step-level guard model for LLM agents, enabling pre-execution monitoring of tool actions to prevent security risks. Its core method involves StepGen for scalable data generation and Balance-GRPO for dynamically balancing safety and utility. The contribution lies in achieving high accuracy in preventing unsafe actions without significantly hindering agent performance, outperforming existing open-weight guard models.",
+          "url": "http://arxiv.org/abs/2608.24777v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.24777v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.24777v1/EMNLP_pipeline.png",
+          "figure_caption": "Overview of StepGen. The pipeline first constructs and rolls out an unsafe trajectory with a designated risk anchor. It then generates two prefix-aligned safe branches and an independently constructed benign tool-reuse trajectory. Finally, StepGen adds step-level supervision and retains high-quality groups through structural and semantic filtering.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.24569v1",
+          "title": "When \"Must\" Becomes \"Maybe\": Constraint Weakening in LLM Agent Workflows",
+          "authors": [
+            "Yiheng Sun",
+            "Huifei Wang",
+            "Yancheng Zhu",
+            "Zhenyu Li",
+            "Zebin Zhao"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "This paper introduces \"constraint weakening\" for LLM agents, addressing how requirements in multi-stage workflows can shift from mandatory to optional. The core method involves analyzing how intermediate artifacts transform action-binding state, specifically focusing on safety blockers. The contribution is demonstrating that naive handoffs preserve all blockers, while controlled transformations can effectively weaken them, impacting downstream executor behavior.",
+          "url": "http://arxiv.org/abs/2608.24569v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.24569v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.24569v1/paper_fig1_mechanism_arr_v3.png",
+          "figure_caption": "A binding source state passes through a language-mediated transformation before local-view execution. The controlled testbed represents each source state with status, prerequisite, owner, and fallback fields. Degradation changes the artifact’s operational role even when related language remains available. Repair acts on the artifact; verification acts at the endpoint.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.24492v1",
+          "title": "When Do Supervised UQ Ensembles Improve LLM Hallucination Detection? A Robustness Study",
+          "authors": [
+            "Mohit Singh Chauhan",
+            "Vipin Gyanchandani",
+            "Dylan Bouchard"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "This paper investigates the effectiveness of supervised ensembles for detecting LLM hallucinations when ground truth is unavailable. The core method involves training a classifier on diverse uncertainty quantification (UQ) signals from multiple LLMs. The key contribution is a systematic robustness analysis demonstrating that these supervised ensembles consistently outperform individual UQ methods across various LLMs, datasets, and generation tasks, highlighting their practical utility.",
+          "url": "http://arxiv.org/abs/2608.24492v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.24492v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.24588v1",
+          "title": "IAPO: Influence-Aware Policy Optimization for Credit Assignment in Multi-Turn Service Agents",
+          "authors": [
+            "Bo Ren",
+            "Yirong Mao",
+            "Yi Yang",
+            "Wenhui Que"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces Influence-Aware Policy Optimization (IAPO) for multi-turn LLM agents. IAPO models the flow of information and errors within a task's interaction history as a typed influence-dependency graph. This allows for more effective credit assignment by directly leveraging the inherent structure of past interactions, rather than relying on external comparisons or separate learning signals.",
+          "url": "http://arxiv.org/abs/2608.24588v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.24588v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.24588v1/teaser-crop.png",
+          "figure_caption": "Per-action advantage allocation for a successful (left, positive-advantage) and a failed (right, negative-advantage) refund rollout. Refunding to the original card or store balance is correct only if it matches the user’s clarified intent , so an early clarifying turn decides whether later actions are right. GRPO applies the same advantage to every action, whereas IAPO routes credit according to realized support use and error propagation.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        }
+      ],
+      "meta": {
+        "papers_fetched": 100,
+        "papers_after_keyword_filter": 43,
+        "papers_after_llm_filter": 33,
+        "count": 20
+      }
+    },
+    {
+      "key": "hacker_news",
+      "payload_key": "hacker_news",
+      "title": "Hacker News",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": 49433292,
+          "title": "Apple introduces M6 and M5 Ultra",
+          "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
+          "score": 1143,
+          "created_at": "2026-08-25T13:01:22Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49433292",
+          "summary": "Apple has unveiled its new M6 and M5 Ultra chips, promising significant advancements in performance and AI capabilities for its devices."
+        },
+        {
+          "id": 49435728,
+          "title": "How much of HN is AI?",
+          "url": "https://blog.coredump.cx/p/how-much-of-hn-is-ai",
+          "score": 267,
+          "created_at": "2026-08-25T15:23:41Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49435728",
+          "summary": "This article analyzes Hacker News posts to estimate the proportion of content generated by AI, finding a significant and growing presence."
+        },
+        {
+          "id": 49435147,
+          "title": "AI is hitting entry-level jobs hardest, Stanford study finds",
+          "url": "https://arstechnica.com/ai/2026/08/ai-is-hitting-entry-level-jobs-hardest-stanford-study-finds/",
+          "score": 141,
+          "created_at": "2026-08-25T14:48:58Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49435147",
+          "summary": "A Stanford study reveals that artificial intelligence is disproportionately impacting entry-level positions, automating tasks previously performed by new workers."
+        },
+        {
+          "id": 49435675,
+          "title": "Show HN: I made a Raspberry with Qwen my local car AI",
+          "url": "https://github.com/ThinkOffApp/CarWatch",
+          "score": 141,
+          "created_at": "2026-08-25T15:20:20Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49435675",
+          "summary": "A developer created a local car AI using a Raspberry Pi and Qwen, allowing for voice control and information retrieval without relying on cloud services."
+        },
+        {
+          "id": 49432879,
+          "title": "OpenAI restores 5-hour Codex and Work limits for ChatGPT Plus users",
+          "url": "https://9to5mac.com/2026/08/24/openai-restores-5-hour-codex-and-work-limits-for-chatgpt-plus-users/",
+          "score": 114,
+          "created_at": "2026-08-25T12:33:00Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49432879",
+          "summary": "OpenAI has reinstated a 5-hour usage limit for Codex and other tools for ChatGPT Plus subscribers after a temporary removal."
+        }
+      ],
+      "meta": {
+        "count": 5
+      }
+    },
+    {
+      "key": "github_trending",
+      "payload_key": "github_trending",
+      "title": "GitHub Trending",
+      "icon": "⭐",
+      "items": [
+        {
+          "full_name": "freestylefly/awesome-gpt-image-2",
+          "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+          "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
+          "stars_today": 1698,
+          "total_stars": 20109,
+          "language": "JavaScript",
+          "topics": [],
+          "summary": "This repository offers a \"Prompt as Code\" engine and template library for GPT-Image2, featuring over 530 reverse-engineered examples and 20+ industrial-grade templates with extracted skills for efficient image generation."
+        },
+        {
+          "full_name": "anthropics/claude-plugins-community",
+          "url": "https://github.com/anthropics/claude-plugins-community",
+          "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
+          "stars_today": 351,
+          "total_stars": 1980,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository serves as a read-only mirror of a community plugin marketplace for Claude Cowork and Claude Code, allowing users to discover and access plugins for enhanced functionality."
+        },
+        {
+          "full_name": "MadsLorentzen/ai-job-search",
+          "url": "https://github.com/MadsLorentzen/ai-job-search",
+          "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+          "stars_today": 1265,
+          "total_stars": 35832,
+          "language": "Python",
+          "topics": [],
+          "summary": "This AI job search framework runs locally, using Claude to evaluate job postings, tailor CVs, write cover letters, and prepare for interviews."
+        },
+        {
+          "full_name": "apache/maka",
+          "url": "https://github.com/apache/maka",
+          "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
+          "stars_today": 543,
+          "total_stars": 3519,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "Apache Maka is a local-first AI agent workspace that records all agent interactions, including model messages, tool calls, and permission decisions, as an append-only log."
+        },
+        {
+          "full_name": "TauricResearch/TradingAgents",
+          "url": "https://github.com/TauricResearch/TradingAgents",
+          "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+          "stars_today": 218,
+          "total_stars": 100582,
+          "language": "Python",
+          "topics": [],
+          "summary": "TradingAgents is a multi-agent framework leveraging LLMs for developing and testing sophisticated financial trading strategies, enabling agents to interact and make decisions in simulated markets."
+        },
+        {
+          "full_name": "AgriciDaniel/claude-obsidian",
+          "url": "https://github.com/AgriciDaniel/claude-obsidian",
+          "description": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern.",
+          "stars_today": 813,
+          "total_stars": 13040,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository provides an AI-powered system that automatically organizes and links your notes within Obsidian using Claude, creating a self-organizing knowledge graph of plain Markdown for personal knowledge management."
+        },
+        {
+          "full_name": "rohitg00/ai-engineering-from-scratch",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+          "description": "Learn it. Build it. Ship it for others.",
+          "stars_today": 569,
+          "total_stars": 49335,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository offers a practical, hands-on guide to building and deploying AI systems from the ground up, emphasizing learning, creation, and sharing."
+        },
+        {
+          "full_name": "tinyhumansai/openhuman",
+          "url": "https://github.com/tinyhumansai/openhuman",
+          "description": "Your Personal AI super intelligence. A brain that builds a local-first memory of your life, a fantastic orchestrator of agent fleets and workflows, and a deep researcher.",
+          "stars_today": 542,
+          "total_stars": 37977,
+          "language": "Rust",
+          "topics": [],
+          "summary": "OpenHuman is a personal AI superintelligence that acts as a local-first life memory, orchestrator for agent fleets and workflows, and a deep researcher."
+        },
+        {
+          "full_name": "basecamp/omarchy",
+          "url": "https://github.com/basecamp/omarchy",
+          "description": "Beautiful, Modern & Opinionated Linux",
+          "stars_today": 1083,
+          "total_stars": 31603,
+          "language": "Shell",
+          "topics": [],
+          "summary": "Oarchy is a beautiful, modern, and opinionated Linux distribution designed for a streamlined and opinionated user experience."
+        }
+      ],
+      "meta": {
+        "count": 9
+      }
+    }
+  ],
+  "meta": {
+    "papers_fetched": 100,
+    "papers_after_keyword_filter": 43,
+    "papers_after_llm_filter": 33,
+    "llm_model": "google/gemini-2.5-flash-lite",
+    "scoring_model": "google/gemini-2.5-flash-lite",
+    "summarization_model": "google/gemini-2.5-flash-lite",
+    "duration_seconds": 84
+  },
+  "quote_of_day": [
+    {
+      "quote": "My mom loved to sing - and I'll go on record and say she was the worst singer ever. I'd get up and move away from her!",
+      "author": "Kenny Rogers",
+      "category": "mom"
+    }
+  ],
+  "hitokoto": [],
+  "arxiv": [
+    {
+      "id": "2608.24571v1",
+      "title": "Joint Optimization of Tool Creation and Use for Large Language Model Agents",
+      "authors": [
+        "Zhi Rui Tam",
+        "Chieh-Yen Lin",
+        "Yun-Nung Chen",
+        "Shao-Hua Sun",
+        "Hung-yi Lee"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces SMITH, a reinforcement learning framework that jointly optimizes LLM agent tool creation and usage within a single policy. By training tool building and invocation together, and using independent reward signals for schema, code, and outcome correctness, SMITH enables agents to learn to create and effectively use tools. This approach significantly improves performance on procedural reasoning tasks compared to existing methods.",
+      "url": "http://arxiv.org/abs/2608.24571v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24571v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24696v1",
+      "title": "On-policy Distillation with Verifiable Reward",
+      "authors": [
+        "Wenze Lin",
+        "Jiale Zhao",
+        "Xitai Jiang",
+        "Songde Rao",
+        "Yining Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper proposes **OPDVR**, a novel method that seamlessly integrates on-policy distillation (OPD) and reinforcement learning with verifiable rewards (RLVR) for post-training large language models. The core innovation is reformulating OPD's implicit reward to incorporate trajectory correctness and using a ReLU gating mechanism to ensure that only valid trajectories contribute positively to the reward signal, thus avoiding extra hyperparameters and trade-offs. This approach leverages the dense guidance of OPD and the task-level correctness of RLVR to improve model performance.",
+      "url": "http://arxiv.org/abs/2608.24696v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24696v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.24696v1/OPD-OPDVR-acc.png",
+      "figure_caption": "Left: Overview of OPDVR. The ReLU gating mechanism ensures correct trajectories receive non-negative rewards and incorrect ones receive non-positive rewards, while preserving the teacher’s distributional guidance. Right: Results on AIME24, AIME25, and AMC under the same-architecture setting (Qwen3-4B ← \\( \\leftarrow \\) Qwen3-4B-RL), reported as avg@16 accuracy.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24658v1",
+      "title": "Parason: Revealing Subtask and Trial Parallelism in LLM Reasoning",
+      "authors": [
+        "Zhengyang Zhang",
+        "Zijian Zhang",
+        "Jiaxuan Gao",
+        "Shusheng Xu",
+        "Yi Wu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces Parason, a method that identifies and leverages two types of parallelism in LLM reasoning: Subtask Parallelism (breaking down a task) and Trial Parallelism (parallel exploration of hypotheses). The key contribution is demonstrating that Trial Parallelism is a significant and often dominant form of parallelizable computation, especially for difficult problems, and that Parason can effectively learn to exploit both.",
+      "url": "http://arxiv.org/abs/2608.24658v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24658v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.24658v1/subtask_trial_parallelism_overview.png",
+      "figure_caption": "Overview of two types of parallelism. The figure contrasts Subtask Parallelism, where all decomposed branches are needed for the final answer, with Trial Parallelism, where multiple uncertain paths are explored as alternative (OR) branches. Despite this OR relation, the outputs of all Trial branches are concatenated into the subsequent context, making every branch’s content available for final synthesis. While previous work mainly focuses on Subtask Parallelism, our analysis shows that Trial Parallelism accounts for the majority of parallelizable reasoning on HLE for every model we study, and exceeds 58% for DeepSeek-R1 and DeepSeek-V4 across both datasets.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24876v1",
+      "title": "Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses",
+      "authors": [
+        "Zhaochen Yu",
+        "Yingcheng Wu",
+        "Zhenfei Yin",
+        "Kaiyuan Chen",
+        "Zhe Zhao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces Recuris, a novel architecture designed to overcome challenges in long-horizon tasks by employing a recursive Experiential-Working Memory. Recuris uses Working Memory to track task progress and guide skill selection from Experiential Memory, grounding actions in current needs. This approach enables a fixed Meta-Agent to perform localized, validation-gated updates to Skill Memory, leading to significant improvements in task success across various benchmarks and models.",
+      "url": "http://arxiv.org/abs/2608.24876v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24876v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24662v1",
+      "title": "The Invisible Editorial Layer: Formalizing Undisclosed Inference-Time Steering, Probability Placement, and the Attribution Problem in Deployed Language Models",
+      "authors": [
+        "Augusto Camargo"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CY"
+      ],
+      "abstract": "This paper introduces the concept of an \"invisible editorial layer\" in deployed language models, where undisclosed interventions modify the model's probability distribution at inference time. This layer allows for systematic steering of generated text, creating an attribution problem and raising concerns about governance, security, and economic implications. The core contribution is formalizing and highlighting the impact of these post-inference modifications, which go beyond traditional prompt-based control.",
+      "url": "http://arxiv.org/abs/2608.24662v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24662v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24747v1",
+      "title": "SkillForge: Evolving Verifiable Skills for Reinforcement Learning Agents",
+      "authors": [
+        "Shidong Yang",
+        "Ziyu Ma",
+        "Tongwen Huang",
+        "Xucong Wang",
+        "Renda Li"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "SkillForge addresses the limitation of episodic reinforcement learning agents by introducing a framework for continuous skill evolution. It allows skills to be verified and refined through environment interaction, explicitly optimizing both actions and skill invocation. This leads to a growing and high-quality skill bank, improving agent performance across various tasks.",
+      "url": "http://arxiv.org/abs/2608.24747v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24747v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.24747v1/skill_fig1.png",
+      "figure_caption": "(a) Existing methods distill trajectories into skills and append them to the bank, but skills are injected in bulk without explicit usage tracking or quality control. (b) SkillForge introduces explicit skill calling with per-skill effectiveness tracking to update existing skills, and multi-pathway induction to continuously add new skills to the evolving bank.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2608.24794v1",
+      "title": "CAFE: Self-Improving Search Agents Need Co-Evolving Feedback",
+      "authors": [
+        "Boyang Liu",
+        "Senjie Jin",
+        "Peixin Wang",
+        "Zhangyue Yin",
+        "Yibo Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "CAFE introduces a novel framework where a single model acts as both a search agent and a feedback critic, enabling self-improvement. The core method involves the agent learning to request and utilize corrective feedback, while the critic infers useful interventions from potentially flawed trajectories. This co-evolutionary approach allows the agent to recover from errors mid-trajectory, leading to more efficient learning and better performance.",
+      "url": "http://arxiv.org/abs/2608.24794v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24794v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.24794v1/main_figure_0813.png",
+      "figure_caption": "Overview of CAFE. One shared model serves as agent and critic. CFE shapes request returns from the call–skip gap; advantage shaping weights tokens before and after feedback. RDPO updates the critic from prefix-matched pairs mined from recent rollouts.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24691v1",
+      "title": "Confident at the moment of action: belief miscalibration in LLM play under hidden information",
+      "authors": [
+        "Bhushan Kashinath Joshi"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper investigates whether Large Language Models (LLMs) accurately reflect their knowledge when making decisions under uncertainty. The core method involves testing LLMs in a chess variant with hidden information, where their stated confidence in predicting the opponent's hidden piece location is compared to the actual outcome. The key contribution is demonstrating a significant miscalibration, showing LLMs are highly overconfident in their predictions of hidden information, leading to poor decision-making when relying on this confidence.",
+      "url": "http://arxiv.org/abs/2608.24691v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24691v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.24691v1/figure1_reliability_diagram.png",
+      "figure_caption": "Reliability diagram: stated confidence vs. hit rate at capture time, pooled across both scored batches (n=394 capture-only events), with the corrected reference tracker curve. Marker area is proportional to bin n; no line is drawn across an empty bin. Cited in §4.1.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24570v1",
+      "title": "EviDx: Evidence-Aware Active Diagnosis with Scaffolded LLM Agents",
+      "authors": [
+        "Lihang Zeng",
+        "Shaoting Zhang",
+        "Xiaofan Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "EviDx is a novel framework for active clinical diagnosis using LLM agents. It addresses the limitations of static LLM diagnosis by creating interactive, evidence-seeking environments. EviDx's core contribution lies in its scaffolded approach, which guides specialized agents to dynamically acquire and process patient evidence, ultimately leading to more informed and dynamic diagnostic decisions.",
+      "url": "http://arxiv.org/abs/2608.24570v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24570v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24735v1",
+      "title": "Meta$^n$: Recursive Self-Improvement through Emergent Depth",
+      "authors": [
+        "Zae Myung Kim",
+        "Young-Jun Lee",
+        "Seungyeon Jwa",
+        "Dongyeop Kang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "eess.SY"
+      ],
+      "abstract": "Meta$^n$ achieves recursive self-improvement by repeatedly applying a fixed meta-operation ($Ω$) to its own outputs, rather than modifying the operation itself. This allows for emergent depth, where each new layer builds upon the reasoning of the previous ones, leading to superior performance on benchmarks compared to existing self-improving agents.",
+      "url": "http://arxiv.org/abs/2608.24735v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24735v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.24735v1/paper_at_glance.png",
+      "figure_caption": "Meta n at a glance. (left) A single universal meta-operation \\( \\Omega \\) is applied recursively, each meta-layer wrapping the stack below it (Base Solver → \\( \\to \\) Layer 1 → \\( \\to \\) Meta-Layers 2 , 3 , … , n 2,3,\\( \\dots \\),n ). Roles emerge with depth without manual design. (right) Search progress on LawBench charge prediction, where both Meta n variants climb faster and settle higher than Gödel Agent ( Yin et al., 2024 ) and OpenEvolve ( Sharma, 2025 ) .",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24534v1",
+      "title": "Neurosymbolic Alignment for Physiologically-Safe Clinical Language Models",
+      "authors": [
+        "Abdulhady Abas Abdullah",
+        "Erik Cambria",
+        "Milena Zivkovic"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces Neurosymbolic Alignment, a method to improve the physiological safety of clinical language models. It achieves this by integrating a clinical LLM with a knowledge graph-based physiological world model. This grounding allows the model to evaluate candidate responses against structured physiological knowledge, leading to significantly safer and more accurate clinical recommendations compared to text-only supervision.",
+      "url": "http://arxiv.org/abs/2608.24534v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24534v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24509v1",
+      "title": "PeakBench: Benchmarking Resource-Aware Tool Invocation in LLM Agents",
+      "authors": [
+        "Zhi-Kai Chen",
+        "Xu-Xiang Zhong",
+        "Song-Yan Li",
+        "De-Chuan Zhan",
+        "Han-Jia Ye"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "PeakBench introduces a novel benchmark for LLM agents that focuses on resource-aware tool invocation and parallel execution. Its core method involves executable multi-tool workflows with dependency annotations and resource profiles, addressing the limitations of existing benchmarks that overlook safe parallelization. The paper's contribution lies in providing a framework to evaluate both dependency planning and resource-constrained scheduling, enabling agents to achieve low latency without resource overflows.",
+      "url": "http://arxiv.org/abs/2608.24509v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24509v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24758v1",
+      "title": "RACE: Scalable Statistical Estimation of Functional Consistency in LLM Neurons",
+      "authors": [
+        "Runyu Wang",
+        "Bo Liu",
+        "Xiaxin Zhang",
+        "Yu Han",
+        "Jiawei Cao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "RACE is a scalable statistical framework for evaluating the functional consistency of Transformer neurons across entire domains. It uses a forward-pass approach to estimate neuron behavior, offering superior domain specificity and significantly lower computational cost compared to existing gradient-based methods. This allows for more efficient and robust discovery of stable neuron behaviors relevant to specific domains.",
+      "url": "http://arxiv.org/abs/2608.24758v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24758v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.24758v1/cam_kde_ridge_mbpp_math500_attn_mlp_emnlp_singlecol.png",
+      "figure_caption": "Layer-wise kernel density estimate (KDE) ridgeline distributions of RACE results. On Qwen3-4B-it, ridges under 𝐑 MBPP+ \\( \\mathbf{R} \\)_{\\( \\text{MBPP+} \\)} and 𝐑 MATH-500 \\( \\mathbf{R} \\)_{\\( \\text{MATH-500} \\)} visualize the KDE of CAM scores for neurons in each module across selected layers.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24842v1",
+      "title": "Reading Is Not Using: Retrieval, Judgment, and the Design of AI Financial Research Workflows",
+      "authors": [
+        "Miao Liu",
+        "Zhizhe Liu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper highlights a critical \"retrieval-integration gap\" in AI financial research: LLMs can accurately retrieve information from long financial documents, but this retrieved data doesn't reliably influence their investment judgments. The core contribution is demonstrating that even with accurate retrieval, the sheer volume of unrelated context can drown out the impact of crucial disclosures, leading to flawed decisions. The authors propose that workflow design, specifically how information is compressed and linked to sources, is key to bridging this gap and enabling AI to truly \"use\" financial information.",
+      "url": "http://arxiv.org/abs/2608.24842v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24842v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.24842v1/fig1_h1_cross_family.png",
+      "figure_caption": "The marginal decision influence of a fixed disclosure declines with context length. Panel A: three open-weight model families, sell-probability readout, with firm-bootstrap 95% confidence bands. Panel B: production API model, unit-bearing numeric judgment. The focal firm’s information set is identical at every length; only economically unrelated filler text is added.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24650v1",
+      "title": "Simthesizer: An Agent-Driven Simulation Framework for LLM Serving Systems",
+      "authors": [
+        "Wonung Kim",
+        "Hyunmin Choi",
+        "Minsu Kim",
+        "Jaehong Cho",
+        "Yeongwook Kim"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.AR"
+      ],
+      "abstract": "This paper introduces Simthesizer, an agent-driven simulation framework for LLM serving systems. Its core method is Borg, a composable infrastructure that uniformly expresses serving workflows and control decisions as a dynamic graph. The contribution is a novel approach to simulator development, using a coding agent to automatically generate simulations from natural language descriptions, thus closing the gap between rapidly evolving LLM serving systems and existing simulators.",
+      "url": "http://arxiv.org/abs/2608.24650v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24650v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24870v1",
+      "title": "SPO++: Stream-Aligned Policy Optimization for Asynchronous Agentic RL",
+      "authors": [
+        "Kai Ruan",
+        "Jinghao Lin",
+        "Qianshan Wei",
+        "Ziqi Zhou",
+        "Zihe Huang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces SPO++, an improved method for asynchronous reinforcement learning in agentic settings. It addresses limitations of prior work by standardizing terminal-outcome advantages according to the action-token measure, aligning the value estimation with the actor's optimization objective. This novel approach, along with organizing prompt evidence by policy event, leads to more efficient online learning in complex tool-use scenarios.",
+      "url": "http://arxiv.org/abs/2608.24870v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24870v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24777v1",
+      "title": "StepGuard: Learning Step-Level Guardrails with Scalable Supervision and Safety-Utility Balancing",
+      "authors": [
+        "Zhijie Zheng",
+        "Yu Li",
+        "Chen Qian",
+        "Yuqian Fu",
+        "Yanwei Fu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "StepGuard introduces a novel step-level guard model for LLM agents, enabling pre-execution monitoring of tool actions to prevent security risks. Its core method involves StepGen for scalable data generation and Balance-GRPO for dynamically balancing safety and utility. The contribution lies in achieving high accuracy in preventing unsafe actions without significantly hindering agent performance, outperforming existing open-weight guard models.",
+      "url": "http://arxiv.org/abs/2608.24777v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24777v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.24777v1/EMNLP_pipeline.png",
+      "figure_caption": "Overview of StepGen. The pipeline first constructs and rolls out an unsafe trajectory with a designated risk anchor. It then generates two prefix-aligned safe branches and an independently constructed benign tool-reuse trajectory. Finally, StepGen adds step-level supervision and retains high-quality groups through structural and semantic filtering.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24569v1",
+      "title": "When \"Must\" Becomes \"Maybe\": Constraint Weakening in LLM Agent Workflows",
+      "authors": [
+        "Yiheng Sun",
+        "Huifei Wang",
+        "Yancheng Zhu",
+        "Zhenyu Li",
+        "Zebin Zhao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces \"constraint weakening\" for LLM agents, addressing how requirements in multi-stage workflows can shift from mandatory to optional. The core method involves analyzing how intermediate artifacts transform action-binding state, specifically focusing on safety blockers. The contribution is demonstrating that naive handoffs preserve all blockers, while controlled transformations can effectively weaken them, impacting downstream executor behavior.",
+      "url": "http://arxiv.org/abs/2608.24569v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24569v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.24569v1/paper_fig1_mechanism_arr_v3.png",
+      "figure_caption": "A binding source state passes through a language-mediated transformation before local-view execution. The controlled testbed represents each source state with status, prerequisite, owner, and fallback fields. Degradation changes the artifact’s operational role even when related language remains available. Repair acts on the artifact; verification acts at the endpoint.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24492v1",
+      "title": "When Do Supervised UQ Ensembles Improve LLM Hallucination Detection? A Robustness Study",
+      "authors": [
+        "Mohit Singh Chauhan",
+        "Vipin Gyanchandani",
+        "Dylan Bouchard"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper investigates the effectiveness of supervised ensembles for detecting LLM hallucinations when ground truth is unavailable. The core method involves training a classifier on diverse uncertainty quantification (UQ) signals from multiple LLMs. The key contribution is a systematic robustness analysis demonstrating that these supervised ensembles consistently outperform individual UQ methods across various LLMs, datasets, and generation tasks, highlighting their practical utility.",
+      "url": "http://arxiv.org/abs/2608.24492v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24492v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24588v1",
+      "title": "IAPO: Influence-Aware Policy Optimization for Credit Assignment in Multi-Turn Service Agents",
+      "authors": [
+        "Bo Ren",
+        "Yirong Mao",
+        "Yi Yang",
+        "Wenhui Que"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces Influence-Aware Policy Optimization (IAPO) for multi-turn LLM agents. IAPO models the flow of information and errors within a task's interaction history as a typed influence-dependency graph. This allows for more effective credit assignment by directly leveraging the inherent structure of past interactions, rather than relying on external comparisons or separate learning signals.",
+      "url": "http://arxiv.org/abs/2608.24588v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24588v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.24588v1/teaser-crop.png",
+      "figure_caption": "Per-action advantage allocation for a successful (left, positive-advantage) and a failed (right, negative-advantage) refund rollout. Refunding to the original card or store balance is correct only if it matches the user’s clarified intent , so an early clarifying turn decides whether later actions are right. GRPO applies the same advantage to every action, whereas IAPO routes credit according to realized support use and error propagation.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    }
+  ],
+  "papers": [
+    {
+      "id": "2608.24571v1",
+      "title": "Joint Optimization of Tool Creation and Use for Large Language Model Agents",
+      "authors": [
+        "Zhi Rui Tam",
+        "Chieh-Yen Lin",
+        "Yun-Nung Chen",
+        "Shao-Hua Sun",
+        "Hung-yi Lee"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces SMITH, a reinforcement learning framework that jointly optimizes LLM agent tool creation and usage within a single policy. By training tool building and invocation together, and using independent reward signals for schema, code, and outcome correctness, SMITH enables agents to learn to create and effectively use tools. This approach significantly improves performance on procedural reasoning tasks compared to existing methods.",
+      "url": "http://arxiv.org/abs/2608.24571v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24571v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24696v1",
+      "title": "On-policy Distillation with Verifiable Reward",
+      "authors": [
+        "Wenze Lin",
+        "Jiale Zhao",
+        "Xitai Jiang",
+        "Songde Rao",
+        "Yining Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper proposes **OPDVR**, a novel method that seamlessly integrates on-policy distillation (OPD) and reinforcement learning with verifiable rewards (RLVR) for post-training large language models. The core innovation is reformulating OPD's implicit reward to incorporate trajectory correctness and using a ReLU gating mechanism to ensure that only valid trajectories contribute positively to the reward signal, thus avoiding extra hyperparameters and trade-offs. This approach leverages the dense guidance of OPD and the task-level correctness of RLVR to improve model performance.",
+      "url": "http://arxiv.org/abs/2608.24696v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24696v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.24696v1/OPD-OPDVR-acc.png",
+      "figure_caption": "Left: Overview of OPDVR. The ReLU gating mechanism ensures correct trajectories receive non-negative rewards and incorrect ones receive non-positive rewards, while preserving the teacher’s distributional guidance. Right: Results on AIME24, AIME25, and AMC under the same-architecture setting (Qwen3-4B ← \\( \\leftarrow \\) Qwen3-4B-RL), reported as avg@16 accuracy.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24658v1",
+      "title": "Parason: Revealing Subtask and Trial Parallelism in LLM Reasoning",
+      "authors": [
+        "Zhengyang Zhang",
+        "Zijian Zhang",
+        "Jiaxuan Gao",
+        "Shusheng Xu",
+        "Yi Wu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces Parason, a method that identifies and leverages two types of parallelism in LLM reasoning: Subtask Parallelism (breaking down a task) and Trial Parallelism (parallel exploration of hypotheses). The key contribution is demonstrating that Trial Parallelism is a significant and often dominant form of parallelizable computation, especially for difficult problems, and that Parason can effectively learn to exploit both.",
+      "url": "http://arxiv.org/abs/2608.24658v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24658v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.24658v1/subtask_trial_parallelism_overview.png",
+      "figure_caption": "Overview of two types of parallelism. The figure contrasts Subtask Parallelism, where all decomposed branches are needed for the final answer, with Trial Parallelism, where multiple uncertain paths are explored as alternative (OR) branches. Despite this OR relation, the outputs of all Trial branches are concatenated into the subsequent context, making every branch’s content available for final synthesis. While previous work mainly focuses on Subtask Parallelism, our analysis shows that Trial Parallelism accounts for the majority of parallelizable reasoning on HLE for every model we study, and exceeds 58% for DeepSeek-R1 and DeepSeek-V4 across both datasets.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24876v1",
+      "title": "Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses",
+      "authors": [
+        "Zhaochen Yu",
+        "Yingcheng Wu",
+        "Zhenfei Yin",
+        "Kaiyuan Chen",
+        "Zhe Zhao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces Recuris, a novel architecture designed to overcome challenges in long-horizon tasks by employing a recursive Experiential-Working Memory. Recuris uses Working Memory to track task progress and guide skill selection from Experiential Memory, grounding actions in current needs. This approach enables a fixed Meta-Agent to perform localized, validation-gated updates to Skill Memory, leading to significant improvements in task success across various benchmarks and models.",
+      "url": "http://arxiv.org/abs/2608.24876v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24876v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24662v1",
+      "title": "The Invisible Editorial Layer: Formalizing Undisclosed Inference-Time Steering, Probability Placement, and the Attribution Problem in Deployed Language Models",
+      "authors": [
+        "Augusto Camargo"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CY"
+      ],
+      "abstract": "This paper introduces the concept of an \"invisible editorial layer\" in deployed language models, where undisclosed interventions modify the model's probability distribution at inference time. This layer allows for systematic steering of generated text, creating an attribution problem and raising concerns about governance, security, and economic implications. The core contribution is formalizing and highlighting the impact of these post-inference modifications, which go beyond traditional prompt-based control.",
+      "url": "http://arxiv.org/abs/2608.24662v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24662v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24747v1",
+      "title": "SkillForge: Evolving Verifiable Skills for Reinforcement Learning Agents",
+      "authors": [
+        "Shidong Yang",
+        "Ziyu Ma",
+        "Tongwen Huang",
+        "Xucong Wang",
+        "Renda Li"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "SkillForge addresses the limitation of episodic reinforcement learning agents by introducing a framework for continuous skill evolution. It allows skills to be verified and refined through environment interaction, explicitly optimizing both actions and skill invocation. This leads to a growing and high-quality skill bank, improving agent performance across various tasks.",
+      "url": "http://arxiv.org/abs/2608.24747v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24747v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.24747v1/skill_fig1.png",
+      "figure_caption": "(a) Existing methods distill trajectories into skills and append them to the bank, but skills are injected in bulk without explicit usage tracking or quality control. (b) SkillForge introduces explicit skill calling with per-skill effectiveness tracking to update existing skills, and multi-pathway induction to continuously add new skills to the evolving bank.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2608.24794v1",
+      "title": "CAFE: Self-Improving Search Agents Need Co-Evolving Feedback",
+      "authors": [
+        "Boyang Liu",
+        "Senjie Jin",
+        "Peixin Wang",
+        "Zhangyue Yin",
+        "Yibo Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "CAFE introduces a novel framework where a single model acts as both a search agent and a feedback critic, enabling self-improvement. The core method involves the agent learning to request and utilize corrective feedback, while the critic infers useful interventions from potentially flawed trajectories. This co-evolutionary approach allows the agent to recover from errors mid-trajectory, leading to more efficient learning and better performance.",
+      "url": "http://arxiv.org/abs/2608.24794v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24794v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.24794v1/main_figure_0813.png",
+      "figure_caption": "Overview of CAFE. One shared model serves as agent and critic. CFE shapes request returns from the call–skip gap; advantage shaping weights tokens before and after feedback. RDPO updates the critic from prefix-matched pairs mined from recent rollouts.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24691v1",
+      "title": "Confident at the moment of action: belief miscalibration in LLM play under hidden information",
+      "authors": [
+        "Bhushan Kashinath Joshi"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper investigates whether Large Language Models (LLMs) accurately reflect their knowledge when making decisions under uncertainty. The core method involves testing LLMs in a chess variant with hidden information, where their stated confidence in predicting the opponent's hidden piece location is compared to the actual outcome. The key contribution is demonstrating a significant miscalibration, showing LLMs are highly overconfident in their predictions of hidden information, leading to poor decision-making when relying on this confidence.",
+      "url": "http://arxiv.org/abs/2608.24691v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24691v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.24691v1/figure1_reliability_diagram.png",
+      "figure_caption": "Reliability diagram: stated confidence vs. hit rate at capture time, pooled across both scored batches (n=394 capture-only events), with the corrected reference tracker curve. Marker area is proportional to bin n; no line is drawn across an empty bin. Cited in §4.1.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24570v1",
+      "title": "EviDx: Evidence-Aware Active Diagnosis with Scaffolded LLM Agents",
+      "authors": [
+        "Lihang Zeng",
+        "Shaoting Zhang",
+        "Xiaofan Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "EviDx is a novel framework for active clinical diagnosis using LLM agents. It addresses the limitations of static LLM diagnosis by creating interactive, evidence-seeking environments. EviDx's core contribution lies in its scaffolded approach, which guides specialized agents to dynamically acquire and process patient evidence, ultimately leading to more informed and dynamic diagnostic decisions.",
+      "url": "http://arxiv.org/abs/2608.24570v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24570v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24735v1",
+      "title": "Meta$^n$: Recursive Self-Improvement through Emergent Depth",
+      "authors": [
+        "Zae Myung Kim",
+        "Young-Jun Lee",
+        "Seungyeon Jwa",
+        "Dongyeop Kang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "eess.SY"
+      ],
+      "abstract": "Meta$^n$ achieves recursive self-improvement by repeatedly applying a fixed meta-operation ($Ω$) to its own outputs, rather than modifying the operation itself. This allows for emergent depth, where each new layer builds upon the reasoning of the previous ones, leading to superior performance on benchmarks compared to existing self-improving agents.",
+      "url": "http://arxiv.org/abs/2608.24735v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24735v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.24735v1/paper_at_glance.png",
+      "figure_caption": "Meta n at a glance. (left) A single universal meta-operation \\( \\Omega \\) is applied recursively, each meta-layer wrapping the stack below it (Base Solver → \\( \\to \\) Layer 1 → \\( \\to \\) Meta-Layers 2 , 3 , … , n 2,3,\\( \\dots \\),n ). Roles emerge with depth without manual design. (right) Search progress on LawBench charge prediction, where both Meta n variants climb faster and settle higher than Gödel Agent ( Yin et al., 2024 ) and OpenEvolve ( Sharma, 2025 ) .",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24534v1",
+      "title": "Neurosymbolic Alignment for Physiologically-Safe Clinical Language Models",
+      "authors": [
+        "Abdulhady Abas Abdullah",
+        "Erik Cambria",
+        "Milena Zivkovic"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces Neurosymbolic Alignment, a method to improve the physiological safety of clinical language models. It achieves this by integrating a clinical LLM with a knowledge graph-based physiological world model. This grounding allows the model to evaluate candidate responses against structured physiological knowledge, leading to significantly safer and more accurate clinical recommendations compared to text-only supervision.",
+      "url": "http://arxiv.org/abs/2608.24534v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24534v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24509v1",
+      "title": "PeakBench: Benchmarking Resource-Aware Tool Invocation in LLM Agents",
+      "authors": [
+        "Zhi-Kai Chen",
+        "Xu-Xiang Zhong",
+        "Song-Yan Li",
+        "De-Chuan Zhan",
+        "Han-Jia Ye"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "PeakBench introduces a novel benchmark for LLM agents that focuses on resource-aware tool invocation and parallel execution. Its core method involves executable multi-tool workflows with dependency annotations and resource profiles, addressing the limitations of existing benchmarks that overlook safe parallelization. The paper's contribution lies in providing a framework to evaluate both dependency planning and resource-constrained scheduling, enabling agents to achieve low latency without resource overflows.",
+      "url": "http://arxiv.org/abs/2608.24509v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24509v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24758v1",
+      "title": "RACE: Scalable Statistical Estimation of Functional Consistency in LLM Neurons",
+      "authors": [
+        "Runyu Wang",
+        "Bo Liu",
+        "Xiaxin Zhang",
+        "Yu Han",
+        "Jiawei Cao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "RACE is a scalable statistical framework for evaluating the functional consistency of Transformer neurons across entire domains. It uses a forward-pass approach to estimate neuron behavior, offering superior domain specificity and significantly lower computational cost compared to existing gradient-based methods. This allows for more efficient and robust discovery of stable neuron behaviors relevant to specific domains.",
+      "url": "http://arxiv.org/abs/2608.24758v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24758v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.24758v1/cam_kde_ridge_mbpp_math500_attn_mlp_emnlp_singlecol.png",
+      "figure_caption": "Layer-wise kernel density estimate (KDE) ridgeline distributions of RACE results. On Qwen3-4B-it, ridges under 𝐑 MBPP+ \\( \\mathbf{R} \\)_{\\( \\text{MBPP+} \\)} and 𝐑 MATH-500 \\( \\mathbf{R} \\)_{\\( \\text{MATH-500} \\)} visualize the KDE of CAM scores for neurons in each module across selected layers.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24842v1",
+      "title": "Reading Is Not Using: Retrieval, Judgment, and the Design of AI Financial Research Workflows",
+      "authors": [
+        "Miao Liu",
+        "Zhizhe Liu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper highlights a critical \"retrieval-integration gap\" in AI financial research: LLMs can accurately retrieve information from long financial documents, but this retrieved data doesn't reliably influence their investment judgments. The core contribution is demonstrating that even with accurate retrieval, the sheer volume of unrelated context can drown out the impact of crucial disclosures, leading to flawed decisions. The authors propose that workflow design, specifically how information is compressed and linked to sources, is key to bridging this gap and enabling AI to truly \"use\" financial information.",
+      "url": "http://arxiv.org/abs/2608.24842v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24842v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.24842v1/fig1_h1_cross_family.png",
+      "figure_caption": "The marginal decision influence of a fixed disclosure declines with context length. Panel A: three open-weight model families, sell-probability readout, with firm-bootstrap 95% confidence bands. Panel B: production API model, unit-bearing numeric judgment. The focal firm’s information set is identical at every length; only economically unrelated filler text is added.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24650v1",
+      "title": "Simthesizer: An Agent-Driven Simulation Framework for LLM Serving Systems",
+      "authors": [
+        "Wonung Kim",
+        "Hyunmin Choi",
+        "Minsu Kim",
+        "Jaehong Cho",
+        "Yeongwook Kim"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.AR"
+      ],
+      "abstract": "This paper introduces Simthesizer, an agent-driven simulation framework for LLM serving systems. Its core method is Borg, a composable infrastructure that uniformly expresses serving workflows and control decisions as a dynamic graph. The contribution is a novel approach to simulator development, using a coding agent to automatically generate simulations from natural language descriptions, thus closing the gap between rapidly evolving LLM serving systems and existing simulators.",
+      "url": "http://arxiv.org/abs/2608.24650v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24650v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24870v1",
+      "title": "SPO++: Stream-Aligned Policy Optimization for Asynchronous Agentic RL",
+      "authors": [
+        "Kai Ruan",
+        "Jinghao Lin",
+        "Qianshan Wei",
+        "Ziqi Zhou",
+        "Zihe Huang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces SPO++, an improved method for asynchronous reinforcement learning in agentic settings. It addresses limitations of prior work by standardizing terminal-outcome advantages according to the action-token measure, aligning the value estimation with the actor's optimization objective. This novel approach, along with organizing prompt evidence by policy event, leads to more efficient online learning in complex tool-use scenarios.",
+      "url": "http://arxiv.org/abs/2608.24870v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24870v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24777v1",
+      "title": "StepGuard: Learning Step-Level Guardrails with Scalable Supervision and Safety-Utility Balancing",
+      "authors": [
+        "Zhijie Zheng",
+        "Yu Li",
+        "Chen Qian",
+        "Yuqian Fu",
+        "Yanwei Fu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "StepGuard introduces a novel step-level guard model for LLM agents, enabling pre-execution monitoring of tool actions to prevent security risks. Its core method involves StepGen for scalable data generation and Balance-GRPO for dynamically balancing safety and utility. The contribution lies in achieving high accuracy in preventing unsafe actions without significantly hindering agent performance, outperforming existing open-weight guard models.",
+      "url": "http://arxiv.org/abs/2608.24777v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24777v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.24777v1/EMNLP_pipeline.png",
+      "figure_caption": "Overview of StepGen. The pipeline first constructs and rolls out an unsafe trajectory with a designated risk anchor. It then generates two prefix-aligned safe branches and an independently constructed benign tool-reuse trajectory. Finally, StepGen adds step-level supervision and retains high-quality groups through structural and semantic filtering.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24569v1",
+      "title": "When \"Must\" Becomes \"Maybe\": Constraint Weakening in LLM Agent Workflows",
+      "authors": [
+        "Yiheng Sun",
+        "Huifei Wang",
+        "Yancheng Zhu",
+        "Zhenyu Li",
+        "Zebin Zhao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces \"constraint weakening\" for LLM agents, addressing how requirements in multi-stage workflows can shift from mandatory to optional. The core method involves analyzing how intermediate artifacts transform action-binding state, specifically focusing on safety blockers. The contribution is demonstrating that naive handoffs preserve all blockers, while controlled transformations can effectively weaken them, impacting downstream executor behavior.",
+      "url": "http://arxiv.org/abs/2608.24569v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24569v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.24569v1/paper_fig1_mechanism_arr_v3.png",
+      "figure_caption": "A binding source state passes through a language-mediated transformation before local-view execution. The controlled testbed represents each source state with status, prerequisite, owner, and fallback fields. Degradation changes the artifact’s operational role even when related language remains available. Repair acts on the artifact; verification acts at the endpoint.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24492v1",
+      "title": "When Do Supervised UQ Ensembles Improve LLM Hallucination Detection? A Robustness Study",
+      "authors": [
+        "Mohit Singh Chauhan",
+        "Vipin Gyanchandani",
+        "Dylan Bouchard"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper investigates the effectiveness of supervised ensembles for detecting LLM hallucinations when ground truth is unavailable. The core method involves training a classifier on diverse uncertainty quantification (UQ) signals from multiple LLMs. The key contribution is a systematic robustness analysis demonstrating that these supervised ensembles consistently outperform individual UQ methods across various LLMs, datasets, and generation tasks, highlighting their practical utility.",
+      "url": "http://arxiv.org/abs/2608.24492v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24492v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.24588v1",
+      "title": "IAPO: Influence-Aware Policy Optimization for Credit Assignment in Multi-Turn Service Agents",
+      "authors": [
+        "Bo Ren",
+        "Yirong Mao",
+        "Yi Yang",
+        "Wenhui Que"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces Influence-Aware Policy Optimization (IAPO) for multi-turn LLM agents. IAPO models the flow of information and errors within a task's interaction history as a typed influence-dependency graph. This allows for more effective credit assignment by directly leveraging the inherent structure of past interactions, rather than relying on external comparisons or separate learning signals.",
+      "url": "http://arxiv.org/abs/2608.24588v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24588v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.24588v1/teaser-crop.png",
+      "figure_caption": "Per-action advantage allocation for a successful (left, positive-advantage) and a failed (right, negative-advantage) refund rollout. Refunding to the original card or store balance is correct only if it matches the user’s clarified intent , so an early clarifying turn decides whether later actions are right. GRPO applies the same advantage to every action, whereas IAPO routes credit according to realized support use and error propagation.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    }
+  ],
+  "hacker_news": [
+    {
+      "id": 49433292,
+      "title": "Apple introduces M6 and M5 Ultra",
+      "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
+      "score": 1143,
+      "created_at": "2026-08-25T13:01:22Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49433292",
+      "summary": "Apple has unveiled its new M6 and M5 Ultra chips, promising significant advancements in performance and AI capabilities for its devices."
+    },
+    {
+      "id": 49435728,
+      "title": "How much of HN is AI?",
+      "url": "https://blog.coredump.cx/p/how-much-of-hn-is-ai",
+      "score": 267,
+      "created_at": "2026-08-25T15:23:41Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49435728",
+      "summary": "This article analyzes Hacker News posts to estimate the proportion of content generated by AI, finding a significant and growing presence."
+    },
+    {
+      "id": 49435147,
+      "title": "AI is hitting entry-level jobs hardest, Stanford study finds",
+      "url": "https://arstechnica.com/ai/2026/08/ai-is-hitting-entry-level-jobs-hardest-stanford-study-finds/",
+      "score": 141,
+      "created_at": "2026-08-25T14:48:58Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49435147",
+      "summary": "A Stanford study reveals that artificial intelligence is disproportionately impacting entry-level positions, automating tasks previously performed by new workers."
+    },
+    {
+      "id": 49435675,
+      "title": "Show HN: I made a Raspberry with Qwen my local car AI",
+      "url": "https://github.com/ThinkOffApp/CarWatch",
+      "score": 141,
+      "created_at": "2026-08-25T15:20:20Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49435675",
+      "summary": "A developer created a local car AI using a Raspberry Pi and Qwen, allowing for voice control and information retrieval without relying on cloud services."
+    },
+    {
+      "id": 49432879,
+      "title": "OpenAI restores 5-hour Codex and Work limits for ChatGPT Plus users",
+      "url": "https://9to5mac.com/2026/08/24/openai-restores-5-hour-codex-and-work-limits-for-chatgpt-plus-users/",
+      "score": 114,
+      "created_at": "2026-08-25T12:33:00Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49432879",
+      "summary": "OpenAI has reinstated a 5-hour usage limit for Codex and other tools for ChatGPT Plus subscribers after a temporary removal."
+    }
+  ],
+  "github_trending": [
+    {
+      "full_name": "freestylefly/awesome-gpt-image-2",
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
+      "stars_today": 1698,
+      "total_stars": 20109,
+      "language": "JavaScript",
+      "topics": [],
+      "summary": "This repository offers a \"Prompt as Code\" engine and template library for GPT-Image2, featuring over 530 reverse-engineered examples and 20+ industrial-grade templates with extracted skills for efficient image generation."
+    },
+    {
+      "full_name": "anthropics/claude-plugins-community",
+      "url": "https://github.com/anthropics/claude-plugins-community",
+      "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
+      "stars_today": 351,
+      "total_stars": 1980,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository serves as a read-only mirror of a community plugin marketplace for Claude Cowork and Claude Code, allowing users to discover and access plugins for enhanced functionality."
+    },
+    {
+      "full_name": "MadsLorentzen/ai-job-search",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "stars_today": 1265,
+      "total_stars": 35832,
+      "language": "Python",
+      "topics": [],
+      "summary": "This AI job search framework runs locally, using Claude to evaluate job postings, tailor CVs, write cover letters, and prepare for interviews."
+    },
+    {
+      "full_name": "apache/maka",
+      "url": "https://github.com/apache/maka",
+      "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
+      "stars_today": 543,
+      "total_stars": 3519,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "Apache Maka is a local-first AI agent workspace that records all agent interactions, including model messages, tool calls, and permission decisions, as an append-only log."
+    },
+    {
+      "full_name": "TauricResearch/TradingAgents",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "stars_today": 218,
+      "total_stars": 100582,
+      "language": "Python",
+      "topics": [],
+      "summary": "TradingAgents is a multi-agent framework leveraging LLMs for developing and testing sophisticated financial trading strategies, enabling agents to interact and make decisions in simulated markets."
+    },
+    {
+      "full_name": "AgriciDaniel/claude-obsidian",
+      "url": "https://github.com/AgriciDaniel/claude-obsidian",
+      "description": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern.",
+      "stars_today": 813,
+      "total_stars": 13040,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository provides an AI-powered system that automatically organizes and links your notes within Obsidian using Claude, creating a self-organizing knowledge graph of plain Markdown for personal knowledge management."
+    },
+    {
+      "full_name": "rohitg00/ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "stars_today": 569,
+      "total_stars": 49335,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository offers a practical, hands-on guide to building and deploying AI systems from the ground up, emphasizing learning, creation, and sharing."
+    },
+    {
+      "full_name": "tinyhumansai/openhuman",
+      "url": "https://github.com/tinyhumansai/openhuman",
+      "description": "Your Personal AI super intelligence. A brain that builds a local-first memory of your life, a fantastic orchestrator of agent fleets and workflows, and a deep researcher.",
+      "stars_today": 542,
+      "total_stars": 37977,
+      "language": "Rust",
+      "topics": [],
+      "summary": "OpenHuman is a personal AI superintelligence that acts as a local-first life memory, orchestrator for agent fleets and workflows, and a deep researcher."
+    },
+    {
+      "full_name": "basecamp/omarchy",
+      "url": "https://github.com/basecamp/omarchy",
+      "description": "Beautiful, Modern & Opinionated Linux",
+      "stars_today": 1083,
+      "total_stars": 31603,
+      "language": "Shell",
+      "topics": [],
+      "summary": "Oarchy is a beautiful, modern, and opinionated Linux distribution designed for a streamlined and opinionated user experience."
+    }
+  ],
+  "us_stocks": [],
+  "postdoc_jobs": [],
+  "jobs": [],
+  "supervisor_updates": [],
+  "weather": [
+    {
+      "query": "London",
+      "label": "London, England, United Kingdom",
+      "resolved_name": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "timezone": "Europe/London",
+      "forecast_date": "2026-08-26",
+      "condition": "Overcast",
+      "weather_code": 3,
+      "temperature_c": 21.2,
+      "apparent_temperature_c": 22.0,
+      "temp_max_c": 24.6,
+      "temp_min_c": 18.5,
+      "humidity_pct": 74,
+      "wind_speed_kmh": 10.1,
+      "precipitation_probability_pct": 63,
+      "is_day": true,
+      "sunrise": "2026-08-26T06:03",
+      "sunset": "2026-08-26T20:00",
+      "source": "Open-Meteo",
+      "source_url": "https://open-meteo.com/"
+    }
+  ]
+}
