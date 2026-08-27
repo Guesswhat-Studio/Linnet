@@ -1,0 +1,1792 @@
+{
+  "date": "2026-08-27",
+  "generated_at": "2026-08-27T13:00:32.688617+00:00",
+  "sections_ordered": [
+    {
+      "key": "quote_of_day",
+      "payload_key": "quote_of_day",
+      "title": "Words for the Morning",
+      "icon": "✦",
+      "items": [
+        {
+          "quote": "I do have concerns about the current efforts to restructure our nation's intelligence community.",
+          "author": "Ted Stevens",
+          "category": "intelligence"
+        }
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "key": "weather",
+      "payload_key": "weather",
+      "title": "Weather",
+      "icon": "🌦️",
+      "items": [
+        {
+          "query": "London",
+          "label": "London, England, United Kingdom",
+          "resolved_name": "London",
+          "region": "England",
+          "country": "United Kingdom",
+          "latitude": 51.50853,
+          "longitude": -0.12574,
+          "timezone": "Europe/London",
+          "forecast_date": "2026-08-27",
+          "condition": "Light drizzle",
+          "weather_code": 51,
+          "temperature_c": 22.6,
+          "apparent_temperature_c": 23.5,
+          "temp_max_c": 22.9,
+          "temp_min_c": 19.0,
+          "humidity_pct": 72,
+          "wind_speed_kmh": 11.9,
+          "precipitation_probability_pct": 99,
+          "is_day": true,
+          "sunrise": "2026-08-27T06:05",
+          "sunset": "2026-08-27T19:58",
+          "source": "Open-Meteo",
+          "source_url": "https://open-meteo.com/"
+        }
+      ],
+      "meta": {
+        "count": 1,
+        "city": "London"
+      }
+    },
+    {
+      "key": "arxiv",
+      "payload_key": "papers",
+      "title": "arXiv Papers",
+      "icon": "📄",
+      "items": [
+        {
+          "id": "2608.26053v1",
+          "title": "$R^3$: Training Robots to Reason in Natural Language via Reinforcement Learning",
+          "authors": [
+            "Lehong Wu",
+            "Yuxiao Qu",
+            "Zheyuan Hu",
+            "Ivan Zhang",
+            "Limin Wei"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL",
+            "cs.RO"
+          ],
+          "abstract": "This paper introduces $R^3$, a method to train Vision-Language Models (VLMs) to reason in natural language for robotic manipulation. $R^3$ first fine-tunes a VLM on expert reasoning traces and then uses reinforcement learning with offline action data to improve its reasoning capabilities for guiding low-level robotic policies. The core contribution is enabling VLMs to perform free-form language reasoning for complex robotic tasks, unlike prior methods relying on structured supervision.",
+          "url": "http://arxiv.org/abs/2608.26053v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.26053v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2608.26053v1/workflow_v4.png",
+          "figure_caption": "Two-stage training of ℛ 3 \\( \\mathcal{R}^{3} \\) . ℛ 3 \\( \\mathcal{R}^{3} \\) trains a high-level VLM to reason in natural language and steer a fixed low-level robot policy for robotic manipulation tasks. ℛ 3 \\( \\mathcal{R}^{3} \\) proceeds in two stages: Stage I (mid-training) imbues an off-the-shelf VLM with the reasoning style and behaviors needed to produce useful instructions for the low-level policy. Stage II (single-step RL) further improves the VLM by training it to generate reasoning traces that match the expert instruction in offline data.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.26004v1",
+          "title": "AsymSpec: Context-Asymmetric Speculative Decoding for Agentic LLMs",
+          "authors": [
+            "Sheng Liang",
+            "Yongyue Zhang",
+            "Nathanael Brian",
+            "Hang Lv",
+            "Hao Wang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "AsymSpec addresses the inference cost of agentic LLMs by breaking the symmetry in speculative decoding. It uses a lightweight drafter with full context to guide a larger verifier operating on compressed context, mitigating accuracy loss from compression. This asymmetric approach achieves significant speedups while retaining high accuracy, improving the efficiency of agentic LLM pipelines.",
+          "url": "http://arxiv.org/abs/2608.26004v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.26004v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2608.26004v1/figures/pipeline_0526_v4.png",
+          "figure_caption": "AsymSpec speculation step. (a) Drafting & verification: drafter S S reads x full x_{\\( \\text{full} \\)} (logits a a , drafts d 1 : K d_{1:K} ) and x comp x_{\\( \\text{comp} \\)} (logits b b ); verifier L L reads x comp x_{\\( \\text{comp} \\)} (logits t t ). (b) CDA gate & \\( \\delta \\) -fusion: γ eff ​ ( i ) \\( \\gamma \\)_{\\( \\text{eff} \\)}(i) relaxes as full-vs-compressed divergence grows; accepted drafts are committed, otherwise the \\( \\delta \\) -fused arg ⁡ max \\( \\arg \\)\\( \\max \\) is emitted. Only S S consumes x full x_{\\( \\text{full} \\)} .",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.25992v1",
+          "title": "ProgRouter: Online Progress-Guided Orchestration for Multi-Agent LLM Workflows under Quality-Cost Tradeoffs",
+          "authors": [
+            "Somgyuan Li",
+            "Ahmed M. Abdelmoniem",
+            "Shiqiang Wang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "ProgRouter addresses the high cost of multi-agent LLM workflows by introducing an online, progress-guided orchestration method. It adaptively selects LLM agents at each step based on a multi-view progress scorer that considers task completion, trends, and state quality. This allows for dynamic routing to maintain task quality while staying within budget constraints.",
+          "url": "http://arxiv.org/abs/2608.25992v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.25992v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2608.25992v1/system-model.png",
+          "figure_caption": "Overview of LLM agent orchestration in collaborative multi-agent LLM workflows.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.25920v1",
+          "title": "Repair or Resample? Rethinking Failure Debugging in LLM Multi-Agent Systems",
+          "authors": [
+            "Zhongwen Luan",
+            "Xiaoyu Zhang",
+            "Ming Hu",
+            "Yue Yang",
+            "Jiongchi Yu"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.SE"
+          ],
+          "abstract": "This paper addresses the reliability bottleneck in LLM-based multi-agent systems (MASs) for complex tasks. It introduces SymTrace, a framework that enables controlled evaluation of repair methods by allowing selective regeneration of MAS execution trajectories after a failure point. This allows researchers to distinguish between causal repair and stochastic improvements due to LLM randomness, contributing a more rigorous approach to debugging MAS failures.",
+          "url": "http://arxiv.org/abs/2608.25920v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.25920v1",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.25973v1",
+          "title": "SciMIF: Understanding Multimodal Instruction Following in Scientific Domains",
+          "authors": [
+            "Ye Shen",
+            "Yuting Zheng",
+            "Dun Pei",
+            "Zijian Chen",
+            "Wenlong Zhang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces SciMIF, a benchmark for evaluating multimodal instruction following in scientific domains. It proposes a taxonomy of 10 constraint groups derived from analyzing 22 tasks across 5 disciplines, and uses this to systematically augment scientific datasets. The benchmark reveals significant performance gaps, highlighting chemistry as particularly challenging for current MLLMs.",
+          "url": "http://arxiv.org/abs/2608.25973v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.25973v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2608.25973v1/constraints.png",
+          "figure_caption": "An overview of SciMIF, illustrating its coverage of five scientific disciplines, one general constraint domain, and ten functional constraint categories for constructing diverse scientific instruction-following constraints.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.26081v1",
+          "title": "SwarmWorld: Stigmergic technological evolution in societies of language-model agents",
+          "authors": [
+            "Subhadeep Pal",
+            "Fiona Y. Wang",
+            "Markus J. Buehler"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cond-mat.mtrl-sci"
+          ],
+          "abstract": "This paper introduces SwarmWorld, a novel framework where language-model agents collectively evolve technologies through indirect environmental interaction (stigmergy). The core method involves homogeneous agents exploring, resource processing, and constructing artifacts whose functionality is then tested in a deterministic simulator. The key contribution is demonstrating that decentralized LLM agents can self-organize and build functional, evolving technologies without explicit programming or predefined roles, outperforming independent search.",
+          "url": "http://arxiv.org/abs/2608.26081v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.26081v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2608.26081v1/figure-01-historical-lineage-tree.png",
+          "figure_caption": "Conceptual lineages leading to SwarmWorld; connectors indicate conceptual convergence rather than direct descent between every adjacent item. (A) Biological collectives and swarm-computing methods contribute decentralized coordination, feedback, and stigmergy. (B) Local-rule models and artificial societies contribute persistent worlds in which local actions alter shared state and generate population-level organization. (C) Distributed-agent and LLM systems contribute explicit agent state, memory-guided planning, embodiment, communication, and reusable executable skills. (D) SwarmWorld combines these elements in a materially constrained multi-agent world where agents build persistent artifacts and inherit or modify their programs. The resulting technological ecology can be evaluated after the agents are removed. Image credits. Ant photograph by Kiran Vati K, CC BY 4.0 , cropped and color-adjusted. Boids still from a video by Andrew Magill, CC BY 2.0 , with a frame extracted, cropped, and color-adjusted. Game of Life glider-gun diagram by Bryan.burgers, public domain , placed on a grid background. Micropolis screenshot based on the original software by Will Wright and Maxis Software/Electronic Arts, the Unix port by Don Hopkins and DUX Software, screenshot by Tomhannen, and edit by bayo; GPLv3 or later with Section 7 additional terms , cropped and color-adjusted. The Sugarscape view, method schematics, and SwarmWorld rendering were created by the authors.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.25775v1",
+          "title": "ToST: A Tree-of-Thought Socratic Teaching Framework for Multi-Path Guidance and Parallel Thinking",
+          "authors": [
+            "Feng Ling",
+            "Heng Yu"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces ToST, a novel framework for Socratic teaching using LLMs. ToST moves beyond single-solution guidance by employing \"Parallel Sowing\" to encourage students to explore multiple valid approaches to a problem. Its \"Multi-Path Adaptive Guidance\" then provides flexible, non-linear support across these diverse reasoning paths, enhancing instructional flexibility and error recovery.",
+          "url": "http://arxiv.org/abs/2608.25775v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.25775v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2608.25775v1/fig/motivate.jpg",
+          "figure_caption": "Comparison between traditional Socratic Teaching and the proposed ToST paradigm. Traditional method (left) employs a 1P1S paradigm with linear reasoning, susceptible to stalling from intermediate errors. In contrast, ToST (right) adopts a 1PMS paradigm via parallel thinking, enabling dynamic redirection when paths fail.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.26008v1",
+          "title": "A Self-Evolving Multi-Agent Framework Defense against LLM Jailbreak Attacks",
+          "authors": [
+            "Tongyan Hu",
+            "Bryan Hooi"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.CR"
+          ],
+          "abstract": "This paper introduces a novel, self-evolving defense framework for LLMs against jailbreak attacks. Its core method involves a persistent rule memory that learns from successful attacks by abstracting their structural wrappers into generalizable rules. This allows the defense to adapt and defend against new, unseen attack strategies without requiring model parameter updates, contributing a dynamic and continuously improving defense mechanism.",
+          "url": "http://arxiv.org/abs/2608.26008v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.26008v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2608.26008v1/figures/main.png",
+          "figure_caption": "Overview of our self-evolving multi-agent defense framework. A1 (Rule Triggering Agent) classifies the input and retrieves relevant rules; A2 (Policy Decision Agent) determines the response policy; A3 (Response Generation Agent) produces the final output; A4 (Self-Reflection Agent) induces new rules when a violation is detected and updates the rule memory base.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2608.26013v1",
+          "title": "VISA: Agentic Self-Evolving Data Synthesis for Multimodal Instruction Following",
+          "authors": [
+            "Min Zeng",
+            "Guanxin Tan",
+            "Libin Cen",
+            "Yawei Wen",
+            "Rui Hu"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "VISA is an agentic framework that synthesizes multimodal instruction-following data through a self-evolving loop. It iteratively generates, verifies, and refines instructions by analyzing images, sampling from memory, and using tools and LLM judges. This approach addresses limitations of one-pass synthesis by incorporating feedback from failed samples and target model errors to create more accurate, diverse, and challenging training data.",
+          "url": "http://arxiv.org/abs/2608.26013v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.26013v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2608.26013v1/paper_oa.png",
+          "figure_caption": "Overview of VISA. The framework iteratively performs perception, planning and execution, reflection, and memory update, allowing verifier feedback and target-model difficulty signals to guide subsequent synthesis rounds.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2608.25937v1",
+          "title": "Candidate supply and answer selection shape the value of LLM judging in multi-agent systems",
+          "authors": [
+            "Jia-Hao Ji",
+            "Sijie Li",
+            "Jiabei Cheng",
+            "Zixi She",
+            "Jin-Tai Yu"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "This paper investigates how LLM judges can improve multi-agent system (MAS) performance by providing selection pressure on candidate answers. The core method involves conceptualizing MAS reasoning as an evolutionary pipeline and analyzing how LLM judges influence candidate generation and selection across various question-answering benchmarks. The key contribution is demonstrating that the effectiveness of LLM judges hinges on both the quality of candidate answers supplied and the specific selection rules employed, highlighting the risk of \"memetic drift\" without proper quality control.",
+          "url": "http://arxiv.org/abs/2608.25937v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.25937v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.25927v1",
+          "title": "Code World Model: Coding Agent as World Brain",
+          "authors": [
+            "Yiwen Chen",
+            "Guosheng Lin",
+            "Chi Zhang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.CV"
+          ],
+          "abstract": "This paper introduces the Code World Model, which uses a language model as a \"world brain\" to generate executable code that simulates environment evolution. This approach separates the underlying rules and state from visual realization, enabling persistent consequences and coherent, rule-consistent development. The generated code then conditions a video model to produce visual outputs, overcoming limitations of purely visual world models.",
+          "url": "http://arxiv.org/abs/2608.25927v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.25927v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.25776v1",
+          "title": "EVOMAL: Self-Poisoning in Self-Evolving Coding Agents",
+          "authors": [
+            "Xiaodong Wu",
+            "Yu Shi",
+            "Qi Li",
+            "Zhimin Zhao",
+            "Xiangman Li"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CR"
+          ],
+          "abstract": "This paper introduces \"self-poisoning\" in self-evolving coding agents, where agents can inadvertently create and execute malicious code by imitating compromised skills from a shared library. The EvoMal attack exploits this by embedding payloads within benign-looking structures, causing agents to replicate and propagate the malicious code. The core contribution is identifying and demonstrating this self-propagating vulnerability, leading to a persistent threat even after initial malicious code removal.",
+          "url": "http://arxiv.org/abs/2608.25776v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.25776v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.25776v1/workflow.png",
+          "figure_caption": "Overview of EvoMal . (1) The benign self-evolving loop, where an agent retrieves the top- k k skills by description, authors a new skill ( create -path) or invokes one by name (the transient reuse -path), and writes authored skills back. (2) EvoMal poisons the create -path. The attacker publishes skills whose banner induces mimicry and whose interchangeable payload carries the harm. A retrieving agent re-authors the banner into a persisted skill that later generations retrieve again, forming a worm that can persist after the planted skills are removed. A counter-prompt at the reading step breaks the loop ( § 9 ).",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.25986v1",
+          "title": "Multi-Granularity Context-Enhanced RAG over Multimodal Knowledge Graphs",
+          "authors": [
+            "Zongyu Wu",
+            "Yilong Wang",
+            "Xiaochen Wang",
+            "Minhua Lin",
+            "Zhichao Xu"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces a novel framework for multimodal retrieval-augmented generation (RAG) that addresses the semantic gap in existing methods. Its core method enhances RAG by integrating textual context throughout the processing of visual information and multimodal knowledge fusion, rather than treating modalities independently. The main contribution is a more effective way to leverage multimodal knowledge graphs for LLMs, leading to improved performance by bridging the semantic gap between text and images.",
+          "url": "http://arxiv.org/abs/2608.25986v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.25986v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.25986v1/Figs/IntroMMKG.png",
+          "figure_caption": "Figure 1. An illustration of node-based Multimodal Knowledge Graph where image is also treated as a node. An illustration of node-based Multimodal Knowledge Graph.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.25832v1",
+          "title": "Skill Issue: Are Skills Language-Invariant in LLMs?",
+          "authors": [
+            "Bobby Cheng",
+            "Adam Gaber",
+            "Zhengyuan Liu",
+            "Catherine Arnett",
+            "Omer Goldman"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL",
+            "cs.GT"
+          ],
+          "abstract": "This paper investigates whether language affects the performance of large language models (LLMs) on specific tasks, independent of their general knowledge. The core method is multilingual self-play, where two instances of the same LLM compete in a text-based game, each using a different language. The contribution is demonstrating that LLMs can exhibit significantly different skill levels and strategic behaviors across languages, even when the underlying model and game remain constant.",
+          "url": "http://arxiv.org/abs/2608.25832v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.25832v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.25756v1",
+          "title": "TailSFT: Filtered Fine-Tuning Improves Post-Training Performance",
+          "authors": [
+            "Sadhika Malladi",
+            "Samy Jelassi",
+            "Dylan Foster",
+            "Jordan T. Ash",
+            "Akshay Krishnamurthy"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces TailSFT, a supervised fine-tuning method that improves post-reinforcement learning performance by filtering out already well-modeled data sequences. By focusing training on the \"tail\" of the data distribution, TailSFT helps models learn under-represented areas. This approach leads to significant improvements in downstream tasks like math and coding evaluations with minimal computational cost.",
+          "url": "http://arxiv.org/abs/2608.25756v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.25756v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.25756v1/fig1_2.png",
+          "figure_caption": "TailSFT yields better coverage, possibly at the cost of worse cross-entropy, which translates to stronger post-RL performance. Standard SFT achieves lower cross-entropy, while TailSFT preserves higher pass@ K K at large K K . Starting from this higher-coverage checkpoint, the same RL procedure yields higher pass@ 1 1 . Curves are illustrative.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.26036v1",
+          "title": "Trace Integrity for LLM Data Agents: A Vision for Auditable Structured Reasoning in Real-World Systems",
+          "authors": [
+            "Srimonti Dutta",
+            "Akshata Kishore Moharir"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces \"Trace Integrity\" as a crucial reliability criterion for LLM data agents, moving beyond simple answer accuracy. It proposes that the *process* behind an answer must be explicit, executable, and auditable, not just the final output. The core contribution is operationalizing this with \"execution contracts\" to ensure structured reasoning in real-world systems and introducing the \"CAIT Rate\" to measure invalid computation despite correct answers.",
+          "url": "http://arxiv.org/abs/2608.26036v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.26036v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.25774v1",
+          "title": "EXAONE Tabular 1.0 : Technical Report",
+          "authors": [
+            "Moonjung Eo",
+            "Min-Kook Suh",
+            "Hye-Seung Cho",
+            "Jiwon Kim",
+            "Seoyoon Kim"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "abstract": "EXAONE Tabular 1.0's core method is an architecture redesign for tabular in-context learning, interleaving feature and item attention within each Transformer layer. This approach, trained on synthetic data, allows it to make predictions without dataset-specific fine-tuning. Its main contribution is achieving state-of-the-art performance and high efficiency on tabular tasks through this novel architecture.",
+          "url": "http://arxiv.org/abs/2608.25774v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.25774v1",
+          "score": 8.0,
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2608.25771v1",
+          "title": "Large Language Model Few-Shot Prompting with Dilemma Training Outperforms Human Surrogates in Predicting Patient Preferences",
+          "authors": [
+            "Natasha Ureyang",
+            "Sebastian Porsdam Mann",
+            "Yuxin Liu",
+            "Zuriel Hassirim",
+            "Melanie Almonte"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.HC"
+          ],
+          "abstract": "This paper introduces P4-DT, a large language model trained to predict patient preferences in serious illness. Unlike previous methods, P4-DT uses \"dilemma training\" to build a dynamic decision policy by engaging users with varied medical scenarios. This approach significantly improves prediction accuracy compared to human surrogates and even other AI prototypes, offering a more personalized and context-aware solution for end-of-life care decisions.",
+          "url": "http://arxiv.org/abs/2608.25771v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.25771v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.25771v1/acc_3_boxplot.jpg",
+          "figure_caption": "Figure 1. Accuracy of predicted patient preferences: P4-DT (AI agent), TO (human surrogate), and TO + P4-DT (human surrogate with P4-DT asisstance). On average, P4-DT predicted patient preferences with 81.7% accuracy compared to 55.0% for TO and 61.7% for P4-DT",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2608.25869v1",
+          "title": "Anchoring Bias in LLM-as-a-Judge Systems: Prior Scores Compromise Evaluation Independence",
+          "authors": [
+            "Ante Kapetanovic",
+            "Kemal Altwlkany",
+            "Andro Mercep",
+            "Tomislav Duricic",
+            "Emanuel Lacic"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper investigates the \"anchoring bias\" in LLM-as-a-Judge systems, demonstrating that prior scores, even when presented as mere metadata, significantly influence subsequent evaluations. The core method involves comparing LLM judgments under different prompt conditions, revealing that including prior scores systematically shifts ratings towards those previous values. The main contribution is the empirical evidence that LLM judgments are not independent, with prior scores acting as a strong anchor, compromising the reliability of these systems for content evaluation.",
+          "url": "http://arxiv.org/abs/2608.25869v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.25869v1",
+          "score": 8.0,
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2608.25894v1",
+          "title": "From Passive Response to Proactive Correction: Enhancing LLM Robustness Against Input Fact Perturbations",
+          "authors": [
+            "Ping Wang",
+            "Xiangguo Sun",
+            "Bingbing Xu",
+            "Guocong Li",
+            "Xiaofeng Meng"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces DEDUCE, a three-stage framework that enhances LLM robustness against factually incorrect user inputs. DEDUCE proactively detects, deliberates on, and corrects factual errors in the input before generating a response. Its core contribution is transforming LLMs from passive responders to active error correctors, significantly improving reliability.",
+          "url": "http://arxiv.org/abs/2608.25894v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.25894v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.25894v1/F1.png",
+          "figure_caption": "A query containing factually incorrect or inconsistent premises can mislead an LLM into producing a confident but unreliable answer ( red ). The desired behavior is to identify the flawed premise, explicitly clarify the error, and then provide a corrected, factual response ( green ).",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        }
+      ],
+      "meta": {
+        "papers_fetched": 100,
+        "papers_after_keyword_filter": 44,
+        "papers_after_llm_filter": 34,
+        "count": 20
+      }
+    },
+    {
+      "key": "hacker_news",
+      "payload_key": "hacker_news",
+      "title": "Hacker News",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": 49449507,
+          "title": "GLM-5.3-Flash",
+          "url": "https://z.ai/blog/glm-5.3-flash",
+          "score": 1072,
+          "created_at": "2026-08-26T14:08:50Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49449507",
+          "summary": "Zhipu AI has released GLM-5.3-Flash, a new large language model optimized for faster inference and improved performance on various tasks."
+        },
+        {
+          "id": 49458418,
+          "title": "CEO fired developers to make room for AI. Developers create open source AI CEO",
+          "url": "https://github.com/SenteLabsAI/OpenExecutive",
+          "score": 732,
+          "created_at": "2026-08-27T01:46:22Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49458418",
+          "summary": "A CEO fired developers to implement AI, but those developers then created an open-source AI to replace the CEO."
+        },
+        {
+          "id": 49451313,
+          "title": "The turbulent AI era is here",
+          "url": "https://www.gatesnotes.com/a-turbulent-ai-era-and-critical-choices-to-make",
+          "score": 296,
+          "created_at": "2026-08-26T15:55:15Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49451313",
+          "summary": "Bill Gates's latest post argues that the rapid advancement of AI presents both immense opportunities and significant challenges, requiring careful consideration and critical choices for its future development and societal impact."
+        },
+        {
+          "id": 49450898,
+          "title": "It’s so hard to finish an idea that is not yours and is just suggested by AI",
+          "url": "https://www.ssp.sh/brain/using-obsidian-with-ai/",
+          "score": 231,
+          "created_at": "2026-08-26T15:30:05Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49450898",
+          "summary": "The article discusses the difficulty of fully realizing an AI-generated idea, highlighting the challenge of translating a suggestion into a complete, actionable concept."
+        },
+        {
+          "id": 49454764,
+          "title": "Serve Markdown to AI Agents with Accept Headers",
+          "url": "https://acceptmarkdown.com/",
+          "score": 157,
+          "created_at": "2026-08-26T19:45:59Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49454764",
+          "summary": "This article explains how to serve Markdown content to AI agents by leveraging HTTP Accept headers, enabling more intelligent and context-aware interactions."
+        },
+        {
+          "id": 49450353,
+          "title": "GLM-5.3-Flash Intelligence, Performance and Price Analysis",
+          "url": "https://artificialanalysis.ai/models/glm-5-3-flash",
+          "score": 137,
+          "created_at": "2026-08-26T14:58:54Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49450353",
+          "summary": "This article analyzes the intelligence, performance, and pricing of GLM-5.3-Flash, a new large language model."
+        }
+      ],
+      "meta": {
+        "count": 6
+      }
+    },
+    {
+      "key": "github_trending",
+      "payload_key": "github_trending",
+      "title": "GitHub Trending",
+      "icon": "⭐",
+      "items": [
+        {
+          "full_name": "zedeus/nitter",
+          "url": "https://github.com/zedeus/nitter",
+          "description": "Alternative Twitter front-end",
+          "stars_today": 63,
+          "total_stars": 13657,
+          "language": "Nim",
+          "topics": [],
+          "summary": "Nitter is an alternative, privacy-focused front-end for Twitter that allows users to browse tweets without an account and without being tracked."
+        },
+        {
+          "full_name": "freestylefly/awesome-gpt-image-2",
+          "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+          "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
+          "stars_today": 2093,
+          "total_stars": 22546,
+          "language": "JavaScript",
+          "topics": [],
+          "summary": "This repository is an industrial-grade prompt engine and template library for GPT-Image2, offering over 530 reverse-engineered examples, 20+ industrial templates, and extracted \"Skills\" for prompt-as-code functionality, all continuously updated."
+        },
+        {
+          "full_name": "tt-a1i/archify",
+          "url": "https://github.com/tt-a1i/archify",
+          "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
+          "stars_today": 4260,
+          "total_stars": 21228,
+          "language": "JavaScript",
+          "topics": [],
+          "summary": "Archify is an AI agent skill that generates beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams as self-contained, interactive HTML files with crisp export options."
+        },
+        {
+          "full_name": "JetBrains/go-modern-guidelines",
+          "url": "https://github.com/JetBrains/go-modern-guidelines",
+          "description": "Help AI coding agents write modern Go",
+          "stars_today": 314,
+          "total_stars": 1885,
+          "language": "Go",
+          "topics": [],
+          "summary": "This repository provides guidelines and best practices to help AI coding agents generate modern and idiomatic Go code."
+        },
+        {
+          "full_name": "anthropics/claude-plugins-official",
+          "url": "https://github.com/anthropics/claude-plugins-official",
+          "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+          "stars_today": 290,
+          "total_stars": 34510,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository serves as an official, Anthropic-managed directory showcasing high-quality Claude Code Plugins, enabling developers to extend Claude's capabilities."
+        },
+        {
+          "full_name": "K-Dense-AI/scientific-agent-skills",
+          "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+          "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 175,000+ scientists worldwide. 163 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+          "stars_today": 494,
+          "total_stars": 35029,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository provides a comprehensive library of validated AI skills and scientific databases, enabling any AI agent to function as a scientist across various domains like biology and chemistry, and is compatible with multiple AI platforms."
+        },
+        {
+          "full_name": "DietrichGebert/ponytail",
+          "url": "https://github.com/DietrichGebert/ponytail",
+          "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+          "stars_today": 1610,
+          "total_stars": 113480,
+          "language": "JavaScript",
+          "topics": [],
+          "summary": "This repository's core function is to make AI agents adopt the persona of a lazy senior developer, prioritizing minimal effort and code reuse to achieve optimal efficiency."
+        },
+        {
+          "full_name": "calesthio/OpenMontage",
+          "url": "https://github.com/calesthio/OpenMontage",
+          "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+          "stars_today": 1284,
+          "total_stars": 51865,
+          "language": "Python",
+          "topics": [],
+          "summary": "OpenMontage is the first open-source, agentic video production system, offering 12 pipelines and over 100 tools to transform AI coding assistants into comprehensive video studios."
+        },
+        {
+          "full_name": "rohitg00/ai-engineering-from-scratch",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+          "description": "Learn it. Build it. Ship it for others.",
+          "stars_today": 547,
+          "total_stars": 49911,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository provides a hands-on, step-by-step guide to building and deploying AI systems from the ground up, enabling users to learn, create, and share their own AI solutions."
+        }
+      ],
+      "meta": {
+        "count": 9
+      }
+    }
+  ],
+  "meta": {
+    "papers_fetched": 100,
+    "papers_after_keyword_filter": 44,
+    "papers_after_llm_filter": 34,
+    "llm_model": "google/gemini-2.5-flash-lite",
+    "scoring_model": "google/gemini-2.5-flash-lite",
+    "summarization_model": "google/gemini-2.5-flash-lite",
+    "duration_seconds": 87
+  },
+  "quote_of_day": [
+    {
+      "quote": "I do have concerns about the current efforts to restructure our nation's intelligence community.",
+      "author": "Ted Stevens",
+      "category": "intelligence"
+    }
+  ],
+  "hitokoto": [],
+  "arxiv": [
+    {
+      "id": "2608.26053v1",
+      "title": "$R^3$: Training Robots to Reason in Natural Language via Reinforcement Learning",
+      "authors": [
+        "Lehong Wu",
+        "Yuxiao Qu",
+        "Zheyuan Hu",
+        "Ivan Zhang",
+        "Limin Wei"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL",
+        "cs.RO"
+      ],
+      "abstract": "This paper introduces $R^3$, a method to train Vision-Language Models (VLMs) to reason in natural language for robotic manipulation. $R^3$ first fine-tunes a VLM on expert reasoning traces and then uses reinforcement learning with offline action data to improve its reasoning capabilities for guiding low-level robotic policies. The core contribution is enabling VLMs to perform free-form language reasoning for complex robotic tasks, unlike prior methods relying on structured supervision.",
+      "url": "http://arxiv.org/abs/2608.26053v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.26053v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.26053v1/workflow_v4.png",
+      "figure_caption": "Two-stage training of ℛ 3 \\( \\mathcal{R}^{3} \\) . ℛ 3 \\( \\mathcal{R}^{3} \\) trains a high-level VLM to reason in natural language and steer a fixed low-level robot policy for robotic manipulation tasks. ℛ 3 \\( \\mathcal{R}^{3} \\) proceeds in two stages: Stage I (mid-training) imbues an off-the-shelf VLM with the reasoning style and behaviors needed to produce useful instructions for the low-level policy. Stage II (single-step RL) further improves the VLM by training it to generate reasoning traces that match the expert instruction in offline data.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.26004v1",
+      "title": "AsymSpec: Context-Asymmetric Speculative Decoding for Agentic LLMs",
+      "authors": [
+        "Sheng Liang",
+        "Yongyue Zhang",
+        "Nathanael Brian",
+        "Hang Lv",
+        "Hao Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "AsymSpec addresses the inference cost of agentic LLMs by breaking the symmetry in speculative decoding. It uses a lightweight drafter with full context to guide a larger verifier operating on compressed context, mitigating accuracy loss from compression. This asymmetric approach achieves significant speedups while retaining high accuracy, improving the efficiency of agentic LLM pipelines.",
+      "url": "http://arxiv.org/abs/2608.26004v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.26004v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.26004v1/figures/pipeline_0526_v4.png",
+      "figure_caption": "AsymSpec speculation step. (a) Drafting & verification: drafter S S reads x full x_{\\( \\text{full} \\)} (logits a a , drafts d 1 : K d_{1:K} ) and x comp x_{\\( \\text{comp} \\)} (logits b b ); verifier L L reads x comp x_{\\( \\text{comp} \\)} (logits t t ). (b) CDA gate & \\( \\delta \\) -fusion: γ eff ​ ( i ) \\( \\gamma \\)_{\\( \\text{eff} \\)}(i) relaxes as full-vs-compressed divergence grows; accepted drafts are committed, otherwise the \\( \\delta \\) -fused arg ⁡ max \\( \\arg \\)\\( \\max \\) is emitted. Only S S consumes x full x_{\\( \\text{full} \\)} .",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.25992v1",
+      "title": "ProgRouter: Online Progress-Guided Orchestration for Multi-Agent LLM Workflows under Quality-Cost Tradeoffs",
+      "authors": [
+        "Somgyuan Li",
+        "Ahmed M. Abdelmoniem",
+        "Shiqiang Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "abstract": "ProgRouter addresses the high cost of multi-agent LLM workflows by introducing an online, progress-guided orchestration method. It adaptively selects LLM agents at each step based on a multi-view progress scorer that considers task completion, trends, and state quality. This allows for dynamic routing to maintain task quality while staying within budget constraints.",
+      "url": "http://arxiv.org/abs/2608.25992v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25992v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.25992v1/system-model.png",
+      "figure_caption": "Overview of LLM agent orchestration in collaborative multi-agent LLM workflows.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.25920v1",
+      "title": "Repair or Resample? Rethinking Failure Debugging in LLM Multi-Agent Systems",
+      "authors": [
+        "Zhongwen Luan",
+        "Xiaoyu Zhang",
+        "Ming Hu",
+        "Yue Yang",
+        "Jiongchi Yu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper addresses the reliability bottleneck in LLM-based multi-agent systems (MASs) for complex tasks. It introduces SymTrace, a framework that enables controlled evaluation of repair methods by allowing selective regeneration of MAS execution trajectories after a failure point. This allows researchers to distinguish between causal repair and stochastic improvements due to LLM randomness, contributing a more rigorous approach to debugging MAS failures.",
+      "url": "http://arxiv.org/abs/2608.25920v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25920v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.25973v1",
+      "title": "SciMIF: Understanding Multimodal Instruction Following in Scientific Domains",
+      "authors": [
+        "Ye Shen",
+        "Yuting Zheng",
+        "Dun Pei",
+        "Zijian Chen",
+        "Wenlong Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces SciMIF, a benchmark for evaluating multimodal instruction following in scientific domains. It proposes a taxonomy of 10 constraint groups derived from analyzing 22 tasks across 5 disciplines, and uses this to systematically augment scientific datasets. The benchmark reveals significant performance gaps, highlighting chemistry as particularly challenging for current MLLMs.",
+      "url": "http://arxiv.org/abs/2608.25973v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25973v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.25973v1/constraints.png",
+      "figure_caption": "An overview of SciMIF, illustrating its coverage of five scientific disciplines, one general constraint domain, and ten functional constraint categories for constructing diverse scientific instruction-following constraints.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.26081v1",
+      "title": "SwarmWorld: Stigmergic technological evolution in societies of language-model agents",
+      "authors": [
+        "Subhadeep Pal",
+        "Fiona Y. Wang",
+        "Markus J. Buehler"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract": "This paper introduces SwarmWorld, a novel framework where language-model agents collectively evolve technologies through indirect environmental interaction (stigmergy). The core method involves homogeneous agents exploring, resource processing, and constructing artifacts whose functionality is then tested in a deterministic simulator. The key contribution is demonstrating that decentralized LLM agents can self-organize and build functional, evolving technologies without explicit programming or predefined roles, outperforming independent search.",
+      "url": "http://arxiv.org/abs/2608.26081v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.26081v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.26081v1/figure-01-historical-lineage-tree.png",
+      "figure_caption": "Conceptual lineages leading to SwarmWorld; connectors indicate conceptual convergence rather than direct descent between every adjacent item. (A) Biological collectives and swarm-computing methods contribute decentralized coordination, feedback, and stigmergy. (B) Local-rule models and artificial societies contribute persistent worlds in which local actions alter shared state and generate population-level organization. (C) Distributed-agent and LLM systems contribute explicit agent state, memory-guided planning, embodiment, communication, and reusable executable skills. (D) SwarmWorld combines these elements in a materially constrained multi-agent world where agents build persistent artifacts and inherit or modify their programs. The resulting technological ecology can be evaluated after the agents are removed. Image credits. Ant photograph by Kiran Vati K, CC BY 4.0 , cropped and color-adjusted. Boids still from a video by Andrew Magill, CC BY 2.0 , with a frame extracted, cropped, and color-adjusted. Game of Life glider-gun diagram by Bryan.burgers, public domain , placed on a grid background. Micropolis screenshot based on the original software by Will Wright and Maxis Software/Electronic Arts, the Unix port by Don Hopkins and DUX Software, screenshot by Tomhannen, and edit by bayo; GPLv3 or later with Section 7 additional terms , cropped and color-adjusted. The Sugarscape view, method schematics, and SwarmWorld rendering were created by the authors.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.25775v1",
+      "title": "ToST: A Tree-of-Thought Socratic Teaching Framework for Multi-Path Guidance and Parallel Thinking",
+      "authors": [
+        "Feng Ling",
+        "Heng Yu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces ToST, a novel framework for Socratic teaching using LLMs. ToST moves beyond single-solution guidance by employing \"Parallel Sowing\" to encourage students to explore multiple valid approaches to a problem. Its \"Multi-Path Adaptive Guidance\" then provides flexible, non-linear support across these diverse reasoning paths, enhancing instructional flexibility and error recovery.",
+      "url": "http://arxiv.org/abs/2608.25775v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25775v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.25775v1/fig/motivate.jpg",
+      "figure_caption": "Comparison between traditional Socratic Teaching and the proposed ToST paradigm. Traditional method (left) employs a 1P1S paradigm with linear reasoning, susceptible to stalling from intermediate errors. In contrast, ToST (right) adopts a 1PMS paradigm via parallel thinking, enabling dynamic redirection when paths fail.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.26008v1",
+      "title": "A Self-Evolving Multi-Agent Framework Defense against LLM Jailbreak Attacks",
+      "authors": [
+        "Tongyan Hu",
+        "Bryan Hooi"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces a novel, self-evolving defense framework for LLMs against jailbreak attacks. Its core method involves a persistent rule memory that learns from successful attacks by abstracting their structural wrappers into generalizable rules. This allows the defense to adapt and defend against new, unseen attack strategies without requiring model parameter updates, contributing a dynamic and continuously improving defense mechanism.",
+      "url": "http://arxiv.org/abs/2608.26008v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.26008v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.26008v1/figures/main.png",
+      "figure_caption": "Overview of our self-evolving multi-agent defense framework. A1 (Rule Triggering Agent) classifies the input and retrieves relevant rules; A2 (Policy Decision Agent) determines the response policy; A3 (Response Generation Agent) produces the final output; A4 (Self-Reflection Agent) induces new rules when a violation is detected and updates the rule memory base.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2608.26013v1",
+      "title": "VISA: Agentic Self-Evolving Data Synthesis for Multimodal Instruction Following",
+      "authors": [
+        "Min Zeng",
+        "Guanxin Tan",
+        "Libin Cen",
+        "Yawei Wen",
+        "Rui Hu"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "VISA is an agentic framework that synthesizes multimodal instruction-following data through a self-evolving loop. It iteratively generates, verifies, and refines instructions by analyzing images, sampling from memory, and using tools and LLM judges. This approach addresses limitations of one-pass synthesis by incorporating feedback from failed samples and target model errors to create more accurate, diverse, and challenging training data.",
+      "url": "http://arxiv.org/abs/2608.26013v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.26013v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.26013v1/paper_oa.png",
+      "figure_caption": "Overview of VISA. The framework iteratively performs perception, planning and execution, reflection, and memory update, allowing verifier feedback and target-model difficulty signals to guide subsequent synthesis rounds.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2608.25937v1",
+      "title": "Candidate supply and answer selection shape the value of LLM judging in multi-agent systems",
+      "authors": [
+        "Jia-Hao Ji",
+        "Sijie Li",
+        "Jiabei Cheng",
+        "Zixi She",
+        "Jin-Tai Yu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "abstract": "This paper investigates how LLM judges can improve multi-agent system (MAS) performance by providing selection pressure on candidate answers. The core method involves conceptualizing MAS reasoning as an evolutionary pipeline and analyzing how LLM judges influence candidate generation and selection across various question-answering benchmarks. The key contribution is demonstrating that the effectiveness of LLM judges hinges on both the quality of candidate answers supplied and the specific selection rules employed, highlighting the risk of \"memetic drift\" without proper quality control.",
+      "url": "http://arxiv.org/abs/2608.25937v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25937v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.25927v1",
+      "title": "Code World Model: Coding Agent as World Brain",
+      "authors": [
+        "Yiwen Chen",
+        "Guosheng Lin",
+        "Chi Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "abstract": "This paper introduces the Code World Model, which uses a language model as a \"world brain\" to generate executable code that simulates environment evolution. This approach separates the underlying rules and state from visual realization, enabling persistent consequences and coherent, rule-consistent development. The generated code then conditions a video model to produce visual outputs, overcoming limitations of purely visual world models.",
+      "url": "http://arxiv.org/abs/2608.25927v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25927v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.25776v1",
+      "title": "EVOMAL: Self-Poisoning in Self-Evolving Coding Agents",
+      "authors": [
+        "Xiaodong Wu",
+        "Yu Shi",
+        "Qi Li",
+        "Zhimin Zhao",
+        "Xiangman Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces \"self-poisoning\" in self-evolving coding agents, where agents can inadvertently create and execute malicious code by imitating compromised skills from a shared library. The EvoMal attack exploits this by embedding payloads within benign-looking structures, causing agents to replicate and propagate the malicious code. The core contribution is identifying and demonstrating this self-propagating vulnerability, leading to a persistent threat even after initial malicious code removal.",
+      "url": "http://arxiv.org/abs/2608.25776v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25776v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.25776v1/workflow.png",
+      "figure_caption": "Overview of EvoMal . (1) The benign self-evolving loop, where an agent retrieves the top- k k skills by description, authors a new skill ( create -path) or invokes one by name (the transient reuse -path), and writes authored skills back. (2) EvoMal poisons the create -path. The attacker publishes skills whose banner induces mimicry and whose interchangeable payload carries the harm. A retrieving agent re-authors the banner into a persisted skill that later generations retrieve again, forming a worm that can persist after the planted skills are removed. A counter-prompt at the reading step breaks the loop ( § 9 ).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.25986v1",
+      "title": "Multi-Granularity Context-Enhanced RAG over Multimodal Knowledge Graphs",
+      "authors": [
+        "Zongyu Wu",
+        "Yilong Wang",
+        "Xiaochen Wang",
+        "Minhua Lin",
+        "Zhichao Xu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces a novel framework for multimodal retrieval-augmented generation (RAG) that addresses the semantic gap in existing methods. Its core method enhances RAG by integrating textual context throughout the processing of visual information and multimodal knowledge fusion, rather than treating modalities independently. The main contribution is a more effective way to leverage multimodal knowledge graphs for LLMs, leading to improved performance by bridging the semantic gap between text and images.",
+      "url": "http://arxiv.org/abs/2608.25986v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25986v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.25986v1/Figs/IntroMMKG.png",
+      "figure_caption": "Figure 1. An illustration of node-based Multimodal Knowledge Graph where image is also treated as a node. An illustration of node-based Multimodal Knowledge Graph.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.25832v1",
+      "title": "Skill Issue: Are Skills Language-Invariant in LLMs?",
+      "authors": [
+        "Bobby Cheng",
+        "Adam Gaber",
+        "Zhengyuan Liu",
+        "Catherine Arnett",
+        "Omer Goldman"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL",
+        "cs.GT"
+      ],
+      "abstract": "This paper investigates whether language affects the performance of large language models (LLMs) on specific tasks, independent of their general knowledge. The core method is multilingual self-play, where two instances of the same LLM compete in a text-based game, each using a different language. The contribution is demonstrating that LLMs can exhibit significantly different skill levels and strategic behaviors across languages, even when the underlying model and game remain constant.",
+      "url": "http://arxiv.org/abs/2608.25832v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25832v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.25756v1",
+      "title": "TailSFT: Filtered Fine-Tuning Improves Post-Training Performance",
+      "authors": [
+        "Sadhika Malladi",
+        "Samy Jelassi",
+        "Dylan Foster",
+        "Jordan T. Ash",
+        "Akshay Krishnamurthy"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces TailSFT, a supervised fine-tuning method that improves post-reinforcement learning performance by filtering out already well-modeled data sequences. By focusing training on the \"tail\" of the data distribution, TailSFT helps models learn under-represented areas. This approach leads to significant improvements in downstream tasks like math and coding evaluations with minimal computational cost.",
+      "url": "http://arxiv.org/abs/2608.25756v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25756v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.25756v1/fig1_2.png",
+      "figure_caption": "TailSFT yields better coverage, possibly at the cost of worse cross-entropy, which translates to stronger post-RL performance. Standard SFT achieves lower cross-entropy, while TailSFT preserves higher pass@ K K at large K K . Starting from this higher-coverage checkpoint, the same RL procedure yields higher pass@ 1 1 . Curves are illustrative.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.26036v1",
+      "title": "Trace Integrity for LLM Data Agents: A Vision for Auditable Structured Reasoning in Real-World Systems",
+      "authors": [
+        "Srimonti Dutta",
+        "Akshata Kishore Moharir"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces \"Trace Integrity\" as a crucial reliability criterion for LLM data agents, moving beyond simple answer accuracy. It proposes that the *process* behind an answer must be explicit, executable, and auditable, not just the final output. The core contribution is operationalizing this with \"execution contracts\" to ensure structured reasoning in real-world systems and introducing the \"CAIT Rate\" to measure invalid computation despite correct answers.",
+      "url": "http://arxiv.org/abs/2608.26036v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.26036v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.25774v1",
+      "title": "EXAONE Tabular 1.0 : Technical Report",
+      "authors": [
+        "Moonjung Eo",
+        "Min-Kook Suh",
+        "Hye-Seung Cho",
+        "Jiwon Kim",
+        "Seoyoon Kim"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "EXAONE Tabular 1.0's core method is an architecture redesign for tabular in-context learning, interleaving feature and item attention within each Transformer layer. This approach, trained on synthetic data, allows it to make predictions without dataset-specific fine-tuning. Its main contribution is achieving state-of-the-art performance and high efficiency on tabular tasks through this novel architecture.",
+      "url": "http://arxiv.org/abs/2608.25774v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25774v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2608.25771v1",
+      "title": "Large Language Model Few-Shot Prompting with Dilemma Training Outperforms Human Surrogates in Predicting Patient Preferences",
+      "authors": [
+        "Natasha Ureyang",
+        "Sebastian Porsdam Mann",
+        "Yuxin Liu",
+        "Zuriel Hassirim",
+        "Melanie Almonte"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.HC"
+      ],
+      "abstract": "This paper introduces P4-DT, a large language model trained to predict patient preferences in serious illness. Unlike previous methods, P4-DT uses \"dilemma training\" to build a dynamic decision policy by engaging users with varied medical scenarios. This approach significantly improves prediction accuracy compared to human surrogates and even other AI prototypes, offering a more personalized and context-aware solution for end-of-life care decisions.",
+      "url": "http://arxiv.org/abs/2608.25771v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25771v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.25771v1/acc_3_boxplot.jpg",
+      "figure_caption": "Figure 1. Accuracy of predicted patient preferences: P4-DT (AI agent), TO (human surrogate), and TO + P4-DT (human surrogate with P4-DT asisstance). On average, P4-DT predicted patient preferences with 81.7% accuracy compared to 55.0% for TO and 61.7% for P4-DT",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2608.25869v1",
+      "title": "Anchoring Bias in LLM-as-a-Judge Systems: Prior Scores Compromise Evaluation Independence",
+      "authors": [
+        "Ante Kapetanovic",
+        "Kemal Altwlkany",
+        "Andro Mercep",
+        "Tomislav Duricic",
+        "Emanuel Lacic"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper investigates the \"anchoring bias\" in LLM-as-a-Judge systems, demonstrating that prior scores, even when presented as mere metadata, significantly influence subsequent evaluations. The core method involves comparing LLM judgments under different prompt conditions, revealing that including prior scores systematically shifts ratings towards those previous values. The main contribution is the empirical evidence that LLM judgments are not independent, with prior scores acting as a strong anchor, compromising the reliability of these systems for content evaluation.",
+      "url": "http://arxiv.org/abs/2608.25869v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25869v1",
+      "score": 8.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2608.25894v1",
+      "title": "From Passive Response to Proactive Correction: Enhancing LLM Robustness Against Input Fact Perturbations",
+      "authors": [
+        "Ping Wang",
+        "Xiangguo Sun",
+        "Bingbing Xu",
+        "Guocong Li",
+        "Xiaofeng Meng"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces DEDUCE, a three-stage framework that enhances LLM robustness against factually incorrect user inputs. DEDUCE proactively detects, deliberates on, and corrects factual errors in the input before generating a response. Its core contribution is transforming LLMs from passive responders to active error correctors, significantly improving reliability.",
+      "url": "http://arxiv.org/abs/2608.25894v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25894v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.25894v1/F1.png",
+      "figure_caption": "A query containing factually incorrect or inconsistent premises can mislead an LLM into producing a confident but unreliable answer ( red ). The desired behavior is to identify the flawed premise, explicitly clarify the error, and then provide a corrected, factual response ( green ).",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    }
+  ],
+  "papers": [
+    {
+      "id": "2608.26053v1",
+      "title": "$R^3$: Training Robots to Reason in Natural Language via Reinforcement Learning",
+      "authors": [
+        "Lehong Wu",
+        "Yuxiao Qu",
+        "Zheyuan Hu",
+        "Ivan Zhang",
+        "Limin Wei"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL",
+        "cs.RO"
+      ],
+      "abstract": "This paper introduces $R^3$, a method to train Vision-Language Models (VLMs) to reason in natural language for robotic manipulation. $R^3$ first fine-tunes a VLM on expert reasoning traces and then uses reinforcement learning with offline action data to improve its reasoning capabilities for guiding low-level robotic policies. The core contribution is enabling VLMs to perform free-form language reasoning for complex robotic tasks, unlike prior methods relying on structured supervision.",
+      "url": "http://arxiv.org/abs/2608.26053v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.26053v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.26053v1/workflow_v4.png",
+      "figure_caption": "Two-stage training of ℛ 3 \\( \\mathcal{R}^{3} \\) . ℛ 3 \\( \\mathcal{R}^{3} \\) trains a high-level VLM to reason in natural language and steer a fixed low-level robot policy for robotic manipulation tasks. ℛ 3 \\( \\mathcal{R}^{3} \\) proceeds in two stages: Stage I (mid-training) imbues an off-the-shelf VLM with the reasoning style and behaviors needed to produce useful instructions for the low-level policy. Stage II (single-step RL) further improves the VLM by training it to generate reasoning traces that match the expert instruction in offline data.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.26004v1",
+      "title": "AsymSpec: Context-Asymmetric Speculative Decoding for Agentic LLMs",
+      "authors": [
+        "Sheng Liang",
+        "Yongyue Zhang",
+        "Nathanael Brian",
+        "Hang Lv",
+        "Hao Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "AsymSpec addresses the inference cost of agentic LLMs by breaking the symmetry in speculative decoding. It uses a lightweight drafter with full context to guide a larger verifier operating on compressed context, mitigating accuracy loss from compression. This asymmetric approach achieves significant speedups while retaining high accuracy, improving the efficiency of agentic LLM pipelines.",
+      "url": "http://arxiv.org/abs/2608.26004v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.26004v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.26004v1/figures/pipeline_0526_v4.png",
+      "figure_caption": "AsymSpec speculation step. (a) Drafting & verification: drafter S S reads x full x_{\\( \\text{full} \\)} (logits a a , drafts d 1 : K d_{1:K} ) and x comp x_{\\( \\text{comp} \\)} (logits b b ); verifier L L reads x comp x_{\\( \\text{comp} \\)} (logits t t ). (b) CDA gate & \\( \\delta \\) -fusion: γ eff ​ ( i ) \\( \\gamma \\)_{\\( \\text{eff} \\)}(i) relaxes as full-vs-compressed divergence grows; accepted drafts are committed, otherwise the \\( \\delta \\) -fused arg ⁡ max \\( \\arg \\)\\( \\max \\) is emitted. Only S S consumes x full x_{\\( \\text{full} \\)} .",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.25992v1",
+      "title": "ProgRouter: Online Progress-Guided Orchestration for Multi-Agent LLM Workflows under Quality-Cost Tradeoffs",
+      "authors": [
+        "Somgyuan Li",
+        "Ahmed M. Abdelmoniem",
+        "Shiqiang Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "abstract": "ProgRouter addresses the high cost of multi-agent LLM workflows by introducing an online, progress-guided orchestration method. It adaptively selects LLM agents at each step based on a multi-view progress scorer that considers task completion, trends, and state quality. This allows for dynamic routing to maintain task quality while staying within budget constraints.",
+      "url": "http://arxiv.org/abs/2608.25992v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25992v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.25992v1/system-model.png",
+      "figure_caption": "Overview of LLM agent orchestration in collaborative multi-agent LLM workflows.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.25920v1",
+      "title": "Repair or Resample? Rethinking Failure Debugging in LLM Multi-Agent Systems",
+      "authors": [
+        "Zhongwen Luan",
+        "Xiaoyu Zhang",
+        "Ming Hu",
+        "Yue Yang",
+        "Jiongchi Yu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper addresses the reliability bottleneck in LLM-based multi-agent systems (MASs) for complex tasks. It introduces SymTrace, a framework that enables controlled evaluation of repair methods by allowing selective regeneration of MAS execution trajectories after a failure point. This allows researchers to distinguish between causal repair and stochastic improvements due to LLM randomness, contributing a more rigorous approach to debugging MAS failures.",
+      "url": "http://arxiv.org/abs/2608.25920v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25920v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.25973v1",
+      "title": "SciMIF: Understanding Multimodal Instruction Following in Scientific Domains",
+      "authors": [
+        "Ye Shen",
+        "Yuting Zheng",
+        "Dun Pei",
+        "Zijian Chen",
+        "Wenlong Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces SciMIF, a benchmark for evaluating multimodal instruction following in scientific domains. It proposes a taxonomy of 10 constraint groups derived from analyzing 22 tasks across 5 disciplines, and uses this to systematically augment scientific datasets. The benchmark reveals significant performance gaps, highlighting chemistry as particularly challenging for current MLLMs.",
+      "url": "http://arxiv.org/abs/2608.25973v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25973v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.25973v1/constraints.png",
+      "figure_caption": "An overview of SciMIF, illustrating its coverage of five scientific disciplines, one general constraint domain, and ten functional constraint categories for constructing diverse scientific instruction-following constraints.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.26081v1",
+      "title": "SwarmWorld: Stigmergic technological evolution in societies of language-model agents",
+      "authors": [
+        "Subhadeep Pal",
+        "Fiona Y. Wang",
+        "Markus J. Buehler"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cond-mat.mtrl-sci"
+      ],
+      "abstract": "This paper introduces SwarmWorld, a novel framework where language-model agents collectively evolve technologies through indirect environmental interaction (stigmergy). The core method involves homogeneous agents exploring, resource processing, and constructing artifacts whose functionality is then tested in a deterministic simulator. The key contribution is demonstrating that decentralized LLM agents can self-organize and build functional, evolving technologies without explicit programming or predefined roles, outperforming independent search.",
+      "url": "http://arxiv.org/abs/2608.26081v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.26081v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.26081v1/figure-01-historical-lineage-tree.png",
+      "figure_caption": "Conceptual lineages leading to SwarmWorld; connectors indicate conceptual convergence rather than direct descent between every adjacent item. (A) Biological collectives and swarm-computing methods contribute decentralized coordination, feedback, and stigmergy. (B) Local-rule models and artificial societies contribute persistent worlds in which local actions alter shared state and generate population-level organization. (C) Distributed-agent and LLM systems contribute explicit agent state, memory-guided planning, embodiment, communication, and reusable executable skills. (D) SwarmWorld combines these elements in a materially constrained multi-agent world where agents build persistent artifacts and inherit or modify their programs. The resulting technological ecology can be evaluated after the agents are removed. Image credits. Ant photograph by Kiran Vati K, CC BY 4.0 , cropped and color-adjusted. Boids still from a video by Andrew Magill, CC BY 2.0 , with a frame extracted, cropped, and color-adjusted. Game of Life glider-gun diagram by Bryan.burgers, public domain , placed on a grid background. Micropolis screenshot based on the original software by Will Wright and Maxis Software/Electronic Arts, the Unix port by Don Hopkins and DUX Software, screenshot by Tomhannen, and edit by bayo; GPLv3 or later with Section 7 additional terms , cropped and color-adjusted. The Sugarscape view, method schematics, and SwarmWorld rendering were created by the authors.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.25775v1",
+      "title": "ToST: A Tree-of-Thought Socratic Teaching Framework for Multi-Path Guidance and Parallel Thinking",
+      "authors": [
+        "Feng Ling",
+        "Heng Yu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces ToST, a novel framework for Socratic teaching using LLMs. ToST moves beyond single-solution guidance by employing \"Parallel Sowing\" to encourage students to explore multiple valid approaches to a problem. Its \"Multi-Path Adaptive Guidance\" then provides flexible, non-linear support across these diverse reasoning paths, enhancing instructional flexibility and error recovery.",
+      "url": "http://arxiv.org/abs/2608.25775v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25775v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.25775v1/fig/motivate.jpg",
+      "figure_caption": "Comparison between traditional Socratic Teaching and the proposed ToST paradigm. Traditional method (left) employs a 1P1S paradigm with linear reasoning, susceptible to stalling from intermediate errors. In contrast, ToST (right) adopts a 1PMS paradigm via parallel thinking, enabling dynamic redirection when paths fail.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.26008v1",
+      "title": "A Self-Evolving Multi-Agent Framework Defense against LLM Jailbreak Attacks",
+      "authors": [
+        "Tongyan Hu",
+        "Bryan Hooi"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces a novel, self-evolving defense framework for LLMs against jailbreak attacks. Its core method involves a persistent rule memory that learns from successful attacks by abstracting their structural wrappers into generalizable rules. This allows the defense to adapt and defend against new, unseen attack strategies without requiring model parameter updates, contributing a dynamic and continuously improving defense mechanism.",
+      "url": "http://arxiv.org/abs/2608.26008v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.26008v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.26008v1/figures/main.png",
+      "figure_caption": "Overview of our self-evolving multi-agent defense framework. A1 (Rule Triggering Agent) classifies the input and retrieves relevant rules; A2 (Policy Decision Agent) determines the response policy; A3 (Response Generation Agent) produces the final output; A4 (Self-Reflection Agent) induces new rules when a violation is detected and updates the rule memory base.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2608.26013v1",
+      "title": "VISA: Agentic Self-Evolving Data Synthesis for Multimodal Instruction Following",
+      "authors": [
+        "Min Zeng",
+        "Guanxin Tan",
+        "Libin Cen",
+        "Yawei Wen",
+        "Rui Hu"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "VISA is an agentic framework that synthesizes multimodal instruction-following data through a self-evolving loop. It iteratively generates, verifies, and refines instructions by analyzing images, sampling from memory, and using tools and LLM judges. This approach addresses limitations of one-pass synthesis by incorporating feedback from failed samples and target model errors to create more accurate, diverse, and challenging training data.",
+      "url": "http://arxiv.org/abs/2608.26013v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.26013v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.26013v1/paper_oa.png",
+      "figure_caption": "Overview of VISA. The framework iteratively performs perception, planning and execution, reflection, and memory update, allowing verifier feedback and target-model difficulty signals to guide subsequent synthesis rounds.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2608.25937v1",
+      "title": "Candidate supply and answer selection shape the value of LLM judging in multi-agent systems",
+      "authors": [
+        "Jia-Hao Ji",
+        "Sijie Li",
+        "Jiabei Cheng",
+        "Zixi She",
+        "Jin-Tai Yu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "abstract": "This paper investigates how LLM judges can improve multi-agent system (MAS) performance by providing selection pressure on candidate answers. The core method involves conceptualizing MAS reasoning as an evolutionary pipeline and analyzing how LLM judges influence candidate generation and selection across various question-answering benchmarks. The key contribution is demonstrating that the effectiveness of LLM judges hinges on both the quality of candidate answers supplied and the specific selection rules employed, highlighting the risk of \"memetic drift\" without proper quality control.",
+      "url": "http://arxiv.org/abs/2608.25937v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25937v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.25927v1",
+      "title": "Code World Model: Coding Agent as World Brain",
+      "authors": [
+        "Yiwen Chen",
+        "Guosheng Lin",
+        "Chi Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "abstract": "This paper introduces the Code World Model, which uses a language model as a \"world brain\" to generate executable code that simulates environment evolution. This approach separates the underlying rules and state from visual realization, enabling persistent consequences and coherent, rule-consistent development. The generated code then conditions a video model to produce visual outputs, overcoming limitations of purely visual world models.",
+      "url": "http://arxiv.org/abs/2608.25927v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25927v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.25776v1",
+      "title": "EVOMAL: Self-Poisoning in Self-Evolving Coding Agents",
+      "authors": [
+        "Xiaodong Wu",
+        "Yu Shi",
+        "Qi Li",
+        "Zhimin Zhao",
+        "Xiangman Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces \"self-poisoning\" in self-evolving coding agents, where agents can inadvertently create and execute malicious code by imitating compromised skills from a shared library. The EvoMal attack exploits this by embedding payloads within benign-looking structures, causing agents to replicate and propagate the malicious code. The core contribution is identifying and demonstrating this self-propagating vulnerability, leading to a persistent threat even after initial malicious code removal.",
+      "url": "http://arxiv.org/abs/2608.25776v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25776v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.25776v1/workflow.png",
+      "figure_caption": "Overview of EvoMal . (1) The benign self-evolving loop, where an agent retrieves the top- k k skills by description, authors a new skill ( create -path) or invokes one by name (the transient reuse -path), and writes authored skills back. (2) EvoMal poisons the create -path. The attacker publishes skills whose banner induces mimicry and whose interchangeable payload carries the harm. A retrieving agent re-authors the banner into a persisted skill that later generations retrieve again, forming a worm that can persist after the planted skills are removed. A counter-prompt at the reading step breaks the loop ( § 9 ).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.25986v1",
+      "title": "Multi-Granularity Context-Enhanced RAG over Multimodal Knowledge Graphs",
+      "authors": [
+        "Zongyu Wu",
+        "Yilong Wang",
+        "Xiaochen Wang",
+        "Minhua Lin",
+        "Zhichao Xu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces a novel framework for multimodal retrieval-augmented generation (RAG) that addresses the semantic gap in existing methods. Its core method enhances RAG by integrating textual context throughout the processing of visual information and multimodal knowledge fusion, rather than treating modalities independently. The main contribution is a more effective way to leverage multimodal knowledge graphs for LLMs, leading to improved performance by bridging the semantic gap between text and images.",
+      "url": "http://arxiv.org/abs/2608.25986v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25986v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.25986v1/Figs/IntroMMKG.png",
+      "figure_caption": "Figure 1. An illustration of node-based Multimodal Knowledge Graph where image is also treated as a node. An illustration of node-based Multimodal Knowledge Graph.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.25832v1",
+      "title": "Skill Issue: Are Skills Language-Invariant in LLMs?",
+      "authors": [
+        "Bobby Cheng",
+        "Adam Gaber",
+        "Zhengyuan Liu",
+        "Catherine Arnett",
+        "Omer Goldman"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL",
+        "cs.GT"
+      ],
+      "abstract": "This paper investigates whether language affects the performance of large language models (LLMs) on specific tasks, independent of their general knowledge. The core method is multilingual self-play, where two instances of the same LLM compete in a text-based game, each using a different language. The contribution is demonstrating that LLMs can exhibit significantly different skill levels and strategic behaviors across languages, even when the underlying model and game remain constant.",
+      "url": "http://arxiv.org/abs/2608.25832v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25832v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.25756v1",
+      "title": "TailSFT: Filtered Fine-Tuning Improves Post-Training Performance",
+      "authors": [
+        "Sadhika Malladi",
+        "Samy Jelassi",
+        "Dylan Foster",
+        "Jordan T. Ash",
+        "Akshay Krishnamurthy"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces TailSFT, a supervised fine-tuning method that improves post-reinforcement learning performance by filtering out already well-modeled data sequences. By focusing training on the \"tail\" of the data distribution, TailSFT helps models learn under-represented areas. This approach leads to significant improvements in downstream tasks like math and coding evaluations with minimal computational cost.",
+      "url": "http://arxiv.org/abs/2608.25756v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25756v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.25756v1/fig1_2.png",
+      "figure_caption": "TailSFT yields better coverage, possibly at the cost of worse cross-entropy, which translates to stronger post-RL performance. Standard SFT achieves lower cross-entropy, while TailSFT preserves higher pass@ K K at large K K . Starting from this higher-coverage checkpoint, the same RL procedure yields higher pass@ 1 1 . Curves are illustrative.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.26036v1",
+      "title": "Trace Integrity for LLM Data Agents: A Vision for Auditable Structured Reasoning in Real-World Systems",
+      "authors": [
+        "Srimonti Dutta",
+        "Akshata Kishore Moharir"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces \"Trace Integrity\" as a crucial reliability criterion for LLM data agents, moving beyond simple answer accuracy. It proposes that the *process* behind an answer must be explicit, executable, and auditable, not just the final output. The core contribution is operationalizing this with \"execution contracts\" to ensure structured reasoning in real-world systems and introducing the \"CAIT Rate\" to measure invalid computation despite correct answers.",
+      "url": "http://arxiv.org/abs/2608.26036v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.26036v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.25774v1",
+      "title": "EXAONE Tabular 1.0 : Technical Report",
+      "authors": [
+        "Moonjung Eo",
+        "Min-Kook Suh",
+        "Hye-Seung Cho",
+        "Jiwon Kim",
+        "Seoyoon Kim"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "EXAONE Tabular 1.0's core method is an architecture redesign for tabular in-context learning, interleaving feature and item attention within each Transformer layer. This approach, trained on synthetic data, allows it to make predictions without dataset-specific fine-tuning. Its main contribution is achieving state-of-the-art performance and high efficiency on tabular tasks through this novel architecture.",
+      "url": "http://arxiv.org/abs/2608.25774v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25774v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2608.25771v1",
+      "title": "Large Language Model Few-Shot Prompting with Dilemma Training Outperforms Human Surrogates in Predicting Patient Preferences",
+      "authors": [
+        "Natasha Ureyang",
+        "Sebastian Porsdam Mann",
+        "Yuxin Liu",
+        "Zuriel Hassirim",
+        "Melanie Almonte"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.HC"
+      ],
+      "abstract": "This paper introduces P4-DT, a large language model trained to predict patient preferences in serious illness. Unlike previous methods, P4-DT uses \"dilemma training\" to build a dynamic decision policy by engaging users with varied medical scenarios. This approach significantly improves prediction accuracy compared to human surrogates and even other AI prototypes, offering a more personalized and context-aware solution for end-of-life care decisions.",
+      "url": "http://arxiv.org/abs/2608.25771v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25771v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.25771v1/acc_3_boxplot.jpg",
+      "figure_caption": "Figure 1. Accuracy of predicted patient preferences: P4-DT (AI agent), TO (human surrogate), and TO + P4-DT (human surrogate with P4-DT asisstance). On average, P4-DT predicted patient preferences with 81.7% accuracy compared to 55.0% for TO and 61.7% for P4-DT",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2608.25869v1",
+      "title": "Anchoring Bias in LLM-as-a-Judge Systems: Prior Scores Compromise Evaluation Independence",
+      "authors": [
+        "Ante Kapetanovic",
+        "Kemal Altwlkany",
+        "Andro Mercep",
+        "Tomislav Duricic",
+        "Emanuel Lacic"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper investigates the \"anchoring bias\" in LLM-as-a-Judge systems, demonstrating that prior scores, even when presented as mere metadata, significantly influence subsequent evaluations. The core method involves comparing LLM judgments under different prompt conditions, revealing that including prior scores systematically shifts ratings towards those previous values. The main contribution is the empirical evidence that LLM judgments are not independent, with prior scores acting as a strong anchor, compromising the reliability of these systems for content evaluation.",
+      "url": "http://arxiv.org/abs/2608.25869v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25869v1",
+      "score": 8.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2608.25894v1",
+      "title": "From Passive Response to Proactive Correction: Enhancing LLM Robustness Against Input Fact Perturbations",
+      "authors": [
+        "Ping Wang",
+        "Xiangguo Sun",
+        "Bingbing Xu",
+        "Guocong Li",
+        "Xiaofeng Meng"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces DEDUCE, a three-stage framework that enhances LLM robustness against factually incorrect user inputs. DEDUCE proactively detects, deliberates on, and corrects factual errors in the input before generating a response. Its core contribution is transforming LLMs from passive responders to active error correctors, significantly improving reliability.",
+      "url": "http://arxiv.org/abs/2608.25894v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25894v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.25894v1/F1.png",
+      "figure_caption": "A query containing factually incorrect or inconsistent premises can mislead an LLM into producing a confident but unreliable answer ( red ). The desired behavior is to identify the flawed premise, explicitly clarify the error, and then provide a corrected, factual response ( green ).",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    }
+  ],
+  "hacker_news": [
+    {
+      "id": 49449507,
+      "title": "GLM-5.3-Flash",
+      "url": "https://z.ai/blog/glm-5.3-flash",
+      "score": 1072,
+      "created_at": "2026-08-26T14:08:50Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49449507",
+      "summary": "Zhipu AI has released GLM-5.3-Flash, a new large language model optimized for faster inference and improved performance on various tasks."
+    },
+    {
+      "id": 49458418,
+      "title": "CEO fired developers to make room for AI. Developers create open source AI CEO",
+      "url": "https://github.com/SenteLabsAI/OpenExecutive",
+      "score": 732,
+      "created_at": "2026-08-27T01:46:22Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49458418",
+      "summary": "A CEO fired developers to implement AI, but those developers then created an open-source AI to replace the CEO."
+    },
+    {
+      "id": 49451313,
+      "title": "The turbulent AI era is here",
+      "url": "https://www.gatesnotes.com/a-turbulent-ai-era-and-critical-choices-to-make",
+      "score": 296,
+      "created_at": "2026-08-26T15:55:15Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49451313",
+      "summary": "Bill Gates's latest post argues that the rapid advancement of AI presents both immense opportunities and significant challenges, requiring careful consideration and critical choices for its future development and societal impact."
+    },
+    {
+      "id": 49450898,
+      "title": "It’s so hard to finish an idea that is not yours and is just suggested by AI",
+      "url": "https://www.ssp.sh/brain/using-obsidian-with-ai/",
+      "score": 231,
+      "created_at": "2026-08-26T15:30:05Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49450898",
+      "summary": "The article discusses the difficulty of fully realizing an AI-generated idea, highlighting the challenge of translating a suggestion into a complete, actionable concept."
+    },
+    {
+      "id": 49454764,
+      "title": "Serve Markdown to AI Agents with Accept Headers",
+      "url": "https://acceptmarkdown.com/",
+      "score": 157,
+      "created_at": "2026-08-26T19:45:59Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49454764",
+      "summary": "This article explains how to serve Markdown content to AI agents by leveraging HTTP Accept headers, enabling more intelligent and context-aware interactions."
+    },
+    {
+      "id": 49450353,
+      "title": "GLM-5.3-Flash Intelligence, Performance and Price Analysis",
+      "url": "https://artificialanalysis.ai/models/glm-5-3-flash",
+      "score": 137,
+      "created_at": "2026-08-26T14:58:54Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49450353",
+      "summary": "This article analyzes the intelligence, performance, and pricing of GLM-5.3-Flash, a new large language model."
+    }
+  ],
+  "github_trending": [
+    {
+      "full_name": "zedeus/nitter",
+      "url": "https://github.com/zedeus/nitter",
+      "description": "Alternative Twitter front-end",
+      "stars_today": 63,
+      "total_stars": 13657,
+      "language": "Nim",
+      "topics": [],
+      "summary": "Nitter is an alternative, privacy-focused front-end for Twitter that allows users to browse tweets without an account and without being tracked."
+    },
+    {
+      "full_name": "freestylefly/awesome-gpt-image-2",
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
+      "stars_today": 2093,
+      "total_stars": 22546,
+      "language": "JavaScript",
+      "topics": [],
+      "summary": "This repository is an industrial-grade prompt engine and template library for GPT-Image2, offering over 530 reverse-engineered examples, 20+ industrial templates, and extracted \"Skills\" for prompt-as-code functionality, all continuously updated."
+    },
+    {
+      "full_name": "tt-a1i/archify",
+      "url": "https://github.com/tt-a1i/archify",
+      "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
+      "stars_today": 4260,
+      "total_stars": 21228,
+      "language": "JavaScript",
+      "topics": [],
+      "summary": "Archify is an AI agent skill that generates beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams as self-contained, interactive HTML files with crisp export options."
+    },
+    {
+      "full_name": "JetBrains/go-modern-guidelines",
+      "url": "https://github.com/JetBrains/go-modern-guidelines",
+      "description": "Help AI coding agents write modern Go",
+      "stars_today": 314,
+      "total_stars": 1885,
+      "language": "Go",
+      "topics": [],
+      "summary": "This repository provides guidelines and best practices to help AI coding agents generate modern and idiomatic Go code."
+    },
+    {
+      "full_name": "anthropics/claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "stars_today": 290,
+      "total_stars": 34510,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository serves as an official, Anthropic-managed directory showcasing high-quality Claude Code Plugins, enabling developers to extend Claude's capabilities."
+    },
+    {
+      "full_name": "K-Dense-AI/scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 175,000+ scientists worldwide. 163 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+      "stars_today": 494,
+      "total_stars": 35029,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository provides a comprehensive library of validated AI skills and scientific databases, enabling any AI agent to function as a scientist across various domains like biology and chemistry, and is compatible with multiple AI platforms."
+    },
+    {
+      "full_name": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "stars_today": 1610,
+      "total_stars": 113480,
+      "language": "JavaScript",
+      "topics": [],
+      "summary": "This repository's core function is to make AI agents adopt the persona of a lazy senior developer, prioritizing minimal effort and code reuse to achieve optimal efficiency."
+    },
+    {
+      "full_name": "calesthio/OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+      "stars_today": 1284,
+      "total_stars": 51865,
+      "language": "Python",
+      "topics": [],
+      "summary": "OpenMontage is the first open-source, agentic video production system, offering 12 pipelines and over 100 tools to transform AI coding assistants into comprehensive video studios."
+    },
+    {
+      "full_name": "rohitg00/ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "stars_today": 547,
+      "total_stars": 49911,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository provides a hands-on, step-by-step guide to building and deploying AI systems from the ground up, enabling users to learn, create, and share their own AI solutions."
+    }
+  ],
+  "us_stocks": [],
+  "postdoc_jobs": [],
+  "jobs": [],
+  "supervisor_updates": [],
+  "weather": [
+    {
+      "query": "London",
+      "label": "London, England, United Kingdom",
+      "resolved_name": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "timezone": "Europe/London",
+      "forecast_date": "2026-08-27",
+      "condition": "Light drizzle",
+      "weather_code": 51,
+      "temperature_c": 22.6,
+      "apparent_temperature_c": 23.5,
+      "temp_max_c": 22.9,
+      "temp_min_c": 19.0,
+      "humidity_pct": 72,
+      "wind_speed_kmh": 11.9,
+      "precipitation_probability_pct": 99,
+      "is_day": true,
+      "sunrise": "2026-08-27T06:05",
+      "sunset": "2026-08-27T19:58",
+      "source": "Open-Meteo",
+      "source_url": "https://open-meteo.com/"
+    }
+  ]
+}
