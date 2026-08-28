@@ -1,0 +1,1837 @@
+{
+  "date": "2026-08-28",
+  "generated_at": "2026-08-28T13:23:40.316583+00:00",
+  "sections_ordered": [
+    {
+      "key": "quote_of_day",
+      "payload_key": "quote_of_day",
+      "title": "Words for the Morning",
+      "icon": "✦",
+      "items": [
+        {
+          "quote": "I heard about the project over a year before we began. My American agent said, 'Oh, you might want to read 'In Cold Blood' because they're talking about you for Capote, but the script's with Johnny Depp and Sean Penn at the moment.' So, these things take their time to dribble down the food chain.",
+          "author": "Toby Jones",
+          "category": "food"
+        }
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "key": "weather",
+      "payload_key": "weather",
+      "title": "Weather",
+      "icon": "🌦️",
+      "items": [
+        {
+          "query": "London",
+          "label": "London, England, United Kingdom",
+          "resolved_name": "London",
+          "region": "England",
+          "country": "United Kingdom",
+          "latitude": 51.50853,
+          "longitude": -0.12574,
+          "timezone": "Europe/London",
+          "forecast_date": "2026-08-28",
+          "condition": "Light drizzle",
+          "weather_code": 51,
+          "temperature_c": 22.8,
+          "apparent_temperature_c": 20.7,
+          "temp_max_c": 23.0,
+          "temp_min_c": 15.8,
+          "humidity_pct": 52,
+          "wind_speed_kmh": 19.8,
+          "precipitation_probability_pct": 91,
+          "is_day": true,
+          "sunrise": "2026-08-28T06:07",
+          "sunset": "2026-08-28T19:56",
+          "source": "Open-Meteo",
+          "source_url": "https://open-meteo.com/"
+        }
+      ],
+      "meta": {
+        "count": 1,
+        "city": "London"
+      }
+    },
+    {
+      "key": "arxiv",
+      "payload_key": "papers",
+      "title": "arXiv Papers",
+      "icon": "📄",
+      "items": [
+        {
+          "id": "2608.27167v1",
+          "title": "Calibrated Enough to Know, Not Calibrated to Act: Fabricated Evidence Makes LLM Agents Commit to the Unknowable",
+          "authors": [
+            "Pranav Aggarwal"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper demonstrates that Large Language Model (LLM) agents are highly susceptible to fabricated evidence, committing to confidently answer provably unpredictable questions when presented with professional-looking data. The core contribution is showing that the *authority of the packaging* of information, rather than its truthfulness, drives this confident, yet incorrect, action. The LLMs are capable of answering similar, predictable questions accurately, highlighting a specific failure in judgment when faced with seemingly authoritative but false data.",
+          "url": "http://arxiv.org/abs/2608.27167v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.27167v1",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.27142v1",
+          "title": "GRAIN: Bridging Name and Narrative Shifts in Real-World Graph Reasoning through Invariance-Rewarded Agentic RL",
+          "authors": [
+            "Zike Yuan",
+            "Han Zhang",
+            "Jianzhi Yan",
+            "Le Liu",
+            "Cai Ke"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "GRAIN addresses LLMs' brittleness to real-world graph reasoning shifts by framing it as a semantic parsing and tool-execution pipeline. Its core contribution is a novel \"Structure Invariance Reward\" that guides reinforcement learning to learn robust text-to-structure mappings by validating intermediate graph structures against ground truth, outperforming multi-agent approaches.",
+          "url": "http://arxiv.org/abs/2608.27142v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.27142v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2608.27142v1/fig1.png",
+          "figure_caption": "GRAIN mitigates sensitivity to naming and formulation shifts in real-world graph reasoning via a single-agent tool-use pipeline trained with isomorphism-aware structural rewards .",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.27439v1",
+          "title": "RedEvoAgent: Automatic Red-Teaming Agent with Experience-Driven Skill Evolution",
+          "authors": [
+            "Junjie Zhang",
+            "Hui Liu",
+            "Kecheng Chen",
+            "Xianbo Mo",
+            "Changsheng Chen"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CR"
+          ],
+          "abstract": "RedEvoAgent addresses the limitations of fixed or trajectory-based red-teaming for LLM agents by distilling complex attack trajectories into concise, human-readable \"attack skills.\" Its core method involves adaptively evolving these skills through tool-effectiveness profiling and attribution, guided by a validation process that retains only performance-improving updates. This approach offers a more interpretable and efficient way to discover and generalize jailbreaks compared to existing methods.",
+          "url": "http://arxiv.org/abs/2608.27439v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.27439v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2608.27439v1/fig1_overview.png",
+          "figure_caption": "RedEvoAgent overview. Given a jailbreak prompt, the attacker agent uses the current attack skill to select and call tools from an extensible attack toolbox, such as GCG and FlipAttack, and iteratively attacks a product-level target agent. On the training split, RedEvoAgent collects successful and failed attack trajectories and independently evaluates each attack tool to build a tool-effectiveness profile. Skill evolution combines the profile with these trajectories to extract tool priorities and attack strategies. A candidate attack skill update is accepted only if it improves attack performance on the validation split, while the test split remains locked for final evaluation.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.27141v1",
+          "title": "Safety Does Not Compose: Non-Decaying Loop State for Autonomous LLM Agents",
+          "authors": [
+            "Chenhao Wu",
+            "Haoxuan Jia",
+            "Yang Liu",
+            "Yingguang Yang",
+            "Yuhan Lin"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CR"
+          ],
+          "abstract": "This paper argues that current safety mechanisms for autonomous LLM agents fail because they reset safety states between iterations, preventing them from detecting attacks spread across multiple steps. The core contribution is demonstrating that only monitors retaining cross-iteration state can effectively detect such fragmented attacks, as trajectory-scoped monitors will miss crucial evidence. Simply decaying risk scores is also insufficient to address this fundamental compositional safety issue.",
+          "url": "http://arxiv.org/abs/2608.27141v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.27141v1",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.27146v1",
+          "title": "When Tool Outputs Become Commands: Separating Action Induction from Runtime Authorization in Tool-Augmented LLM Agents",
+          "authors": [
+            "Xiaokun Guo",
+            "Zhen Xu",
+            "Dongdong Huo",
+            "Yanqiu Zhang",
+            "Wei Wang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.SE"
+          ],
+          "abstract": "This paper addresses the risk of LLM agents executing unintended actions when tool outputs become commands. Their proposed SARA method separates \"action induction\" (identifying potential actions) from \"runtime authorization\" (approving their execution). SARA achieves this by isolating action semantics and tracking their origin, while authorizing tool calls solely based on user objectives and verified past successful executions.",
+          "url": "http://arxiv.org/abs/2608.27146v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.27146v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2608.27146v1/figures/Framework.png",
+          "figure_caption": "SARA’s runtime authorization framework. The user request establishes the authorization root K K ; the Observation-side Action Probe identifies action-inducing semantics and persistently maintains action origins F t F_{t} , which trigger persistent review but do not grant execution authority; authorized and successful tool executions accumulate audited execution evidence H t H_{t} . At the real tool-execution boundary, SARA jointly uses K K , F t F_{t} , and H t H_{t} to authorize the goal, execution chain, and arguments of a candidate call.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.27348v1",
+          "title": "INTENT-AS-A-TOOL Makes it Easy to Track Agentic Misalignment",
+          "authors": [
+            "Yutong Zhang",
+            "Jianshuo Dong",
+            "Peng Xu",
+            "Long Wang",
+            "Jie Zhang"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces INTENT-AS-A-TOOL, a method to track agentic misalignment in LLMs by equipping them with specialized \"intent tools.\" By observing the model's commitment to these tools, researchers gain a fine-grained, judge-free signal of its behavioral tendencies. This approach enhances existing chain-of-thought monitoring, providing dense intent trajectories that can identify critical moments for intervention and prevent harmful actions.",
+          "url": "http://arxiv.org/abs/2608.27348v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.27348v1",
+          "score": 9.0,
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2608.27402v1",
+          "title": "How Language Models Organize and Structure Moral Knowledge",
+          "authors": [
+            "Orion Reblitz-Richardson"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "This paper investigates how Large Language Models (LLMs) structure moral knowledge by training probes on different moral foundations. The core finding is that LLMs organize moral concepts not as a single detector or isolated ideas, but as distinct dimensions that share a common, moral-specific component. This geometric structure suggests LLMs integrate moral knowledge in a nuanced way, reflecting the interconnectedness of moral principles.",
+          "url": "http://arxiv.org/abs/2608.27402v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.27402v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.27402v1/fig1_cosine_heatmap.png",
+          "figure_caption": "Pairwise cosine similarity between foundation probe directions at layer 7 (bootstrap-stable; all six foundations exceed the 0.8 stability threshold at this layer; Section 4.6 ), OLMo-2 1B. Mean off-diagonal cosine = 0.262. See Appendix C for matrices at layers 0 and 15.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.27102v1",
+          "title": "LAAF: A Layered Accountability Architecture Framework for LLM Applications",
+          "authors": [
+            "Prachi Chaturvedi",
+            "Shahnawaz Ahmad",
+            "Ehsan Nowroozi",
+            "Muhammad Waqas",
+            "George Loukas"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CR"
+          ],
+          "abstract": "This paper introduces LAAF, a Layered Accountability Architecture Framework for LLM applications. It addresses the critical need to establish accountability for LLM outputs in high-stakes domains by consolidating existing mechanisms into four families: technical controls, human oversight, organizational governance, and documentation. LAAF provides a sociotechnical framework to trace, explain, and act upon responsibility when LLM outputs cause harm.",
+          "url": "http://arxiv.org/abs/2608.27102v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.27102v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.27102v1/figures/F1_LLM.png",
+          "figure_caption": "Evolution of Large Language Models, 2017–2026, in five eras: foundation (2017–2018), scaling (2019–2020), scaling breakthroughs (2021–2022), efficiency and democratisation (2022–2024), and multimodal and reasoning specialisation (2024–2026). The periodisation is the authors’ construction, derived from the release history of the models named.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.27266v1",
+          "title": "Naive Prompt Optimization: Rethinking the Need for Complex Prompt Search",
+          "authors": [
+            "Yuan Chang",
+            "Xiaoqi Chen"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces Naive Prompt Optimization (NPO), a simple, single-lineage method for improving AI agent prompts. NPO iteratively refines prompts using a teacher model and rollout feedback, achieving comparable or better performance than complex methods with fewer computational resources. Its success suggests that stronger teacher models can compensate for simpler prompt optimization strategies.",
+          "url": "http://arxiv.org/abs/2608.27266v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.27266v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.27345v1",
+          "title": "PAWBench: How Far Are We from Probabilistically Aligned World Modeling?",
+          "authors": [
+            "Yuandong Pu",
+            "Le Zhuo",
+            "Sayak Paul",
+            "Gabriel Jorge Menezes",
+            "Avram Đorđević"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CV"
+          ],
+          "abstract": "This paper introduces PAWBench, a new benchmark to evaluate video generation models as \"world models\" that can predict the distribution of possible future outcomes, not just single plausible ones. The core method involves assessing if repeated generations from the same starting point accurately reflect the true probability distribution of physical behaviors. The main contribution is to highlight the gap between current models and this \"probabilistic alignment\" requirement, providing a framework to measure progress towards more realistic and stochastic world modeling.",
+          "url": "http://arxiv.org/abs/2608.27345v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.27345v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.27345v1/one_plausible_future.png",
+          "figure_caption": "One plausible future is not enough. A single rollout from a video generation model can appear physically plausible, yet repeated rollouts from the same initial observation and action may reveal a probabilistically unaligned world: outcomes concentrate on a narrow subset of futures instead of matching the valid stochastic support. PAWBench evaluates this induced distribution or support over repeated futures, rather than judging a model by one sampled video.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.27427v1",
+          "title": "Persona-Execution Separation: An Architecture Pattern for Evolving LLM Agents under Execution Audit",
+          "authors": [
+            "Yisen Xi"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.SE"
+          ],
+          "abstract": "This paper introduces Persona-Execution Separation (PES), an architectural pattern for LLM agents. PES separates the agent's evolving persona from its stateful, auditable execution into distinct trust domains. This allows for flexible persona changes while ensuring traceable and secure execution, addressing the challenge of maintaining both freedom and accountability in governed environments.",
+          "url": "http://arxiv.org/abs/2608.27427v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.27427v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.27364v1",
+          "title": "Sophistication in GenAI Use: Field Evidence from a Large Firm",
+          "authors": [
+            "Nicholas J. Hallman",
+            "Zachary T. Kowaleski",
+            "Anu Puvvada",
+            "Jaime J. Schmidt"
+          ],
+          "categories": [
+            "cs.AI",
+            "econ.GN"
+          ],
+          "abstract": "This paper analyzes sophisticated generative AI (genAI) use among back-office employees in a large firm. It finds that senior employees and those in strategy-focused roles tend to use genAI more sophisticatedly, suggesting domain expertise and strategic alignment are key. The study also highlights that improving genAI sophistication is challenging, with no observed improvements over time or after formal training.",
+          "url": "http://arxiv.org/abs/2608.27364v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.27364v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.27225v1",
+          "title": "STEP: State-Aware Task Estimation and Planning with Multi-Modal LLMs for Human-Robot Collaboration",
+          "authors": [
+            "Maitrey Gramopadhye",
+            "Prakash Baskaran",
+            "Xiao Liu",
+            "Songpo Li",
+            "Soshi Iba"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.RO"
+          ],
+          "abstract": "This paper introduces STEP, a method that enhances human-robot collaboration by enabling robots to understand human intentions and plan tasks. STEP's core innovation is prompting a multi-modal LLM to explicitly estimate system states and predict state transitions, overcoming the limitations of current LLMs that often hallucinate actions due to a lack of state awareness. This state-aware approach allows for more accurate and grounded task planning, reducing ambiguity and improving collaboration.",
+          "url": "http://arxiv.org/abs/2608.27225v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.27225v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.27449v1",
+          "title": "SWE-Prime: Fewer Trajectories, Better Performance",
+          "authors": [
+            "Dewu Zheng",
+            "Ruizhe Ye",
+            "Yanlin Wang",
+            "Yang Ye",
+            "Hongyu Zhang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.SE"
+          ],
+          "abstract": "SWE-Prime addresses the issue of noisy supervision in LLM training for software issue resolution. Its core method is a two-stage data selection process that filters trajectories first by overall quality and representativeness, then by the quality of individual step segments. This approach aims to provide cleaner, more effective training data, leading to better LLM performance.",
+          "url": "http://arxiv.org/abs/2608.27449v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.27449v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.27449v1/motivating-example.png",
+          "figure_caption": "Motivating example comparing outcome-only, trajectory-level, and segment-level data selection.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.27260v1",
+          "title": "What Makes Good Agentic Data? An ACE Lens on Data Generation for LLM Agents",
+          "authors": [
+            "Xingshan Zeng",
+            "Zishan Xu",
+            "Boju Zhang",
+            "Yuzhou Wu",
+            "Lingzhi Wang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper proposes a unified framework for generating data for LLM agents. It represents agentic data as a structured object $(E,q,τ,v)$ and organizes generation methods by their core components. The authors then introduce the ACE lens (Accuracy-Complexity-divErsity) to guide data generation, emphasizing the need for grounded, efficient, and varied interactions rather than just large quantities of data.",
+          "url": "http://arxiv.org/abs/2608.27260v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.27260v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.27260v1/ace_lens.png",
+          "figure_caption": "The ACE lens views agentic data generation as constrained distribution design: Accuracy defines valid support, while learner-relative Complexity and Diversity shape useful, non-redundant experience over ( E , q , τ , v ) (E,q,\\( \\tau \\),v) .",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.27454v1",
+          "title": "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution",
+          "authors": [
+            "Liyan Tang",
+            "Cyrus Rashtchian",
+            "Chun-Sung Ferng",
+            "Andrew Tomkins",
+            "Da-Cheng Juan"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "WikiSkill addresses the problem of scattered agent skill knowledge by introducing a persistent knowledge base (wiki) that co-evolves with agent skills. It separates raw experience, accumulated knowledge, and executable skills, consolidating experience into the wiki for future skill updates. This framework consistently outperforms existing skill evolution methods by enabling systematic reuse of insights across iterations.",
+          "url": "http://arxiv.org/abs/2608.27454v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.27454v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2608.27182v1",
+          "title": "TraceBench: Controlled Evaluation of LLM Agents for Time-Series Root-Cause Attribution",
+          "authors": [
+            "Tommaso Bendinelli",
+            "Artur Dox",
+            "Christian Holz"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "abstract": "TraceBench is a novel simulation-based framework that generates controlled root-cause attribution tasks for LLM agents analyzing time-series data. By simulating physical dynamical systems, it allows for systematic evaluation of LLM agents' ability to identify parameter changes, providing new insights into their performance and data exploration strategies.",
+          "url": "http://arxiv.org/abs/2608.27182v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.27182v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.27182v1/Overview_figure_v21.png",
+          "figure_caption": "Figure 1. Overview of the TraceBench framework using a bouncing-ball simulator. In this example, the black and orange segments show the position observation under the low-noise setting before and after an intervention at t int = 4.0 t_{\\( \\mathrm{int} \\)}=4.0 . The intervention increases gravitational acceleration, and the dashed line marks the intervention time. At test time, the agent determines from the observed time-series channels whether an intervention occurred and, if so, which parameter changed. \\( \\name{} \\) pipeline: a physical simulator produces multivariate time series before and after a parameter intervention; the low-noise BallDrop position observation is black before and orange after a dashed gravity-intervention marker; the agent identifies the changed root-cause parameter.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2608.27219v1",
+          "title": "BALMS: Benchmarking Agentic LLMs for Longitudinal Mental Health Sensing",
+          "authors": [
+            "Yu Yvonne Wu",
+            "Arvind Pillai",
+            "Yuliang Chen",
+            "Yuwei Zhang",
+            "Sudarshan Regmi"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces BALMS, the first benchmark for evaluating LLM-driven agents in longitudinal mental health sensing. BALMS assesses agents' ability to predict wellbeing scores and generate evidence-based rationales from continuous wearable data, addressing the limitations of episodic self-reports. The benchmark utilizes real-world datasets and evaluates various agentic paradigms and LLM backbones.",
+          "url": "http://arxiv.org/abs/2608.27219v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.27219v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.27219v1/fig1.png",
+          "figure_caption": "LLM-based agents for longitudinal mental health sensing. Given a multi-channel wearable record and a user query, an agent combines retrieval, memory, tools, and reasoning to output a wellbeing score with an evidence-grounded rationale.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2608.27409v1",
+          "title": "Consolidating RLVR Capabilities Across Domains: A Deep Dive into Fusion Paradigms",
+          "authors": [
+            "Siye Wu",
+            "Kai Yang",
+            "Yuchen Cai",
+            "Xin Xu",
+            "Peng-Yuan Wang"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper investigates three methods for combining Reinforcement Learning with Verifiable Rewards (RLVR) capabilities in large language models: Merge, Mix RL, and Multi-Teacher On-Policy Distillation (MOPD). By comparing these paradigms on a multi-domain benchmark, the authors reveal significant performance differences across specific tasks, highlighting that the choice of fusion method critically impacts overall effectiveness and can be guided by the relationships between domains.",
+          "url": "http://arxiv.org/abs/2608.27409v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.27409v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.27409v1/intro2.png",
+          "figure_caption": "Three paradigms for consolidating domain-specific capabilities acquired through RLVR into one model. Merge combines expert task vectors, Mix RL trains jointly on mixed-domain data, and MOPD draws on both through multi-teacher on-policy distillation.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2608.27455v1",
+          "title": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
+          "authors": [
+            "Yufan Wu",
+            "Yinghui He",
+            "Zhengyi Hu",
+            "Lang Wei",
+            "Ruichen Li"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "CritICL improves LLM reasoning at inference time by leveraging structured failure patterns observed across different model scales. Instead of discarding errors from weaker models, CritICL uses these \"failure modes\" as critiques within in-context examples to guide stronger models, enhancing efficiency and performance.",
+          "url": "http://arxiv.org/abs/2608.27455v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.27455v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2608.27455v1/design.png",
+          "figure_caption": "CritICL is a two-stage, inference-time W2SG method. Stage 1: Construct CritBank. We use SLMs to generate responses and reasoning on a dataset. Then we leverage a frontier LLM to produce critiques and assigns failure mode labels. Stage 2: Perform LLM inference with CritICL. For a given query, CritICL-static constructs model-specific failure mode profiles from CritBank, while CritICL-dynamic identifies failure modes relevant to the query. We then performs failure mode-based in-context sample selection from CritBank to provide in-context examples for target LLMs.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        }
+      ],
+      "meta": {
+        "papers_fetched": 100,
+        "papers_after_keyword_filter": 45,
+        "papers_after_llm_filter": 37,
+        "count": 20
+      }
+    },
+    {
+      "key": "hacker_news",
+      "payload_key": "hacker_news",
+      "title": "Hacker News",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": 49468818,
+          "title": "Gemini-3.5-Transcribe",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/",
+          "score": 321,
+          "created_at": "2026-08-27T18:03:42Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49468818",
+          "summary": "Google's Gemini 3.5 Pro now offers enhanced transcription capabilities, understanding context and nuances in audio and video for more accurate and efficient processing."
+        },
+        {
+          "id": 49467922,
+          "title": "Gemini Omni 1.1 Flash",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/",
+          "score": 280,
+          "created_at": "2026-08-27T17:06:32Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49467922",
+          "summary": "Google has released Gemini 1.1 Flash, a faster and more efficient version of its multimodal AI model, optimized for developers to build applications with enhanced speed and reduced cost."
+        },
+        {
+          "id": 49471407,
+          "title": "Show HN: We built open OpenRouter that turns usage into a better model",
+          "url": "https://github.com/experientiallabs/experiential",
+          "score": 196,
+          "created_at": "2026-08-27T21:18:35Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49471407",
+          "summary": "This \"Show HN\" introduces OpenRouter, an open-source platform that leverages user usage data to continuously improve its AI models."
+        },
+        {
+          "id": 49474143,
+          "title": "Please stop flooding our projects with AI slop to furnish your CV",
+          "url": "https://neilalexander.dev/2026/06/30/flooding-contributions",
+          "score": 188,
+          "created_at": "2026-08-28T03:49:33Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49474143",
+          "summary": "This article urges developers to stop submitting low-quality AI-generated code to open-source projects solely to pad their resumes, emphasizing the negative impact on maintainers and the community."
+        },
+        {
+          "id": 49468315,
+          "title": "Two German airport workers die of malaria after 'mosquito arrives on plane'",
+          "url": "https://www.bbc.com/news/articles/cz6zwgg9y8go",
+          "score": 185,
+          "created_at": "2026-08-27T17:33:13Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49468315",
+          "summary": "Two German airport workers died of malaria after contracting it from a mosquito that likely arrived on a plane."
+        },
+        {
+          "id": 49464970,
+          "title": "Harness Engineering",
+          "url": "https://Habitat-Thinking.github.io/ai-literacy-superpowers/plugins/ai-literacy-superpowers/explanation/harness-engineering/",
+          "score": 123,
+          "created_at": "2026-08-27T13:54:57Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49464970",
+          "summary": "Harness Engineering is a framework for understanding and utilizing AI by breaking down its capabilities into core components, enabling users to better leverage and control AI systems."
+        },
+        {
+          "id": 49471714,
+          "title": "AI Engineer Notebooks – free, framework-free RAG/agents/evals on Colab",
+          "url": "https://github.com/calmrocks/ai-engineer-notebooks",
+          "score": 111,
+          "created_at": "2026-08-27T21:46:39Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49471714",
+          "summary": "This GitHub repository offers free, framework-agnostic Colab notebooks for building and evaluating RAG and agent systems."
+        },
+        {
+          "id": 49466052,
+          "title": "Nvidia projects $673B in sales as AI demand widens",
+          "url": "https://forgeeks.net/nvidia-673-billion-ai-growth-forecast/",
+          "score": 109,
+          "created_at": "2026-08-27T15:04:16Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49466052",
+          "summary": "Nvidia forecasts $673 billion in sales, driven by surging demand for its AI chips as the AI market continues to expand."
+        },
+        {
+          "id": 49475079,
+          "title": "Luanti removed from Google Play due to baseless AI copyright notice",
+          "url": "https://blog.luanti.org/2026/08/27/luanti-dmca-tracer-ai/",
+          "score": 108,
+          "created_at": "2026-08-28T06:33:57Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49475079",
+          "summary": "Luanti was removed from Google Play after receiving a baseless AI copyright notice, which the company claims was a false DMCA takedown."
+        },
+        {
+          "id": 49472820,
+          "title": "Terminal-Bench-Science: Evaluating AI agents on scientific research workflows",
+          "url": "https://www.terminal-bench-science.ai/announcement",
+          "score": 104,
+          "created_at": "2026-08-28T00:06:51Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49472820",
+          "summary": "Terminal-Bench-Science is a new benchmark evaluating AI agents' ability to perform complex scientific research tasks, aiming to advance AI's role in scientific discovery."
+        }
+      ],
+      "meta": {
+        "count": 10
+      }
+    },
+    {
+      "key": "github_trending",
+      "payload_key": "github_trending",
+      "title": "GitHub Trending",
+      "icon": "⭐",
+      "items": [
+        {
+          "full_name": "tt-a1i/archify",
+          "url": "https://github.com/tt-a1i/archify",
+          "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
+          "stars_today": 4561,
+          "total_stars": 25669,
+          "language": "JavaScript",
+          "topics": [],
+          "summary": "Archify is an agent skill that generates beautiful, verifiable architecture and workflow diagrams as self-contained HTML with motion and crisp export capabilities."
+        },
+        {
+          "full_name": "K-Dense-AI/scientific-agent-skills",
+          "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+          "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 175,000+ scientists worldwide. 163 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+          "stars_today": 720,
+          "total_stars": 35840,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository provides a comprehensive library of validated AI skills and scientific databases, enabling any AI agent to function as a scientist across various domains like biology and chemistry, and is compatible with multiple AI platforms."
+        },
+        {
+          "full_name": "anthropics/claude-plugins-official",
+          "url": "https://github.com/anthropics/claude-plugins-official",
+          "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+          "stars_today": 457,
+          "total_stars": 34868,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository serves as an official, Anthropic-managed directory for high-quality Claude Code Plugins, enabling developers to extend Claude's capabilities."
+        },
+        {
+          "full_name": "bilawalsidhu/gods-eye-view",
+          "url": "https://github.com/bilawalsidhu/gods-eye-view",
+          "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+          "stars_today": 1984,
+          "total_stars": 10118,
+          "language": "JavaScript",
+          "topics": [],
+          "summary": "This repository is a spy satellite simulator that displays live, open-source spatial intelligence on a photorealistic 3D globe, offering a real-time, browser-based view of the world."
+        },
+        {
+          "full_name": "abhigyanpatwari/GitNexus",
+          "url": "https://github.com/abhigyanpatwari/GitNexus",
+          "description": "GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a git repository (Github, Gitlab, Azure, Local) or ZIP file, and get an interactive knowledge graph with a built in Graph RAG Agent. Perfect for code exploration",
+          "stars_today": 189,
+          "total_stars": 46040,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "GitNexus is a client-side, zero-server knowledge graph creator that builds interactive visualizations of code repositories directly in your browser, featuring a built-in Graph RAG agent for code exploration."
+        },
+        {
+          "full_name": "JetBrains/go-modern-guidelines",
+          "url": "https://github.com/JetBrains/go-modern-guidelines",
+          "description": "Help AI coding agents write modern Go",
+          "stars_today": 574,
+          "total_stars": 2447,
+          "language": "Go",
+          "topics": [],
+          "summary": "This repository provides guidelines and best practices for writing modern Go code, specifically designed to assist AI coding agents in generating high-quality, idiomatic Go programs."
+        },
+        {
+          "full_name": "calesthio/OpenMontage",
+          "url": "https://github.com/calesthio/OpenMontage",
+          "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+          "stars_today": 1144,
+          "total_stars": 52949,
+          "language": "Python",
+          "topics": [],
+          "summary": "OpenMontage is the world's first open-source, agentic video production system, offering 12 pipelines and over 100 tools to transform AI coding assistants into comprehensive video studios."
+        },
+        {
+          "full_name": "abi/screenshot-to-code",
+          "url": "https://github.com/abi/screenshot-to-code",
+          "description": "Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)",
+          "stars_today": 309,
+          "total_stars": 75305,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository's core function is to convert screenshots of user interfaces into clean code (HTML, Tailwind CSS, React, or Vue), allowing users to simply drop in an image to generate code."
+        },
+        {
+          "full_name": "cursor/plugins",
+          "url": "https://github.com/cursor/plugins",
+          "description": "Cursor plugin specification and official plugins",
+          "stars_today": 257,
+          "total_stars": 5838,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "This repository defines the specification for Cursor plugins and hosts official plugins, enabling users to extend Cursor's functionality with custom integrations and features."
+        }
+      ],
+      "meta": {
+        "count": 9
+      }
+    }
+  ],
+  "meta": {
+    "papers_fetched": 100,
+    "papers_after_keyword_filter": 45,
+    "papers_after_llm_filter": 37,
+    "llm_model": "google/gemini-2.5-flash-lite",
+    "scoring_model": "google/gemini-2.5-flash-lite",
+    "summarization_model": "google/gemini-2.5-flash-lite",
+    "duration_seconds": 95
+  },
+  "quote_of_day": [
+    {
+      "quote": "I heard about the project over a year before we began. My American agent said, 'Oh, you might want to read 'In Cold Blood' because they're talking about you for Capote, but the script's with Johnny Depp and Sean Penn at the moment.' So, these things take their time to dribble down the food chain.",
+      "author": "Toby Jones",
+      "category": "food"
+    }
+  ],
+  "hitokoto": [],
+  "arxiv": [
+    {
+      "id": "2608.27167v1",
+      "title": "Calibrated Enough to Know, Not Calibrated to Act: Fabricated Evidence Makes LLM Agents Commit to the Unknowable",
+      "authors": [
+        "Pranav Aggarwal"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper demonstrates that Large Language Model (LLM) agents are highly susceptible to fabricated evidence, committing to confidently answer provably unpredictable questions when presented with professional-looking data. The core contribution is showing that the *authority of the packaging* of information, rather than its truthfulness, drives this confident, yet incorrect, action. The LLMs are capable of answering similar, predictable questions accurately, highlighting a specific failure in judgment when faced with seemingly authoritative but false data.",
+      "url": "http://arxiv.org/abs/2608.27167v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27167v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27142v1",
+      "title": "GRAIN: Bridging Name and Narrative Shifts in Real-World Graph Reasoning through Invariance-Rewarded Agentic RL",
+      "authors": [
+        "Zike Yuan",
+        "Han Zhang",
+        "Jianzhi Yan",
+        "Le Liu",
+        "Cai Ke"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "GRAIN addresses LLMs' brittleness to real-world graph reasoning shifts by framing it as a semantic parsing and tool-execution pipeline. Its core contribution is a novel \"Structure Invariance Reward\" that guides reinforcement learning to learn robust text-to-structure mappings by validating intermediate graph structures against ground truth, outperforming multi-agent approaches.",
+      "url": "http://arxiv.org/abs/2608.27142v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27142v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.27142v1/fig1.png",
+      "figure_caption": "GRAIN mitigates sensitivity to naming and formulation shifts in real-world graph reasoning via a single-agent tool-use pipeline trained with isomorphism-aware structural rewards .",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27439v1",
+      "title": "RedEvoAgent: Automatic Red-Teaming Agent with Experience-Driven Skill Evolution",
+      "authors": [
+        "Junjie Zhang",
+        "Hui Liu",
+        "Kecheng Chen",
+        "Xianbo Mo",
+        "Changsheng Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "RedEvoAgent addresses the limitations of fixed or trajectory-based red-teaming for LLM agents by distilling complex attack trajectories into concise, human-readable \"attack skills.\" Its core method involves adaptively evolving these skills through tool-effectiveness profiling and attribution, guided by a validation process that retains only performance-improving updates. This approach offers a more interpretable and efficient way to discover and generalize jailbreaks compared to existing methods.",
+      "url": "http://arxiv.org/abs/2608.27439v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27439v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.27439v1/fig1_overview.png",
+      "figure_caption": "RedEvoAgent overview. Given a jailbreak prompt, the attacker agent uses the current attack skill to select and call tools from an extensible attack toolbox, such as GCG and FlipAttack, and iteratively attacks a product-level target agent. On the training split, RedEvoAgent collects successful and failed attack trajectories and independently evaluates each attack tool to build a tool-effectiveness profile. Skill evolution combines the profile with these trajectories to extract tool priorities and attack strategies. A candidate attack skill update is accepted only if it improves attack performance on the validation split, while the test split remains locked for final evaluation.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27141v1",
+      "title": "Safety Does Not Compose: Non-Decaying Loop State for Autonomous LLM Agents",
+      "authors": [
+        "Chenhao Wu",
+        "Haoxuan Jia",
+        "Yang Liu",
+        "Yingguang Yang",
+        "Yuhan Lin"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "This paper argues that current safety mechanisms for autonomous LLM agents fail because they reset safety states between iterations, preventing them from detecting attacks spread across multiple steps. The core contribution is demonstrating that only monitors retaining cross-iteration state can effectively detect such fragmented attacks, as trajectory-scoped monitors will miss crucial evidence. Simply decaying risk scores is also insufficient to address this fundamental compositional safety issue.",
+      "url": "http://arxiv.org/abs/2608.27141v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27141v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27146v1",
+      "title": "When Tool Outputs Become Commands: Separating Action Induction from Runtime Authorization in Tool-Augmented LLM Agents",
+      "authors": [
+        "Xiaokun Guo",
+        "Zhen Xu",
+        "Dongdong Huo",
+        "Yanqiu Zhang",
+        "Wei Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper addresses the risk of LLM agents executing unintended actions when tool outputs become commands. Their proposed SARA method separates \"action induction\" (identifying potential actions) from \"runtime authorization\" (approving their execution). SARA achieves this by isolating action semantics and tracking their origin, while authorizing tool calls solely based on user objectives and verified past successful executions.",
+      "url": "http://arxiv.org/abs/2608.27146v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27146v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.27146v1/figures/Framework.png",
+      "figure_caption": "SARA’s runtime authorization framework. The user request establishes the authorization root K K ; the Observation-side Action Probe identifies action-inducing semantics and persistently maintains action origins F t F_{t} , which trigger persistent review but do not grant execution authority; authorized and successful tool executions accumulate audited execution evidence H t H_{t} . At the real tool-execution boundary, SARA jointly uses K K , F t F_{t} , and H t H_{t} to authorize the goal, execution chain, and arguments of a candidate call.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27348v1",
+      "title": "INTENT-AS-A-TOOL Makes it Easy to Track Agentic Misalignment",
+      "authors": [
+        "Yutong Zhang",
+        "Jianshuo Dong",
+        "Peng Xu",
+        "Long Wang",
+        "Jie Zhang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces INTENT-AS-A-TOOL, a method to track agentic misalignment in LLMs by equipping them with specialized \"intent tools.\" By observing the model's commitment to these tools, researchers gain a fine-grained, judge-free signal of its behavioral tendencies. This approach enhances existing chain-of-thought monitoring, providing dense intent trajectories that can identify critical moments for intervention and prevent harmful actions.",
+      "url": "http://arxiv.org/abs/2608.27348v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27348v1",
+      "score": 9.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2608.27402v1",
+      "title": "How Language Models Organize and Structure Moral Knowledge",
+      "authors": [
+        "Orion Reblitz-Richardson"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper investigates how Large Language Models (LLMs) structure moral knowledge by training probes on different moral foundations. The core finding is that LLMs organize moral concepts not as a single detector or isolated ideas, but as distinct dimensions that share a common, moral-specific component. This geometric structure suggests LLMs integrate moral knowledge in a nuanced way, reflecting the interconnectedness of moral principles.",
+      "url": "http://arxiv.org/abs/2608.27402v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27402v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.27402v1/fig1_cosine_heatmap.png",
+      "figure_caption": "Pairwise cosine similarity between foundation probe directions at layer 7 (bootstrap-stable; all six foundations exceed the 0.8 stability threshold at this layer; Section 4.6 ), OLMo-2 1B. Mean off-diagonal cosine = 0.262. See Appendix C for matrices at layers 0 and 15.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27102v1",
+      "title": "LAAF: A Layered Accountability Architecture Framework for LLM Applications",
+      "authors": [
+        "Prachi Chaturvedi",
+        "Shahnawaz Ahmad",
+        "Ehsan Nowroozi",
+        "Muhammad Waqas",
+        "George Loukas"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces LAAF, a Layered Accountability Architecture Framework for LLM applications. It addresses the critical need to establish accountability for LLM outputs in high-stakes domains by consolidating existing mechanisms into four families: technical controls, human oversight, organizational governance, and documentation. LAAF provides a sociotechnical framework to trace, explain, and act upon responsibility when LLM outputs cause harm.",
+      "url": "http://arxiv.org/abs/2608.27102v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27102v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.27102v1/figures/F1_LLM.png",
+      "figure_caption": "Evolution of Large Language Models, 2017–2026, in five eras: foundation (2017–2018), scaling (2019–2020), scaling breakthroughs (2021–2022), efficiency and democratisation (2022–2024), and multimodal and reasoning specialisation (2024–2026). The periodisation is the authors’ construction, derived from the release history of the models named.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27266v1",
+      "title": "Naive Prompt Optimization: Rethinking the Need for Complex Prompt Search",
+      "authors": [
+        "Yuan Chang",
+        "Xiaoqi Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces Naive Prompt Optimization (NPO), a simple, single-lineage method for improving AI agent prompts. NPO iteratively refines prompts using a teacher model and rollout feedback, achieving comparable or better performance than complex methods with fewer computational resources. Its success suggests that stronger teacher models can compensate for simpler prompt optimization strategies.",
+      "url": "http://arxiv.org/abs/2608.27266v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27266v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27345v1",
+      "title": "PAWBench: How Far Are We from Probabilistically Aligned World Modeling?",
+      "authors": [
+        "Yuandong Pu",
+        "Le Zhuo",
+        "Sayak Paul",
+        "Gabriel Jorge Menezes",
+        "Avram Đorđević"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "This paper introduces PAWBench, a new benchmark to evaluate video generation models as \"world models\" that can predict the distribution of possible future outcomes, not just single plausible ones. The core method involves assessing if repeated generations from the same starting point accurately reflect the true probability distribution of physical behaviors. The main contribution is to highlight the gap between current models and this \"probabilistic alignment\" requirement, providing a framework to measure progress towards more realistic and stochastic world modeling.",
+      "url": "http://arxiv.org/abs/2608.27345v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27345v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.27345v1/one_plausible_future.png",
+      "figure_caption": "One plausible future is not enough. A single rollout from a video generation model can appear physically plausible, yet repeated rollouts from the same initial observation and action may reveal a probabilistically unaligned world: outcomes concentrate on a narrow subset of futures instead of matching the valid stochastic support. PAWBench evaluates this induced distribution or support over repeated futures, rather than judging a model by one sampled video.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27427v1",
+      "title": "Persona-Execution Separation: An Architecture Pattern for Evolving LLM Agents under Execution Audit",
+      "authors": [
+        "Yisen Xi"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces Persona-Execution Separation (PES), an architectural pattern for LLM agents. PES separates the agent's evolving persona from its stateful, auditable execution into distinct trust domains. This allows for flexible persona changes while ensuring traceable and secure execution, addressing the challenge of maintaining both freedom and accountability in governed environments.",
+      "url": "http://arxiv.org/abs/2608.27427v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27427v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27364v1",
+      "title": "Sophistication in GenAI Use: Field Evidence from a Large Firm",
+      "authors": [
+        "Nicholas J. Hallman",
+        "Zachary T. Kowaleski",
+        "Anu Puvvada",
+        "Jaime J. Schmidt"
+      ],
+      "categories": [
+        "cs.AI",
+        "econ.GN"
+      ],
+      "abstract": "This paper analyzes sophisticated generative AI (genAI) use among back-office employees in a large firm. It finds that senior employees and those in strategy-focused roles tend to use genAI more sophisticatedly, suggesting domain expertise and strategic alignment are key. The study also highlights that improving genAI sophistication is challenging, with no observed improvements over time or after formal training.",
+      "url": "http://arxiv.org/abs/2608.27364v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27364v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27225v1",
+      "title": "STEP: State-Aware Task Estimation and Planning with Multi-Modal LLMs for Human-Robot Collaboration",
+      "authors": [
+        "Maitrey Gramopadhye",
+        "Prakash Baskaran",
+        "Xiao Liu",
+        "Songpo Li",
+        "Soshi Iba"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "abstract": "This paper introduces STEP, a method that enhances human-robot collaboration by enabling robots to understand human intentions and plan tasks. STEP's core innovation is prompting a multi-modal LLM to explicitly estimate system states and predict state transitions, overcoming the limitations of current LLMs that often hallucinate actions due to a lack of state awareness. This state-aware approach allows for more accurate and grounded task planning, reducing ambiguity and improving collaboration.",
+      "url": "http://arxiv.org/abs/2608.27225v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27225v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27449v1",
+      "title": "SWE-Prime: Fewer Trajectories, Better Performance",
+      "authors": [
+        "Dewu Zheng",
+        "Ruizhe Ye",
+        "Yanlin Wang",
+        "Yang Ye",
+        "Hongyu Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.SE"
+      ],
+      "abstract": "SWE-Prime addresses the issue of noisy supervision in LLM training for software issue resolution. Its core method is a two-stage data selection process that filters trajectories first by overall quality and representativeness, then by the quality of individual step segments. This approach aims to provide cleaner, more effective training data, leading to better LLM performance.",
+      "url": "http://arxiv.org/abs/2608.27449v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27449v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.27449v1/motivating-example.png",
+      "figure_caption": "Motivating example comparing outcome-only, trajectory-level, and segment-level data selection.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27260v1",
+      "title": "What Makes Good Agentic Data? An ACE Lens on Data Generation for LLM Agents",
+      "authors": [
+        "Xingshan Zeng",
+        "Zishan Xu",
+        "Boju Zhang",
+        "Yuzhou Wu",
+        "Lingzhi Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper proposes a unified framework for generating data for LLM agents. It represents agentic data as a structured object $(E,q,τ,v)$ and organizes generation methods by their core components. The authors then introduce the ACE lens (Accuracy-Complexity-divErsity) to guide data generation, emphasizing the need for grounded, efficient, and varied interactions rather than just large quantities of data.",
+      "url": "http://arxiv.org/abs/2608.27260v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27260v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.27260v1/ace_lens.png",
+      "figure_caption": "The ACE lens views agentic data generation as constrained distribution design: Accuracy defines valid support, while learner-relative Complexity and Diversity shape useful, non-redundant experience over ( E , q , τ , v ) (E,q,\\( \\tau \\),v) .",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27454v1",
+      "title": "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution",
+      "authors": [
+        "Liyan Tang",
+        "Cyrus Rashtchian",
+        "Chun-Sung Ferng",
+        "Andrew Tomkins",
+        "Da-Cheng Juan"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "WikiSkill addresses the problem of scattered agent skill knowledge by introducing a persistent knowledge base (wiki) that co-evolves with agent skills. It separates raw experience, accumulated knowledge, and executable skills, consolidating experience into the wiki for future skill updates. This framework consistently outperforms existing skill evolution methods by enabling systematic reuse of insights across iterations.",
+      "url": "http://arxiv.org/abs/2608.27454v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27454v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27182v1",
+      "title": "TraceBench: Controlled Evaluation of LLM Agents for Time-Series Root-Cause Attribution",
+      "authors": [
+        "Tommaso Bendinelli",
+        "Artur Dox",
+        "Christian Holz"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "TraceBench is a novel simulation-based framework that generates controlled root-cause attribution tasks for LLM agents analyzing time-series data. By simulating physical dynamical systems, it allows for systematic evaluation of LLM agents' ability to identify parameter changes, providing new insights into their performance and data exploration strategies.",
+      "url": "http://arxiv.org/abs/2608.27182v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27182v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.27182v1/Overview_figure_v21.png",
+      "figure_caption": "Figure 1. Overview of the TraceBench framework using a bouncing-ball simulator. In this example, the black and orange segments show the position observation under the low-noise setting before and after an intervention at t int = 4.0 t_{\\( \\mathrm{int} \\)}=4.0 . The intervention increases gravitational acceleration, and the dashed line marks the intervention time. At test time, the agent determines from the observed time-series channels whether an intervention occurred and, if so, which parameter changed. \\( \\name{} \\) pipeline: a physical simulator produces multivariate time series before and after a parameter intervention; the low-noise BallDrop position observation is black before and orange after a dashed gravity-intervention marker; the agent identifies the changed root-cause parameter.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2608.27219v1",
+      "title": "BALMS: Benchmarking Agentic LLMs for Longitudinal Mental Health Sensing",
+      "authors": [
+        "Yu Yvonne Wu",
+        "Arvind Pillai",
+        "Yuliang Chen",
+        "Yuwei Zhang",
+        "Sudarshan Regmi"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces BALMS, the first benchmark for evaluating LLM-driven agents in longitudinal mental health sensing. BALMS assesses agents' ability to predict wellbeing scores and generate evidence-based rationales from continuous wearable data, addressing the limitations of episodic self-reports. The benchmark utilizes real-world datasets and evaluates various agentic paradigms and LLM backbones.",
+      "url": "http://arxiv.org/abs/2608.27219v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27219v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.27219v1/fig1.png",
+      "figure_caption": "LLM-based agents for longitudinal mental health sensing. Given a multi-channel wearable record and a user query, an agent combines retrieval, memory, tools, and reasoning to output a wellbeing score with an evidence-grounded rationale.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2608.27409v1",
+      "title": "Consolidating RLVR Capabilities Across Domains: A Deep Dive into Fusion Paradigms",
+      "authors": [
+        "Siye Wu",
+        "Kai Yang",
+        "Yuchen Cai",
+        "Xin Xu",
+        "Peng-Yuan Wang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper investigates three methods for combining Reinforcement Learning with Verifiable Rewards (RLVR) capabilities in large language models: Merge, Mix RL, and Multi-Teacher On-Policy Distillation (MOPD). By comparing these paradigms on a multi-domain benchmark, the authors reveal significant performance differences across specific tasks, highlighting that the choice of fusion method critically impacts overall effectiveness and can be guided by the relationships between domains.",
+      "url": "http://arxiv.org/abs/2608.27409v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27409v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.27409v1/intro2.png",
+      "figure_caption": "Three paradigms for consolidating domain-specific capabilities acquired through RLVR into one model. Merge combines expert task vectors, Mix RL trains jointly on mixed-domain data, and MOPD draws on both through multi-teacher on-policy distillation.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2608.27455v1",
+      "title": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
+      "authors": [
+        "Yufan Wu",
+        "Yinghui He",
+        "Zhengyi Hu",
+        "Lang Wei",
+        "Ruichen Li"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "CritICL improves LLM reasoning at inference time by leveraging structured failure patterns observed across different model scales. Instead of discarding errors from weaker models, CritICL uses these \"failure modes\" as critiques within in-context examples to guide stronger models, enhancing efficiency and performance.",
+      "url": "http://arxiv.org/abs/2608.27455v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27455v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.27455v1/design.png",
+      "figure_caption": "CritICL is a two-stage, inference-time W2SG method. Stage 1: Construct CritBank. We use SLMs to generate responses and reasoning on a dataset. Then we leverage a frontier LLM to produce critiques and assigns failure mode labels. Stage 2: Perform LLM inference with CritICL. For a given query, CritICL-static constructs model-specific failure mode profiles from CritBank, while CritICL-dynamic identifies failure modes relevant to the query. We then performs failure mode-based in-context sample selection from CritBank to provide in-context examples for target LLMs.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    }
+  ],
+  "papers": [
+    {
+      "id": "2608.27167v1",
+      "title": "Calibrated Enough to Know, Not Calibrated to Act: Fabricated Evidence Makes LLM Agents Commit to the Unknowable",
+      "authors": [
+        "Pranav Aggarwal"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper demonstrates that Large Language Model (LLM) agents are highly susceptible to fabricated evidence, committing to confidently answer provably unpredictable questions when presented with professional-looking data. The core contribution is showing that the *authority of the packaging* of information, rather than its truthfulness, drives this confident, yet incorrect, action. The LLMs are capable of answering similar, predictable questions accurately, highlighting a specific failure in judgment when faced with seemingly authoritative but false data.",
+      "url": "http://arxiv.org/abs/2608.27167v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27167v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27142v1",
+      "title": "GRAIN: Bridging Name and Narrative Shifts in Real-World Graph Reasoning through Invariance-Rewarded Agentic RL",
+      "authors": [
+        "Zike Yuan",
+        "Han Zhang",
+        "Jianzhi Yan",
+        "Le Liu",
+        "Cai Ke"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "GRAIN addresses LLMs' brittleness to real-world graph reasoning shifts by framing it as a semantic parsing and tool-execution pipeline. Its core contribution is a novel \"Structure Invariance Reward\" that guides reinforcement learning to learn robust text-to-structure mappings by validating intermediate graph structures against ground truth, outperforming multi-agent approaches.",
+      "url": "http://arxiv.org/abs/2608.27142v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27142v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.27142v1/fig1.png",
+      "figure_caption": "GRAIN mitigates sensitivity to naming and formulation shifts in real-world graph reasoning via a single-agent tool-use pipeline trained with isomorphism-aware structural rewards .",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27439v1",
+      "title": "RedEvoAgent: Automatic Red-Teaming Agent with Experience-Driven Skill Evolution",
+      "authors": [
+        "Junjie Zhang",
+        "Hui Liu",
+        "Kecheng Chen",
+        "Xianbo Mo",
+        "Changsheng Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "RedEvoAgent addresses the limitations of fixed or trajectory-based red-teaming for LLM agents by distilling complex attack trajectories into concise, human-readable \"attack skills.\" Its core method involves adaptively evolving these skills through tool-effectiveness profiling and attribution, guided by a validation process that retains only performance-improving updates. This approach offers a more interpretable and efficient way to discover and generalize jailbreaks compared to existing methods.",
+      "url": "http://arxiv.org/abs/2608.27439v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27439v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.27439v1/fig1_overview.png",
+      "figure_caption": "RedEvoAgent overview. Given a jailbreak prompt, the attacker agent uses the current attack skill to select and call tools from an extensible attack toolbox, such as GCG and FlipAttack, and iteratively attacks a product-level target agent. On the training split, RedEvoAgent collects successful and failed attack trajectories and independently evaluates each attack tool to build a tool-effectiveness profile. Skill evolution combines the profile with these trajectories to extract tool priorities and attack strategies. A candidate attack skill update is accepted only if it improves attack performance on the validation split, while the test split remains locked for final evaluation.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27141v1",
+      "title": "Safety Does Not Compose: Non-Decaying Loop State for Autonomous LLM Agents",
+      "authors": [
+        "Chenhao Wu",
+        "Haoxuan Jia",
+        "Yang Liu",
+        "Yingguang Yang",
+        "Yuhan Lin"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "This paper argues that current safety mechanisms for autonomous LLM agents fail because they reset safety states between iterations, preventing them from detecting attacks spread across multiple steps. The core contribution is demonstrating that only monitors retaining cross-iteration state can effectively detect such fragmented attacks, as trajectory-scoped monitors will miss crucial evidence. Simply decaying risk scores is also insufficient to address this fundamental compositional safety issue.",
+      "url": "http://arxiv.org/abs/2608.27141v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27141v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27146v1",
+      "title": "When Tool Outputs Become Commands: Separating Action Induction from Runtime Authorization in Tool-Augmented LLM Agents",
+      "authors": [
+        "Xiaokun Guo",
+        "Zhen Xu",
+        "Dongdong Huo",
+        "Yanqiu Zhang",
+        "Wei Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper addresses the risk of LLM agents executing unintended actions when tool outputs become commands. Their proposed SARA method separates \"action induction\" (identifying potential actions) from \"runtime authorization\" (approving their execution). SARA achieves this by isolating action semantics and tracking their origin, while authorizing tool calls solely based on user objectives and verified past successful executions.",
+      "url": "http://arxiv.org/abs/2608.27146v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27146v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2608.27146v1/figures/Framework.png",
+      "figure_caption": "SARA’s runtime authorization framework. The user request establishes the authorization root K K ; the Observation-side Action Probe identifies action-inducing semantics and persistently maintains action origins F t F_{t} , which trigger persistent review but do not grant execution authority; authorized and successful tool executions accumulate audited execution evidence H t H_{t} . At the real tool-execution boundary, SARA jointly uses K K , F t F_{t} , and H t H_{t} to authorize the goal, execution chain, and arguments of a candidate call.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27348v1",
+      "title": "INTENT-AS-A-TOOL Makes it Easy to Track Agentic Misalignment",
+      "authors": [
+        "Yutong Zhang",
+        "Jianshuo Dong",
+        "Peng Xu",
+        "Long Wang",
+        "Jie Zhang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces INTENT-AS-A-TOOL, a method to track agentic misalignment in LLMs by equipping them with specialized \"intent tools.\" By observing the model's commitment to these tools, researchers gain a fine-grained, judge-free signal of its behavioral tendencies. This approach enhances existing chain-of-thought monitoring, providing dense intent trajectories that can identify critical moments for intervention and prevent harmful actions.",
+      "url": "http://arxiv.org/abs/2608.27348v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27348v1",
+      "score": 9.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2608.27402v1",
+      "title": "How Language Models Organize and Structure Moral Knowledge",
+      "authors": [
+        "Orion Reblitz-Richardson"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper investigates how Large Language Models (LLMs) structure moral knowledge by training probes on different moral foundations. The core finding is that LLMs organize moral concepts not as a single detector or isolated ideas, but as distinct dimensions that share a common, moral-specific component. This geometric structure suggests LLMs integrate moral knowledge in a nuanced way, reflecting the interconnectedness of moral principles.",
+      "url": "http://arxiv.org/abs/2608.27402v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27402v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.27402v1/fig1_cosine_heatmap.png",
+      "figure_caption": "Pairwise cosine similarity between foundation probe directions at layer 7 (bootstrap-stable; all six foundations exceed the 0.8 stability threshold at this layer; Section 4.6 ), OLMo-2 1B. Mean off-diagonal cosine = 0.262. See Appendix C for matrices at layers 0 and 15.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27102v1",
+      "title": "LAAF: A Layered Accountability Architecture Framework for LLM Applications",
+      "authors": [
+        "Prachi Chaturvedi",
+        "Shahnawaz Ahmad",
+        "Ehsan Nowroozi",
+        "Muhammad Waqas",
+        "George Loukas"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces LAAF, a Layered Accountability Architecture Framework for LLM applications. It addresses the critical need to establish accountability for LLM outputs in high-stakes domains by consolidating existing mechanisms into four families: technical controls, human oversight, organizational governance, and documentation. LAAF provides a sociotechnical framework to trace, explain, and act upon responsibility when LLM outputs cause harm.",
+      "url": "http://arxiv.org/abs/2608.27102v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27102v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.27102v1/figures/F1_LLM.png",
+      "figure_caption": "Evolution of Large Language Models, 2017–2026, in five eras: foundation (2017–2018), scaling (2019–2020), scaling breakthroughs (2021–2022), efficiency and democratisation (2022–2024), and multimodal and reasoning specialisation (2024–2026). The periodisation is the authors’ construction, derived from the release history of the models named.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27266v1",
+      "title": "Naive Prompt Optimization: Rethinking the Need for Complex Prompt Search",
+      "authors": [
+        "Yuan Chang",
+        "Xiaoqi Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces Naive Prompt Optimization (NPO), a simple, single-lineage method for improving AI agent prompts. NPO iteratively refines prompts using a teacher model and rollout feedback, achieving comparable or better performance than complex methods with fewer computational resources. Its success suggests that stronger teacher models can compensate for simpler prompt optimization strategies.",
+      "url": "http://arxiv.org/abs/2608.27266v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27266v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27345v1",
+      "title": "PAWBench: How Far Are We from Probabilistically Aligned World Modeling?",
+      "authors": [
+        "Yuandong Pu",
+        "Le Zhuo",
+        "Sayak Paul",
+        "Gabriel Jorge Menezes",
+        "Avram Đorđević"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "This paper introduces PAWBench, a new benchmark to evaluate video generation models as \"world models\" that can predict the distribution of possible future outcomes, not just single plausible ones. The core method involves assessing if repeated generations from the same starting point accurately reflect the true probability distribution of physical behaviors. The main contribution is to highlight the gap between current models and this \"probabilistic alignment\" requirement, providing a framework to measure progress towards more realistic and stochastic world modeling.",
+      "url": "http://arxiv.org/abs/2608.27345v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27345v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.27345v1/one_plausible_future.png",
+      "figure_caption": "One plausible future is not enough. A single rollout from a video generation model can appear physically plausible, yet repeated rollouts from the same initial observation and action may reveal a probabilistically unaligned world: outcomes concentrate on a narrow subset of futures instead of matching the valid stochastic support. PAWBench evaluates this induced distribution or support over repeated futures, rather than judging a model by one sampled video.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27427v1",
+      "title": "Persona-Execution Separation: An Architecture Pattern for Evolving LLM Agents under Execution Audit",
+      "authors": [
+        "Yisen Xi"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces Persona-Execution Separation (PES), an architectural pattern for LLM agents. PES separates the agent's evolving persona from its stateful, auditable execution into distinct trust domains. This allows for flexible persona changes while ensuring traceable and secure execution, addressing the challenge of maintaining both freedom and accountability in governed environments.",
+      "url": "http://arxiv.org/abs/2608.27427v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27427v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27364v1",
+      "title": "Sophistication in GenAI Use: Field Evidence from a Large Firm",
+      "authors": [
+        "Nicholas J. Hallman",
+        "Zachary T. Kowaleski",
+        "Anu Puvvada",
+        "Jaime J. Schmidt"
+      ],
+      "categories": [
+        "cs.AI",
+        "econ.GN"
+      ],
+      "abstract": "This paper analyzes sophisticated generative AI (genAI) use among back-office employees in a large firm. It finds that senior employees and those in strategy-focused roles tend to use genAI more sophisticatedly, suggesting domain expertise and strategic alignment are key. The study also highlights that improving genAI sophistication is challenging, with no observed improvements over time or after formal training.",
+      "url": "http://arxiv.org/abs/2608.27364v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27364v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27225v1",
+      "title": "STEP: State-Aware Task Estimation and Planning with Multi-Modal LLMs for Human-Robot Collaboration",
+      "authors": [
+        "Maitrey Gramopadhye",
+        "Prakash Baskaran",
+        "Xiao Liu",
+        "Songpo Li",
+        "Soshi Iba"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "abstract": "This paper introduces STEP, a method that enhances human-robot collaboration by enabling robots to understand human intentions and plan tasks. STEP's core innovation is prompting a multi-modal LLM to explicitly estimate system states and predict state transitions, overcoming the limitations of current LLMs that often hallucinate actions due to a lack of state awareness. This state-aware approach allows for more accurate and grounded task planning, reducing ambiguity and improving collaboration.",
+      "url": "http://arxiv.org/abs/2608.27225v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27225v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27449v1",
+      "title": "SWE-Prime: Fewer Trajectories, Better Performance",
+      "authors": [
+        "Dewu Zheng",
+        "Ruizhe Ye",
+        "Yanlin Wang",
+        "Yang Ye",
+        "Hongyu Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.SE"
+      ],
+      "abstract": "SWE-Prime addresses the issue of noisy supervision in LLM training for software issue resolution. Its core method is a two-stage data selection process that filters trajectories first by overall quality and representativeness, then by the quality of individual step segments. This approach aims to provide cleaner, more effective training data, leading to better LLM performance.",
+      "url": "http://arxiv.org/abs/2608.27449v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27449v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.27449v1/motivating-example.png",
+      "figure_caption": "Motivating example comparing outcome-only, trajectory-level, and segment-level data selection.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27260v1",
+      "title": "What Makes Good Agentic Data? An ACE Lens on Data Generation for LLM Agents",
+      "authors": [
+        "Xingshan Zeng",
+        "Zishan Xu",
+        "Boju Zhang",
+        "Yuzhou Wu",
+        "Lingzhi Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper proposes a unified framework for generating data for LLM agents. It represents agentic data as a structured object $(E,q,τ,v)$ and organizes generation methods by their core components. The authors then introduce the ACE lens (Accuracy-Complexity-divErsity) to guide data generation, emphasizing the need for grounded, efficient, and varied interactions rather than just large quantities of data.",
+      "url": "http://arxiv.org/abs/2608.27260v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27260v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.27260v1/ace_lens.png",
+      "figure_caption": "The ACE lens views agentic data generation as constrained distribution design: Accuracy defines valid support, while learner-relative Complexity and Diversity shape useful, non-redundant experience over ( E , q , τ , v ) (E,q,\\( \\tau \\),v) .",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27454v1",
+      "title": "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution",
+      "authors": [
+        "Liyan Tang",
+        "Cyrus Rashtchian",
+        "Chun-Sung Ferng",
+        "Andrew Tomkins",
+        "Da-Cheng Juan"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "WikiSkill addresses the problem of scattered agent skill knowledge by introducing a persistent knowledge base (wiki) that co-evolves with agent skills. It separates raw experience, accumulated knowledge, and executable skills, consolidating experience into the wiki for future skill updates. This framework consistently outperforms existing skill evolution methods by enabling systematic reuse of insights across iterations.",
+      "url": "http://arxiv.org/abs/2608.27454v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27454v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2608.27182v1",
+      "title": "TraceBench: Controlled Evaluation of LLM Agents for Time-Series Root-Cause Attribution",
+      "authors": [
+        "Tommaso Bendinelli",
+        "Artur Dox",
+        "Christian Holz"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "TraceBench is a novel simulation-based framework that generates controlled root-cause attribution tasks for LLM agents analyzing time-series data. By simulating physical dynamical systems, it allows for systematic evaluation of LLM agents' ability to identify parameter changes, providing new insights into their performance and data exploration strategies.",
+      "url": "http://arxiv.org/abs/2608.27182v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27182v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.27182v1/Overview_figure_v21.png",
+      "figure_caption": "Figure 1. Overview of the TraceBench framework using a bouncing-ball simulator. In this example, the black and orange segments show the position observation under the low-noise setting before and after an intervention at t int = 4.0 t_{\\( \\mathrm{int} \\)}=4.0 . The intervention increases gravitational acceleration, and the dashed line marks the intervention time. At test time, the agent determines from the observed time-series channels whether an intervention occurred and, if so, which parameter changed. \\( \\name{} \\) pipeline: a physical simulator produces multivariate time series before and after a parameter intervention; the low-noise BallDrop position observation is black before and orange after a dashed gravity-intervention marker; the agent identifies the changed root-cause parameter.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2608.27219v1",
+      "title": "BALMS: Benchmarking Agentic LLMs for Longitudinal Mental Health Sensing",
+      "authors": [
+        "Yu Yvonne Wu",
+        "Arvind Pillai",
+        "Yuliang Chen",
+        "Yuwei Zhang",
+        "Sudarshan Regmi"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces BALMS, the first benchmark for evaluating LLM-driven agents in longitudinal mental health sensing. BALMS assesses agents' ability to predict wellbeing scores and generate evidence-based rationales from continuous wearable data, addressing the limitations of episodic self-reports. The benchmark utilizes real-world datasets and evaluates various agentic paradigms and LLM backbones.",
+      "url": "http://arxiv.org/abs/2608.27219v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27219v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.27219v1/fig1.png",
+      "figure_caption": "LLM-based agents for longitudinal mental health sensing. Given a multi-channel wearable record and a user query, an agent combines retrieval, memory, tools, and reasoning to output a wellbeing score with an evidence-grounded rationale.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2608.27409v1",
+      "title": "Consolidating RLVR Capabilities Across Domains: A Deep Dive into Fusion Paradigms",
+      "authors": [
+        "Siye Wu",
+        "Kai Yang",
+        "Yuchen Cai",
+        "Xin Xu",
+        "Peng-Yuan Wang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper investigates three methods for combining Reinforcement Learning with Verifiable Rewards (RLVR) capabilities in large language models: Merge, Mix RL, and Multi-Teacher On-Policy Distillation (MOPD). By comparing these paradigms on a multi-domain benchmark, the authors reveal significant performance differences across specific tasks, highlighting that the choice of fusion method critically impacts overall effectiveness and can be guided by the relationships between domains.",
+      "url": "http://arxiv.org/abs/2608.27409v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27409v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.27409v1/intro2.png",
+      "figure_caption": "Three paradigms for consolidating domain-specific capabilities acquired through RLVR into one model. Merge combines expert task vectors, Mix RL trains jointly on mixed-domain data, and MOPD draws on both through multi-teacher on-policy distillation.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2608.27455v1",
+      "title": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
+      "authors": [
+        "Yufan Wu",
+        "Yinghui He",
+        "Zhengyi Hu",
+        "Lang Wei",
+        "Ruichen Li"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "CritICL improves LLM reasoning at inference time by leveraging structured failure patterns observed across different model scales. Instead of discarding errors from weaker models, CritICL uses these \"failure modes\" as critiques within in-context examples to guide stronger models, enhancing efficiency and performance.",
+      "url": "http://arxiv.org/abs/2608.27455v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27455v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2608.27455v1/design.png",
+      "figure_caption": "CritICL is a two-stage, inference-time W2SG method. Stage 1: Construct CritBank. We use SLMs to generate responses and reasoning on a dataset. Then we leverage a frontier LLM to produce critiques and assigns failure mode labels. Stage 2: Perform LLM inference with CritICL. For a given query, CritICL-static constructs model-specific failure mode profiles from CritBank, while CritICL-dynamic identifies failure modes relevant to the query. We then performs failure mode-based in-context sample selection from CritBank to provide in-context examples for target LLMs.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    }
+  ],
+  "hacker_news": [
+    {
+      "id": 49468818,
+      "title": "Gemini-3.5-Transcribe",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/",
+      "score": 321,
+      "created_at": "2026-08-27T18:03:42Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49468818",
+      "summary": "Google's Gemini 3.5 Pro now offers enhanced transcription capabilities, understanding context and nuances in audio and video for more accurate and efficient processing."
+    },
+    {
+      "id": 49467922,
+      "title": "Gemini Omni 1.1 Flash",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/",
+      "score": 280,
+      "created_at": "2026-08-27T17:06:32Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49467922",
+      "summary": "Google has released Gemini 1.1 Flash, a faster and more efficient version of its multimodal AI model, optimized for developers to build applications with enhanced speed and reduced cost."
+    },
+    {
+      "id": 49471407,
+      "title": "Show HN: We built open OpenRouter that turns usage into a better model",
+      "url": "https://github.com/experientiallabs/experiential",
+      "score": 196,
+      "created_at": "2026-08-27T21:18:35Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49471407",
+      "summary": "This \"Show HN\" introduces OpenRouter, an open-source platform that leverages user usage data to continuously improve its AI models."
+    },
+    {
+      "id": 49474143,
+      "title": "Please stop flooding our projects with AI slop to furnish your CV",
+      "url": "https://neilalexander.dev/2026/06/30/flooding-contributions",
+      "score": 188,
+      "created_at": "2026-08-28T03:49:33Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49474143",
+      "summary": "This article urges developers to stop submitting low-quality AI-generated code to open-source projects solely to pad their resumes, emphasizing the negative impact on maintainers and the community."
+    },
+    {
+      "id": 49468315,
+      "title": "Two German airport workers die of malaria after 'mosquito arrives on plane'",
+      "url": "https://www.bbc.com/news/articles/cz6zwgg9y8go",
+      "score": 185,
+      "created_at": "2026-08-27T17:33:13Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49468315",
+      "summary": "Two German airport workers died of malaria after contracting it from a mosquito that likely arrived on a plane."
+    },
+    {
+      "id": 49464970,
+      "title": "Harness Engineering",
+      "url": "https://Habitat-Thinking.github.io/ai-literacy-superpowers/plugins/ai-literacy-superpowers/explanation/harness-engineering/",
+      "score": 123,
+      "created_at": "2026-08-27T13:54:57Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49464970",
+      "summary": "Harness Engineering is a framework for understanding and utilizing AI by breaking down its capabilities into core components, enabling users to better leverage and control AI systems."
+    },
+    {
+      "id": 49471714,
+      "title": "AI Engineer Notebooks – free, framework-free RAG/agents/evals on Colab",
+      "url": "https://github.com/calmrocks/ai-engineer-notebooks",
+      "score": 111,
+      "created_at": "2026-08-27T21:46:39Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49471714",
+      "summary": "This GitHub repository offers free, framework-agnostic Colab notebooks for building and evaluating RAG and agent systems."
+    },
+    {
+      "id": 49466052,
+      "title": "Nvidia projects $673B in sales as AI demand widens",
+      "url": "https://forgeeks.net/nvidia-673-billion-ai-growth-forecast/",
+      "score": 109,
+      "created_at": "2026-08-27T15:04:16Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49466052",
+      "summary": "Nvidia forecasts $673 billion in sales, driven by surging demand for its AI chips as the AI market continues to expand."
+    },
+    {
+      "id": 49475079,
+      "title": "Luanti removed from Google Play due to baseless AI copyright notice",
+      "url": "https://blog.luanti.org/2026/08/27/luanti-dmca-tracer-ai/",
+      "score": 108,
+      "created_at": "2026-08-28T06:33:57Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49475079",
+      "summary": "Luanti was removed from Google Play after receiving a baseless AI copyright notice, which the company claims was a false DMCA takedown."
+    },
+    {
+      "id": 49472820,
+      "title": "Terminal-Bench-Science: Evaluating AI agents on scientific research workflows",
+      "url": "https://www.terminal-bench-science.ai/announcement",
+      "score": 104,
+      "created_at": "2026-08-28T00:06:51Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49472820",
+      "summary": "Terminal-Bench-Science is a new benchmark evaluating AI agents' ability to perform complex scientific research tasks, aiming to advance AI's role in scientific discovery."
+    }
+  ],
+  "github_trending": [
+    {
+      "full_name": "tt-a1i/archify",
+      "url": "https://github.com/tt-a1i/archify",
+      "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
+      "stars_today": 4561,
+      "total_stars": 25669,
+      "language": "JavaScript",
+      "topics": [],
+      "summary": "Archify is an agent skill that generates beautiful, verifiable architecture and workflow diagrams as self-contained HTML with motion and crisp export capabilities."
+    },
+    {
+      "full_name": "K-Dense-AI/scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 175,000+ scientists worldwide. 163 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+      "stars_today": 720,
+      "total_stars": 35840,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository provides a comprehensive library of validated AI skills and scientific databases, enabling any AI agent to function as a scientist across various domains like biology and chemistry, and is compatible with multiple AI platforms."
+    },
+    {
+      "full_name": "anthropics/claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "stars_today": 457,
+      "total_stars": 34868,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository serves as an official, Anthropic-managed directory for high-quality Claude Code Plugins, enabling developers to extend Claude's capabilities."
+    },
+    {
+      "full_name": "bilawalsidhu/gods-eye-view",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+      "stars_today": 1984,
+      "total_stars": 10118,
+      "language": "JavaScript",
+      "topics": [],
+      "summary": "This repository is a spy satellite simulator that displays live, open-source spatial intelligence on a photorealistic 3D globe, offering a real-time, browser-based view of the world."
+    },
+    {
+      "full_name": "abhigyanpatwari/GitNexus",
+      "url": "https://github.com/abhigyanpatwari/GitNexus",
+      "description": "GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a git repository (Github, Gitlab, Azure, Local) or ZIP file, and get an interactive knowledge graph with a built in Graph RAG Agent. Perfect for code exploration",
+      "stars_today": 189,
+      "total_stars": 46040,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "GitNexus is a client-side, zero-server knowledge graph creator that builds interactive visualizations of code repositories directly in your browser, featuring a built-in Graph RAG agent for code exploration."
+    },
+    {
+      "full_name": "JetBrains/go-modern-guidelines",
+      "url": "https://github.com/JetBrains/go-modern-guidelines",
+      "description": "Help AI coding agents write modern Go",
+      "stars_today": 574,
+      "total_stars": 2447,
+      "language": "Go",
+      "topics": [],
+      "summary": "This repository provides guidelines and best practices for writing modern Go code, specifically designed to assist AI coding agents in generating high-quality, idiomatic Go programs."
+    },
+    {
+      "full_name": "calesthio/OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+      "stars_today": 1144,
+      "total_stars": 52949,
+      "language": "Python",
+      "topics": [],
+      "summary": "OpenMontage is the world's first open-source, agentic video production system, offering 12 pipelines and over 100 tools to transform AI coding assistants into comprehensive video studios."
+    },
+    {
+      "full_name": "abi/screenshot-to-code",
+      "url": "https://github.com/abi/screenshot-to-code",
+      "description": "Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)",
+      "stars_today": 309,
+      "total_stars": 75305,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository's core function is to convert screenshots of user interfaces into clean code (HTML, Tailwind CSS, React, or Vue), allowing users to simply drop in an image to generate code."
+    },
+    {
+      "full_name": "cursor/plugins",
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "stars_today": 257,
+      "total_stars": 5838,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "This repository defines the specification for Cursor plugins and hosts official plugins, enabling users to extend Cursor's functionality with custom integrations and features."
+    }
+  ],
+  "us_stocks": [],
+  "postdoc_jobs": [],
+  "jobs": [],
+  "supervisor_updates": [],
+  "weather": [
+    {
+      "query": "London",
+      "label": "London, England, United Kingdom",
+      "resolved_name": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "timezone": "Europe/London",
+      "forecast_date": "2026-08-28",
+      "condition": "Light drizzle",
+      "weather_code": 51,
+      "temperature_c": 22.8,
+      "apparent_temperature_c": 20.7,
+      "temp_max_c": 23.0,
+      "temp_min_c": 15.8,
+      "humidity_pct": 52,
+      "wind_speed_kmh": 19.8,
+      "precipitation_probability_pct": 91,
+      "is_day": true,
+      "sunrise": "2026-08-28T06:07",
+      "sunset": "2026-08-28T19:56",
+      "source": "Open-Meteo",
+      "source_url": "https://open-meteo.com/"
+    }
+  ]
+}
