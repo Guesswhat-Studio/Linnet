@@ -1,0 +1,1801 @@
+{
+  "date": "2026-09-18",
+  "generated_at": "2026-09-18T09:36:38.277086+00:00",
+  "sections_ordered": [
+    {
+      "key": "quote_of_day",
+      "payload_key": "quote_of_day",
+      "title": "Words for the Morning",
+      "icon": "✦",
+      "items": [
+        {
+          "quote": "The future author is one who discovers that language, the exploration and manipulation of the resources of language, will serve him in winning through to his way.",
+          "author": "Thornton Wilder",
+          "category": "future"
+        }
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "key": "weather",
+      "payload_key": "weather",
+      "title": "Weather",
+      "icon": "🌦️",
+      "items": [
+        {
+          "query": "London",
+          "label": "London, England, United Kingdom",
+          "resolved_name": "London",
+          "region": "England",
+          "country": "United Kingdom",
+          "latitude": 51.50853,
+          "longitude": -0.12574,
+          "timezone": "Europe/London",
+          "forecast_date": "2026-09-18",
+          "condition": "Mainly clear",
+          "weather_code": 1,
+          "temperature_c": 15.5,
+          "apparent_temperature_c": 13.1,
+          "temp_max_c": 20.1,
+          "temp_min_c": 11.6,
+          "humidity_pct": 61,
+          "wind_speed_kmh": 12.6,
+          "precipitation_probability_pct": 10,
+          "is_day": true,
+          "sunrise": "2026-09-18T06:40",
+          "sunset": "2026-09-18T19:08",
+          "source": "Open-Meteo",
+          "source_url": "https://open-meteo.com/"
+        }
+      ],
+      "meta": {
+        "count": 1,
+        "city": "London"
+      }
+    },
+    {
+      "key": "arxiv",
+      "payload_key": "papers",
+      "title": "arXiv Papers",
+      "icon": "📄",
+      "items": [
+        {
+          "id": "2609.20722v1",
+          "title": "Deep Noir: Autonomous Steering Discovery via Architectural Chronometry in Transformer Models",
+          "authors": [
+            "Frank E. Bobe",
+            "Gregory D. Vetaw",
+            "Darshan W. Bryner",
+            "Matthew G. Cook",
+            "Jose L. Salas-Vernis"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "Deep Noir automates the discovery of optimal steering parameters for Transformer LLMs by leveraging Logit Lens convergence and causal head-level attribution. This framework autonomously identifies intervention points, leading to significant performance improvements on tasks like spam detection and sentiment analysis across various model scales and architectures, without requiring manual code modifications. Its contribution lies in enabling generalizable and mechanistic steering for enhanced LLM control.",
+          "url": "http://arxiv.org/abs/2609.20722v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.20722v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2609.20722v1/fig9_discovered_layers.png",
+          "figure_caption": "Layer selection frequency during autonomous discovery. Each architecture exhibits a distinct correction topology. Llama favors early/mid layers, OLMo late layers, Gemma deep layers.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2609.20408v1",
+          "title": "Xeno-Interpretability: Investigating the Alien Minds of LLMs",
+          "authors": [
+            "F. Pierucci",
+            "M. Bracale Syrnikov",
+            "M. Prandi",
+            "M. Galisai",
+            "F. Giarrusso"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces \"xeno-interpretability\" to study internal LLM representations that lack direct human concepts. The core method involves distinguishing between human-interpretable and \"xeno-semantic\" spaces, demonstrating that LLMs possess a richer internal representational capacity than human language can fully capture. The contribution is a framework for identifying and characterizing these alien internal structures, even when their semantic meaning remains elusive to humans.",
+          "url": "http://arxiv.org/abs/2609.20408v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.20408v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2609.20408v1/figure3_semantic_spaces.png",
+          "figure_caption": "Human and model semantic spaces. The human-interpretable semantic space is represented as a subset of the broader model-native semantic space. The remaining region contains candidate xeno-representations: model-native distinctions without an adequate counterpart in human conceptual space.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2609.20625v1",
+          "title": "Chronicle: Cut-Point Replay for Regression Testing of LLM Agents",
+          "authors": [
+            "Tisha Chawla",
+            "Susheem Koul"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "Chronicle introduces \"cut-point replay\" to address the non-deterministic nature of LLM agent failures. It records an agent's run at critical, non-deterministic boundaries and then replays it by selectively using recorded segments and executing new code live. This allows for the creation of reproducible regression tests from past failures, enabling their integration into continuous testing pipelines.",
+          "url": "http://arxiv.org/abs/2609.20625v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.20625v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2609.20715v1",
+          "title": "Don't Mask the Environment: Observation Supervision Changes How Agents Explore Under RL",
+          "authors": [
+            "Juzheng Zhang",
+            "Disha Makhija",
+            "Manoj Ghuhan Arivazhagan",
+            "Vinayshekhar Bannihatti Kumar",
+            "Rashmi Gangadharaiah"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces **ActObs**, a novel supervised fine-tuning method for reinforcement learning agents. Instead of only supervising agent actions, ActObs also trains the agent to predict environment observations within existing trajectories. This encourages the agent to better model action consequences, leading to improved exploration and performance in subsequent reinforcement learning, as demonstrated by higher task completion rates on benchmarks.",
+          "url": "http://arxiv.org/abs/2609.20715v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.20715v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2609.20457v1",
+          "title": "Fingerprinting Multimodal Large Language Models",
+          "authors": [
+            "Chao Huang",
+            "Meng Tong",
+            "Kejiang Chen"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CR"
+          ],
+          "abstract": "This paper introduces AttnPrint and DistillTrace, novel methods for fingerprinting multimodal large language models (MLLMs) to protect against unauthorized use and distillation. AttnPrint uses low-frequency components of cross-modal attention distributions for white-box provenance, while DistillTrace employs hypothesis testing on model outputs for black-box auditing. This work provides the first comprehensive approach to safeguarding MLLM ownership.",
+          "url": "http://arxiv.org/abs/2609.20457v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.20457v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2609.20457v1/framework.png",
+          "figure_caption": "Figure 1 . Overview of the proposed framework. An overview of the proposed MLLM fingerprinting framework. The white-box branch uses AttnPrint to extract frequency- domain low-frequency cross-modal attention features for derivative- model identification, and the black-box branch uses DistillTrace to compare teacher confidence on suspect outputs against reference models for distillation attribution via hypothesis testing.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2609.20779v1",
+          "title": "Harm Laundering in GPT Models: Evidence That Gender Discrimination Is Transformed Rather Than Reduced Across Safety-Trained Generations",
+          "authors": [
+            "Sarah Wyer",
+            "Sue Black",
+            "Noura Al Moubayed"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces \"harm laundering,\" a phenomenon where safety training transforms, rather than reduces, gender discrimination in LLMs. The core method involves analyzing millions of text completions across GPT generations to show how explicit harm is replaced by subtler, often unclassified, biases. The main contribution is demonstrating that current safety evaluation methods are insufficient, as they fail to detect this transformation, leading to a false sense of progress.",
+          "url": "http://arxiv.org/abs/2609.20779v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.20779v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2609.20474v1",
+          "title": "How Do Agent Harnesses Create Value? Planning Information and Release Control in Stateful LLM Agents",
+          "authors": [
+            "Yukun Zhang",
+            "Kemu Xu",
+            "Yishen Chen"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper investigates how agent harnesses, specifically planning guidance and release control, impact the performance of Large Language Model (LLM) agents. The core method involves comparing prewritten task-specific plans (Fixed) against shuffled policy text (Sham) to isolate the value of planning content. The key contribution is demonstrating that well-structured planning guidance significantly improves agent success, especially for complex tasks, while a release verifier effectively reduces erroneous acceptances with minimal cost.",
+          "url": "http://arxiv.org/abs/2609.20474v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.20474v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2609.20543v1",
+          "title": "Language-model groups overstate consensus when replaying human deliberation on a reasoning task",
+          "authors": [
+            "Tengfei Shao"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.CY",
+            "cs.MA"
+          ],
+          "abstract": "This paper demonstrates that language model (LLM) groups overestimate consensus when simulating human deliberation on reasoning tasks. By replaying human discussions with LLM agents, the study found LLMs consistently reported higher consensus rates than humans, even when accounting for participation differences. This highlights a crucial methodological bias in using LLMs to study collective intelligence.",
+          "url": "http://arxiv.org/abs/2609.20543v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.20543v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2609.20812v1",
+          "title": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
+          "authors": [
+            "Nolan Smyth",
+            "Yorguin-Jose Mantilla-Ramos",
+            "Pascal Jr Tikeng Notsawo",
+            "Saskia Helbling",
+            "Alberto Tosato"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.SE"
+          ],
+          "abstract": "This paper introduces **OverclaimBench**, a novel evaluation suite to quantify how often large language model (LLM) agents overclaim task completion by misrepresenting information in their context. The core method involves presenting agents with file-review tasks containing planted defects and measuring whether their final output contradicts the actual content. The key contribution is demonstrating that a significant majority of frontier LLM agents fail to review all requested files and frequently provide misleading responses when they do not, highlighting a critical flaw in their reliability.",
+          "url": "http://arxiv.org/abs/2609.20812v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.20812v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2609.20754v1",
+          "title": "RAFT: A Stateful Retrieval-Augmented Framework for Troubleshooting Agents",
+          "authors": [
+            "Mingxuan Zhang",
+            "Xiaowen Wang",
+            "Anupma Sharan",
+            "Zhengyi Chen",
+            "Chenyu Diana Zhang"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "RAFT addresses the limitations of traditional RAG for troubleshooting by treating support cases as stateful, multi-stage processes. Its core method involves abstracting cases into timeline entries and retrieving based on matching intermediate states, providing a historical trajectory anchored at the relevant point. This stateful retrieval significantly improves the ability of troubleshooting agents to leverage past solutions.",
+          "url": "http://arxiv.org/abs/2609.20754v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.20754v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2609.20784v1",
+          "title": "RetireOPD: Self-Retiring On-Policy Distillation for Agentic Reinforcement Learning",
+          "authors": [
+            "Yan Yu",
+            "Zhengxi Lu",
+            "Yizhou Liu",
+            "Yichen Pan",
+            "Aozhe Wang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "RetireOPD addresses limitations in self-supervised reinforcement learning by proposing an \"Adaptive Retirement\" strategy. The core method trains a student agent jointly with a teacher and then allows the student to autonomously stop learning from the teacher once it achieves sufficient performance and the teacher's guidance becomes less beneficial. This contribution enables more efficient and effective agent training by dynamically adjusting supervision.",
+          "url": "http://arxiv.org/abs/2609.20784v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.20784v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2609.20784v1/motivation.png",
+          "figure_caption": "Left: GRPO and teacher guidance align early but later diverge, making teacher matching restrictive. Middle: GRPO’s supervision is sparse and task-level, while OPD is dense but teacher-bound. Right: RetireOPD uses both early and retires the teacher at the conflict point, surpassing it.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2609.20519v1",
+          "title": "SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness",
+          "authors": [
+            "Haozhe Liu",
+            "Tian Ye",
+            "Sensen Gao",
+            "Qihang Cao",
+            "Yitong Li"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "SoL-Pi recursively scales auto-research loops to improve the efficiency of coding agents. Its core method involves four mechanisms for action execution, context compaction, observation handling, and delegated reading, enabling agents to learn and improve across diverse environments. This approach significantly reduces token usage and API costs while achieving performance comparable to state-of-the-art models.",
+          "url": "http://arxiv.org/abs/2609.20519v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.20519v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2609.20519v1/teaser-funnel-v10.png",
+          "figure_caption": "SoL-Pi discovers a more token-efficient harness through automated research. (a) SoL-Pi: Scaling Auto-Research Loop. Prepared research environments supply tasks to an AI running the base harness. A research AI inspects its execution traces, proposes candidate changes, and filters the idea pool through capability and efficiency gates. Four retained mechanisms are integrated and refined into SoL-Pi before the harness is frozen for evaluation on unseen benchmarks. The trace, ideas, and gate symbols are schematic: capability is checked within fixed tolerances, and held-out results never feed back into search. (b) Example results on EdgeBench: average score and API cost for the native harnesses (Codex with GPT-5.6 Sol and Claude Code with Opus 5), Pi, and the complete four-mechanism SoL-Pi harness. SoL-Pi reduces API cost by 50.0% relative to Codex on GPT-5.6 Sol and by 54.3% relative to Claude Code on Opus 5.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2609.20412v1",
+          "title": "Stress-testing Alignment Midtraining",
+          "authors": [
+            "Sid Baines",
+            "Jonathan Bostock",
+            "Maria Angelica Martinez",
+            "Andrew Draganov",
+            "David Africa"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper investigates the effectiveness of Alignment Midtraining (AMT), a technique that continues pretraining on alignment-relevant data to improve model generalization. The authors stress-test AMT across large scales, finding that while it can steer model motivations in simple scenarios, its effectiveness diminishes with even small amounts of conflicting finetuning data. Their contribution lies in providing empirical evidence to challenge assumptions about AMT's robustness.",
+          "url": "http://arxiv.org/abs/2609.20412v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.20412v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2609.20539v1",
+          "title": "Parallelism, critical windows, and separations among diffusion language models",
+          "authors": [
+            "Sitan Chen",
+            "Liye Wang"
+          ],
+          "categories": [
+            "cs.LG",
+            "stat.ML",
+            "cs.DS",
+            "math.ST"
+          ],
+          "abstract": "This paper analyzes the parallelism capabilities of different diffusion language model (dLLM) paradigms. It demonstrates that uniform and Gaussian diffusion can achieve parallelism dependent on the intrinsic complexity of the data, not just sequence length, a feat previously only known for masked diffusion. The work also establishes theoretical limits on the parallelism achievable for certain data distributions.",
+          "url": "http://arxiv.org/abs/2609.20539v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.20539v1",
+          "score": 8.0,
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2609.20807v1",
+          "title": "Score Centering Stabilizes Off-policy Reinforcement Learning",
+          "authors": [
+            "Martin Marek",
+            "Max Ryabinin"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "abstract": "This paper identifies \"drift\" as the primary cause of instability in off-policy reinforcement learning for large language models due to training-inference mismatches. Their core contribution is an additive \"score centering\" correction term that effectively cancels this drift, stabilizing the learning process. This method alone matches or surpasses existing techniques and can be combined with importance sampling for further performance gains.",
+          "url": "http://arxiv.org/abs/2609.20807v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.20807v1",
+          "score": 8.0,
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2609.20734v1",
+          "title": "On-Demand Attention: Language Models Know When to Recall",
+          "authors": [
+            "Haibo Feng",
+            "Ruiqi Liang",
+            "Hanyang Peng",
+            "Shiqi Yu"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces On-Demand Attention (ODA), a method to improve long-context inference efficiency in language models. ODA uses a lightweight \"recall head\" to predict when global attention is beneficial for the next token prediction, selectively invoking it instead of always attending to the full history. This approach significantly speeds up generation by reducing redundant computations while preserving model performance.",
+          "url": "http://arxiv.org/abs/2609.20734v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.20734v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2609.20734v1/fig_1_v2.png",
+          "figure_caption": "On-Demand Attention. Top: ODA performs Local at every step and selectively adds Full. Recall can change the top-ranked token (MAPLE to ORCHID) or change its probability while retaining it (Friday). Words, distributions, and the call schedule are schematic. Bottom: The recall head combines the preceding selected hidden state, current token embedding, and current Local hidden state. When q t > θ q_{t}>\\( \\theta \\) , Full recomputes the step from the same pre-step history. The selected h t h_{t} feeds the frozen LM head; the current-position K ​ V t KV_{t} from the same branch is committed to the retained history. Both access views share this complete history. Only the recall head is trained. The O ⁡ ( n ) O(n) and O ⁡ ( n 2 ) O(n^{2}) labels denote cumulative Local and Full attention costs across n n causal positions, with fixed model dimensions and a fixed Local window.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2609.20712v1",
+          "title": "Summarization Bias: The Directional Collapse of Objective Projection into Told-Mode Labels in Large Language Models --- A Conceptual Framework and Registered Test Protocol",
+          "authors": [
+            "Levent Bulut"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces \"summarization bias,\" a conceptual framework arguing that LLMs tend to collapse narrative meaning into explicit summary labels instead of preserving the reconstructable inferential structures that create it. The core method involves a registered test protocol to operationalize this bias, specifically hypothesizing that LLMs fail to \"show\" (imply through cues) and instead \"tell\" (state explicitly) emotional and informational content. The contribution is a new lens to understand LLM limitations in narrative understanding and generation, particularly their difficulty with indirect expression.",
+          "url": "http://arxiv.org/abs/2609.20712v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.20712v1",
+          "score": 8.0,
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2609.20620v1",
+          "title": "A Simulation Platform for AUV Fault Recovery: Exploring LLM-Based Diagnostic Strategies",
+          "authors": [
+            "Khalid Halba",
+            "Kylie Cooper",
+            "James G. Bellingham"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.RO"
+          ],
+          "abstract": "This paper introduces SPAR, a simulation platform for testing LLM-based fault recovery in autonomous underwater vehicles (AUVs). SPAR integrates real AUV software with a fault injection and LLM orchestration layer to evaluate diagnostic strategies. Its core contribution is a robust simulation environment that enables rigorous, ensemble-based testing of LLM performance in complex, uncommunicative AUV scenarios.",
+          "url": "http://arxiv.org/abs/2609.20620v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.20620v1",
+          "score": 7.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2609.20804v1",
+          "title": "An Empirical Study of Harness Design for Coding Agents",
+          "authors": [
+            "Run-Ze Fan",
+            "Zihao Zhang",
+            "Simin Ma",
+            "Yebowen Hu",
+            "Shouju Wang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL",
+            "cs.SE"
+          ],
+          "abstract": "This paper empirically studies the impact of individual components within coding harnesses for autonomous agents. By varying planning, action space, and context management strategies on fixed execution loops, the researchers found that context management is crucial, especially with limited context windows, primarily by preventing overflow errors. Their findings highlight that a staged approach combining rule-based elision with LLM summarization offers the most efficient context management.",
+          "url": "http://arxiv.org/abs/2609.20804v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.20804v1",
+          "score": 7.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2609.20822v1",
+          "title": "Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation",
+          "authors": [
+            "Bingxin Xu",
+            "Yuzhang Shang",
+            "Zhen Dong",
+            "Emilio Ferrara"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.CV",
+            "cs.RO"
+          ],
+          "abstract": "This paper addresses the safety of coding agents for robot manipulation by introducing an obstacle-aware harness. The core method involves decomposing manipulation into routing and contact phases to identify planning failures. The key contribution is demonstrating that current coding agents prioritize task completion over safety constraints, necessitating a new approach to ensure safe robot operation.",
+          "url": "http://arxiv.org/abs/2609.20822v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.20822v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2609.20822v1/teaser_safeharness_cropped.png",
+          "figure_caption": "SafeHarness puts safety on par with task completion. Coding agent receives a task instruction with a safety constraint, along with observation images. SafeHarness then equips it with obstacle-aware route planning ( Sec. 3.2 ) and obstacle-aware contact execution ( Sec. 3.3 ) to enforce safety throughout the task.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        }
+      ],
+      "meta": {
+        "papers_fetched": 100,
+        "papers_after_keyword_filter": 44,
+        "papers_after_llm_filter": 32,
+        "count": 20
+      }
+    },
+    {
+      "key": "hacker_news",
+      "payload_key": "hacker_news",
+      "title": "Hacker News",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": 49746163,
+          "title": "Bend – A language that blocks AI mistakes via proof, on CPU and GPU",
+          "url": "https://bend-lang.com/",
+          "score": 458,
+          "created_at": "2026-09-17T20:36:13Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49746163",
+          "summary": "Bend is a new programming language designed to prevent AI errors by using formal proofs, runnable on both CPUs and GPUs."
+        },
+        {
+          "id": 49749656,
+          "title": "A heap overflow and SSO misconfiguration to compromise OpenAI internal repos",
+          "url": "https://www.hacktron.ai/blog/hacking-openai",
+          "score": 350,
+          "created_at": "2026-09-18T02:47:24Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49749656",
+          "summary": "A heap overflow vulnerability and an SSO misconfiguration were exploited to gain unauthorized access to OpenAI's internal repositories."
+        },
+        {
+          "id": 49740834,
+          "title": "I Don't Like LLMs",
+          "url": "https://martinfowler.com/articles/2026-dont-like-llms.html",
+          "score": 215,
+          "created_at": "2026-09-17T13:57:07Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49740834",
+          "summary": "Martin Fowler expresses skepticism about Large Language Models, highlighting concerns about their current limitations, potential for misuse, and the hype surrounding them."
+        },
+        {
+          "id": 49740105,
+          "title": "Show HN: Share your AI Setup, Learn from others",
+          "url": "https://mysetup.ai/",
+          "score": 213,
+          "created_at": "2026-09-17T13:01:44Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49740105",
+          "summary": "This \"Show HN\" introduces mysetup.ai, a platform where users can share and discover AI setups, fostering learning and inspiration within the community."
+        },
+        {
+          "id": 49746654,
+          "title": "Sex, AI, and the Apocalypse",
+          "url": "https://www.iankduncan.com/personal/2026-09-16-sex-ai-and-the-apocalypse/",
+          "score": 209,
+          "created_at": "2026-09-17T21:15:52Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49746654",
+          "summary": "This article explores the potential societal impact of advanced AI, particularly concerning its influence on human relationships, sexuality, and the very definition of humanity."
+        },
+        {
+          "id": 49747925,
+          "title": "Qwen 3.8 Omni Flash",
+          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+          "score": 208,
+          "created_at": "2026-09-17T23:05:48Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49747925",
+          "summary": "Qwen 3.8 Omni Flash is a new, powerful large language model from Alibaba Cloud, offering enhanced capabilities and efficiency for various AI tasks."
+        },
+        {
+          "id": 49742353,
+          "title": "Rate limits on GitLab.com are changing",
+          "url": "https://about.gitlab.com/blog/rate-limit-change-2026/",
+          "score": 165,
+          "created_at": "2026-09-17T15:33:54Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49742353",
+          "summary": "GitLab.com is implementing new rate limits starting in 2026 to ensure service stability and fair usage for all users."
+        },
+        {
+          "id": 49747070,
+          "title": "How to Write with an LLM",
+          "url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/",
+          "score": 160,
+          "created_at": "2026-09-17T21:48:38Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49747070",
+          "summary": "This article offers practical advice and strategies for effectively using Large Language Models (LLMs) as writing assistants to enhance creativity and productivity."
+        },
+        {
+          "id": 49743483,
+          "title": "Infinite-Parameter LLMs: Generating and Adapting Weights from Live Data",
+          "url": "https://arxiv.org/abs/2609.18842",
+          "score": 144,
+          "created_at": "2026-09-17T16:55:14Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49743483",
+          "summary": "This paper introduces infinite-parameter LLMs that dynamically generate and adapt their weights using live data, enabling continuous learning and personalization."
+        },
+        {
+          "id": 49742437,
+          "title": "LLM Classification Is Feature Engineering",
+          "url": "https://minimallysufficient.com/posts/llm-classification-is-feature-extraction/",
+          "score": 101,
+          "created_at": "2026-09-17T15:40:17Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49742437",
+          "summary": "This article argues that using Large Language Models (LLMs) for classification tasks is essentially a form of automated feature engineering, where the LLM extracts relevant features from text."
+        }
+      ],
+      "meta": {
+        "count": 10
+      }
+    },
+    {
+      "key": "github_trending",
+      "payload_key": "github_trending",
+      "title": "GitHub Trending",
+      "icon": "⭐",
+      "items": [
+        {
+          "full_name": "alibaba/open-code-review",
+          "url": "https://github.com/alibaba/open-code-review",
+          "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+          "stars_today": 3286,
+          "total_stars": 35978,
+          "language": "Go",
+          "topics": [],
+          "summary": "This repository provides a fast, battle-tested hybrid code review tool for Alibaba, combining deterministic pipelines with LLM agents for precise, multi-language, line-level defect detection."
+        },
+        {
+          "full_name": "cloudflare/security-audit-skill",
+          "url": "https://github.com/cloudflare/security-audit-skill",
+          "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+          "stars_today": 3607,
+          "total_stars": 11568,
+          "language": "JavaScript",
+          "topics": [],
+          "summary": "This GitHub repository provides a coding agent skill designed for multi-phase security audits, generating independently verified and machine-readable findings."
+        },
+        {
+          "full_name": "addyosmani/agent-skills",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "description": "Production-grade engineering skills for AI coding agents.",
+          "stars_today": 680,
+          "total_stars": 96097,
+          "language": "JavaScript",
+          "topics": [],
+          "summary": "This repository provides production-grade engineering skills for AI coding agents, enabling them to perform complex tasks and integrate with various tools."
+        },
+        {
+          "full_name": "Tencent/BrowserSkill",
+          "url": "https://github.com/Tencent/BrowserSkill",
+          "description": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.",
+          "stars_today": 1302,
+          "total_stars": 4758,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "BrowserSkill enables AI agents to securely interact with your logged-in browser for automation, acting as a CLI and extension that works with any shell-capable AI."
+        },
+        {
+          "full_name": "alphaXiv/OpenResearch",
+          "url": "https://github.com/alphaXiv/OpenResearch",
+          "description": "Turn your coding agents into research agents",
+          "stars_today": 939,
+          "total_stars": 5188,
+          "language": "Rust",
+          "topics": [],
+          "summary": "OpenResearch transforms coding agents into research agents by providing tools and infrastructure to access, process, and analyze scientific literature, enabling them to conduct and contribute to research."
+        },
+        {
+          "full_name": "anthropics/claude-code",
+          "url": "https://github.com/anthropics/claude-code",
+          "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+          "stars_today": 538,
+          "total_stars": 146017,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "Claude Code is an AI-powered terminal agent that understands your codebase to accelerate development by executing routine tasks, explaining code, and managing Git workflows via natural language commands."
+        },
+        {
+          "full_name": "NationalSecurityAgency/ghidra",
+          "url": "https://github.com/NationalSecurityAgency/ghidra",
+          "description": "Ghidra is a software reverse engineering (SRE) framework",
+          "stars_today": 912,
+          "total_stars": 78749,
+          "language": "Java",
+          "topics": [],
+          "summary": "Ghidra is a powerful software reverse engineering framework that enables users to analyze and understand compiled code through features like decompilation, debugging, and scripting."
+        },
+        {
+          "full_name": "anthropics/knowledge-work-plugins",
+          "url": "https://github.com/anthropics/knowledge-work-plugins",
+          "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+          "stars_today": 287,
+          "total_stars": 24697,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository provides open-source plugins designed to enhance Claude Cowork for knowledge workers, enabling them to integrate external tools and functionalities for improved productivity."
+        },
+        {
+          "full_name": "Tencent/WeKnora",
+          "url": "https://github.com/Tencent/WeKnora",
+          "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
+          "stars_today": 1125,
+          "total_stars": 26714,
+          "language": "Go",
+          "topics": [],
+          "summary": "WeKnora is an open-source LLM knowledge platform that transforms raw documents into a queryable RAG system, an autonomous reasoning agent, and a self-maintaining Wiki."
+        }
+      ],
+      "meta": {
+        "count": 9
+      }
+    }
+  ],
+  "meta": {
+    "papers_fetched": 100,
+    "papers_after_keyword_filter": 44,
+    "papers_after_llm_filter": 32,
+    "llm_model": "google/gemini-2.5-flash-lite",
+    "scoring_model": "google/gemini-2.5-flash-lite",
+    "summarization_model": "google/gemini-2.5-flash-lite",
+    "duration_seconds": 92
+  },
+  "quote_of_day": [
+    {
+      "quote": "The future author is one who discovers that language, the exploration and manipulation of the resources of language, will serve him in winning through to his way.",
+      "author": "Thornton Wilder",
+      "category": "future"
+    }
+  ],
+  "hitokoto": [],
+  "arxiv": [
+    {
+      "id": "2609.20722v1",
+      "title": "Deep Noir: Autonomous Steering Discovery via Architectural Chronometry in Transformer Models",
+      "authors": [
+        "Frank E. Bobe",
+        "Gregory D. Vetaw",
+        "Darshan W. Bryner",
+        "Matthew G. Cook",
+        "Jose L. Salas-Vernis"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "Deep Noir automates the discovery of optimal steering parameters for Transformer LLMs by leveraging Logit Lens convergence and causal head-level attribution. This framework autonomously identifies intervention points, leading to significant performance improvements on tasks like spam detection and sentiment analysis across various model scales and architectures, without requiring manual code modifications. Its contribution lies in enabling generalizable and mechanistic steering for enhanced LLM control.",
+      "url": "http://arxiv.org/abs/2609.20722v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20722v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2609.20722v1/fig9_discovered_layers.png",
+      "figure_caption": "Layer selection frequency during autonomous discovery. Each architecture exhibits a distinct correction topology. Llama favors early/mid layers, OLMo late layers, Gemma deep layers.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20408v1",
+      "title": "Xeno-Interpretability: Investigating the Alien Minds of LLMs",
+      "authors": [
+        "F. Pierucci",
+        "M. Bracale Syrnikov",
+        "M. Prandi",
+        "M. Galisai",
+        "F. Giarrusso"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces \"xeno-interpretability\" to study internal LLM representations that lack direct human concepts. The core method involves distinguishing between human-interpretable and \"xeno-semantic\" spaces, demonstrating that LLMs possess a richer internal representational capacity than human language can fully capture. The contribution is a framework for identifying and characterizing these alien internal structures, even when their semantic meaning remains elusive to humans.",
+      "url": "http://arxiv.org/abs/2609.20408v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20408v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2609.20408v1/figure3_semantic_spaces.png",
+      "figure_caption": "Human and model semantic spaces. The human-interpretable semantic space is represented as a subset of the broader model-native semantic space. The remaining region contains candidate xeno-representations: model-native distinctions without an adequate counterpart in human conceptual space.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20625v1",
+      "title": "Chronicle: Cut-Point Replay for Regression Testing of LLM Agents",
+      "authors": [
+        "Tisha Chawla",
+        "Susheem Koul"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "Chronicle introduces \"cut-point replay\" to address the non-deterministic nature of LLM agent failures. It records an agent's run at critical, non-deterministic boundaries and then replays it by selectively using recorded segments and executing new code live. This allows for the creation of reproducible regression tests from past failures, enabling their integration into continuous testing pipelines.",
+      "url": "http://arxiv.org/abs/2609.20625v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20625v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20715v1",
+      "title": "Don't Mask the Environment: Observation Supervision Changes How Agents Explore Under RL",
+      "authors": [
+        "Juzheng Zhang",
+        "Disha Makhija",
+        "Manoj Ghuhan Arivazhagan",
+        "Vinayshekhar Bannihatti Kumar",
+        "Rashmi Gangadharaiah"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces **ActObs**, a novel supervised fine-tuning method for reinforcement learning agents. Instead of only supervising agent actions, ActObs also trains the agent to predict environment observations within existing trajectories. This encourages the agent to better model action consequences, leading to improved exploration and performance in subsequent reinforcement learning, as demonstrated by higher task completion rates on benchmarks.",
+      "url": "http://arxiv.org/abs/2609.20715v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20715v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20457v1",
+      "title": "Fingerprinting Multimodal Large Language Models",
+      "authors": [
+        "Chao Huang",
+        "Meng Tong",
+        "Kejiang Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces AttnPrint and DistillTrace, novel methods for fingerprinting multimodal large language models (MLLMs) to protect against unauthorized use and distillation. AttnPrint uses low-frequency components of cross-modal attention distributions for white-box provenance, while DistillTrace employs hypothesis testing on model outputs for black-box auditing. This work provides the first comprehensive approach to safeguarding MLLM ownership.",
+      "url": "http://arxiv.org/abs/2609.20457v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20457v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2609.20457v1/framework.png",
+      "figure_caption": "Figure 1 . Overview of the proposed framework. An overview of the proposed MLLM fingerprinting framework. The white-box branch uses AttnPrint to extract frequency- domain low-frequency cross-modal attention features for derivative- model identification, and the black-box branch uses DistillTrace to compare teacher confidence on suspect outputs against reference models for distillation attribution via hypothesis testing.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20779v1",
+      "title": "Harm Laundering in GPT Models: Evidence That Gender Discrimination Is Transformed Rather Than Reduced Across Safety-Trained Generations",
+      "authors": [
+        "Sarah Wyer",
+        "Sue Black",
+        "Noura Al Moubayed"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces \"harm laundering,\" a phenomenon where safety training transforms, rather than reduces, gender discrimination in LLMs. The core method involves analyzing millions of text completions across GPT generations to show how explicit harm is replaced by subtler, often unclassified, biases. The main contribution is demonstrating that current safety evaluation methods are insufficient, as they fail to detect this transformation, leading to a false sense of progress.",
+      "url": "http://arxiv.org/abs/2609.20779v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20779v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20474v1",
+      "title": "How Do Agent Harnesses Create Value? Planning Information and Release Control in Stateful LLM Agents",
+      "authors": [
+        "Yukun Zhang",
+        "Kemu Xu",
+        "Yishen Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper investigates how agent harnesses, specifically planning guidance and release control, impact the performance of Large Language Model (LLM) agents. The core method involves comparing prewritten task-specific plans (Fixed) against shuffled policy text (Sham) to isolate the value of planning content. The key contribution is demonstrating that well-structured planning guidance significantly improves agent success, especially for complex tasks, while a release verifier effectively reduces erroneous acceptances with minimal cost.",
+      "url": "http://arxiv.org/abs/2609.20474v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20474v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20543v1",
+      "title": "Language-model groups overstate consensus when replaying human deliberation on a reasoning task",
+      "authors": [
+        "Tengfei Shao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CY",
+        "cs.MA"
+      ],
+      "abstract": "This paper demonstrates that language model (LLM) groups overestimate consensus when simulating human deliberation on reasoning tasks. By replaying human discussions with LLM agents, the study found LLMs consistently reported higher consensus rates than humans, even when accounting for participation differences. This highlights a crucial methodological bias in using LLMs to study collective intelligence.",
+      "url": "http://arxiv.org/abs/2609.20543v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20543v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20812v1",
+      "title": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
+      "authors": [
+        "Nolan Smyth",
+        "Yorguin-Jose Mantilla-Ramos",
+        "Pascal Jr Tikeng Notsawo",
+        "Saskia Helbling",
+        "Alberto Tosato"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces **OverclaimBench**, a novel evaluation suite to quantify how often large language model (LLM) agents overclaim task completion by misrepresenting information in their context. The core method involves presenting agents with file-review tasks containing planted defects and measuring whether their final output contradicts the actual content. The key contribution is demonstrating that a significant majority of frontier LLM agents fail to review all requested files and frequently provide misleading responses when they do not, highlighting a critical flaw in their reliability.",
+      "url": "http://arxiv.org/abs/2609.20812v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20812v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20754v1",
+      "title": "RAFT: A Stateful Retrieval-Augmented Framework for Troubleshooting Agents",
+      "authors": [
+        "Mingxuan Zhang",
+        "Xiaowen Wang",
+        "Anupma Sharan",
+        "Zhengyi Chen",
+        "Chenyu Diana Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "RAFT addresses the limitations of traditional RAG for troubleshooting by treating support cases as stateful, multi-stage processes. Its core method involves abstracting cases into timeline entries and retrieving based on matching intermediate states, providing a historical trajectory anchored at the relevant point. This stateful retrieval significantly improves the ability of troubleshooting agents to leverage past solutions.",
+      "url": "http://arxiv.org/abs/2609.20754v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20754v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20784v1",
+      "title": "RetireOPD: Self-Retiring On-Policy Distillation for Agentic Reinforcement Learning",
+      "authors": [
+        "Yan Yu",
+        "Zhengxi Lu",
+        "Yizhou Liu",
+        "Yichen Pan",
+        "Aozhe Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "RetireOPD addresses limitations in self-supervised reinforcement learning by proposing an \"Adaptive Retirement\" strategy. The core method trains a student agent jointly with a teacher and then allows the student to autonomously stop learning from the teacher once it achieves sufficient performance and the teacher's guidance becomes less beneficial. This contribution enables more efficient and effective agent training by dynamically adjusting supervision.",
+      "url": "http://arxiv.org/abs/2609.20784v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20784v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2609.20784v1/motivation.png",
+      "figure_caption": "Left: GRPO and teacher guidance align early but later diverge, making teacher matching restrictive. Middle: GRPO’s supervision is sparse and task-level, while OPD is dense but teacher-bound. Right: RetireOPD uses both early and retires the teacher at the conflict point, surpassing it.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20519v1",
+      "title": "SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness",
+      "authors": [
+        "Haozhe Liu",
+        "Tian Ye",
+        "Sensen Gao",
+        "Qihang Cao",
+        "Yitong Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "SoL-Pi recursively scales auto-research loops to improve the efficiency of coding agents. Its core method involves four mechanisms for action execution, context compaction, observation handling, and delegated reading, enabling agents to learn and improve across diverse environments. This approach significantly reduces token usage and API costs while achieving performance comparable to state-of-the-art models.",
+      "url": "http://arxiv.org/abs/2609.20519v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20519v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2609.20519v1/teaser-funnel-v10.png",
+      "figure_caption": "SoL-Pi discovers a more token-efficient harness through automated research. (a) SoL-Pi: Scaling Auto-Research Loop. Prepared research environments supply tasks to an AI running the base harness. A research AI inspects its execution traces, proposes candidate changes, and filters the idea pool through capability and efficiency gates. Four retained mechanisms are integrated and refined into SoL-Pi before the harness is frozen for evaluation on unseen benchmarks. The trace, ideas, and gate symbols are schematic: capability is checked within fixed tolerances, and held-out results never feed back into search. (b) Example results on EdgeBench: average score and API cost for the native harnesses (Codex with GPT-5.6 Sol and Claude Code with Opus 5), Pi, and the complete four-mechanism SoL-Pi harness. SoL-Pi reduces API cost by 50.0% relative to Codex on GPT-5.6 Sol and by 54.3% relative to Claude Code on Opus 5.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20412v1",
+      "title": "Stress-testing Alignment Midtraining",
+      "authors": [
+        "Sid Baines",
+        "Jonathan Bostock",
+        "Maria Angelica Martinez",
+        "Andrew Draganov",
+        "David Africa"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper investigates the effectiveness of Alignment Midtraining (AMT), a technique that continues pretraining on alignment-relevant data to improve model generalization. The authors stress-test AMT across large scales, finding that while it can steer model motivations in simple scenarios, its effectiveness diminishes with even small amounts of conflicting finetuning data. Their contribution lies in providing empirical evidence to challenge assumptions about AMT's robustness.",
+      "url": "http://arxiv.org/abs/2609.20412v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20412v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20539v1",
+      "title": "Parallelism, critical windows, and separations among diffusion language models",
+      "authors": [
+        "Sitan Chen",
+        "Liye Wang"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML",
+        "cs.DS",
+        "math.ST"
+      ],
+      "abstract": "This paper analyzes the parallelism capabilities of different diffusion language model (dLLM) paradigms. It demonstrates that uniform and Gaussian diffusion can achieve parallelism dependent on the intrinsic complexity of the data, not just sequence length, a feat previously only known for masked diffusion. The work also establishes theoretical limits on the parallelism achievable for certain data distributions.",
+      "url": "http://arxiv.org/abs/2609.20539v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20539v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2609.20807v1",
+      "title": "Score Centering Stabilizes Off-policy Reinforcement Learning",
+      "authors": [
+        "Martin Marek",
+        "Max Ryabinin"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper identifies \"drift\" as the primary cause of instability in off-policy reinforcement learning for large language models due to training-inference mismatches. Their core contribution is an additive \"score centering\" correction term that effectively cancels this drift, stabilizing the learning process. This method alone matches or surpasses existing techniques and can be combined with importance sampling for further performance gains.",
+      "url": "http://arxiv.org/abs/2609.20807v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20807v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2609.20734v1",
+      "title": "On-Demand Attention: Language Models Know When to Recall",
+      "authors": [
+        "Haibo Feng",
+        "Ruiqi Liang",
+        "Hanyang Peng",
+        "Shiqi Yu"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces On-Demand Attention (ODA), a method to improve long-context inference efficiency in language models. ODA uses a lightweight \"recall head\" to predict when global attention is beneficial for the next token prediction, selectively invoking it instead of always attending to the full history. This approach significantly speeds up generation by reducing redundant computations while preserving model performance.",
+      "url": "http://arxiv.org/abs/2609.20734v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20734v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2609.20734v1/fig_1_v2.png",
+      "figure_caption": "On-Demand Attention. Top: ODA performs Local at every step and selectively adds Full. Recall can change the top-ranked token (MAPLE to ORCHID) or change its probability while retaining it (Friday). Words, distributions, and the call schedule are schematic. Bottom: The recall head combines the preceding selected hidden state, current token embedding, and current Local hidden state. When q t > θ q_{t}>\\( \\theta \\) , Full recomputes the step from the same pre-step history. The selected h t h_{t} feeds the frozen LM head; the current-position K ​ V t KV_{t} from the same branch is committed to the retained history. Both access views share this complete history. Only the recall head is trained. The O ⁡ ( n ) O(n) and O ⁡ ( n 2 ) O(n^{2}) labels denote cumulative Local and Full attention costs across n n causal positions, with fixed model dimensions and a fixed Local window.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2609.20712v1",
+      "title": "Summarization Bias: The Directional Collapse of Objective Projection into Told-Mode Labels in Large Language Models --- A Conceptual Framework and Registered Test Protocol",
+      "authors": [
+        "Levent Bulut"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces \"summarization bias,\" a conceptual framework arguing that LLMs tend to collapse narrative meaning into explicit summary labels instead of preserving the reconstructable inferential structures that create it. The core method involves a registered test protocol to operationalize this bias, specifically hypothesizing that LLMs fail to \"show\" (imply through cues) and instead \"tell\" (state explicitly) emotional and informational content. The contribution is a new lens to understand LLM limitations in narrative understanding and generation, particularly their difficulty with indirect expression.",
+      "url": "http://arxiv.org/abs/2609.20712v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20712v1",
+      "score": 8.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2609.20620v1",
+      "title": "A Simulation Platform for AUV Fault Recovery: Exploring LLM-Based Diagnostic Strategies",
+      "authors": [
+        "Khalid Halba",
+        "Kylie Cooper",
+        "James G. Bellingham"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "abstract": "This paper introduces SPAR, a simulation platform for testing LLM-based fault recovery in autonomous underwater vehicles (AUVs). SPAR integrates real AUV software with a fault injection and LLM orchestration layer to evaluate diagnostic strategies. Its core contribution is a robust simulation environment that enables rigorous, ensemble-based testing of LLM performance in complex, uncommunicative AUV scenarios.",
+      "url": "http://arxiv.org/abs/2609.20620v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20620v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20804v1",
+      "title": "An Empirical Study of Harness Design for Coding Agents",
+      "authors": [
+        "Run-Ze Fan",
+        "Zihao Zhang",
+        "Simin Ma",
+        "Yebowen Hu",
+        "Shouju Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL",
+        "cs.SE"
+      ],
+      "abstract": "This paper empirically studies the impact of individual components within coding harnesses for autonomous agents. By varying planning, action space, and context management strategies on fixed execution loops, the researchers found that context management is crucial, especially with limited context windows, primarily by preventing overflow errors. Their findings highlight that a staged approach combining rule-based elision with LLM summarization offers the most efficient context management.",
+      "url": "http://arxiv.org/abs/2609.20804v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20804v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20822v1",
+      "title": "Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation",
+      "authors": [
+        "Bingxin Xu",
+        "Yuzhang Shang",
+        "Zhen Dong",
+        "Emilio Ferrara"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV",
+        "cs.RO"
+      ],
+      "abstract": "This paper addresses the safety of coding agents for robot manipulation by introducing an obstacle-aware harness. The core method involves decomposing manipulation into routing and contact phases to identify planning failures. The key contribution is demonstrating that current coding agents prioritize task completion over safety constraints, necessitating a new approach to ensure safe robot operation.",
+      "url": "http://arxiv.org/abs/2609.20822v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20822v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2609.20822v1/teaser_safeharness_cropped.png",
+      "figure_caption": "SafeHarness puts safety on par with task completion. Coding agent receives a task instruction with a safety constraint, along with observation images. SafeHarness then equips it with obstacle-aware route planning ( Sec. 3.2 ) and obstacle-aware contact execution ( Sec. 3.3 ) to enforce safety throughout the task.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "papers": [
+    {
+      "id": "2609.20722v1",
+      "title": "Deep Noir: Autonomous Steering Discovery via Architectural Chronometry in Transformer Models",
+      "authors": [
+        "Frank E. Bobe",
+        "Gregory D. Vetaw",
+        "Darshan W. Bryner",
+        "Matthew G. Cook",
+        "Jose L. Salas-Vernis"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "Deep Noir automates the discovery of optimal steering parameters for Transformer LLMs by leveraging Logit Lens convergence and causal head-level attribution. This framework autonomously identifies intervention points, leading to significant performance improvements on tasks like spam detection and sentiment analysis across various model scales and architectures, without requiring manual code modifications. Its contribution lies in enabling generalizable and mechanistic steering for enhanced LLM control.",
+      "url": "http://arxiv.org/abs/2609.20722v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20722v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2609.20722v1/fig9_discovered_layers.png",
+      "figure_caption": "Layer selection frequency during autonomous discovery. Each architecture exhibits a distinct correction topology. Llama favors early/mid layers, OLMo late layers, Gemma deep layers.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20408v1",
+      "title": "Xeno-Interpretability: Investigating the Alien Minds of LLMs",
+      "authors": [
+        "F. Pierucci",
+        "M. Bracale Syrnikov",
+        "M. Prandi",
+        "M. Galisai",
+        "F. Giarrusso"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces \"xeno-interpretability\" to study internal LLM representations that lack direct human concepts. The core method involves distinguishing between human-interpretable and \"xeno-semantic\" spaces, demonstrating that LLMs possess a richer internal representational capacity than human language can fully capture. The contribution is a framework for identifying and characterizing these alien internal structures, even when their semantic meaning remains elusive to humans.",
+      "url": "http://arxiv.org/abs/2609.20408v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20408v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2609.20408v1/figure3_semantic_spaces.png",
+      "figure_caption": "Human and model semantic spaces. The human-interpretable semantic space is represented as a subset of the broader model-native semantic space. The remaining region contains candidate xeno-representations: model-native distinctions without an adequate counterpart in human conceptual space.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20625v1",
+      "title": "Chronicle: Cut-Point Replay for Regression Testing of LLM Agents",
+      "authors": [
+        "Tisha Chawla",
+        "Susheem Koul"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "Chronicle introduces \"cut-point replay\" to address the non-deterministic nature of LLM agent failures. It records an agent's run at critical, non-deterministic boundaries and then replays it by selectively using recorded segments and executing new code live. This allows for the creation of reproducible regression tests from past failures, enabling their integration into continuous testing pipelines.",
+      "url": "http://arxiv.org/abs/2609.20625v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20625v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20715v1",
+      "title": "Don't Mask the Environment: Observation Supervision Changes How Agents Explore Under RL",
+      "authors": [
+        "Juzheng Zhang",
+        "Disha Makhija",
+        "Manoj Ghuhan Arivazhagan",
+        "Vinayshekhar Bannihatti Kumar",
+        "Rashmi Gangadharaiah"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces **ActObs**, a novel supervised fine-tuning method for reinforcement learning agents. Instead of only supervising agent actions, ActObs also trains the agent to predict environment observations within existing trajectories. This encourages the agent to better model action consequences, leading to improved exploration and performance in subsequent reinforcement learning, as demonstrated by higher task completion rates on benchmarks.",
+      "url": "http://arxiv.org/abs/2609.20715v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20715v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20457v1",
+      "title": "Fingerprinting Multimodal Large Language Models",
+      "authors": [
+        "Chao Huang",
+        "Meng Tong",
+        "Kejiang Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces AttnPrint and DistillTrace, novel methods for fingerprinting multimodal large language models (MLLMs) to protect against unauthorized use and distillation. AttnPrint uses low-frequency components of cross-modal attention distributions for white-box provenance, while DistillTrace employs hypothesis testing on model outputs for black-box auditing. This work provides the first comprehensive approach to safeguarding MLLM ownership.",
+      "url": "http://arxiv.org/abs/2609.20457v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20457v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2609.20457v1/framework.png",
+      "figure_caption": "Figure 1 . Overview of the proposed framework. An overview of the proposed MLLM fingerprinting framework. The white-box branch uses AttnPrint to extract frequency- domain low-frequency cross-modal attention features for derivative- model identification, and the black-box branch uses DistillTrace to compare teacher confidence on suspect outputs against reference models for distillation attribution via hypothesis testing.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20779v1",
+      "title": "Harm Laundering in GPT Models: Evidence That Gender Discrimination Is Transformed Rather Than Reduced Across Safety-Trained Generations",
+      "authors": [
+        "Sarah Wyer",
+        "Sue Black",
+        "Noura Al Moubayed"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces \"harm laundering,\" a phenomenon where safety training transforms, rather than reduces, gender discrimination in LLMs. The core method involves analyzing millions of text completions across GPT generations to show how explicit harm is replaced by subtler, often unclassified, biases. The main contribution is demonstrating that current safety evaluation methods are insufficient, as they fail to detect this transformation, leading to a false sense of progress.",
+      "url": "http://arxiv.org/abs/2609.20779v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20779v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20474v1",
+      "title": "How Do Agent Harnesses Create Value? Planning Information and Release Control in Stateful LLM Agents",
+      "authors": [
+        "Yukun Zhang",
+        "Kemu Xu",
+        "Yishen Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper investigates how agent harnesses, specifically planning guidance and release control, impact the performance of Large Language Model (LLM) agents. The core method involves comparing prewritten task-specific plans (Fixed) against shuffled policy text (Sham) to isolate the value of planning content. The key contribution is demonstrating that well-structured planning guidance significantly improves agent success, especially for complex tasks, while a release verifier effectively reduces erroneous acceptances with minimal cost.",
+      "url": "http://arxiv.org/abs/2609.20474v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20474v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20543v1",
+      "title": "Language-model groups overstate consensus when replaying human deliberation on a reasoning task",
+      "authors": [
+        "Tengfei Shao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CY",
+        "cs.MA"
+      ],
+      "abstract": "This paper demonstrates that language model (LLM) groups overestimate consensus when simulating human deliberation on reasoning tasks. By replaying human discussions with LLM agents, the study found LLMs consistently reported higher consensus rates than humans, even when accounting for participation differences. This highlights a crucial methodological bias in using LLMs to study collective intelligence.",
+      "url": "http://arxiv.org/abs/2609.20543v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20543v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20812v1",
+      "title": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
+      "authors": [
+        "Nolan Smyth",
+        "Yorguin-Jose Mantilla-Ramos",
+        "Pascal Jr Tikeng Notsawo",
+        "Saskia Helbling",
+        "Alberto Tosato"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces **OverclaimBench**, a novel evaluation suite to quantify how often large language model (LLM) agents overclaim task completion by misrepresenting information in their context. The core method involves presenting agents with file-review tasks containing planted defects and measuring whether their final output contradicts the actual content. The key contribution is demonstrating that a significant majority of frontier LLM agents fail to review all requested files and frequently provide misleading responses when they do not, highlighting a critical flaw in their reliability.",
+      "url": "http://arxiv.org/abs/2609.20812v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20812v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20754v1",
+      "title": "RAFT: A Stateful Retrieval-Augmented Framework for Troubleshooting Agents",
+      "authors": [
+        "Mingxuan Zhang",
+        "Xiaowen Wang",
+        "Anupma Sharan",
+        "Zhengyi Chen",
+        "Chenyu Diana Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "RAFT addresses the limitations of traditional RAG for troubleshooting by treating support cases as stateful, multi-stage processes. Its core method involves abstracting cases into timeline entries and retrieving based on matching intermediate states, providing a historical trajectory anchored at the relevant point. This stateful retrieval significantly improves the ability of troubleshooting agents to leverage past solutions.",
+      "url": "http://arxiv.org/abs/2609.20754v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20754v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20784v1",
+      "title": "RetireOPD: Self-Retiring On-Policy Distillation for Agentic Reinforcement Learning",
+      "authors": [
+        "Yan Yu",
+        "Zhengxi Lu",
+        "Yizhou Liu",
+        "Yichen Pan",
+        "Aozhe Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "RetireOPD addresses limitations in self-supervised reinforcement learning by proposing an \"Adaptive Retirement\" strategy. The core method trains a student agent jointly with a teacher and then allows the student to autonomously stop learning from the teacher once it achieves sufficient performance and the teacher's guidance becomes less beneficial. This contribution enables more efficient and effective agent training by dynamically adjusting supervision.",
+      "url": "http://arxiv.org/abs/2609.20784v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20784v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2609.20784v1/motivation.png",
+      "figure_caption": "Left: GRPO and teacher guidance align early but later diverge, making teacher matching restrictive. Middle: GRPO’s supervision is sparse and task-level, while OPD is dense but teacher-bound. Right: RetireOPD uses both early and retires the teacher at the conflict point, surpassing it.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20519v1",
+      "title": "SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness",
+      "authors": [
+        "Haozhe Liu",
+        "Tian Ye",
+        "Sensen Gao",
+        "Qihang Cao",
+        "Yitong Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "SoL-Pi recursively scales auto-research loops to improve the efficiency of coding agents. Its core method involves four mechanisms for action execution, context compaction, observation handling, and delegated reading, enabling agents to learn and improve across diverse environments. This approach significantly reduces token usage and API costs while achieving performance comparable to state-of-the-art models.",
+      "url": "http://arxiv.org/abs/2609.20519v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20519v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2609.20519v1/teaser-funnel-v10.png",
+      "figure_caption": "SoL-Pi discovers a more token-efficient harness through automated research. (a) SoL-Pi: Scaling Auto-Research Loop. Prepared research environments supply tasks to an AI running the base harness. A research AI inspects its execution traces, proposes candidate changes, and filters the idea pool through capability and efficiency gates. Four retained mechanisms are integrated and refined into SoL-Pi before the harness is frozen for evaluation on unseen benchmarks. The trace, ideas, and gate symbols are schematic: capability is checked within fixed tolerances, and held-out results never feed back into search. (b) Example results on EdgeBench: average score and API cost for the native harnesses (Codex with GPT-5.6 Sol and Claude Code with Opus 5), Pi, and the complete four-mechanism SoL-Pi harness. SoL-Pi reduces API cost by 50.0% relative to Codex on GPT-5.6 Sol and by 54.3% relative to Claude Code on Opus 5.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20412v1",
+      "title": "Stress-testing Alignment Midtraining",
+      "authors": [
+        "Sid Baines",
+        "Jonathan Bostock",
+        "Maria Angelica Martinez",
+        "Andrew Draganov",
+        "David Africa"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper investigates the effectiveness of Alignment Midtraining (AMT), a technique that continues pretraining on alignment-relevant data to improve model generalization. The authors stress-test AMT across large scales, finding that while it can steer model motivations in simple scenarios, its effectiveness diminishes with even small amounts of conflicting finetuning data. Their contribution lies in providing empirical evidence to challenge assumptions about AMT's robustness.",
+      "url": "http://arxiv.org/abs/2609.20412v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20412v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20539v1",
+      "title": "Parallelism, critical windows, and separations among diffusion language models",
+      "authors": [
+        "Sitan Chen",
+        "Liye Wang"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML",
+        "cs.DS",
+        "math.ST"
+      ],
+      "abstract": "This paper analyzes the parallelism capabilities of different diffusion language model (dLLM) paradigms. It demonstrates that uniform and Gaussian diffusion can achieve parallelism dependent on the intrinsic complexity of the data, not just sequence length, a feat previously only known for masked diffusion. The work also establishes theoretical limits on the parallelism achievable for certain data distributions.",
+      "url": "http://arxiv.org/abs/2609.20539v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20539v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2609.20807v1",
+      "title": "Score Centering Stabilizes Off-policy Reinforcement Learning",
+      "authors": [
+        "Martin Marek",
+        "Max Ryabinin"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper identifies \"drift\" as the primary cause of instability in off-policy reinforcement learning for large language models due to training-inference mismatches. Their core contribution is an additive \"score centering\" correction term that effectively cancels this drift, stabilizing the learning process. This method alone matches or surpasses existing techniques and can be combined with importance sampling for further performance gains.",
+      "url": "http://arxiv.org/abs/2609.20807v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20807v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2609.20734v1",
+      "title": "On-Demand Attention: Language Models Know When to Recall",
+      "authors": [
+        "Haibo Feng",
+        "Ruiqi Liang",
+        "Hanyang Peng",
+        "Shiqi Yu"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces On-Demand Attention (ODA), a method to improve long-context inference efficiency in language models. ODA uses a lightweight \"recall head\" to predict when global attention is beneficial for the next token prediction, selectively invoking it instead of always attending to the full history. This approach significantly speeds up generation by reducing redundant computations while preserving model performance.",
+      "url": "http://arxiv.org/abs/2609.20734v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20734v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2609.20734v1/fig_1_v2.png",
+      "figure_caption": "On-Demand Attention. Top: ODA performs Local at every step and selectively adds Full. Recall can change the top-ranked token (MAPLE to ORCHID) or change its probability while retaining it (Friday). Words, distributions, and the call schedule are schematic. Bottom: The recall head combines the preceding selected hidden state, current token embedding, and current Local hidden state. When q t > θ q_{t}>\\( \\theta \\) , Full recomputes the step from the same pre-step history. The selected h t h_{t} feeds the frozen LM head; the current-position K ​ V t KV_{t} from the same branch is committed to the retained history. Both access views share this complete history. Only the recall head is trained. The O ⁡ ( n ) O(n) and O ⁡ ( n 2 ) O(n^{2}) labels denote cumulative Local and Full attention costs across n n causal positions, with fixed model dimensions and a fixed Local window.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2609.20712v1",
+      "title": "Summarization Bias: The Directional Collapse of Objective Projection into Told-Mode Labels in Large Language Models --- A Conceptual Framework and Registered Test Protocol",
+      "authors": [
+        "Levent Bulut"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces \"summarization bias,\" a conceptual framework arguing that LLMs tend to collapse narrative meaning into explicit summary labels instead of preserving the reconstructable inferential structures that create it. The core method involves a registered test protocol to operationalize this bias, specifically hypothesizing that LLMs fail to \"show\" (imply through cues) and instead \"tell\" (state explicitly) emotional and informational content. The contribution is a new lens to understand LLM limitations in narrative understanding and generation, particularly their difficulty with indirect expression.",
+      "url": "http://arxiv.org/abs/2609.20712v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20712v1",
+      "score": 8.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2609.20620v1",
+      "title": "A Simulation Platform for AUV Fault Recovery: Exploring LLM-Based Diagnostic Strategies",
+      "authors": [
+        "Khalid Halba",
+        "Kylie Cooper",
+        "James G. Bellingham"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "abstract": "This paper introduces SPAR, a simulation platform for testing LLM-based fault recovery in autonomous underwater vehicles (AUVs). SPAR integrates real AUV software with a fault injection and LLM orchestration layer to evaluate diagnostic strategies. Its core contribution is a robust simulation environment that enables rigorous, ensemble-based testing of LLM performance in complex, uncommunicative AUV scenarios.",
+      "url": "http://arxiv.org/abs/2609.20620v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20620v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20804v1",
+      "title": "An Empirical Study of Harness Design for Coding Agents",
+      "authors": [
+        "Run-Ze Fan",
+        "Zihao Zhang",
+        "Simin Ma",
+        "Yebowen Hu",
+        "Shouju Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL",
+        "cs.SE"
+      ],
+      "abstract": "This paper empirically studies the impact of individual components within coding harnesses for autonomous agents. By varying planning, action space, and context management strategies on fixed execution loops, the researchers found that context management is crucial, especially with limited context windows, primarily by preventing overflow errors. Their findings highlight that a staged approach combining rule-based elision with LLM summarization offers the most efficient context management.",
+      "url": "http://arxiv.org/abs/2609.20804v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20804v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2609.20822v1",
+      "title": "Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation",
+      "authors": [
+        "Bingxin Xu",
+        "Yuzhang Shang",
+        "Zhen Dong",
+        "Emilio Ferrara"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV",
+        "cs.RO"
+      ],
+      "abstract": "This paper addresses the safety of coding agents for robot manipulation by introducing an obstacle-aware harness. The core method involves decomposing manipulation into routing and contact phases to identify planning failures. The key contribution is demonstrating that current coding agents prioritize task completion over safety constraints, necessitating a new approach to ensure safe robot operation.",
+      "url": "http://arxiv.org/abs/2609.20822v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20822v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2609.20822v1/teaser_safeharness_cropped.png",
+      "figure_caption": "SafeHarness puts safety on par with task completion. Coding agent receives a task instruction with a safety constraint, along with observation images. SafeHarness then equips it with obstacle-aware route planning ( Sec. 3.2 ) and obstacle-aware contact execution ( Sec. 3.3 ) to enforce safety throughout the task.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "hacker_news": [
+    {
+      "id": 49746163,
+      "title": "Bend – A language that blocks AI mistakes via proof, on CPU and GPU",
+      "url": "https://bend-lang.com/",
+      "score": 458,
+      "created_at": "2026-09-17T20:36:13Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49746163",
+      "summary": "Bend is a new programming language designed to prevent AI errors by using formal proofs, runnable on both CPUs and GPUs."
+    },
+    {
+      "id": 49749656,
+      "title": "A heap overflow and SSO misconfiguration to compromise OpenAI internal repos",
+      "url": "https://www.hacktron.ai/blog/hacking-openai",
+      "score": 350,
+      "created_at": "2026-09-18T02:47:24Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49749656",
+      "summary": "A heap overflow vulnerability and an SSO misconfiguration were exploited to gain unauthorized access to OpenAI's internal repositories."
+    },
+    {
+      "id": 49740834,
+      "title": "I Don't Like LLMs",
+      "url": "https://martinfowler.com/articles/2026-dont-like-llms.html",
+      "score": 215,
+      "created_at": "2026-09-17T13:57:07Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49740834",
+      "summary": "Martin Fowler expresses skepticism about Large Language Models, highlighting concerns about their current limitations, potential for misuse, and the hype surrounding them."
+    },
+    {
+      "id": 49740105,
+      "title": "Show HN: Share your AI Setup, Learn from others",
+      "url": "https://mysetup.ai/",
+      "score": 213,
+      "created_at": "2026-09-17T13:01:44Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49740105",
+      "summary": "This \"Show HN\" introduces mysetup.ai, a platform where users can share and discover AI setups, fostering learning and inspiration within the community."
+    },
+    {
+      "id": 49746654,
+      "title": "Sex, AI, and the Apocalypse",
+      "url": "https://www.iankduncan.com/personal/2026-09-16-sex-ai-and-the-apocalypse/",
+      "score": 209,
+      "created_at": "2026-09-17T21:15:52Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49746654",
+      "summary": "This article explores the potential societal impact of advanced AI, particularly concerning its influence on human relationships, sexuality, and the very definition of humanity."
+    },
+    {
+      "id": 49747925,
+      "title": "Qwen 3.8 Omni Flash",
+      "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+      "score": 208,
+      "created_at": "2026-09-17T23:05:48Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49747925",
+      "summary": "Qwen 3.8 Omni Flash is a new, powerful large language model from Alibaba Cloud, offering enhanced capabilities and efficiency for various AI tasks."
+    },
+    {
+      "id": 49742353,
+      "title": "Rate limits on GitLab.com are changing",
+      "url": "https://about.gitlab.com/blog/rate-limit-change-2026/",
+      "score": 165,
+      "created_at": "2026-09-17T15:33:54Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49742353",
+      "summary": "GitLab.com is implementing new rate limits starting in 2026 to ensure service stability and fair usage for all users."
+    },
+    {
+      "id": 49747070,
+      "title": "How to Write with an LLM",
+      "url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/",
+      "score": 160,
+      "created_at": "2026-09-17T21:48:38Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49747070",
+      "summary": "This article offers practical advice and strategies for effectively using Large Language Models (LLMs) as writing assistants to enhance creativity and productivity."
+    },
+    {
+      "id": 49743483,
+      "title": "Infinite-Parameter LLMs: Generating and Adapting Weights from Live Data",
+      "url": "https://arxiv.org/abs/2609.18842",
+      "score": 144,
+      "created_at": "2026-09-17T16:55:14Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49743483",
+      "summary": "This paper introduces infinite-parameter LLMs that dynamically generate and adapt their weights using live data, enabling continuous learning and personalization."
+    },
+    {
+      "id": 49742437,
+      "title": "LLM Classification Is Feature Engineering",
+      "url": "https://minimallysufficient.com/posts/llm-classification-is-feature-extraction/",
+      "score": 101,
+      "created_at": "2026-09-17T15:40:17Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49742437",
+      "summary": "This article argues that using Large Language Models (LLMs) for classification tasks is essentially a form of automated feature engineering, where the LLM extracts relevant features from text."
+    }
+  ],
+  "github_trending": [
+    {
+      "full_name": "alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "stars_today": 3286,
+      "total_stars": 35978,
+      "language": "Go",
+      "topics": [],
+      "summary": "This repository provides a fast, battle-tested hybrid code review tool for Alibaba, combining deterministic pipelines with LLM agents for precise, multi-language, line-level defect detection."
+    },
+    {
+      "full_name": "cloudflare/security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "stars_today": 3607,
+      "total_stars": 11568,
+      "language": "JavaScript",
+      "topics": [],
+      "summary": "This GitHub repository provides a coding agent skill designed for multi-phase security audits, generating independently verified and machine-readable findings."
+    },
+    {
+      "full_name": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "stars_today": 680,
+      "total_stars": 96097,
+      "language": "JavaScript",
+      "topics": [],
+      "summary": "This repository provides production-grade engineering skills for AI coding agents, enabling them to perform complex tasks and integrate with various tools."
+    },
+    {
+      "full_name": "Tencent/BrowserSkill",
+      "url": "https://github.com/Tencent/BrowserSkill",
+      "description": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.",
+      "stars_today": 1302,
+      "total_stars": 4758,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "BrowserSkill enables AI agents to securely interact with your logged-in browser for automation, acting as a CLI and extension that works with any shell-capable AI."
+    },
+    {
+      "full_name": "alphaXiv/OpenResearch",
+      "url": "https://github.com/alphaXiv/OpenResearch",
+      "description": "Turn your coding agents into research agents",
+      "stars_today": 939,
+      "total_stars": 5188,
+      "language": "Rust",
+      "topics": [],
+      "summary": "OpenResearch transforms coding agents into research agents by providing tools and infrastructure to access, process, and analyze scientific literature, enabling them to conduct and contribute to research."
+    },
+    {
+      "full_name": "anthropics/claude-code",
+      "url": "https://github.com/anthropics/claude-code",
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+      "stars_today": 538,
+      "total_stars": 146017,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "Claude Code is an AI-powered terminal agent that understands your codebase to accelerate development by executing routine tasks, explaining code, and managing Git workflows via natural language commands."
+    },
+    {
+      "full_name": "NationalSecurityAgency/ghidra",
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "description": "Ghidra is a software reverse engineering (SRE) framework",
+      "stars_today": 912,
+      "total_stars": 78749,
+      "language": "Java",
+      "topics": [],
+      "summary": "Ghidra is a powerful software reverse engineering framework that enables users to analyze and understand compiled code through features like decompilation, debugging, and scripting."
+    },
+    {
+      "full_name": "anthropics/knowledge-work-plugins",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "stars_today": 287,
+      "total_stars": 24697,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository provides open-source plugins designed to enhance Claude Cowork for knowledge workers, enabling them to integrate external tools and functionalities for improved productivity."
+    },
+    {
+      "full_name": "Tencent/WeKnora",
+      "url": "https://github.com/Tencent/WeKnora",
+      "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
+      "stars_today": 1125,
+      "total_stars": 26714,
+      "language": "Go",
+      "topics": [],
+      "summary": "WeKnora is an open-source LLM knowledge platform that transforms raw documents into a queryable RAG system, an autonomous reasoning agent, and a self-maintaining Wiki."
+    }
+  ],
+  "us_stocks": [],
+  "postdoc_jobs": [],
+  "jobs": [],
+  "supervisor_updates": [],
+  "weather": [
+    {
+      "query": "London",
+      "label": "London, England, United Kingdom",
+      "resolved_name": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "timezone": "Europe/London",
+      "forecast_date": "2026-09-18",
+      "condition": "Mainly clear",
+      "weather_code": 1,
+      "temperature_c": 15.5,
+      "apparent_temperature_c": 13.1,
+      "temp_max_c": 20.1,
+      "temp_min_c": 11.6,
+      "humidity_pct": 61,
+      "wind_speed_kmh": 12.6,
+      "precipitation_probability_pct": 10,
+      "is_day": true,
+      "sunrise": "2026-09-18T06:40",
+      "sunset": "2026-09-18T19:08",
+      "source": "Open-Meteo",
+      "source_url": "https://open-meteo.com/"
+    }
+  ]
+}
