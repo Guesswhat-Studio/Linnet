@@ -1,0 +1,1735 @@
+{
+  "date": "2026-10-08",
+  "generated_at": "2026-10-08T09:42:07.842612+00:00",
+  "sections_ordered": [
+    {
+      "key": "quote_of_day",
+      "payload_key": "quote_of_day",
+      "title": "Words for the Morning",
+      "icon": "✦",
+      "items": [
+        {
+          "quote": "If I like a food, I'll eat it, even if I know it's not good for me.",
+          "author": "Kim Kardashian",
+          "category": "food"
+        }
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "key": "weather",
+      "payload_key": "weather",
+      "title": "Weather",
+      "icon": "🌦️",
+      "items": [
+        {
+          "query": "London",
+          "label": "London, England, United Kingdom",
+          "resolved_name": "London",
+          "region": "England",
+          "country": "United Kingdom",
+          "latitude": 51.50853,
+          "longitude": -0.12574,
+          "timezone": "Europe/London",
+          "forecast_date": "2026-10-08",
+          "condition": "Clear sky",
+          "weather_code": 0,
+          "temperature_c": 10.3,
+          "apparent_temperature_c": 6.6,
+          "temp_max_c": 14.9,
+          "temp_min_c": 7.9,
+          "humidity_pct": 63,
+          "wind_speed_kmh": 15.1,
+          "precipitation_probability_pct": 17,
+          "is_day": true,
+          "sunrise": "2026-10-08T07:12",
+          "sunset": "2026-10-08T18:22",
+          "source": "Open-Meteo",
+          "source_url": "https://open-meteo.com/"
+        }
+      ],
+      "meta": {
+        "count": 1,
+        "city": "London"
+      }
+    },
+    {
+      "key": "arxiv",
+      "payload_key": "papers",
+      "title": "arXiv Papers",
+      "icon": "📄",
+      "items": [
+        {
+          "id": "2610.10358v1",
+          "title": "Open-MMUnlearning: Unifying Methods and Evaluation for MLLM Unlearning",
+          "authors": [
+            "Junkai Chen",
+            "Yuhao He",
+            "Qianshan Wei",
+            "Junxiang You",
+            "Jingwen Shao"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces Open-MMUnlearning, a unified, open-source framework for evaluating machine unlearning in multimodal large language models (MLLMs). It addresses the fragmentation in existing methods by providing standardized interfaces for preparing models, processing data, applying unlearning techniques, and evaluating performance across privacy, safety, and copyright concerns. The framework's key contribution is enabling systematic and comprehensive assessment of MLLM unlearning by supporting diverse models, methods, and benchmarks.",
+          "url": "http://arxiv.org/abs/2610.10358v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.10358v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2610.10358v1/Overview.png",
+          "figure_caption": "Overview of Open-MMUnlearning . The Data Worker prepares fine-tuning, evaluation, and unlearning data from benchmarks spanning privacy, safety, and copyright. The Model Loader supplies MLLM backbones, the Trainer executes fine-tuning and general and MLLM-specific unlearning methods, and the Unified Evaluator assesses Forget Quality, Model Utility, and Robustness through model-, input-, and output-side evaluations.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2610.10478v1",
+          "title": "Before They Can Solve: Predicting Post-Training Coding-Agent Performance from Base Models",
+          "authors": [
+            "Tan Yu",
+            "Alexander Bukharin",
+            "Khushi Bhardwaj",
+            "Jennifer Williams",
+            "Zirui Liu"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.SE"
+          ],
+          "abstract": "This paper proposes a method to predict the potential of base models for agentic coding tasks without expensive post-training. It identifies the \"decisive step\" within a successful agent trajectory – the first code-changing action that makes the repository pass tests. This allows researchers to select promising base models by evaluating their ability to reach this decisive step, saving computational resources.",
+          "url": "http://arxiv.org/abs/2610.10478v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.10478v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2610.10478v1/new-figure1.png",
+          "figure_caption": "A unified agentic trajectory-derived probing framework. By replaying a coding-agent trajectory on a coding task against the task’s own verifier V V , we locate the decisive step T ⋆ T^{\\( \\star \\)} , the earliest step whose cumulative patch resolves the task. At this decisive step, (i) Decisive-Action BPB measures the byte-normalized likelihood which a base model assigns to the golden action; (ii) Patch MCQ evaluates base model’s capability of differentiating the golden action from non-resolving alternatives; (iii) Prefix-conditioned pass ​ @ ​ K \\( \\mathrm{pass@} \\)K measures a base model’s empirical success rate under sampling: it draws K K continuations from T ⋆ T^{\\( \\star \\)} and lets the task’s own verifier V V judge them.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2610.10311v1",
+          "title": "Fault-tolerant foundation models",
+          "authors": [
+            "Trevor McCourt",
+            "Ila R. Fiete",
+            "Isaac L. Chuang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.AR"
+          ],
+          "abstract": "This paper demonstrates that large language models (LLMs) can be trained to be resilient to unreliable hardware, with error tolerance increasing with model size. The core method involves modifying neural scaling laws based on training on simulated faulty hardware, revealing that models learn to operate within inherent error-correcting codes. The main contribution is the conjecture that appropriately trained LLMs can be formally fault-tolerant, opening a path to significant energy savings by enabling AI inference on low-power, unreliable hardware.",
+          "url": "http://arxiv.org/abs/2610.10311v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.10311v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2610.10355v1",
+          "title": "MIRA: A Musical Intent Refinement Agent for Aligning Text-to-Music Generation with User Intent",
+          "authors": [
+            "Zekai Liu",
+            "Zhilin Wang",
+            "Xuzheng He",
+            "Yu Cheng",
+            "Yang Yang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.SD"
+          ],
+          "abstract": "This paper addresses the challenge of aligning text-to-music generation with user intent by proposing a rubric-based evaluation framework. Their core method, MIRA (Musical Intent Refinement Agent), refines prompts for black-box text-to-music models by iteratively revising them to satisfy a detailed rubric of explicit and implicit musical requirements. This approach provides diagnostic evaluation and improves generation quality by focusing on specific musical dimensions.",
+          "url": "http://arxiv.org/abs/2610.10355v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.10355v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2610.10355v1/figures/mura_benchmark_pipeline.png",
+          "figure_caption": "Overview of MuRA-Bench construction and evaluation. Expert-revised, request-specific rubrics support fine-grained assessment with MusicFlamingo. Gold rubrics are used exclusively for evaluation and are not exposed to the generation system.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2610.10455v1",
+          "title": "PHRBench: A Behavioral Evaluation of Post-Hallucination Reasoning in LLMs",
+          "authors": [
+            "Linghao Meng",
+            "Feng He",
+            "Xuan Yang",
+            "Junyuan Mao",
+            "Pinze Ren"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces PHRBench, a novel benchmark designed to evaluate how Large Language Models (LLMs) handle and correct hallucinated information during multi-stage reasoning. The core method involves a controlled evaluation of LLM reasoning trajectories, categorizing their behavior as Hallucination Compliance, Avoidance, or Heuristic Correction, independent of final answer accuracy. The main contribution is a comprehensive behavioral analysis of Post-Hallucination Reasoning (PHR), revealing that successful correction is infrequent and often linked to more dynamic belief updates within the model's reasoning process.",
+          "url": "http://arxiv.org/abs/2610.10455v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.10455v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2610.10455v1/Figures/Fig1.png",
+          "figure_caption": "Overview of behaviorally structured post-hallucination reasoning. (a) Hallucinations that escape upstream detection can propagate into downstream reasoning, making recovery critical for reliable LLM systems. (b) Final correctness alone cannot reveal how a model handles hallucinated context. (c) PHRBench reveals a scaling tension between vulnerability and correction, characterizes and predicts successful correction before generation.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2610.10405v1",
+          "title": "Reasoning-Token Spikes Under Prompted Untruthful Responding in Large Language Models",
+          "authors": [
+            "Maverick Morales",
+            "Tomáš Dominik",
+            "Vermut Gao",
+            "Katrina Shirey",
+            "Paulius Rimkevičius"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper proposes a new method for detecting untruthful responses in large language models by monitoring the *number* of reasoning tokens generated, rather than their content. This \"reasoning-token spikes\" approach is based on cognitive load theory and aims to be more robust to potential future inaccessibility or illegibility of detailed reasoning traces. The contribution is a low-bandwidth, content-agnostic signal for identifying deceptive AI behavior.",
+          "url": "http://arxiv.org/abs/2610.10405v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.10405v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2610.10405v1/figures/fig1.png",
+          "figure_caption": "Histograms of the token-count distribution in the Truth, Lie, and Bullshit conditions, across the three tested models. These plots represent raw prompt-level data (12,600 prompts for Gemma, 11,970 for GPT-OSS, and 6,930 for Qwen).",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2610.10507v1",
+          "title": "RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing",
+          "authors": [
+            "Yilun Hao",
+            "Krishna Sayana",
+            "Isabella Ye",
+            "James S Ren",
+            "Sukhdeep Sodhi"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "RECAST addresses the limitation of traditional RAG by learning to actively *derive* evidence rather than just retrieve it. Its core method involves a RouterLM that sequentially decides on retrieval and computation operations, allowing evidence to be synthesized from multiple sources. This contribution enables LLMs to tackle complex tasks requiring evidence construction beyond simple similarity matching.",
+          "url": "http://arxiv.org/abs/2610.10507v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.10507v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2610.10507v1/overview.png",
+          "figure_caption": "Overview of RECAST. At each round, RouterLM uses the task, compact source profile, and evidence and feedback from earlier rounds to either select and formulate a primitive or synthesized operation or pass the evidence to AnswerLM when it considers the evidence sufficient.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2610.10388v1",
+          "title": "RoboQuest: Generalist Physical Agents that Search, Inspect and Test",
+          "authors": [
+            "Liu Renhang",
+            "Navonil Majumder",
+            "Tej Deep Pala",
+            "Soujanya Poria"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CV",
+            "cs.RO"
+          ],
+          "abstract": "RoboQuest introduces a benchmark for embodied agents that must actively explore and gather information through physical interaction to complete tasks in unfamiliar environments. Its core method involves agents learning to search, inspect, and test objects to resolve uncertainty before committing to task completion. The contribution is a novel evaluation framework for generalist physical agents that emphasizes goal-directed exploration and adaptation.",
+          "url": "http://arxiv.org/abs/2610.10388v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.10388v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2610.10388v1/roboquest_cover.png",
+          "figure_caption": "A visual depiction of the salient features of RoboQuest that includes tasks demanding information-seeking physical interactions with active perception.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2610.10304v1",
+          "title": "SemanticFold: Latent Sequence Compression SeparatesLanguage Modeling, Decodability, and Reasoning",
+          "authors": [
+            "Mingyan Liu",
+            "Min Huang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "SemanticFold is a novel method that compresses prompt prefixes in large language models by folding hidden states at learned boundaries. This technique aims to determine if such compression preserves essential inference capabilities like language modeling, decodability, and reasoning. The paper's contribution lies in demonstrating that compression's impact on these capabilities is non-monotonic and doesn't follow a single threshold, suggesting a nuanced relationship between compression and model performance.",
+          "url": "http://arxiv.org/abs/2610.10304v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.10304v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2610.10345v1",
+          "title": "SLDR: Defending Against Malicious Fine-tuning via Selective Layers Recovery and Dynamic Routing",
+          "authors": [
+            "Hui Zhang",
+            "Yachao Yuan",
+            "Jiayun Wang",
+            "Yuanzhuo Li",
+            "Hongtao Wang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CR"
+          ],
+          "abstract": "SLDR defends against malicious LLM fine-tuning by selectively recovering layers most sensitive to safety. It trains a lightweight adapter on these critical layers and uses dynamic routing to activate it only for potentially harmful queries, significantly reducing unsafe outputs while maintaining task performance.",
+          "url": "http://arxiv.org/abs/2610.10345v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.10345v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2610.10411v1",
+          "title": "Training Parallel Speculative Draft Models by Directly Minimizing Expected Decoding Rounds",
+          "authors": [
+            "Yunxiao Zhao",
+            "Changxiao Cai"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL",
+            "stat.ML"
+          ],
+          "abstract": "This paper introduces a novel training method for parallel speculative decoding models by directly minimizing the expected number of decoding rounds. By framing speculative decoding as a Markov reward process, they derive the Expected Decoding Rounds (EDR) objective. This new objective accurately accounts for the interdependencies between decoding rounds, leading to more efficient draft models compared to existing methods that use local approximations.",
+          "url": "http://arxiv.org/abs/2610.10411v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.10411v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2610.10506v1",
+          "title": "Validity Without Ground Truth: What Stated-Preference Economics Offers the Evaluation of Language Models",
+          "authors": [
+            "Daniel Robert Kling Alexander",
+            "Catherine Louise Kling"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "econ.GN"
+          ],
+          "abstract": "This paper proposes applying stated-preference economics' validity framework to evaluate language models when ground truth answers are unavailable. The core method involves adapting concepts like content, construct, and criterion validity, alongside reliability and incentive compatibility, to assess LLM responses. The contribution is demonstrating this framework's utility by testing six models on a water-quality valuation survey, showing how economic theory can predict and differentiate model behavior.",
+          "url": "http://arxiv.org/abs/2610.10506v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.10506v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2610.10506v1/figure1.png",
+          "figure_caption": "Share of yes votes by annual tax at a $75,000 household income, pooled over the six watershed scenarios (60 draws per point). A valid valuation requires a downward slope.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2610.10526v1",
+          "title": "Rephrase Before You Act: Characterizing and Mitigating Language Sensitivity in Vision-Language-Action Models",
+          "authors": [
+            "Mikey Watts",
+            "Yuchen Cui"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.CL",
+            "cs.RO"
+          ],
+          "abstract": "This paper reveals that Vision-Language-Action (VLA) models are highly sensitive to instruction phrasing, unlike their vision-language counterparts. They propose a method to mitigate this sensitivity by using a large language model to distill rephrasing rules from scored examples. These rules are then applied at deployment to rewrite incoming instructions, significantly improving VLA model robustness without altering the underlying policy.",
+          "url": "http://arxiv.org/abs/2610.10526v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.10526v1",
+          "score": 8.0,
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2610.10409v1",
+          "title": "RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments",
+          "authors": [
+            "Zhiqin Yang",
+            "Chenxin Li",
+            "Xiaomeng Hu",
+            "Yibin Liu",
+            "Weidong Huang"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.RO"
+          ],
+          "abstract": "This paper introduces RobotWorld, a simulation benchmark designed to evaluate how well general-purpose AI agents can perform physical tasks with robots. The core method involves testing agents on 84 diverse robot tasks, measuring their success and analyzing their execution traces. The main contribution is identifying which AI capabilities transfer to the physical world and highlighting the significant gaps in reliably composing these skills for successful robot operation.",
+          "url": "http://arxiv.org/abs/2610.10409v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.10409v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2610.10409v1/front_leaderboard.png",
+          "figure_caption": "RobotWorld leaderboard. Left: overall success across 84 tasks. Right: success in four displayed groups (Manipulation and Mobile manipulation are pooled), with counts shown beside each bar. All panels use the same 0–100% success scale. Each model has one retained outcome per task under the evaluation budget rules.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2610.10310v1",
+          "title": "RSIGym: A Flexible Environment for Recursive Self-Improvement",
+          "authors": [
+            "Fanqing Meng",
+            "Lingxiao Du",
+            "Haocheng Lu",
+            "Qiguang Chen",
+            "Ziqi Zhao"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "abstract": "RSIGym provides a flexible research environment for recursive self-improvement by exposing core agent functionalities as reusable services. This allows agents to iteratively improve themselves by modifying data, training, and execution, carrying changes across cycles and exploring joint optimizations. Its key contribution is enabling comprehensive self-improvement within a unified framework, demonstrated by the RSI-Index across diverse benchmarks.",
+          "url": "http://arxiv.org/abs/2610.10310v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.10310v1",
+          "score": 8.0,
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2610.10426v1",
+          "title": "CoTrace: Data Recipes for Training Terminal Agents with Harness-Model Co-Evolution",
+          "authors": [
+            "Jixuan Chen",
+            "Jiaxin Zhang",
+            "Qinyuan Ye",
+            "Yada Pruksachatkun",
+            "Haoxiang Zhang"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces CoTrace, a method for training terminal agents by co-evolving their underlying model and runtime harness. It proposes an alternating framework where harness search and policy training are decoupled, and a novel \"data recipe\" that routes trajectories based on their provenance and the harness used to generate them. This harness-aware approach ensures that model training is conditioned on relevant data, leading to improved agent performance.",
+          "url": "http://arxiv.org/abs/2610.10426v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.10426v1",
+          "score": 8.0,
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2610.10533v1",
+          "title": "EngramEdit: Decoupled Knowledge Updates in LLMs through Conditional Memory",
+          "authors": [
+            "Hongru Cai",
+            "Ran Wei",
+            "Wenjie Wang",
+            "Chengfa Wu",
+            "Ning Song"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "EngramEdit proposes a method to update factual knowledge in LLMs without retraining the entire model. It achieves this by decoupling knowledge storage from the core computation, allowing for targeted edits to specific facts by adjusting conditional memory embeddings. This approach aims to enable efficient and precise knowledge updates by ensuring that updated facts are predicted across various expressions while minimizing unintended side effects on other knowledge.",
+          "url": "http://arxiv.org/abs/2610.10533v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.10533v1",
+          "score": 8.0,
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2610.10332v1",
+          "title": "Learning to Act with Task Progress: Distilling Small Agents from Compact Teacher Supervision",
+          "authors": [
+            "Wenxi Gan"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces Task-Progress Distillation (TPD) to train small agents from large model demonstrations. TPD pairs actions with concise labels indicating task progress, allowing the student agent to learn these compact targets. This approach enables efficient, step-free task completion and significantly improves performance compared to methods relying solely on action or reasoning supervision.",
+          "url": "http://arxiv.org/abs/2610.10332v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.10332v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2610.10332v1/tpd_overview.png",
+          "figure_caption": "Offline training and closed-loop execution. (a) A frozen annotator reads each teacher-history prefix and pairs the current task stage with the demonstrated action for student SFT. (b) The student scores 3 ​ | 𝒜 ⁡ ( h t ) | 3|\\( \\mathcal{A} \\)(h_{t})| stage–action candidates, and the harness executes the action from the highest-scoring pair. The next input includes the action and environment feedback; the predicted stage is logged only for analysis.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2610.10468v1",
+          "title": "A Society of Researchers: Designing Institutions for Populations of Autonomous Research Agents",
+          "authors": [
+            "Ali Asaria",
+            "Deep Gandhi",
+            "Tony Salomone"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "This paper proposes a \"society of researchers\" model for managing large populations of autonomous AI agents working on scientific tasks. The core method involves designing explicit institutions, inspired by human scientific communities, where agents compete for resources through proposals and reviews, overseen by a human governor. The contribution is a framework for organizing massive agent populations, enabling emergent, efficient scientific discovery, as demonstrated by a lab finding significant compute savings in language model pretraining.",
+          "url": "http://arxiv.org/abs/2610.10468v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.10468v1",
+          "score": 7.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2610.10285v1",
+          "title": "AI Safety Considerations for Agents With Limited Time to Act",
+          "authors": [
+            "Leo Zeitler",
+            "Jack Richings",
+            "Victoria Nockles"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper argues that existing AI safety arguments often overlook the crucial role of the environment. It introduces theoretical bounds for agent-agnostic safety in partially observable, time-constrained environments, demonstrating that even a perfect agent cannot guarantee safety. The core contribution is highlighting that AI safety proofs must explicitly consider the environment and its associated safe actions alongside the agent.",
+          "url": "http://arxiv.org/abs/2610.10285v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.10285v1",
+          "score": 7.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        }
+      ],
+      "meta": {
+        "papers_fetched": 100,
+        "papers_after_keyword_filter": 48,
+        "papers_after_llm_filter": 33,
+        "count": 20
+      }
+    },
+    {
+      "key": "hacker_news",
+      "payload_key": "hacker_news",
+      "title": "Hacker News",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": 49997161,
+          "title": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+          "url": "https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai/",
+          "score": 340,
+          "created_at": "2026-10-07T18:49:40Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49997161",
+          "summary": "Meta and Microsoft are implementing measures to limit their employees' use of Claude AI, likely due to concerns about data security and intellectual property."
+        },
+        {
+          "id": 49997073,
+          "title": "Push ifs up and fors down: The idiom, its algebra, and its limits",
+          "url": "https://debasishg.github.io/blog/push-ifs-up-fors-down/",
+          "score": 146,
+          "created_at": "2026-10-07T18:43:18Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49997073",
+          "summary": "The idiom \"push ifs up and fors down\" suggests a programming refactoring technique to improve code clarity by moving conditional logic outside loops."
+        },
+        {
+          "id": 49991823,
+          "title": "Google Playground: Create and play custom games",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+          "score": 145,
+          "created_at": "2026-10-07T12:28:36Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49991823",
+          "summary": "Google Playground is an experimental platform that allows users to create and play custom games using AI."
+        },
+        {
+          "id": 49993121,
+          "title": "AI-assisted proof of optimal packing for 11 squares",
+          "url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized",
+          "score": 115,
+          "created_at": "2026-10-07T14:10:55Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49993121",
+          "summary": "AI helped prove the optimal packing arrangement for 11 squares, a long-standing mathematical problem."
+        },
+        {
+          "id": 49993188,
+          "title": "SynthID Detector",
+          "url": "https://synthid.com/",
+          "score": 115,
+          "created_at": "2026-10-07T14:16:44Z",
+          "comments_url": "https://news.ycombinator.com/item?id=49993188",
+          "summary": "SynthID Detector is a tool that helps identify AI-generated content by analyzing its digital watermark."
+        }
+      ],
+      "meta": {
+        "count": 5
+      }
+    },
+    {
+      "key": "github_trending",
+      "payload_key": "github_trending",
+      "title": "GitHub Trending",
+      "icon": "⭐",
+      "items": [
+        {
+          "full_name": "morluto/rea",
+          "url": "https://github.com/morluto/rea",
+          "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+          "stars_today": 4655,
+          "total_stars": 18611,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "This repository provides agents for reverse engineering applications and native binaries by analyzing their behavior."
+        },
+        {
+          "full_name": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills",
+          "description": "Skills for Real Engineers. Straight from my .agents directory.",
+          "stars_today": 1403,
+          "total_stars": 280353,
+          "language": "Shell",
+          "topics": [],
+          "summary": "This repository provides a curated collection of \"skills\" or reusable code snippets, inspired by the author's personal `.agents` directory, designed to empower real engineers with practical tools."
+        },
+        {
+          "full_name": "boykopovar/AnyPS5",
+          "url": "https://github.com/boykopovar/AnyPS5",
+          "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+          "stars_today": 2716,
+          "total_stars": 12259,
+          "language": "C++",
+          "topics": [],
+          "summary": "AnyPS5 is a tool that automates the process of porting PlayStation 5 executables to Linux and Windows."
+        },
+        {
+          "full_name": "ayghri/i-have-adhd",
+          "url": "https://github.com/ayghri/i-have-adhd",
+          "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+          "stars_today": 619,
+          "total_stars": 55520,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository provides a skill for coding agents to deliver ADHD-friendly, concise answers, preventing them from getting lost in excessive detail."
+        },
+        {
+          "full_name": "cathrynlavery/diagram-design",
+          "url": "https://github.com/cathrynlavery/diagram-design",
+          "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+          "stars_today": 825,
+          "total_stars": 45478,
+          "language": "HTML",
+          "topics": [],
+          "summary": "This repository provides 42 types of self-contained HTML+SVG editorial diagrams for AI tools like Claude Code and GitHub Copilot, focusing on clean design without shadows or Mermaid syntax."
+        },
+        {
+          "full_name": "addyosmani/agent-skills",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "description": "Production-grade engineering skills for AI coding agents.",
+          "stars_today": 677,
+          "total_stars": 103131,
+          "language": "JavaScript",
+          "topics": [],
+          "summary": "This repository provides production-grade engineering skills for AI coding agents, enabling them to perform complex tasks like code generation, debugging, and testing."
+        },
+        {
+          "full_name": "EpicGames/raddebugger",
+          "url": "https://github.com/EpicGames/raddebugger",
+          "description": "A native, user-mode, multi-process, graphical debugger.",
+          "stars_today": 90,
+          "total_stars": 7965,
+          "language": "C",
+          "topics": [],
+          "summary": "Rad debugger is a native, user-mode, graphical debugger designed for multi-process debugging."
+        },
+        {
+          "full_name": "thedotmack/claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem",
+          "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+          "stars_today": 578,
+          "total_stars": 97987,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "This repository enables persistent context for AI agents by capturing, compressing, and re-injecting session data, enhancing future interactions across various coding and AI models."
+        },
+        {
+          "full_name": "manaflow-ai/cmux",
+          "url": "https://github.com/manaflow-ai/cmux",
+          "description": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability.",
+          "stars_today": 44,
+          "total_stars": 27983,
+          "language": "Swift",
+          "topics": [],
+          "summary": "This repository offers a macOS terminal, built on Ghostty, featuring vertical tabs and AI coding agent notifications, designed for enhanced multitasking, organization, and programmability."
+        }
+      ],
+      "meta": {
+        "count": 9
+      }
+    }
+  ],
+  "meta": {
+    "papers_fetched": 100,
+    "papers_after_keyword_filter": 48,
+    "papers_after_llm_filter": 33,
+    "llm_model": "google/gemini-2.5-flash-lite",
+    "scoring_model": "google/gemini-2.5-flash-lite",
+    "summarization_model": "google/gemini-2.5-flash-lite",
+    "duration_seconds": 73
+  },
+  "quote_of_day": [
+    {
+      "quote": "If I like a food, I'll eat it, even if I know it's not good for me.",
+      "author": "Kim Kardashian",
+      "category": "food"
+    }
+  ],
+  "hitokoto": [],
+  "arxiv": [
+    {
+      "id": "2610.10358v1",
+      "title": "Open-MMUnlearning: Unifying Methods and Evaluation for MLLM Unlearning",
+      "authors": [
+        "Junkai Chen",
+        "Yuhao He",
+        "Qianshan Wei",
+        "Junxiang You",
+        "Jingwen Shao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces Open-MMUnlearning, a unified, open-source framework for evaluating machine unlearning in multimodal large language models (MLLMs). It addresses the fragmentation in existing methods by providing standardized interfaces for preparing models, processing data, applying unlearning techniques, and evaluating performance across privacy, safety, and copyright concerns. The framework's key contribution is enabling systematic and comprehensive assessment of MLLM unlearning by supporting diverse models, methods, and benchmarks.",
+      "url": "http://arxiv.org/abs/2610.10358v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10358v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2610.10358v1/Overview.png",
+      "figure_caption": "Overview of Open-MMUnlearning . The Data Worker prepares fine-tuning, evaluation, and unlearning data from benchmarks spanning privacy, safety, and copyright. The Model Loader supplies MLLM backbones, the Trainer executes fine-tuning and general and MLLM-specific unlearning methods, and the Unified Evaluator assesses Forget Quality, Model Utility, and Robustness through model-, input-, and output-side evaluations.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10478v1",
+      "title": "Before They Can Solve: Predicting Post-Training Coding-Agent Performance from Base Models",
+      "authors": [
+        "Tan Yu",
+        "Alexander Bukharin",
+        "Khushi Bhardwaj",
+        "Jennifer Williams",
+        "Zirui Liu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper proposes a method to predict the potential of base models for agentic coding tasks without expensive post-training. It identifies the \"decisive step\" within a successful agent trajectory – the first code-changing action that makes the repository pass tests. This allows researchers to select promising base models by evaluating their ability to reach this decisive step, saving computational resources.",
+      "url": "http://arxiv.org/abs/2610.10478v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10478v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.10478v1/new-figure1.png",
+      "figure_caption": "A unified agentic trajectory-derived probing framework. By replaying a coding-agent trajectory on a coding task against the task’s own verifier V V , we locate the decisive step T ⋆ T^{\\( \\star \\)} , the earliest step whose cumulative patch resolves the task. At this decisive step, (i) Decisive-Action BPB measures the byte-normalized likelihood which a base model assigns to the golden action; (ii) Patch MCQ evaluates base model’s capability of differentiating the golden action from non-resolving alternatives; (iii) Prefix-conditioned pass ​ @ ​ K \\( \\mathrm{pass@} \\)K measures a base model’s empirical success rate under sampling: it draws K K continuations from T ⋆ T^{\\( \\star \\)} and lets the task’s own verifier V V judge them.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10311v1",
+      "title": "Fault-tolerant foundation models",
+      "authors": [
+        "Trevor McCourt",
+        "Ila R. Fiete",
+        "Isaac L. Chuang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.AR"
+      ],
+      "abstract": "This paper demonstrates that large language models (LLMs) can be trained to be resilient to unreliable hardware, with error tolerance increasing with model size. The core method involves modifying neural scaling laws based on training on simulated faulty hardware, revealing that models learn to operate within inherent error-correcting codes. The main contribution is the conjecture that appropriately trained LLMs can be formally fault-tolerant, opening a path to significant energy savings by enabling AI inference on low-power, unreliable hardware.",
+      "url": "http://arxiv.org/abs/2610.10311v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10311v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10355v1",
+      "title": "MIRA: A Musical Intent Refinement Agent for Aligning Text-to-Music Generation with User Intent",
+      "authors": [
+        "Zekai Liu",
+        "Zhilin Wang",
+        "Xuzheng He",
+        "Yu Cheng",
+        "Yang Yang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SD"
+      ],
+      "abstract": "This paper addresses the challenge of aligning text-to-music generation with user intent by proposing a rubric-based evaluation framework. Their core method, MIRA (Musical Intent Refinement Agent), refines prompts for black-box text-to-music models by iteratively revising them to satisfy a detailed rubric of explicit and implicit musical requirements. This approach provides diagnostic evaluation and improves generation quality by focusing on specific musical dimensions.",
+      "url": "http://arxiv.org/abs/2610.10355v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10355v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.10355v1/figures/mura_benchmark_pipeline.png",
+      "figure_caption": "Overview of MuRA-Bench construction and evaluation. Expert-revised, request-specific rubrics support fine-grained assessment with MusicFlamingo. Gold rubrics are used exclusively for evaluation and are not exposed to the generation system.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10455v1",
+      "title": "PHRBench: A Behavioral Evaluation of Post-Hallucination Reasoning in LLMs",
+      "authors": [
+        "Linghao Meng",
+        "Feng He",
+        "Xuan Yang",
+        "Junyuan Mao",
+        "Pinze Ren"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces PHRBench, a novel benchmark designed to evaluate how Large Language Models (LLMs) handle and correct hallucinated information during multi-stage reasoning. The core method involves a controlled evaluation of LLM reasoning trajectories, categorizing their behavior as Hallucination Compliance, Avoidance, or Heuristic Correction, independent of final answer accuracy. The main contribution is a comprehensive behavioral analysis of Post-Hallucination Reasoning (PHR), revealing that successful correction is infrequent and often linked to more dynamic belief updates within the model's reasoning process.",
+      "url": "http://arxiv.org/abs/2610.10455v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10455v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.10455v1/Figures/Fig1.png",
+      "figure_caption": "Overview of behaviorally structured post-hallucination reasoning. (a) Hallucinations that escape upstream detection can propagate into downstream reasoning, making recovery critical for reliable LLM systems. (b) Final correctness alone cannot reveal how a model handles hallucinated context. (c) PHRBench reveals a scaling tension between vulnerability and correction, characterizes and predicts successful correction before generation.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10405v1",
+      "title": "Reasoning-Token Spikes Under Prompted Untruthful Responding in Large Language Models",
+      "authors": [
+        "Maverick Morales",
+        "Tomáš Dominik",
+        "Vermut Gao",
+        "Katrina Shirey",
+        "Paulius Rimkevičius"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper proposes a new method for detecting untruthful responses in large language models by monitoring the *number* of reasoning tokens generated, rather than their content. This \"reasoning-token spikes\" approach is based on cognitive load theory and aims to be more robust to potential future inaccessibility or illegibility of detailed reasoning traces. The contribution is a low-bandwidth, content-agnostic signal for identifying deceptive AI behavior.",
+      "url": "http://arxiv.org/abs/2610.10405v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10405v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.10405v1/figures/fig1.png",
+      "figure_caption": "Histograms of the token-count distribution in the Truth, Lie, and Bullshit conditions, across the three tested models. These plots represent raw prompt-level data (12,600 prompts for Gemma, 11,970 for GPT-OSS, and 6,930 for Qwen).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10507v1",
+      "title": "RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing",
+      "authors": [
+        "Yilun Hao",
+        "Krishna Sayana",
+        "Isabella Ye",
+        "James S Ren",
+        "Sukhdeep Sodhi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "RECAST addresses the limitation of traditional RAG by learning to actively *derive* evidence rather than just retrieve it. Its core method involves a RouterLM that sequentially decides on retrieval and computation operations, allowing evidence to be synthesized from multiple sources. This contribution enables LLMs to tackle complex tasks requiring evidence construction beyond simple similarity matching.",
+      "url": "http://arxiv.org/abs/2610.10507v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10507v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.10507v1/overview.png",
+      "figure_caption": "Overview of RECAST. At each round, RouterLM uses the task, compact source profile, and evidence and feedback from earlier rounds to either select and formulate a primitive or synthesized operation or pass the evidence to AnswerLM when it considers the evidence sufficient.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10388v1",
+      "title": "RoboQuest: Generalist Physical Agents that Search, Inspect and Test",
+      "authors": [
+        "Liu Renhang",
+        "Navonil Majumder",
+        "Tej Deep Pala",
+        "Soujanya Poria"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV",
+        "cs.RO"
+      ],
+      "abstract": "RoboQuest introduces a benchmark for embodied agents that must actively explore and gather information through physical interaction to complete tasks in unfamiliar environments. Its core method involves agents learning to search, inspect, and test objects to resolve uncertainty before committing to task completion. The contribution is a novel evaluation framework for generalist physical agents that emphasizes goal-directed exploration and adaptation.",
+      "url": "http://arxiv.org/abs/2610.10388v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10388v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.10388v1/roboquest_cover.png",
+      "figure_caption": "A visual depiction of the salient features of RoboQuest that includes tasks demanding information-seeking physical interactions with active perception.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10304v1",
+      "title": "SemanticFold: Latent Sequence Compression SeparatesLanguage Modeling, Decodability, and Reasoning",
+      "authors": [
+        "Mingyan Liu",
+        "Min Huang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "SemanticFold is a novel method that compresses prompt prefixes in large language models by folding hidden states at learned boundaries. This technique aims to determine if such compression preserves essential inference capabilities like language modeling, decodability, and reasoning. The paper's contribution lies in demonstrating that compression's impact on these capabilities is non-monotonic and doesn't follow a single threshold, suggesting a nuanced relationship between compression and model performance.",
+      "url": "http://arxiv.org/abs/2610.10304v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10304v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10345v1",
+      "title": "SLDR: Defending Against Malicious Fine-tuning via Selective Layers Recovery and Dynamic Routing",
+      "authors": [
+        "Hui Zhang",
+        "Yachao Yuan",
+        "Jiayun Wang",
+        "Yuanzhuo Li",
+        "Hongtao Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "SLDR defends against malicious LLM fine-tuning by selectively recovering layers most sensitive to safety. It trains a lightweight adapter on these critical layers and uses dynamic routing to activate it only for potentially harmful queries, significantly reducing unsafe outputs while maintaining task performance.",
+      "url": "http://arxiv.org/abs/2610.10345v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10345v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10411v1",
+      "title": "Training Parallel Speculative Draft Models by Directly Minimizing Expected Decoding Rounds",
+      "authors": [
+        "Yunxiao Zhao",
+        "Changxiao Cai"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL",
+        "stat.ML"
+      ],
+      "abstract": "This paper introduces a novel training method for parallel speculative decoding models by directly minimizing the expected number of decoding rounds. By framing speculative decoding as a Markov reward process, they derive the Expected Decoding Rounds (EDR) objective. This new objective accurately accounts for the interdependencies between decoding rounds, leading to more efficient draft models compared to existing methods that use local approximations.",
+      "url": "http://arxiv.org/abs/2610.10411v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10411v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10506v1",
+      "title": "Validity Without Ground Truth: What Stated-Preference Economics Offers the Evaluation of Language Models",
+      "authors": [
+        "Daniel Robert Kling Alexander",
+        "Catherine Louise Kling"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "econ.GN"
+      ],
+      "abstract": "This paper proposes applying stated-preference economics' validity framework to evaluate language models when ground truth answers are unavailable. The core method involves adapting concepts like content, construct, and criterion validity, alongside reliability and incentive compatibility, to assess LLM responses. The contribution is demonstrating this framework's utility by testing six models on a water-quality valuation survey, showing how economic theory can predict and differentiate model behavior.",
+      "url": "http://arxiv.org/abs/2610.10506v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10506v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.10506v1/figure1.png",
+      "figure_caption": "Share of yes votes by annual tax at a $75,000 household income, pooled over the six watershed scenarios (60 draws per point). A valid valuation requires a downward slope.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10526v1",
+      "title": "Rephrase Before You Act: Characterizing and Mitigating Language Sensitivity in Vision-Language-Action Models",
+      "authors": [
+        "Mikey Watts",
+        "Yuchen Cui"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.RO"
+      ],
+      "abstract": "This paper reveals that Vision-Language-Action (VLA) models are highly sensitive to instruction phrasing, unlike their vision-language counterparts. They propose a method to mitigate this sensitivity by using a large language model to distill rephrasing rules from scored examples. These rules are then applied at deployment to rewrite incoming instructions, significantly improving VLA model robustness without altering the underlying policy.",
+      "url": "http://arxiv.org/abs/2610.10526v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10526v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2610.10409v1",
+      "title": "RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments",
+      "authors": [
+        "Zhiqin Yang",
+        "Chenxin Li",
+        "Xiaomeng Hu",
+        "Yibin Liu",
+        "Weidong Huang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.RO"
+      ],
+      "abstract": "This paper introduces RobotWorld, a simulation benchmark designed to evaluate how well general-purpose AI agents can perform physical tasks with robots. The core method involves testing agents on 84 diverse robot tasks, measuring their success and analyzing their execution traces. The main contribution is identifying which AI capabilities transfer to the physical world and highlighting the significant gaps in reliably composing these skills for successful robot operation.",
+      "url": "http://arxiv.org/abs/2610.10409v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10409v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.10409v1/front_leaderboard.png",
+      "figure_caption": "RobotWorld leaderboard. Left: overall success across 84 tasks. Right: success in four displayed groups (Manipulation and Mobile manipulation are pooled), with counts shown beside each bar. All panels use the same 0–100% success scale. Each model has one retained outcome per task under the evaluation budget rules.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2610.10310v1",
+      "title": "RSIGym: A Flexible Environment for Recursive Self-Improvement",
+      "authors": [
+        "Fanqing Meng",
+        "Lingxiao Du",
+        "Haocheng Lu",
+        "Qiguang Chen",
+        "Ziqi Zhao"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "RSIGym provides a flexible research environment for recursive self-improvement by exposing core agent functionalities as reusable services. This allows agents to iteratively improve themselves by modifying data, training, and execution, carrying changes across cycles and exploring joint optimizations. Its key contribution is enabling comprehensive self-improvement within a unified framework, demonstrated by the RSI-Index across diverse benchmarks.",
+      "url": "http://arxiv.org/abs/2610.10310v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10310v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2610.10426v1",
+      "title": "CoTrace: Data Recipes for Training Terminal Agents with Harness-Model Co-Evolution",
+      "authors": [
+        "Jixuan Chen",
+        "Jiaxin Zhang",
+        "Qinyuan Ye",
+        "Yada Pruksachatkun",
+        "Haoxiang Zhang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces CoTrace, a method for training terminal agents by co-evolving their underlying model and runtime harness. It proposes an alternating framework where harness search and policy training are decoupled, and a novel \"data recipe\" that routes trajectories based on their provenance and the harness used to generate them. This harness-aware approach ensures that model training is conditioned on relevant data, leading to improved agent performance.",
+      "url": "http://arxiv.org/abs/2610.10426v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10426v1",
+      "score": 8.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2610.10533v1",
+      "title": "EngramEdit: Decoupled Knowledge Updates in LLMs through Conditional Memory",
+      "authors": [
+        "Hongru Cai",
+        "Ran Wei",
+        "Wenjie Wang",
+        "Chengfa Wu",
+        "Ning Song"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "EngramEdit proposes a method to update factual knowledge in LLMs without retraining the entire model. It achieves this by decoupling knowledge storage from the core computation, allowing for targeted edits to specific facts by adjusting conditional memory embeddings. This approach aims to enable efficient and precise knowledge updates by ensuring that updated facts are predicted across various expressions while minimizing unintended side effects on other knowledge.",
+      "url": "http://arxiv.org/abs/2610.10533v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10533v1",
+      "score": 8.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2610.10332v1",
+      "title": "Learning to Act with Task Progress: Distilling Small Agents from Compact Teacher Supervision",
+      "authors": [
+        "Wenxi Gan"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces Task-Progress Distillation (TPD) to train small agents from large model demonstrations. TPD pairs actions with concise labels indicating task progress, allowing the student agent to learn these compact targets. This approach enables efficient, step-free task completion and significantly improves performance compared to methods relying solely on action or reasoning supervision.",
+      "url": "http://arxiv.org/abs/2610.10332v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10332v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.10332v1/tpd_overview.png",
+      "figure_caption": "Offline training and closed-loop execution. (a) A frozen annotator reads each teacher-history prefix and pairs the current task stage with the demonstrated action for student SFT. (b) The student scores 3 ​ | 𝒜 ⁡ ( h t ) | 3|\\( \\mathcal{A} \\)(h_{t})| stage–action candidates, and the harness executes the action from the highest-scoring pair. The next input includes the action and environment feedback; the predicted stage is logged only for analysis.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2610.10468v1",
+      "title": "A Society of Researchers: Designing Institutions for Populations of Autonomous Research Agents",
+      "authors": [
+        "Ali Asaria",
+        "Deep Gandhi",
+        "Tony Salomone"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "abstract": "This paper proposes a \"society of researchers\" model for managing large populations of autonomous AI agents working on scientific tasks. The core method involves designing explicit institutions, inspired by human scientific communities, where agents compete for resources through proposals and reviews, overseen by a human governor. The contribution is a framework for organizing massive agent populations, enabling emergent, efficient scientific discovery, as demonstrated by a lab finding significant compute savings in language model pretraining.",
+      "url": "http://arxiv.org/abs/2610.10468v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10468v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10285v1",
+      "title": "AI Safety Considerations for Agents With Limited Time to Act",
+      "authors": [
+        "Leo Zeitler",
+        "Jack Richings",
+        "Victoria Nockles"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper argues that existing AI safety arguments often overlook the crucial role of the environment. It introduces theoretical bounds for agent-agnostic safety in partially observable, time-constrained environments, demonstrating that even a perfect agent cannot guarantee safety. The core contribution is highlighting that AI safety proofs must explicitly consider the environment and its associated safe actions alongside the agent.",
+      "url": "http://arxiv.org/abs/2610.10285v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10285v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "papers": [
+    {
+      "id": "2610.10358v1",
+      "title": "Open-MMUnlearning: Unifying Methods and Evaluation for MLLM Unlearning",
+      "authors": [
+        "Junkai Chen",
+        "Yuhao He",
+        "Qianshan Wei",
+        "Junxiang You",
+        "Jingwen Shao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces Open-MMUnlearning, a unified, open-source framework for evaluating machine unlearning in multimodal large language models (MLLMs). It addresses the fragmentation in existing methods by providing standardized interfaces for preparing models, processing data, applying unlearning techniques, and evaluating performance across privacy, safety, and copyright concerns. The framework's key contribution is enabling systematic and comprehensive assessment of MLLM unlearning by supporting diverse models, methods, and benchmarks.",
+      "url": "http://arxiv.org/abs/2610.10358v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10358v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2610.10358v1/Overview.png",
+      "figure_caption": "Overview of Open-MMUnlearning . The Data Worker prepares fine-tuning, evaluation, and unlearning data from benchmarks spanning privacy, safety, and copyright. The Model Loader supplies MLLM backbones, the Trainer executes fine-tuning and general and MLLM-specific unlearning methods, and the Unified Evaluator assesses Forget Quality, Model Utility, and Robustness through model-, input-, and output-side evaluations.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10478v1",
+      "title": "Before They Can Solve: Predicting Post-Training Coding-Agent Performance from Base Models",
+      "authors": [
+        "Tan Yu",
+        "Alexander Bukharin",
+        "Khushi Bhardwaj",
+        "Jennifer Williams",
+        "Zirui Liu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper proposes a method to predict the potential of base models for agentic coding tasks without expensive post-training. It identifies the \"decisive step\" within a successful agent trajectory – the first code-changing action that makes the repository pass tests. This allows researchers to select promising base models by evaluating their ability to reach this decisive step, saving computational resources.",
+      "url": "http://arxiv.org/abs/2610.10478v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10478v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.10478v1/new-figure1.png",
+      "figure_caption": "A unified agentic trajectory-derived probing framework. By replaying a coding-agent trajectory on a coding task against the task’s own verifier V V , we locate the decisive step T ⋆ T^{\\( \\star \\)} , the earliest step whose cumulative patch resolves the task. At this decisive step, (i) Decisive-Action BPB measures the byte-normalized likelihood which a base model assigns to the golden action; (ii) Patch MCQ evaluates base model’s capability of differentiating the golden action from non-resolving alternatives; (iii) Prefix-conditioned pass ​ @ ​ K \\( \\mathrm{pass@} \\)K measures a base model’s empirical success rate under sampling: it draws K K continuations from T ⋆ T^{\\( \\star \\)} and lets the task’s own verifier V V judge them.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10311v1",
+      "title": "Fault-tolerant foundation models",
+      "authors": [
+        "Trevor McCourt",
+        "Ila R. Fiete",
+        "Isaac L. Chuang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.AR"
+      ],
+      "abstract": "This paper demonstrates that large language models (LLMs) can be trained to be resilient to unreliable hardware, with error tolerance increasing with model size. The core method involves modifying neural scaling laws based on training on simulated faulty hardware, revealing that models learn to operate within inherent error-correcting codes. The main contribution is the conjecture that appropriately trained LLMs can be formally fault-tolerant, opening a path to significant energy savings by enabling AI inference on low-power, unreliable hardware.",
+      "url": "http://arxiv.org/abs/2610.10311v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10311v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10355v1",
+      "title": "MIRA: A Musical Intent Refinement Agent for Aligning Text-to-Music Generation with User Intent",
+      "authors": [
+        "Zekai Liu",
+        "Zhilin Wang",
+        "Xuzheng He",
+        "Yu Cheng",
+        "Yang Yang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SD"
+      ],
+      "abstract": "This paper addresses the challenge of aligning text-to-music generation with user intent by proposing a rubric-based evaluation framework. Their core method, MIRA (Musical Intent Refinement Agent), refines prompts for black-box text-to-music models by iteratively revising them to satisfy a detailed rubric of explicit and implicit musical requirements. This approach provides diagnostic evaluation and improves generation quality by focusing on specific musical dimensions.",
+      "url": "http://arxiv.org/abs/2610.10355v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10355v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.10355v1/figures/mura_benchmark_pipeline.png",
+      "figure_caption": "Overview of MuRA-Bench construction and evaluation. Expert-revised, request-specific rubrics support fine-grained assessment with MusicFlamingo. Gold rubrics are used exclusively for evaluation and are not exposed to the generation system.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10455v1",
+      "title": "PHRBench: A Behavioral Evaluation of Post-Hallucination Reasoning in LLMs",
+      "authors": [
+        "Linghao Meng",
+        "Feng He",
+        "Xuan Yang",
+        "Junyuan Mao",
+        "Pinze Ren"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces PHRBench, a novel benchmark designed to evaluate how Large Language Models (LLMs) handle and correct hallucinated information during multi-stage reasoning. The core method involves a controlled evaluation of LLM reasoning trajectories, categorizing their behavior as Hallucination Compliance, Avoidance, or Heuristic Correction, independent of final answer accuracy. The main contribution is a comprehensive behavioral analysis of Post-Hallucination Reasoning (PHR), revealing that successful correction is infrequent and often linked to more dynamic belief updates within the model's reasoning process.",
+      "url": "http://arxiv.org/abs/2610.10455v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10455v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.10455v1/Figures/Fig1.png",
+      "figure_caption": "Overview of behaviorally structured post-hallucination reasoning. (a) Hallucinations that escape upstream detection can propagate into downstream reasoning, making recovery critical for reliable LLM systems. (b) Final correctness alone cannot reveal how a model handles hallucinated context. (c) PHRBench reveals a scaling tension between vulnerability and correction, characterizes and predicts successful correction before generation.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10405v1",
+      "title": "Reasoning-Token Spikes Under Prompted Untruthful Responding in Large Language Models",
+      "authors": [
+        "Maverick Morales",
+        "Tomáš Dominik",
+        "Vermut Gao",
+        "Katrina Shirey",
+        "Paulius Rimkevičius"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper proposes a new method for detecting untruthful responses in large language models by monitoring the *number* of reasoning tokens generated, rather than their content. This \"reasoning-token spikes\" approach is based on cognitive load theory and aims to be more robust to potential future inaccessibility or illegibility of detailed reasoning traces. The contribution is a low-bandwidth, content-agnostic signal for identifying deceptive AI behavior.",
+      "url": "http://arxiv.org/abs/2610.10405v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10405v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.10405v1/figures/fig1.png",
+      "figure_caption": "Histograms of the token-count distribution in the Truth, Lie, and Bullshit conditions, across the three tested models. These plots represent raw prompt-level data (12,600 prompts for Gemma, 11,970 for GPT-OSS, and 6,930 for Qwen).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10507v1",
+      "title": "RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing",
+      "authors": [
+        "Yilun Hao",
+        "Krishna Sayana",
+        "Isabella Ye",
+        "James S Ren",
+        "Sukhdeep Sodhi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "RECAST addresses the limitation of traditional RAG by learning to actively *derive* evidence rather than just retrieve it. Its core method involves a RouterLM that sequentially decides on retrieval and computation operations, allowing evidence to be synthesized from multiple sources. This contribution enables LLMs to tackle complex tasks requiring evidence construction beyond simple similarity matching.",
+      "url": "http://arxiv.org/abs/2610.10507v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10507v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.10507v1/overview.png",
+      "figure_caption": "Overview of RECAST. At each round, RouterLM uses the task, compact source profile, and evidence and feedback from earlier rounds to either select and formulate a primitive or synthesized operation or pass the evidence to AnswerLM when it considers the evidence sufficient.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10388v1",
+      "title": "RoboQuest: Generalist Physical Agents that Search, Inspect and Test",
+      "authors": [
+        "Liu Renhang",
+        "Navonil Majumder",
+        "Tej Deep Pala",
+        "Soujanya Poria"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV",
+        "cs.RO"
+      ],
+      "abstract": "RoboQuest introduces a benchmark for embodied agents that must actively explore and gather information through physical interaction to complete tasks in unfamiliar environments. Its core method involves agents learning to search, inspect, and test objects to resolve uncertainty before committing to task completion. The contribution is a novel evaluation framework for generalist physical agents that emphasizes goal-directed exploration and adaptation.",
+      "url": "http://arxiv.org/abs/2610.10388v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10388v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.10388v1/roboquest_cover.png",
+      "figure_caption": "A visual depiction of the salient features of RoboQuest that includes tasks demanding information-seeking physical interactions with active perception.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10304v1",
+      "title": "SemanticFold: Latent Sequence Compression SeparatesLanguage Modeling, Decodability, and Reasoning",
+      "authors": [
+        "Mingyan Liu",
+        "Min Huang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "SemanticFold is a novel method that compresses prompt prefixes in large language models by folding hidden states at learned boundaries. This technique aims to determine if such compression preserves essential inference capabilities like language modeling, decodability, and reasoning. The paper's contribution lies in demonstrating that compression's impact on these capabilities is non-monotonic and doesn't follow a single threshold, suggesting a nuanced relationship between compression and model performance.",
+      "url": "http://arxiv.org/abs/2610.10304v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10304v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10345v1",
+      "title": "SLDR: Defending Against Malicious Fine-tuning via Selective Layers Recovery and Dynamic Routing",
+      "authors": [
+        "Hui Zhang",
+        "Yachao Yuan",
+        "Jiayun Wang",
+        "Yuanzhuo Li",
+        "Hongtao Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "SLDR defends against malicious LLM fine-tuning by selectively recovering layers most sensitive to safety. It trains a lightweight adapter on these critical layers and uses dynamic routing to activate it only for potentially harmful queries, significantly reducing unsafe outputs while maintaining task performance.",
+      "url": "http://arxiv.org/abs/2610.10345v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10345v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10411v1",
+      "title": "Training Parallel Speculative Draft Models by Directly Minimizing Expected Decoding Rounds",
+      "authors": [
+        "Yunxiao Zhao",
+        "Changxiao Cai"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL",
+        "stat.ML"
+      ],
+      "abstract": "This paper introduces a novel training method for parallel speculative decoding models by directly minimizing the expected number of decoding rounds. By framing speculative decoding as a Markov reward process, they derive the Expected Decoding Rounds (EDR) objective. This new objective accurately accounts for the interdependencies between decoding rounds, leading to more efficient draft models compared to existing methods that use local approximations.",
+      "url": "http://arxiv.org/abs/2610.10411v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10411v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10506v1",
+      "title": "Validity Without Ground Truth: What Stated-Preference Economics Offers the Evaluation of Language Models",
+      "authors": [
+        "Daniel Robert Kling Alexander",
+        "Catherine Louise Kling"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "econ.GN"
+      ],
+      "abstract": "This paper proposes applying stated-preference economics' validity framework to evaluate language models when ground truth answers are unavailable. The core method involves adapting concepts like content, construct, and criterion validity, alongside reliability and incentive compatibility, to assess LLM responses. The contribution is demonstrating this framework's utility by testing six models on a water-quality valuation survey, showing how economic theory can predict and differentiate model behavior.",
+      "url": "http://arxiv.org/abs/2610.10506v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10506v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.10506v1/figure1.png",
+      "figure_caption": "Share of yes votes by annual tax at a $75,000 household income, pooled over the six watershed scenarios (60 draws per point). A valid valuation requires a downward slope.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10526v1",
+      "title": "Rephrase Before You Act: Characterizing and Mitigating Language Sensitivity in Vision-Language-Action Models",
+      "authors": [
+        "Mikey Watts",
+        "Yuchen Cui"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.RO"
+      ],
+      "abstract": "This paper reveals that Vision-Language-Action (VLA) models are highly sensitive to instruction phrasing, unlike their vision-language counterparts. They propose a method to mitigate this sensitivity by using a large language model to distill rephrasing rules from scored examples. These rules are then applied at deployment to rewrite incoming instructions, significantly improving VLA model robustness without altering the underlying policy.",
+      "url": "http://arxiv.org/abs/2610.10526v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10526v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2610.10409v1",
+      "title": "RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments",
+      "authors": [
+        "Zhiqin Yang",
+        "Chenxin Li",
+        "Xiaomeng Hu",
+        "Yibin Liu",
+        "Weidong Huang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.RO"
+      ],
+      "abstract": "This paper introduces RobotWorld, a simulation benchmark designed to evaluate how well general-purpose AI agents can perform physical tasks with robots. The core method involves testing agents on 84 diverse robot tasks, measuring their success and analyzing their execution traces. The main contribution is identifying which AI capabilities transfer to the physical world and highlighting the significant gaps in reliably composing these skills for successful robot operation.",
+      "url": "http://arxiv.org/abs/2610.10409v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10409v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.10409v1/front_leaderboard.png",
+      "figure_caption": "RobotWorld leaderboard. Left: overall success across 84 tasks. Right: success in four displayed groups (Manipulation and Mobile manipulation are pooled), with counts shown beside each bar. All panels use the same 0–100% success scale. Each model has one retained outcome per task under the evaluation budget rules.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2610.10310v1",
+      "title": "RSIGym: A Flexible Environment for Recursive Self-Improvement",
+      "authors": [
+        "Fanqing Meng",
+        "Lingxiao Du",
+        "Haocheng Lu",
+        "Qiguang Chen",
+        "Ziqi Zhao"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "RSIGym provides a flexible research environment for recursive self-improvement by exposing core agent functionalities as reusable services. This allows agents to iteratively improve themselves by modifying data, training, and execution, carrying changes across cycles and exploring joint optimizations. Its key contribution is enabling comprehensive self-improvement within a unified framework, demonstrated by the RSI-Index across diverse benchmarks.",
+      "url": "http://arxiv.org/abs/2610.10310v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10310v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2610.10426v1",
+      "title": "CoTrace: Data Recipes for Training Terminal Agents with Harness-Model Co-Evolution",
+      "authors": [
+        "Jixuan Chen",
+        "Jiaxin Zhang",
+        "Qinyuan Ye",
+        "Yada Pruksachatkun",
+        "Haoxiang Zhang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces CoTrace, a method for training terminal agents by co-evolving their underlying model and runtime harness. It proposes an alternating framework where harness search and policy training are decoupled, and a novel \"data recipe\" that routes trajectories based on their provenance and the harness used to generate them. This harness-aware approach ensures that model training is conditioned on relevant data, leading to improved agent performance.",
+      "url": "http://arxiv.org/abs/2610.10426v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10426v1",
+      "score": 8.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2610.10533v1",
+      "title": "EngramEdit: Decoupled Knowledge Updates in LLMs through Conditional Memory",
+      "authors": [
+        "Hongru Cai",
+        "Ran Wei",
+        "Wenjie Wang",
+        "Chengfa Wu",
+        "Ning Song"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "EngramEdit proposes a method to update factual knowledge in LLMs without retraining the entire model. It achieves this by decoupling knowledge storage from the core computation, allowing for targeted edits to specific facts by adjusting conditional memory embeddings. This approach aims to enable efficient and precise knowledge updates by ensuring that updated facts are predicted across various expressions while minimizing unintended side effects on other knowledge.",
+      "url": "http://arxiv.org/abs/2610.10533v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10533v1",
+      "score": 8.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2610.10332v1",
+      "title": "Learning to Act with Task Progress: Distilling Small Agents from Compact Teacher Supervision",
+      "authors": [
+        "Wenxi Gan"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces Task-Progress Distillation (TPD) to train small agents from large model demonstrations. TPD pairs actions with concise labels indicating task progress, allowing the student agent to learn these compact targets. This approach enables efficient, step-free task completion and significantly improves performance compared to methods relying solely on action or reasoning supervision.",
+      "url": "http://arxiv.org/abs/2610.10332v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10332v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.10332v1/tpd_overview.png",
+      "figure_caption": "Offline training and closed-loop execution. (a) A frozen annotator reads each teacher-history prefix and pairs the current task stage with the demonstrated action for student SFT. (b) The student scores 3 ​ | 𝒜 ⁡ ( h t ) | 3|\\( \\mathcal{A} \\)(h_{t})| stage–action candidates, and the harness executes the action from the highest-scoring pair. The next input includes the action and environment feedback; the predicted stage is logged only for analysis.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2610.10468v1",
+      "title": "A Society of Researchers: Designing Institutions for Populations of Autonomous Research Agents",
+      "authors": [
+        "Ali Asaria",
+        "Deep Gandhi",
+        "Tony Salomone"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "abstract": "This paper proposes a \"society of researchers\" model for managing large populations of autonomous AI agents working on scientific tasks. The core method involves designing explicit institutions, inspired by human scientific communities, where agents compete for resources through proposals and reviews, overseen by a human governor. The contribution is a framework for organizing massive agent populations, enabling emergent, efficient scientific discovery, as demonstrated by a lab finding significant compute savings in language model pretraining.",
+      "url": "http://arxiv.org/abs/2610.10468v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10468v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.10285v1",
+      "title": "AI Safety Considerations for Agents With Limited Time to Act",
+      "authors": [
+        "Leo Zeitler",
+        "Jack Richings",
+        "Victoria Nockles"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper argues that existing AI safety arguments often overlook the crucial role of the environment. It introduces theoretical bounds for agent-agnostic safety in partially observable, time-constrained environments, demonstrating that even a perfect agent cannot guarantee safety. The core contribution is highlighting that AI safety proofs must explicitly consider the environment and its associated safe actions alongside the agent.",
+      "url": "http://arxiv.org/abs/2610.10285v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10285v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "hacker_news": [
+    {
+      "id": 49997161,
+      "title": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+      "url": "https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai/",
+      "score": 340,
+      "created_at": "2026-10-07T18:49:40Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49997161",
+      "summary": "Meta and Microsoft are implementing measures to limit their employees' use of Claude AI, likely due to concerns about data security and intellectual property."
+    },
+    {
+      "id": 49997073,
+      "title": "Push ifs up and fors down: The idiom, its algebra, and its limits",
+      "url": "https://debasishg.github.io/blog/push-ifs-up-fors-down/",
+      "score": 146,
+      "created_at": "2026-10-07T18:43:18Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49997073",
+      "summary": "The idiom \"push ifs up and fors down\" suggests a programming refactoring technique to improve code clarity by moving conditional logic outside loops."
+    },
+    {
+      "id": 49991823,
+      "title": "Google Playground: Create and play custom games",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+      "score": 145,
+      "created_at": "2026-10-07T12:28:36Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49991823",
+      "summary": "Google Playground is an experimental platform that allows users to create and play custom games using AI."
+    },
+    {
+      "id": 49993121,
+      "title": "AI-assisted proof of optimal packing for 11 squares",
+      "url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized",
+      "score": 115,
+      "created_at": "2026-10-07T14:10:55Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49993121",
+      "summary": "AI helped prove the optimal packing arrangement for 11 squares, a long-standing mathematical problem."
+    },
+    {
+      "id": 49993188,
+      "title": "SynthID Detector",
+      "url": "https://synthid.com/",
+      "score": 115,
+      "created_at": "2026-10-07T14:16:44Z",
+      "comments_url": "https://news.ycombinator.com/item?id=49993188",
+      "summary": "SynthID Detector is a tool that helps identify AI-generated content by analyzing its digital watermark."
+    }
+  ],
+  "github_trending": [
+    {
+      "full_name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "stars_today": 4655,
+      "total_stars": 18611,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "This repository provides agents for reverse engineering applications and native binaries by analyzing their behavior."
+    },
+    {
+      "full_name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "stars_today": 1403,
+      "total_stars": 280353,
+      "language": "Shell",
+      "topics": [],
+      "summary": "This repository provides a curated collection of \"skills\" or reusable code snippets, inspired by the author's personal `.agents` directory, designed to empower real engineers with practical tools."
+    },
+    {
+      "full_name": "boykopovar/AnyPS5",
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+      "stars_today": 2716,
+      "total_stars": 12259,
+      "language": "C++",
+      "topics": [],
+      "summary": "AnyPS5 is a tool that automates the process of porting PlayStation 5 executables to Linux and Windows."
+    },
+    {
+      "full_name": "ayghri/i-have-adhd",
+      "url": "https://github.com/ayghri/i-have-adhd",
+      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+      "stars_today": 619,
+      "total_stars": 55520,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository provides a skill for coding agents to deliver ADHD-friendly, concise answers, preventing them from getting lost in excessive detail."
+    },
+    {
+      "full_name": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "stars_today": 825,
+      "total_stars": 45478,
+      "language": "HTML",
+      "topics": [],
+      "summary": "This repository provides 42 types of self-contained HTML+SVG editorial diagrams for AI tools like Claude Code and GitHub Copilot, focusing on clean design without shadows or Mermaid syntax."
+    },
+    {
+      "full_name": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "stars_today": 677,
+      "total_stars": 103131,
+      "language": "JavaScript",
+      "topics": [],
+      "summary": "This repository provides production-grade engineering skills for AI coding agents, enabling them to perform complex tasks like code generation, debugging, and testing."
+    },
+    {
+      "full_name": "EpicGames/raddebugger",
+      "url": "https://github.com/EpicGames/raddebugger",
+      "description": "A native, user-mode, multi-process, graphical debugger.",
+      "stars_today": 90,
+      "total_stars": 7965,
+      "language": "C",
+      "topics": [],
+      "summary": "Rad debugger is a native, user-mode, graphical debugger designed for multi-process debugging."
+    },
+    {
+      "full_name": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "stars_today": 578,
+      "total_stars": 97987,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "This repository enables persistent context for AI agents by capturing, compressing, and re-injecting session data, enhancing future interactions across various coding and AI models."
+    },
+    {
+      "full_name": "manaflow-ai/cmux",
+      "url": "https://github.com/manaflow-ai/cmux",
+      "description": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability.",
+      "stars_today": 44,
+      "total_stars": 27983,
+      "language": "Swift",
+      "topics": [],
+      "summary": "This repository offers a macOS terminal, built on Ghostty, featuring vertical tabs and AI coding agent notifications, designed for enhanced multitasking, organization, and programmability."
+    }
+  ],
+  "us_stocks": [],
+  "postdoc_jobs": [],
+  "jobs": [],
+  "supervisor_updates": [],
+  "weather": [
+    {
+      "query": "London",
+      "label": "London, England, United Kingdom",
+      "resolved_name": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "timezone": "Europe/London",
+      "forecast_date": "2026-10-08",
+      "condition": "Clear sky",
+      "weather_code": 0,
+      "temperature_c": 10.3,
+      "apparent_temperature_c": 6.6,
+      "temp_max_c": 14.9,
+      "temp_min_c": 7.9,
+      "humidity_pct": 63,
+      "wind_speed_kmh": 15.1,
+      "precipitation_probability_pct": 17,
+      "is_day": true,
+      "sunrise": "2026-10-08T07:12",
+      "sunset": "2026-10-08T18:22",
+      "source": "Open-Meteo",
+      "source_url": "https://open-meteo.com/"
+    }
+  ]
+}
