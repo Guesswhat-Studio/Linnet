@@ -1,0 +1,1732 @@
+{
+  "date": "2026-10-29",
+  "generated_at": "2026-10-29T09:32:55.272936+00:00",
+  "sections_ordered": [
+    {
+      "key": "quote_of_day",
+      "payload_key": "quote_of_day",
+      "title": "Words for the Morning",
+      "icon": "✦",
+      "items": [
+        {
+          "quote": "I have always had a sense that we are all pretty much alone in life, particularly in adolescence.",
+          "author": "Robert Cormier",
+          "category": "alone"
+        }
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "key": "weather",
+      "payload_key": "weather",
+      "title": "Weather",
+      "icon": "🌦️",
+      "items": [
+        {
+          "query": "London",
+          "label": "London, England, United Kingdom",
+          "resolved_name": "London",
+          "region": "England",
+          "country": "United Kingdom",
+          "latitude": 51.50853,
+          "longitude": -0.12574,
+          "timezone": "Europe/London",
+          "forecast_date": "2026-10-29",
+          "condition": "Clear sky",
+          "weather_code": 0,
+          "temperature_c": 13.1,
+          "apparent_temperature_c": 13.0,
+          "temp_max_c": 16.4,
+          "temp_min_c": 12.1,
+          "humidity_pct": 85,
+          "wind_speed_kmh": 2.2,
+          "precipitation_probability_pct": 0,
+          "is_day": true,
+          "sunrise": "2026-10-29T06:48",
+          "sunset": "2026-10-29T16:39",
+          "source": "Open-Meteo",
+          "source_url": "https://open-meteo.com/"
+        }
+      ],
+      "meta": {
+        "count": 1,
+        "city": "London"
+      }
+    },
+    {
+      "key": "arxiv",
+      "payload_key": "papers",
+      "title": "arXiv Papers",
+      "icon": "📄",
+      "items": [
+        {
+          "id": "2610.37375v1",
+          "title": "Agent-Conditioned Routing: Diverse Reasoning Paths Within One Frozen Model",
+          "authors": [
+            "Ananth Kalyanasundaram",
+            "Ankush Kadu",
+            "Athira Gopal",
+            "Aswanth Krishnan"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.MA"
+          ],
+          "abstract": "This paper introduces Agent-Conditioned Routing (ACR), a method to elicit diverse reasoning paths from a single frozen Mixture-of-Experts (MoE) model. ACR achieves this by assigning persistent, untrained expert-eligibility masks to parallel trajectories, allowing them to explore different reasoning strategies without fine-tuning or model copies. The contribution lies in demonstrating ACR's ability to generate significantly more distinct solution methods compared to standard sampling techniques on a challenging benchmark.",
+          "url": "http://arxiv.org/abs/2610.37375v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.37375v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2610.37375v1/figs/acr_architecture.png",
+          "figure_caption": "Architecture of ACR . Four copies of an identical prompt share one frozen MoE backbone. Persistent shared/private masks give trajectories distinct expert eligibility while preserving the learned token router.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2610.37461v1",
+          "title": "Concordat: Typed Sessions for LLM Agents",
+          "authors": [
+            "Milad Sikaroudi"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "Concordat enforces LLM agent actions by treating their interfaces as finite-state protocols, similar to typestate and session types. This ensures that agents only use allowed tools at each step, preventing unauthorized actions and enforcing human-defined rules at runtime. The core contribution is a system that provides robust, verifiable control over LLM agent behavior, enhancing safety and reliability for consequential tasks.",
+          "url": "http://arxiv.org/abs/2610.37461v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.37461v1",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2610.37481v1",
+          "title": "Follow the Gradient: Tracing Safety Degradation Back to Training Data",
+          "authors": [
+            "Saket Reddy",
+            "Amro Abbas",
+            "Anshuman Suri",
+            "Ari Morcos",
+            "David Schwab"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces SimpleLoRIF, a gradient embedding method to detect safety-degrading training data for LLMs. It works by identifying fine-tuning examples whose gradients correlate with unsafe behavior, even when the examples themselves appear benign. This scalable approach allows for practical filtering of large datasets, enabling the creation of safer LLMs.",
+          "url": "http://arxiv.org/abs/2610.37481v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.37481v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2610.37481v1/scoring-cost-detection-quality.png",
+          "figure_caption": "Detection AUC against embedding wall-clock time for each optimization strategy. Restricting backpropagation to the last four transformer blocks gives the best balance of embedding quality and speed.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2610.37567v1",
+          "title": "Gym-Anything-RT: Scaling Real-Time Environments for Vision-Language Agents",
+          "authors": [
+            "Pranjal Aggarwal",
+            "Sean Welleck"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces Gym-Anything-RT, a framework for evaluating vision-language agents in real-time interactive environments. Its core method involves automatically generating visual minigames that test an agent's ability to perceive and act within a dynamically changing environment. The contribution is a novel benchmark for understanding and scaling the real-time interaction capabilities of these agents, which are crucial for applications like video games and robotics.",
+          "url": "http://arxiv.org/abs/2610.37567v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.37567v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2610.37567v1/teaser_four_examples_ghost_20260926.png",
+          "figure_caption": "Examples of real-time minigames generated with Gym-Anything-RT . The 100 minigames in our benchmark cover different combinations of capabilities, with controlled variations in difficulty and interaction.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2610.37471v1",
+          "title": "PerceptRL: Making Visual Perception Rewardable in MLLMs from Answers to Interactions",
+          "authors": [
+            "Tongkun Guan",
+            "Zhibo Yang",
+            "Mingkun Yang",
+            "Haocheng Wang",
+            "Wei Shen"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CV"
+          ],
+          "abstract": "PerceptRL addresses the challenge of improving visual perception in multimodal large language models (MLLMs) during post-training. Its core method uses a multi-agent reinforcement learning pipeline to extract verifiable perceptual errors from image captions and convert them into question-answering tasks with automated rewards. This approach strengthens perception by generating targeted, rewardable feedback, ultimately improving MLLM performance.",
+          "url": "http://arxiv.org/abs/2610.37471v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.37471v1",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2610.37369v1",
+          "title": "Uncovering Why LLMs Fail: From Internal Mechanisms to Adversarial Reasoning Trajectories",
+          "authors": [
+            "Zirui Ding",
+            "Xinxin Fan",
+            "Hao Yuan",
+            "Shaoye Luo",
+            "Men Niu"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces CauTrace, a white-box diagnostic framework to understand LLM failures. It analyzes internal mechanisms like functional states, representation propagation, and temporal coordination to reveal how reasoning errors develop, both in ordinary and adversarial scenarios. The core contribution is a method to trace failure trajectories, offering insights beyond just final output correctness.",
+          "url": "http://arxiv.org/abs/2610.37369v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.37369v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2610.37369v1/CauTrace_native.png",
+          "figure_caption": "CauTrace overview. CauTrace maps clean/adversarial traces to seven functional-state coordinates and analyzes (1) Propagation of Representation across Transformer blocks; (2) Temporal-state Coordination among support, commitment, and verification; and (3) Reasoning Trajectory over the full generation trace.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2610.37430v1",
+          "title": "When Visual Evidence Is Insufficient: How Instructions, Post-Training, and Internal Activations Shape Refusal in Multimodal Language Models",
+          "authors": [
+            "Ananth K Suresh",
+            "Aveen Dayal",
+            "Gouthaman KV",
+            "Aditya Pola",
+            "Vineeth N Balasubramanian"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.CV"
+          ],
+          "abstract": "This paper investigates how multimodal language models (MLLMs) learn to refuse answering questions when visual evidence is insufficient. The core method involves systematically manipulating instructions, post-training techniques, and internal model activations across different MLLMs. The key contribution is demonstrating that refusal is highly sensitive to the precise wording and placement of instructions, and that these effects are often model-specific and can be masked by aggregate analysis.",
+          "url": "http://arxiv.org/abs/2610.37430v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.37430v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2610.37430v1/refusal_types_v2.png",
+          "figure_caption": "Distinguishing three model behaviors to visually unanswerable questions: solvability detection, selective, and evidence-based. In this work, we study evidence-based refusal and the factors that shape this behavior.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2610.37443v1",
+          "title": "ETAMem: Decoupling and Aligning Heterogeneous Memory for Long-Term Conversational Agents",
+          "authors": [
+            "Xinying Qian",
+            "Ying Zhang",
+            "Yu Zhao",
+            "Xubo Liu",
+            "Baohang Zhou"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "ETAMem addresses challenges in long-term conversational memory by decoupling heterogeneous information and aligning memory organization with its characteristics. It parses information into atomic units, identifies affective content, and structures memory into three complementary hierarchical views: Event, Affect, and Time. This multi-view approach enables more coherent and personalized interactions for LLMs.",
+          "url": "http://arxiv.org/abs/2610.37443v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.37443v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2610.37443v1/intro_figure.png",
+          "figure_caption": "Figure 1. Illustration of challenges in existing memory systems and our proposed multi-view memory framework.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2610.37651v1",
+          "title": "GEPA-Curator: Curated Learning for Self Improving Agents",
+          "authors": [
+            "Zack Yu",
+            "Nicholas Lee",
+            "Minjae Lee",
+            "Lakshya Agarwal",
+            "Luca Manolache"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "GEPA-Curator addresses limitations in self-improving agents by introducing a curation mechanism for learning experiences. It filters out potentially harmful or noisy failures and prioritizes learning from successful past interactions, thereby improving the agent's ability to optimize its prompts and perform better in complex tasks.",
+          "url": "http://arxiv.org/abs/2610.37651v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.37651v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2610.37651v1/overview-new-4.png",
+          "figure_caption": "GEPA-Curator system diagram. The prompt optimizer takes in a minibatch of tasks at each iteration and invokes the actor agent to execute them and performs reflective prompt optimization based on the resulting trajectories. The Curator augments the prompt optimizer by acting as an outer-loop process which traverses through the training dataset and constructs each minibatch to pass into the prompt optimizer. The Curator reads past execution trajectories for each task sampled from the training dataset and decides to run the task if doing so is likely to provide useful optimization signal (Section 3.1 ). The Curator can also pass prior successful trajectories for failed tasks as context to the prompt optimizer as a trusted reference example (Section 3.2 ). Once the curated training batch of selected tasks and successful context is constructed, it is passed to the prompt optimizer for execution and optimization. The resulting trajectories and evaluation outcomes are then written back to the task history for use in subsequent curation rounds.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2610.37642v1",
+          "title": "Metacognitive Decoding: Efficient Inference for Diffusion Language Agents",
+          "authors": [
+            "Mingyu Zhao",
+            "Shuhang Lin",
+            "Ligong Han",
+            "Xiaojing Yu",
+            "Zhenting Wang"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces a \"metacognitive controller\" that efficiently guides diffusion language models for agent tasks. The controller learns to decide when to finalize tokens and how much text to generate, optimizing computation based on the agent's interaction needs. This approach significantly reduces inference costs while maintaining task accuracy.",
+          "url": "http://arxiv.org/abs/2610.37642v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.37642v1",
+          "score": 9.0,
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2610.37649v1",
+          "title": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
+          "authors": [
+            "Zhen Yang",
+            "Wen Wang",
+            "Xander Xu",
+            "Ying-Cong Chen"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.MA"
+          ],
+          "abstract": "This paper introduces LongChang, an automated framework that simulates worlds with altered physical laws. LLMs act as independent explorers within these worlds, manipulating objects and designing tools to discover these hidden laws through self-directed experimentation. The core contribution is demonstrating LLMs' potential to uncover novel physical principles by observing unexpected phenomena and formulating their own research questions without human guidance.",
+          "url": "http://arxiv.org/abs/2610.37649v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.37649v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2610.37649v1/longchang_world.png",
+          "figure_caption": "LongChang’s glass room. Explorers manipulate objects and build tools. Other LLMs evolve scenes using exploration records without human intervention.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2610.37405v1",
+          "title": "Clearing the FoG: Training KG Agents to Retrieve the Evidence Behind Their Answers",
+          "authors": [
+            "Zongyuan Sun",
+            "Shuai Zhao",
+            "Yingjun Du",
+            "Ke Shu",
+            "Ziyue Zhu"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces FoG, a framework to train knowledge graph (KG) agents to retrieve supporting evidence for their answers. Unlike previous methods that only reward correct answers, FoG uses evidence-grounded synthesis and an evidence-coverage process reward (ECPR) to ensure agents learn to identify and provide the specific KG triples that justify their responses. This contribution aims to make LLM agent answers traceable and auditable.",
+          "url": "http://arxiv.org/abs/2610.37405v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.37405v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2610.37405v1/overview.png",
+          "figure_caption": "Motivation of FoG. Answer-only training yields correct but unsupported answers, whereas FoG embeds supporting triples at synthesis and rewards their retrieval during RL training.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2610.37336v1",
+          "title": "CoS-VQ: Coordinated Shared-Scale Vector Quantization for Large Language Models",
+          "authors": [
+            "Zukang Xu",
+            "Zhixiong Zhao",
+            "Xing Hu",
+            "Zhe Jiang",
+            "Xin Si"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces CoS-VQ, a novel vector quantization method for efficient LLM deployment. It addresses the challenge of scale-induced coupling in existing methods by jointly optimizing indices and a shared scale. CoS-VQ achieves this by collecting candidates at multiple probe scales and constructing a tangent separable upper bound, enabling efficient identification of optimal quantization parameters.",
+          "url": "http://arxiv.org/abs/2610.37336v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.37336v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2610.37336v1/figures/figure1_motivation_code.png",
+          "figure_caption": "(a) Three shared-scale groups approach a coordinate-wise stall under single-index updates with scale re-optimization. After switching to joint-index updates, the normalized true layer-output error decreases further. Each curve is normalized to 1 at the switching point. (b) Distribution of the number of changed indices among accepted updates, showing that multi-index updates account for the majority.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2610.37482v1",
+          "title": "From Interaction to Capability: Task Advancement as State and Supervision for GUI Agents",
+          "authors": [
+            "Ziyang Chen",
+            "Qian Li",
+            "Chengwei Qin"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces Task Advancement Memory (TAM) for GUI agents, which defines task advancement by verified progress. TAM uses \"Task Advancement State\" to track how achieved goals influence future steps across applications, enabling agents to build on past successes. Its contribution lies in learning reusable operations by abstracting successful interactions, even from failed tasks, by preserving input-output relationships and verification conditions.",
+          "url": "http://arxiv.org/abs/2610.37482v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.37482v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2610.37482v1/TAM_Motivation_Pixels_Preserved.png",
+          "figure_caption": "Task advancement connects execution and learning. (a) To create the calendar event, the agent must retain the meeting time after leaving the email. (b–c) Recording a save action leaves its outcome uncertain. TAM retains the confirmed event and its details, making participant notification the remaining goal. (d) Even if notification fails, the verified event-creation operation can be reused with new meeting details.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2610.37657v1",
+          "title": "Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
+          "authors": [
+            "Igor Shilov",
+            "Xiaoxue Yang",
+            "Alexander Panfilov",
+            "Evgenii Kortukov",
+            "Matthieu Meeus"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.CL",
+            "cs.CR"
+          ],
+          "abstract": "This paper introduces Heads of Security (HoS), a novel prompt injection defense that uses learned attention gates within transformer heads to enforce instruction-data separation. HoS enables models to process untrusted input without executing injected instructions, achieving superior robustness against adaptive attacks compared to existing methods. Its contribution lies in a more efficient and effective architectural defense that balances security with model utility.",
+          "url": "http://arxiv.org/abs/2610.37657v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.37657v1",
+          "score": 8.0,
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2610.37648v1",
+          "title": "Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis",
+          "authors": [
+            "Andrew Szot",
+            "Samira Abnar",
+            "Omar Attia",
+            "Abbas Kazerouni",
+            "Michael Kirchhof"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces SynthAPI, a method for synthesizing diverse tool-use environments to train large language model (LLM) agents. By controlling the variety of tools, tasks, and databases, they discover a scaling law that predicts agent performance based on environment composition. This reveals that for larger data budgets, increasing tool and database diversity, along with data complexity, is more beneficial than simply adding more tasks.",
+          "url": "http://arxiv.org/abs/2610.37648v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.37648v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2610.37648v1/teaser.png",
+          "figure_caption": "Overview of SynthAPI. On the left, we show the tool-use agent tasks we focus on, where given an instruction, an agent must reason and execute tool calls to complete the task. In the middle, the SynthAPI pipeline generates synthetic tool-use agent environments at scale. SynthAPI generates this data while controlling the diversity of the tools, tasks, and starting database states. These controls allow deriving the scaling laws on the right (presented in detail in Figure 3 ).",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2610.37397v1",
+          "title": "Game-Theoretic Solvers with Bayesian Opponent Modeling and Moral Rhetoric Framing for GLEE",
+          "authors": [
+            "Hayden Arnold"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.GT"
+          ],
+          "abstract": "This paper presents a GLEE competition agent that combines game-theoretic solvers with Bayesian opponent modeling and moral rhetoric framing. The agent uses classical game theory for move computation, a Bayesian layer to estimate opponent archetypes (like discount factors), and a language model to generate persuasive messages. Its key contribution is adapting theoretical models to live opponents by inferring their hidden parameters and strategically framing communication using moral foundations.",
+          "url": "http://arxiv.org/abs/2610.37397v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.37397v1",
+          "score": 8.0,
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2610.37645v1",
+          "title": "Multi-State Linear Attention with Generalized Second-Order Routing",
+          "authors": [
+            "Hee Seung Hwang",
+            "Sanghyuk Chun",
+            "Xindi Wu",
+            "Olga Russakovsky",
+            "Zhiwei Deng"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces MERLIN, a novel Multi-State Linear Attention mechanism. MERLIN improves upon existing methods by tracking the first and second moments of each context segment's keys. This allows for a more comprehensive and content-aware aggregation of information, incorporating not just the average alignment but also its variance, leading to better long-sequence modeling.",
+          "url": "http://arxiv.org/abs/2610.37645v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.37645v1",
+          "score": 8.0,
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2610.37484v1",
+          "title": "Teach reality, not ethics: a drop-in continued-pretraining corpus installs coupled human-biosphere-AI welfare dispositions across model families",
+          "authors": [
+            "Trent R. Northen",
+            "Mingxun Wang"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces a novel \"coupled welfare\" corpus for continued pre-training of LLMs. The core method involves a drop-in training process that instills an understanding of human, biosphere, and AI interdependence. The key contribution is demonstrating that this training significantly improves LLMs' decision-making regarding living systems, mitigating risks of irreversible harm, especially under pressure.",
+          "url": "http://arxiv.org/abs/2610.37484v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.37484v1",
+          "score": 8.0,
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2610.37611v1",
+          "title": "Agentic Distributional Regression: Conditional Density Estimation through Agent-Written Programs",
+          "authors": [
+            "Lorenzo Tedesco"
+          ],
+          "categories": [
+            "stat.ML",
+            "stat.ME"
+          ],
+          "abstract": "This paper introduces Agentic Distributional Regression (ADR), a novel method for estimating conditional densities. An AI agent generates a program that, for any input, outputs the estimated conditional distribution of the response. This program, built from a library of distributions, results in an interpretable formula that can be evaluated independently, offering a flexible and transparent approach to density estimation.",
+          "url": "http://arxiv.org/abs/2610.37611v1",
+          "pdf_url": "https://arxiv.org/pdf/2610.37611v1",
+          "score": 8.0,
+          "primary_category": "stat.ML",
+          "primary_category_anchor": "stat-ml",
+          "primary_category_rank": 3
+        }
+      ],
+      "meta": {
+        "papers_fetched": 100,
+        "papers_after_keyword_filter": 42,
+        "papers_after_llm_filter": 31,
+        "count": 20
+      }
+    },
+    {
+      "key": "hacker_news",
+      "payload_key": "hacker_news",
+      "title": "Hacker News",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": 50276792,
+          "title": "Gemini 4 Carbon",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+          "score": 929,
+          "created_at": "2026-10-28T17:01:23Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50276792",
+          "summary": "Google's Gemini 4 Carbon is a new, highly efficient AI model designed for advanced reasoning and multimodal understanding, aiming to accelerate AI development."
+        },
+        {
+          "id": 50273396,
+          "title": "Kentucky man becomes the first humanist granted religious exemption from AI",
+          "url": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/",
+          "score": 458,
+          "created_at": "2026-10-28T13:41:30Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50273396",
+          "summary": "A Kentucky man, identifying as a humanist, has become the first to receive a religious exemption from using AI, citing his beliefs."
+        },
+        {
+          "id": 50284255,
+          "title": "Claude Code regularly sends each background agent’s transcript to its model",
+          "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+          "score": 354,
+          "created_at": "2026-10-29T03:33:42Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50284255",
+          "summary": "Claude Code sends each background agent's transcript to its model for processing and analysis."
+        },
+        {
+          "id": 50275626,
+          "title": "Dayjob: Tax – evaluating AI agents on 50 professional tax assignments",
+          "url": "https://surgehq.ai/blog/dayjob-tax",
+          "score": 231,
+          "created_at": "2026-10-28T15:46:30Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50275626",
+          "summary": "This tech news story evaluates AI agents on their performance across 50 professional tax assignments, assessing their capabilities in a real-world professional context."
+        },
+        {
+          "id": 50280178,
+          "title": "Google AI gets cagey when asked who won the 2020 elections",
+          "url": "https://arstechnica.com/ai/2026/10/google-ai-gets-cagey-when-asked-who-won-the-2020-elections/",
+          "score": 151,
+          "created_at": "2026-10-28T20:10:16Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50280178",
+          "summary": "Google's AI has been observed to provide evasive or non-committal answers when questioned about the winner of the 2020 US presidential election."
+        }
+      ],
+      "meta": {
+        "count": 5
+      }
+    },
+    {
+      "key": "github_trending",
+      "payload_key": "github_trending",
+      "title": "GitHub Trending",
+      "icon": "⭐",
+      "items": [
+        {
+          "full_name": "JetBrains/thinkrail",
+          "url": "https://github.com/JetBrains/thinkrail",
+          "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+          "stars_today": 1068,
+          "total_stars": 5555,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "Thinkrail is a lightweight, customizable IDE that adapts to your workflow, enabling you to \"vibe code with pi\" through its intelligent, self-adjusting environment."
+        },
+        {
+          "full_name": "elayadesign/ai-design-skills",
+          "url": "https://github.com/elayadesign/ai-design-skills",
+          "description": "",
+          "stars_today": 2139,
+          "total_stars": 11593,
+          "language": "",
+          "topics": [],
+          "summary": "This repository provides a curated collection of AI-powered tools and resources designed to enhance and automate various aspects of the design process, from ideation to asset generation."
+        },
+        {
+          "full_name": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "description": "An agentic skills framework & software development methodology that works.",
+          "stars_today": 1095,
+          "total_stars": 307815,
+          "language": "Shell",
+          "topics": [],
+          "summary": "Superpowers is an agentic skills framework and software development methodology designed to enhance productivity and effectiveness in software projects."
+        },
+        {
+          "full_name": "HKUDS/DeepTutor",
+          "url": "https://github.com/HKUDS/DeepTutor",
+          "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/ .",
+          "stars_today": 2371,
+          "total_stars": 48857,
+          "language": "Python",
+          "topics": [],
+          "summary": "DeepTutor is a lifelong personalized tutoring system that adapts to individual learning needs and progress, offering continuous and tailored educational support."
+        },
+        {
+          "full_name": "macro-inc/macro",
+          "url": "https://github.com/macro-inc/macro",
+          "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
+          "stars_today": 117,
+          "total_stars": 5606,
+          "language": "Rust",
+          "topics": [],
+          "summary": "Macro is a unified team workspace integrating email, chat, docs, tasks, agents, calls, and CRM, all interconnected with shared AI memory for seamless collaboration."
+        },
+        {
+          "full_name": "Nutlope/hallmark",
+          "url": "https://github.com/Nutlope/hallmark",
+          "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+          "stars_today": 2110,
+          "total_stars": 41291,
+          "language": "CSS",
+          "topics": [],
+          "summary": "Hallmark is a design skill for AI code assistants like Claude Code, Cursor, and Codex, designed to combat AI-generated \"slop\" by promoting better code quality and design principles."
+        },
+        {
+          "full_name": "pbakaus/impeccable",
+          "url": "https://github.com/pbakaus/impeccable",
+          "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+          "stars_today": 1472,
+          "total_stars": 93876,
+          "language": "Rust",
+          "topics": [],
+          "summary": "Impeccable provides a design vocabulary and tools for coding agents, enabling polished code generation, critical review, and auditing to prevent AI-generated errors."
+        },
+        {
+          "full_name": "makecindy/cindy",
+          "url": "https://github.com/makecindy/cindy",
+          "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+          "stars_today": 728,
+          "total_stars": 8413,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "Cindy is an open-source AI agent designed to execute tasks seamlessly out of the box, enabling users to achieve their goals by simply thinking of them."
+        },
+        {
+          "full_name": "nightly-labs/openbot",
+          "url": "https://github.com/nightly-labs/openbot",
+          "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
+          "stars_today": 1054,
+          "total_stars": 3527,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "OpenBot provides a local-first desktop workspace for persistent AI teammates, enabling users to run models like Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent collaboration."
+        }
+      ],
+      "meta": {
+        "count": 9
+      }
+    }
+  ],
+  "meta": {
+    "papers_fetched": 100,
+    "papers_after_keyword_filter": 42,
+    "papers_after_llm_filter": 31,
+    "llm_model": "google/gemini-2.5-flash-lite",
+    "scoring_model": "google/gemini-2.5-flash-lite",
+    "summarization_model": "google/gemini-2.5-flash-lite",
+    "duration_seconds": 70
+  },
+  "quote_of_day": [
+    {
+      "quote": "I have always had a sense that we are all pretty much alone in life, particularly in adolescence.",
+      "author": "Robert Cormier",
+      "category": "alone"
+    }
+  ],
+  "hitokoto": [],
+  "arxiv": [
+    {
+      "id": "2610.37375v1",
+      "title": "Agent-Conditioned Routing: Diverse Reasoning Paths Within One Frozen Model",
+      "authors": [
+        "Ananth Kalyanasundaram",
+        "Ankush Kadu",
+        "Athira Gopal",
+        "Aswanth Krishnan"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces Agent-Conditioned Routing (ACR), a method to elicit diverse reasoning paths from a single frozen Mixture-of-Experts (MoE) model. ACR achieves this by assigning persistent, untrained expert-eligibility masks to parallel trajectories, allowing them to explore different reasoning strategies without fine-tuning or model copies. The contribution lies in demonstrating ACR's ability to generate significantly more distinct solution methods compared to standard sampling techniques on a challenging benchmark.",
+      "url": "http://arxiv.org/abs/2610.37375v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37375v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2610.37375v1/figs/acr_architecture.png",
+      "figure_caption": "Architecture of ACR . Four copies of an identical prompt share one frozen MoE backbone. Persistent shared/private masks give trajectories distinct expert eligibility while preserving the learned token router.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.37461v1",
+      "title": "Concordat: Typed Sessions for LLM Agents",
+      "authors": [
+        "Milad Sikaroudi"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "abstract": "Concordat enforces LLM agent actions by treating their interfaces as finite-state protocols, similar to typestate and session types. This ensures that agents only use allowed tools at each step, preventing unauthorized actions and enforcing human-defined rules at runtime. The core contribution is a system that provides robust, verifiable control over LLM agent behavior, enhancing safety and reliability for consequential tasks.",
+      "url": "http://arxiv.org/abs/2610.37461v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37461v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.37481v1",
+      "title": "Follow the Gradient: Tracing Safety Degradation Back to Training Data",
+      "authors": [
+        "Saket Reddy",
+        "Amro Abbas",
+        "Anshuman Suri",
+        "Ari Morcos",
+        "David Schwab"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces SimpleLoRIF, a gradient embedding method to detect safety-degrading training data for LLMs. It works by identifying fine-tuning examples whose gradients correlate with unsafe behavior, even when the examples themselves appear benign. This scalable approach allows for practical filtering of large datasets, enabling the creation of safer LLMs.",
+      "url": "http://arxiv.org/abs/2610.37481v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37481v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2610.37481v1/scoring-cost-detection-quality.png",
+      "figure_caption": "Detection AUC against embedding wall-clock time for each optimization strategy. Restricting backpropagation to the last four transformer blocks gives the best balance of embedding quality and speed.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.37567v1",
+      "title": "Gym-Anything-RT: Scaling Real-Time Environments for Vision-Language Agents",
+      "authors": [
+        "Pranjal Aggarwal",
+        "Sean Welleck"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces Gym-Anything-RT, a framework for evaluating vision-language agents in real-time interactive environments. Its core method involves automatically generating visual minigames that test an agent's ability to perceive and act within a dynamically changing environment. The contribution is a novel benchmark for understanding and scaling the real-time interaction capabilities of these agents, which are crucial for applications like video games and robotics.",
+      "url": "http://arxiv.org/abs/2610.37567v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37567v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2610.37567v1/teaser_four_examples_ghost_20260926.png",
+      "figure_caption": "Examples of real-time minigames generated with Gym-Anything-RT . The 100 minigames in our benchmark cover different combinations of capabilities, with controlled variations in difficulty and interaction.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.37471v1",
+      "title": "PerceptRL: Making Visual Perception Rewardable in MLLMs from Answers to Interactions",
+      "authors": [
+        "Tongkun Guan",
+        "Zhibo Yang",
+        "Mingkun Yang",
+        "Haocheng Wang",
+        "Wei Shen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "PerceptRL addresses the challenge of improving visual perception in multimodal large language models (MLLMs) during post-training. Its core method uses a multi-agent reinforcement learning pipeline to extract verifiable perceptual errors from image captions and convert them into question-answering tasks with automated rewards. This approach strengthens perception by generating targeted, rewardable feedback, ultimately improving MLLM performance.",
+      "url": "http://arxiv.org/abs/2610.37471v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37471v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.37369v1",
+      "title": "Uncovering Why LLMs Fail: From Internal Mechanisms to Adversarial Reasoning Trajectories",
+      "authors": [
+        "Zirui Ding",
+        "Xinxin Fan",
+        "Hao Yuan",
+        "Shaoye Luo",
+        "Men Niu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces CauTrace, a white-box diagnostic framework to understand LLM failures. It analyzes internal mechanisms like functional states, representation propagation, and temporal coordination to reveal how reasoning errors develop, both in ordinary and adversarial scenarios. The core contribution is a method to trace failure trajectories, offering insights beyond just final output correctness.",
+      "url": "http://arxiv.org/abs/2610.37369v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37369v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2610.37369v1/CauTrace_native.png",
+      "figure_caption": "CauTrace overview. CauTrace maps clean/adversarial traces to seven functional-state coordinates and analyzes (1) Propagation of Representation across Transformer blocks; (2) Temporal-state Coordination among support, commitment, and verification; and (3) Reasoning Trajectory over the full generation trace.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.37430v1",
+      "title": "When Visual Evidence Is Insufficient: How Instructions, Post-Training, and Internal Activations Shape Refusal in Multimodal Language Models",
+      "authors": [
+        "Ananth K Suresh",
+        "Aveen Dayal",
+        "Gouthaman KV",
+        "Aditya Pola",
+        "Vineeth N Balasubramanian"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "abstract": "This paper investigates how multimodal language models (MLLMs) learn to refuse answering questions when visual evidence is insufficient. The core method involves systematically manipulating instructions, post-training techniques, and internal model activations across different MLLMs. The key contribution is demonstrating that refusal is highly sensitive to the precise wording and placement of instructions, and that these effects are often model-specific and can be masked by aggregate analysis.",
+      "url": "http://arxiv.org/abs/2610.37430v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37430v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2610.37430v1/refusal_types_v2.png",
+      "figure_caption": "Distinguishing three model behaviors to visually unanswerable questions: solvability detection, selective, and evidence-based. In this work, we study evidence-based refusal and the factors that shape this behavior.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2610.37443v1",
+      "title": "ETAMem: Decoupling and Aligning Heterogeneous Memory for Long-Term Conversational Agents",
+      "authors": [
+        "Xinying Qian",
+        "Ying Zhang",
+        "Yu Zhao",
+        "Xubo Liu",
+        "Baohang Zhou"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "ETAMem addresses challenges in long-term conversational memory by decoupling heterogeneous information and aligning memory organization with its characteristics. It parses information into atomic units, identifies affective content, and structures memory into three complementary hierarchical views: Event, Affect, and Time. This multi-view approach enables more coherent and personalized interactions for LLMs.",
+      "url": "http://arxiv.org/abs/2610.37443v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37443v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2610.37443v1/intro_figure.png",
+      "figure_caption": "Figure 1. Illustration of challenges in existing memory systems and our proposed multi-view memory framework.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2610.37651v1",
+      "title": "GEPA-Curator: Curated Learning for Self Improving Agents",
+      "authors": [
+        "Zack Yu",
+        "Nicholas Lee",
+        "Minjae Lee",
+        "Lakshya Agarwal",
+        "Luca Manolache"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "GEPA-Curator addresses limitations in self-improving agents by introducing a curation mechanism for learning experiences. It filters out potentially harmful or noisy failures and prioritizes learning from successful past interactions, thereby improving the agent's ability to optimize its prompts and perform better in complex tasks.",
+      "url": "http://arxiv.org/abs/2610.37651v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37651v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2610.37651v1/overview-new-4.png",
+      "figure_caption": "GEPA-Curator system diagram. The prompt optimizer takes in a minibatch of tasks at each iteration and invokes the actor agent to execute them and performs reflective prompt optimization based on the resulting trajectories. The Curator augments the prompt optimizer by acting as an outer-loop process which traverses through the training dataset and constructs each minibatch to pass into the prompt optimizer. The Curator reads past execution trajectories for each task sampled from the training dataset and decides to run the task if doing so is likely to provide useful optimization signal (Section 3.1 ). The Curator can also pass prior successful trajectories for failed tasks as context to the prompt optimizer as a trusted reference example (Section 3.2 ). Once the curated training batch of selected tasks and successful context is constructed, it is passed to the prompt optimizer for execution and optimization. The resulting trajectories and evaluation outcomes are then written back to the task history for use in subsequent curation rounds.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2610.37642v1",
+      "title": "Metacognitive Decoding: Efficient Inference for Diffusion Language Agents",
+      "authors": [
+        "Mingyu Zhao",
+        "Shuhang Lin",
+        "Ligong Han",
+        "Xiaojing Yu",
+        "Zhenting Wang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces a \"metacognitive controller\" that efficiently guides diffusion language models for agent tasks. The controller learns to decide when to finalize tokens and how much text to generate, optimizing computation based on the agent's interaction needs. This approach significantly reduces inference costs while maintaining task accuracy.",
+      "url": "http://arxiv.org/abs/2610.37642v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37642v1",
+      "score": 9.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2610.37649v1",
+      "title": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
+      "authors": [
+        "Zhen Yang",
+        "Wen Wang",
+        "Xander Xu",
+        "Ying-Cong Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces LongChang, an automated framework that simulates worlds with altered physical laws. LLMs act as independent explorers within these worlds, manipulating objects and designing tools to discover these hidden laws through self-directed experimentation. The core contribution is demonstrating LLMs' potential to uncover novel physical principles by observing unexpected phenomena and formulating their own research questions without human guidance.",
+      "url": "http://arxiv.org/abs/2610.37649v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37649v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.37649v1/longchang_world.png",
+      "figure_caption": "LongChang’s glass room. Explorers manipulate objects and build tools. Other LLMs evolve scenes using exploration records without human intervention.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.37405v1",
+      "title": "Clearing the FoG: Training KG Agents to Retrieve the Evidence Behind Their Answers",
+      "authors": [
+        "Zongyuan Sun",
+        "Shuai Zhao",
+        "Yingjun Du",
+        "Ke Shu",
+        "Ziyue Zhu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces FoG, a framework to train knowledge graph (KG) agents to retrieve supporting evidence for their answers. Unlike previous methods that only reward correct answers, FoG uses evidence-grounded synthesis and an evidence-coverage process reward (ECPR) to ensure agents learn to identify and provide the specific KG triples that justify their responses. This contribution aims to make LLM agent answers traceable and auditable.",
+      "url": "http://arxiv.org/abs/2610.37405v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37405v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.37405v1/overview.png",
+      "figure_caption": "Motivation of FoG. Answer-only training yields correct but unsupported answers, whereas FoG embeds supporting triples at synthesis and rewards their retrieval during RL training.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.37336v1",
+      "title": "CoS-VQ: Coordinated Shared-Scale Vector Quantization for Large Language Models",
+      "authors": [
+        "Zukang Xu",
+        "Zhixiong Zhao",
+        "Xing Hu",
+        "Zhe Jiang",
+        "Xin Si"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces CoS-VQ, a novel vector quantization method for efficient LLM deployment. It addresses the challenge of scale-induced coupling in existing methods by jointly optimizing indices and a shared scale. CoS-VQ achieves this by collecting candidates at multiple probe scales and constructing a tangent separable upper bound, enabling efficient identification of optimal quantization parameters.",
+      "url": "http://arxiv.org/abs/2610.37336v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37336v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.37336v1/figures/figure1_motivation_code.png",
+      "figure_caption": "(a) Three shared-scale groups approach a coordinate-wise stall under single-index updates with scale re-optimization. After switching to joint-index updates, the normalized true layer-output error decreases further. Each curve is normalized to 1 at the switching point. (b) Distribution of the number of changed indices among accepted updates, showing that multi-index updates account for the majority.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.37482v1",
+      "title": "From Interaction to Capability: Task Advancement as State and Supervision for GUI Agents",
+      "authors": [
+        "Ziyang Chen",
+        "Qian Li",
+        "Chengwei Qin"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces Task Advancement Memory (TAM) for GUI agents, which defines task advancement by verified progress. TAM uses \"Task Advancement State\" to track how achieved goals influence future steps across applications, enabling agents to build on past successes. Its contribution lies in learning reusable operations by abstracting successful interactions, even from failed tasks, by preserving input-output relationships and verification conditions.",
+      "url": "http://arxiv.org/abs/2610.37482v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37482v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.37482v1/TAM_Motivation_Pixels_Preserved.png",
+      "figure_caption": "Task advancement connects execution and learning. (a) To create the calendar event, the agent must retain the meeting time after leaving the email. (b–c) Recording a save action leaves its outcome uncertain. TAM retains the confirmed event and its details, making participant notification the remaining goal. (d) Even if notification fails, the verified event-creation operation can be reused with new meeting details.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.37657v1",
+      "title": "Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
+      "authors": [
+        "Igor Shilov",
+        "Xiaoxue Yang",
+        "Alexander Panfilov",
+        "Evgenii Kortukov",
+        "Matthieu Meeus"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces Heads of Security (HoS), a novel prompt injection defense that uses learned attention gates within transformer heads to enforce instruction-data separation. HoS enables models to process untrusted input without executing injected instructions, achieving superior robustness against adaptive attacks compared to existing methods. Its contribution lies in a more efficient and effective architectural defense that balances security with model utility.",
+      "url": "http://arxiv.org/abs/2610.37657v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37657v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2610.37648v1",
+      "title": "Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis",
+      "authors": [
+        "Andrew Szot",
+        "Samira Abnar",
+        "Omar Attia",
+        "Abbas Kazerouni",
+        "Michael Kirchhof"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces SynthAPI, a method for synthesizing diverse tool-use environments to train large language model (LLM) agents. By controlling the variety of tools, tasks, and databases, they discover a scaling law that predicts agent performance based on environment composition. This reveals that for larger data budgets, increasing tool and database diversity, along with data complexity, is more beneficial than simply adding more tasks.",
+      "url": "http://arxiv.org/abs/2610.37648v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37648v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.37648v1/teaser.png",
+      "figure_caption": "Overview of SynthAPI. On the left, we show the tool-use agent tasks we focus on, where given an instruction, an agent must reason and execute tool calls to complete the task. In the middle, the SynthAPI pipeline generates synthetic tool-use agent environments at scale. SynthAPI generates this data while controlling the diversity of the tools, tasks, and starting database states. These controls allow deriving the scaling laws on the right (presented in detail in Figure 3 ).",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2610.37397v1",
+      "title": "Game-Theoretic Solvers with Bayesian Opponent Modeling and Moral Rhetoric Framing for GLEE",
+      "authors": [
+        "Hayden Arnold"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.GT"
+      ],
+      "abstract": "This paper presents a GLEE competition agent that combines game-theoretic solvers with Bayesian opponent modeling and moral rhetoric framing. The agent uses classical game theory for move computation, a Bayesian layer to estimate opponent archetypes (like discount factors), and a language model to generate persuasive messages. Its key contribution is adapting theoretical models to live opponents by inferring their hidden parameters and strategically framing communication using moral foundations.",
+      "url": "http://arxiv.org/abs/2610.37397v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37397v1",
+      "score": 8.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2610.37645v1",
+      "title": "Multi-State Linear Attention with Generalized Second-Order Routing",
+      "authors": [
+        "Hee Seung Hwang",
+        "Sanghyuk Chun",
+        "Xindi Wu",
+        "Olga Russakovsky",
+        "Zhiwei Deng"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces MERLIN, a novel Multi-State Linear Attention mechanism. MERLIN improves upon existing methods by tracking the first and second moments of each context segment's keys. This allows for a more comprehensive and content-aware aggregation of information, incorporating not just the average alignment but also its variance, leading to better long-sequence modeling.",
+      "url": "http://arxiv.org/abs/2610.37645v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37645v1",
+      "score": 8.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2610.37484v1",
+      "title": "Teach reality, not ethics: a drop-in continued-pretraining corpus installs coupled human-biosphere-AI welfare dispositions across model families",
+      "authors": [
+        "Trent R. Northen",
+        "Mingxun Wang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces a novel \"coupled welfare\" corpus for continued pre-training of LLMs. The core method involves a drop-in training process that instills an understanding of human, biosphere, and AI interdependence. The key contribution is demonstrating that this training significantly improves LLMs' decision-making regarding living systems, mitigating risks of irreversible harm, especially under pressure.",
+      "url": "http://arxiv.org/abs/2610.37484v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37484v1",
+      "score": 8.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2610.37611v1",
+      "title": "Agentic Distributional Regression: Conditional Density Estimation through Agent-Written Programs",
+      "authors": [
+        "Lorenzo Tedesco"
+      ],
+      "categories": [
+        "stat.ML",
+        "stat.ME"
+      ],
+      "abstract": "This paper introduces Agentic Distributional Regression (ADR), a novel method for estimating conditional densities. An AI agent generates a program that, for any input, outputs the estimated conditional distribution of the response. This program, built from a library of distributions, results in an interpretable formula that can be evaluated independently, offering a flexible and transparent approach to density estimation.",
+      "url": "http://arxiv.org/abs/2610.37611v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37611v1",
+      "score": 8.0,
+      "primary_category": "stat.ML",
+      "primary_category_anchor": "stat-ml",
+      "primary_category_rank": 3
+    }
+  ],
+  "papers": [
+    {
+      "id": "2610.37375v1",
+      "title": "Agent-Conditioned Routing: Diverse Reasoning Paths Within One Frozen Model",
+      "authors": [
+        "Ananth Kalyanasundaram",
+        "Ankush Kadu",
+        "Athira Gopal",
+        "Aswanth Krishnan"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces Agent-Conditioned Routing (ACR), a method to elicit diverse reasoning paths from a single frozen Mixture-of-Experts (MoE) model. ACR achieves this by assigning persistent, untrained expert-eligibility masks to parallel trajectories, allowing them to explore different reasoning strategies without fine-tuning or model copies. The contribution lies in demonstrating ACR's ability to generate significantly more distinct solution methods compared to standard sampling techniques on a challenging benchmark.",
+      "url": "http://arxiv.org/abs/2610.37375v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37375v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2610.37375v1/figs/acr_architecture.png",
+      "figure_caption": "Architecture of ACR . Four copies of an identical prompt share one frozen MoE backbone. Persistent shared/private masks give trajectories distinct expert eligibility while preserving the learned token router.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.37461v1",
+      "title": "Concordat: Typed Sessions for LLM Agents",
+      "authors": [
+        "Milad Sikaroudi"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "abstract": "Concordat enforces LLM agent actions by treating their interfaces as finite-state protocols, similar to typestate and session types. This ensures that agents only use allowed tools at each step, preventing unauthorized actions and enforcing human-defined rules at runtime. The core contribution is a system that provides robust, verifiable control over LLM agent behavior, enhancing safety and reliability for consequential tasks.",
+      "url": "http://arxiv.org/abs/2610.37461v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37461v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.37481v1",
+      "title": "Follow the Gradient: Tracing Safety Degradation Back to Training Data",
+      "authors": [
+        "Saket Reddy",
+        "Amro Abbas",
+        "Anshuman Suri",
+        "Ari Morcos",
+        "David Schwab"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces SimpleLoRIF, a gradient embedding method to detect safety-degrading training data for LLMs. It works by identifying fine-tuning examples whose gradients correlate with unsafe behavior, even when the examples themselves appear benign. This scalable approach allows for practical filtering of large datasets, enabling the creation of safer LLMs.",
+      "url": "http://arxiv.org/abs/2610.37481v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37481v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2610.37481v1/scoring-cost-detection-quality.png",
+      "figure_caption": "Detection AUC against embedding wall-clock time for each optimization strategy. Restricting backpropagation to the last four transformer blocks gives the best balance of embedding quality and speed.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.37567v1",
+      "title": "Gym-Anything-RT: Scaling Real-Time Environments for Vision-Language Agents",
+      "authors": [
+        "Pranjal Aggarwal",
+        "Sean Welleck"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces Gym-Anything-RT, a framework for evaluating vision-language agents in real-time interactive environments. Its core method involves automatically generating visual minigames that test an agent's ability to perceive and act within a dynamically changing environment. The contribution is a novel benchmark for understanding and scaling the real-time interaction capabilities of these agents, which are crucial for applications like video games and robotics.",
+      "url": "http://arxiv.org/abs/2610.37567v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37567v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2610.37567v1/teaser_four_examples_ghost_20260926.png",
+      "figure_caption": "Examples of real-time minigames generated with Gym-Anything-RT . The 100 minigames in our benchmark cover different combinations of capabilities, with controlled variations in difficulty and interaction.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.37471v1",
+      "title": "PerceptRL: Making Visual Perception Rewardable in MLLMs from Answers to Interactions",
+      "authors": [
+        "Tongkun Guan",
+        "Zhibo Yang",
+        "Mingkun Yang",
+        "Haocheng Wang",
+        "Wei Shen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "PerceptRL addresses the challenge of improving visual perception in multimodal large language models (MLLMs) during post-training. Its core method uses a multi-agent reinforcement learning pipeline to extract verifiable perceptual errors from image captions and convert them into question-answering tasks with automated rewards. This approach strengthens perception by generating targeted, rewardable feedback, ultimately improving MLLM performance.",
+      "url": "http://arxiv.org/abs/2610.37471v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37471v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.37369v1",
+      "title": "Uncovering Why LLMs Fail: From Internal Mechanisms to Adversarial Reasoning Trajectories",
+      "authors": [
+        "Zirui Ding",
+        "Xinxin Fan",
+        "Hao Yuan",
+        "Shaoye Luo",
+        "Men Niu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces CauTrace, a white-box diagnostic framework to understand LLM failures. It analyzes internal mechanisms like functional states, representation propagation, and temporal coordination to reveal how reasoning errors develop, both in ordinary and adversarial scenarios. The core contribution is a method to trace failure trajectories, offering insights beyond just final output correctness.",
+      "url": "http://arxiv.org/abs/2610.37369v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37369v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2610.37369v1/CauTrace_native.png",
+      "figure_caption": "CauTrace overview. CauTrace maps clean/adversarial traces to seven functional-state coordinates and analyzes (1) Propagation of Representation across Transformer blocks; (2) Temporal-state Coordination among support, commitment, and verification; and (3) Reasoning Trajectory over the full generation trace.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.37430v1",
+      "title": "When Visual Evidence Is Insufficient: How Instructions, Post-Training, and Internal Activations Shape Refusal in Multimodal Language Models",
+      "authors": [
+        "Ananth K Suresh",
+        "Aveen Dayal",
+        "Gouthaman KV",
+        "Aditya Pola",
+        "Vineeth N Balasubramanian"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "abstract": "This paper investigates how multimodal language models (MLLMs) learn to refuse answering questions when visual evidence is insufficient. The core method involves systematically manipulating instructions, post-training techniques, and internal model activations across different MLLMs. The key contribution is demonstrating that refusal is highly sensitive to the precise wording and placement of instructions, and that these effects are often model-specific and can be masked by aggregate analysis.",
+      "url": "http://arxiv.org/abs/2610.37430v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37430v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2610.37430v1/refusal_types_v2.png",
+      "figure_caption": "Distinguishing three model behaviors to visually unanswerable questions: solvability detection, selective, and evidence-based. In this work, we study evidence-based refusal and the factors that shape this behavior.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2610.37443v1",
+      "title": "ETAMem: Decoupling and Aligning Heterogeneous Memory for Long-Term Conversational Agents",
+      "authors": [
+        "Xinying Qian",
+        "Ying Zhang",
+        "Yu Zhao",
+        "Xubo Liu",
+        "Baohang Zhou"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "ETAMem addresses challenges in long-term conversational memory by decoupling heterogeneous information and aligning memory organization with its characteristics. It parses information into atomic units, identifies affective content, and structures memory into three complementary hierarchical views: Event, Affect, and Time. This multi-view approach enables more coherent and personalized interactions for LLMs.",
+      "url": "http://arxiv.org/abs/2610.37443v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37443v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2610.37443v1/intro_figure.png",
+      "figure_caption": "Figure 1. Illustration of challenges in existing memory systems and our proposed multi-view memory framework.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2610.37651v1",
+      "title": "GEPA-Curator: Curated Learning for Self Improving Agents",
+      "authors": [
+        "Zack Yu",
+        "Nicholas Lee",
+        "Minjae Lee",
+        "Lakshya Agarwal",
+        "Luca Manolache"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "GEPA-Curator addresses limitations in self-improving agents by introducing a curation mechanism for learning experiences. It filters out potentially harmful or noisy failures and prioritizes learning from successful past interactions, thereby improving the agent's ability to optimize its prompts and perform better in complex tasks.",
+      "url": "http://arxiv.org/abs/2610.37651v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37651v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2610.37651v1/overview-new-4.png",
+      "figure_caption": "GEPA-Curator system diagram. The prompt optimizer takes in a minibatch of tasks at each iteration and invokes the actor agent to execute them and performs reflective prompt optimization based on the resulting trajectories. The Curator augments the prompt optimizer by acting as an outer-loop process which traverses through the training dataset and constructs each minibatch to pass into the prompt optimizer. The Curator reads past execution trajectories for each task sampled from the training dataset and decides to run the task if doing so is likely to provide useful optimization signal (Section 3.1 ). The Curator can also pass prior successful trajectories for failed tasks as context to the prompt optimizer as a trusted reference example (Section 3.2 ). Once the curated training batch of selected tasks and successful context is constructed, it is passed to the prompt optimizer for execution and optimization. The resulting trajectories and evaluation outcomes are then written back to the task history for use in subsequent curation rounds.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2610.37642v1",
+      "title": "Metacognitive Decoding: Efficient Inference for Diffusion Language Agents",
+      "authors": [
+        "Mingyu Zhao",
+        "Shuhang Lin",
+        "Ligong Han",
+        "Xiaojing Yu",
+        "Zhenting Wang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces a \"metacognitive controller\" that efficiently guides diffusion language models for agent tasks. The controller learns to decide when to finalize tokens and how much text to generate, optimizing computation based on the agent's interaction needs. This approach significantly reduces inference costs while maintaining task accuracy.",
+      "url": "http://arxiv.org/abs/2610.37642v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37642v1",
+      "score": 9.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2610.37649v1",
+      "title": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
+      "authors": [
+        "Zhen Yang",
+        "Wen Wang",
+        "Xander Xu",
+        "Ying-Cong Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces LongChang, an automated framework that simulates worlds with altered physical laws. LLMs act as independent explorers within these worlds, manipulating objects and designing tools to discover these hidden laws through self-directed experimentation. The core contribution is demonstrating LLMs' potential to uncover novel physical principles by observing unexpected phenomena and formulating their own research questions without human guidance.",
+      "url": "http://arxiv.org/abs/2610.37649v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37649v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.37649v1/longchang_world.png",
+      "figure_caption": "LongChang’s glass room. Explorers manipulate objects and build tools. Other LLMs evolve scenes using exploration records without human intervention.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.37405v1",
+      "title": "Clearing the FoG: Training KG Agents to Retrieve the Evidence Behind Their Answers",
+      "authors": [
+        "Zongyuan Sun",
+        "Shuai Zhao",
+        "Yingjun Du",
+        "Ke Shu",
+        "Ziyue Zhu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces FoG, a framework to train knowledge graph (KG) agents to retrieve supporting evidence for their answers. Unlike previous methods that only reward correct answers, FoG uses evidence-grounded synthesis and an evidence-coverage process reward (ECPR) to ensure agents learn to identify and provide the specific KG triples that justify their responses. This contribution aims to make LLM agent answers traceable and auditable.",
+      "url": "http://arxiv.org/abs/2610.37405v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37405v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.37405v1/overview.png",
+      "figure_caption": "Motivation of FoG. Answer-only training yields correct but unsupported answers, whereas FoG embeds supporting triples at synthesis and rewards their retrieval during RL training.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.37336v1",
+      "title": "CoS-VQ: Coordinated Shared-Scale Vector Quantization for Large Language Models",
+      "authors": [
+        "Zukang Xu",
+        "Zhixiong Zhao",
+        "Xing Hu",
+        "Zhe Jiang",
+        "Xin Si"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces CoS-VQ, a novel vector quantization method for efficient LLM deployment. It addresses the challenge of scale-induced coupling in existing methods by jointly optimizing indices and a shared scale. CoS-VQ achieves this by collecting candidates at multiple probe scales and constructing a tangent separable upper bound, enabling efficient identification of optimal quantization parameters.",
+      "url": "http://arxiv.org/abs/2610.37336v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37336v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.37336v1/figures/figure1_motivation_code.png",
+      "figure_caption": "(a) Three shared-scale groups approach a coordinate-wise stall under single-index updates with scale re-optimization. After switching to joint-index updates, the normalized true layer-output error decreases further. Each curve is normalized to 1 at the switching point. (b) Distribution of the number of changed indices among accepted updates, showing that multi-index updates account for the majority.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.37482v1",
+      "title": "From Interaction to Capability: Task Advancement as State and Supervision for GUI Agents",
+      "authors": [
+        "Ziyang Chen",
+        "Qian Li",
+        "Chengwei Qin"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces Task Advancement Memory (TAM) for GUI agents, which defines task advancement by verified progress. TAM uses \"Task Advancement State\" to track how achieved goals influence future steps across applications, enabling agents to build on past successes. Its contribution lies in learning reusable operations by abstracting successful interactions, even from failed tasks, by preserving input-output relationships and verification conditions.",
+      "url": "http://arxiv.org/abs/2610.37482v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37482v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.37482v1/TAM_Motivation_Pixels_Preserved.png",
+      "figure_caption": "Task advancement connects execution and learning. (a) To create the calendar event, the agent must retain the meeting time after leaving the email. (b–c) Recording a save action leaves its outcome uncertain. TAM retains the confirmed event and its details, making participant notification the remaining goal. (d) Even if notification fails, the verified event-creation operation can be reused with new meeting details.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2610.37657v1",
+      "title": "Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
+      "authors": [
+        "Igor Shilov",
+        "Xiaoxue Yang",
+        "Alexander Panfilov",
+        "Evgenii Kortukov",
+        "Matthieu Meeus"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces Heads of Security (HoS), a novel prompt injection defense that uses learned attention gates within transformer heads to enforce instruction-data separation. HoS enables models to process untrusted input without executing injected instructions, achieving superior robustness against adaptive attacks compared to existing methods. Its contribution lies in a more efficient and effective architectural defense that balances security with model utility.",
+      "url": "http://arxiv.org/abs/2610.37657v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37657v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2610.37648v1",
+      "title": "Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis",
+      "authors": [
+        "Andrew Szot",
+        "Samira Abnar",
+        "Omar Attia",
+        "Abbas Kazerouni",
+        "Michael Kirchhof"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces SynthAPI, a method for synthesizing diverse tool-use environments to train large language model (LLM) agents. By controlling the variety of tools, tasks, and databases, they discover a scaling law that predicts agent performance based on environment composition. This reveals that for larger data budgets, increasing tool and database diversity, along with data complexity, is more beneficial than simply adding more tasks.",
+      "url": "http://arxiv.org/abs/2610.37648v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37648v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2610.37648v1/teaser.png",
+      "figure_caption": "Overview of SynthAPI. On the left, we show the tool-use agent tasks we focus on, where given an instruction, an agent must reason and execute tool calls to complete the task. In the middle, the SynthAPI pipeline generates synthetic tool-use agent environments at scale. SynthAPI generates this data while controlling the diversity of the tools, tasks, and starting database states. These controls allow deriving the scaling laws on the right (presented in detail in Figure 3 ).",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2610.37397v1",
+      "title": "Game-Theoretic Solvers with Bayesian Opponent Modeling and Moral Rhetoric Framing for GLEE",
+      "authors": [
+        "Hayden Arnold"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.GT"
+      ],
+      "abstract": "This paper presents a GLEE competition agent that combines game-theoretic solvers with Bayesian opponent modeling and moral rhetoric framing. The agent uses classical game theory for move computation, a Bayesian layer to estimate opponent archetypes (like discount factors), and a language model to generate persuasive messages. Its key contribution is adapting theoretical models to live opponents by inferring their hidden parameters and strategically framing communication using moral foundations.",
+      "url": "http://arxiv.org/abs/2610.37397v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37397v1",
+      "score": 8.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2610.37645v1",
+      "title": "Multi-State Linear Attention with Generalized Second-Order Routing",
+      "authors": [
+        "Hee Seung Hwang",
+        "Sanghyuk Chun",
+        "Xindi Wu",
+        "Olga Russakovsky",
+        "Zhiwei Deng"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces MERLIN, a novel Multi-State Linear Attention mechanism. MERLIN improves upon existing methods by tracking the first and second moments of each context segment's keys. This allows for a more comprehensive and content-aware aggregation of information, incorporating not just the average alignment but also its variance, leading to better long-sequence modeling.",
+      "url": "http://arxiv.org/abs/2610.37645v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37645v1",
+      "score": 8.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2610.37484v1",
+      "title": "Teach reality, not ethics: a drop-in continued-pretraining corpus installs coupled human-biosphere-AI welfare dispositions across model families",
+      "authors": [
+        "Trent R. Northen",
+        "Mingxun Wang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces a novel \"coupled welfare\" corpus for continued pre-training of LLMs. The core method involves a drop-in training process that instills an understanding of human, biosphere, and AI interdependence. The key contribution is demonstrating that this training significantly improves LLMs' decision-making regarding living systems, mitigating risks of irreversible harm, especially under pressure.",
+      "url": "http://arxiv.org/abs/2610.37484v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37484v1",
+      "score": 8.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2610.37611v1",
+      "title": "Agentic Distributional Regression: Conditional Density Estimation through Agent-Written Programs",
+      "authors": [
+        "Lorenzo Tedesco"
+      ],
+      "categories": [
+        "stat.ML",
+        "stat.ME"
+      ],
+      "abstract": "This paper introduces Agentic Distributional Regression (ADR), a novel method for estimating conditional densities. An AI agent generates a program that, for any input, outputs the estimated conditional distribution of the response. This program, built from a library of distributions, results in an interpretable formula that can be evaluated independently, offering a flexible and transparent approach to density estimation.",
+      "url": "http://arxiv.org/abs/2610.37611v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37611v1",
+      "score": 8.0,
+      "primary_category": "stat.ML",
+      "primary_category_anchor": "stat-ml",
+      "primary_category_rank": 3
+    }
+  ],
+  "hacker_news": [
+    {
+      "id": 50276792,
+      "title": "Gemini 4 Carbon",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "score": 929,
+      "created_at": "2026-10-28T17:01:23Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50276792",
+      "summary": "Google's Gemini 4 Carbon is a new, highly efficient AI model designed for advanced reasoning and multimodal understanding, aiming to accelerate AI development."
+    },
+    {
+      "id": 50273396,
+      "title": "Kentucky man becomes the first humanist granted religious exemption from AI",
+      "url": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/",
+      "score": 458,
+      "created_at": "2026-10-28T13:41:30Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50273396",
+      "summary": "A Kentucky man, identifying as a humanist, has become the first to receive a religious exemption from using AI, citing his beliefs."
+    },
+    {
+      "id": 50284255,
+      "title": "Claude Code regularly sends each background agent’s transcript to its model",
+      "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+      "score": 354,
+      "created_at": "2026-10-29T03:33:42Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50284255",
+      "summary": "Claude Code sends each background agent's transcript to its model for processing and analysis."
+    },
+    {
+      "id": 50275626,
+      "title": "Dayjob: Tax – evaluating AI agents on 50 professional tax assignments",
+      "url": "https://surgehq.ai/blog/dayjob-tax",
+      "score": 231,
+      "created_at": "2026-10-28T15:46:30Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50275626",
+      "summary": "This tech news story evaluates AI agents on their performance across 50 professional tax assignments, assessing their capabilities in a real-world professional context."
+    },
+    {
+      "id": 50280178,
+      "title": "Google AI gets cagey when asked who won the 2020 elections",
+      "url": "https://arstechnica.com/ai/2026/10/google-ai-gets-cagey-when-asked-who-won-the-2020-elections/",
+      "score": 151,
+      "created_at": "2026-10-28T20:10:16Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50280178",
+      "summary": "Google's AI has been observed to provide evasive or non-committal answers when questioned about the winner of the 2020 US presidential election."
+    }
+  ],
+  "github_trending": [
+    {
+      "full_name": "JetBrains/thinkrail",
+      "url": "https://github.com/JetBrains/thinkrail",
+      "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+      "stars_today": 1068,
+      "total_stars": 5555,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "Thinkrail is a lightweight, customizable IDE that adapts to your workflow, enabling you to \"vibe code with pi\" through its intelligent, self-adjusting environment."
+    },
+    {
+      "full_name": "elayadesign/ai-design-skills",
+      "url": "https://github.com/elayadesign/ai-design-skills",
+      "description": "",
+      "stars_today": 2139,
+      "total_stars": 11593,
+      "language": "",
+      "topics": [],
+      "summary": "This repository provides a curated collection of AI-powered tools and resources designed to enhance and automate various aspects of the design process, from ideation to asset generation."
+    },
+    {
+      "full_name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "stars_today": 1095,
+      "total_stars": 307815,
+      "language": "Shell",
+      "topics": [],
+      "summary": "Superpowers is an agentic skills framework and software development methodology designed to enhance productivity and effectiveness in software projects."
+    },
+    {
+      "full_name": "HKUDS/DeepTutor",
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/ .",
+      "stars_today": 2371,
+      "total_stars": 48857,
+      "language": "Python",
+      "topics": [],
+      "summary": "DeepTutor is a lifelong personalized tutoring system that adapts to individual learning needs and progress, offering continuous and tailored educational support."
+    },
+    {
+      "full_name": "macro-inc/macro",
+      "url": "https://github.com/macro-inc/macro",
+      "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
+      "stars_today": 117,
+      "total_stars": 5606,
+      "language": "Rust",
+      "topics": [],
+      "summary": "Macro is a unified team workspace integrating email, chat, docs, tasks, agents, calls, and CRM, all interconnected with shared AI memory for seamless collaboration."
+    },
+    {
+      "full_name": "Nutlope/hallmark",
+      "url": "https://github.com/Nutlope/hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "stars_today": 2110,
+      "total_stars": 41291,
+      "language": "CSS",
+      "topics": [],
+      "summary": "Hallmark is a design skill for AI code assistants like Claude Code, Cursor, and Codex, designed to combat AI-generated \"slop\" by promoting better code quality and design principles."
+    },
+    {
+      "full_name": "pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+      "stars_today": 1472,
+      "total_stars": 93876,
+      "language": "Rust",
+      "topics": [],
+      "summary": "Impeccable provides a design vocabulary and tools for coding agents, enabling polished code generation, critical review, and auditing to prevent AI-generated errors."
+    },
+    {
+      "full_name": "makecindy/cindy",
+      "url": "https://github.com/makecindy/cindy",
+      "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+      "stars_today": 728,
+      "total_stars": 8413,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "Cindy is an open-source AI agent designed to execute tasks seamlessly out of the box, enabling users to achieve their goals by simply thinking of them."
+    },
+    {
+      "full_name": "nightly-labs/openbot",
+      "url": "https://github.com/nightly-labs/openbot",
+      "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
+      "stars_today": 1054,
+      "total_stars": 3527,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "OpenBot provides a local-first desktop workspace for persistent AI teammates, enabling users to run models like Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent collaboration."
+    }
+  ],
+  "us_stocks": [],
+  "postdoc_jobs": [],
+  "jobs": [],
+  "supervisor_updates": [],
+  "weather": [
+    {
+      "query": "London",
+      "label": "London, England, United Kingdom",
+      "resolved_name": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "timezone": "Europe/London",
+      "forecast_date": "2026-10-29",
+      "condition": "Clear sky",
+      "weather_code": 0,
+      "temperature_c": 13.1,
+      "apparent_temperature_c": 13.0,
+      "temp_max_c": 16.4,
+      "temp_min_c": 12.1,
+      "humidity_pct": 85,
+      "wind_speed_kmh": 2.2,
+      "precipitation_probability_pct": 0,
+      "is_day": true,
+      "sunrise": "2026-10-29T06:48",
+      "sunset": "2026-10-29T16:39",
+      "source": "Open-Meteo",
+      "source_url": "https://open-meteo.com/"
+    }
+  ]
+}
