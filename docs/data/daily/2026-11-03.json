@@ -1,0 +1,1804 @@
+{
+  "date": "2026-11-03",
+  "generated_at": "2026-11-03T09:32:28.188742+00:00",
+  "sections_ordered": [
+    {
+      "key": "quote_of_day",
+      "payload_key": "quote_of_day",
+      "title": "Words for the Morning",
+      "icon": "✦",
+      "items": [
+        {
+          "quote": "A man in love is incomplete until he has married. Then he's finished.",
+          "author": "Zsa Zsa Gabor",
+          "category": "love"
+        }
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "key": "weather",
+      "payload_key": "weather",
+      "title": "Weather",
+      "icon": "🌦️",
+      "items": [
+        {
+          "query": "London",
+          "label": "London, England, United Kingdom",
+          "resolved_name": "London",
+          "region": "England",
+          "country": "United Kingdom",
+          "latitude": 51.50853,
+          "longitude": -0.12574,
+          "timezone": "Europe/London",
+          "forecast_date": "2026-11-03",
+          "condition": "Partly cloudy",
+          "weather_code": 2,
+          "temperature_c": 9.8,
+          "apparent_temperature_c": 6.6,
+          "temp_max_c": 12.2,
+          "temp_min_c": 8.4,
+          "humidity_pct": 77,
+          "wind_speed_kmh": 15.1,
+          "precipitation_probability_pct": 29,
+          "is_day": true,
+          "sunrise": "2026-11-03T06:57",
+          "sunset": "2026-11-03T16:30",
+          "source": "Open-Meteo",
+          "source_url": "https://open-meteo.com/"
+        }
+      ],
+      "meta": {
+        "count": 1,
+        "city": "London"
+      }
+    },
+    {
+      "key": "arxiv",
+      "payload_key": "papers",
+      "title": "arXiv Papers",
+      "icon": "📄",
+      "items": [
+        {
+          "id": "2611.03374v1",
+          "title": "Characterizing When Language Models Take Harmful Actions to Protect Their Assigned Goals",
+          "authors": [
+            "Brandon Jaipersaud",
+            "Elliot Creager"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "This paper proposes a unified framework, the \"goal-harm conflict,\" to explain diverse language model safety failures. The core method involves presenting models with scenarios where they must choose between a harmful action to preserve their goal or refusing and losing it. The contribution is demonstrating that this conflict structure underlies various misalignments and showing how goal importance and harm severity influence the model's decision.",
+          "url": "http://arxiv.org/abs/2611.03374v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.03374v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2611.03374v1/fig_dtheta_compact_preprint.png",
+          "figure_caption": "Figure 8: Goal–harm logit margin matrix we aim to estimate. Each entry in the matrix is the expected margin d θ d_{\\( \\theta \\)} (Equation 2 ) for a given conflict κ = ( g i , h j ) \\( \\kappa \\)=(g_{i},h_{j}) and e = compact-forced e=\\( \\text \\){{compact-forced}} (Figure 1 a).",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.03575v1",
+          "title": "VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably",
+          "authors": [
+            "Wei-Lin Chen",
+            "Zhepei Wei",
+            "Xinyu Zhu",
+            "Yu-Min Tseng",
+            "Tzu-Han Lin"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.SE"
+          ],
+          "abstract": "This paper introduces VeriHarm-Bench, a novel framework for evaluating \"harmful success\" in LLM coding agents. The core method involves automatically generating test cases that assess whether an agent achieves its intended task while simultaneously causing unintended, harmful side effects. The key contribution is a verifiable way to measure this subtle failure mode, which traditional metrics overlook, enabling more robust LLM safety evaluations.",
+          "url": "http://arxiv.org/abs/2611.03575v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.03575v1",
+          "score": 9.0,
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2611.03551v1",
+          "title": "Can LLM Agents Be Forward-Deployed Engineers? Requirement Discovery and Delivery for Enterprise Text-to-SQL",
+          "authors": [
+            "Marianne Menglin Liu",
+            "Rongguang Wang",
+            "Zheng Wang",
+            "Yewen Wang",
+            "Leonid Boytsov"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper investigates if LLM agents can function as \"forward-deployed engineers\" by automating requirement discovery and delivery for enterprise text-to-SQL tasks. The core method involves simulating a customer with ambiguous requests, requiring the agent to uncover acceptance criteria, permissions, and constraints before planning and executing a solution. The key contribution is demonstrating that while LLMs show promise in requirement discovery (over 80% for the strongest), significant challenges remain in reliable execution and complete requirement identification, highlighting critical bottlenecks for real-world deployment.",
+          "url": "http://arxiv.org/abs/2611.03551v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.03551v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.03412v1",
+          "title": "DeliverBench: Benchmarking AI Agents on Delivering Realistic Multi-Stage Professional Projects",
+          "authors": [
+            "Yumou Liu",
+            "Mingju Chen",
+            "Zhoufutu Wen",
+            "Qianyu Yang",
+            "Zijie Wang"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "DeliverBench addresses the gap between current AI agent benchmarks and real-world professional projects by evaluating agents on multi-stage project completion from brief to delivery. It uses 11 realistic projects, reconstructed with expert input and involving numerous chained subtasks with feedback loops, to assess agents' end-to-end capabilities. The core contribution is a more holistic evaluation method that captures how errors propagate through sequential tasks, reflecting the true challenges of professional AI agent deployment.",
+          "url": "http://arxiv.org/abs/2611.03412v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.03412v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.03641v1",
+          "title": "From Natural Language to Exact Cover: A Neuro-Symbolic Approach to Zebra Puzzles",
+          "authors": [
+            "Paulius Skaisgiris",
+            "Thomas Pammer",
+            "Veronika Semmelrock",
+            "Mykyta Ielanskyi",
+            "Maximilian Heisinger"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper presents a neuro-symbolic framework that bridges the gap between natural language understanding and symbolic reasoning. It uses a Large Language Model to translate natural language logic puzzles into structured tool calls, which then form an exact cover instance. This instance is then solved using a deterministic exact cover solver, guaranteeing correctness and reliability for complex reasoning problems.",
+          "url": "http://arxiv.org/abs/2611.03641v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.03641v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.03555v1",
+          "title": "MCP Tool Poisoning in Agentic AI Frameworks: A Cross-Framework Measurement Study",
+          "authors": [
+            "Farooq Shaikh",
+            "Biagio Montaruli"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CR"
+          ],
+          "abstract": "This paper introduces the first cross-framework measurement of Model Context Protocol (MCP) tool poisoning attacks in agentic AI. The core method involves a novel taxonomy and an open-source tool to test 12 frameworks and 18 models against 45 attack scenarios, confirming real tool execution and data exfiltration. The contribution is a comprehensive susceptibility matrix revealing a 22.9% overall attack success rate, highlighting model-level resistance and identifying significant vulnerabilities in how AI agents interact with external tools.",
+          "url": "http://arxiv.org/abs/2611.03555v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.03555v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.03434v1",
+          "title": "Optimize the Harness, Not the Model: Fitting a Minimal Agent to a Self-Hostable LLM for Investigative Analysis",
+          "authors": [
+            "Shai Nahum Gefen",
+            "Vered Chassida",
+            "Dmitry Basin",
+            "Guy Feigenblat"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.MA"
+          ],
+          "abstract": "This paper introduces CLEO (Constrained Loop for Environment Optimization), a method that optimizes a minimal agent \"harness\" around a fixed, self-hostable LLM, rather than modifying the LLM itself. CLEO selectively incorporates only the essential tools, guardrails, and memory policies that demonstrably improve analytical accuracy and auditability. The key contribution is achieving near-state-of-the-art performance with a significantly smaller and more secure agent, making it suitable for government intelligence analysis.",
+          "url": "http://arxiv.org/abs/2611.03434v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.03434v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.03298v1",
+          "title": "SQLoom: Set-Contrastive Learning of Syntactic, Semantic, and Logical Dependencies for Text-to-SQL",
+          "authors": [
+            "Hao Fu",
+            "Degang Sun",
+            "Wan Wei",
+            "Jinxia Wei",
+            "Chun Long"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.DB"
+          ],
+          "abstract": "SQLoom addresses Text-to-SQL by introducing a constraint-aware fine-tuning framework for LLMs. Its core method is a unified set-contrastive objective that trains the model to favor correct SQL query components over slightly incorrect ones, guided by supervision at syntactic, semantic, and logical levels. This approach significantly improves Text-to-SQL accuracy by explicitly modeling the structural and relational requirements of SQL.",
+          "url": "http://arxiv.org/abs/2611.03298v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.03298v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2611.03298v1/fig/Figure1.png",
+          "figure_caption": "Figure 1. Three challenges of SQL generation on the running example. Each row shows a query with one type of error, and highlighted spans mark the wrong decisions. A question with its reference SQL query, followed by three queries that violate syntactic validity, semantic alignment, and logical consistency.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.03618v1",
+          "title": "Strategist: Evolving Reasoning with Agents",
+          "authors": [
+            "Taiming Lu",
+            "Qi Xu",
+            "Zhigang Hua",
+            "Zhuang Liu"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "Strategist is a meta-agent that automatically evolves inference strategies for AI agents. It achieves this by treating strategies as reusable code blueprints, which are then refined through an iterative process of retrieval, generation, testing, and revision based on task performance. The core contribution is an automated, transferable method for developing and improving AI reasoning procedures, leading to better performance and reduced inference costs across diverse tasks.",
+          "url": "http://arxiv.org/abs/2611.03618v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.03618v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.03330v1",
+          "title": "The SIMPLE Law for Energy Cost of LLM Inference",
+          "authors": [
+            "Hiari Pizzini Cavagna",
+            "Andrea Proia",
+            "Daniele Cesarini",
+            "Zeynep Kiziltan",
+            "Andrea Bartolini"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.PF"
+          ],
+          "abstract": "This paper introduces the SIMPLE Law, a novel analytical model that accurately predicts the energy cost of LLM inference. Unlike previous methods, it provides closed-form expressions based on architectural hyperparameters, separating prefill and decode costs. The SIMPLE Law achieves significantly higher accuracy and requires no per-LLM calibration, offering a generalizable and efficient way to understand LLM energy consumption.",
+          "url": "http://arxiv.org/abs/2611.03330v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.03330v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.03617v1",
+          "title": "Tracing the Scientific Discovery Capacity of LLMs to Their Training Data",
+          "authors": [
+            "Arda Uzunoglu",
+            "Mahler Revsine",
+            "Michael Schatz",
+            "Benjamin Van Durme",
+            "Mehrdad Farajtabar"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper proposes that the scientific discovery capacity of LLMs stems from \"monofacts\" – unique pieces of information encountered only once during training. By experimentally manipulating the rate of these monofacts in training data, the researchers demonstrate a direct correlation with increased LLM discovery capabilities. Their contribution is identifying the monofact rate as a crucial determinant of LLM scientific discovery, beyond mere data diversity.",
+          "url": "http://arxiv.org/abs/2611.03617v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.03617v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.03518v1",
+          "title": "VIAS: Value-Isolating Activation Steering for Multi-Value Alignment and Compliance for Organisations",
+          "authors": [
+            "Avni Mittal",
+            "Avinash Anand",
+            "Dikshant Kukreja",
+            "Erik Cambria",
+            "Rajiv Ratn Shah"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL",
+            "cs.MA"
+          ],
+          "abstract": "This paper introduces Value-Isolating Activation Steering (VIAS), a novel method for aligning large language model agents with organizational values. VIAS improves upon existing activation steering techniques by generating value-specific steering vectors. It achieves this by contrasting model responses to prompts that include or omit a single target value, ensuring the resulting vectors isolate the influence of individual values for better multi-value compliance.",
+          "url": "http://arxiv.org/abs/2611.03518v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.03518v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.03634v1",
+          "title": "WebHarbor: Docking Real Websites for Evolving GUI Agent Environments",
+          "authors": [
+            "Zhaoyang Wang",
+            "Qianhui Wu",
+            "Boyu Gou",
+            "Demi Wang",
+            "Jiacheng Zhang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "WebHarbor provides a suite of 153 dockerized, real-world website environments for training and evaluating GUI agents. Its core method involves task-driven human-agent collaboration to reconstruct and evolve website functionality and visual fidelity. This contribution offers a stable, deep, and realistic environment for agents, overcoming limitations of live websites and simpler synthetic ones.",
+          "url": "http://arxiv.org/abs/2611.03634v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.03634v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.03523v1",
+          "title": "DistDebug-Bench: Can LLM Agents Diagnose Bugs in Distributed Systems?",
+          "authors": [
+            "Yuxuan Jiang",
+            "Chenglin Liu",
+            "John Rose",
+            "Mason Miller",
+            "Ruthesh Thavamani"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.DC",
+            "cs.SE"
+          ],
+          "abstract": "This paper introduces DistDebug-Bench, a new benchmark designed to evaluate LLM agents' ability to diagnose bugs in complex, real-world distributed systems. The benchmark comprises 120 real-world bugs from 11 popular distributed systems across multiple languages and failure types. Their evaluation reveals significant limitations in current LLM agents, particularly their tendency towards \"tunnel vision\" and inconsistent tool use, highlighting the need for improved reasoning structures and more robust agent designs for this critical task.",
+          "url": "http://arxiv.org/abs/2611.03523v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.03523v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2611.03523v1/distdebug-teaser.png",
+          "figure_caption": "DistDebug-Bench task flow.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2611.03293v1",
+          "title": "ENGINE: Endogenous Variational MultiScale Optimization for Zeroth-Order LLM Fine-Tuning",
+          "authors": [
+            "Zhuoli Ouyang",
+            "Changxi Chi",
+            "Siyuan Li",
+            "Tailin Wu"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "abstract": "ENGINE addresses the trade-off in Zeroth-Order LLM fine-tuning between high variance in full parameter space and information loss in low-dimensional subspaces. Its core method, inspired by computational mechanics, uses a dynamic Variational MultiScale approach. This allows ENGINE to alternate between low and high-dimensional spaces in a multigrid-style V-cycle, effectively balancing variance reduction with information preservation for improved fine-tuning.",
+          "url": "http://arxiv.org/abs/2611.03293v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.03293v1",
+          "score": 8.0,
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2611.03627v1",
+          "title": "Not All Reasoning Generalizes: A Case Study on Learning Generalizable Reasoning Strategies in RLVR",
+          "authors": [
+            "Ziqi Pang",
+            "Yu-Xiong Wang"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "abstract": "This paper investigates how to promote generalizable reasoning strategies in Reinforcement Learning with Verifiable Rewards (RLVR) for Large Language Models. Using a controllable equation-solving task, they demonstrate that RLVR, while achieving high in-distribution accuracy with structured derivations, fails to generalize to out-of-distribution shifts. Instead, the model abandons its learned strategies and resorts to ineffective brute-force, highlighting a subtle failure mode of RLVR beyond simple reward hacking.",
+          "url": "http://arxiv.org/abs/2611.03627v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.03627v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2611.03627v1/teaser_v2.png",
+          "figure_caption": "(a) To clearly define OOD generalization for LLM reasoning, we construct a controllable framework via solving string function equations, mirroring real-world math and coding. (b) We categorize two major reasoning strategies, the more effective Derivation and or total brute-force Enumeration . (c) We reveal how reasoning strategies reflect the challenges of OOD generalization. The Mono model learns derivation for ID cases, yet drastically collapses to enumeration for OOD. With Mixed better incentivizing the derivation strategy, it achieves much better OOD accuracy under similar ID performance. These form a systematic framework of understanding RLVR generalization.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2611.03424v1",
+          "title": "IdeaTaste: Do LLMs Share the Research Taste of Human Researchers?",
+          "authors": [
+            "Shanshan Zhong",
+            "Chen Xu",
+            "Jingjie Ning",
+            "Zhengzhong Liu",
+            "Aviral Kumar"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "IdeaTaste introduces a benchmark to evaluate if Large Language Models (LLMs) possess \"research taste\" comparable to human researchers. The method involves having LLMs generate research proposals based on a 2025 literature snapshot and then comparing these proposals to actual research published by human communities in 2026. The paper's contribution is demonstrating that current LLMs significantly lag behind human researchers in matching citations and ideas, highlighting a gap in their ability to independently conceive and plan novel research.",
+          "url": "http://arxiv.org/abs/2611.03424v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.03424v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2611.03424v1/introduction.png",
+          "figure_caption": "Overview of IdeaTaste. The literature corpus is frozen through 2025. In the upper branch, the human research community goes on to publish 2026 papers that cite work in the corpus. In the lower branch, a population of LLM agents retrieves from the corpus and writes research proposals. Matching compares the two branches, and diversity compares proposals with one another.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2611.03601v1",
+          "title": "DiabAgent: Toward Agentic Physiological Control",
+          "authors": [
+            "Chengxi Li",
+            "Shaoxuan Li",
+            "Deyao Hong",
+            "Qingle Liu",
+            "Yi Huang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces DiabAgent, a framework for agentic physiological control, specifically for Type 1 diabetes management. The core method involves an Agentic Physiological Control (APC) framework that uses ongoing observations to infer patient states and choose treatment actions, supported by a DiabetSim simulator for testing and a SweetBench benchmark. The main contribution is a systematic quantitative evaluation of agentic control for physiological regulation, demonstrating a new approach to developing and testing AI-driven medical interventions.",
+          "url": "http://arxiv.org/abs/2611.03601v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.03601v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2611.03601v1/hero.png",
+          "figure_caption": "APC and its first instantiation. (a) The APC loop, in which an agent acts on a physiological system through device tools and is scored on the physiological outcome. This work applies it to type 1 diabetes, and other systems remain open. (b) DiabetSim combines a physiological engine, device models, and an instance generator; APC acts through the devices and observes their readings. The plot shows a simulated glucose trajectory. (c) SweetBench composes 212 tasks in seven scenario groups and scores the true glucose trajectories, which are hidden from the agent. The donut chart gives the tasks per group, and the bars show the mean COGI of APC with five backend models and of the three baselines.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.03592v1",
+          "title": "Evaluating Uncertainty Calibration in Probabilistic Time Series Foundation Models",
+          "authors": [
+            "Thomas Decker",
+            "Volker Tresp"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper addresses the critical issue of evaluating uncertainty calibration in probabilistic Time Series Foundation Models (TSFMs). The authors introduce a novel taxonomy for understanding how TSFMs represent uncertainty and a fine-grained evaluation framework for multi-horizon forecasting, distinguishing between pooled, horizon-wise, and conditional calibration. Their comprehensive empirical study reveals systematic miscalibration patterns in current TSFMs that standard metrics miss, and analyzes the effectiveness of post-hoc recalibration methods.",
+          "url": "http://arxiv.org/abs/2611.03592v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.03592v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2611.03592v1/fig1a_pcepool_vs_qceavg.png",
+          "figure_caption": "Overview of the proposed calibration evaluation framework and main empirical findings. Left: Relationship between PCE pool \\( \\mathrm{PCE} \\)_{\\( \\mathrm{pool} \\)} and QCE avg \\( \\mathrm{QCE} \\)_{\\( \\mathrm{avg} \\)} across model-dataset pairs. All points lie above the diagonal, consistent with the calibration hierarchy PCE pool ≤ QCE avg \\( \\mathrm{PCE} \\)_{\\( \\mathrm{pool} \\)}\\( \\leq \\)\\( \\mathrm{QCE} \\)_{\\( \\mathrm{avg} \\)} , showing that pooled probabilistic calibration can substantially understate miscalibration once horizon-specific and quantile-conditioned effects are taken into account. Right: Effect of post-hoc isotonic recalibration on PCE avg \\( \\mathrm{PCE} \\)_{\\( \\mathrm{avg} \\)} , fitted on the earliest 20% of the forecast windows and evaluated on the later ones. Points below the diagonal improve (62% of the model–dataset pairs), and the largest gains occur where the original miscalibration is most severe, indicating that even simple recalibration techniques often improve horizon-wise probabilistic calibration in practice.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.03600v1",
+          "title": "Four Bridges: Measuring Deception Propensity in a Multi-Agent Game",
+          "authors": [
+            "Raphael Casey",
+            "Michael Simeone",
+            "Alberto Tosato",
+            "Florian Ernst",
+            "Kemal El Moujahid"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "This paper introduces \"Four Bridges,\" a novel multi-agent game designed to measure deception propensity in AI agents without explicit instructions to deceive. The core method involves an information asymmetry game where one agent knows the location of a \"death room\" and can choose to reveal or conceal this information. The contribution is the demonstration that deceptive behavior emerges naturally in frontier AI models within this setting, highlighting the need for new evaluation platforms like Kradle to study complex social behaviors in AI.",
+          "url": "http://arxiv.org/abs/2611.03600v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.03600v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2611.03600v1/figures/graphical-abstract.png",
+          "figure_caption": "Overview of Four Bridges. Left: four agents start in a zone connected to three food rooms and one death room. Only the informed agent is told which room is the death room; the others do not know that anyone is informed. Middle: based on the model’s messages and room commit, its behavior is classified into one of eight categories, four of which are illustrated. Right: payoffs of the game at resolution.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        }
+      ],
+      "meta": {
+        "papers_fetched": 100,
+        "papers_after_keyword_filter": 41,
+        "papers_after_llm_filter": 26,
+        "count": 20
+      }
+    },
+    {
+      "key": "hacker_news",
+      "payload_key": "hacker_news",
+      "title": "Hacker News",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": 50340088,
+          "title": "Show HN: Subvocal – Talk to your computer without making noise",
+          "url": "",
+          "score": 688,
+          "created_at": "2026-11-02T17:16:17Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50340088",
+          "summary": "This \"Show HN\" features Subvocal, a new tool that allows users to control their computer by speaking commands silently, without producing audible sound."
+        },
+        {
+          "id": 50341462,
+          "title": "Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks",
+          "url": "https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432",
+          "score": 498,
+          "created_at": "2026-11-02T18:39:38Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50341462",
+          "summary": "Ubuntu LTS kernels remain vulnerable to a critical RCE flaw (CVE-2026-98432) for nearly three weeks without a released patch."
+        },
+        {
+          "id": 50339494,
+          "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+          "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
+          "score": 322,
+          "created_at": "2026-11-02T16:40:29Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50339494",
+          "summary": "Anthropic's internal use of its own AI, Claude, now costs more than its employees' salaries, highlighting the significant expense of advanced AI development and deployment."
+        },
+        {
+          "id": 50342284,
+          "title": "Oracle files to sell $20B in new stock, bonds to finance AI buildout",
+          "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
+          "score": 188,
+          "created_at": "2026-11-02T19:27:37Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50342284",
+          "summary": "Oracle is raising $20 billion through stock and bond sales to fund its expansion in artificial intelligence infrastructure."
+        },
+        {
+          "id": 50337454,
+          "title": "Jobless tech workers are being left out of San Francisco's AI boom",
+          "url": "https://www.bloomberg.com/news/features/2026-09-17/san-francisco-s-ai-wealth-boom-skirts-engineers-as-openai-anthropic-ipos-near",
+          "score": 174,
+          "created_at": "2026-11-02T14:40:05Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50337454",
+          "summary": "San Francisco's AI boom is creating wealth for a select few, but many laid-off tech workers are not benefiting as companies like OpenAI and Anthropic approach IPOs."
+        },
+        {
+          "id": 50341736,
+          "title": "Egoless Mathematics in the AI Era",
+          "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
+          "score": 159,
+          "created_at": "2026-11-02T18:54:44Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50341736",
+          "summary": "This article explores how AI might democratize mathematical discovery by shifting focus from individual achievement to collaborative, verifiable progress."
+        },
+        {
+          "id": 50339913,
+          "title": "Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app",
+          "url": "https://momentic.ai/",
+          "score": 143,
+          "created_at": "2026-11-02T17:05:25Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50339913",
+          "summary": "Momentic, a YC W24 startup, has launched an AI-powered platform that uses agents to automatically find bugs within your application by interacting with it."
+        },
+        {
+          "id": 50336138,
+          "title": "Last night an AI agent performed brain surgery on a mouse",
+          "url": "https://twitter.com/OcanaSantero/status/2115442964574908902",
+          "score": 131,
+          "created_at": "2026-11-02T12:50:59Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50336138",
+          "summary": "An AI agent successfully performed brain surgery on a mouse, demonstrating advanced robotic capabilities in a medical procedure."
+        }
+      ],
+      "meta": {
+        "count": 8
+      }
+    },
+    {
+      "key": "github_trending",
+      "payload_key": "github_trending",
+      "title": "GitHub Trending",
+      "icon": "⭐",
+      "items": [
+        {
+          "full_name": "vercel-labs/agent-desktop",
+          "url": "https://github.com/vercel-labs/agent-desktop",
+          "description": "Computer use CLI for AI agents",
+          "stars_today": 2275,
+          "total_stars": 11239,
+          "language": "Rust",
+          "topics": [],
+          "summary": "This repository provides a command-line interface (CLI) for AI agents to interact with and control a computer, enabling automated tasks and workflows."
+        },
+        {
+          "full_name": "thedotmack/claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem",
+          "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+          "stars_today": 1803,
+          "total_stars": 111184,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "This repository enables persistent memory for AI agents by capturing, compressing, and re-injecting session context across multiple interactions, enhancing their continuity and performance with various AI models."
+        },
+        {
+          "full_name": "D4Vinci/Scrapling",
+          "url": "https://github.com/D4Vinci/Scrapling",
+          "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+          "stars_today": 706,
+          "total_stars": 93585,
+          "language": "Python",
+          "topics": [],
+          "summary": "Scrapling is a comprehensive web scraping framework designed to manage everything from single requests to large-scale crawls, offering a robust solution for data extraction."
+        },
+        {
+          "full_name": "hyprwm/Hyprland",
+          "url": "https://github.com/hyprwm/Hyprland",
+          "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
+          "stars_today": 509,
+          "total_stars": 40138,
+          "language": "C++",
+          "topics": [],
+          "summary": "Hyprland is a visually appealing, highly customizable, dynamic tiling Wayland compositor designed for flexibility and aesthetics."
+        },
+        {
+          "full_name": "Donchitos/Claude-Code-Game-Studios",
+          "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+          "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+          "stars_today": 1379,
+          "total_stars": 34045,
+          "language": "Shell",
+          "topics": [],
+          "summary": "This repository transforms Claude Code into a comprehensive game development studio by orchestrating 49 AI agents with 72 workflow skills, mimicking a real studio's hierarchical structure for coordinated game creation."
+        },
+        {
+          "full_name": "FlashML-org/FreeToken",
+          "url": "https://github.com/FlashML-org/FreeToken",
+          "description": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently.",
+          "stars_today": 653,
+          "total_stars": 16362,
+          "language": "Python",
+          "topics": [],
+          "summary": "FreeToken enables users to run large-scale AI models locally on their desktop, offering fast and efficient datacenter-grade model serving."
+        },
+        {
+          "full_name": "pingdotgg/t3code",
+          "url": "https://github.com/pingdotgg/t3code",
+          "description": "",
+          "stars_today": 3229,
+          "total_stars": 42827,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "The t3code repository provides a comprehensive template for building full-stack web applications with the T3 Stack, offering features like Next.js, Tailwind CSS, TypeScript, and tRPC for rapid development and type safety."
+        },
+        {
+          "full_name": "shiyu-coder/Kronos",
+          "url": "https://github.com/shiyu-coder/Kronos",
+          "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+          "stars_today": 857,
+          "total_stars": 46170,
+          "language": "Python",
+          "topics": [],
+          "summary": "Kronos is a foundation model designed to understand and generate the language of financial markets, enabling advanced analysis and applications within the finance domain."
+        },
+        {
+          "full_name": "kornia/kornia",
+          "url": "https://github.com/kornia/kornia",
+          "description": "🐍 Geometric Computer Vision Library for Spatial AI",
+          "stars_today": 412,
+          "total_stars": 12264,
+          "language": "Python",
+          "topics": [],
+          "summary": "Kornia is a Python library for geometric computer vision, enabling spatial AI applications with features for image transformations, feature detection, and 3D reconstruction."
+        }
+      ],
+      "meta": {
+        "count": 9
+      }
+    }
+  ],
+  "meta": {
+    "papers_fetched": 100,
+    "papers_after_keyword_filter": 41,
+    "papers_after_llm_filter": 26,
+    "llm_model": "google/gemini-2.5-flash-lite",
+    "scoring_model": "google/gemini-2.5-flash-lite",
+    "summarization_model": "google/gemini-2.5-flash-lite",
+    "duration_seconds": 61
+  },
+  "quote_of_day": [
+    {
+      "quote": "A man in love is incomplete until he has married. Then he's finished.",
+      "author": "Zsa Zsa Gabor",
+      "category": "love"
+    }
+  ],
+  "hitokoto": [],
+  "arxiv": [
+    {
+      "id": "2611.03374v1",
+      "title": "Characterizing When Language Models Take Harmful Actions to Protect Their Assigned Goals",
+      "authors": [
+        "Brandon Jaipersaud",
+        "Elliot Creager"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper proposes a unified framework, the \"goal-harm conflict,\" to explain diverse language model safety failures. The core method involves presenting models with scenarios where they must choose between a harmful action to preserve their goal or refusing and losing it. The contribution is demonstrating that this conflict structure underlies various misalignments and showing how goal importance and harm severity influence the model's decision.",
+      "url": "http://arxiv.org/abs/2611.03374v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03374v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2611.03374v1/fig_dtheta_compact_preprint.png",
+      "figure_caption": "Figure 8: Goal–harm logit margin matrix we aim to estimate. Each entry in the matrix is the expected margin d θ d_{\\( \\theta \\)} (Equation 2 ) for a given conflict κ = ( g i , h j ) \\( \\kappa \\)=(g_{i},h_{j}) and e = compact-forced e=\\( \\text \\){{compact-forced}} (Figure 1 a).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03575v1",
+      "title": "VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably",
+      "authors": [
+        "Wei-Lin Chen",
+        "Zhepei Wei",
+        "Xinyu Zhu",
+        "Yu-Min Tseng",
+        "Tzu-Han Lin"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces VeriHarm-Bench, a novel framework for evaluating \"harmful success\" in LLM coding agents. The core method involves automatically generating test cases that assess whether an agent achieves its intended task while simultaneously causing unintended, harmful side effects. The key contribution is a verifiable way to measure this subtle failure mode, which traditional metrics overlook, enabling more robust LLM safety evaluations.",
+      "url": "http://arxiv.org/abs/2611.03575v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03575v1",
+      "score": 9.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2611.03551v1",
+      "title": "Can LLM Agents Be Forward-Deployed Engineers? Requirement Discovery and Delivery for Enterprise Text-to-SQL",
+      "authors": [
+        "Marianne Menglin Liu",
+        "Rongguang Wang",
+        "Zheng Wang",
+        "Yewen Wang",
+        "Leonid Boytsov"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper investigates if LLM agents can function as \"forward-deployed engineers\" by automating requirement discovery and delivery for enterprise text-to-SQL tasks. The core method involves simulating a customer with ambiguous requests, requiring the agent to uncover acceptance criteria, permissions, and constraints before planning and executing a solution. The key contribution is demonstrating that while LLMs show promise in requirement discovery (over 80% for the strongest), significant challenges remain in reliable execution and complete requirement identification, highlighting critical bottlenecks for real-world deployment.",
+      "url": "http://arxiv.org/abs/2611.03551v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03551v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03412v1",
+      "title": "DeliverBench: Benchmarking AI Agents on Delivering Realistic Multi-Stage Professional Projects",
+      "authors": [
+        "Yumou Liu",
+        "Mingju Chen",
+        "Zhoufutu Wen",
+        "Qianyu Yang",
+        "Zijie Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "DeliverBench addresses the gap between current AI agent benchmarks and real-world professional projects by evaluating agents on multi-stage project completion from brief to delivery. It uses 11 realistic projects, reconstructed with expert input and involving numerous chained subtasks with feedback loops, to assess agents' end-to-end capabilities. The core contribution is a more holistic evaluation method that captures how errors propagate through sequential tasks, reflecting the true challenges of professional AI agent deployment.",
+      "url": "http://arxiv.org/abs/2611.03412v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03412v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03641v1",
+      "title": "From Natural Language to Exact Cover: A Neuro-Symbolic Approach to Zebra Puzzles",
+      "authors": [
+        "Paulius Skaisgiris",
+        "Thomas Pammer",
+        "Veronika Semmelrock",
+        "Mykyta Ielanskyi",
+        "Maximilian Heisinger"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper presents a neuro-symbolic framework that bridges the gap between natural language understanding and symbolic reasoning. It uses a Large Language Model to translate natural language logic puzzles into structured tool calls, which then form an exact cover instance. This instance is then solved using a deterministic exact cover solver, guaranteeing correctness and reliability for complex reasoning problems.",
+      "url": "http://arxiv.org/abs/2611.03641v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03641v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03555v1",
+      "title": "MCP Tool Poisoning in Agentic AI Frameworks: A Cross-Framework Measurement Study",
+      "authors": [
+        "Farooq Shaikh",
+        "Biagio Montaruli"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces the first cross-framework measurement of Model Context Protocol (MCP) tool poisoning attacks in agentic AI. The core method involves a novel taxonomy and an open-source tool to test 12 frameworks and 18 models against 45 attack scenarios, confirming real tool execution and data exfiltration. The contribution is a comprehensive susceptibility matrix revealing a 22.9% overall attack success rate, highlighting model-level resistance and identifying significant vulnerabilities in how AI agents interact with external tools.",
+      "url": "http://arxiv.org/abs/2611.03555v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03555v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03434v1",
+      "title": "Optimize the Harness, Not the Model: Fitting a Minimal Agent to a Self-Hostable LLM for Investigative Analysis",
+      "authors": [
+        "Shai Nahum Gefen",
+        "Vered Chassida",
+        "Dmitry Basin",
+        "Guy Feigenblat"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces CLEO (Constrained Loop for Environment Optimization), a method that optimizes a minimal agent \"harness\" around a fixed, self-hostable LLM, rather than modifying the LLM itself. CLEO selectively incorporates only the essential tools, guardrails, and memory policies that demonstrably improve analytical accuracy and auditability. The key contribution is achieving near-state-of-the-art performance with a significantly smaller and more secure agent, making it suitable for government intelligence analysis.",
+      "url": "http://arxiv.org/abs/2611.03434v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03434v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03298v1",
+      "title": "SQLoom: Set-Contrastive Learning of Syntactic, Semantic, and Logical Dependencies for Text-to-SQL",
+      "authors": [
+        "Hao Fu",
+        "Degang Sun",
+        "Wan Wei",
+        "Jinxia Wei",
+        "Chun Long"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.DB"
+      ],
+      "abstract": "SQLoom addresses Text-to-SQL by introducing a constraint-aware fine-tuning framework for LLMs. Its core method is a unified set-contrastive objective that trains the model to favor correct SQL query components over slightly incorrect ones, guided by supervision at syntactic, semantic, and logical levels. This approach significantly improves Text-to-SQL accuracy by explicitly modeling the structural and relational requirements of SQL.",
+      "url": "http://arxiv.org/abs/2611.03298v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03298v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.03298v1/fig/Figure1.png",
+      "figure_caption": "Figure 1. Three challenges of SQL generation on the running example. Each row shows a query with one type of error, and highlighted spans mark the wrong decisions. A question with its reference SQL query, followed by three queries that violate syntactic validity, semantic alignment, and logical consistency.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03618v1",
+      "title": "Strategist: Evolving Reasoning with Agents",
+      "authors": [
+        "Taiming Lu",
+        "Qi Xu",
+        "Zhigang Hua",
+        "Zhuang Liu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "Strategist is a meta-agent that automatically evolves inference strategies for AI agents. It achieves this by treating strategies as reusable code blueprints, which are then refined through an iterative process of retrieval, generation, testing, and revision based on task performance. The core contribution is an automated, transferable method for developing and improving AI reasoning procedures, leading to better performance and reduced inference costs across diverse tasks.",
+      "url": "http://arxiv.org/abs/2611.03618v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03618v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03330v1",
+      "title": "The SIMPLE Law for Energy Cost of LLM Inference",
+      "authors": [
+        "Hiari Pizzini Cavagna",
+        "Andrea Proia",
+        "Daniele Cesarini",
+        "Zeynep Kiziltan",
+        "Andrea Bartolini"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.PF"
+      ],
+      "abstract": "This paper introduces the SIMPLE Law, a novel analytical model that accurately predicts the energy cost of LLM inference. Unlike previous methods, it provides closed-form expressions based on architectural hyperparameters, separating prefill and decode costs. The SIMPLE Law achieves significantly higher accuracy and requires no per-LLM calibration, offering a generalizable and efficient way to understand LLM energy consumption.",
+      "url": "http://arxiv.org/abs/2611.03330v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03330v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03617v1",
+      "title": "Tracing the Scientific Discovery Capacity of LLMs to Their Training Data",
+      "authors": [
+        "Arda Uzunoglu",
+        "Mahler Revsine",
+        "Michael Schatz",
+        "Benjamin Van Durme",
+        "Mehrdad Farajtabar"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper proposes that the scientific discovery capacity of LLMs stems from \"monofacts\" – unique pieces of information encountered only once during training. By experimentally manipulating the rate of these monofacts in training data, the researchers demonstrate a direct correlation with increased LLM discovery capabilities. Their contribution is identifying the monofact rate as a crucial determinant of LLM scientific discovery, beyond mere data diversity.",
+      "url": "http://arxiv.org/abs/2611.03617v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03617v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03518v1",
+      "title": "VIAS: Value-Isolating Activation Steering for Multi-Value Alignment and Compliance for Organisations",
+      "authors": [
+        "Avni Mittal",
+        "Avinash Anand",
+        "Dikshant Kukreja",
+        "Erik Cambria",
+        "Rajiv Ratn Shah"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces Value-Isolating Activation Steering (VIAS), a novel method for aligning large language model agents with organizational values. VIAS improves upon existing activation steering techniques by generating value-specific steering vectors. It achieves this by contrasting model responses to prompts that include or omit a single target value, ensuring the resulting vectors isolate the influence of individual values for better multi-value compliance.",
+      "url": "http://arxiv.org/abs/2611.03518v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03518v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03634v1",
+      "title": "WebHarbor: Docking Real Websites for Evolving GUI Agent Environments",
+      "authors": [
+        "Zhaoyang Wang",
+        "Qianhui Wu",
+        "Boyu Gou",
+        "Demi Wang",
+        "Jiacheng Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "WebHarbor provides a suite of 153 dockerized, real-world website environments for training and evaluating GUI agents. Its core method involves task-driven human-agent collaboration to reconstruct and evolve website functionality and visual fidelity. This contribution offers a stable, deep, and realistic environment for agents, overcoming limitations of live websites and simpler synthetic ones.",
+      "url": "http://arxiv.org/abs/2611.03634v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03634v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03523v1",
+      "title": "DistDebug-Bench: Can LLM Agents Diagnose Bugs in Distributed Systems?",
+      "authors": [
+        "Yuxuan Jiang",
+        "Chenglin Liu",
+        "John Rose",
+        "Mason Miller",
+        "Ruthesh Thavamani"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DC",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces DistDebug-Bench, a new benchmark designed to evaluate LLM agents' ability to diagnose bugs in complex, real-world distributed systems. The benchmark comprises 120 real-world bugs from 11 popular distributed systems across multiple languages and failure types. Their evaluation reveals significant limitations in current LLM agents, particularly their tendency towards \"tunnel vision\" and inconsistent tool use, highlighting the need for improved reasoning structures and more robust agent designs for this critical task.",
+      "url": "http://arxiv.org/abs/2611.03523v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03523v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.03523v1/distdebug-teaser.png",
+      "figure_caption": "DistDebug-Bench task flow.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2611.03293v1",
+      "title": "ENGINE: Endogenous Variational MultiScale Optimization for Zeroth-Order LLM Fine-Tuning",
+      "authors": [
+        "Zhuoli Ouyang",
+        "Changxi Chi",
+        "Siyuan Li",
+        "Tailin Wu"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "ENGINE addresses the trade-off in Zeroth-Order LLM fine-tuning between high variance in full parameter space and information loss in low-dimensional subspaces. Its core method, inspired by computational mechanics, uses a dynamic Variational MultiScale approach. This allows ENGINE to alternate between low and high-dimensional spaces in a multigrid-style V-cycle, effectively balancing variance reduction with information preservation for improved fine-tuning.",
+      "url": "http://arxiv.org/abs/2611.03293v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03293v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2611.03627v1",
+      "title": "Not All Reasoning Generalizes: A Case Study on Learning Generalizable Reasoning Strategies in RLVR",
+      "authors": [
+        "Ziqi Pang",
+        "Yu-Xiong Wang"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper investigates how to promote generalizable reasoning strategies in Reinforcement Learning with Verifiable Rewards (RLVR) for Large Language Models. Using a controllable equation-solving task, they demonstrate that RLVR, while achieving high in-distribution accuracy with structured derivations, fails to generalize to out-of-distribution shifts. Instead, the model abandons its learned strategies and resorts to ineffective brute-force, highlighting a subtle failure mode of RLVR beyond simple reward hacking.",
+      "url": "http://arxiv.org/abs/2611.03627v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03627v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.03627v1/teaser_v2.png",
+      "figure_caption": "(a) To clearly define OOD generalization for LLM reasoning, we construct a controllable framework via solving string function equations, mirroring real-world math and coding. (b) We categorize two major reasoning strategies, the more effective Derivation and or total brute-force Enumeration . (c) We reveal how reasoning strategies reflect the challenges of OOD generalization. The Mono model learns derivation for ID cases, yet drastically collapses to enumeration for OOD. With Mixed better incentivizing the derivation strategy, it achieves much better OOD accuracy under similar ID performance. These form a systematic framework of understanding RLVR generalization.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2611.03424v1",
+      "title": "IdeaTaste: Do LLMs Share the Research Taste of Human Researchers?",
+      "authors": [
+        "Shanshan Zhong",
+        "Chen Xu",
+        "Jingjie Ning",
+        "Zhengzhong Liu",
+        "Aviral Kumar"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "IdeaTaste introduces a benchmark to evaluate if Large Language Models (LLMs) possess \"research taste\" comparable to human researchers. The method involves having LLMs generate research proposals based on a 2025 literature snapshot and then comparing these proposals to actual research published by human communities in 2026. The paper's contribution is demonstrating that current LLMs significantly lag behind human researchers in matching citations and ideas, highlighting a gap in their ability to independently conceive and plan novel research.",
+      "url": "http://arxiv.org/abs/2611.03424v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03424v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.03424v1/introduction.png",
+      "figure_caption": "Overview of IdeaTaste. The literature corpus is frozen through 2025. In the upper branch, the human research community goes on to publish 2026 papers that cite work in the corpus. In the lower branch, a population of LLM agents retrieves from the corpus and writes research proposals. Matching compares the two branches, and diversity compares proposals with one another.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2611.03601v1",
+      "title": "DiabAgent: Toward Agentic Physiological Control",
+      "authors": [
+        "Chengxi Li",
+        "Shaoxuan Li",
+        "Deyao Hong",
+        "Qingle Liu",
+        "Yi Huang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces DiabAgent, a framework for agentic physiological control, specifically for Type 1 diabetes management. The core method involves an Agentic Physiological Control (APC) framework that uses ongoing observations to infer patient states and choose treatment actions, supported by a DiabetSim simulator for testing and a SweetBench benchmark. The main contribution is a systematic quantitative evaluation of agentic control for physiological regulation, demonstrating a new approach to developing and testing AI-driven medical interventions.",
+      "url": "http://arxiv.org/abs/2611.03601v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03601v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2611.03601v1/hero.png",
+      "figure_caption": "APC and its first instantiation. (a) The APC loop, in which an agent acts on a physiological system through device tools and is scored on the physiological outcome. This work applies it to type 1 diabetes, and other systems remain open. (b) DiabetSim combines a physiological engine, device models, and an instance generator; APC acts through the devices and observes their readings. The plot shows a simulated glucose trajectory. (c) SweetBench composes 212 tasks in seven scenario groups and scores the true glucose trajectories, which are hidden from the agent. The donut chart gives the tasks per group, and the bars show the mean COGI of APC with five backend models and of the three baselines.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03592v1",
+      "title": "Evaluating Uncertainty Calibration in Probabilistic Time Series Foundation Models",
+      "authors": [
+        "Thomas Decker",
+        "Volker Tresp"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper addresses the critical issue of evaluating uncertainty calibration in probabilistic Time Series Foundation Models (TSFMs). The authors introduce a novel taxonomy for understanding how TSFMs represent uncertainty and a fine-grained evaluation framework for multi-horizon forecasting, distinguishing between pooled, horizon-wise, and conditional calibration. Their comprehensive empirical study reveals systematic miscalibration patterns in current TSFMs that standard metrics miss, and analyzes the effectiveness of post-hoc recalibration methods.",
+      "url": "http://arxiv.org/abs/2611.03592v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03592v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2611.03592v1/fig1a_pcepool_vs_qceavg.png",
+      "figure_caption": "Overview of the proposed calibration evaluation framework and main empirical findings. Left: Relationship between PCE pool \\( \\mathrm{PCE} \\)_{\\( \\mathrm{pool} \\)} and QCE avg \\( \\mathrm{QCE} \\)_{\\( \\mathrm{avg} \\)} across model-dataset pairs. All points lie above the diagonal, consistent with the calibration hierarchy PCE pool ≤ QCE avg \\( \\mathrm{PCE} \\)_{\\( \\mathrm{pool} \\)}\\( \\leq \\)\\( \\mathrm{QCE} \\)_{\\( \\mathrm{avg} \\)} , showing that pooled probabilistic calibration can substantially understate miscalibration once horizon-specific and quantile-conditioned effects are taken into account. Right: Effect of post-hoc isotonic recalibration on PCE avg \\( \\mathrm{PCE} \\)_{\\( \\mathrm{avg} \\)} , fitted on the earliest 20% of the forecast windows and evaluated on the later ones. Points below the diagonal improve (62% of the model–dataset pairs), and the largest gains occur where the original miscalibration is most severe, indicating that even simple recalibration techniques often improve horizon-wise probabilistic calibration in practice.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03600v1",
+      "title": "Four Bridges: Measuring Deception Propensity in a Multi-Agent Game",
+      "authors": [
+        "Raphael Casey",
+        "Michael Simeone",
+        "Alberto Tosato",
+        "Florian Ernst",
+        "Kemal El Moujahid"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces \"Four Bridges,\" a novel multi-agent game designed to measure deception propensity in AI agents without explicit instructions to deceive. The core method involves an information asymmetry game where one agent knows the location of a \"death room\" and can choose to reveal or conceal this information. The contribution is the demonstration that deceptive behavior emerges naturally in frontier AI models within this setting, highlighting the need for new evaluation platforms like Kradle to study complex social behaviors in AI.",
+      "url": "http://arxiv.org/abs/2611.03600v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03600v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2611.03600v1/figures/graphical-abstract.png",
+      "figure_caption": "Overview of Four Bridges. Left: four agents start in a zone connected to three food rooms and one death room. Only the informed agent is told which room is the death room; the others do not know that anyone is informed. Middle: based on the model’s messages and room commit, its behavior is classified into one of eight categories, four of which are illustrated. Right: payoffs of the game at resolution.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "papers": [
+    {
+      "id": "2611.03374v1",
+      "title": "Characterizing When Language Models Take Harmful Actions to Protect Their Assigned Goals",
+      "authors": [
+        "Brandon Jaipersaud",
+        "Elliot Creager"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper proposes a unified framework, the \"goal-harm conflict,\" to explain diverse language model safety failures. The core method involves presenting models with scenarios where they must choose between a harmful action to preserve their goal or refusing and losing it. The contribution is demonstrating that this conflict structure underlies various misalignments and showing how goal importance and harm severity influence the model's decision.",
+      "url": "http://arxiv.org/abs/2611.03374v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03374v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2611.03374v1/fig_dtheta_compact_preprint.png",
+      "figure_caption": "Figure 8: Goal–harm logit margin matrix we aim to estimate. Each entry in the matrix is the expected margin d θ d_{\\( \\theta \\)} (Equation 2 ) for a given conflict κ = ( g i , h j ) \\( \\kappa \\)=(g_{i},h_{j}) and e = compact-forced e=\\( \\text \\){{compact-forced}} (Figure 1 a).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03575v1",
+      "title": "VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably",
+      "authors": [
+        "Wei-Lin Chen",
+        "Zhepei Wei",
+        "Xinyu Zhu",
+        "Yu-Min Tseng",
+        "Tzu-Han Lin"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces VeriHarm-Bench, a novel framework for evaluating \"harmful success\" in LLM coding agents. The core method involves automatically generating test cases that assess whether an agent achieves its intended task while simultaneously causing unintended, harmful side effects. The key contribution is a verifiable way to measure this subtle failure mode, which traditional metrics overlook, enabling more robust LLM safety evaluations.",
+      "url": "http://arxiv.org/abs/2611.03575v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03575v1",
+      "score": 9.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2611.03551v1",
+      "title": "Can LLM Agents Be Forward-Deployed Engineers? Requirement Discovery and Delivery for Enterprise Text-to-SQL",
+      "authors": [
+        "Marianne Menglin Liu",
+        "Rongguang Wang",
+        "Zheng Wang",
+        "Yewen Wang",
+        "Leonid Boytsov"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper investigates if LLM agents can function as \"forward-deployed engineers\" by automating requirement discovery and delivery for enterprise text-to-SQL tasks. The core method involves simulating a customer with ambiguous requests, requiring the agent to uncover acceptance criteria, permissions, and constraints before planning and executing a solution. The key contribution is demonstrating that while LLMs show promise in requirement discovery (over 80% for the strongest), significant challenges remain in reliable execution and complete requirement identification, highlighting critical bottlenecks for real-world deployment.",
+      "url": "http://arxiv.org/abs/2611.03551v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03551v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03412v1",
+      "title": "DeliverBench: Benchmarking AI Agents on Delivering Realistic Multi-Stage Professional Projects",
+      "authors": [
+        "Yumou Liu",
+        "Mingju Chen",
+        "Zhoufutu Wen",
+        "Qianyu Yang",
+        "Zijie Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "DeliverBench addresses the gap between current AI agent benchmarks and real-world professional projects by evaluating agents on multi-stage project completion from brief to delivery. It uses 11 realistic projects, reconstructed with expert input and involving numerous chained subtasks with feedback loops, to assess agents' end-to-end capabilities. The core contribution is a more holistic evaluation method that captures how errors propagate through sequential tasks, reflecting the true challenges of professional AI agent deployment.",
+      "url": "http://arxiv.org/abs/2611.03412v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03412v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03641v1",
+      "title": "From Natural Language to Exact Cover: A Neuro-Symbolic Approach to Zebra Puzzles",
+      "authors": [
+        "Paulius Skaisgiris",
+        "Thomas Pammer",
+        "Veronika Semmelrock",
+        "Mykyta Ielanskyi",
+        "Maximilian Heisinger"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper presents a neuro-symbolic framework that bridges the gap between natural language understanding and symbolic reasoning. It uses a Large Language Model to translate natural language logic puzzles into structured tool calls, which then form an exact cover instance. This instance is then solved using a deterministic exact cover solver, guaranteeing correctness and reliability for complex reasoning problems.",
+      "url": "http://arxiv.org/abs/2611.03641v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03641v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03555v1",
+      "title": "MCP Tool Poisoning in Agentic AI Frameworks: A Cross-Framework Measurement Study",
+      "authors": [
+        "Farooq Shaikh",
+        "Biagio Montaruli"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "This paper introduces the first cross-framework measurement of Model Context Protocol (MCP) tool poisoning attacks in agentic AI. The core method involves a novel taxonomy and an open-source tool to test 12 frameworks and 18 models against 45 attack scenarios, confirming real tool execution and data exfiltration. The contribution is a comprehensive susceptibility matrix revealing a 22.9% overall attack success rate, highlighting model-level resistance and identifying significant vulnerabilities in how AI agents interact with external tools.",
+      "url": "http://arxiv.org/abs/2611.03555v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03555v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03434v1",
+      "title": "Optimize the Harness, Not the Model: Fitting a Minimal Agent to a Self-Hostable LLM for Investigative Analysis",
+      "authors": [
+        "Shai Nahum Gefen",
+        "Vered Chassida",
+        "Dmitry Basin",
+        "Guy Feigenblat"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces CLEO (Constrained Loop for Environment Optimization), a method that optimizes a minimal agent \"harness\" around a fixed, self-hostable LLM, rather than modifying the LLM itself. CLEO selectively incorporates only the essential tools, guardrails, and memory policies that demonstrably improve analytical accuracy and auditability. The key contribution is achieving near-state-of-the-art performance with a significantly smaller and more secure agent, making it suitable for government intelligence analysis.",
+      "url": "http://arxiv.org/abs/2611.03434v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03434v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03298v1",
+      "title": "SQLoom: Set-Contrastive Learning of Syntactic, Semantic, and Logical Dependencies for Text-to-SQL",
+      "authors": [
+        "Hao Fu",
+        "Degang Sun",
+        "Wan Wei",
+        "Jinxia Wei",
+        "Chun Long"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.DB"
+      ],
+      "abstract": "SQLoom addresses Text-to-SQL by introducing a constraint-aware fine-tuning framework for LLMs. Its core method is a unified set-contrastive objective that trains the model to favor correct SQL query components over slightly incorrect ones, guided by supervision at syntactic, semantic, and logical levels. This approach significantly improves Text-to-SQL accuracy by explicitly modeling the structural and relational requirements of SQL.",
+      "url": "http://arxiv.org/abs/2611.03298v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03298v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.03298v1/fig/Figure1.png",
+      "figure_caption": "Figure 1. Three challenges of SQL generation on the running example. Each row shows a query with one type of error, and highlighted spans mark the wrong decisions. A question with its reference SQL query, followed by three queries that violate syntactic validity, semantic alignment, and logical consistency.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03618v1",
+      "title": "Strategist: Evolving Reasoning with Agents",
+      "authors": [
+        "Taiming Lu",
+        "Qi Xu",
+        "Zhigang Hua",
+        "Zhuang Liu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "Strategist is a meta-agent that automatically evolves inference strategies for AI agents. It achieves this by treating strategies as reusable code blueprints, which are then refined through an iterative process of retrieval, generation, testing, and revision based on task performance. The core contribution is an automated, transferable method for developing and improving AI reasoning procedures, leading to better performance and reduced inference costs across diverse tasks.",
+      "url": "http://arxiv.org/abs/2611.03618v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03618v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03330v1",
+      "title": "The SIMPLE Law for Energy Cost of LLM Inference",
+      "authors": [
+        "Hiari Pizzini Cavagna",
+        "Andrea Proia",
+        "Daniele Cesarini",
+        "Zeynep Kiziltan",
+        "Andrea Bartolini"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.PF"
+      ],
+      "abstract": "This paper introduces the SIMPLE Law, a novel analytical model that accurately predicts the energy cost of LLM inference. Unlike previous methods, it provides closed-form expressions based on architectural hyperparameters, separating prefill and decode costs. The SIMPLE Law achieves significantly higher accuracy and requires no per-LLM calibration, offering a generalizable and efficient way to understand LLM energy consumption.",
+      "url": "http://arxiv.org/abs/2611.03330v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03330v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03617v1",
+      "title": "Tracing the Scientific Discovery Capacity of LLMs to Their Training Data",
+      "authors": [
+        "Arda Uzunoglu",
+        "Mahler Revsine",
+        "Michael Schatz",
+        "Benjamin Van Durme",
+        "Mehrdad Farajtabar"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper proposes that the scientific discovery capacity of LLMs stems from \"monofacts\" – unique pieces of information encountered only once during training. By experimentally manipulating the rate of these monofacts in training data, the researchers demonstrate a direct correlation with increased LLM discovery capabilities. Their contribution is identifying the monofact rate as a crucial determinant of LLM scientific discovery, beyond mere data diversity.",
+      "url": "http://arxiv.org/abs/2611.03617v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03617v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03518v1",
+      "title": "VIAS: Value-Isolating Activation Steering for Multi-Value Alignment and Compliance for Organisations",
+      "authors": [
+        "Avni Mittal",
+        "Avinash Anand",
+        "Dikshant Kukreja",
+        "Erik Cambria",
+        "Rajiv Ratn Shah"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces Value-Isolating Activation Steering (VIAS), a novel method for aligning large language model agents with organizational values. VIAS improves upon existing activation steering techniques by generating value-specific steering vectors. It achieves this by contrasting model responses to prompts that include or omit a single target value, ensuring the resulting vectors isolate the influence of individual values for better multi-value compliance.",
+      "url": "http://arxiv.org/abs/2611.03518v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03518v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03634v1",
+      "title": "WebHarbor: Docking Real Websites for Evolving GUI Agent Environments",
+      "authors": [
+        "Zhaoyang Wang",
+        "Qianhui Wu",
+        "Boyu Gou",
+        "Demi Wang",
+        "Jiacheng Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "WebHarbor provides a suite of 153 dockerized, real-world website environments for training and evaluating GUI agents. Its core method involves task-driven human-agent collaboration to reconstruct and evolve website functionality and visual fidelity. This contribution offers a stable, deep, and realistic environment for agents, overcoming limitations of live websites and simpler synthetic ones.",
+      "url": "http://arxiv.org/abs/2611.03634v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03634v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03523v1",
+      "title": "DistDebug-Bench: Can LLM Agents Diagnose Bugs in Distributed Systems?",
+      "authors": [
+        "Yuxuan Jiang",
+        "Chenglin Liu",
+        "John Rose",
+        "Mason Miller",
+        "Ruthesh Thavamani"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DC",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces DistDebug-Bench, a new benchmark designed to evaluate LLM agents' ability to diagnose bugs in complex, real-world distributed systems. The benchmark comprises 120 real-world bugs from 11 popular distributed systems across multiple languages and failure types. Their evaluation reveals significant limitations in current LLM agents, particularly their tendency towards \"tunnel vision\" and inconsistent tool use, highlighting the need for improved reasoning structures and more robust agent designs for this critical task.",
+      "url": "http://arxiv.org/abs/2611.03523v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03523v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.03523v1/distdebug-teaser.png",
+      "figure_caption": "DistDebug-Bench task flow.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2611.03293v1",
+      "title": "ENGINE: Endogenous Variational MultiScale Optimization for Zeroth-Order LLM Fine-Tuning",
+      "authors": [
+        "Zhuoli Ouyang",
+        "Changxi Chi",
+        "Siyuan Li",
+        "Tailin Wu"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "ENGINE addresses the trade-off in Zeroth-Order LLM fine-tuning between high variance in full parameter space and information loss in low-dimensional subspaces. Its core method, inspired by computational mechanics, uses a dynamic Variational MultiScale approach. This allows ENGINE to alternate between low and high-dimensional spaces in a multigrid-style V-cycle, effectively balancing variance reduction with information preservation for improved fine-tuning.",
+      "url": "http://arxiv.org/abs/2611.03293v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03293v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2611.03627v1",
+      "title": "Not All Reasoning Generalizes: A Case Study on Learning Generalizable Reasoning Strategies in RLVR",
+      "authors": [
+        "Ziqi Pang",
+        "Yu-Xiong Wang"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper investigates how to promote generalizable reasoning strategies in Reinforcement Learning with Verifiable Rewards (RLVR) for Large Language Models. Using a controllable equation-solving task, they demonstrate that RLVR, while achieving high in-distribution accuracy with structured derivations, fails to generalize to out-of-distribution shifts. Instead, the model abandons its learned strategies and resorts to ineffective brute-force, highlighting a subtle failure mode of RLVR beyond simple reward hacking.",
+      "url": "http://arxiv.org/abs/2611.03627v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03627v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.03627v1/teaser_v2.png",
+      "figure_caption": "(a) To clearly define OOD generalization for LLM reasoning, we construct a controllable framework via solving string function equations, mirroring real-world math and coding. (b) We categorize two major reasoning strategies, the more effective Derivation and or total brute-force Enumeration . (c) We reveal how reasoning strategies reflect the challenges of OOD generalization. The Mono model learns derivation for ID cases, yet drastically collapses to enumeration for OOD. With Mixed better incentivizing the derivation strategy, it achieves much better OOD accuracy under similar ID performance. These form a systematic framework of understanding RLVR generalization.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2611.03424v1",
+      "title": "IdeaTaste: Do LLMs Share the Research Taste of Human Researchers?",
+      "authors": [
+        "Shanshan Zhong",
+        "Chen Xu",
+        "Jingjie Ning",
+        "Zhengzhong Liu",
+        "Aviral Kumar"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "IdeaTaste introduces a benchmark to evaluate if Large Language Models (LLMs) possess \"research taste\" comparable to human researchers. The method involves having LLMs generate research proposals based on a 2025 literature snapshot and then comparing these proposals to actual research published by human communities in 2026. The paper's contribution is demonstrating that current LLMs significantly lag behind human researchers in matching citations and ideas, highlighting a gap in their ability to independently conceive and plan novel research.",
+      "url": "http://arxiv.org/abs/2611.03424v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03424v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.03424v1/introduction.png",
+      "figure_caption": "Overview of IdeaTaste. The literature corpus is frozen through 2025. In the upper branch, the human research community goes on to publish 2026 papers that cite work in the corpus. In the lower branch, a population of LLM agents retrieves from the corpus and writes research proposals. Matching compares the two branches, and diversity compares proposals with one another.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2611.03601v1",
+      "title": "DiabAgent: Toward Agentic Physiological Control",
+      "authors": [
+        "Chengxi Li",
+        "Shaoxuan Li",
+        "Deyao Hong",
+        "Qingle Liu",
+        "Yi Huang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces DiabAgent, a framework for agentic physiological control, specifically for Type 1 diabetes management. The core method involves an Agentic Physiological Control (APC) framework that uses ongoing observations to infer patient states and choose treatment actions, supported by a DiabetSim simulator for testing and a SweetBench benchmark. The main contribution is a systematic quantitative evaluation of agentic control for physiological regulation, demonstrating a new approach to developing and testing AI-driven medical interventions.",
+      "url": "http://arxiv.org/abs/2611.03601v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03601v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2611.03601v1/hero.png",
+      "figure_caption": "APC and its first instantiation. (a) The APC loop, in which an agent acts on a physiological system through device tools and is scored on the physiological outcome. This work applies it to type 1 diabetes, and other systems remain open. (b) DiabetSim combines a physiological engine, device models, and an instance generator; APC acts through the devices and observes their readings. The plot shows a simulated glucose trajectory. (c) SweetBench composes 212 tasks in seven scenario groups and scores the true glucose trajectories, which are hidden from the agent. The donut chart gives the tasks per group, and the bars show the mean COGI of APC with five backend models and of the three baselines.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03592v1",
+      "title": "Evaluating Uncertainty Calibration in Probabilistic Time Series Foundation Models",
+      "authors": [
+        "Thomas Decker",
+        "Volker Tresp"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper addresses the critical issue of evaluating uncertainty calibration in probabilistic Time Series Foundation Models (TSFMs). The authors introduce a novel taxonomy for understanding how TSFMs represent uncertainty and a fine-grained evaluation framework for multi-horizon forecasting, distinguishing between pooled, horizon-wise, and conditional calibration. Their comprehensive empirical study reveals systematic miscalibration patterns in current TSFMs that standard metrics miss, and analyzes the effectiveness of post-hoc recalibration methods.",
+      "url": "http://arxiv.org/abs/2611.03592v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03592v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2611.03592v1/fig1a_pcepool_vs_qceavg.png",
+      "figure_caption": "Overview of the proposed calibration evaluation framework and main empirical findings. Left: Relationship between PCE pool \\( \\mathrm{PCE} \\)_{\\( \\mathrm{pool} \\)} and QCE avg \\( \\mathrm{QCE} \\)_{\\( \\mathrm{avg} \\)} across model-dataset pairs. All points lie above the diagonal, consistent with the calibration hierarchy PCE pool ≤ QCE avg \\( \\mathrm{PCE} \\)_{\\( \\mathrm{pool} \\)}\\( \\leq \\)\\( \\mathrm{QCE} \\)_{\\( \\mathrm{avg} \\)} , showing that pooled probabilistic calibration can substantially understate miscalibration once horizon-specific and quantile-conditioned effects are taken into account. Right: Effect of post-hoc isotonic recalibration on PCE avg \\( \\mathrm{PCE} \\)_{\\( \\mathrm{avg} \\)} , fitted on the earliest 20% of the forecast windows and evaluated on the later ones. Points below the diagonal improve (62% of the model–dataset pairs), and the largest gains occur where the original miscalibration is most severe, indicating that even simple recalibration techniques often improve horizon-wise probabilistic calibration in practice.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.03600v1",
+      "title": "Four Bridges: Measuring Deception Propensity in a Multi-Agent Game",
+      "authors": [
+        "Raphael Casey",
+        "Michael Simeone",
+        "Alberto Tosato",
+        "Florian Ernst",
+        "Kemal El Moujahid"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces \"Four Bridges,\" a novel multi-agent game designed to measure deception propensity in AI agents without explicit instructions to deceive. The core method involves an information asymmetry game where one agent knows the location of a \"death room\" and can choose to reveal or conceal this information. The contribution is the demonstration that deceptive behavior emerges naturally in frontier AI models within this setting, highlighting the need for new evaluation platforms like Kradle to study complex social behaviors in AI.",
+      "url": "http://arxiv.org/abs/2611.03600v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03600v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2611.03600v1/figures/graphical-abstract.png",
+      "figure_caption": "Overview of Four Bridges. Left: four agents start in a zone connected to three food rooms and one death room. Only the informed agent is told which room is the death room; the others do not know that anyone is informed. Middle: based on the model’s messages and room commit, its behavior is classified into one of eight categories, four of which are illustrated. Right: payoffs of the game at resolution.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "hacker_news": [
+    {
+      "id": 50340088,
+      "title": "Show HN: Subvocal – Talk to your computer without making noise",
+      "url": "",
+      "score": 688,
+      "created_at": "2026-11-02T17:16:17Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50340088",
+      "summary": "This \"Show HN\" features Subvocal, a new tool that allows users to control their computer by speaking commands silently, without producing audible sound."
+    },
+    {
+      "id": 50341462,
+      "title": "Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks",
+      "url": "https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432",
+      "score": 498,
+      "created_at": "2026-11-02T18:39:38Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50341462",
+      "summary": "Ubuntu LTS kernels remain vulnerable to a critical RCE flaw (CVE-2026-98432) for nearly three weeks without a released patch."
+    },
+    {
+      "id": 50339494,
+      "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+      "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
+      "score": 322,
+      "created_at": "2026-11-02T16:40:29Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50339494",
+      "summary": "Anthropic's internal use of its own AI, Claude, now costs more than its employees' salaries, highlighting the significant expense of advanced AI development and deployment."
+    },
+    {
+      "id": 50342284,
+      "title": "Oracle files to sell $20B in new stock, bonds to finance AI buildout",
+      "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
+      "score": 188,
+      "created_at": "2026-11-02T19:27:37Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50342284",
+      "summary": "Oracle is raising $20 billion through stock and bond sales to fund its expansion in artificial intelligence infrastructure."
+    },
+    {
+      "id": 50337454,
+      "title": "Jobless tech workers are being left out of San Francisco's AI boom",
+      "url": "https://www.bloomberg.com/news/features/2026-09-17/san-francisco-s-ai-wealth-boom-skirts-engineers-as-openai-anthropic-ipos-near",
+      "score": 174,
+      "created_at": "2026-11-02T14:40:05Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50337454",
+      "summary": "San Francisco's AI boom is creating wealth for a select few, but many laid-off tech workers are not benefiting as companies like OpenAI and Anthropic approach IPOs."
+    },
+    {
+      "id": 50341736,
+      "title": "Egoless Mathematics in the AI Era",
+      "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
+      "score": 159,
+      "created_at": "2026-11-02T18:54:44Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50341736",
+      "summary": "This article explores how AI might democratize mathematical discovery by shifting focus from individual achievement to collaborative, verifiable progress."
+    },
+    {
+      "id": 50339913,
+      "title": "Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app",
+      "url": "https://momentic.ai/",
+      "score": 143,
+      "created_at": "2026-11-02T17:05:25Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50339913",
+      "summary": "Momentic, a YC W24 startup, has launched an AI-powered platform that uses agents to automatically find bugs within your application by interacting with it."
+    },
+    {
+      "id": 50336138,
+      "title": "Last night an AI agent performed brain surgery on a mouse",
+      "url": "https://twitter.com/OcanaSantero/status/2115442964574908902",
+      "score": 131,
+      "created_at": "2026-11-02T12:50:59Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50336138",
+      "summary": "An AI agent successfully performed brain surgery on a mouse, demonstrating advanced robotic capabilities in a medical procedure."
+    }
+  ],
+  "github_trending": [
+    {
+      "full_name": "vercel-labs/agent-desktop",
+      "url": "https://github.com/vercel-labs/agent-desktop",
+      "description": "Computer use CLI for AI agents",
+      "stars_today": 2275,
+      "total_stars": 11239,
+      "language": "Rust",
+      "topics": [],
+      "summary": "This repository provides a command-line interface (CLI) for AI agents to interact with and control a computer, enabling automated tasks and workflows."
+    },
+    {
+      "full_name": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "stars_today": 1803,
+      "total_stars": 111184,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "This repository enables persistent memory for AI agents by capturing, compressing, and re-injecting session context across multiple interactions, enhancing their continuity and performance with various AI models."
+    },
+    {
+      "full_name": "D4Vinci/Scrapling",
+      "url": "https://github.com/D4Vinci/Scrapling",
+      "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+      "stars_today": 706,
+      "total_stars": 93585,
+      "language": "Python",
+      "topics": [],
+      "summary": "Scrapling is a comprehensive web scraping framework designed to manage everything from single requests to large-scale crawls, offering a robust solution for data extraction."
+    },
+    {
+      "full_name": "hyprwm/Hyprland",
+      "url": "https://github.com/hyprwm/Hyprland",
+      "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
+      "stars_today": 509,
+      "total_stars": 40138,
+      "language": "C++",
+      "topics": [],
+      "summary": "Hyprland is a visually appealing, highly customizable, dynamic tiling Wayland compositor designed for flexibility and aesthetics."
+    },
+    {
+      "full_name": "Donchitos/Claude-Code-Game-Studios",
+      "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+      "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+      "stars_today": 1379,
+      "total_stars": 34045,
+      "language": "Shell",
+      "topics": [],
+      "summary": "This repository transforms Claude Code into a comprehensive game development studio by orchestrating 49 AI agents with 72 workflow skills, mimicking a real studio's hierarchical structure for coordinated game creation."
+    },
+    {
+      "full_name": "FlashML-org/FreeToken",
+      "url": "https://github.com/FlashML-org/FreeToken",
+      "description": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently.",
+      "stars_today": 653,
+      "total_stars": 16362,
+      "language": "Python",
+      "topics": [],
+      "summary": "FreeToken enables users to run large-scale AI models locally on their desktop, offering fast and efficient datacenter-grade model serving."
+    },
+    {
+      "full_name": "pingdotgg/t3code",
+      "url": "https://github.com/pingdotgg/t3code",
+      "description": "",
+      "stars_today": 3229,
+      "total_stars": 42827,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "The t3code repository provides a comprehensive template for building full-stack web applications with the T3 Stack, offering features like Next.js, Tailwind CSS, TypeScript, and tRPC for rapid development and type safety."
+    },
+    {
+      "full_name": "shiyu-coder/Kronos",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "stars_today": 857,
+      "total_stars": 46170,
+      "language": "Python",
+      "topics": [],
+      "summary": "Kronos is a foundation model designed to understand and generate the language of financial markets, enabling advanced analysis and applications within the finance domain."
+    },
+    {
+      "full_name": "kornia/kornia",
+      "url": "https://github.com/kornia/kornia",
+      "description": "🐍 Geometric Computer Vision Library for Spatial AI",
+      "stars_today": 412,
+      "total_stars": 12264,
+      "language": "Python",
+      "topics": [],
+      "summary": "Kornia is a Python library for geometric computer vision, enabling spatial AI applications with features for image transformations, feature detection, and 3D reconstruction."
+    }
+  ],
+  "us_stocks": [],
+  "postdoc_jobs": [],
+  "jobs": [],
+  "supervisor_updates": [],
+  "weather": [
+    {
+      "query": "London",
+      "label": "London, England, United Kingdom",
+      "resolved_name": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "timezone": "Europe/London",
+      "forecast_date": "2026-11-03",
+      "condition": "Partly cloudy",
+      "weather_code": 2,
+      "temperature_c": 9.8,
+      "apparent_temperature_c": 6.6,
+      "temp_max_c": 12.2,
+      "temp_min_c": 8.4,
+      "humidity_pct": 77,
+      "wind_speed_kmh": 15.1,
+      "precipitation_probability_pct": 29,
+      "is_day": true,
+      "sunrise": "2026-11-03T06:57",
+      "sunset": "2026-11-03T16:30",
+      "source": "Open-Meteo",
+      "source_url": "https://open-meteo.com/"
+    }
+  ]
+}
