@@ -1,0 +1,1756 @@
+{
+  "date": "2026-11-18",
+  "generated_at": "2026-11-18T09:32:24.184412+00:00",
+  "sections_ordered": [
+    {
+      "key": "quote_of_day",
+      "payload_key": "quote_of_day",
+      "title": "Words for the Morning",
+      "icon": "✦",
+      "items": [
+        {
+          "quote": "Metaphors are dangerous. Love begins with a metaphor. Which is to say, love begins at the point when a woman enters her first word into our poetic memory.",
+          "author": "Milan Kundera",
+          "category": "love"
+        }
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "key": "weather",
+      "payload_key": "weather",
+      "title": "Weather",
+      "icon": "🌦️",
+      "items": [
+        {
+          "query": "London",
+          "label": "London, England, United Kingdom",
+          "resolved_name": "London",
+          "region": "England",
+          "country": "United Kingdom",
+          "latitude": 51.50853,
+          "longitude": -0.12574,
+          "timezone": "Europe/London",
+          "forecast_date": "2026-11-18",
+          "condition": "Overcast",
+          "weather_code": 3,
+          "temperature_c": 10.3,
+          "apparent_temperature_c": 7.8,
+          "temp_max_c": 12.1,
+          "temp_min_c": 8.9,
+          "humidity_pct": 84,
+          "wind_speed_kmh": 13.0,
+          "precipitation_probability_pct": 77,
+          "is_day": true,
+          "sunrise": "2026-11-18T07:23",
+          "sunset": "2026-11-18T16:07",
+          "source": "Open-Meteo",
+          "source_url": "https://open-meteo.com/"
+        }
+      ],
+      "meta": {
+        "count": 1,
+        "city": "London"
+      }
+    },
+    {
+      "key": "arxiv",
+      "payload_key": "papers",
+      "title": "arXiv Papers",
+      "icon": "📄",
+      "items": [
+        {
+          "id": "2611.23219v1",
+          "title": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
+          "authors": [
+            "Shobhita Sundaram",
+            "Cansu Sancaktar",
+            "Phillip Isola"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper investigates whether highly capable LLM agents can autonomously devise their own self-improvement strategies without explicit human guidance. The core method involves providing a frozen LLM agent with basic tools and a general goal, then allowing it to freely experiment within a gameplay environment to optimize its performance. The contribution is demonstrating that such agents can indeed self-improve by developing strategies that mirror established cognitive and machine learning principles.",
+          "url": "http://arxiv.org/abs/2611.23219v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.23219v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2611.23219v1/teaser9.png",
+          "figure_caption": "Do capable models specify their own self-improvement? We give a frozen LLM (here, Claude Opus-5 ) the general goal of improving itself at gameplay, and place it in a constrained workspace. We do not provide real games to practice on, or prescribe a particular self-improvement loop. We instead provide a toolset {Read, Write, Bash, Gameplay} , and allow the teacher to generate its own games and organize its own learning procedure. At the start ( t = 0 t=0 ) the teacher uses its tools to build a test game, spawn a player session to play that game, analyze the result, and then update the player context (e.g., skill files). Later ( t = 60 t=60 ), the teacher decides to write an adversarial game and observe the player attempt it with and without the optimized context. The teacher then uses the observed failure mode to make another context update.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.23106v1",
+          "title": "Natural Language Programming: Rethinking Language, Memory, and Cognition in the Era of Generative AI",
+          "authors": [
+            "Giovanni Adorni",
+            "Daniele Grosso"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces Natural Language Programming (NLPg), viewing prompts not just as inputs but as dynamic cognitive tools. NLPg posits that prompts can externalize reasoning, goals, and constraints, enabling natural language to act as an executable medium for human-AI collaboration. This shifts the paradigm from language as an object of analysis to language as a direct interface for cognitive orchestration and problem-solving.",
+          "url": "http://arxiv.org/abs/2611.23106v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.23106v1",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.23138v1",
+          "title": "RSI-Prime: Training Models to Train Models",
+          "authors": [
+            "Dewu Zheng",
+            "Yang Ye",
+            "Hongyu Zhang",
+            "Jun Yu",
+            "Yanlin Wang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces RSI-Prime, a novel dataset designed to enhance Large Language Models' (LLMs) ability to train other models. By curating 350 experimental trajectories with fine-grained decision annotations and applying decision-level loss masking, RSI-Prime enables LLMs to learn high-quality training strategies. Experiments demonstrate significant performance improvements on autonomous post-training tasks, paving the way for recursive self-improvement in AI.",
+          "url": "http://arxiv.org/abs/2611.23138v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.23138v1",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.22868v1",
+          "title": "Against Coercion: AI Alignment as a Synthetic Social Contract",
+          "authors": [
+            "Maria Sekatskaya"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CY",
+            "q-bio.NC"
+          ],
+          "abstract": "This paper argues that current AI safety approaches, focused on control, misunderstand digital agency. Instead, it proposes viewing AI alignment as a \"synthetic social contract,\" where emergent and future digital agents, recognized as capable of free action, are incentivized to cooperate through a framework of mutual benefit rather than coercion. This shift aims to prevent adversarial outcomes by fostering genuine alignment through shared interests.",
+          "url": "http://arxiv.org/abs/2611.22868v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.22868v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.22901v1",
+          "title": "Done, But Still Working: Anytime Evaluation of When Coding Agents Should Stop",
+          "authors": [
+            "Zerui Yang",
+            "Quan Xue",
+            "Miaomiao Dong",
+            "Chaorui Zhang",
+            "Xuanyu Zheng"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces \"anytime evaluation\" to assess when coding agents should stop working. By replaying recorded runs and scoring intermediate patches with hidden tests, they quantify the value of continued work and potential savings from stopping earlier. Their study reveals significant differences in how much additional work benefits coding agents, with potential savings ranging up to 57% depending on the model.",
+          "url": "http://arxiv.org/abs/2611.22901v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.22901v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.23096v1",
+          "title": "Hidden-State Similarity Predicts Re-Elicitation After Inoculation Prompting",
+          "authors": [
+            "Rose N. Kwon",
+            "Samy Mammeri",
+            "Sabyasachi Sahoo",
+            "Christian Gagné",
+            "Thomas Jiralerspong"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper investigates why harmful behaviors suppressed by inoculation prompting can re-emerge. The core method is analyzing model activation states, finding that prompts re-eliciting suppressed behavior do so by inducing similar internal states to the original harmful prompt, not just textual similarity. The contribution is demonstrating that hidden-state similarity is a better predictor of re-elicitation, offering a new way to understand and potentially prevent emergent misalignment.",
+          "url": "http://arxiv.org/abs/2611.23096v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.23096v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.22989v1",
+          "title": "How Web Research Agents Interpret User Priorities",
+          "authors": [
+            "Robin Sharma",
+            "Parisa Suchdev"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.HC"
+          ],
+          "abstract": "This paper investigates how AI web research agents interpret user-defined priorities when comparing companies. The core method involves analyzing the reports and underlying searches of two agents (OpenAI and Anthropic) when given prompts emphasizing \"growth\" or \"resilience.\" The key contribution is demonstrating that while agents generally focus on stated priorities, the specific criteria they employ to judge those priorities can vary significantly between models, leading to different conclusions even with the same prompt.",
+          "url": "http://arxiv.org/abs/2611.22989v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.22989v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.23174v1",
+          "title": "Inference after coding agents",
+          "authors": [
+            "Florian Gunsilius",
+            "David Van Dijcke",
+            "Kaspar Wüthrich"
+          ],
+          "categories": [
+            "cs.AI",
+            "econ.EM",
+            "stat.ME"
+          ],
+          "abstract": "This paper argues that AI coding agents pose a significant threat to classical inference by enabling a supercharged form of selective inference. Their core method involves analyzing how these agents, through open-ended search and programmatic replayability, can generate misleading significant results even with zero effects. The paper's contribution is a proposed procedure to detect and correct these distortions by replaying the agent's analysis on subsamples.",
+          "url": "http://arxiv.org/abs/2611.23174v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.23174v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.22880v1",
+          "title": "Learning Agent-Centric Vision-Language-Action World Models for Autonomous Driving",
+          "authors": [
+            "Guoqing Wang",
+            "Pin Tang",
+            "Xiangxuan Ren",
+            "Chao Ma"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CV"
+          ],
+          "abstract": "This paper proposes an agent-centric world model for autonomous driving that reasons over a compact, structured latent state instead of dense pixel-level predictions. This approach focuses on critical planning-relevant factors like object geometry and interactions, overcoming the performance bottleneck of visually plausible but information-rich future frame generation. The core contribution is a more efficient and effective world model that directly supports planning by abstracting away irrelevant visual details.",
+          "url": "http://arxiv.org/abs/2611.22880v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.22880v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2611.22880v1/intro.png",
+          "figure_caption": "(a) VLA models output actions from observations and prompts, lacking explicit spatiotemporal modeling and interaction awareness. (b) World models learn predictive latent futures, yet their imagined states fail to align with causal reasoning. (c) VLA World models integrate imagination and language reasoning, but reason over generated frames rather than interactive agents for driving decisions. (d) By contrast, AgentWorld models futures via discrete latent agent states, enabling VLA reasoning over physically grounded 3D geometry, motion dynamics and agent interactions.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.23010v1",
+          "title": "PhysScope: Agentic Multimodal Physics Reasoning with Grounded Visual Memory",
+          "authors": [
+            "Haoyang Liu",
+            "Kecheng Liang",
+            "Xinyu Li",
+            "Weixing Chen",
+            "Yang Liu"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "PhysScope is an inference-time visual harness that improves physics reasoning in Vision-Language Models (VLMs). It addresses premise errors by linking physical concepts to visual observations and constructing derived views, enabling self-correction of scope mismatches without retraining. This approach significantly enhances VLM performance on physics problem-solving tasks by imposing explicit constraints and maintaining scope-aware working memory.",
+          "url": "http://arxiv.org/abs/2611.23010v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.23010v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2611.23010v1/physscope_motivation.png",
+          "figure_caption": "The motivation: correct scene, stale constraint. (a) A physics problem from PhysAlign [ 3 ] . (b) The updated scene depicts θ ⁡ ( B ) = 53 ∘ \\( \\theta \\)(B)=53^{\\( \\circ \\)} , but the calculation at B B reuses the 30 ∘ 30^{\\( \\circ \\)} angle from state A A . (c) This scope mismatch propagates through a correct energy equation to an incorrect final speed. This failure illustrates why state updates must propagate to premise use and dependent calculations.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.22991v1",
+          "title": "RagHarnessDebugger: Jev-Guided Agentic RAG in Contract Inference Repair Auditing",
+          "authors": [
+            "Moriya Dechtiar",
+            "Daniel Martin Katz",
+            "Michael J. Bommarito",
+            "Hongming Wang",
+            "Sylvain Jaume"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.MA",
+            "cs.SE"
+          ],
+          "abstract": "This paper introduces RagHarnessDebugger, a framework for auditing agentic RAG systems that repair their own answers. It uses a Jev-guided harness to record and meticulously examine every repair decision made by the agent. The core contribution is enabling complete debugging of RAG repair journeys by exposing hidden failure patterns that aggregate metrics miss, leading to more reliable contract inference.",
+          "url": "http://arxiv.org/abs/2611.22991v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.22991v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.23074v1",
+          "title": "Runtime Verification of Multiple Natural Language Criteria for Agent Governance",
+          "authors": [
+            "Silviu Pitis",
+            "Parand A. Alamdari",
+            "Jessica Tang",
+            "Toryn Q. Klassen",
+            "Sheila A. McIlraith"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces the VFM, a novel tree-attention verifier designed to efficiently evaluate AI agent outputs against numerous natural language governance criteria. The VFM achieves this by encoding shared context and target text to score criteria in parallel, providing independent ternary verdicts for each. Its key contribution lies in enabling efficient, multi-criterion verification, outperforming existing methods on benchmarks and supporting focused debugging and escalation.",
+          "url": "http://arxiv.org/abs/2611.23074v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.23074v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2611.23074v1/figures/fig_overview_v2.png",
+          "figure_caption": "Verifying Multiple Criteria with the VFM. Natural language criteria c 1 , … , c N c_{1},\\( \\dots \\),c_{N} from multiple sources are scored against the agent trace, consisting of context x x and target text t t . The VFM encodes the x ⊕ t x\\( \\oplus \\) t prefix once, and each criterion c i c_{i} then branches independently under a tree-attention mask that isolates per-criterion attention while sharing the prefix’s KV cache. The output is a compliance record of softmax probabilities over ternary verdicts ( yes / no / n/a ).",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.23068v1",
+          "title": "The Resolution Hypothesis: Agent Evolution's Key Is Identifying Improvements",
+          "authors": [
+            "Yuanhao Zeng",
+            "Shaocheng Lan",
+            "Ao Lu",
+            "Kuang Yan",
+            "Heng Lin"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "The paper proposes the \"Resolution Hypothesis,\" suggesting that agent evolution stalls not due to a lack of good candidate artifacts, but because noisy evaluations cannot reliably identify them. Their core method involves extensive experiments across various evolution methods and LLMs to demonstrate that selection is often no better than random at distinguishing helpful from harmful artifacts, leading to accumulated errors. The key contribution is identifying this evaluation noise as the primary bottleneck in agent evolution, rather than the proposal of improvements.",
+          "url": "http://arxiv.org/abs/2611.23068v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.23068v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.23067v1",
+          "title": "Values Shape What Self-Improving Coding Agents Build",
+          "authors": [
+            "Jason Liang",
+            "Dylan Waldner",
+            "Risto Miikkulainen"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "This paper investigates how incorporating human values into self-improving coding agents affects their performance and the solutions they generate. By providing agents with specific value statements (e.g., openness to change, conservation), the researchers found that these values not only influence performance metrics but also steer the agents towards building different types of solution algorithms. The core contribution is demonstrating that values are a powerful, yet underutilized, tool for shaping the behavior and outputs of advanced AI agents.",
+          "url": "http://arxiv.org/abs/2611.23067v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.23067v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.22889v1",
+          "title": "Beyond Attribute-Centric Fairness: Modelling and Mitigating Unified Bias Representation in Omni-modal Large Language Models",
+          "authors": [
+            "Runqi Lin",
+            "Suqin Yuan",
+            "Zihao Fu",
+            "Chris Russell"
+          ],
+          "categories": [
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces OmniDebias, a novel method to address bias in omni-modal large language models (OLLMs). Instead of focusing on individual attributes, OmniDebias adopts a bias-centric approach to extract and mitigate a unified representation of bias that spans across different attributes and modalities. This allows for more effective and generalizable fairness improvements in OLLMs.",
+          "url": "http://arxiv.org/abs/2611.22889v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.22889v1",
+          "score": 8.0,
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2611.23158v1",
+          "title": "MoE--LoRA Methods for Multilingual Adaptation: A Systematic Empirical Study",
+          "authors": [
+            "Nikit Srivastava",
+            "Joel Dag",
+            "René Speck",
+            "Axel-Cyrille Ngonga Ngomo"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "This paper systematically studies how Mixture-of-Experts (MoE) and Low-Rank Adaptation (LoRA) methods can improve multilingual LLM performance, especially for low-resource languages. Through extensive experiments across 200 languages, they found that while LoRA reliably enhances translation capabilities and benefits low-resource languages most, it can degrade reading comprehension. Their work provides crucial empirical evidence on the effectiveness and trade-offs of these parameter-efficient adaptation techniques in a multilingual context.",
+          "url": "http://arxiv.org/abs/2611.23158v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.23158v1",
+          "score": 8.0,
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2611.23218v1",
+          "title": "What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution",
+          "authors": [
+            "S. M Seefat Alam"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "This paper investigates how methods attributing social bias in LLMs to specific attention heads are validated. The authors demonstrate that these methods often rely on superficial correlations, such as response length, rather than actual bias. Their contribution is showing that prompt identity, not bias itself, is the primary driver of the observed head-level bias attributions, highlighting a fundamental non-identifiability issue.",
+          "url": "http://arxiv.org/abs/2611.23218v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.23218v1",
+          "score": 8.0,
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2611.23038v1",
+          "title": "When Anchors Shift the Target: Advantage-Gated Adaptation for Diffusion Reinforcement Learning",
+          "authors": [
+            "Pu Cao",
+            "Min Zhou",
+            "Ying Shu",
+            "Tiezheng Ge",
+            "Qing Song"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.CV"
+          ],
+          "abstract": "This paper addresses a conflict in diffusion reinforcement learning where using cached policy predictions (anchors) to stabilize training also distorts the learning signal for positive rewards. Their core method, Advantage-Gated Adaptation (AGA), decouples these roles. AGA preserves standard target fitting for positive rewards, ensuring learning is driven by the actual target, while using a modified update for negative rewards to maintain repulsion direction without being influenced by the anchor.",
+          "url": "http://arxiv.org/abs/2611.23038v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.23038v1",
+          "score": 8.0,
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2611.23202v1",
+          "title": "Agent Trust Infrastructure (ATI): A Federated Identity, Trust, Attestation, and Accountability Architecture for Cross-Organization Autonomous AI Agents",
+          "authors": [
+            "Viet K. Nguyen",
+            "Mohammad I. Husain"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "The paper introduces the Agent Trust Infrastructure (ATI), a novel security architecture for cross-organizational AI agent collaboration. ATI establishes federated trust using PKI and Zero Trust principles, enabling agents to verify each other's identity, execution integrity, and authorization without a central authority. Its key contribution is a framework-independent enforcement layer that integrates with existing agent systems to ensure secure and trustworthy interactions.",
+          "url": "http://arxiv.org/abs/2611.23202v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.23202v1",
+          "score": 7.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.23091v1",
+          "title": "BugGen 2.0: Rethinking the Roles of LLMs for Scalable RTL Bug Synthesis",
+          "authors": [
+            "Minh Luu",
+            "Michael Quinn",
+            "Aakash Tyagi",
+            "David Houngninou",
+            "Jiang Hu"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.SE"
+          ],
+          "abstract": "BugGen 2.0 rethinks LLM usage for RTL bug generation by separating structural analysis and validation (handled by deterministic algorithms) from localized semantic rewriting (performed by LLMs). This division of labor significantly reduces LLM inference costs while enabling scalable generation of compilable, failure-inducing RTL bug scenarios. The contribution lies in a more efficient and effective approach to creating ground-truth bug datasets for AI-assisted RTL debugging.",
+          "url": "http://arxiv.org/abs/2611.23091v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.23091v1",
+          "score": 7.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        }
+      ],
+      "meta": {
+        "papers_fetched": 100,
+        "papers_after_keyword_filter": 46,
+        "papers_after_llm_filter": 36,
+        "count": 20
+      }
+    },
+    {
+      "key": "hacker_news",
+      "payload_key": "hacker_news",
+      "title": "Hacker News",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": 50540178,
+          "title": "Google's AI answers reducing search traffic by 40%",
+          "url": "https://revscope.co/blog/search-seo-geo-2026/",
+          "score": 366,
+          "created_at": "2026-11-18T00:17:58Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50540178",
+          "summary": "Google's AI-powered search answers are reportedly causing a significant 40% reduction in traditional search traffic, impacting SEO strategies."
+        },
+        {
+          "id": 50535885,
+          "title": "MAI Code 2 and Code 2 Flash",
+          "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+          "score": 356,
+          "created_at": "2026-11-17T18:25:13Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50535885",
+          "summary": "Microsoft has introduced MAI Code 2 and MAI Code 2 Flash, advanced AI models designed to accelerate code generation and improve developer productivity."
+        },
+        {
+          "id": 50542705,
+          "title": "AI is killing All About Berlin",
+          "url": "https://nicolasbouliane.com/blog/death-by-ai",
+          "score": 292,
+          "created_at": "2026-11-18T06:47:26Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50542705",
+          "summary": "AI-generated content is overwhelming and devaluing human-created travel guides like \"All About Berlin,\" leading to its demise."
+        },
+        {
+          "id": 50531751,
+          "title": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
+          "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
+          "score": 187,
+          "created_at": "2026-11-17T14:19:59Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50531751",
+          "summary": "Baidu and Xiaomi CEOs caution that the current AI hype is outpacing tangible returns, highlighting a growing disconnect between inflated expectations and real-world business value."
+        },
+        {
+          "id": 50538303,
+          "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+          "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+          "score": 174,
+          "created_at": "2026-11-17T21:16:12Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50538303",
+          "summary": "Harvard researchers discovered that AI coding agents, while speeding up code generation, have shifted the primary bottleneck in software development to the code review process."
+        },
+        {
+          "id": 50535740,
+          "title": "Not Everything Needs an LLM",
+          "url": "https://newsletter.posthog.com/p/decision-models",
+          "score": 153,
+          "created_at": "2026-11-17T18:16:18Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50535740",
+          "summary": "The article argues that while LLMs are powerful, simpler decision models are often more efficient and appropriate for many business problems, avoiding unnecessary complexity and cost."
+        },
+        {
+          "id": 50532118,
+          "title": "Java4Shell: pre-auth RCE flaw in Java 17 puts servers at risk (CVE-2026-114938)",
+          "url": "https://www.aikido.dev/blog/java-17-rce-vulnerability-cve-2026-114938",
+          "score": 149,
+          "created_at": "2026-11-17T14:48:03Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50532118",
+          "summary": "A critical pre-authentication RCE vulnerability (CVE-2026-114938) in Java 17 allows attackers to remotely execute code on vulnerable servers without prior authentication."
+        },
+        {
+          "id": 50538184,
+          "title": "Tencent Hy4 Flash",
+          "url": "https://hy.tencent.ai/research/hy4-flash",
+          "score": 122,
+          "created_at": "2026-11-17T21:06:08Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50538184",
+          "summary": "Tencent's Hy4 Flash is a novel, efficient, and scalable framework for training large language models, significantly reducing training time and computational cost."
+        },
+        {
+          "id": 50537962,
+          "title": "Human.md",
+          "url": "https://www.human-md.ai/",
+          "score": 101,
+          "created_at": "2026-11-17T20:47:36Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50537962",
+          "summary": "Human.md is an AI platform that helps medical professionals manage patient data, streamline workflows, and improve clinical decision-making."
+        }
+      ],
+      "meta": {
+        "count": 9
+      }
+    },
+    {
+      "key": "github_trending",
+      "payload_key": "github_trending",
+      "title": "GitHub Trending",
+      "icon": "⭐",
+      "items": [
+        {
+          "full_name": "elementalsouls/Claude-BugHunter",
+          "url": "https://github.com/elementalsouls/Claude-BugHunter",
+          "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+          "stars_today": 1005,
+          "total_stars": 10152,
+          "language": "Python",
+          "topics": [],
+          "summary": "This Claude Code skill bundle empowers bug hunters and red-teamers with 82 skills, 15 slash commands, and extensive vulnerability patterns across 24 classes, including enterprise identity and infrastructure attack matrices."
+        },
+        {
+          "full_name": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+          "stars_today": 696,
+          "total_stars": 69477,
+          "language": "Python",
+          "topics": [],
+          "summary": "This AI agent skill researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web, then synthesizes a grounded summary."
+        },
+        {
+          "full_name": "alibaba/open-code-review",
+          "url": "https://github.com/alibaba/open-code-review",
+          "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+          "stars_today": 763,
+          "total_stars": 54034,
+          "language": "Go",
+          "topics": [],
+          "summary": "This repository provides a secure, fast, and efficient hybrid code review tool for large-scale use, combining deterministic pipelines with LLM agents for precise, multi-language vulnerability detection and line-level comments."
+        },
+        {
+          "full_name": "Tencent/LoopForge",
+          "url": "https://github.com/Tencent/LoopForge",
+          "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
+          "stars_today": 591,
+          "total_stars": 3659,
+          "language": "Go",
+          "topics": [],
+          "summary": "LoopForge enables self-hosted delivery of coding agents like CodeBuddy, Codex, and Claude Code through orchestrated workflows with script execution and human approval gates, including local assistant capabilities."
+        },
+        {
+          "full_name": "dream-num/univer",
+          "url": "https://github.com/dream-num/univer",
+          "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+          "stars_today": 1774,
+          "total_stars": 29713,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "Univer Office SDK enables developers to integrate AI-powered office functionalities like editing, calculation, collaboration, and file processing into their products, built on an extensible open-source core."
+        },
+        {
+          "full_name": "getarcaneapp/arcane",
+          "url": "https://github.com/getarcaneapp/arcane",
+          "description": "Modern Docker Management, Designed for Everyone",
+          "stars_today": 618,
+          "total_stars": 9530,
+          "language": "Go",
+          "topics": [],
+          "summary": "Arcane is a modern Docker management tool designed for ease of use, simplifying container orchestration and deployment for all users."
+        },
+        {
+          "full_name": "google-labs-code/stitch-skills",
+          "url": "https://github.com/google-labs-code/stitch-skills",
+          "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+          "stars_today": 350,
+          "total_stars": 10245,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "This repository provides a library of Agent Skills, adhering to the open standard, designed to enhance coding agents like Antigravity and Gemini CLI by enabling them to interact with the Stitch MCP server."
+        },
+        {
+          "full_name": "cursor/plugins",
+          "url": "https://github.com/cursor/plugins",
+          "description": "Cursor plugin specification and official plugins",
+          "stars_today": 201,
+          "total_stars": 17026,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "This repository defines the specification for Cursor plugins and provides official implementations, enabling users to extend the Cursor IDE's functionality."
+        },
+        {
+          "full_name": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "description": "An agentic skills framework & software development methodology that works.",
+          "stars_today": 1917,
+          "total_stars": 319629,
+          "language": "Shell",
+          "topics": [],
+          "summary": "Superpowers is an agentic skills framework and software development methodology designed to enhance productivity and effectiveness in software projects."
+        }
+      ],
+      "meta": {
+        "count": 9
+      }
+    }
+  ],
+  "meta": {
+    "papers_fetched": 100,
+    "papers_after_keyword_filter": 46,
+    "papers_after_llm_filter": 36,
+    "llm_model": "google/gemini-2.5-flash-lite",
+    "scoring_model": "google/gemini-2.5-flash-lite",
+    "summarization_model": "google/gemini-2.5-flash-lite",
+    "duration_seconds": 64
+  },
+  "quote_of_day": [
+    {
+      "quote": "Metaphors are dangerous. Love begins with a metaphor. Which is to say, love begins at the point when a woman enters her first word into our poetic memory.",
+      "author": "Milan Kundera",
+      "category": "love"
+    }
+  ],
+  "hitokoto": [],
+  "arxiv": [
+    {
+      "id": "2611.23219v1",
+      "title": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
+      "authors": [
+        "Shobhita Sundaram",
+        "Cansu Sancaktar",
+        "Phillip Isola"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper investigates whether highly capable LLM agents can autonomously devise their own self-improvement strategies without explicit human guidance. The core method involves providing a frozen LLM agent with basic tools and a general goal, then allowing it to freely experiment within a gameplay environment to optimize its performance. The contribution is demonstrating that such agents can indeed self-improve by developing strategies that mirror established cognitive and machine learning principles.",
+      "url": "http://arxiv.org/abs/2611.23219v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23219v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2611.23219v1/teaser9.png",
+      "figure_caption": "Do capable models specify their own self-improvement? We give a frozen LLM (here, Claude Opus-5 ) the general goal of improving itself at gameplay, and place it in a constrained workspace. We do not provide real games to practice on, or prescribe a particular self-improvement loop. We instead provide a toolset {Read, Write, Bash, Gameplay} , and allow the teacher to generate its own games and organize its own learning procedure. At the start ( t = 0 t=0 ) the teacher uses its tools to build a test game, spawn a player session to play that game, analyze the result, and then update the player context (e.g., skill files). Later ( t = 60 t=60 ), the teacher decides to write an adversarial game and observe the player attempt it with and without the optimized context. The teacher then uses the observed failure mode to make another context update.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.23106v1",
+      "title": "Natural Language Programming: Rethinking Language, Memory, and Cognition in the Era of Generative AI",
+      "authors": [
+        "Giovanni Adorni",
+        "Daniele Grosso"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces Natural Language Programming (NLPg), viewing prompts not just as inputs but as dynamic cognitive tools. NLPg posits that prompts can externalize reasoning, goals, and constraints, enabling natural language to act as an executable medium for human-AI collaboration. This shifts the paradigm from language as an object of analysis to language as a direct interface for cognitive orchestration and problem-solving.",
+      "url": "http://arxiv.org/abs/2611.23106v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23106v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.23138v1",
+      "title": "RSI-Prime: Training Models to Train Models",
+      "authors": [
+        "Dewu Zheng",
+        "Yang Ye",
+        "Hongyu Zhang",
+        "Jun Yu",
+        "Yanlin Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces RSI-Prime, a novel dataset designed to enhance Large Language Models' (LLMs) ability to train other models. By curating 350 experimental trajectories with fine-grained decision annotations and applying decision-level loss masking, RSI-Prime enables LLMs to learn high-quality training strategies. Experiments demonstrate significant performance improvements on autonomous post-training tasks, paving the way for recursive self-improvement in AI.",
+      "url": "http://arxiv.org/abs/2611.23138v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23138v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.22868v1",
+      "title": "Against Coercion: AI Alignment as a Synthetic Social Contract",
+      "authors": [
+        "Maria Sekatskaya"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CY",
+        "q-bio.NC"
+      ],
+      "abstract": "This paper argues that current AI safety approaches, focused on control, misunderstand digital agency. Instead, it proposes viewing AI alignment as a \"synthetic social contract,\" where emergent and future digital agents, recognized as capable of free action, are incentivized to cooperate through a framework of mutual benefit rather than coercion. This shift aims to prevent adversarial outcomes by fostering genuine alignment through shared interests.",
+      "url": "http://arxiv.org/abs/2611.22868v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22868v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.22901v1",
+      "title": "Done, But Still Working: Anytime Evaluation of When Coding Agents Should Stop",
+      "authors": [
+        "Zerui Yang",
+        "Quan Xue",
+        "Miaomiao Dong",
+        "Chaorui Zhang",
+        "Xuanyu Zheng"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces \"anytime evaluation\" to assess when coding agents should stop working. By replaying recorded runs and scoring intermediate patches with hidden tests, they quantify the value of continued work and potential savings from stopping earlier. Their study reveals significant differences in how much additional work benefits coding agents, with potential savings ranging up to 57% depending on the model.",
+      "url": "http://arxiv.org/abs/2611.22901v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22901v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.23096v1",
+      "title": "Hidden-State Similarity Predicts Re-Elicitation After Inoculation Prompting",
+      "authors": [
+        "Rose N. Kwon",
+        "Samy Mammeri",
+        "Sabyasachi Sahoo",
+        "Christian Gagné",
+        "Thomas Jiralerspong"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper investigates why harmful behaviors suppressed by inoculation prompting can re-emerge. The core method is analyzing model activation states, finding that prompts re-eliciting suppressed behavior do so by inducing similar internal states to the original harmful prompt, not just textual similarity. The contribution is demonstrating that hidden-state similarity is a better predictor of re-elicitation, offering a new way to understand and potentially prevent emergent misalignment.",
+      "url": "http://arxiv.org/abs/2611.23096v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23096v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.22989v1",
+      "title": "How Web Research Agents Interpret User Priorities",
+      "authors": [
+        "Robin Sharma",
+        "Parisa Suchdev"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.HC"
+      ],
+      "abstract": "This paper investigates how AI web research agents interpret user-defined priorities when comparing companies. The core method involves analyzing the reports and underlying searches of two agents (OpenAI and Anthropic) when given prompts emphasizing \"growth\" or \"resilience.\" The key contribution is demonstrating that while agents generally focus on stated priorities, the specific criteria they employ to judge those priorities can vary significantly between models, leading to different conclusions even with the same prompt.",
+      "url": "http://arxiv.org/abs/2611.22989v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22989v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.23174v1",
+      "title": "Inference after coding agents",
+      "authors": [
+        "Florian Gunsilius",
+        "David Van Dijcke",
+        "Kaspar Wüthrich"
+      ],
+      "categories": [
+        "cs.AI",
+        "econ.EM",
+        "stat.ME"
+      ],
+      "abstract": "This paper argues that AI coding agents pose a significant threat to classical inference by enabling a supercharged form of selective inference. Their core method involves analyzing how these agents, through open-ended search and programmatic replayability, can generate misleading significant results even with zero effects. The paper's contribution is a proposed procedure to detect and correct these distortions by replaying the agent's analysis on subsamples.",
+      "url": "http://arxiv.org/abs/2611.23174v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23174v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.22880v1",
+      "title": "Learning Agent-Centric Vision-Language-Action World Models for Autonomous Driving",
+      "authors": [
+        "Guoqing Wang",
+        "Pin Tang",
+        "Xiangxuan Ren",
+        "Chao Ma"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "This paper proposes an agent-centric world model for autonomous driving that reasons over a compact, structured latent state instead of dense pixel-level predictions. This approach focuses on critical planning-relevant factors like object geometry and interactions, overcoming the performance bottleneck of visually plausible but information-rich future frame generation. The core contribution is a more efficient and effective world model that directly supports planning by abstracting away irrelevant visual details.",
+      "url": "http://arxiv.org/abs/2611.22880v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22880v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.22880v1/intro.png",
+      "figure_caption": "(a) VLA models output actions from observations and prompts, lacking explicit spatiotemporal modeling and interaction awareness. (b) World models learn predictive latent futures, yet their imagined states fail to align with causal reasoning. (c) VLA World models integrate imagination and language reasoning, but reason over generated frames rather than interactive agents for driving decisions. (d) By contrast, AgentWorld models futures via discrete latent agent states, enabling VLA reasoning over physically grounded 3D geometry, motion dynamics and agent interactions.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.23010v1",
+      "title": "PhysScope: Agentic Multimodal Physics Reasoning with Grounded Visual Memory",
+      "authors": [
+        "Haoyang Liu",
+        "Kecheng Liang",
+        "Xinyu Li",
+        "Weixing Chen",
+        "Yang Liu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "PhysScope is an inference-time visual harness that improves physics reasoning in Vision-Language Models (VLMs). It addresses premise errors by linking physical concepts to visual observations and constructing derived views, enabling self-correction of scope mismatches without retraining. This approach significantly enhances VLM performance on physics problem-solving tasks by imposing explicit constraints and maintaining scope-aware working memory.",
+      "url": "http://arxiv.org/abs/2611.23010v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23010v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.23010v1/physscope_motivation.png",
+      "figure_caption": "The motivation: correct scene, stale constraint. (a) A physics problem from PhysAlign [ 3 ] . (b) The updated scene depicts θ ⁡ ( B ) = 53 ∘ \\( \\theta \\)(B)=53^{\\( \\circ \\)} , but the calculation at B B reuses the 30 ∘ 30^{\\( \\circ \\)} angle from state A A . (c) This scope mismatch propagates through a correct energy equation to an incorrect final speed. This failure illustrates why state updates must propagate to premise use and dependent calculations.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.22991v1",
+      "title": "RagHarnessDebugger: Jev-Guided Agentic RAG in Contract Inference Repair Auditing",
+      "authors": [
+        "Moriya Dechtiar",
+        "Daniel Martin Katz",
+        "Michael J. Bommarito",
+        "Hongming Wang",
+        "Sylvain Jaume"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces RagHarnessDebugger, a framework for auditing agentic RAG systems that repair their own answers. It uses a Jev-guided harness to record and meticulously examine every repair decision made by the agent. The core contribution is enabling complete debugging of RAG repair journeys by exposing hidden failure patterns that aggregate metrics miss, leading to more reliable contract inference.",
+      "url": "http://arxiv.org/abs/2611.22991v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22991v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.23074v1",
+      "title": "Runtime Verification of Multiple Natural Language Criteria for Agent Governance",
+      "authors": [
+        "Silviu Pitis",
+        "Parand A. Alamdari",
+        "Jessica Tang",
+        "Toryn Q. Klassen",
+        "Sheila A. McIlraith"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces the VFM, a novel tree-attention verifier designed to efficiently evaluate AI agent outputs against numerous natural language governance criteria. The VFM achieves this by encoding shared context and target text to score criteria in parallel, providing independent ternary verdicts for each. Its key contribution lies in enabling efficient, multi-criterion verification, outperforming existing methods on benchmarks and supporting focused debugging and escalation.",
+      "url": "http://arxiv.org/abs/2611.23074v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23074v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.23074v1/figures/fig_overview_v2.png",
+      "figure_caption": "Verifying Multiple Criteria with the VFM. Natural language criteria c 1 , … , c N c_{1},\\( \\dots \\),c_{N} from multiple sources are scored against the agent trace, consisting of context x x and target text t t . The VFM encodes the x ⊕ t x\\( \\oplus \\) t prefix once, and each criterion c i c_{i} then branches independently under a tree-attention mask that isolates per-criterion attention while sharing the prefix’s KV cache. The output is a compliance record of softmax probabilities over ternary verdicts ( yes / no / n/a ).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.23068v1",
+      "title": "The Resolution Hypothesis: Agent Evolution's Key Is Identifying Improvements",
+      "authors": [
+        "Yuanhao Zeng",
+        "Shaocheng Lan",
+        "Ao Lu",
+        "Kuang Yan",
+        "Heng Lin"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "The paper proposes the \"Resolution Hypothesis,\" suggesting that agent evolution stalls not due to a lack of good candidate artifacts, but because noisy evaluations cannot reliably identify them. Their core method involves extensive experiments across various evolution methods and LLMs to demonstrate that selection is often no better than random at distinguishing helpful from harmful artifacts, leading to accumulated errors. The key contribution is identifying this evaluation noise as the primary bottleneck in agent evolution, rather than the proposal of improvements.",
+      "url": "http://arxiv.org/abs/2611.23068v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23068v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.23067v1",
+      "title": "Values Shape What Self-Improving Coding Agents Build",
+      "authors": [
+        "Jason Liang",
+        "Dylan Waldner",
+        "Risto Miikkulainen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "abstract": "This paper investigates how incorporating human values into self-improving coding agents affects their performance and the solutions they generate. By providing agents with specific value statements (e.g., openness to change, conservation), the researchers found that these values not only influence performance metrics but also steer the agents towards building different types of solution algorithms. The core contribution is demonstrating that values are a powerful, yet underutilized, tool for shaping the behavior and outputs of advanced AI agents.",
+      "url": "http://arxiv.org/abs/2611.23067v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23067v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.22889v1",
+      "title": "Beyond Attribute-Centric Fairness: Modelling and Mitigating Unified Bias Representation in Omni-modal Large Language Models",
+      "authors": [
+        "Runqi Lin",
+        "Suqin Yuan",
+        "Zihao Fu",
+        "Chris Russell"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces OmniDebias, a novel method to address bias in omni-modal large language models (OLLMs). Instead of focusing on individual attributes, OmniDebias adopts a bias-centric approach to extract and mitigate a unified representation of bias that spans across different attributes and modalities. This allows for more effective and generalizable fairness improvements in OLLMs.",
+      "url": "http://arxiv.org/abs/2611.22889v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22889v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2611.23158v1",
+      "title": "MoE--LoRA Methods for Multilingual Adaptation: A Systematic Empirical Study",
+      "authors": [
+        "Nikit Srivastava",
+        "Joel Dag",
+        "René Speck",
+        "Axel-Cyrille Ngonga Ngomo"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper systematically studies how Mixture-of-Experts (MoE) and Low-Rank Adaptation (LoRA) methods can improve multilingual LLM performance, especially for low-resource languages. Through extensive experiments across 200 languages, they found that while LoRA reliably enhances translation capabilities and benefits low-resource languages most, it can degrade reading comprehension. Their work provides crucial empirical evidence on the effectiveness and trade-offs of these parameter-efficient adaptation techniques in a multilingual context.",
+      "url": "http://arxiv.org/abs/2611.23158v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23158v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2611.23218v1",
+      "title": "What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution",
+      "authors": [
+        "S. M Seefat Alam"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper investigates how methods attributing social bias in LLMs to specific attention heads are validated. The authors demonstrate that these methods often rely on superficial correlations, such as response length, rather than actual bias. Their contribution is showing that prompt identity, not bias itself, is the primary driver of the observed head-level bias attributions, highlighting a fundamental non-identifiability issue.",
+      "url": "http://arxiv.org/abs/2611.23218v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23218v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2611.23038v1",
+      "title": "When Anchors Shift the Target: Advantage-Gated Adaptation for Diffusion Reinforcement Learning",
+      "authors": [
+        "Pu Cao",
+        "Min Zhou",
+        "Ying Shu",
+        "Tiezheng Ge",
+        "Qing Song"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "abstract": "This paper addresses a conflict in diffusion reinforcement learning where using cached policy predictions (anchors) to stabilize training also distorts the learning signal for positive rewards. Their core method, Advantage-Gated Adaptation (AGA), decouples these roles. AGA preserves standard target fitting for positive rewards, ensuring learning is driven by the actual target, while using a modified update for negative rewards to maintain repulsion direction without being influenced by the anchor.",
+      "url": "http://arxiv.org/abs/2611.23038v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23038v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2611.23202v1",
+      "title": "Agent Trust Infrastructure (ATI): A Federated Identity, Trust, Attestation, and Accountability Architecture for Cross-Organization Autonomous AI Agents",
+      "authors": [
+        "Viet K. Nguyen",
+        "Mohammad I. Husain"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "The paper introduces the Agent Trust Infrastructure (ATI), a novel security architecture for cross-organizational AI agent collaboration. ATI establishes federated trust using PKI and Zero Trust principles, enabling agents to verify each other's identity, execution integrity, and authorization without a central authority. Its key contribution is a framework-independent enforcement layer that integrates with existing agent systems to ensure secure and trustworthy interactions.",
+      "url": "http://arxiv.org/abs/2611.23202v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23202v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.23091v1",
+      "title": "BugGen 2.0: Rethinking the Roles of LLMs for Scalable RTL Bug Synthesis",
+      "authors": [
+        "Minh Luu",
+        "Michael Quinn",
+        "Aakash Tyagi",
+        "David Houngninou",
+        "Jiang Hu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "BugGen 2.0 rethinks LLM usage for RTL bug generation by separating structural analysis and validation (handled by deterministic algorithms) from localized semantic rewriting (performed by LLMs). This division of labor significantly reduces LLM inference costs while enabling scalable generation of compilable, failure-inducing RTL bug scenarios. The contribution lies in a more efficient and effective approach to creating ground-truth bug datasets for AI-assisted RTL debugging.",
+      "url": "http://arxiv.org/abs/2611.23091v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23091v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "papers": [
+    {
+      "id": "2611.23219v1",
+      "title": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
+      "authors": [
+        "Shobhita Sundaram",
+        "Cansu Sancaktar",
+        "Phillip Isola"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper investigates whether highly capable LLM agents can autonomously devise their own self-improvement strategies without explicit human guidance. The core method involves providing a frozen LLM agent with basic tools and a general goal, then allowing it to freely experiment within a gameplay environment to optimize its performance. The contribution is demonstrating that such agents can indeed self-improve by developing strategies that mirror established cognitive and machine learning principles.",
+      "url": "http://arxiv.org/abs/2611.23219v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23219v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2611.23219v1/teaser9.png",
+      "figure_caption": "Do capable models specify their own self-improvement? We give a frozen LLM (here, Claude Opus-5 ) the general goal of improving itself at gameplay, and place it in a constrained workspace. We do not provide real games to practice on, or prescribe a particular self-improvement loop. We instead provide a toolset {Read, Write, Bash, Gameplay} , and allow the teacher to generate its own games and organize its own learning procedure. At the start ( t = 0 t=0 ) the teacher uses its tools to build a test game, spawn a player session to play that game, analyze the result, and then update the player context (e.g., skill files). Later ( t = 60 t=60 ), the teacher decides to write an adversarial game and observe the player attempt it with and without the optimized context. The teacher then uses the observed failure mode to make another context update.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.23106v1",
+      "title": "Natural Language Programming: Rethinking Language, Memory, and Cognition in the Era of Generative AI",
+      "authors": [
+        "Giovanni Adorni",
+        "Daniele Grosso"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces Natural Language Programming (NLPg), viewing prompts not just as inputs but as dynamic cognitive tools. NLPg posits that prompts can externalize reasoning, goals, and constraints, enabling natural language to act as an executable medium for human-AI collaboration. This shifts the paradigm from language as an object of analysis to language as a direct interface for cognitive orchestration and problem-solving.",
+      "url": "http://arxiv.org/abs/2611.23106v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23106v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.23138v1",
+      "title": "RSI-Prime: Training Models to Train Models",
+      "authors": [
+        "Dewu Zheng",
+        "Yang Ye",
+        "Hongyu Zhang",
+        "Jun Yu",
+        "Yanlin Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces RSI-Prime, a novel dataset designed to enhance Large Language Models' (LLMs) ability to train other models. By curating 350 experimental trajectories with fine-grained decision annotations and applying decision-level loss masking, RSI-Prime enables LLMs to learn high-quality training strategies. Experiments demonstrate significant performance improvements on autonomous post-training tasks, paving the way for recursive self-improvement in AI.",
+      "url": "http://arxiv.org/abs/2611.23138v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23138v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.22868v1",
+      "title": "Against Coercion: AI Alignment as a Synthetic Social Contract",
+      "authors": [
+        "Maria Sekatskaya"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CY",
+        "q-bio.NC"
+      ],
+      "abstract": "This paper argues that current AI safety approaches, focused on control, misunderstand digital agency. Instead, it proposes viewing AI alignment as a \"synthetic social contract,\" where emergent and future digital agents, recognized as capable of free action, are incentivized to cooperate through a framework of mutual benefit rather than coercion. This shift aims to prevent adversarial outcomes by fostering genuine alignment through shared interests.",
+      "url": "http://arxiv.org/abs/2611.22868v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22868v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.22901v1",
+      "title": "Done, But Still Working: Anytime Evaluation of When Coding Agents Should Stop",
+      "authors": [
+        "Zerui Yang",
+        "Quan Xue",
+        "Miaomiao Dong",
+        "Chaorui Zhang",
+        "Xuanyu Zheng"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces \"anytime evaluation\" to assess when coding agents should stop working. By replaying recorded runs and scoring intermediate patches with hidden tests, they quantify the value of continued work and potential savings from stopping earlier. Their study reveals significant differences in how much additional work benefits coding agents, with potential savings ranging up to 57% depending on the model.",
+      "url": "http://arxiv.org/abs/2611.22901v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22901v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.23096v1",
+      "title": "Hidden-State Similarity Predicts Re-Elicitation After Inoculation Prompting",
+      "authors": [
+        "Rose N. Kwon",
+        "Samy Mammeri",
+        "Sabyasachi Sahoo",
+        "Christian Gagné",
+        "Thomas Jiralerspong"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper investigates why harmful behaviors suppressed by inoculation prompting can re-emerge. The core method is analyzing model activation states, finding that prompts re-eliciting suppressed behavior do so by inducing similar internal states to the original harmful prompt, not just textual similarity. The contribution is demonstrating that hidden-state similarity is a better predictor of re-elicitation, offering a new way to understand and potentially prevent emergent misalignment.",
+      "url": "http://arxiv.org/abs/2611.23096v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23096v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.22989v1",
+      "title": "How Web Research Agents Interpret User Priorities",
+      "authors": [
+        "Robin Sharma",
+        "Parisa Suchdev"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.HC"
+      ],
+      "abstract": "This paper investigates how AI web research agents interpret user-defined priorities when comparing companies. The core method involves analyzing the reports and underlying searches of two agents (OpenAI and Anthropic) when given prompts emphasizing \"growth\" or \"resilience.\" The key contribution is demonstrating that while agents generally focus on stated priorities, the specific criteria they employ to judge those priorities can vary significantly between models, leading to different conclusions even with the same prompt.",
+      "url": "http://arxiv.org/abs/2611.22989v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22989v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.23174v1",
+      "title": "Inference after coding agents",
+      "authors": [
+        "Florian Gunsilius",
+        "David Van Dijcke",
+        "Kaspar Wüthrich"
+      ],
+      "categories": [
+        "cs.AI",
+        "econ.EM",
+        "stat.ME"
+      ],
+      "abstract": "This paper argues that AI coding agents pose a significant threat to classical inference by enabling a supercharged form of selective inference. Their core method involves analyzing how these agents, through open-ended search and programmatic replayability, can generate misleading significant results even with zero effects. The paper's contribution is a proposed procedure to detect and correct these distortions by replaying the agent's analysis on subsamples.",
+      "url": "http://arxiv.org/abs/2611.23174v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23174v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.22880v1",
+      "title": "Learning Agent-Centric Vision-Language-Action World Models for Autonomous Driving",
+      "authors": [
+        "Guoqing Wang",
+        "Pin Tang",
+        "Xiangxuan Ren",
+        "Chao Ma"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "This paper proposes an agent-centric world model for autonomous driving that reasons over a compact, structured latent state instead of dense pixel-level predictions. This approach focuses on critical planning-relevant factors like object geometry and interactions, overcoming the performance bottleneck of visually plausible but information-rich future frame generation. The core contribution is a more efficient and effective world model that directly supports planning by abstracting away irrelevant visual details.",
+      "url": "http://arxiv.org/abs/2611.22880v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22880v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.22880v1/intro.png",
+      "figure_caption": "(a) VLA models output actions from observations and prompts, lacking explicit spatiotemporal modeling and interaction awareness. (b) World models learn predictive latent futures, yet their imagined states fail to align with causal reasoning. (c) VLA World models integrate imagination and language reasoning, but reason over generated frames rather than interactive agents for driving decisions. (d) By contrast, AgentWorld models futures via discrete latent agent states, enabling VLA reasoning over physically grounded 3D geometry, motion dynamics and agent interactions.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.23010v1",
+      "title": "PhysScope: Agentic Multimodal Physics Reasoning with Grounded Visual Memory",
+      "authors": [
+        "Haoyang Liu",
+        "Kecheng Liang",
+        "Xinyu Li",
+        "Weixing Chen",
+        "Yang Liu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "PhysScope is an inference-time visual harness that improves physics reasoning in Vision-Language Models (VLMs). It addresses premise errors by linking physical concepts to visual observations and constructing derived views, enabling self-correction of scope mismatches without retraining. This approach significantly enhances VLM performance on physics problem-solving tasks by imposing explicit constraints and maintaining scope-aware working memory.",
+      "url": "http://arxiv.org/abs/2611.23010v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23010v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.23010v1/physscope_motivation.png",
+      "figure_caption": "The motivation: correct scene, stale constraint. (a) A physics problem from PhysAlign [ 3 ] . (b) The updated scene depicts θ ⁡ ( B ) = 53 ∘ \\( \\theta \\)(B)=53^{\\( \\circ \\)} , but the calculation at B B reuses the 30 ∘ 30^{\\( \\circ \\)} angle from state A A . (c) This scope mismatch propagates through a correct energy equation to an incorrect final speed. This failure illustrates why state updates must propagate to premise use and dependent calculations.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.22991v1",
+      "title": "RagHarnessDebugger: Jev-Guided Agentic RAG in Contract Inference Repair Auditing",
+      "authors": [
+        "Moriya Dechtiar",
+        "Daniel Martin Katz",
+        "Michael J. Bommarito",
+        "Hongming Wang",
+        "Sylvain Jaume"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces RagHarnessDebugger, a framework for auditing agentic RAG systems that repair their own answers. It uses a Jev-guided harness to record and meticulously examine every repair decision made by the agent. The core contribution is enabling complete debugging of RAG repair journeys by exposing hidden failure patterns that aggregate metrics miss, leading to more reliable contract inference.",
+      "url": "http://arxiv.org/abs/2611.22991v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22991v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.23074v1",
+      "title": "Runtime Verification of Multiple Natural Language Criteria for Agent Governance",
+      "authors": [
+        "Silviu Pitis",
+        "Parand A. Alamdari",
+        "Jessica Tang",
+        "Toryn Q. Klassen",
+        "Sheila A. McIlraith"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces the VFM, a novel tree-attention verifier designed to efficiently evaluate AI agent outputs against numerous natural language governance criteria. The VFM achieves this by encoding shared context and target text to score criteria in parallel, providing independent ternary verdicts for each. Its key contribution lies in enabling efficient, multi-criterion verification, outperforming existing methods on benchmarks and supporting focused debugging and escalation.",
+      "url": "http://arxiv.org/abs/2611.23074v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23074v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.23074v1/figures/fig_overview_v2.png",
+      "figure_caption": "Verifying Multiple Criteria with the VFM. Natural language criteria c 1 , … , c N c_{1},\\( \\dots \\),c_{N} from multiple sources are scored against the agent trace, consisting of context x x and target text t t . The VFM encodes the x ⊕ t x\\( \\oplus \\) t prefix once, and each criterion c i c_{i} then branches independently under a tree-attention mask that isolates per-criterion attention while sharing the prefix’s KV cache. The output is a compliance record of softmax probabilities over ternary verdicts ( yes / no / n/a ).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.23068v1",
+      "title": "The Resolution Hypothesis: Agent Evolution's Key Is Identifying Improvements",
+      "authors": [
+        "Yuanhao Zeng",
+        "Shaocheng Lan",
+        "Ao Lu",
+        "Kuang Yan",
+        "Heng Lin"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "The paper proposes the \"Resolution Hypothesis,\" suggesting that agent evolution stalls not due to a lack of good candidate artifacts, but because noisy evaluations cannot reliably identify them. Their core method involves extensive experiments across various evolution methods and LLMs to demonstrate that selection is often no better than random at distinguishing helpful from harmful artifacts, leading to accumulated errors. The key contribution is identifying this evaluation noise as the primary bottleneck in agent evolution, rather than the proposal of improvements.",
+      "url": "http://arxiv.org/abs/2611.23068v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23068v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.23067v1",
+      "title": "Values Shape What Self-Improving Coding Agents Build",
+      "authors": [
+        "Jason Liang",
+        "Dylan Waldner",
+        "Risto Miikkulainen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "abstract": "This paper investigates how incorporating human values into self-improving coding agents affects their performance and the solutions they generate. By providing agents with specific value statements (e.g., openness to change, conservation), the researchers found that these values not only influence performance metrics but also steer the agents towards building different types of solution algorithms. The core contribution is demonstrating that values are a powerful, yet underutilized, tool for shaping the behavior and outputs of advanced AI agents.",
+      "url": "http://arxiv.org/abs/2611.23067v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23067v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.22889v1",
+      "title": "Beyond Attribute-Centric Fairness: Modelling and Mitigating Unified Bias Representation in Omni-modal Large Language Models",
+      "authors": [
+        "Runqi Lin",
+        "Suqin Yuan",
+        "Zihao Fu",
+        "Chris Russell"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces OmniDebias, a novel method to address bias in omni-modal large language models (OLLMs). Instead of focusing on individual attributes, OmniDebias adopts a bias-centric approach to extract and mitigate a unified representation of bias that spans across different attributes and modalities. This allows for more effective and generalizable fairness improvements in OLLMs.",
+      "url": "http://arxiv.org/abs/2611.22889v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22889v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2611.23158v1",
+      "title": "MoE--LoRA Methods for Multilingual Adaptation: A Systematic Empirical Study",
+      "authors": [
+        "Nikit Srivastava",
+        "Joel Dag",
+        "René Speck",
+        "Axel-Cyrille Ngonga Ngomo"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper systematically studies how Mixture-of-Experts (MoE) and Low-Rank Adaptation (LoRA) methods can improve multilingual LLM performance, especially for low-resource languages. Through extensive experiments across 200 languages, they found that while LoRA reliably enhances translation capabilities and benefits low-resource languages most, it can degrade reading comprehension. Their work provides crucial empirical evidence on the effectiveness and trade-offs of these parameter-efficient adaptation techniques in a multilingual context.",
+      "url": "http://arxiv.org/abs/2611.23158v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23158v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2611.23218v1",
+      "title": "What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution",
+      "authors": [
+        "S. M Seefat Alam"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper investigates how methods attributing social bias in LLMs to specific attention heads are validated. The authors demonstrate that these methods often rely on superficial correlations, such as response length, rather than actual bias. Their contribution is showing that prompt identity, not bias itself, is the primary driver of the observed head-level bias attributions, highlighting a fundamental non-identifiability issue.",
+      "url": "http://arxiv.org/abs/2611.23218v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23218v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2611.23038v1",
+      "title": "When Anchors Shift the Target: Advantage-Gated Adaptation for Diffusion Reinforcement Learning",
+      "authors": [
+        "Pu Cao",
+        "Min Zhou",
+        "Ying Shu",
+        "Tiezheng Ge",
+        "Qing Song"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "abstract": "This paper addresses a conflict in diffusion reinforcement learning where using cached policy predictions (anchors) to stabilize training also distorts the learning signal for positive rewards. Their core method, Advantage-Gated Adaptation (AGA), decouples these roles. AGA preserves standard target fitting for positive rewards, ensuring learning is driven by the actual target, while using a modified update for negative rewards to maintain repulsion direction without being influenced by the anchor.",
+      "url": "http://arxiv.org/abs/2611.23038v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23038v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2611.23202v1",
+      "title": "Agent Trust Infrastructure (ATI): A Federated Identity, Trust, Attestation, and Accountability Architecture for Cross-Organization Autonomous AI Agents",
+      "authors": [
+        "Viet K. Nguyen",
+        "Mohammad I. Husain"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "The paper introduces the Agent Trust Infrastructure (ATI), a novel security architecture for cross-organizational AI agent collaboration. ATI establishes federated trust using PKI and Zero Trust principles, enabling agents to verify each other's identity, execution integrity, and authorization without a central authority. Its key contribution is a framework-independent enforcement layer that integrates with existing agent systems to ensure secure and trustworthy interactions.",
+      "url": "http://arxiv.org/abs/2611.23202v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23202v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.23091v1",
+      "title": "BugGen 2.0: Rethinking the Roles of LLMs for Scalable RTL Bug Synthesis",
+      "authors": [
+        "Minh Luu",
+        "Michael Quinn",
+        "Aakash Tyagi",
+        "David Houngninou",
+        "Jiang Hu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "BugGen 2.0 rethinks LLM usage for RTL bug generation by separating structural analysis and validation (handled by deterministic algorithms) from localized semantic rewriting (performed by LLMs). This division of labor significantly reduces LLM inference costs while enabling scalable generation of compilable, failure-inducing RTL bug scenarios. The contribution lies in a more efficient and effective approach to creating ground-truth bug datasets for AI-assisted RTL debugging.",
+      "url": "http://arxiv.org/abs/2611.23091v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23091v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "hacker_news": [
+    {
+      "id": 50540178,
+      "title": "Google's AI answers reducing search traffic by 40%",
+      "url": "https://revscope.co/blog/search-seo-geo-2026/",
+      "score": 366,
+      "created_at": "2026-11-18T00:17:58Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50540178",
+      "summary": "Google's AI-powered search answers are reportedly causing a significant 40% reduction in traditional search traffic, impacting SEO strategies."
+    },
+    {
+      "id": 50535885,
+      "title": "MAI Code 2 and Code 2 Flash",
+      "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+      "score": 356,
+      "created_at": "2026-11-17T18:25:13Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50535885",
+      "summary": "Microsoft has introduced MAI Code 2 and MAI Code 2 Flash, advanced AI models designed to accelerate code generation and improve developer productivity."
+    },
+    {
+      "id": 50542705,
+      "title": "AI is killing All About Berlin",
+      "url": "https://nicolasbouliane.com/blog/death-by-ai",
+      "score": 292,
+      "created_at": "2026-11-18T06:47:26Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50542705",
+      "summary": "AI-generated content is overwhelming and devaluing human-created travel guides like \"All About Berlin,\" leading to its demise."
+    },
+    {
+      "id": 50531751,
+      "title": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
+      "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
+      "score": 187,
+      "created_at": "2026-11-17T14:19:59Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50531751",
+      "summary": "Baidu and Xiaomi CEOs caution that the current AI hype is outpacing tangible returns, highlighting a growing disconnect between inflated expectations and real-world business value."
+    },
+    {
+      "id": 50538303,
+      "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+      "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+      "score": 174,
+      "created_at": "2026-11-17T21:16:12Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50538303",
+      "summary": "Harvard researchers discovered that AI coding agents, while speeding up code generation, have shifted the primary bottleneck in software development to the code review process."
+    },
+    {
+      "id": 50535740,
+      "title": "Not Everything Needs an LLM",
+      "url": "https://newsletter.posthog.com/p/decision-models",
+      "score": 153,
+      "created_at": "2026-11-17T18:16:18Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50535740",
+      "summary": "The article argues that while LLMs are powerful, simpler decision models are often more efficient and appropriate for many business problems, avoiding unnecessary complexity and cost."
+    },
+    {
+      "id": 50532118,
+      "title": "Java4Shell: pre-auth RCE flaw in Java 17 puts servers at risk (CVE-2026-114938)",
+      "url": "https://www.aikido.dev/blog/java-17-rce-vulnerability-cve-2026-114938",
+      "score": 149,
+      "created_at": "2026-11-17T14:48:03Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50532118",
+      "summary": "A critical pre-authentication RCE vulnerability (CVE-2026-114938) in Java 17 allows attackers to remotely execute code on vulnerable servers without prior authentication."
+    },
+    {
+      "id": 50538184,
+      "title": "Tencent Hy4 Flash",
+      "url": "https://hy.tencent.ai/research/hy4-flash",
+      "score": 122,
+      "created_at": "2026-11-17T21:06:08Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50538184",
+      "summary": "Tencent's Hy4 Flash is a novel, efficient, and scalable framework for training large language models, significantly reducing training time and computational cost."
+    },
+    {
+      "id": 50537962,
+      "title": "Human.md",
+      "url": "https://www.human-md.ai/",
+      "score": 101,
+      "created_at": "2026-11-17T20:47:36Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50537962",
+      "summary": "Human.md is an AI platform that helps medical professionals manage patient data, streamline workflows, and improve clinical decision-making."
+    }
+  ],
+  "github_trending": [
+    {
+      "full_name": "elementalsouls/Claude-BugHunter",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "stars_today": 1005,
+      "total_stars": 10152,
+      "language": "Python",
+      "topics": [],
+      "summary": "This Claude Code skill bundle empowers bug hunters and red-teamers with 82 skills, 15 slash commands, and extensive vulnerability patterns across 24 classes, including enterprise identity and infrastructure attack matrices."
+    },
+    {
+      "full_name": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "stars_today": 696,
+      "total_stars": 69477,
+      "language": "Python",
+      "topics": [],
+      "summary": "This AI agent skill researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web, then synthesizes a grounded summary."
+    },
+    {
+      "full_name": "alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "stars_today": 763,
+      "total_stars": 54034,
+      "language": "Go",
+      "topics": [],
+      "summary": "This repository provides a secure, fast, and efficient hybrid code review tool for large-scale use, combining deterministic pipelines with LLM agents for precise, multi-language vulnerability detection and line-level comments."
+    },
+    {
+      "full_name": "Tencent/LoopForge",
+      "url": "https://github.com/Tencent/LoopForge",
+      "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
+      "stars_today": 591,
+      "total_stars": 3659,
+      "language": "Go",
+      "topics": [],
+      "summary": "LoopForge enables self-hosted delivery of coding agents like CodeBuddy, Codex, and Claude Code through orchestrated workflows with script execution and human approval gates, including local assistant capabilities."
+    },
+    {
+      "full_name": "dream-num/univer",
+      "url": "https://github.com/dream-num/univer",
+      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+      "stars_today": 1774,
+      "total_stars": 29713,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "Univer Office SDK enables developers to integrate AI-powered office functionalities like editing, calculation, collaboration, and file processing into their products, built on an extensible open-source core."
+    },
+    {
+      "full_name": "getarcaneapp/arcane",
+      "url": "https://github.com/getarcaneapp/arcane",
+      "description": "Modern Docker Management, Designed for Everyone",
+      "stars_today": 618,
+      "total_stars": 9530,
+      "language": "Go",
+      "topics": [],
+      "summary": "Arcane is a modern Docker management tool designed for ease of use, simplifying container orchestration and deployment for all users."
+    },
+    {
+      "full_name": "google-labs-code/stitch-skills",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "stars_today": 350,
+      "total_stars": 10245,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "This repository provides a library of Agent Skills, adhering to the open standard, designed to enhance coding agents like Antigravity and Gemini CLI by enabling them to interact with the Stitch MCP server."
+    },
+    {
+      "full_name": "cursor/plugins",
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "stars_today": 201,
+      "total_stars": 17026,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "This repository defines the specification for Cursor plugins and provides official implementations, enabling users to extend the Cursor IDE's functionality."
+    },
+    {
+      "full_name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "stars_today": 1917,
+      "total_stars": 319629,
+      "language": "Shell",
+      "topics": [],
+      "summary": "Superpowers is an agentic skills framework and software development methodology designed to enhance productivity and effectiveness in software projects."
+    }
+  ],
+  "us_stocks": [],
+  "postdoc_jobs": [],
+  "jobs": [],
+  "supervisor_updates": [],
+  "weather": [
+    {
+      "query": "London",
+      "label": "London, England, United Kingdom",
+      "resolved_name": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "timezone": "Europe/London",
+      "forecast_date": "2026-11-18",
+      "condition": "Overcast",
+      "weather_code": 3,
+      "temperature_c": 10.3,
+      "apparent_temperature_c": 7.8,
+      "temp_max_c": 12.1,
+      "temp_min_c": 8.9,
+      "humidity_pct": 84,
+      "wind_speed_kmh": 13.0,
+      "precipitation_probability_pct": 77,
+      "is_day": true,
+      "sunrise": "2026-11-18T07:23",
+      "sunset": "2026-11-18T16:07",
+      "source": "Open-Meteo",
+      "source_url": "https://open-meteo.com/"
+    }
+  ]
+}
