@@ -1,0 +1,1684 @@
+{
+  "date": "2026-11-24",
+  "generated_at": "2026-11-24T09:32:09.282715+00:00",
+  "sections_ordered": [
+    {
+      "key": "quote_of_day",
+      "payload_key": "quote_of_day",
+      "title": "Words for the Morning",
+      "icon": "✦",
+      "items": [
+        {
+          "quote": "Over and over again, financial experts and wonkish talking heads endeavor to explain these mysterious, 'toxic' financial instruments to us lay folk. Over and over, they ignobly fail, because we all know that no one understands credit default obligations and derivatives, except perhaps Mr. Buffett and the computers who created them.",
+          "author": "Richard Dooling",
+          "category": "computers"
+        }
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "key": "weather",
+      "payload_key": "weather",
+      "title": "Weather",
+      "icon": "🌦️",
+      "items": [
+        {
+          "query": "London",
+          "label": "London, England, United Kingdom",
+          "resolved_name": "London",
+          "region": "England",
+          "country": "United Kingdom",
+          "latitude": 51.50853,
+          "longitude": -0.12574,
+          "timezone": "Europe/London",
+          "forecast_date": "2026-11-24",
+          "condition": "Overcast",
+          "weather_code": 3,
+          "temperature_c": 4.5,
+          "apparent_temperature_c": 1.2,
+          "temp_max_c": 6.2,
+          "temp_min_c": 2.5,
+          "humidity_pct": 86,
+          "wind_speed_kmh": 11.2,
+          "precipitation_probability_pct": 0,
+          "is_day": true,
+          "sunrise": "2026-11-24T07:33",
+          "sunset": "2026-11-24T16:00",
+          "source": "Open-Meteo",
+          "source_url": "https://open-meteo.com/"
+        }
+      ],
+      "meta": {
+        "count": 1,
+        "city": "London"
+      }
+    },
+    {
+      "key": "arxiv",
+      "payload_key": "papers",
+      "title": "arXiv Papers",
+      "icon": "📄",
+      "items": [
+        {
+          "id": "2611.31063v1",
+          "title": "From Local Errors to System Failures: Modeling and Benchmarking Error Propagation in Multi-Agent LLM Systems",
+          "authors": [
+            "Wenlong Yu",
+            "Bingxu Lu",
+            "Qilong Wang",
+            "Qinghua Hu",
+            "Qianru Sun"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.MA"
+          ],
+          "abstract": "This paper introduces REPA, a novel model that quantifies how errors propagate through multi-agent LLM systems by analyzing individual agent responses. REPA decomposes error propagation into input assembly and agent processing, providing a more granular understanding than outcome-based evaluations. Its key contribution is a robust method for predicting system-level errors from local ones, significantly outperforming direct regression and enabling targeted error recovery.",
+          "url": "http://arxiv.org/abs/2611.31063v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.31063v1",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.31228v1",
+          "title": "Language Models Steer on Injected Uncertainty Tokens, but Fail to Self-Monitor In Situ",
+          "authors": [
+            "Daniel Theron"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper investigates whether language models can self-monitor and correct errors during numerical reasoning by verbalizing confidence. The core method involves injecting uncertainty tokens and observing if models backtrack when errors occur. The main contribution is demonstrating that while these models can be steered to repair errors when explicitly prompted with uncertainty, they **fail to self-monitor their own mistakes in situ**, meaning their verbalized confidence doesn't accurately reflect their reasoning accuracy.",
+          "url": "http://arxiv.org/abs/2611.31228v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.31228v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2611.31228v1/runs/fig1_4models.png",
+          "figure_caption": "Confidence Dynamics at the First Error Step ( k ∗ k^{*} ). Mean on-track confidence ( g k g_{k} , red circle) and step confidence ( c k c_{k} , blue square) centered at the earliest error step ( k − k ∗ = 0 k-k^{*}=0 ) with 95% bootstrap confidence intervals across four models: Qwen2.5-7B-Instruct , Llama-3.1-8B-Instruct , Mistral-7B-Instruct-v0.3 , and Phi-4 (14.7B). Sample sizes at relative steps k − k ∗ < 0 k-k^{*}<0 exclude step-1 errors ( k ∗ = 1 k^{*}=1 , leaving n = 429 n=429 Qwen, 551 551 Llama, 646 646 Mistral, and 57 57 Phi-4 at k − k ∗ = − 1 k-k^{*}=-1 ). Trajectories remain flatly saturated at 95–100% across reasoning errors.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.31105v1",
+          "title": "LiveLoRA: Exact KV Cache Migration Across LoRA Updates for LLM Agents",
+          "authors": [
+            "Tianyi Huang",
+            "Samuel Xu",
+            "Ivy Gu",
+            "Nathan Huang",
+            "Siqi Zhang"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "LiveLoRA enables efficient LLM agent updates by allowing exact KV cache migration across adapter changes without recomputing the entire interaction history. It achieves this through a model-runtime co-design that leverages frozen lower decoder blocks and fixed K/V adapter down-projections. This significantly speeds up serving LLM agents by avoiding costly full-history re-prefilling, demonstrating substantial performance gains.",
+          "url": "http://arxiv.org/abs/2611.31105v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.31105v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2611.31105v1/migration_mechanism.png",
+          "figure_caption": "Fixed- A A final-block cache migration. (a) Retain invariant base projections and low-rank coordinates. (b) Reconstruct candidate K/V. (c) Reevaluate the latest token against the rebuilt history to obtain new logits. Lower-block caches are reused; the O-to-MLP stage includes residual connections and normalization.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.30925v1",
+          "title": "PRIMEAPE: A Multilingual Benchmark for Fine-Grained Meta-Evaluation of Judge Models",
+          "authors": [
+            "Vladislav Mikhailov",
+            "Sarfraz Ahmad",
+            "Momina Ahsan",
+            "Zoia Butenko",
+            "Vladimir Dobrovolskii"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces PRIMEAPE, a multilingual benchmark designed to fine-grainedly evaluate the verdicts and rationales of judge LLMs. It provides human-annotated response pairs across multiple languages and criteria, revealing that aggregate judge performance can mask significant variations across languages and evaluation dimensions. The study also finds that judges exhibit biases like favoring the first response and longer outputs, which can impact their agreement with human preferences.",
+          "url": "http://arxiv.org/abs/2611.30925v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.30925v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2611.30925v1/figures/pipeline.png",
+          "figure_caption": "Overview of Primeape construction. Left: Instruction sources, languages, and response model families. Middle: Five models generate one response each to the same instruction, yielding ten unique response pairs. Right: Human annotators label each pair, providing a preference and written rationale for five criteria.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.30986v1",
+          "title": "Reinforcing Diffusion Models by Instantaneous Trajectory Distribution Matching",
+          "authors": [
+            "Yihong Luo"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CV"
+          ],
+          "abstract": "This paper identifies a \"behavior-policy mismatch\" in existing forward diffusion reinforcement learning methods, which destabilizes training by causing gradient drift. To address this, they propose **Instantaneous Trajectory Distribution Matching (iTDM)**. iTDM resolves this issue by matching the instantaneous trajectory distributions, leading to more stable and efficient diffusion model training.",
+          "url": "http://arxiv.org/abs/2611.30986v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.30986v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2611.30986v1/main_compare.png",
+          "figure_caption": "Qualitative comparisons on human preference alignment (PickScore) with SD3.5-M. All models are trained and evaluated under CFG = 1.0 \\( \\text{CFG} \\)=1.0 . Compared with competing forward diffusion RL baselines, iTDM faithfully follows intricate prompt details while delivering sharper textures and superior aesthetic quality, avoiding blurry artifacts .",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.31117v1",
+          "title": "Self-Upgrading Embodied Agents",
+          "authors": [
+            "Jiajun Fan",
+            "Neil He",
+            "Qinglong Zheng",
+            "Changyi Yang",
+            "Tong Wei"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces the \"self-upgrading embodied agent,\" the first agent that learns and improves its own weights autonomously during operation. Its core method involves the agent analyzing its past experiences, identifying inefficiencies, and directly editing its own weight tensors to enhance performance without external training or supervision. This allows the agent to continuously adapt and become more capable over time based on its own interactions.",
+          "url": "http://arxiv.org/abs/2611.31117v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.31117v1",
+          "score": 9.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.30965v1",
+          "title": "Beyond Self-Consistency: Recursive Self-Improvement at Test Time",
+          "authors": [
+            "Jianyu Wu",
+            "Yizhou Wang",
+            "Encheng Su",
+            "Jinouwen Zhang",
+            "Pengze Li"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces Test-Time Recursive Self-Improvement (TT-RSI), a novel method for LLMs to improve themselves during inference without labeled data. Unlike previous approaches that discard prior reasoning, TT-RSI iteratively re-solves problems, using previous solutions as a reference to build upon and correct mistakes. This recursive process allows the model to refine its problem-solving strategies and enhance its performance over time.",
+          "url": "http://arxiv.org/abs/2611.30965v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.30965v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.31185v1",
+          "title": "CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents via Role-Level Policy Grafting",
+          "authors": [
+            "Ramraj Chandradevan",
+            "Sayontan Ghosh",
+            "Vinoth Selvendran"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.IR"
+          ],
+          "abstract": "CO-GRAFT is a novel framework that attributes improvements in RL-trained search agents to specific functional roles. It achieves this by creating a \"cooperative game\" where an RL agent and its pre-RL counterpart jointly execute trajectories, with each policy controlling distinct roles. Shapley values then decompose the total RL gain across these roles, revealing which capabilities improved individually and which benefited from synergistic interactions.",
+          "url": "http://arxiv.org/abs/2611.31185v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.31185v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2611.31185v1/figs/fig_mechanism.png",
+          "figure_caption": "Overview of the CO-GRAFT framework for attributing RL performance gains. (a) A search-agent trajectory partitioned into four roles: reasoning R , decision D , query Q , and answer A ; gray passages are returned by the environment. (b) A grafted trajectory for S = { R , A } S=\\{\\( \\textsf{R} \\),\\( \\textsf{A} \\)\\} : the RL agent (filled) generates R and A , while its pre-RL model (outlined) generates D and Q during live retrieval. (c) The 4 × 4 4\\( \\times \\) 4 grid of all 16 role combinations, indexed by the roles owned by the RL agent ( row ∪ column \\( \\text{row} \\)\\( \\cup \\)\\( \\text{column} \\) ) while the pre-RL model generates the remaining roles: columns add search roles ( D , Q ) and rows add reasoning and answer roles ( R , A ), progressing from ∅ \\( \\emptyset \\) (top left, pre-RL model alone) to { R , D , Q , A } \\{\\( \\textsf{R} \\),\\( \\textsf{D} \\),\\( \\textsf{Q} \\),\\( \\textsf{A} \\)\\} (bottom right, RL agent alone). Each cell reports the mean EM (%) of the grafted policy on the same 1,000 evaluation questions (darker shading indicates higher EM), alongside each role’s Shapley percentage share of total gain v ⁡ ( N ) − v ⁡ ( ∅ ) v(N)-v(\\( \\emptyset \\)) for Qwen2.5-3B base (GRPO, NQ) and Qwen2.5-7B base (PPO, HotpotQA).",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.31160v1",
+          "title": "Habitats: A Framework for Open-Ended Evolution of Agent Objectives",
+          "authors": [
+            "Nicolas Bolouri",
+            "Gaya Mehenni",
+            "Daniel Toyama"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "Habitats is a framework that enables open-ended evolution of agent objectives by maintaining a population of reward-policy pairs. It uses a cross-fitness matrix to evaluate all policies against all rewards, revealing relationships like self-mastery and transfer. A Planner then selects parent rewards and guides mutations, allowing for the generation of diverse and executable agent objectives beyond predefined tasks.",
+          "url": "http://arxiv.org/abs/2611.31160v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.31160v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2611.31160v1/fig1.png",
+          "figure_caption": "Habitats evolutionary lifecycle. At generation t t , the population 𝒫 t \\( \\mathcal{P}_{t} \\) contains executable reward–policy pairs. (1) Policies for newly synthesized rewards are trained from scratch, while inherited survivor policies remain fixed. (2) Every policy is evaluated under every population reward to construct the cross-fitness matrix 𝐅 t \\( \\mathbf{F}_{t} \\) . (3) Normalized cross-fitness profiles are used to compute Specialist Quality (SQ), Behavioral Diversity (BD), and Grounded Behavioral Profile Coverage (GC). (4) Individuals whose policies dominate their own reward niches and outperform the random-policy baseline form the survivor set 𝒱 t \\( \\mathcal{V}_{t} \\) . (5) The Planner determines the offspring count, selects parents, and proposes mutation directives, while the Mutator generates and validates executable reward programs. Valid offspring join the survivors to form 𝒫 t + 1 = 𝒱 t ∪ 𝒪 t \\( \\mathcal{P}_{t+1} \\)=\\( \\mathcal{V}_{t} \\)\\( \\cup \\)\\( \\mathcal{O}_{t} \\) ; invalid candidates receive up to three replacement attempts before their offspring slot is discarded.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.30962v1",
+          "title": "Self-Evolving Evaluation Environments for Computer-Use Agents",
+          "authors": [
+            "Wenhao Wang",
+            "Panrong Tong",
+            "Quyu Kong",
+            "Pengxiang Li",
+            "Haowen Yang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CV"
+          ],
+          "abstract": "This paper introduces CUA-SEE, a novel closed-loop evaluation environment for computer-use agents (CUAs). CUA-SEE dynamically evolves tasks and verifiers based on agent performance, addressing the limitations of static benchmarks. Its core contribution lies in its adaptive approach, which expands evaluation scope, increases diagnostic resolution, and improves verifier precision, leading to more scalable and insightful agent assessment.",
+          "url": "http://arxiv.org/abs/2611.30962v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.30962v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.31198v1",
+          "title": "ToolSmith: An Automatic Tool-Generation Framework for Multimodal Search Agents",
+          "authors": [
+            "Rui Sun",
+            "Junhua Huang",
+            "Luca Zancato",
+            "Md Mofijul Islam",
+            "Kai-Wei Chang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.CV"
+          ],
+          "abstract": "ToolSmith addresses the challenge of manually creating and maintaining tools for multimodal search agents. Its core method is an automatic framework that generates and reuses tool modules, expanding a lean base library. This approach significantly improves agent performance across various benchmarks by enabling adaptation to new query types and evidence formats, demonstrating scalability with larger models.",
+          "url": "http://arxiv.org/abs/2611.31198v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.31198v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2611.31198v1/teaser_v6.png",
+          "figure_caption": "We propose an automatic tool-generation framework for multimodal search agents. In the example shown, an agent restricted to a fixed tool library is bound to its pre-defined primitives and fails on queries that no original tool can directly resolve. Our framework instead grows the library: the agent operates over an extended tool library that includes newly generated tools and can invoke them freely when solving real queries. Here, the newly generated \\( \\toolhl \\) Event In Image tool resolves the query through finer-grained information verification and image search.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.31166v1",
+          "title": "Precision-Aware Learning Rate Transfer Across Block Count in LLM Post-Training",
+          "authors": [
+            "Nan Chen",
+            "Soledad Villar",
+            "Soufiane Hayou"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces TipSweep, a method to efficiently find optimal learning rates for large language model post-training. It trains only a small subset of blocks (e.g., the last one) and uses precision-dependent scaling rules to predict the best learning rate for training any number of blocks, including the full model. This significantly reduces the computational cost of learning rate tuning.",
+          "url": "http://arxiv.org/abs/2611.31166v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.31166v1",
+          "score": 8.0,
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2611.31163v1",
+          "title": "SPROUT: Predicting Objective-Grounded Prompt Utility for Efficient Text-to-Image Preference Tuning",
+          "authors": [
+            "Kangping Hu",
+            "Akshay Mehra",
+            "Stephen Mussmann"
+          ],
+          "categories": [
+            "cs.LG",
+            "cs.CV"
+          ],
+          "abstract": "This paper introduces SPROUT, a method to improve the efficiency of text-to-image model preference tuning. SPROUT predicts the \"utility\" of training prompts using a text-only model, allowing it to select the most informative prompts for generating images. This approach significantly reduces wasted compute by avoiding the generation of images from low-utility prompts, thereby accelerating model alignment.",
+          "url": "http://arxiv.org/abs/2611.31163v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.31163v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2611.31163v1/overview.png",
+          "figure_caption": "Left. SPROUT accepts each prompt at random with a probability scaled from its predicted utility, the update norm, so a rejected prompt generates no images (details in Figure 2 ). Right. The reduction factor of each method, i.e., the factor by which it reduces the training iterations needed to reach uniform sampling’s best score, computed on the mean curve of three seeds; for T2I-CompBench++, on the mean of its eight categories as no official overall score is defined.",
+          "primary_category": "cs.LG",
+          "primary_category_anchor": "cs-lg",
+          "primary_category_rank": 1
+        },
+        {
+          "id": "2611.31002v1",
+          "title": "RoboUniverse-10K: Toward the Scaling Era of Agentic Robotics via Real-to-Sim Environments",
+          "authors": [
+            "Jinkun Liu",
+            "Yingze Wang",
+            "Situ Wang",
+            "Deyao Hong",
+            "Mingju Gao"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.RO"
+          ],
+          "abstract": "This paper introduces RoboUniverse-10K, a large-scale collection of 10,807 simulated robotic environments automatically generated from real-world videos. This dataset aims to overcome the limitations of small, manual benchmarks in agentic robotics by providing a scalable, interactive, and verifiable platform for training and evaluating foundation models. The core contribution is enabling the \"scaling era\" of agentic robotics through this novel Real2Sim approach and establishing a robust benchmark for future research.",
+          "url": "http://arxiv.org/abs/2611.31002v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.31002v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2611.31002v1/fig_teaser.png",
+          "figure_caption": "Overview of RoboUniverse-10K. (a) An agentic Real2Sim pipeline turns real robot videos into verifiable simulation environments spanning eight task families. (b) RoboUniverse-10K is far larger than existing robot simulation benchmarks. (c) SFT on RoboUniverse-10K lifts Qwen3.6-35B-A3B from 0.8% to 21.2% on RoboUniverse-Verified, and the resulting model transfers zero-shot to a real Franka arm.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2611.30941v1",
+          "title": "Aggregation Rules Induced by KL-Regularised Preference Dynamics on Networks",
+          "authors": [
+            "Milan Vojnovic"
+          ],
+          "categories": [
+            "cs.AI",
+            "stat.ML",
+            "math.DS"
+          ],
+          "abstract": "This paper investigates how agents learning on a network, influenced by their neighbors' preferences, converge to specific aggregation rules. The core method involves agents taking KL-regularized steps, where their learning is guided by a reference and a challenger, which can be individual or aggregated. The contribution is identifying that these dynamics lead to cardinal aggregation rules when the challenger is fixed, and approximate maximal lotteries when the reference is fixed and the challenger aggregated, with agent influence determined by their attention and temperature.",
+          "url": "http://arxiv.org/abs/2611.30941v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.30941v1",
+          "score": 7.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.31082v1",
+          "title": "ChiProgramBench: Can LLM Agents Rebuild Efficient Circuits from Pin-Level Experiments?",
+          "authors": [
+            "Tianrun Gou",
+            "Qingyao Yang",
+            "Wendong Xu",
+            "Liang Chen",
+            "Kuan Li"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.AR"
+          ],
+          "abstract": "This paper introduces ChiProgramBench, a benchmark to evaluate LLM agents' ability to reconstruct efficient hardware circuits from pin-level experiments. The core method involves agents driving and observing a hidden reference circuit, then submitting a gate-level netlist. The contribution is a novel evaluation framework that assesses the LLM's reverse-engineering and circuit design capabilities by comparing their generated circuits against the reference on functional correctness, power, delay, and area.",
+          "url": "http://arxiv.org/abs/2611.31082v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.31082v1",
+          "score": 7.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.31027v1",
+          "title": "ComputeWise: Measuring and Fixing GPU Waste by AI Research Agents",
+          "authors": [
+            "Egor Pakhomov",
+            "Nina Pakhomova",
+            "Anurag Koul",
+            "Shafiq Joty",
+            "Erik Nijkamp"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces ComputeWise, a benchmark and tool to measure and reduce GPU waste by AI research agents. Their core method uses a simulated GPU to replay recorded runs, allowing for extensive experimentation without real hardware. The key contribution is demonstrating that AI agents waste significant GPU time on unnecessary computations and idle periods, and they propose an open-source harness to address this issue.",
+          "url": "http://arxiv.org/abs/2611.31027v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.31027v1",
+          "score": 7.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.31129v1",
+          "title": "FATCAT: Fault Injection Attacks Targeting Chip-level Alignment",
+          "authors": [
+            "Peter Horvath",
+            "Ilia Shumailov",
+            "Zhuoran Liu",
+            "Lukasz Chmielewski",
+            "Lejla Batina"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CR"
+          ],
+          "abstract": "FATCAT introduces the first physical fault injection attacks to bypass safety mechanisms in foundation models. It uses non-invasive electromagnetic pulses synchronized by an RF side-channel to corrupt memory transactions on GPUs, eliminating prompt refusal without requiring software access or crashing the system. This demonstrates a novel hardware vulnerability that undermines model alignment.",
+          "url": "http://arxiv.org/abs/2611.31129v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.31129v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2611.31129v1/img/robot_frames/clip1_a_reach.jpg",
+          "figure_caption": "How it works. An adversary with physical access places a pulse generator over the edge chip that runs the robot’s policy (1). A single EMFI pulse can corrupt the model, so that its safeguards are bypassed without an alarm (2), and the robot arm makes abrupt, hazardous motions next to its operator (3). Caught on camera. Three frames, 0.56 s in all: the operator reaches in, the real arm rears up and lunges at the hand. Watch the clips: https://www.youtube.com/@cat_fi_gpu .",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.31190v1",
+          "title": "Know When to Abstain: Conformal Confidence Estimation for Text-to-SQL",
+          "authors": [
+            "Avinash Kumar Singh",
+            "Bhaskarjit Sarmah",
+            "Stefano Pasquali"
+          ],
+          "categories": [
+            "cs.AI",
+            "q-fin.CP"
+          ],
+          "abstract": "This paper proposes a novel method for Text-to-SQL systems to estimate confidence in their generated queries by treating it as probabilistic query validation. Their core contribution is a two-stage approach that separates query generation from validation, using a critic LLM to assess query correctness and execution results. This allows for finite-sample guarantees on the error rate of accepted queries, addressing the challenge of detecting incorrect but executable SQL.",
+          "url": "http://arxiv.org/abs/2611.31190v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.31190v1",
+          "score": 7.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.30983v1",
+          "title": "MedUIGym: Evaluating and Training GUI Agents for Clinical Workflows",
+          "authors": [
+            "Yitong Qiao",
+            "Lei Liu",
+            "Yue Shen",
+            "Jian Wang",
+            "Jinjie Gu"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces MedUIGym, a novel interactive environment designed to train and evaluate GUI agents for clinical workflows. It provides a large-scale dataset of tasks and allows agents to interact with electronic health records through screenshots and simulated mouse/keyboard actions. The core contribution is a robust platform for developing and benchmarking agents capable of navigating complex clinical GUIs, highlighting current limitations and paving the way for improved automation.",
+          "url": "http://arxiv.org/abs/2611.30983v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.30983v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2611.30983v1/figure.png",
+          "figure_caption": "MedUIGym overview . (a) Frontier model performance; (b) EHR environment and evaluation; (c) a clinical workflow.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        }
+      ],
+      "meta": {
+        "papers_fetched": 100,
+        "papers_after_keyword_filter": 43,
+        "papers_after_llm_filter": 26,
+        "count": 20
+      }
+    },
+    {
+      "key": "hacker_news",
+      "payload_key": "hacker_news",
+      "title": "Hacker News",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": 50609685,
+          "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
+          "url": "https://z.ai/blog/glm-5.4",
+          "score": 1120,
+          "created_at": "2026-11-23T10:06:43Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50609685",
+          "summary": "Zhipu AI's GLM-5.4 introduces a novel loop transformer architecture, advancing towards generalized coding capabilities by enabling more efficient and flexible code generation."
+        },
+        {
+          "id": 50611402,
+          "title": "NariQ: BF16-level Qwen3.8-27B in a 10 GB file",
+          "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
+          "score": 168,
+          "created_at": "2026-11-23T13:42:38Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50611402",
+          "summary": "NariQ has released a 10GB file containing the Qwen3.8-27B model quantized to BF16 precision, making it more accessible."
+        }
+      ],
+      "meta": {
+        "count": 2
+      }
+    },
+    {
+      "key": "github_trending",
+      "payload_key": "github_trending",
+      "title": "GitHub Trending",
+      "icon": "⭐",
+      "items": [
+        {
+          "full_name": "elementalsouls/Claude-BugHunter",
+          "url": "https://github.com/elementalsouls/Claude-BugHunter",
+          "description": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+          "stars_today": 2029,
+          "total_stars": 20415,
+          "language": "Python",
+          "topics": [],
+          "summary": "This GitHub repository provides a Claude Code skill bundle for bug hunting and red-teaming, featuring 84 skills, 15 slash commands, and extensive disclosed report patterns across 24 vulnerability classes, along with enterprise identity and infrastructure attack matrices."
+        },
+        {
+          "full_name": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "description": "An agentic skills framework & software development methodology that works.",
+          "stars_today": 840,
+          "total_stars": 325459,
+          "language": "Shell",
+          "topics": [],
+          "summary": "**Superpowers** is an agentic skills framework and software development methodology designed to enhance productivity and effectiveness in software projects."
+        },
+        {
+          "full_name": "HKUDS/CLI-Anything",
+          "url": "https://github.com/HKUDS/CLI-Anything",
+          "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+          "stars_today": 790,
+          "total_stars": 64121,
+          "language": "Python",
+          "topics": [],
+          "summary": "CLI-Anything empowers any software to become agent-native by providing a unified interface for AI agents to interact with and control command-line tools, simplifying automation and integration."
+        },
+        {
+          "full_name": "jingyaogong/minimind",
+          "url": "https://github.com/jingyaogong/minimind",
+          "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
+          "stars_today": 828,
+          "total_stars": 69827,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository provides a streamlined framework to train a 64M parameter large language model from scratch within two hours, making LLM development accessible and fast."
+        },
+        {
+          "full_name": "cursor/plugins",
+          "url": "https://github.com/cursor/plugins",
+          "description": "Cursor plugin specification and official plugins",
+          "stars_today": 397,
+          "total_stars": 18950,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "This repository defines the specification for Cursor IDE plugins and hosts official plugins, enabling developers to extend the IDE's functionality."
+        },
+        {
+          "full_name": "firecrawl/firecrawl",
+          "url": "https://github.com/firecrawl/firecrawl",
+          "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
+          "stars_today": 924,
+          "total_stars": 208299,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "Firecrawl provides knowledge infrastructure for smarter AI agents, offering a unified API to search, scrape, and access data from over 550 providers."
+        },
+        {
+          "full_name": "nginx/nginx",
+          "url": "https://github.com/nginx/nginx",
+          "description": "The official NGINX Open Source repository.",
+          "stars_today": 174,
+          "total_stars": 33110,
+          "language": "C",
+          "topics": [],
+          "summary": "The official NGINX Open Source repository provides a high-performance, lightweight web server and reverse proxy, renowned for its scalability, efficiency, and extensive feature set for handling concurrent connections."
+        },
+        {
+          "full_name": "openvinotoolkit/openvino",
+          "url": "https://github.com/openvinotoolkit/openvino",
+          "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+          "stars_today": 184,
+          "total_stars": 12356,
+          "language": "C++",
+          "topics": [],
+          "summary": "OpenVINO™ is an open-source toolkit that optimizes and deploys AI inference across various hardware, enabling efficient execution of deep learning models."
+        },
+        {
+          "full_name": "cathrynlavery/diagram-design",
+          "url": "https://github.com/cathrynlavery/diagram-design",
+          "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+          "stars_today": 620,
+          "total_stars": 71319,
+          "language": "HTML",
+          "topics": [],
+          "summary": "This repository provides self-contained HTML+SVG editorial diagrams for AI coding tools, featuring 52 types and avoiding shadows and Mermaid syntax."
+        }
+      ],
+      "meta": {
+        "count": 9
+      }
+    }
+  ],
+  "meta": {
+    "papers_fetched": 100,
+    "papers_after_keyword_filter": 43,
+    "papers_after_llm_filter": 26,
+    "llm_model": "google/gemini-2.5-flash-lite",
+    "scoring_model": "google/gemini-2.5-flash-lite",
+    "summarization_model": "google/gemini-2.5-flash-lite",
+    "duration_seconds": 40
+  },
+  "quote_of_day": [
+    {
+      "quote": "Over and over again, financial experts and wonkish talking heads endeavor to explain these mysterious, 'toxic' financial instruments to us lay folk. Over and over, they ignobly fail, because we all know that no one understands credit default obligations and derivatives, except perhaps Mr. Buffett and the computers who created them.",
+      "author": "Richard Dooling",
+      "category": "computers"
+    }
+  ],
+  "hitokoto": [],
+  "arxiv": [
+    {
+      "id": "2611.31063v1",
+      "title": "From Local Errors to System Failures: Modeling and Benchmarking Error Propagation in Multi-Agent LLM Systems",
+      "authors": [
+        "Wenlong Yu",
+        "Bingxu Lu",
+        "Qilong Wang",
+        "Qinghua Hu",
+        "Qianru Sun"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces REPA, a novel model that quantifies how errors propagate through multi-agent LLM systems by analyzing individual agent responses. REPA decomposes error propagation into input assembly and agent processing, providing a more granular understanding than outcome-based evaluations. Its key contribution is a robust method for predicting system-level errors from local ones, significantly outperforming direct regression and enabling targeted error recovery.",
+      "url": "http://arxiv.org/abs/2611.31063v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31063v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.31228v1",
+      "title": "Language Models Steer on Injected Uncertainty Tokens, but Fail to Self-Monitor In Situ",
+      "authors": [
+        "Daniel Theron"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper investigates whether language models can self-monitor and correct errors during numerical reasoning by verbalizing confidence. The core method involves injecting uncertainty tokens and observing if models backtrack when errors occur. The main contribution is demonstrating that while these models can be steered to repair errors when explicitly prompted with uncertainty, they **fail to self-monitor their own mistakes in situ**, meaning their verbalized confidence doesn't accurately reflect their reasoning accuracy.",
+      "url": "http://arxiv.org/abs/2611.31228v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31228v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2611.31228v1/runs/fig1_4models.png",
+      "figure_caption": "Confidence Dynamics at the First Error Step ( k ∗ k^{*} ). Mean on-track confidence ( g k g_{k} , red circle) and step confidence ( c k c_{k} , blue square) centered at the earliest error step ( k − k ∗ = 0 k-k^{*}=0 ) with 95% bootstrap confidence intervals across four models: Qwen2.5-7B-Instruct , Llama-3.1-8B-Instruct , Mistral-7B-Instruct-v0.3 , and Phi-4 (14.7B). Sample sizes at relative steps k − k ∗ < 0 k-k^{*}<0 exclude step-1 errors ( k ∗ = 1 k^{*}=1 , leaving n = 429 n=429 Qwen, 551 551 Llama, 646 646 Mistral, and 57 57 Phi-4 at k − k ∗ = − 1 k-k^{*}=-1 ). Trajectories remain flatly saturated at 95–100% across reasoning errors.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.31105v1",
+      "title": "LiveLoRA: Exact KV Cache Migration Across LoRA Updates for LLM Agents",
+      "authors": [
+        "Tianyi Huang",
+        "Samuel Xu",
+        "Ivy Gu",
+        "Nathan Huang",
+        "Siqi Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "LiveLoRA enables efficient LLM agent updates by allowing exact KV cache migration across adapter changes without recomputing the entire interaction history. It achieves this through a model-runtime co-design that leverages frozen lower decoder blocks and fixed K/V adapter down-projections. This significantly speeds up serving LLM agents by avoiding costly full-history re-prefilling, demonstrating substantial performance gains.",
+      "url": "http://arxiv.org/abs/2611.31105v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31105v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2611.31105v1/migration_mechanism.png",
+      "figure_caption": "Fixed- A A final-block cache migration. (a) Retain invariant base projections and low-rank coordinates. (b) Reconstruct candidate K/V. (c) Reevaluate the latest token against the rebuilt history to obtain new logits. Lower-block caches are reused; the O-to-MLP stage includes residual connections and normalization.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.30925v1",
+      "title": "PRIMEAPE: A Multilingual Benchmark for Fine-Grained Meta-Evaluation of Judge Models",
+      "authors": [
+        "Vladislav Mikhailov",
+        "Sarfraz Ahmad",
+        "Momina Ahsan",
+        "Zoia Butenko",
+        "Vladimir Dobrovolskii"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces PRIMEAPE, a multilingual benchmark designed to fine-grainedly evaluate the verdicts and rationales of judge LLMs. It provides human-annotated response pairs across multiple languages and criteria, revealing that aggregate judge performance can mask significant variations across languages and evaluation dimensions. The study also finds that judges exhibit biases like favoring the first response and longer outputs, which can impact their agreement with human preferences.",
+      "url": "http://arxiv.org/abs/2611.30925v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.30925v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2611.30925v1/figures/pipeline.png",
+      "figure_caption": "Overview of Primeape construction. Left: Instruction sources, languages, and response model families. Middle: Five models generate one response each to the same instruction, yielding ten unique response pairs. Right: Human annotators label each pair, providing a preference and written rationale for five criteria.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.30986v1",
+      "title": "Reinforcing Diffusion Models by Instantaneous Trajectory Distribution Matching",
+      "authors": [
+        "Yihong Luo"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CV"
+      ],
+      "abstract": "This paper identifies a \"behavior-policy mismatch\" in existing forward diffusion reinforcement learning methods, which destabilizes training by causing gradient drift. To address this, they propose **Instantaneous Trajectory Distribution Matching (iTDM)**. iTDM resolves this issue by matching the instantaneous trajectory distributions, leading to more stable and efficient diffusion model training.",
+      "url": "http://arxiv.org/abs/2611.30986v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.30986v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2611.30986v1/main_compare.png",
+      "figure_caption": "Qualitative comparisons on human preference alignment (PickScore) with SD3.5-M. All models are trained and evaluated under CFG = 1.0 \\( \\text{CFG} \\)=1.0 . Compared with competing forward diffusion RL baselines, iTDM faithfully follows intricate prompt details while delivering sharper textures and superior aesthetic quality, avoiding blurry artifacts .",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.31117v1",
+      "title": "Self-Upgrading Embodied Agents",
+      "authors": [
+        "Jiajun Fan",
+        "Neil He",
+        "Qinglong Zheng",
+        "Changyi Yang",
+        "Tong Wei"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces the \"self-upgrading embodied agent,\" the first agent that learns and improves its own weights autonomously during operation. Its core method involves the agent analyzing its past experiences, identifying inefficiencies, and directly editing its own weight tensors to enhance performance without external training or supervision. This allows the agent to continuously adapt and become more capable over time based on its own interactions.",
+      "url": "http://arxiv.org/abs/2611.31117v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31117v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.30965v1",
+      "title": "Beyond Self-Consistency: Recursive Self-Improvement at Test Time",
+      "authors": [
+        "Jianyu Wu",
+        "Yizhou Wang",
+        "Encheng Su",
+        "Jinouwen Zhang",
+        "Pengze Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces Test-Time Recursive Self-Improvement (TT-RSI), a novel method for LLMs to improve themselves during inference without labeled data. Unlike previous approaches that discard prior reasoning, TT-RSI iteratively re-solves problems, using previous solutions as a reference to build upon and correct mistakes. This recursive process allows the model to refine its problem-solving strategies and enhance its performance over time.",
+      "url": "http://arxiv.org/abs/2611.30965v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.30965v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.31185v1",
+      "title": "CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents via Role-Level Policy Grafting",
+      "authors": [
+        "Ramraj Chandradevan",
+        "Sayontan Ghosh",
+        "Vinoth Selvendran"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.IR"
+      ],
+      "abstract": "CO-GRAFT is a novel framework that attributes improvements in RL-trained search agents to specific functional roles. It achieves this by creating a \"cooperative game\" where an RL agent and its pre-RL counterpart jointly execute trajectories, with each policy controlling distinct roles. Shapley values then decompose the total RL gain across these roles, revealing which capabilities improved individually and which benefited from synergistic interactions.",
+      "url": "http://arxiv.org/abs/2611.31185v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31185v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.31185v1/figs/fig_mechanism.png",
+      "figure_caption": "Overview of the CO-GRAFT framework for attributing RL performance gains. (a) A search-agent trajectory partitioned into four roles: reasoning R , decision D , query Q , and answer A ; gray passages are returned by the environment. (b) A grafted trajectory for S = { R , A } S=\\{\\( \\textsf{R} \\),\\( \\textsf{A} \\)\\} : the RL agent (filled) generates R and A , while its pre-RL model (outlined) generates D and Q during live retrieval. (c) The 4 × 4 4\\( \\times \\) 4 grid of all 16 role combinations, indexed by the roles owned by the RL agent ( row ∪ column \\( \\text{row} \\)\\( \\cup \\)\\( \\text{column} \\) ) while the pre-RL model generates the remaining roles: columns add search roles ( D , Q ) and rows add reasoning and answer roles ( R , A ), progressing from ∅ \\( \\emptyset \\) (top left, pre-RL model alone) to { R , D , Q , A } \\{\\( \\textsf{R} \\),\\( \\textsf{D} \\),\\( \\textsf{Q} \\),\\( \\textsf{A} \\)\\} (bottom right, RL agent alone). Each cell reports the mean EM (%) of the grafted policy on the same 1,000 evaluation questions (darker shading indicates higher EM), alongside each role’s Shapley percentage share of total gain v ⁡ ( N ) − v ⁡ ( ∅ ) v(N)-v(\\( \\emptyset \\)) for Qwen2.5-3B base (GRPO, NQ) and Qwen2.5-7B base (PPO, HotpotQA).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.31160v1",
+      "title": "Habitats: A Framework for Open-Ended Evolution of Agent Objectives",
+      "authors": [
+        "Nicolas Bolouri",
+        "Gaya Mehenni",
+        "Daniel Toyama"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "Habitats is a framework that enables open-ended evolution of agent objectives by maintaining a population of reward-policy pairs. It uses a cross-fitness matrix to evaluate all policies against all rewards, revealing relationships like self-mastery and transfer. A Planner then selects parent rewards and guides mutations, allowing for the generation of diverse and executable agent objectives beyond predefined tasks.",
+      "url": "http://arxiv.org/abs/2611.31160v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31160v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.31160v1/fig1.png",
+      "figure_caption": "Habitats evolutionary lifecycle. At generation t t , the population 𝒫 t \\( \\mathcal{P}_{t} \\) contains executable reward–policy pairs. (1) Policies for newly synthesized rewards are trained from scratch, while inherited survivor policies remain fixed. (2) Every policy is evaluated under every population reward to construct the cross-fitness matrix 𝐅 t \\( \\mathbf{F}_{t} \\) . (3) Normalized cross-fitness profiles are used to compute Specialist Quality (SQ), Behavioral Diversity (BD), and Grounded Behavioral Profile Coverage (GC). (4) Individuals whose policies dominate their own reward niches and outperform the random-policy baseline form the survivor set 𝒱 t \\( \\mathcal{V}_{t} \\) . (5) The Planner determines the offspring count, selects parents, and proposes mutation directives, while the Mutator generates and validates executable reward programs. Valid offspring join the survivors to form 𝒫 t + 1 = 𝒱 t ∪ 𝒪 t \\( \\mathcal{P}_{t+1} \\)=\\( \\mathcal{V}_{t} \\)\\( \\cup \\)\\( \\mathcal{O}_{t} \\) ; invalid candidates receive up to three replacement attempts before their offspring slot is discarded.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.30962v1",
+      "title": "Self-Evolving Evaluation Environments for Computer-Use Agents",
+      "authors": [
+        "Wenhao Wang",
+        "Panrong Tong",
+        "Quyu Kong",
+        "Pengxiang Li",
+        "Haowen Yang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "This paper introduces CUA-SEE, a novel closed-loop evaluation environment for computer-use agents (CUAs). CUA-SEE dynamically evolves tasks and verifiers based on agent performance, addressing the limitations of static benchmarks. Its core contribution lies in its adaptive approach, which expands evaluation scope, increases diagnostic resolution, and improves verifier precision, leading to more scalable and insightful agent assessment.",
+      "url": "http://arxiv.org/abs/2611.30962v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.30962v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.31198v1",
+      "title": "ToolSmith: An Automatic Tool-Generation Framework for Multimodal Search Agents",
+      "authors": [
+        "Rui Sun",
+        "Junhua Huang",
+        "Luca Zancato",
+        "Md Mofijul Islam",
+        "Kai-Wei Chang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "abstract": "ToolSmith addresses the challenge of manually creating and maintaining tools for multimodal search agents. Its core method is an automatic framework that generates and reuses tool modules, expanding a lean base library. This approach significantly improves agent performance across various benchmarks by enabling adaptation to new query types and evidence formats, demonstrating scalability with larger models.",
+      "url": "http://arxiv.org/abs/2611.31198v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31198v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.31198v1/teaser_v6.png",
+      "figure_caption": "We propose an automatic tool-generation framework for multimodal search agents. In the example shown, an agent restricted to a fixed tool library is bound to its pre-defined primitives and fails on queries that no original tool can directly resolve. Our framework instead grows the library: the agent operates over an extended tool library that includes newly generated tools and can invoke them freely when solving real queries. Here, the newly generated \\( \\toolhl \\) Event In Image tool resolves the query through finer-grained information verification and image search.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.31166v1",
+      "title": "Precision-Aware Learning Rate Transfer Across Block Count in LLM Post-Training",
+      "authors": [
+        "Nan Chen",
+        "Soledad Villar",
+        "Soufiane Hayou"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces TipSweep, a method to efficiently find optimal learning rates for large language model post-training. It trains only a small subset of blocks (e.g., the last one) and uses precision-dependent scaling rules to predict the best learning rate for training any number of blocks, including the full model. This significantly reduces the computational cost of learning rate tuning.",
+      "url": "http://arxiv.org/abs/2611.31166v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31166v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2611.31163v1",
+      "title": "SPROUT: Predicting Objective-Grounded Prompt Utility for Efficient Text-to-Image Preference Tuning",
+      "authors": [
+        "Kangping Hu",
+        "Akshay Mehra",
+        "Stephen Mussmann"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "abstract": "This paper introduces SPROUT, a method to improve the efficiency of text-to-image model preference tuning. SPROUT predicts the \"utility\" of training prompts using a text-only model, allowing it to select the most informative prompts for generating images. This approach significantly reduces wasted compute by avoiding the generation of images from low-utility prompts, thereby accelerating model alignment.",
+      "url": "http://arxiv.org/abs/2611.31163v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31163v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.31163v1/overview.png",
+      "figure_caption": "Left. SPROUT accepts each prompt at random with a probability scaled from its predicted utility, the update norm, so a rejected prompt generates no images (details in Figure 2 ). Right. The reduction factor of each method, i.e., the factor by which it reduces the training iterations needed to reach uniform sampling’s best score, computed on the mean curve of three seeds; for T2I-CompBench++, on the mean of its eight categories as no official overall score is defined.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2611.31002v1",
+      "title": "RoboUniverse-10K: Toward the Scaling Era of Agentic Robotics via Real-to-Sim Environments",
+      "authors": [
+        "Jinkun Liu",
+        "Yingze Wang",
+        "Situ Wang",
+        "Deyao Hong",
+        "Mingju Gao"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.RO"
+      ],
+      "abstract": "This paper introduces RoboUniverse-10K, a large-scale collection of 10,807 simulated robotic environments automatically generated from real-world videos. This dataset aims to overcome the limitations of small, manual benchmarks in agentic robotics by providing a scalable, interactive, and verifiable platform for training and evaluating foundation models. The core contribution is enabling the \"scaling era\" of agentic robotics through this novel Real2Sim approach and establishing a robust benchmark for future research.",
+      "url": "http://arxiv.org/abs/2611.31002v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31002v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.31002v1/fig_teaser.png",
+      "figure_caption": "Overview of RoboUniverse-10K. (a) An agentic Real2Sim pipeline turns real robot videos into verifiable simulation environments spanning eight task families. (b) RoboUniverse-10K is far larger than existing robot simulation benchmarks. (c) SFT on RoboUniverse-10K lifts Qwen3.6-35B-A3B from 0.8% to 21.2% on RoboUniverse-Verified, and the resulting model transfers zero-shot to a real Franka arm.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2611.30941v1",
+      "title": "Aggregation Rules Induced by KL-Regularised Preference Dynamics on Networks",
+      "authors": [
+        "Milan Vojnovic"
+      ],
+      "categories": [
+        "cs.AI",
+        "stat.ML",
+        "math.DS"
+      ],
+      "abstract": "This paper investigates how agents learning on a network, influenced by their neighbors' preferences, converge to specific aggregation rules. The core method involves agents taking KL-regularized steps, where their learning is guided by a reference and a challenger, which can be individual or aggregated. The contribution is identifying that these dynamics lead to cardinal aggregation rules when the challenger is fixed, and approximate maximal lotteries when the reference is fixed and the challenger aggregated, with agent influence determined by their attention and temperature.",
+      "url": "http://arxiv.org/abs/2611.30941v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.30941v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.31082v1",
+      "title": "ChiProgramBench: Can LLM Agents Rebuild Efficient Circuits from Pin-Level Experiments?",
+      "authors": [
+        "Tianrun Gou",
+        "Qingyao Yang",
+        "Wendong Xu",
+        "Liang Chen",
+        "Kuan Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.AR"
+      ],
+      "abstract": "This paper introduces ChiProgramBench, a benchmark to evaluate LLM agents' ability to reconstruct efficient hardware circuits from pin-level experiments. The core method involves agents driving and observing a hidden reference circuit, then submitting a gate-level netlist. The contribution is a novel evaluation framework that assesses the LLM's reverse-engineering and circuit design capabilities by comparing their generated circuits against the reference on functional correctness, power, delay, and area.",
+      "url": "http://arxiv.org/abs/2611.31082v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31082v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.31027v1",
+      "title": "ComputeWise: Measuring and Fixing GPU Waste by AI Research Agents",
+      "authors": [
+        "Egor Pakhomov",
+        "Nina Pakhomova",
+        "Anurag Koul",
+        "Shafiq Joty",
+        "Erik Nijkamp"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces ComputeWise, a benchmark and tool to measure and reduce GPU waste by AI research agents. Their core method uses a simulated GPU to replay recorded runs, allowing for extensive experimentation without real hardware. The key contribution is demonstrating that AI agents waste significant GPU time on unnecessary computations and idle periods, and they propose an open-source harness to address this issue.",
+      "url": "http://arxiv.org/abs/2611.31027v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31027v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.31129v1",
+      "title": "FATCAT: Fault Injection Attacks Targeting Chip-level Alignment",
+      "authors": [
+        "Peter Horvath",
+        "Ilia Shumailov",
+        "Zhuoran Liu",
+        "Lukasz Chmielewski",
+        "Lejla Batina"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "FATCAT introduces the first physical fault injection attacks to bypass safety mechanisms in foundation models. It uses non-invasive electromagnetic pulses synchronized by an RF side-channel to corrupt memory transactions on GPUs, eliminating prompt refusal without requiring software access or crashing the system. This demonstrates a novel hardware vulnerability that undermines model alignment.",
+      "url": "http://arxiv.org/abs/2611.31129v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31129v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2611.31129v1/img/robot_frames/clip1_a_reach.jpg",
+      "figure_caption": "How it works. An adversary with physical access places a pulse generator over the edge chip that runs the robot’s policy (1). A single EMFI pulse can corrupt the model, so that its safeguards are bypassed without an alarm (2), and the robot arm makes abrupt, hazardous motions next to its operator (3). Caught on camera. Three frames, 0.56 s in all: the operator reaches in, the real arm rears up and lunges at the hand. Watch the clips: https://www.youtube.com/@cat_fi_gpu .",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.31190v1",
+      "title": "Know When to Abstain: Conformal Confidence Estimation for Text-to-SQL",
+      "authors": [
+        "Avinash Kumar Singh",
+        "Bhaskarjit Sarmah",
+        "Stefano Pasquali"
+      ],
+      "categories": [
+        "cs.AI",
+        "q-fin.CP"
+      ],
+      "abstract": "This paper proposes a novel method for Text-to-SQL systems to estimate confidence in their generated queries by treating it as probabilistic query validation. Their core contribution is a two-stage approach that separates query generation from validation, using a critic LLM to assess query correctness and execution results. This allows for finite-sample guarantees on the error rate of accepted queries, addressing the challenge of detecting incorrect but executable SQL.",
+      "url": "http://arxiv.org/abs/2611.31190v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31190v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.30983v1",
+      "title": "MedUIGym: Evaluating and Training GUI Agents for Clinical Workflows",
+      "authors": [
+        "Yitong Qiao",
+        "Lei Liu",
+        "Yue Shen",
+        "Jian Wang",
+        "Jinjie Gu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces MedUIGym, a novel interactive environment designed to train and evaluate GUI agents for clinical workflows. It provides a large-scale dataset of tasks and allows agents to interact with electronic health records through screenshots and simulated mouse/keyboard actions. The core contribution is a robust platform for developing and benchmarking agents capable of navigating complex clinical GUIs, highlighting current limitations and paving the way for improved automation.",
+      "url": "http://arxiv.org/abs/2611.30983v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.30983v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2611.30983v1/figure.png",
+      "figure_caption": "MedUIGym overview . (a) Frontier model performance; (b) EHR environment and evaluation; (c) a clinical workflow.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "papers": [
+    {
+      "id": "2611.31063v1",
+      "title": "From Local Errors to System Failures: Modeling and Benchmarking Error Propagation in Multi-Agent LLM Systems",
+      "authors": [
+        "Wenlong Yu",
+        "Bingxu Lu",
+        "Qilong Wang",
+        "Qinghua Hu",
+        "Qianru Sun"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "abstract": "This paper introduces REPA, a novel model that quantifies how errors propagate through multi-agent LLM systems by analyzing individual agent responses. REPA decomposes error propagation into input assembly and agent processing, providing a more granular understanding than outcome-based evaluations. Its key contribution is a robust method for predicting system-level errors from local ones, significantly outperforming direct regression and enabling targeted error recovery.",
+      "url": "http://arxiv.org/abs/2611.31063v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31063v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.31228v1",
+      "title": "Language Models Steer on Injected Uncertainty Tokens, but Fail to Self-Monitor In Situ",
+      "authors": [
+        "Daniel Theron"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper investigates whether language models can self-monitor and correct errors during numerical reasoning by verbalizing confidence. The core method involves injecting uncertainty tokens and observing if models backtrack when errors occur. The main contribution is demonstrating that while these models can be steered to repair errors when explicitly prompted with uncertainty, they **fail to self-monitor their own mistakes in situ**, meaning their verbalized confidence doesn't accurately reflect their reasoning accuracy.",
+      "url": "http://arxiv.org/abs/2611.31228v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31228v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2611.31228v1/runs/fig1_4models.png",
+      "figure_caption": "Confidence Dynamics at the First Error Step ( k ∗ k^{*} ). Mean on-track confidence ( g k g_{k} , red circle) and step confidence ( c k c_{k} , blue square) centered at the earliest error step ( k − k ∗ = 0 k-k^{*}=0 ) with 95% bootstrap confidence intervals across four models: Qwen2.5-7B-Instruct , Llama-3.1-8B-Instruct , Mistral-7B-Instruct-v0.3 , and Phi-4 (14.7B). Sample sizes at relative steps k − k ∗ < 0 k-k^{*}<0 exclude step-1 errors ( k ∗ = 1 k^{*}=1 , leaving n = 429 n=429 Qwen, 551 551 Llama, 646 646 Mistral, and 57 57 Phi-4 at k − k ∗ = − 1 k-k^{*}=-1 ). Trajectories remain flatly saturated at 95–100% across reasoning errors.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.31105v1",
+      "title": "LiveLoRA: Exact KV Cache Migration Across LoRA Updates for LLM Agents",
+      "authors": [
+        "Tianyi Huang",
+        "Samuel Xu",
+        "Ivy Gu",
+        "Nathan Huang",
+        "Siqi Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "LiveLoRA enables efficient LLM agent updates by allowing exact KV cache migration across adapter changes without recomputing the entire interaction history. It achieves this through a model-runtime co-design that leverages frozen lower decoder blocks and fixed K/V adapter down-projections. This significantly speeds up serving LLM agents by avoiding costly full-history re-prefilling, demonstrating substantial performance gains.",
+      "url": "http://arxiv.org/abs/2611.31105v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31105v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2611.31105v1/migration_mechanism.png",
+      "figure_caption": "Fixed- A A final-block cache migration. (a) Retain invariant base projections and low-rank coordinates. (b) Reconstruct candidate K/V. (c) Reevaluate the latest token against the rebuilt history to obtain new logits. Lower-block caches are reused; the O-to-MLP stage includes residual connections and normalization.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.30925v1",
+      "title": "PRIMEAPE: A Multilingual Benchmark for Fine-Grained Meta-Evaluation of Judge Models",
+      "authors": [
+        "Vladislav Mikhailov",
+        "Sarfraz Ahmad",
+        "Momina Ahsan",
+        "Zoia Butenko",
+        "Vladimir Dobrovolskii"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces PRIMEAPE, a multilingual benchmark designed to fine-grainedly evaluate the verdicts and rationales of judge LLMs. It provides human-annotated response pairs across multiple languages and criteria, revealing that aggregate judge performance can mask significant variations across languages and evaluation dimensions. The study also finds that judges exhibit biases like favoring the first response and longer outputs, which can impact their agreement with human preferences.",
+      "url": "http://arxiv.org/abs/2611.30925v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.30925v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2611.30925v1/figures/pipeline.png",
+      "figure_caption": "Overview of Primeape construction. Left: Instruction sources, languages, and response model families. Middle: Five models generate one response each to the same instruction, yielding ten unique response pairs. Right: Human annotators label each pair, providing a preference and written rationale for five criteria.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.30986v1",
+      "title": "Reinforcing Diffusion Models by Instantaneous Trajectory Distribution Matching",
+      "authors": [
+        "Yihong Luo"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CV"
+      ],
+      "abstract": "This paper identifies a \"behavior-policy mismatch\" in existing forward diffusion reinforcement learning methods, which destabilizes training by causing gradient drift. To address this, they propose **Instantaneous Trajectory Distribution Matching (iTDM)**. iTDM resolves this issue by matching the instantaneous trajectory distributions, leading to more stable and efficient diffusion model training.",
+      "url": "http://arxiv.org/abs/2611.30986v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.30986v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2611.30986v1/main_compare.png",
+      "figure_caption": "Qualitative comparisons on human preference alignment (PickScore) with SD3.5-M. All models are trained and evaluated under CFG = 1.0 \\( \\text{CFG} \\)=1.0 . Compared with competing forward diffusion RL baselines, iTDM faithfully follows intricate prompt details while delivering sharper textures and superior aesthetic quality, avoiding blurry artifacts .",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.31117v1",
+      "title": "Self-Upgrading Embodied Agents",
+      "authors": [
+        "Jiajun Fan",
+        "Neil He",
+        "Qinglong Zheng",
+        "Changyi Yang",
+        "Tong Wei"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces the \"self-upgrading embodied agent,\" the first agent that learns and improves its own weights autonomously during operation. Its core method involves the agent analyzing its past experiences, identifying inefficiencies, and directly editing its own weight tensors to enhance performance without external training or supervision. This allows the agent to continuously adapt and become more capable over time based on its own interactions.",
+      "url": "http://arxiv.org/abs/2611.31117v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31117v1",
+      "score": 9.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.30965v1",
+      "title": "Beyond Self-Consistency: Recursive Self-Improvement at Test Time",
+      "authors": [
+        "Jianyu Wu",
+        "Yizhou Wang",
+        "Encheng Su",
+        "Jinouwen Zhang",
+        "Pengze Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces Test-Time Recursive Self-Improvement (TT-RSI), a novel method for LLMs to improve themselves during inference without labeled data. Unlike previous approaches that discard prior reasoning, TT-RSI iteratively re-solves problems, using previous solutions as a reference to build upon and correct mistakes. This recursive process allows the model to refine its problem-solving strategies and enhance its performance over time.",
+      "url": "http://arxiv.org/abs/2611.30965v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.30965v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.31185v1",
+      "title": "CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents via Role-Level Policy Grafting",
+      "authors": [
+        "Ramraj Chandradevan",
+        "Sayontan Ghosh",
+        "Vinoth Selvendran"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.IR"
+      ],
+      "abstract": "CO-GRAFT is a novel framework that attributes improvements in RL-trained search agents to specific functional roles. It achieves this by creating a \"cooperative game\" where an RL agent and its pre-RL counterpart jointly execute trajectories, with each policy controlling distinct roles. Shapley values then decompose the total RL gain across these roles, revealing which capabilities improved individually and which benefited from synergistic interactions.",
+      "url": "http://arxiv.org/abs/2611.31185v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31185v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.31185v1/figs/fig_mechanism.png",
+      "figure_caption": "Overview of the CO-GRAFT framework for attributing RL performance gains. (a) A search-agent trajectory partitioned into four roles: reasoning R , decision D , query Q , and answer A ; gray passages are returned by the environment. (b) A grafted trajectory for S = { R , A } S=\\{\\( \\textsf{R} \\),\\( \\textsf{A} \\)\\} : the RL agent (filled) generates R and A , while its pre-RL model (outlined) generates D and Q during live retrieval. (c) The 4 × 4 4\\( \\times \\) 4 grid of all 16 role combinations, indexed by the roles owned by the RL agent ( row ∪ column \\( \\text{row} \\)\\( \\cup \\)\\( \\text{column} \\) ) while the pre-RL model generates the remaining roles: columns add search roles ( D , Q ) and rows add reasoning and answer roles ( R , A ), progressing from ∅ \\( \\emptyset \\) (top left, pre-RL model alone) to { R , D , Q , A } \\{\\( \\textsf{R} \\),\\( \\textsf{D} \\),\\( \\textsf{Q} \\),\\( \\textsf{A} \\)\\} (bottom right, RL agent alone). Each cell reports the mean EM (%) of the grafted policy on the same 1,000 evaluation questions (darker shading indicates higher EM), alongside each role’s Shapley percentage share of total gain v ⁡ ( N ) − v ⁡ ( ∅ ) v(N)-v(\\( \\emptyset \\)) for Qwen2.5-3B base (GRPO, NQ) and Qwen2.5-7B base (PPO, HotpotQA).",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.31160v1",
+      "title": "Habitats: A Framework for Open-Ended Evolution of Agent Objectives",
+      "authors": [
+        "Nicolas Bolouri",
+        "Gaya Mehenni",
+        "Daniel Toyama"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "Habitats is a framework that enables open-ended evolution of agent objectives by maintaining a population of reward-policy pairs. It uses a cross-fitness matrix to evaluate all policies against all rewards, revealing relationships like self-mastery and transfer. A Planner then selects parent rewards and guides mutations, allowing for the generation of diverse and executable agent objectives beyond predefined tasks.",
+      "url": "http://arxiv.org/abs/2611.31160v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31160v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.31160v1/fig1.png",
+      "figure_caption": "Habitats evolutionary lifecycle. At generation t t , the population 𝒫 t \\( \\mathcal{P}_{t} \\) contains executable reward–policy pairs. (1) Policies for newly synthesized rewards are trained from scratch, while inherited survivor policies remain fixed. (2) Every policy is evaluated under every population reward to construct the cross-fitness matrix 𝐅 t \\( \\mathbf{F}_{t} \\) . (3) Normalized cross-fitness profiles are used to compute Specialist Quality (SQ), Behavioral Diversity (BD), and Grounded Behavioral Profile Coverage (GC). (4) Individuals whose policies dominate their own reward niches and outperform the random-policy baseline form the survivor set 𝒱 t \\( \\mathcal{V}_{t} \\) . (5) The Planner determines the offspring count, selects parents, and proposes mutation directives, while the Mutator generates and validates executable reward programs. Valid offspring join the survivors to form 𝒫 t + 1 = 𝒱 t ∪ 𝒪 t \\( \\mathcal{P}_{t+1} \\)=\\( \\mathcal{V}_{t} \\)\\( \\cup \\)\\( \\mathcal{O}_{t} \\) ; invalid candidates receive up to three replacement attempts before their offspring slot is discarded.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.30962v1",
+      "title": "Self-Evolving Evaluation Environments for Computer-Use Agents",
+      "authors": [
+        "Wenhao Wang",
+        "Panrong Tong",
+        "Quyu Kong",
+        "Pengxiang Li",
+        "Haowen Yang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "abstract": "This paper introduces CUA-SEE, a novel closed-loop evaluation environment for computer-use agents (CUAs). CUA-SEE dynamically evolves tasks and verifiers based on agent performance, addressing the limitations of static benchmarks. Its core contribution lies in its adaptive approach, which expands evaluation scope, increases diagnostic resolution, and improves verifier precision, leading to more scalable and insightful agent assessment.",
+      "url": "http://arxiv.org/abs/2611.30962v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.30962v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.31198v1",
+      "title": "ToolSmith: An Automatic Tool-Generation Framework for Multimodal Search Agents",
+      "authors": [
+        "Rui Sun",
+        "Junhua Huang",
+        "Luca Zancato",
+        "Md Mofijul Islam",
+        "Kai-Wei Chang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "abstract": "ToolSmith addresses the challenge of manually creating and maintaining tools for multimodal search agents. Its core method is an automatic framework that generates and reuses tool modules, expanding a lean base library. This approach significantly improves agent performance across various benchmarks by enabling adaptation to new query types and evidence formats, demonstrating scalability with larger models.",
+      "url": "http://arxiv.org/abs/2611.31198v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31198v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.31198v1/teaser_v6.png",
+      "figure_caption": "We propose an automatic tool-generation framework for multimodal search agents. In the example shown, an agent restricted to a fixed tool library is bound to its pre-defined primitives and fails on queries that no original tool can directly resolve. Our framework instead grows the library: the agent operates over an extended tool library that includes newly generated tools and can invoke them freely when solving real queries. Here, the newly generated \\( \\toolhl \\) Event In Image tool resolves the query through finer-grained information verification and image search.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.31166v1",
+      "title": "Precision-Aware Learning Rate Transfer Across Block Count in LLM Post-Training",
+      "authors": [
+        "Nan Chen",
+        "Soledad Villar",
+        "Soufiane Hayou"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces TipSweep, a method to efficiently find optimal learning rates for large language model post-training. It trains only a small subset of blocks (e.g., the last one) and uses precision-dependent scaling rules to predict the best learning rate for training any number of blocks, including the full model. This significantly reduces the computational cost of learning rate tuning.",
+      "url": "http://arxiv.org/abs/2611.31166v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31166v1",
+      "score": 8.0,
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2611.31163v1",
+      "title": "SPROUT: Predicting Objective-Grounded Prompt Utility for Efficient Text-to-Image Preference Tuning",
+      "authors": [
+        "Kangping Hu",
+        "Akshay Mehra",
+        "Stephen Mussmann"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "abstract": "This paper introduces SPROUT, a method to improve the efficiency of text-to-image model preference tuning. SPROUT predicts the \"utility\" of training prompts using a text-only model, allowing it to select the most informative prompts for generating images. This approach significantly reduces wasted compute by avoiding the generation of images from low-utility prompts, thereby accelerating model alignment.",
+      "url": "http://arxiv.org/abs/2611.31163v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31163v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.31163v1/overview.png",
+      "figure_caption": "Left. SPROUT accepts each prompt at random with a probability scaled from its predicted utility, the update norm, so a rejected prompt generates no images (details in Figure 2 ). Right. The reduction factor of each method, i.e., the factor by which it reduces the training iterations needed to reach uniform sampling’s best score, computed on the mean curve of three seeds; for T2I-CompBench++, on the mean of its eight categories as no official overall score is defined.",
+      "primary_category": "cs.LG",
+      "primary_category_anchor": "cs-lg",
+      "primary_category_rank": 1
+    },
+    {
+      "id": "2611.31002v1",
+      "title": "RoboUniverse-10K: Toward the Scaling Era of Agentic Robotics via Real-to-Sim Environments",
+      "authors": [
+        "Jinkun Liu",
+        "Yingze Wang",
+        "Situ Wang",
+        "Deyao Hong",
+        "Mingju Gao"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.RO"
+      ],
+      "abstract": "This paper introduces RoboUniverse-10K, a large-scale collection of 10,807 simulated robotic environments automatically generated from real-world videos. This dataset aims to overcome the limitations of small, manual benchmarks in agentic robotics by providing a scalable, interactive, and verifiable platform for training and evaluating foundation models. The core contribution is enabling the \"scaling era\" of agentic robotics through this novel Real2Sim approach and establishing a robust benchmark for future research.",
+      "url": "http://arxiv.org/abs/2611.31002v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31002v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.31002v1/fig_teaser.png",
+      "figure_caption": "Overview of RoboUniverse-10K. (a) An agentic Real2Sim pipeline turns real robot videos into verifiable simulation environments spanning eight task families. (b) RoboUniverse-10K is far larger than existing robot simulation benchmarks. (c) SFT on RoboUniverse-10K lifts Qwen3.6-35B-A3B from 0.8% to 21.2% on RoboUniverse-Verified, and the resulting model transfers zero-shot to a real Franka arm.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2611.30941v1",
+      "title": "Aggregation Rules Induced by KL-Regularised Preference Dynamics on Networks",
+      "authors": [
+        "Milan Vojnovic"
+      ],
+      "categories": [
+        "cs.AI",
+        "stat.ML",
+        "math.DS"
+      ],
+      "abstract": "This paper investigates how agents learning on a network, influenced by their neighbors' preferences, converge to specific aggregation rules. The core method involves agents taking KL-regularized steps, where their learning is guided by a reference and a challenger, which can be individual or aggregated. The contribution is identifying that these dynamics lead to cardinal aggregation rules when the challenger is fixed, and approximate maximal lotteries when the reference is fixed and the challenger aggregated, with agent influence determined by their attention and temperature.",
+      "url": "http://arxiv.org/abs/2611.30941v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.30941v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.31082v1",
+      "title": "ChiProgramBench: Can LLM Agents Rebuild Efficient Circuits from Pin-Level Experiments?",
+      "authors": [
+        "Tianrun Gou",
+        "Qingyao Yang",
+        "Wendong Xu",
+        "Liang Chen",
+        "Kuan Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.AR"
+      ],
+      "abstract": "This paper introduces ChiProgramBench, a benchmark to evaluate LLM agents' ability to reconstruct efficient hardware circuits from pin-level experiments. The core method involves agents driving and observing a hidden reference circuit, then submitting a gate-level netlist. The contribution is a novel evaluation framework that assesses the LLM's reverse-engineering and circuit design capabilities by comparing their generated circuits against the reference on functional correctness, power, delay, and area.",
+      "url": "http://arxiv.org/abs/2611.31082v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31082v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.31027v1",
+      "title": "ComputeWise: Measuring and Fixing GPU Waste by AI Research Agents",
+      "authors": [
+        "Egor Pakhomov",
+        "Nina Pakhomova",
+        "Anurag Koul",
+        "Shafiq Joty",
+        "Erik Nijkamp"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces ComputeWise, a benchmark and tool to measure and reduce GPU waste by AI research agents. Their core method uses a simulated GPU to replay recorded runs, allowing for extensive experimentation without real hardware. The key contribution is demonstrating that AI agents waste significant GPU time on unnecessary computations and idle periods, and they propose an open-source harness to address this issue.",
+      "url": "http://arxiv.org/abs/2611.31027v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31027v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.31129v1",
+      "title": "FATCAT: Fault Injection Attacks Targeting Chip-level Alignment",
+      "authors": [
+        "Peter Horvath",
+        "Ilia Shumailov",
+        "Zhuoran Liu",
+        "Lukasz Chmielewski",
+        "Lejla Batina"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "FATCAT introduces the first physical fault injection attacks to bypass safety mechanisms in foundation models. It uses non-invasive electromagnetic pulses synchronized by an RF side-channel to corrupt memory transactions on GPUs, eliminating prompt refusal without requiring software access or crashing the system. This demonstrates a novel hardware vulnerability that undermines model alignment.",
+      "url": "http://arxiv.org/abs/2611.31129v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31129v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2611.31129v1/img/robot_frames/clip1_a_reach.jpg",
+      "figure_caption": "How it works. An adversary with physical access places a pulse generator over the edge chip that runs the robot’s policy (1). A single EMFI pulse can corrupt the model, so that its safeguards are bypassed without an alarm (2), and the robot arm makes abrupt, hazardous motions next to its operator (3). Caught on camera. Three frames, 0.56 s in all: the operator reaches in, the real arm rears up and lunges at the hand. Watch the clips: https://www.youtube.com/@cat_fi_gpu .",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.31190v1",
+      "title": "Know When to Abstain: Conformal Confidence Estimation for Text-to-SQL",
+      "authors": [
+        "Avinash Kumar Singh",
+        "Bhaskarjit Sarmah",
+        "Stefano Pasquali"
+      ],
+      "categories": [
+        "cs.AI",
+        "q-fin.CP"
+      ],
+      "abstract": "This paper proposes a novel method for Text-to-SQL systems to estimate confidence in their generated queries by treating it as probabilistic query validation. Their core contribution is a two-stage approach that separates query generation from validation, using a critic LLM to assess query correctness and execution results. This allows for finite-sample guarantees on the error rate of accepted queries, addressing the challenge of detecting incorrect but executable SQL.",
+      "url": "http://arxiv.org/abs/2611.31190v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.31190v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.30983v1",
+      "title": "MedUIGym: Evaluating and Training GUI Agents for Clinical Workflows",
+      "authors": [
+        "Yitong Qiao",
+        "Lei Liu",
+        "Yue Shen",
+        "Jian Wang",
+        "Jinjie Gu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces MedUIGym, a novel interactive environment designed to train and evaluate GUI agents for clinical workflows. It provides a large-scale dataset of tasks and allows agents to interact with electronic health records through screenshots and simulated mouse/keyboard actions. The core contribution is a robust platform for developing and benchmarking agents capable of navigating complex clinical GUIs, highlighting current limitations and paving the way for improved automation.",
+      "url": "http://arxiv.org/abs/2611.30983v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.30983v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2611.30983v1/figure.png",
+      "figure_caption": "MedUIGym overview . (a) Frontier model performance; (b) EHR environment and evaluation; (c) a clinical workflow.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "hacker_news": [
+    {
+      "id": 50609685,
+      "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
+      "url": "https://z.ai/blog/glm-5.4",
+      "score": 1120,
+      "created_at": "2026-11-23T10:06:43Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50609685",
+      "summary": "Zhipu AI's GLM-5.4 introduces a novel loop transformer architecture, advancing towards generalized coding capabilities by enabling more efficient and flexible code generation."
+    },
+    {
+      "id": 50611402,
+      "title": "NariQ: BF16-level Qwen3.8-27B in a 10 GB file",
+      "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
+      "score": 168,
+      "created_at": "2026-11-23T13:42:38Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50611402",
+      "summary": "NariQ has released a 10GB file containing the Qwen3.8-27B model quantized to BF16 precision, making it more accessible."
+    }
+  ],
+  "github_trending": [
+    {
+      "full_name": "elementalsouls/Claude-BugHunter",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "stars_today": 2029,
+      "total_stars": 20415,
+      "language": "Python",
+      "topics": [],
+      "summary": "This GitHub repository provides a Claude Code skill bundle for bug hunting and red-teaming, featuring 84 skills, 15 slash commands, and extensive disclosed report patterns across 24 vulnerability classes, along with enterprise identity and infrastructure attack matrices."
+    },
+    {
+      "full_name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "stars_today": 840,
+      "total_stars": 325459,
+      "language": "Shell",
+      "topics": [],
+      "summary": "**Superpowers** is an agentic skills framework and software development methodology designed to enhance productivity and effectiveness in software projects."
+    },
+    {
+      "full_name": "HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "stars_today": 790,
+      "total_stars": 64121,
+      "language": "Python",
+      "topics": [],
+      "summary": "CLI-Anything empowers any software to become agent-native by providing a unified interface for AI agents to interact with and control command-line tools, simplifying automation and integration."
+    },
+    {
+      "full_name": "jingyaogong/minimind",
+      "url": "https://github.com/jingyaogong/minimind",
+      "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
+      "stars_today": 828,
+      "total_stars": 69827,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository provides a streamlined framework to train a 64M parameter large language model from scratch within two hours, making LLM development accessible and fast."
+    },
+    {
+      "full_name": "cursor/plugins",
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "stars_today": 397,
+      "total_stars": 18950,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "This repository defines the specification for Cursor IDE plugins and hosts official plugins, enabling developers to extend the IDE's functionality."
+    },
+    {
+      "full_name": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
+      "stars_today": 924,
+      "total_stars": 208299,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "Firecrawl provides knowledge infrastructure for smarter AI agents, offering a unified API to search, scrape, and access data from over 550 providers."
+    },
+    {
+      "full_name": "nginx/nginx",
+      "url": "https://github.com/nginx/nginx",
+      "description": "The official NGINX Open Source repository.",
+      "stars_today": 174,
+      "total_stars": 33110,
+      "language": "C",
+      "topics": [],
+      "summary": "The official NGINX Open Source repository provides a high-performance, lightweight web server and reverse proxy, renowned for its scalability, efficiency, and extensive feature set for handling concurrent connections."
+    },
+    {
+      "full_name": "openvinotoolkit/openvino",
+      "url": "https://github.com/openvinotoolkit/openvino",
+      "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+      "stars_today": 184,
+      "total_stars": 12356,
+      "language": "C++",
+      "topics": [],
+      "summary": "OpenVINO™ is an open-source toolkit that optimizes and deploys AI inference across various hardware, enabling efficient execution of deep learning models."
+    },
+    {
+      "full_name": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "stars_today": 620,
+      "total_stars": 71319,
+      "language": "HTML",
+      "topics": [],
+      "summary": "This repository provides self-contained HTML+SVG editorial diagrams for AI coding tools, featuring 52 types and avoiding shadows and Mermaid syntax."
+    }
+  ],
+  "us_stocks": [],
+  "postdoc_jobs": [],
+  "jobs": [],
+  "supervisor_updates": [],
+  "weather": [
+    {
+      "query": "London",
+      "label": "London, England, United Kingdom",
+      "resolved_name": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "timezone": "Europe/London",
+      "forecast_date": "2026-11-24",
+      "condition": "Overcast",
+      "weather_code": 3,
+      "temperature_c": 4.5,
+      "apparent_temperature_c": 1.2,
+      "temp_max_c": 6.2,
+      "temp_min_c": 2.5,
+      "humidity_pct": 86,
+      "wind_speed_kmh": 11.2,
+      "precipitation_probability_pct": 0,
+      "is_day": true,
+      "sunrise": "2026-11-24T07:33",
+      "sunset": "2026-11-24T16:00",
+      "source": "Open-Meteo",
+      "source_url": "https://open-meteo.com/"
+    }
+  ]
+}
