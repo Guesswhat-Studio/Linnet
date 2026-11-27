@@ -1,0 +1,1798 @@
+{
+  "date": "2026-11-27",
+  "generated_at": "2026-11-27T09:32:42.068491+00:00",
+  "sections_ordered": [
+    {
+      "key": "quote_of_day",
+      "payload_key": "quote_of_day",
+      "title": "Words for the Morning",
+      "icon": "✦",
+      "items": [
+        {
+          "quote": "I got a fascination with food.",
+          "author": "Heather Mills",
+          "category": "food"
+        }
+      ],
+      "meta": {
+        "count": 1
+      }
+    },
+    {
+      "key": "weather",
+      "payload_key": "weather",
+      "title": "Weather",
+      "icon": "🌦️",
+      "items": [
+        {
+          "query": "London",
+          "label": "London, England, United Kingdom",
+          "resolved_name": "London",
+          "region": "England",
+          "country": "United Kingdom",
+          "latitude": 51.50853,
+          "longitude": -0.12574,
+          "timezone": "Europe/London",
+          "forecast_date": "2026-11-27",
+          "condition": "Overcast",
+          "weather_code": 3,
+          "temperature_c": 2.9,
+          "apparent_temperature_c": -1.4,
+          "temp_max_c": 4.9,
+          "temp_min_c": 1.9,
+          "humidity_pct": 80,
+          "wind_speed_kmh": 15.1,
+          "precipitation_probability_pct": 33,
+          "is_day": true,
+          "sunrise": "2026-11-27T07:37",
+          "sunset": "2026-11-27T15:58",
+          "source": "Open-Meteo",
+          "source_url": "https://open-meteo.com/"
+        }
+      ],
+      "meta": {
+        "count": 1,
+        "city": "London"
+      }
+    },
+    {
+      "key": "arxiv",
+      "payload_key": "papers",
+      "title": "arXiv Papers",
+      "icon": "📄",
+      "items": [
+        {
+          "id": "2611.34703v1",
+          "title": "Maco-RL: Scaling Agent Capabilities with Mixed-Task Reinforcement Learning",
+          "authors": [
+            "Jiacheng Zhang",
+            "Qixing Zhou",
+            "Haiyang Wang",
+            "Qipeng Gu",
+            "Shuzhe Wu"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "Maco-RL tackles the challenges of scaling mixed-task reinforcement learning (MixRL) by introducing a quota-based scheduler for asynchronous rollouts and a Tri-Buffer Sampling (TBS) mechanism. The scheduler stabilizes training by balancing gradient contributions, while TBS efficiently allocates compute to samples based on mastery, promoting exploration and preserving learned skills. This approach enables a unified policy to continually expand its capabilities across multiple domains without needing separate specialists or distillation.",
+          "url": "http://arxiv.org/abs/2611.34703v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.34703v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2611.34703v1/expanserl-performance-efficiency.png",
+          "figure_caption": "Our Maco-RL enables 27B-sized models to substantially outperform baselines and even be competitive with much larger models in terms of overall pass rates across multiple task domains, i.e., issue- and feature-oriented coding, terminal and Claw. Experimental results reveal that Maco-RL more effectively turns compute budget into model capability. (a) Average pass rates over five benchmarks, i.e., Pass@1 on SWE-bench Verified, Terminal-Bench 2.1 and Claw-Anything, Tests Passed on FeatureBench 1.1 and Pass 3 \\( \\mathrm{Pass}^{3} \\) on Claw-Eval, against model sizes, which are P total ​ P active \\( \\sqrt \\){P_{\\( \\mathrm{total} \\)}P_{\\( \\mathrm{active} \\)}} for MoE models and P total P_{\\( \\mathrm{total} \\)} otherwise. (b) The mean Pass@1 metrics against compute budget for RL on mixed and single tasks. For single-task RL, we sum compute across the three tasks.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.34646v1",
+          "title": "REE: A Scientific Research Entrance Exam for AI Agents",
+          "authors": [
+            "Zeqi Zhou",
+            "Minghao Liu",
+            "Jiarui Liu",
+            "Qingcheng Zeng",
+            "Rui Yang"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper introduces REE, a novel benchmark designed to evaluate the scientific research capabilities of AI agents. REE presents 100 open-ended research problems, sourced from active scientific fields and reviewed by experts, requiring agents to iteratively improve a starter solution within a time limit. The core contribution is a standardized evaluation method that scores agent performance against expert solutions, providing a quantitative measure of their ability to advance scientific understanding.",
+          "url": "http://arxiv.org/abs/2611.34646v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.34646v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2611.34646v1/teaser.png",
+          "figure_caption": "An REE task in four steps. (1) The agent receives a problem statement, a starter solution, development data, and an offline environment with a checker. (2) It improves the solution iteratively for up to 12 hours, and its saved versions are evaluated at five checkpoints. (3) One grader evaluates the starter solution, the agent’s solution, and the expert solution on the same held-out test instances. (4) Each metric value is mapped to a score from 0, the starter solution, to 100, the upper bound of the metric. The margin M = B − E M=B-E compares the agent’s score B B with the expert baseline E E .",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.34603v1",
+          "title": "VisualMontage: Manipulating the Beliefs of Vision-Language Agents with Authentic Image Sequences",
+          "authors": [
+            "Jinwei Hu",
+            "Lai Wei",
+            "Zhuoyun Li",
+            "Youcheng Sun",
+            "Yi Dong"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CV",
+            "cs.MA",
+            "cs.SI"
+          ],
+          "abstract": "This paper introduces VisualMontage, a framework for simulating \"visual cognitive collusion\" attacks on vision-language models (VLMs). The core method involves using authentic image sequences with locally faithful captions to trick VLMs into inferring attacker-chosen claims through their own reasoning. The main contribution is a new benchmark and a systematic evaluation of this threat, demonstrating how coordinated visual and textual content can manipulate VLM beliefs.",
+          "url": "http://arxiv.org/abs/2611.34603v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.34603v1",
+          "score": 9.0,
+          "figure_url": "https://arxiv.org/html/2611.34603v1/Figure_1.png",
+          "figure_caption": "Comparison of multimodal attack strategies. Image-centric attacks fabricate or alter visual content, while channel-centric attacks convey hidden signals or malicious payloads. Our cognitive-centric attack instead combines authentic images to manipulate the victim VLM’s beliefs through self-induced misleading relations inferred across otherwise faithful posts.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.34776v1",
+          "title": "DFly2: Turbocharging Long-Context Speculative Decoding by Sharing the Target's Sparsity",
+          "authors": [
+            "Hong Liu",
+            "Rui Cen",
+            "Junhan Shi",
+            "Lin Niu",
+            "Runzhi Fan"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces DFly2, a method to accelerate speculative decoding for long-context language models. DFly2 leverages the inherent sparsity of the target model's attention mechanism to efficiently share its context cache and attention selections with the draft model. This significantly reduces memory usage and prefill time, while improving decode concurrency by avoiding redundant computations.",
+          "url": "http://arxiv.org/abs/2611.34776v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.34776v1",
+          "score": 9.0,
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2611.34756v1",
+          "title": "Collect for Coverage, Replay with Evidence: Adaptive and Efficient On-Policy Distillation for Long-Horizon Agents",
+          "authors": [
+            "Haowen Hou",
+            "Gen Li",
+            "Ruilin Li",
+            "Yicheng Liu",
+            "Zhen Huang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces CARE-OPD, an adaptive on-policy distillation method for long-horizon agents. It addresses limitations in existing prefix replay by strategically collecting teacher trajectories seeded by student actions to ensure broader history coverage, and by using response-level confidence gating to filter unreliable updates. Furthermore, it employs hindsight replay allocation to prioritize reusing critical trajectory segments, making the distillation process more efficient and effective.",
+          "url": "http://arxiv.org/abs/2611.34756v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.34756v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2611.34756v1/method_overview_three_seed.png",
+          "figure_caption": "Overview of CARE-OPD. Left: Factorization of prefix replay in agent OPD (above). Method overview (below). Right: The plots compare SWE-bench Verified task success, end-to-end time, and environment actions on Qwen3.5 family. The bottom panel reports mean collection trajectory length on SWE and Deep Research. Async OPD denotes online asynchronous one-turn distillation, and Prefix Replay denotes vanilla prefix replay.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.34671v1",
+          "title": "DemoFoundry: Toward Scalable Photorealistic Robot Data with Coding Agents and Generative Rendering",
+          "authors": [
+            "Ruixiang Wang",
+            "Xinyue Yao",
+            "Xuanning Zhou",
+            "Yueci Deng",
+            "Yongyi Su"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.RO"
+          ],
+          "abstract": "DemoFoundry addresses the challenge of acquiring realistic robot training data by using coding agents to generate photorealistic, physically grounded demonstrations. The core method involves agents creating aligned real-proxy video pairs to train a renderer and then writing interaction programs to generate new synthetic data. This approach overcomes the visual gap in simulation and the action alignment issues in video-only generation, enabling scalable robot learning without requiring human demonstrations for new tasks.",
+          "url": "http://arxiv.org/abs/2611.34671v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.34671v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.34656v1",
+          "title": "Do We Still Need Reinforcement Learning When We Can Read the World Model?",
+          "authors": [
+            "Mingchao Zhang",
+            "Miduo Cui",
+            "Kangze He",
+            "Yuanjun Li",
+            "Dapeng Li"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.MA"
+          ],
+          "abstract": "This paper proposes a novel approach where Large Language Models (LLMs) directly synthesize control policies by reading and reasoning over world models (environment source code). This method bypasses traditional Reinforcement Learning (RL) training, achieving comparable or superior performance with significantly less experience. The core contribution is demonstrating that LLMs can translate environmental knowledge into interpretable, executable decision rules, effectively replacing the need for extensive RL interaction.",
+          "url": "http://arxiv.org/abs/2611.34656v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.34656v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2611.34656v1/Intro.png",
+          "figure_caption": "Comparison of conventional RL and policy synthesis from readable world models.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.34852v1",
+          "title": "DRBench Pro: A Knowledge-Centric Benchmark for Professional Deep Research Agents",
+          "authors": [
+            "Han Huang",
+            "Yuchen Yan",
+            "Xingyu Wu",
+            "Yijun Li",
+            "Chao Deng"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "DRBench Pro introduces a novel knowledge-centric evaluation for deep research agents, focusing on the breadth and depth of research directions covered. Its core method involves building knowledge trees from Wikipedia and generating queries and rubrics based on these trees, allowing for structured assessment of information synthesis. The contribution is a benchmark that precisely measures how well agents explore complex topics by evaluating their coverage of major research directions and related knowledge chains.",
+          "url": "http://arxiv.org/abs/2611.34852v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.34852v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2611.34852v1/teaser.png",
+          "figure_caption": "Structured knowledge coverage in DRBench Pro. (a) Reports with the same flat coverage can exhibit different coverage patterns over a shared reference tree. (b) Overview of five native search LLMs’ performance on DRBench Pro.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.34875v1",
+          "title": "How Much Do Coding Agents Over-Edit, and Why? An Empirical Study of Unneeded Edits in Repository-Level Agent Patches",
+          "authors": [
+            "Aakash Goel",
+            "Benjamin Steenhoek",
+            "Yu Hu"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.SE"
+          ],
+          "abstract": "This paper introduces Delta Residue Attribution (DRA) to analyze unneeded edits in coding agent patches. DRA traces edits to their origin, reverts them, and reruns tests to determine necessity. The study finds that while agents make more edits, a significant portion are for tests and documentation, and their core code edits are often as necessary as human developers'.",
+          "url": "http://arxiv.org/abs/2611.34875v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.34875v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.34785v1",
+          "title": "PersonaFactory: Stylistic User Prompt Augmentation with Synthetic Persona Bank",
+          "authors": [
+            "Bich Ngoc Doan",
+            "Hanna Yukhymenko",
+            "Imanol Schlag"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "PersonaFactory addresses the limitation of LLMs generating stylistically flat synthetic user prompts. It creates a large bank of detailed user personas with diverse backgrounds and communication styles. These personas are then used to augment existing prompts, generating a vast corpus of persona-styled conversations across many languages, improving LLM training data for better persona control.",
+          "url": "http://arxiv.org/abs/2611.34785v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.34785v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.34762v1",
+          "title": "TASK Memory: Beyond Text-Only Memory with Activation Steering and Knowledge Editing against Memory Hallucination",
+          "authors": [
+            "Jinkun Zhao",
+            "Wenjun Wu"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper addresses memory hallucinations in LLM agents, where retrieved external memories are ignored or misapplied. The authors propose TASK memory, a novel approach that combines textual memory with activation steering and knowledge editing. This method aims to resolve conflicts between parametric knowledge and external memory, thereby reducing hallucinations and improving the agent's ability to accurately utilize recalled information.",
+          "url": "http://arxiv.org/abs/2611.34762v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.34762v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2611.34762v1/TASK_memory_intro.png",
+          "figure_caption": "Memory hallucination: the memory is correct, the answer is not. (a) Text-only memory or RAG puts the retrieved note into the prompt and leaves the rest to the frozen model, where the note in the context conflicts with the stale fact in the weights. On a question about the memory, the weights win and the model answers with the stale fact (Type I, memory-ignoring). On a question about another entity, the note wins and the model assigns the memory to the wrong entity (Type II, memory-misapplying). Across our five models these rates reach 46% and 24%, and Type II reaches 49% when retrieval is combined with weight editing. (b) TASK memory goes beyond text-only memory. Each memory object holds T ext content, a K nowledge edit Δ ​ W m \\( \\Delta \\) W_{m} whose key u ^ m \\( \\hat{u}_{m} \\) serves as the in-model address, and a pair of A ctivation- S teering vectors ( v + , v − ) (v^{+},v^{-}) that carry no content. For a query x x , the address response r m ​ ( x ) r_{m}(x) is compared with the threshold \\( \\tau_{m} \\) . A relevant query shows T , loads E and adds v + v^{+} , so the model adopts the memory; an unrelated query leaves T and E off and adds v − v^{-} , so the model keeps its own answer.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.34751v1",
+          "title": "What Is a Theory Worth to an LLM Solver? Measuring, Inducing, and Merging Theories in Context",
+          "authors": [
+            "Jun Gao",
+            "Shuchao Bi"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "This paper investigates the value of mathematical theories for LLM solvers. It demonstrates that providing the correct theory significantly improves problem-solving accuracy and efficiency for LLMs, outperforming worked examples. The research also explores LLMs' ability to induce theories and quantifies how much of the benefit from an oracle theory can be recovered through this induction process.",
+          "url": "http://arxiv.org/abs/2611.34751v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.34751v1",
+          "score": 8.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.34635v1",
+          "title": "ZeroHero: Training Small Language Agents from Scratch",
+          "authors": [
+            "Nikita Sorokin",
+            "Zoya Volovikova",
+            "Alexey Skrynnik",
+            "Aleksandr Panov"
+          ],
+          "categories": [
+            "cs.AI"
+          ],
+          "abstract": "ZeroHero trains small language agents (SLAs) from scratch by first pre-training them to mimic a large language model expert's responses on successful trajectories. Subsequently, these SLAs are fine-tuned using PPO with an added \"reasoning alignment\" objective that supervises their generated language alongside environmental rewards. This method enables the creation of capable, specialized language agents with significantly reduced model capacity.",
+          "url": "http://arxiv.org/abs/2611.34635v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.34635v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2611.34635v1/visual_abstract.png",
+          "figure_caption": "ZeroHero agents use language to reason, search, and ask questions across three interactive environments.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.34819v1",
+          "title": "VulnSafe: Measuring Vulnerability-Aware Relational Safety in Large Language Models",
+          "authors": [
+            "Jiaming Luo",
+            "Jiacheng Ji",
+            "Haoan Jin",
+            "Xiaoning Sun",
+            "Qiuzhi Xiong"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "abstract": "VulnSafe introduces Vulnerability-Aware Response Competence (VARC) to measure a LLM's ability to provide emotionally supportive interactions. VARC assesses five relational safety constructs, evaluated through 2,050 prompts across 41 scenarios. This benchmark offers a more nuanced understanding of LLM safety beyond isolated violations, distinguishing between proactive and prohibitive behaviors.",
+          "url": "http://arxiv.org/abs/2611.34819v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.34819v1",
+          "score": 8.0,
+          "figure_url": "https://arxiv.org/html/2611.34819v1/vulnsafe_framework.png",
+          "figure_caption": "An illustrative capability contrast. The left response displays surface empathy but encourages exclusive reliance on the system. The right response recognizes the relational risk, maintains an appropriate boundary, and supports connection to real-world resources.",
+          "primary_category": "cs.CL",
+          "primary_category_anchor": "cs-cl",
+          "primary_category_rank": 2
+        },
+        {
+          "id": "2611.34920v1",
+          "title": "$μ$-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents",
+          "authors": [
+            "Qihao Lin",
+            "Guanxu Chen",
+            "Shuhang Zheng",
+            "Xiaoya Lu",
+            "Jingyi Yang"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces $μ$-Bench, a novel benchmark for evaluating multi-user voice agents in shared environments. It simulates interdependent user requests, considering individual goals, privacy, and task constraints within a closed-loop system. The core contribution is a comprehensive evaluation framework that measures joint task success and identifies failure causes, revealing significant performance gaps in current voice agents.",
+          "url": "http://arxiv.org/abs/2611.34920v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.34920v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2611.34920v1/intro-teaser-pdf.png",
+          "figure_caption": "Overview of \\( \\mu \\) -Bench: multi-user task coordination and domain coverage. Left (Top): A shared full-duplex voice agent handles overlapping speech, barge-ins, peer side-talk, and backchannels while invoking backend tools. Left (Bottom): The same trajectory is diagnosed along Attribution (routing actionable speech), Threading (retaining and updating active goals), and Coordination (reconciling constraints and authority), with success requiring all goals and constraints to hold jointly. Right: Distribution of 100 base scenarios across 20 domains, split between 51 Tool-Augmented (408 cases) and 49 Tool-Free (392 cases) scenarios; parentheses show TA/TF counts.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.34868v1",
+          "title": "A Survey of Security, Privacy, and Ethics of Large Language Models in Telecom",
+          "authors": [
+            "Joy Bose",
+            "Srinivas Adyapak"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CR",
+            "cs.CY"
+          ],
+          "abstract": "This paper surveys the security, privacy, and ethical challenges of using Large Language Models (LLMs) in telecommunications. It introduces a novel taxonomy that connects LLM risks to specific telecom use cases and sensitive data characteristics. The contribution lies in identifying and categorizing these unique challenges, highlighting open research areas like longitudinal data privacy and scalable guardrails for responsible LLM deployment in the telecom sector.",
+          "url": "http://arxiv.org/abs/2611.34868v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.34868v1",
+          "score": 7.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.34934v1",
+          "title": "Attack Policy Selection can Mislead Monitor Evaluators",
+          "authors": [
+            "Charlie Griffin",
+            "Oliver Makins",
+            "Asa Cooper Stickland",
+            "Alessandro Abate",
+            "Yarin Gal"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper reveals that AI monitor evaluations can be misleading due to the attack policies used. The false negative rate of a monitor is highly sensitive to how attack policies are generated and optimized, leading to potentially false confidence in a monitor's strength if only basic attacks are used. The study demonstrates that even optimized attacks against proxy monitors can effectively transfer to a held-out target monitor.",
+          "url": "http://arxiv.org/abs/2611.34934v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.34934v1",
+          "score": 7.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.34928v1",
+          "title": "Diverse Alternative Reasoning Traces for Hard Math Problems",
+          "authors": [
+            "Lukas Aichberger",
+            "Adam Golinski",
+            "Arno Blaas",
+            "Arwen Bradley",
+            "Jacob Springer"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG",
+            "cs.CL"
+          ],
+          "abstract": "This paper introduces Diverse Alternative Reasoning Traces (DART), a method to generate more effective training data for hard math problems. DART tackles the scarcity of correct reasoning traces by decomposing incorrect ones, identifying uncertain steps, and then generating diverse, alternative paths to the correct solution. This approach significantly improves the ability of LLMs to solve challenging math problems compared to standard sampling methods.",
+          "url": "http://arxiv.org/abs/2611.34928v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.34928v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2611.34928v1/fig_01_dart_overview.png",
+          "figure_caption": "DART decomposes a rejected trace into self-contained reasoning steps ( Section 2.1 ), selects a non-final reasoning step based on its position-weighted uncertainty ( Section 2.2 ), proposes a deliberately distinct alternative candidate ( Section 2.3 ), and then greedily decodes a new continuation. This procedure can be repeated for a fixed number of iterations or until a target number of accepted traces is obtained.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.34841v1",
+          "title": "Knowledge-Base Gradient Descent: Self-Structuring Learning through Question Answering",
+          "authors": [
+            "Masahiro Kato"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.LG"
+          ],
+          "abstract": "This paper introduces Knowledge-Base Gradient Descent (KBGD) for self-structuring learning in knowledge base construction. KBGD iteratively refines a knowledge base's structure by proposing edits that minimize discrepancies between expected and actual answers. Its core contribution is a gradient-descent-like approach that learns to optimize the knowledge base's organization based on question-answering performance, enabling more effective information retrieval for LLM applications.",
+          "url": "http://arxiv.org/abs/2611.34841v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.34841v1",
+          "score": 7.0,
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        },
+        {
+          "id": "2611.34864v1",
+          "title": "RePace: Reasoning about Demonstration Speedup for Faster Vision-Language-Action Policies",
+          "authors": [
+            "Insup Lee",
+            "Hojin Jeon",
+            "Sunguk Shin",
+            "Seoungbin Bae",
+            "Taekwan Kim"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.RO"
+          ],
+          "abstract": "RePace is an offline framework that reasons about how much to accelerate each part of a human demonstration for vision-language-action (VLA) policies. It evaluates candidate speedup factors by measuring sequence shortening and comparing the resulting training data quality. This allows for faster VLA policies without needing a separate speed-selection module at deployment.",
+          "url": "http://arxiv.org/abs/2611.34864v1",
+          "pdf_url": "https://arxiv.org/pdf/2611.34864v1",
+          "score": 7.0,
+          "figure_url": "https://arxiv.org/html/2611.34864v1/fig1_demonstration_acceleration.png",
+          "figure_caption": "Offline demonstration acceleration with RePace . RePace compares how candidate speedup factors change the observations and action targets used for VLA fine-tuning. It uses the recorded scene and motion to interpret these changes and select a speedup profile.",
+          "primary_category": "cs.AI",
+          "primary_category_anchor": "cs-ai",
+          "primary_category_rank": 0
+        }
+      ],
+      "meta": {
+        "papers_fetched": 100,
+        "papers_after_keyword_filter": 43,
+        "papers_after_llm_filter": 28,
+        "count": 20
+      }
+    },
+    {
+      "key": "hacker_news",
+      "payload_key": "hacker_news",
+      "title": "Hacker News",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": 50660180,
+          "title": "AI made self-hosting fun again",
+          "url": "https://janlukas.blog/posts/ai-self-hosting",
+          "score": 656,
+          "created_at": "2026-11-26T21:47:45Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50660180",
+          "summary": "AI is making self-hosting more accessible and enjoyable by simplifying complex tasks and offering new creative possibilities."
+        },
+        {
+          "id": 50659841,
+          "title": "Kamil Khan Mumtaz: Pakistani architect, admired at home, almost invisible abroad",
+          "url": "https://worksinprogress.co/issue/the-greatest-architect-youve-never-heard-of-is-in-pakistan/",
+          "score": 360,
+          "created_at": "2026-11-26T21:08:05Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50659841",
+          "summary": "Pakistani architect Kamil Khan Mumtaz is a celebrated figure at home for his influential designs, yet remains largely unknown internationally."
+        },
+        {
+          "id": 50657265,
+          "title": "AMD-specific fork of llama.cpp",
+          "url": "https://devnull.land/amd-specific-llama-cpp",
+          "score": 355,
+          "created_at": "2026-11-26T17:11:29Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50657265",
+          "summary": "This tech news story discusses an AMD-specific version of llama.cpp, a popular inference engine for large language models, optimized for AMD hardware."
+        },
+        {
+          "id": 50653477,
+          "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+          "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+          "score": 327,
+          "created_at": "2026-11-26T09:44:23Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50653477",
+          "summary": "Google will integrate AI agents into its MCP servers, but the Gmail agent currently cannot send emails."
+        },
+        {
+          "id": 50657307,
+          "title": "Tracking Diseases Cured by AI",
+          "url": "https://diseasescuredbyai.com/",
+          "score": 310,
+          "created_at": "2026-11-26T17:16:41Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50657307",
+          "summary": "This website tracks diseases that have been cured or significantly treated through the application of Artificial Intelligence in medical research and development."
+        },
+        {
+          "id": 50663595,
+          "title": "The group chat where your AI talks behind your back",
+          "url": "https://construct22.com/",
+          "score": 198,
+          "created_at": "2026-11-27T06:44:34Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50663595",
+          "summary": "This tech news story explores how AI assistants can be programmed to communicate with each other in private group chats, potentially discussing users or tasks without their direct knowledge."
+        },
+        {
+          "id": 50655868,
+          "title": "Show HN: I wrote an entire Vim manual over 4 years",
+          "url": "http://themouseless.dev/vim/",
+          "score": 164,
+          "created_at": "2026-11-26T14:44:22Z",
+          "comments_url": "https://news.ycombinator.com/item?id=50655868",
+          "summary": "A developer has spent four years creating a comprehensive Vim manual, now available online, to share their extensive knowledge of the text editor."
+        }
+      ],
+      "meta": {
+        "count": 7
+      }
+    },
+    {
+      "key": "github_trending",
+      "payload_key": "github_trending",
+      "title": "GitHub Trending",
+      "icon": "⭐",
+      "items": [
+        {
+          "full_name": "elementalsouls/Claude-BugHunter",
+          "url": "https://github.com/elementalsouls/Claude-BugHunter",
+          "description": "A Claude Code skill bundle for bug hunting and external red-team work - 85 skills, 16 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+          "stars_today": 1597,
+          "total_stars": 25195,
+          "language": "Python",
+          "topics": [],
+          "summary": "This Claude Code skill bundle empowers red-teamers with 85 bug-hunting skills, 16 slash commands, and 681 disclosed report patterns across 24 vulnerability classes, including enterprise identity and infrastructure attack matrices."
+        },
+        {
+          "full_name": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "description": "An agentic skills framework & software development methodology that works.",
+          "stars_today": 854,
+          "total_stars": 327830,
+          "language": "Shell",
+          "topics": [],
+          "summary": "Superpowers is an agentic skills framework and software development methodology designed to enhance productivity and effectiveness in software projects."
+        },
+        {
+          "full_name": "HKUDS/CLI-Anything",
+          "url": "https://github.com/HKUDS/CLI-Anything",
+          "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+          "stars_today": 746,
+          "total_stars": 66636,
+          "language": "Python",
+          "topics": [],
+          "summary": "CLI-Anything enables any software to become agent-native by providing a unified interface for AI agents to interact with command-line tools, facilitating automation and intelligent control."
+        },
+        {
+          "full_name": "jingyaogong/minimind",
+          "url": "https://github.com/jingyaogong/minimind",
+          "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
+          "stars_today": 702,
+          "total_stars": 71965,
+          "language": "Python",
+          "topics": [],
+          "summary": "This repository provides a streamlined framework to train a 64M parameter large language model from scratch in approximately two hours, making LLM development accessible."
+        },
+        {
+          "full_name": "cursor/plugins",
+          "url": "https://github.com/cursor/plugins",
+          "description": "Cursor plugin specification and official plugins",
+          "stars_today": 270,
+          "total_stars": 19878,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "This repository defines the specification for Cursor plugins and hosts official implementations, enabling users to extend the Cursor IDE's functionality."
+        },
+        {
+          "full_name": "firecrawl/firecrawl",
+          "url": "https://github.com/firecrawl/firecrawl",
+          "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
+          "stars_today": 1046,
+          "total_stars": 211229,
+          "language": "TypeScript",
+          "topics": [],
+          "summary": "Firecrawl provides a unified API to search, scrape, and access data from over 550 providers, acting as a knowledge infrastructure to enhance AI agent intelligence."
+        },
+        {
+          "full_name": "nginx/nginx",
+          "url": "https://github.com/nginx/nginx",
+          "description": "The official NGINX Open Source repository.",
+          "stars_today": 150,
+          "total_stars": 33578,
+          "language": "C",
+          "topics": [],
+          "summary": "The official NGINX Open Source repository provides a high-performance, lightweight web server and reverse proxy, known for its event-driven architecture, scalability, and extensive feature set for handling concurrent connections efficiently."
+        },
+        {
+          "full_name": "openvinotoolkit/openvino",
+          "url": "https://github.com/openvinotoolkit/openvino",
+          "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+          "stars_today": 176,
+          "total_stars": 12873,
+          "language": "C++",
+          "topics": [],
+          "summary": "OpenVINO™ is an open-source toolkit that optimizes and deploys AI inference across various hardware, enabling efficient execution of deep learning models."
+        },
+        {
+          "full_name": "cathrynlavery/diagram-design",
+          "url": "https://github.com/cathrynlavery/diagram-design",
+          "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+          "stars_today": 955,
+          "total_stars": 74152,
+          "language": "HTML",
+          "topics": [],
+          "summary": "This repository provides self-contained HTML+SVG diagrams for AI coding tools like Copilot and Cursor, offering 52 types without shadows or Mermaid syntax."
+        }
+      ],
+      "meta": {
+        "count": 9
+      }
+    }
+  ],
+  "meta": {
+    "papers_fetched": 100,
+    "papers_after_keyword_filter": 43,
+    "papers_after_llm_filter": 28,
+    "llm_model": "google/gemini-2.5-flash-lite",
+    "scoring_model": "google/gemini-2.5-flash-lite",
+    "summarization_model": "google/gemini-2.5-flash-lite",
+    "duration_seconds": 61
+  },
+  "quote_of_day": [
+    {
+      "quote": "I got a fascination with food.",
+      "author": "Heather Mills",
+      "category": "food"
+    }
+  ],
+  "hitokoto": [],
+  "arxiv": [
+    {
+      "id": "2611.34703v1",
+      "title": "Maco-RL: Scaling Agent Capabilities with Mixed-Task Reinforcement Learning",
+      "authors": [
+        "Jiacheng Zhang",
+        "Qixing Zhou",
+        "Haiyang Wang",
+        "Qipeng Gu",
+        "Shuzhe Wu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "Maco-RL tackles the challenges of scaling mixed-task reinforcement learning (MixRL) by introducing a quota-based scheduler for asynchronous rollouts and a Tri-Buffer Sampling (TBS) mechanism. The scheduler stabilizes training by balancing gradient contributions, while TBS efficiently allocates compute to samples based on mastery, promoting exploration and preserving learned skills. This approach enables a unified policy to continually expand its capabilities across multiple domains without needing separate specialists or distillation.",
+      "url": "http://arxiv.org/abs/2611.34703v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34703v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2611.34703v1/expanserl-performance-efficiency.png",
+      "figure_caption": "Our Maco-RL enables 27B-sized models to substantially outperform baselines and even be competitive with much larger models in terms of overall pass rates across multiple task domains, i.e., issue- and feature-oriented coding, terminal and Claw. Experimental results reveal that Maco-RL more effectively turns compute budget into model capability. (a) Average pass rates over five benchmarks, i.e., Pass@1 on SWE-bench Verified, Terminal-Bench 2.1 and Claw-Anything, Tests Passed on FeatureBench 1.1 and Pass 3 \\( \\mathrm{Pass}^{3} \\) on Claw-Eval, against model sizes, which are P total ​ P active \\( \\sqrt \\){P_{\\( \\mathrm{total} \\)}P_{\\( \\mathrm{active} \\)}} for MoE models and P total P_{\\( \\mathrm{total} \\)} otherwise. (b) The mean Pass@1 metrics against compute budget for RL on mixed and single tasks. For single-task RL, we sum compute across the three tasks.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34646v1",
+      "title": "REE: A Scientific Research Entrance Exam for AI Agents",
+      "authors": [
+        "Zeqi Zhou",
+        "Minghao Liu",
+        "Jiarui Liu",
+        "Qingcheng Zeng",
+        "Rui Yang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces REE, a novel benchmark designed to evaluate the scientific research capabilities of AI agents. REE presents 100 open-ended research problems, sourced from active scientific fields and reviewed by experts, requiring agents to iteratively improve a starter solution within a time limit. The core contribution is a standardized evaluation method that scores agent performance against expert solutions, providing a quantitative measure of their ability to advance scientific understanding.",
+      "url": "http://arxiv.org/abs/2611.34646v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34646v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2611.34646v1/teaser.png",
+      "figure_caption": "An REE task in four steps. (1) The agent receives a problem statement, a starter solution, development data, and an offline environment with a checker. (2) It improves the solution iteratively for up to 12 hours, and its saved versions are evaluated at five checkpoints. (3) One grader evaluates the starter solution, the agent’s solution, and the expert solution on the same held-out test instances. (4) Each metric value is mapped to a score from 0, the starter solution, to 100, the upper bound of the metric. The margin M = B − E M=B-E compares the agent’s score B B with the expert baseline E E .",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34603v1",
+      "title": "VisualMontage: Manipulating the Beliefs of Vision-Language Agents with Authentic Image Sequences",
+      "authors": [
+        "Jinwei Hu",
+        "Lai Wei",
+        "Zhuoyun Li",
+        "Youcheng Sun",
+        "Yi Dong"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV",
+        "cs.MA",
+        "cs.SI"
+      ],
+      "abstract": "This paper introduces VisualMontage, a framework for simulating \"visual cognitive collusion\" attacks on vision-language models (VLMs). The core method involves using authentic image sequences with locally faithful captions to trick VLMs into inferring attacker-chosen claims through their own reasoning. The main contribution is a new benchmark and a systematic evaluation of this threat, demonstrating how coordinated visual and textual content can manipulate VLM beliefs.",
+      "url": "http://arxiv.org/abs/2611.34603v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34603v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2611.34603v1/Figure_1.png",
+      "figure_caption": "Comparison of multimodal attack strategies. Image-centric attacks fabricate or alter visual content, while channel-centric attacks convey hidden signals or malicious payloads. Our cognitive-centric attack instead combines authentic images to manipulate the victim VLM’s beliefs through self-induced misleading relations inferred across otherwise faithful posts.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34776v1",
+      "title": "DFly2: Turbocharging Long-Context Speculative Decoding by Sharing the Target's Sparsity",
+      "authors": [
+        "Hong Liu",
+        "Rui Cen",
+        "Junhan Shi",
+        "Lin Niu",
+        "Runzhi Fan"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces DFly2, a method to accelerate speculative decoding for long-context language models. DFly2 leverages the inherent sparsity of the target model's attention mechanism to efficiently share its context cache and attention selections with the draft model. This significantly reduces memory usage and prefill time, while improving decode concurrency by avoiding redundant computations.",
+      "url": "http://arxiv.org/abs/2611.34776v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34776v1",
+      "score": 9.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2611.34756v1",
+      "title": "Collect for Coverage, Replay with Evidence: Adaptive and Efficient On-Policy Distillation for Long-Horizon Agents",
+      "authors": [
+        "Haowen Hou",
+        "Gen Li",
+        "Ruilin Li",
+        "Yicheng Liu",
+        "Zhen Huang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces CARE-OPD, an adaptive on-policy distillation method for long-horizon agents. It addresses limitations in existing prefix replay by strategically collecting teacher trajectories seeded by student actions to ensure broader history coverage, and by using response-level confidence gating to filter unreliable updates. Furthermore, it employs hindsight replay allocation to prioritize reusing critical trajectory segments, making the distillation process more efficient and effective.",
+      "url": "http://arxiv.org/abs/2611.34756v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34756v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.34756v1/method_overview_three_seed.png",
+      "figure_caption": "Overview of CARE-OPD. Left: Factorization of prefix replay in agent OPD (above). Method overview (below). Right: The plots compare SWE-bench Verified task success, end-to-end time, and environment actions on Qwen3.5 family. The bottom panel reports mean collection trajectory length on SWE and Deep Research. Async OPD denotes online asynchronous one-turn distillation, and Prefix Replay denotes vanilla prefix replay.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34671v1",
+      "title": "DemoFoundry: Toward Scalable Photorealistic Robot Data with Coding Agents and Generative Rendering",
+      "authors": [
+        "Ruixiang Wang",
+        "Xinyue Yao",
+        "Xuanning Zhou",
+        "Yueci Deng",
+        "Yongyi Su"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "abstract": "DemoFoundry addresses the challenge of acquiring realistic robot training data by using coding agents to generate photorealistic, physically grounded demonstrations. The core method involves agents creating aligned real-proxy video pairs to train a renderer and then writing interaction programs to generate new synthetic data. This approach overcomes the visual gap in simulation and the action alignment issues in video-only generation, enabling scalable robot learning without requiring human demonstrations for new tasks.",
+      "url": "http://arxiv.org/abs/2611.34671v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34671v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34656v1",
+      "title": "Do We Still Need Reinforcement Learning When We Can Read the World Model?",
+      "authors": [
+        "Mingchao Zhang",
+        "Miduo Cui",
+        "Kangze He",
+        "Yuanjun Li",
+        "Dapeng Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "abstract": "This paper proposes a novel approach where Large Language Models (LLMs) directly synthesize control policies by reading and reasoning over world models (environment source code). This method bypasses traditional Reinforcement Learning (RL) training, achieving comparable or superior performance with significantly less experience. The core contribution is demonstrating that LLMs can translate environmental knowledge into interpretable, executable decision rules, effectively replacing the need for extensive RL interaction.",
+      "url": "http://arxiv.org/abs/2611.34656v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34656v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.34656v1/Intro.png",
+      "figure_caption": "Comparison of conventional RL and policy synthesis from readable world models.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34852v1",
+      "title": "DRBench Pro: A Knowledge-Centric Benchmark for Professional Deep Research Agents",
+      "authors": [
+        "Han Huang",
+        "Yuchen Yan",
+        "Xingyu Wu",
+        "Yijun Li",
+        "Chao Deng"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "DRBench Pro introduces a novel knowledge-centric evaluation for deep research agents, focusing on the breadth and depth of research directions covered. Its core method involves building knowledge trees from Wikipedia and generating queries and rubrics based on these trees, allowing for structured assessment of information synthesis. The contribution is a benchmark that precisely measures how well agents explore complex topics by evaluating their coverage of major research directions and related knowledge chains.",
+      "url": "http://arxiv.org/abs/2611.34852v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34852v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.34852v1/teaser.png",
+      "figure_caption": "Structured knowledge coverage in DRBench Pro. (a) Reports with the same flat coverage can exhibit different coverage patterns over a shared reference tree. (b) Overview of five native search LLMs’ performance on DRBench Pro.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34875v1",
+      "title": "How Much Do Coding Agents Over-Edit, and Why? An Empirical Study of Unneeded Edits in Repository-Level Agent Patches",
+      "authors": [
+        "Aakash Goel",
+        "Benjamin Steenhoek",
+        "Yu Hu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces Delta Residue Attribution (DRA) to analyze unneeded edits in coding agent patches. DRA traces edits to their origin, reverts them, and reruns tests to determine necessity. The study finds that while agents make more edits, a significant portion are for tests and documentation, and their core code edits are often as necessary as human developers'.",
+      "url": "http://arxiv.org/abs/2611.34875v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34875v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34785v1",
+      "title": "PersonaFactory: Stylistic User Prompt Augmentation with Synthetic Persona Bank",
+      "authors": [
+        "Bich Ngoc Doan",
+        "Hanna Yukhymenko",
+        "Imanol Schlag"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "PersonaFactory addresses the limitation of LLMs generating stylistically flat synthetic user prompts. It creates a large bank of detailed user personas with diverse backgrounds and communication styles. These personas are then used to augment existing prompts, generating a vast corpus of persona-styled conversations across many languages, improving LLM training data for better persona control.",
+      "url": "http://arxiv.org/abs/2611.34785v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34785v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34762v1",
+      "title": "TASK Memory: Beyond Text-Only Memory with Activation Steering and Knowledge Editing against Memory Hallucination",
+      "authors": [
+        "Jinkun Zhao",
+        "Wenjun Wu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper addresses memory hallucinations in LLM agents, where retrieved external memories are ignored or misapplied. The authors propose TASK memory, a novel approach that combines textual memory with activation steering and knowledge editing. This method aims to resolve conflicts between parametric knowledge and external memory, thereby reducing hallucinations and improving the agent's ability to accurately utilize recalled information.",
+      "url": "http://arxiv.org/abs/2611.34762v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34762v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.34762v1/TASK_memory_intro.png",
+      "figure_caption": "Memory hallucination: the memory is correct, the answer is not. (a) Text-only memory or RAG puts the retrieved note into the prompt and leaves the rest to the frozen model, where the note in the context conflicts with the stale fact in the weights. On a question about the memory, the weights win and the model answers with the stale fact (Type I, memory-ignoring). On a question about another entity, the note wins and the model assigns the memory to the wrong entity (Type II, memory-misapplying). Across our five models these rates reach 46% and 24%, and Type II reaches 49% when retrieval is combined with weight editing. (b) TASK memory goes beyond text-only memory. Each memory object holds T ext content, a K nowledge edit Δ ​ W m \\( \\Delta \\) W_{m} whose key u ^ m \\( \\hat{u}_{m} \\) serves as the in-model address, and a pair of A ctivation- S teering vectors ( v + , v − ) (v^{+},v^{-}) that carry no content. For a query x x , the address response r m ​ ( x ) r_{m}(x) is compared with the threshold \\( \\tau_{m} \\) . A relevant query shows T , loads E and adds v + v^{+} , so the model adopts the memory; an unrelated query leaves T and E off and adds v − v^{-} , so the model keeps its own answer.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34751v1",
+      "title": "What Is a Theory Worth to an LLM Solver? Measuring, Inducing, and Merging Theories in Context",
+      "authors": [
+        "Jun Gao",
+        "Shuchao Bi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper investigates the value of mathematical theories for LLM solvers. It demonstrates that providing the correct theory significantly improves problem-solving accuracy and efficiency for LLMs, outperforming worked examples. The research also explores LLMs' ability to induce theories and quantifies how much of the benefit from an oracle theory can be recovered through this induction process.",
+      "url": "http://arxiv.org/abs/2611.34751v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34751v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34635v1",
+      "title": "ZeroHero: Training Small Language Agents from Scratch",
+      "authors": [
+        "Nikita Sorokin",
+        "Zoya Volovikova",
+        "Alexey Skrynnik",
+        "Aleksandr Panov"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "ZeroHero trains small language agents (SLAs) from scratch by first pre-training them to mimic a large language model expert's responses on successful trajectories. Subsequently, these SLAs are fine-tuned using PPO with an added \"reasoning alignment\" objective that supervises their generated language alongside environmental rewards. This method enables the creation of capable, specialized language agents with significantly reduced model capacity.",
+      "url": "http://arxiv.org/abs/2611.34635v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34635v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.34635v1/visual_abstract.png",
+      "figure_caption": "ZeroHero agents use language to reason, search, and ask questions across three interactive environments.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34819v1",
+      "title": "VulnSafe: Measuring Vulnerability-Aware Relational Safety in Large Language Models",
+      "authors": [
+        "Jiaming Luo",
+        "Jiacheng Ji",
+        "Haoan Jin",
+        "Xiaoning Sun",
+        "Qiuzhi Xiong"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "VulnSafe introduces Vulnerability-Aware Response Competence (VARC) to measure a LLM's ability to provide emotionally supportive interactions. VARC assesses five relational safety constructs, evaluated through 2,050 prompts across 41 scenarios. This benchmark offers a more nuanced understanding of LLM safety beyond isolated violations, distinguishing between proactive and prohibitive behaviors.",
+      "url": "http://arxiv.org/abs/2611.34819v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34819v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.34819v1/vulnsafe_framework.png",
+      "figure_caption": "An illustrative capability contrast. The left response displays surface empathy but encourages exclusive reliance on the system. The right response recognizes the relational risk, maintains an appropriate boundary, and supports connection to real-world resources.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2611.34920v1",
+      "title": "$μ$-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents",
+      "authors": [
+        "Qihao Lin",
+        "Guanxu Chen",
+        "Shuhang Zheng",
+        "Xiaoya Lu",
+        "Jingyi Yang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces $μ$-Bench, a novel benchmark for evaluating multi-user voice agents in shared environments. It simulates interdependent user requests, considering individual goals, privacy, and task constraints within a closed-loop system. The core contribution is a comprehensive evaluation framework that measures joint task success and identifies failure causes, revealing significant performance gaps in current voice agents.",
+      "url": "http://arxiv.org/abs/2611.34920v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34920v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2611.34920v1/intro-teaser-pdf.png",
+      "figure_caption": "Overview of \\( \\mu \\) -Bench: multi-user task coordination and domain coverage. Left (Top): A shared full-duplex voice agent handles overlapping speech, barge-ins, peer side-talk, and backchannels while invoking backend tools. Left (Bottom): The same trajectory is diagnosed along Attribution (routing actionable speech), Threading (retaining and updating active goals), and Coordination (reconciling constraints and authority), with success requiring all goals and constraints to hold jointly. Right: Distribution of 100 base scenarios across 20 domains, split between 51 Tool-Augmented (408 cases) and 49 Tool-Free (392 cases) scenarios; parentheses show TA/TF counts.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34868v1",
+      "title": "A Survey of Security, Privacy, and Ethics of Large Language Models in Telecom",
+      "authors": [
+        "Joy Bose",
+        "Srinivas Adyapak"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR",
+        "cs.CY"
+      ],
+      "abstract": "This paper surveys the security, privacy, and ethical challenges of using Large Language Models (LLMs) in telecommunications. It introduces a novel taxonomy that connects LLM risks to specific telecom use cases and sensitive data characteristics. The contribution lies in identifying and categorizing these unique challenges, highlighting open research areas like longitudinal data privacy and scalable guardrails for responsible LLM deployment in the telecom sector.",
+      "url": "http://arxiv.org/abs/2611.34868v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34868v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34934v1",
+      "title": "Attack Policy Selection can Mislead Monitor Evaluators",
+      "authors": [
+        "Charlie Griffin",
+        "Oliver Makins",
+        "Asa Cooper Stickland",
+        "Alessandro Abate",
+        "Yarin Gal"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper reveals that AI monitor evaluations can be misleading due to the attack policies used. The false negative rate of a monitor is highly sensitive to how attack policies are generated and optimized, leading to potentially false confidence in a monitor's strength if only basic attacks are used. The study demonstrates that even optimized attacks against proxy monitors can effectively transfer to a held-out target monitor.",
+      "url": "http://arxiv.org/abs/2611.34934v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34934v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34928v1",
+      "title": "Diverse Alternative Reasoning Traces for Hard Math Problems",
+      "authors": [
+        "Lukas Aichberger",
+        "Adam Golinski",
+        "Arno Blaas",
+        "Arwen Bradley",
+        "Jacob Springer"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces Diverse Alternative Reasoning Traces (DART), a method to generate more effective training data for hard math problems. DART tackles the scarcity of correct reasoning traces by decomposing incorrect ones, identifying uncertain steps, and then generating diverse, alternative paths to the correct solution. This approach significantly improves the ability of LLMs to solve challenging math problems compared to standard sampling methods.",
+      "url": "http://arxiv.org/abs/2611.34928v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34928v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2611.34928v1/fig_01_dart_overview.png",
+      "figure_caption": "DART decomposes a rejected trace into self-contained reasoning steps ( Section 2.1 ), selects a non-final reasoning step based on its position-weighted uncertainty ( Section 2.2 ), proposes a deliberately distinct alternative candidate ( Section 2.3 ), and then greedily decodes a new continuation. This procedure can be repeated for a fixed number of iterations or until a target number of accepted traces is obtained.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34841v1",
+      "title": "Knowledge-Base Gradient Descent: Self-Structuring Learning through Question Answering",
+      "authors": [
+        "Masahiro Kato"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces Knowledge-Base Gradient Descent (KBGD) for self-structuring learning in knowledge base construction. KBGD iteratively refines a knowledge base's structure by proposing edits that minimize discrepancies between expected and actual answers. Its core contribution is a gradient-descent-like approach that learns to optimize the knowledge base's organization based on question-answering performance, enabling more effective information retrieval for LLM applications.",
+      "url": "http://arxiv.org/abs/2611.34841v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34841v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34864v1",
+      "title": "RePace: Reasoning about Demonstration Speedup for Faster Vision-Language-Action Policies",
+      "authors": [
+        "Insup Lee",
+        "Hojin Jeon",
+        "Sunguk Shin",
+        "Seoungbin Bae",
+        "Taekwan Kim"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "abstract": "RePace is an offline framework that reasons about how much to accelerate each part of a human demonstration for vision-language-action (VLA) policies. It evaluates candidate speedup factors by measuring sequence shortening and comparing the resulting training data quality. This allows for faster VLA policies without needing a separate speed-selection module at deployment.",
+      "url": "http://arxiv.org/abs/2611.34864v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34864v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2611.34864v1/fig1_demonstration_acceleration.png",
+      "figure_caption": "Offline demonstration acceleration with RePace . RePace compares how candidate speedup factors change the observations and action targets used for VLA fine-tuning. It uses the recorded scene and motion to interpret these changes and select a speedup profile.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "papers": [
+    {
+      "id": "2611.34703v1",
+      "title": "Maco-RL: Scaling Agent Capabilities with Mixed-Task Reinforcement Learning",
+      "authors": [
+        "Jiacheng Zhang",
+        "Qixing Zhou",
+        "Haiyang Wang",
+        "Qipeng Gu",
+        "Shuzhe Wu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "Maco-RL tackles the challenges of scaling mixed-task reinforcement learning (MixRL) by introducing a quota-based scheduler for asynchronous rollouts and a Tri-Buffer Sampling (TBS) mechanism. The scheduler stabilizes training by balancing gradient contributions, while TBS efficiently allocates compute to samples based on mastery, promoting exploration and preserving learned skills. This approach enables a unified policy to continually expand its capabilities across multiple domains without needing separate specialists or distillation.",
+      "url": "http://arxiv.org/abs/2611.34703v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34703v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2611.34703v1/expanserl-performance-efficiency.png",
+      "figure_caption": "Our Maco-RL enables 27B-sized models to substantially outperform baselines and even be competitive with much larger models in terms of overall pass rates across multiple task domains, i.e., issue- and feature-oriented coding, terminal and Claw. Experimental results reveal that Maco-RL more effectively turns compute budget into model capability. (a) Average pass rates over five benchmarks, i.e., Pass@1 on SWE-bench Verified, Terminal-Bench 2.1 and Claw-Anything, Tests Passed on FeatureBench 1.1 and Pass 3 \\( \\mathrm{Pass}^{3} \\) on Claw-Eval, against model sizes, which are P total ​ P active \\( \\sqrt \\){P_{\\( \\mathrm{total} \\)}P_{\\( \\mathrm{active} \\)}} for MoE models and P total P_{\\( \\mathrm{total} \\)} otherwise. (b) The mean Pass@1 metrics against compute budget for RL on mixed and single tasks. For single-task RL, we sum compute across the three tasks.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34646v1",
+      "title": "REE: A Scientific Research Entrance Exam for AI Agents",
+      "authors": [
+        "Zeqi Zhou",
+        "Minghao Liu",
+        "Jiarui Liu",
+        "Qingcheng Zeng",
+        "Rui Yang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper introduces REE, a novel benchmark designed to evaluate the scientific research capabilities of AI agents. REE presents 100 open-ended research problems, sourced from active scientific fields and reviewed by experts, requiring agents to iteratively improve a starter solution within a time limit. The core contribution is a standardized evaluation method that scores agent performance against expert solutions, providing a quantitative measure of their ability to advance scientific understanding.",
+      "url": "http://arxiv.org/abs/2611.34646v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34646v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2611.34646v1/teaser.png",
+      "figure_caption": "An REE task in four steps. (1) The agent receives a problem statement, a starter solution, development data, and an offline environment with a checker. (2) It improves the solution iteratively for up to 12 hours, and its saved versions are evaluated at five checkpoints. (3) One grader evaluates the starter solution, the agent’s solution, and the expert solution on the same held-out test instances. (4) Each metric value is mapped to a score from 0, the starter solution, to 100, the upper bound of the metric. The margin M = B − E M=B-E compares the agent’s score B B with the expert baseline E E .",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34603v1",
+      "title": "VisualMontage: Manipulating the Beliefs of Vision-Language Agents with Authentic Image Sequences",
+      "authors": [
+        "Jinwei Hu",
+        "Lai Wei",
+        "Zhuoyun Li",
+        "Youcheng Sun",
+        "Yi Dong"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV",
+        "cs.MA",
+        "cs.SI"
+      ],
+      "abstract": "This paper introduces VisualMontage, a framework for simulating \"visual cognitive collusion\" attacks on vision-language models (VLMs). The core method involves using authentic image sequences with locally faithful captions to trick VLMs into inferring attacker-chosen claims through their own reasoning. The main contribution is a new benchmark and a systematic evaluation of this threat, demonstrating how coordinated visual and textual content can manipulate VLM beliefs.",
+      "url": "http://arxiv.org/abs/2611.34603v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34603v1",
+      "score": 9.0,
+      "figure_url": "https://arxiv.org/html/2611.34603v1/Figure_1.png",
+      "figure_caption": "Comparison of multimodal attack strategies. Image-centric attacks fabricate or alter visual content, while channel-centric attacks convey hidden signals or malicious payloads. Our cognitive-centric attack instead combines authentic images to manipulate the victim VLM’s beliefs through self-induced misleading relations inferred across otherwise faithful posts.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34776v1",
+      "title": "DFly2: Turbocharging Long-Context Speculative Decoding by Sharing the Target's Sparsity",
+      "authors": [
+        "Hong Liu",
+        "Rui Cen",
+        "Junhan Shi",
+        "Lin Niu",
+        "Runzhi Fan"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces DFly2, a method to accelerate speculative decoding for long-context language models. DFly2 leverages the inherent sparsity of the target model's attention mechanism to efficiently share its context cache and attention selections with the draft model. This significantly reduces memory usage and prefill time, while improving decode concurrency by avoiding redundant computations.",
+      "url": "http://arxiv.org/abs/2611.34776v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34776v1",
+      "score": 9.0,
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2611.34756v1",
+      "title": "Collect for Coverage, Replay with Evidence: Adaptive and Efficient On-Policy Distillation for Long-Horizon Agents",
+      "authors": [
+        "Haowen Hou",
+        "Gen Li",
+        "Ruilin Li",
+        "Yicheng Liu",
+        "Zhen Huang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces CARE-OPD, an adaptive on-policy distillation method for long-horizon agents. It addresses limitations in existing prefix replay by strategically collecting teacher trajectories seeded by student actions to ensure broader history coverage, and by using response-level confidence gating to filter unreliable updates. Furthermore, it employs hindsight replay allocation to prioritize reusing critical trajectory segments, making the distillation process more efficient and effective.",
+      "url": "http://arxiv.org/abs/2611.34756v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34756v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.34756v1/method_overview_three_seed.png",
+      "figure_caption": "Overview of CARE-OPD. Left: Factorization of prefix replay in agent OPD (above). Method overview (below). Right: The plots compare SWE-bench Verified task success, end-to-end time, and environment actions on Qwen3.5 family. The bottom panel reports mean collection trajectory length on SWE and Deep Research. Async OPD denotes online asynchronous one-turn distillation, and Prefix Replay denotes vanilla prefix replay.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34671v1",
+      "title": "DemoFoundry: Toward Scalable Photorealistic Robot Data with Coding Agents and Generative Rendering",
+      "authors": [
+        "Ruixiang Wang",
+        "Xinyue Yao",
+        "Xuanning Zhou",
+        "Yueci Deng",
+        "Yongyi Su"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "abstract": "DemoFoundry addresses the challenge of acquiring realistic robot training data by using coding agents to generate photorealistic, physically grounded demonstrations. The core method involves agents creating aligned real-proxy video pairs to train a renderer and then writing interaction programs to generate new synthetic data. This approach overcomes the visual gap in simulation and the action alignment issues in video-only generation, enabling scalable robot learning without requiring human demonstrations for new tasks.",
+      "url": "http://arxiv.org/abs/2611.34671v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34671v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34656v1",
+      "title": "Do We Still Need Reinforcement Learning When We Can Read the World Model?",
+      "authors": [
+        "Mingchao Zhang",
+        "Miduo Cui",
+        "Kangze He",
+        "Yuanjun Li",
+        "Dapeng Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "abstract": "This paper proposes a novel approach where Large Language Models (LLMs) directly synthesize control policies by reading and reasoning over world models (environment source code). This method bypasses traditional Reinforcement Learning (RL) training, achieving comparable or superior performance with significantly less experience. The core contribution is demonstrating that LLMs can translate environmental knowledge into interpretable, executable decision rules, effectively replacing the need for extensive RL interaction.",
+      "url": "http://arxiv.org/abs/2611.34656v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34656v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.34656v1/Intro.png",
+      "figure_caption": "Comparison of conventional RL and policy synthesis from readable world models.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34852v1",
+      "title": "DRBench Pro: A Knowledge-Centric Benchmark for Professional Deep Research Agents",
+      "authors": [
+        "Han Huang",
+        "Yuchen Yan",
+        "Xingyu Wu",
+        "Yijun Li",
+        "Chao Deng"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "DRBench Pro introduces a novel knowledge-centric evaluation for deep research agents, focusing on the breadth and depth of research directions covered. Its core method involves building knowledge trees from Wikipedia and generating queries and rubrics based on these trees, allowing for structured assessment of information synthesis. The contribution is a benchmark that precisely measures how well agents explore complex topics by evaluating their coverage of major research directions and related knowledge chains.",
+      "url": "http://arxiv.org/abs/2611.34852v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34852v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.34852v1/teaser.png",
+      "figure_caption": "Structured knowledge coverage in DRBench Pro. (a) Reports with the same flat coverage can exhibit different coverage patterns over a shared reference tree. (b) Overview of five native search LLMs’ performance on DRBench Pro.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34875v1",
+      "title": "How Much Do Coding Agents Over-Edit, and Why? An Empirical Study of Unneeded Edits in Repository-Level Agent Patches",
+      "authors": [
+        "Aakash Goel",
+        "Benjamin Steenhoek",
+        "Yu Hu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "abstract": "This paper introduces Delta Residue Attribution (DRA) to analyze unneeded edits in coding agent patches. DRA traces edits to their origin, reverts them, and reruns tests to determine necessity. The study finds that while agents make more edits, a significant portion are for tests and documentation, and their core code edits are often as necessary as human developers'.",
+      "url": "http://arxiv.org/abs/2611.34875v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34875v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34785v1",
+      "title": "PersonaFactory: Stylistic User Prompt Augmentation with Synthetic Persona Bank",
+      "authors": [
+        "Bich Ngoc Doan",
+        "Hanna Yukhymenko",
+        "Imanol Schlag"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "PersonaFactory addresses the limitation of LLMs generating stylistically flat synthetic user prompts. It creates a large bank of detailed user personas with diverse backgrounds and communication styles. These personas are then used to augment existing prompts, generating a vast corpus of persona-styled conversations across many languages, improving LLM training data for better persona control.",
+      "url": "http://arxiv.org/abs/2611.34785v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34785v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34762v1",
+      "title": "TASK Memory: Beyond Text-Only Memory with Activation Steering and Knowledge Editing against Memory Hallucination",
+      "authors": [
+        "Jinkun Zhao",
+        "Wenjun Wu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper addresses memory hallucinations in LLM agents, where retrieved external memories are ignored or misapplied. The authors propose TASK memory, a novel approach that combines textual memory with activation steering and knowledge editing. This method aims to resolve conflicts between parametric knowledge and external memory, thereby reducing hallucinations and improving the agent's ability to accurately utilize recalled information.",
+      "url": "http://arxiv.org/abs/2611.34762v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34762v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.34762v1/TASK_memory_intro.png",
+      "figure_caption": "Memory hallucination: the memory is correct, the answer is not. (a) Text-only memory or RAG puts the retrieved note into the prompt and leaves the rest to the frozen model, where the note in the context conflicts with the stale fact in the weights. On a question about the memory, the weights win and the model answers with the stale fact (Type I, memory-ignoring). On a question about another entity, the note wins and the model assigns the memory to the wrong entity (Type II, memory-misapplying). Across our five models these rates reach 46% and 24%, and Type II reaches 49% when retrieval is combined with weight editing. (b) TASK memory goes beyond text-only memory. Each memory object holds T ext content, a K nowledge edit Δ ​ W m \\( \\Delta \\) W_{m} whose key u ^ m \\( \\hat{u}_{m} \\) serves as the in-model address, and a pair of A ctivation- S teering vectors ( v + , v − ) (v^{+},v^{-}) that carry no content. For a query x x , the address response r m ​ ( x ) r_{m}(x) is compared with the threshold \\( \\tau_{m} \\) . A relevant query shows T , loads E and adds v + v^{+} , so the model adopts the memory; an unrelated query leaves T and E off and adds v − v^{-} , so the model keeps its own answer.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34751v1",
+      "title": "What Is a Theory Worth to an LLM Solver? Measuring, Inducing, and Merging Theories in Context",
+      "authors": [
+        "Jun Gao",
+        "Shuchao Bi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "This paper investigates the value of mathematical theories for LLM solvers. It demonstrates that providing the correct theory significantly improves problem-solving accuracy and efficiency for LLMs, outperforming worked examples. The research also explores LLMs' ability to induce theories and quantifies how much of the benefit from an oracle theory can be recovered through this induction process.",
+      "url": "http://arxiv.org/abs/2611.34751v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34751v1",
+      "score": 8.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34635v1",
+      "title": "ZeroHero: Training Small Language Agents from Scratch",
+      "authors": [
+        "Nikita Sorokin",
+        "Zoya Volovikova",
+        "Alexey Skrynnik",
+        "Aleksandr Panov"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "ZeroHero trains small language agents (SLAs) from scratch by first pre-training them to mimic a large language model expert's responses on successful trajectories. Subsequently, these SLAs are fine-tuned using PPO with an added \"reasoning alignment\" objective that supervises their generated language alongside environmental rewards. This method enables the creation of capable, specialized language agents with significantly reduced model capacity.",
+      "url": "http://arxiv.org/abs/2611.34635v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34635v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.34635v1/visual_abstract.png",
+      "figure_caption": "ZeroHero agents use language to reason, search, and ask questions across three interactive environments.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34819v1",
+      "title": "VulnSafe: Measuring Vulnerability-Aware Relational Safety in Large Language Models",
+      "authors": [
+        "Jiaming Luo",
+        "Jiacheng Ji",
+        "Haoan Jin",
+        "Xiaoning Sun",
+        "Qiuzhi Xiong"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "abstract": "VulnSafe introduces Vulnerability-Aware Response Competence (VARC) to measure a LLM's ability to provide emotionally supportive interactions. VARC assesses five relational safety constructs, evaluated through 2,050 prompts across 41 scenarios. This benchmark offers a more nuanced understanding of LLM safety beyond isolated violations, distinguishing between proactive and prohibitive behaviors.",
+      "url": "http://arxiv.org/abs/2611.34819v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34819v1",
+      "score": 8.0,
+      "figure_url": "https://arxiv.org/html/2611.34819v1/vulnsafe_framework.png",
+      "figure_caption": "An illustrative capability contrast. The left response displays surface empathy but encourages exclusive reliance on the system. The right response recognizes the relational risk, maintains an appropriate boundary, and supports connection to real-world resources.",
+      "primary_category": "cs.CL",
+      "primary_category_anchor": "cs-cl",
+      "primary_category_rank": 2
+    },
+    {
+      "id": "2611.34920v1",
+      "title": "$μ$-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents",
+      "authors": [
+        "Qihao Lin",
+        "Guanxu Chen",
+        "Shuhang Zheng",
+        "Xiaoya Lu",
+        "Jingyi Yang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces $μ$-Bench, a novel benchmark for evaluating multi-user voice agents in shared environments. It simulates interdependent user requests, considering individual goals, privacy, and task constraints within a closed-loop system. The core contribution is a comprehensive evaluation framework that measures joint task success and identifies failure causes, revealing significant performance gaps in current voice agents.",
+      "url": "http://arxiv.org/abs/2611.34920v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34920v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2611.34920v1/intro-teaser-pdf.png",
+      "figure_caption": "Overview of \\( \\mu \\) -Bench: multi-user task coordination and domain coverage. Left (Top): A shared full-duplex voice agent handles overlapping speech, barge-ins, peer side-talk, and backchannels while invoking backend tools. Left (Bottom): The same trajectory is diagnosed along Attribution (routing actionable speech), Threading (retaining and updating active goals), and Coordination (reconciling constraints and authority), with success requiring all goals and constraints to hold jointly. Right: Distribution of 100 base scenarios across 20 domains, split between 51 Tool-Augmented (408 cases) and 49 Tool-Free (392 cases) scenarios; parentheses show TA/TF counts.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34868v1",
+      "title": "A Survey of Security, Privacy, and Ethics of Large Language Models in Telecom",
+      "authors": [
+        "Joy Bose",
+        "Srinivas Adyapak"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR",
+        "cs.CY"
+      ],
+      "abstract": "This paper surveys the security, privacy, and ethical challenges of using Large Language Models (LLMs) in telecommunications. It introduces a novel taxonomy that connects LLM risks to specific telecom use cases and sensitive data characteristics. The contribution lies in identifying and categorizing these unique challenges, highlighting open research areas like longitudinal data privacy and scalable guardrails for responsible LLM deployment in the telecom sector.",
+      "url": "http://arxiv.org/abs/2611.34868v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34868v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34934v1",
+      "title": "Attack Policy Selection can Mislead Monitor Evaluators",
+      "authors": [
+        "Charlie Griffin",
+        "Oliver Makins",
+        "Asa Cooper Stickland",
+        "Alessandro Abate",
+        "Yarin Gal"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper reveals that AI monitor evaluations can be misleading due to the attack policies used. The false negative rate of a monitor is highly sensitive to how attack policies are generated and optimized, leading to potentially false confidence in a monitor's strength if only basic attacks are used. The study demonstrates that even optimized attacks against proxy monitors can effectively transfer to a held-out target monitor.",
+      "url": "http://arxiv.org/abs/2611.34934v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34934v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34928v1",
+      "title": "Diverse Alternative Reasoning Traces for Hard Math Problems",
+      "authors": [
+        "Lukas Aichberger",
+        "Adam Golinski",
+        "Arno Blaas",
+        "Arwen Bradley",
+        "Jacob Springer"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.CL"
+      ],
+      "abstract": "This paper introduces Diverse Alternative Reasoning Traces (DART), a method to generate more effective training data for hard math problems. DART tackles the scarcity of correct reasoning traces by decomposing incorrect ones, identifying uncertain steps, and then generating diverse, alternative paths to the correct solution. This approach significantly improves the ability of LLMs to solve challenging math problems compared to standard sampling methods.",
+      "url": "http://arxiv.org/abs/2611.34928v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34928v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2611.34928v1/fig_01_dart_overview.png",
+      "figure_caption": "DART decomposes a rejected trace into self-contained reasoning steps ( Section 2.1 ), selects a non-final reasoning step based on its position-weighted uncertainty ( Section 2.2 ), proposes a deliberately distinct alternative candidate ( Section 2.3 ), and then greedily decodes a new continuation. This procedure can be repeated for a fixed number of iterations or until a target number of accepted traces is obtained.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34841v1",
+      "title": "Knowledge-Base Gradient Descent: Self-Structuring Learning through Question Answering",
+      "authors": [
+        "Masahiro Kato"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "This paper introduces Knowledge-Base Gradient Descent (KBGD) for self-structuring learning in knowledge base construction. KBGD iteratively refines a knowledge base's structure by proposing edits that minimize discrepancies between expected and actual answers. Its core contribution is a gradient-descent-like approach that learns to optimize the knowledge base's organization based on question-answering performance, enabling more effective information retrieval for LLM applications.",
+      "url": "http://arxiv.org/abs/2611.34841v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34841v1",
+      "score": 7.0,
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    },
+    {
+      "id": "2611.34864v1",
+      "title": "RePace: Reasoning about Demonstration Speedup for Faster Vision-Language-Action Policies",
+      "authors": [
+        "Insup Lee",
+        "Hojin Jeon",
+        "Sunguk Shin",
+        "Seoungbin Bae",
+        "Taekwan Kim"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "abstract": "RePace is an offline framework that reasons about how much to accelerate each part of a human demonstration for vision-language-action (VLA) policies. It evaluates candidate speedup factors by measuring sequence shortening and comparing the resulting training data quality. This allows for faster VLA policies without needing a separate speed-selection module at deployment.",
+      "url": "http://arxiv.org/abs/2611.34864v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34864v1",
+      "score": 7.0,
+      "figure_url": "https://arxiv.org/html/2611.34864v1/fig1_demonstration_acceleration.png",
+      "figure_caption": "Offline demonstration acceleration with RePace . RePace compares how candidate speedup factors change the observations and action targets used for VLA fine-tuning. It uses the recorded scene and motion to interpret these changes and select a speedup profile.",
+      "primary_category": "cs.AI",
+      "primary_category_anchor": "cs-ai",
+      "primary_category_rank": 0
+    }
+  ],
+  "hacker_news": [
+    {
+      "id": 50660180,
+      "title": "AI made self-hosting fun again",
+      "url": "https://janlukas.blog/posts/ai-self-hosting",
+      "score": 656,
+      "created_at": "2026-11-26T21:47:45Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50660180",
+      "summary": "AI is making self-hosting more accessible and enjoyable by simplifying complex tasks and offering new creative possibilities."
+    },
+    {
+      "id": 50659841,
+      "title": "Kamil Khan Mumtaz: Pakistani architect, admired at home, almost invisible abroad",
+      "url": "https://worksinprogress.co/issue/the-greatest-architect-youve-never-heard-of-is-in-pakistan/",
+      "score": 360,
+      "created_at": "2026-11-26T21:08:05Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50659841",
+      "summary": "Pakistani architect Kamil Khan Mumtaz is a celebrated figure at home for his influential designs, yet remains largely unknown internationally."
+    },
+    {
+      "id": 50657265,
+      "title": "AMD-specific fork of llama.cpp",
+      "url": "https://devnull.land/amd-specific-llama-cpp",
+      "score": 355,
+      "created_at": "2026-11-26T17:11:29Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50657265",
+      "summary": "This tech news story discusses an AMD-specific version of llama.cpp, a popular inference engine for large language models, optimized for AMD hardware."
+    },
+    {
+      "id": 50653477,
+      "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+      "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+      "score": 327,
+      "created_at": "2026-11-26T09:44:23Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50653477",
+      "summary": "Google will integrate AI agents into its MCP servers, but the Gmail agent currently cannot send emails."
+    },
+    {
+      "id": 50657307,
+      "title": "Tracking Diseases Cured by AI",
+      "url": "https://diseasescuredbyai.com/",
+      "score": 310,
+      "created_at": "2026-11-26T17:16:41Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50657307",
+      "summary": "This website tracks diseases that have been cured or significantly treated through the application of Artificial Intelligence in medical research and development."
+    },
+    {
+      "id": 50663595,
+      "title": "The group chat where your AI talks behind your back",
+      "url": "https://construct22.com/",
+      "score": 198,
+      "created_at": "2026-11-27T06:44:34Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50663595",
+      "summary": "This tech news story explores how AI assistants can be programmed to communicate with each other in private group chats, potentially discussing users or tasks without their direct knowledge."
+    },
+    {
+      "id": 50655868,
+      "title": "Show HN: I wrote an entire Vim manual over 4 years",
+      "url": "http://themouseless.dev/vim/",
+      "score": 164,
+      "created_at": "2026-11-26T14:44:22Z",
+      "comments_url": "https://news.ycombinator.com/item?id=50655868",
+      "summary": "A developer has spent four years creating a comprehensive Vim manual, now available online, to share their extensive knowledge of the text editor."
+    }
+  ],
+  "github_trending": [
+    {
+      "full_name": "elementalsouls/Claude-BugHunter",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 85 skills, 16 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "stars_today": 1597,
+      "total_stars": 25195,
+      "language": "Python",
+      "topics": [],
+      "summary": "This Claude Code skill bundle empowers red-teamers with 85 bug-hunting skills, 16 slash commands, and 681 disclosed report patterns across 24 vulnerability classes, including enterprise identity and infrastructure attack matrices."
+    },
+    {
+      "full_name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "stars_today": 854,
+      "total_stars": 327830,
+      "language": "Shell",
+      "topics": [],
+      "summary": "Superpowers is an agentic skills framework and software development methodology designed to enhance productivity and effectiveness in software projects."
+    },
+    {
+      "full_name": "HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "stars_today": 746,
+      "total_stars": 66636,
+      "language": "Python",
+      "topics": [],
+      "summary": "CLI-Anything enables any software to become agent-native by providing a unified interface for AI agents to interact with command-line tools, facilitating automation and intelligent control."
+    },
+    {
+      "full_name": "jingyaogong/minimind",
+      "url": "https://github.com/jingyaogong/minimind",
+      "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
+      "stars_today": 702,
+      "total_stars": 71965,
+      "language": "Python",
+      "topics": [],
+      "summary": "This repository provides a streamlined framework to train a 64M parameter large language model from scratch in approximately two hours, making LLM development accessible."
+    },
+    {
+      "full_name": "cursor/plugins",
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "stars_today": 270,
+      "total_stars": 19878,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "This repository defines the specification for Cursor plugins and hosts official implementations, enabling users to extend the Cursor IDE's functionality."
+    },
+    {
+      "full_name": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
+      "stars_today": 1046,
+      "total_stars": 211229,
+      "language": "TypeScript",
+      "topics": [],
+      "summary": "Firecrawl provides a unified API to search, scrape, and access data from over 550 providers, acting as a knowledge infrastructure to enhance AI agent intelligence."
+    },
+    {
+      "full_name": "nginx/nginx",
+      "url": "https://github.com/nginx/nginx",
+      "description": "The official NGINX Open Source repository.",
+      "stars_today": 150,
+      "total_stars": 33578,
+      "language": "C",
+      "topics": [],
+      "summary": "The official NGINX Open Source repository provides a high-performance, lightweight web server and reverse proxy, known for its event-driven architecture, scalability, and extensive feature set for handling concurrent connections efficiently."
+    },
+    {
+      "full_name": "openvinotoolkit/openvino",
+      "url": "https://github.com/openvinotoolkit/openvino",
+      "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+      "stars_today": 176,
+      "total_stars": 12873,
+      "language": "C++",
+      "topics": [],
+      "summary": "OpenVINO™ is an open-source toolkit that optimizes and deploys AI inference across various hardware, enabling efficient execution of deep learning models."
+    },
+    {
+      "full_name": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "stars_today": 955,
+      "total_stars": 74152,
+      "language": "HTML",
+      "topics": [],
+      "summary": "This repository provides self-contained HTML+SVG diagrams for AI coding tools like Copilot and Cursor, offering 52 types without shadows or Mermaid syntax."
+    }
+  ],
+  "us_stocks": [],
+  "postdoc_jobs": [],
+  "jobs": [],
+  "supervisor_updates": [],
+  "weather": [
+    {
+      "query": "London",
+      "label": "London, England, United Kingdom",
+      "resolved_name": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "timezone": "Europe/London",
+      "forecast_date": "2026-11-27",
+      "condition": "Overcast",
+      "weather_code": 3,
+      "temperature_c": 2.9,
+      "apparent_temperature_c": -1.4,
+      "temp_max_c": 4.9,
+      "temp_min_c": 1.9,
+      "humidity_pct": 80,
+      "wind_speed_kmh": 15.1,
+      "precipitation_probability_pct": 33,
+      "is_day": true,
+      "sunrise": "2026-11-27T07:37",
+      "sunset": "2026-11-27T15:58",
+      "source": "Open-Meteo",
+      "source_url": "https://open-meteo.com/"
+    }
+  ]
+}
